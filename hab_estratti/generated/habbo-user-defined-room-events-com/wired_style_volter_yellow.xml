@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="wired_style_volter_yellow" width="200" height="200" version="0.1" uid="CE25DCD6-428E-467D-7BF8-0F935F8D2F6F">
+  <window>
+    <container x="0" y="0" width="200" height="200" params="16" style="3" color="0xfffff4d763" background="true">
+      <children>
+        <border x="0" y="0" width="119" height="98" params="16" style="13" name="inner_border" color="0x0faea7c" visible="false"/>
+        <frame x="0" y="0" width="256" height="200" params="32769" style="2" name="frame" caption="%24%7Bwiredfurni.title%7D" color="0xfffac200" visible="false" width_min="100">
+          <filters>
+            <DropShadowFilter distance="4" alpha="0.34901960784313724" blurX="4" blurY="4"/>
+          </filters>
+          <variables>
+            <var key="margin_left" value="6" type="int"/>
+            <var key="margin_top" value="25" type="int"/>
+            <var key="margin_right" value="6" type="int"/>
+            <var key="margin_bottom" value="7" type="int"/>
+          </variables>
+        </frame>
+        <container x="0" y="0" width="228" height="1" params="16" style="3" name="ruler_view" visible="false">
+          <children>
+            <container x="0" y="0" width="228" height="1" params="4194448" style="3" color="0xffff222222" background="true"/>
+          </children>
+        </container>
+        <text x="0" y="0" width="56" height="13" params="147472" style="3" name="text_view" caption="some%20text" color="0x0222222" visible="false">
+          <variables>
+            <var key="antialias_type" value="advanced" type="String"/>
+            <var key="auto_size" value="left" type="String"/>
+            <var key="text_color" value="0x222222" type="hex"/>
+            <var key="text_style" value="regular" type="String"/>
+            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+            <var key="sharpness" value="0" type="Number"/>
+            <var key="thickness" value="0" type="Number"/>
+            <var key="kerning" value="false" type="Boolean"/>
+            <var key="spacing" value="0" type="Number"/>
+            <var key="leading" value="0" type="Number"/>
+          </variables>
+        </text>
+        <text x="0" y="0" width="92" height="13" params="147472" style="3" name="text_bold_view" caption="some%20bold%20text" visible="false">
+          <variables>
+            <var key="antialias_type" value="advanced" type="String"/>
+            <var key="auto_size" value="left" type="String"/>
+            <var key="text_color" value="0x222222" type="hex"/>
+            <var key="text_style" value="bold" type="String"/>
+            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+            <var key="sharpness" value="0" type="Number"/>
+            <var key="thickness" value="0" type="Number"/>
+            <var key="kerning" value="false" type="Boolean"/>
+            <var key="spacing" value="0" type="Number"/>
+            <var key="leading" value="0" type="Number"/>
+          </variables>
+        </text>
+        <html x="0" y="0" width="96" height="13" params="1073741840" style="3" name="text_html" caption="Use%20this%20by%20typing" visible="false">
+          <variables>
+            <var key="antialias_type" value="advanced" type="String"/>
+            <var key="auto_size" value="left" type="String"/>
+            <var key="text_color" value="0x222222" type="hex"/>
+            <var key="text_style" value="regular" type="String"/>
+            <var key="sharpness" value="0" type="Number"/>
+            <var key="thickness" value="0" type="Number"/>
+            <var key="kerning" value="false" type="Boolean"/>
+            <var key="spacing" value="0" type="Number"/>
+            <var key="leading" value="0" type="Number"/>
+            <var key="editable" value="false" type="Boolean"/>
+            <var key="selectable" value="false" type="Boolean"/>
+            <var key="editable" value="false" type="Boolean"/>
+            <var key="selectable" value="false" type="Boolean"/>
+          </variables>
+        </html>
+        <container x="0" y="0" width="112" height="15" params="16" style="3" name="input_template" color="0xffffffffff" visible="false" background="true">
+          <children>
+            <input x="0" y="0" width="112" height="15" params="2177" style="3" name="field">
+              <variables>
+                <var key="always_show_selection" value="true" type="Boolean"/>
+                <var key="antialias_type" value="advanced" type="String"/>
+                <var key="border" value="true" type="Boolean"/>
+                <var key="border_color" value="0x222222" type="hex"/>
+                <var key="text_color" value="0x222222" type="hex"/>
+                <var key="text_style" value="regular" type="String"/>
+                <var key="margin_left" value="5" type="int"/>
+                <var key="sharpness" value="0" type="Number"/>
+                <var key="thickness" value="0" type="Number"/>
+                <var key="kerning" value="false" type="Boolean"/>
+                <var key="spacing" value="0" type="Number"/>
+                <var key="leading" value="0" type="Number"/>
+              </variables>
+            </input>
+          </children>
+        </container>
+        <dropmenu x="0" y="0" width="149" height="22" params="17" style="200" name="dropdown_view" visible="false"/>
+        <checkbox x="0" y="0" width="17" height="17" params="17" style="2" name="checkbox_view" visible="false"/>
+        <radiobutton x="0" y="0" width="14" height="17" params="17" style="2" name="radiobutton_view"/>
+        <region x="0" y="0" width="16" height="10" params="17" style="3" name="expand_collapse_region" color="0xff3d3d3d" visible="false" treshold="0">
+          <children>
+            <static_bitmap x="0" y="0" width="16" height="10" params="16" style="3" name="up_arrow" visible="false">
+              <variables>
+                <var key="asset_uri" value="wired_volter_uparrow" type="String"/>
+                <var key="stretched_x" value="false" type="Boolean"/>
+                <var key="stretched_y" value="false" type="Boolean"/>
+                <var key="fit_size_to_contents" value="true" type="Boolean"/>
+              </variables>
+            </static_bitmap>
+            <static_bitmap x="0" y="0" width="16" height="10" params="16" style="3" name="down_arrow" visible="false">
+              <variables>
+                <var key="asset_uri" value="wired_volter_downarrow" type="String"/>
+                <var key="stretched_x" value="false" type="Boolean"/>
+                <var key="stretched_y" value="false" type="Boolean"/>
+                <var key="fit_size_to_contents" value="true" type="Boolean"/>
+              </variables>
+            </static_bitmap>
+          </children>
+        </region>
+        <itemlist_horizontal x="0" y="-2" width="17" height="17" params="147456" style="3" name="sourcetype_selector_view" visible="false" height_min="17" height_max="17">
+          <children>
+            <container x="0" y="0" width="2" height="17" params="16" style="3" name="left_padding" width_min="2" width_max="2" height_min="17" height_max="17">
+              <children>
+                <background x="0" y="2" width="1" height="13" params="16" style="3" name="border" color="0xffff000000" background="true" width_min="1" width_max="1"/>
+                <background x="1" y="1" width="1" height="15" params="16" style="3" name="border" color="0xffff000000" background="true" width_min="1" width_max="1" height_min="15" height_max="15">
+                  <children>
+                    <background x="0" y="1" width="1" height="13" params="16" style="3" name="margin_item_color_left" color="0xffffffeda5" background="true" width_min="1" width_max="1" height_min="13" height_max="13"/>
+                  </children>
+                </background>
+              </children>
+            </container>
+            <background x="2" y="0" width="13" height="17" params="149520" style="3" name="source_options_border" color="0xffff000000" background="true" height_min="17" height_max="17">
+              <children>
+                <container x="0" y="1" width="13" height="15" params="147600" style="3" name="source_options_cont" color="0xffffffeda5" background="true" height_min="15" height_max="15">
+                  <children>
+                    <itemlist_horizontal x="0" y="0" width="13" height="15" params="147600" style="3" name="source_options_list" height_min="15" height_max="15">
+                      <children>
+                        <region x="0" y="0" width="13" height="15" params="147473" style="0" name="source_btn" color="0xffffffffff" background="true" height_min="15" height_max="15">
+                          <children>
+                            <itemlist_horizontal x="0" y="0" width="13" height="15" params="147600" style="3" name="source_elements" color="0xffffffeda5" background="true" height_min="15" height_max="15">
+                              <children>
+                                <container x="0" y="0" width="2" height="15" params="16" style="3" name="left_pad" width_min="2" width_max="2" height_min="15" height_max="15"/>
+                                <bitmap x="2" y="2" width="9" height="11" params="3932176" style="3" name="type_icon_bitmap" color="0x00" height_min="11" height_max="11">
+                                  <variables>
+                                    <var key="pivot_point" value="center" type="String"/>
+                                    <var key="stretched_x" value="false" type="Boolean"/>
+                                    <var key="stretched_y" value="false" type="Boolean"/>
+                                    <var key="fit_size_to_contents" value="true" type="Boolean"/>
+                                  </variables>
+                                </bitmap>
+                                <container x="11" y="0" width="2" height="15" params="16" style="3" name="right_pad" width_min="2" width_max="2" height_min="15" height_max="15"/>
+                              </children>
+                              <variables>
+                                <var key="resize_on_item_update" value="true" type="Boolean"/>
+                              </variables>
+                            </itemlist_horizontal>
+                          </children>
+                        </region>
+                      </children>
+                      <variables>
+                        <var key="spacing" value="1" type="int"/>
+                      </variables>
+                    </itemlist_horizontal>
+                  </children>
+                </container>
+              </children>
+            </background>
+            <container x="15" y="0" width="2" height="17" params="16" style="3" name="right_padding" width_min="2" width_max="2" height_min="17" height_max="17">
+              <children>
+                <background x="0" y="1" width="1" height="15" params="16" style="3" name="border" color="0xffff000000" background="true" width_min="1" width_max="1" height_min="15" height_max="15">
+                  <children>
+                    <background x="0" y="1" width="1" height="13" params="16" style="3" name="margin_item_color_right" color="0xffffffeda5" background="true" width_min="1" width_max="1" height_min="13" height_max="13"/>
+                  </children>
+                </background>
+                <background x="1" y="2" width="1" height="13" params="16" style="3" name="border" color="0xffff000000" background="true" width_min="1" width_max="1"/>
+              </children>
+            </container>
+          </children>
+        </itemlist_horizontal>
+        <container_button x="0" y="0" width="20" height="20" params="17" style="2" name="iconbutton_left" visible="false">
+          <children>
+            <icon x="5" y="5" width="12" height="12" params="16" style="2" color="0x0777777"/>
+          </children>
+        </container_button>
+        <container_button x="0" y="0" width="20" height="20" params="17" style="2" name="iconbutton_right" visible="false">
+          <children>
+            <icon x="5" y="5" width="12" height="12" params="16" style="3" color="0x0777777"/>
+          </children>
+        </container_button>
+        <container_button x="0" y="0" width="20" height="20" params="17" style="2" name="iconbutton_up" visible="false">
+          <children>
+            <icon x="6" y="5" width="12" height="12" params="16" style="1" color="0x0777777"/>
+          </children>
+        </container_button>
+        <container_button x="0" y="0" width="20" height="20" params="17" style="2" name="iconbutton_down" visible="false">
+          <children>
+            <icon x="6" y="6" width="12" height="12" params="16" style="0" color="0x0777777"/>
+          </children>
+        </container_button>
+        <container x="0" y="0" width="148" height="17" params="16" style="3" name="slider" color="0x0222222" visible="false">
+          <children>
+            <static_bitmap x="0" y="0" width="148" height="17" params="144" style="3" name="slider_base" color="0x00">
+              <variables>
+                <var key="asset_uri" value="wired_styles_volter_slider_bg" type="String"/>
+                <var key="stretched_y" value="false" type="Boolean"/>
+              </variables>
+            </static_bitmap>
+            <container x="0" y="1" width="148" height="15" params="144" style="3" name="slider_movement_area">
+              <children>
+                <static_bitmap x="0" y="0" width="12" height="15" params="33073" style="3" name="slider_button">
+                  <variables>
+                    <var key="asset_uri" value="wired_styles_volter_slider_obj" type="String"/>
+                    <var key="stretched_x" value="false" type="Boolean"/>
+                    <var key="stretched_y" value="false" type="Boolean"/>
+                    <var key="fit_size_to_contents" value="true" type="Boolean"/>
+                  </variables>
+                </static_bitmap>
+              </children>
+            </container>
+          </children>
+        </container>
+        <button x="0" y="0" width="41" height="22" params="131089" style="2" name="button" caption="text" visible="false">
+          <variables>
+            <var key="text_style" value="button_regular" type="String"/>
+          </variables>
+        </button>
+        <itemlist_horizontal x="0" y="-2" width="17" height="17" params="147456" style="3" name="mini_button_view" visible="false" height_min="17" height_max="17">
+          <children>
+            <container x="0" y="0" width="2" height="17" params="16" style="3" name="left_padding" width_min="2" width_max="2" height_min="17" height_max="17">
+              <children>
+                <background x="0" y="2" width="1" height="13" params="16" style="3" name="border" color="0xffff000000" background="true" width_min="1" width_max="1"/>
+                <background x="1" y="1" width="1" height="15" params="16" style="3" name="border" color="0xffff000000" background="true" width_min="1" width_max="1" height_min="15" height_max="15">
+                  <children>
+                    <background x="0" y="1" width="1" height="13" params="16" style="3" name="margin_item_color_left" color="0xffffffeda5" background="true" width_min="1" width_max="1" height_min="13" height_max="13"/>
+                  </children>
+                </background>
+              </children>
+            </container>
+            <background x="2" y="0" width="13" height="17" params="149520" style="3" name="mini_button_bg" color="0xffff000000" background="true" height_min="17" height_max="17">
+              <children>
+                <region x="0" y="1" width="13" height="15" params="145" style="3" name="mini_button_click" color="0xffffffeda5" background="true" treshold="0" height_min="15" height_max="15">
+                  <children>
+                    <static_bitmap x="0" y="0" width="13" height="15" params="16" style="3" name="mini_button_icon">
+                      <variables>
+                        <var key="pivot_point" value="center" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                  </children>
+                </region>
+              </children>
+            </background>
+            <container x="15" y="0" width="2" height="17" params="16" style="3" name="right_padding" width_min="2" width_max="2" height_min="17" height_max="17">
+              <children>
+                <background x="0" y="1" width="1" height="15" params="16" style="3" name="border" color="0xffff000000" background="true" width_min="1" width_max="1" height_min="15" height_max="15">
+                  <children>
+                    <background x="0" y="1" width="1" height="13" params="16" style="3" name="margin_item_color_right" color="0xffffffeda5" background="true" width_min="1" width_max="1" height_min="13" height_max="13"/>
+                  </children>
+                </background>
+                <background x="1" y="2" width="1" height="13" params="16" style="3" name="border" color="0xffff000000" background="true" width_min="1" width_max="1"/>
+              </children>
+            </container>
+          </children>
+        </itemlist_horizontal>
+        <border x="0" y="0" width="145" height="27" params="1" style="3" name="quick_menu" color="0x00" visible="false">
+          <children>
+            <border x="1" y="1" width="143" height="25" params="2192" style="11">
+              <children>
+                <border x="1" y="1" width="141" height="23" params="2192" style="11">
+                  <children>
+                    <itemlist_vertical x="0" y="0" width="141" height="23" params="144" style="3" name="menu_list">
+                      <children>
+                        <region x="0" y="0" width="141" height="20" params="145" style="3" name="menu_item_template" color="0xffdddddd" treshold="0">
+                          <children>
+                            <checkbox x="6" y="3" width="16" height="16" params="17" style="2" name="checkbox"/>
+                            <text x="28" y="3" width="99" height="13" params="16" style="3" name="text" caption="Copy%20configuration">
+                              <variables>
+                                <var key="antialias_type" value="advanced" type="String"/>
+                                <var key="auto_size" value="left" type="String"/>
+                                <var key="text_color" value="0x222222" type="hex"/>
+                                <var key="text_style" value="regular" type="String"/>
+                                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                <var key="sharpness" value="0" type="Number"/>
+                                <var key="thickness" value="0" type="Number"/>
+                                <var key="kerning" value="false" type="Boolean"/>
+                                <var key="spacing" value="0" type="Number"/>
+                                <var key="leading" value="0" type="Number"/>
+                              </variables>
+                            </text>
+                          </children>
+                          <variables>
+                            <var key="interactive_cursor_disabled" value="true" type="Boolean"/>
+                          </variables>
+                        </region>
+                        <container x="0" y="20" width="141" height="3" params="144" style="3" name="spacer_template">
+                          <children>
+                            <background x="6" y="1" width="129" height="1" params="144" style="3" color="0xffff999999" background="true"/>
+                          </children>
+                        </container>
+                      </children>
+                      <variables>
+                        <var key="resize_on_item_update" value="true" type="Boolean"/>
+                      </variables>
+                    </itemlist_vertical>
+                  </children>
+                </border>
+              </children>
+            </border>
+          </children>
+        </border>
+      </children>
+    </container>
+  </window>
+</layout>

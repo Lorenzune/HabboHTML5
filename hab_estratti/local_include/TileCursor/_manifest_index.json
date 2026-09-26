@@ -1,0 +1,23 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "TileCursor",
+  "entries": [
+    {
+      "name": "TileCursor.json",
+      "mimeType": "application/json",
+      "offset": 0,
+      "storedLength": 534,
+      "originalLength": 2841,
+      "compression": "deflate"
+    },
+    {
+      "name": "TileCursor.png",
+      "mimeType": "image/png",
+      "offset": 534,
+      "storedLength": 1612,
+      "originalLength": 1612,
+      "compression": "none"
+    }
+  ]
+}

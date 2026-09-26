@@ -1,0 +1,1576 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboInventoryCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n\n\t<component class=\"com.sulake.bootstrap.HabboInventoryBootstrap\" version=\"0.0\">\n\t\t<interface iid=\"com.sulake.iid.IIDHabboInventory\" />\n\t\t<assets>\n\n\t\t\t<asset mimeType=\"text/xml\" name=\"inventory_xml\" />\n\t\t\t<!--asset\n\t\t\tmimeType=\"text/xml\" name=\"inventory_furni_xml\" /-->\n\t\t\t<asset mimeType=\"text/xml\" name=\"inventory_effects_xml\" />\n\t\t\t<asset mimeType=\"text/xml\" name=\"inventory_trading_xml\" />\n            <asset mimeType=\"text/xml\" name=\"inventory_trading_minimized_xml\" />\n            <asset mimeType=\"text/xml\" name=\"inventory_trading_wired_xml\" />\n            <asset mimeType=\"text/xml\" name=\"inventory_trading_name_scam_warning_xml\" />\n            <asset mimeType=\"text/xml\" name=\"inventory_thumb_xml\" />\n            <asset mimeType=\"text/xml\" name=\"inventory_thumb_nft_xml\" />\n\t\t\t<asset mimeType=\"text/xml\" name=\"inventory_thumb_credits_xml\" />\n\t\t\t<asset mimeType=\"text/xml\" name=\"buy_marketplace_tokens_xml\" />\n\t\t\t<asset mimeType=\"text/xml\" name=\"make_marketplace_offer_xml\" />\n\t\t\t<asset mimeType=\"text/xml\" name=\"marketplace_no_credits_xml\" />\n\t\t\t<asset mimeType=\"text/xml\" name=\"unseen_item_symbol_xml\" />\n\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_1_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_2_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_3_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_4_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_5_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_6_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_7_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_8_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_9_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_10_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_11_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_12_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_13_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_14_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_15_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_16_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_17_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_18_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_19_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_20_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_21_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_22_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_23_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_24_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_25_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_26_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_27_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_31_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_32_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_44_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_47_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_48_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_53_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_54_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_59_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_60_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_61_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_62_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_63_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_64_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_65_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_66_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_67_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_69_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_70_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_71_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_72_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_73_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_74_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_75_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_76_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_78_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_79_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_80_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_81_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_82_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_83_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_84_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_85_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_86_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_87_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_88_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_89_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_90_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_91_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_92_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_93_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_94_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_99_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_100_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_101_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_102_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_104_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_105_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_106_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_107_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_108_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_109_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_110_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_111_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_112_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_113_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_114_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_115_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_116_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_117_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_118_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_119_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_120_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_121_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_122_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_123_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_124_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_125_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_126_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_127_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_128_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_129_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_130_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_131_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_132_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_133_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_134_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_135_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_136_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_137_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_138_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_139_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_140_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_141_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_142_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_143_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_144_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_145_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_146_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_147_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_148_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_149_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_150_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_151_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_152_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_153_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_154_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_155_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_156_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_157_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_158_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_159_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_160_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_161_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_162_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_164_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_165_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_166_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_167_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_168_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_169_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_170_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_171_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_172_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_173_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_174_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_175_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_176_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_177_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_178_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_179_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_180_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_181_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_182_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_183_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_186_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_191_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_192_png\" />\n\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_201_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_202_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_203_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_204_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_205_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_206_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_210_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_211_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_212_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_214_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_220_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_222_png\" />\n\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_229_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_230_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_231_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"fx_icon_232_png\" />\n\n            <asset mimeType=\"image/png\" name=\"fx_icon_236_png\" />\n\n            <asset mimeType=\"image/png\" name=\"fx_icon_238_png\" />\n            <asset mimeType=\"image/png\" name=\"fx_icon_239_png\" />\n            <asset mimeType=\"image/png\" name=\"fx_icon_240_png\" />\n            <asset mimeType=\"image/png\" name=\"fx_icon_241_png\" />\n\n            <asset mimeType=\"image/png\" name=\"fx_icon_242_png\" />\n            <asset mimeType=\"image/png\" name=\"fx_icon_243_png\" />\n            <asset mimeType=\"image/png\" name=\"fx_icon_244_png\" />\n            <asset mimeType=\"image/png\" name=\"fx_icon_245_png\" />\n\n            <asset mimeType=\"image/png\" name=\"fx_icon_247_png\" />\n\n\t\t\t<asset mimeType=\"image/png\" name=\"popup_arrow_left_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"popup_arrow_right_png\" />\n\t\t\t<asset mimeType=\"text/xml\" name=\"item_popup_xml\" />\n\n\t\t</assets>\n\t</component>\n\n</manifest>\n",
+  "entries": [
+    {
+      "name": "inventory_xml",
+      "mimeType": "text/xml",
+      "offset": 0,
+      "storedLength": 4897,
+      "originalLength": 62926,
+      "compression": "deflate"
+    },
+    {
+      "name": "inventory_effects_xml",
+      "mimeType": "text/xml",
+      "offset": 4897,
+      "storedLength": 774,
+      "originalLength": 3442,
+      "compression": "deflate"
+    },
+    {
+      "name": "inventory_trading_xml",
+      "mimeType": "text/xml",
+      "offset": 5671,
+      "storedLength": 2146,
+      "originalLength": 20511,
+      "compression": "deflate"
+    },
+    {
+      "name": "inventory_trading_minimized_xml",
+      "mimeType": "text/xml",
+      "offset": 7817,
+      "storedLength": 641,
+      "originalLength": 1826,
+      "compression": "deflate"
+    },
+    {
+      "name": "inventory_trading_wired_xml",
+      "mimeType": "text/xml",
+      "offset": 8458,
+      "storedLength": 3328,
+      "originalLength": 34257,
+      "compression": "deflate"
+    },
+    {
+      "name": "inventory_trading_name_scam_warning_xml",
+      "mimeType": "text/xml",
+      "offset": 11786,
+      "storedLength": 1237,
+      "originalLength": 7799,
+      "compression": "deflate"
+    },
+    {
+      "name": "inventory_thumb_xml",
+      "mimeType": "text/xml",
+      "offset": 13023,
+      "storedLength": 976,
+      "originalLength": 5074,
+      "compression": "deflate"
+    },
+    {
+      "name": "inventory_thumb_nft_xml",
+      "mimeType": "text/xml",
+      "offset": 13999,
+      "storedLength": 725,
+      "originalLength": 2421,
+      "compression": "deflate"
+    },
+    {
+      "name": "inventory_thumb_credits_xml",
+      "mimeType": "text/xml",
+      "offset": 14724,
+      "storedLength": 946,
+      "originalLength": 4257,
+      "compression": "deflate"
+    },
+    {
+      "name": "buy_marketplace_tokens_xml",
+      "mimeType": "text/xml",
+      "offset": 15670,
+      "storedLength": 646,
+      "originalLength": 1772,
+      "compression": "deflate"
+    },
+    {
+      "name": "make_marketplace_offer_xml",
+      "mimeType": "text/xml",
+      "offset": 16316,
+      "storedLength": 1497,
+      "originalLength": 10432,
+      "compression": "deflate"
+    },
+    {
+      "name": "marketplace_no_credits_xml",
+      "mimeType": "text/xml",
+      "offset": 17813,
+      "storedLength": 646,
+      "originalLength": 1830,
+      "compression": "deflate"
+    },
+    {
+      "name": "unseen_item_symbol_xml",
+      "mimeType": "text/xml",
+      "offset": 18459,
+      "storedLength": 440,
+      "originalLength": 1017,
+      "compression": "deflate"
+    },
+    {
+      "name": "fx_icon_1_png",
+      "mimeType": "image/png",
+      "offset": 18899,
+      "storedLength": 210,
+      "originalLength": 210,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_2_png",
+      "mimeType": "image/png",
+      "offset": 19109,
+      "storedLength": 318,
+      "originalLength": 318,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_3_png",
+      "mimeType": "image/png",
+      "offset": 19427,
+      "storedLength": 466,
+      "originalLength": 466,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_4_png",
+      "mimeType": "image/png",
+      "offset": 19893,
+      "storedLength": 206,
+      "originalLength": 206,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_5_png",
+      "mimeType": "image/png",
+      "offset": 20099,
+      "storedLength": 204,
+      "originalLength": 204,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_6_png",
+      "mimeType": "image/png",
+      "offset": 20303,
+      "storedLength": 260,
+      "originalLength": 260,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_7_png",
+      "mimeType": "image/png",
+      "offset": 20563,
+      "storedLength": 210,
+      "originalLength": 210,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_8_png",
+      "mimeType": "image/png",
+      "offset": 20773,
+      "storedLength": 328,
+      "originalLength": 328,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_9_png",
+      "mimeType": "image/png",
+      "offset": 21101,
+      "storedLength": 254,
+      "originalLength": 254,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_10_png",
+      "mimeType": "image/png",
+      "offset": 21355,
+      "storedLength": 188,
+      "originalLength": 188,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_11_png",
+      "mimeType": "image/png",
+      "offset": 21543,
+      "storedLength": 168,
+      "originalLength": 168,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_12_png",
+      "mimeType": "image/png",
+      "offset": 21711,
+      "storedLength": 168,
+      "originalLength": 168,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_13_png",
+      "mimeType": "image/png",
+      "offset": 21879,
+      "storedLength": 174,
+      "originalLength": 174,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_14_png",
+      "mimeType": "image/png",
+      "offset": 22053,
+      "storedLength": 320,
+      "originalLength": 320,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_15_png",
+      "mimeType": "image/png",
+      "offset": 22373,
+      "storedLength": 318,
+      "originalLength": 318,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_16_png",
+      "mimeType": "image/png",
+      "offset": 22691,
+      "storedLength": 243,
+      "originalLength": 243,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_17_png",
+      "mimeType": "image/png",
+      "offset": 22934,
+      "storedLength": 466,
+      "originalLength": 466,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_18_png",
+      "mimeType": "image/png",
+      "offset": 23400,
+      "storedLength": 457,
+      "originalLength": 457,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_19_png",
+      "mimeType": "image/png",
+      "offset": 23857,
+      "storedLength": 229,
+      "originalLength": 229,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_20_png",
+      "mimeType": "image/png",
+      "offset": 24086,
+      "storedLength": 232,
+      "originalLength": 232,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_21_png",
+      "mimeType": "image/png",
+      "offset": 24318,
+      "storedLength": 215,
+      "originalLength": 215,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_22_png",
+      "mimeType": "image/png",
+      "offset": 24533,
+      "storedLength": 219,
+      "originalLength": 219,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_23_png",
+      "mimeType": "image/png",
+      "offset": 24752,
+      "storedLength": 209,
+      "originalLength": 209,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_24_png",
+      "mimeType": "image/png",
+      "offset": 24961,
+      "storedLength": 207,
+      "originalLength": 207,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_25_png",
+      "mimeType": "image/png",
+      "offset": 25168,
+      "storedLength": 243,
+      "originalLength": 243,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_26_png",
+      "mimeType": "image/png",
+      "offset": 25411,
+      "storedLength": 185,
+      "originalLength": 185,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_27_png",
+      "mimeType": "image/png",
+      "offset": 25596,
+      "storedLength": 257,
+      "originalLength": 257,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_31_png",
+      "mimeType": "image/png",
+      "offset": 25853,
+      "storedLength": 425,
+      "originalLength": 425,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_32_png",
+      "mimeType": "image/png",
+      "offset": 26278,
+      "storedLength": 360,
+      "originalLength": 360,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_44_png",
+      "mimeType": "image/png",
+      "offset": 26638,
+      "storedLength": 878,
+      "originalLength": 878,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_47_png",
+      "mimeType": "image/png",
+      "offset": 27516,
+      "storedLength": 444,
+      "originalLength": 444,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_48_png",
+      "mimeType": "image/png",
+      "offset": 27960,
+      "storedLength": 649,
+      "originalLength": 649,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_53_png",
+      "mimeType": "image/png",
+      "offset": 28609,
+      "storedLength": 248,
+      "originalLength": 248,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_54_png",
+      "mimeType": "image/png",
+      "offset": 28857,
+      "storedLength": 278,
+      "originalLength": 278,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_59_png",
+      "mimeType": "image/png",
+      "offset": 29135,
+      "storedLength": 2436,
+      "originalLength": 2436,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_60_png",
+      "mimeType": "image/png",
+      "offset": 31571,
+      "storedLength": 487,
+      "originalLength": 487,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_61_png",
+      "mimeType": "image/png",
+      "offset": 32058,
+      "storedLength": 400,
+      "originalLength": 400,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_62_png",
+      "mimeType": "image/png",
+      "offset": 32458,
+      "storedLength": 281,
+      "originalLength": 281,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_63_png",
+      "mimeType": "image/png",
+      "offset": 32739,
+      "storedLength": 281,
+      "originalLength": 281,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_64_png",
+      "mimeType": "image/png",
+      "offset": 33020,
+      "storedLength": 201,
+      "originalLength": 201,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_65_png",
+      "mimeType": "image/png",
+      "offset": 33221,
+      "storedLength": 243,
+      "originalLength": 243,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_66_png",
+      "mimeType": "image/png",
+      "offset": 33464,
+      "storedLength": 1446,
+      "originalLength": 1446,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_67_png",
+      "mimeType": "image/png",
+      "offset": 34910,
+      "storedLength": 503,
+      "originalLength": 503,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_69_png",
+      "mimeType": "image/png",
+      "offset": 35413,
+      "storedLength": 675,
+      "originalLength": 675,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_70_png",
+      "mimeType": "image/png",
+      "offset": 36088,
+      "storedLength": 332,
+      "originalLength": 332,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_71_png",
+      "mimeType": "image/png",
+      "offset": 36420,
+      "storedLength": 314,
+      "originalLength": 314,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_72_png",
+      "mimeType": "image/png",
+      "offset": 36734,
+      "storedLength": 314,
+      "originalLength": 314,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_73_png",
+      "mimeType": "image/png",
+      "offset": 37048,
+      "storedLength": 581,
+      "originalLength": 581,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_74_png",
+      "mimeType": "image/png",
+      "offset": 37629,
+      "storedLength": 365,
+      "originalLength": 365,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_75_png",
+      "mimeType": "image/png",
+      "offset": 37994,
+      "storedLength": 365,
+      "originalLength": 365,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_76_png",
+      "mimeType": "image/png",
+      "offset": 38359,
+      "storedLength": 365,
+      "originalLength": 365,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_78_png",
+      "mimeType": "image/png",
+      "offset": 38724,
+      "storedLength": 367,
+      "originalLength": 367,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_79_png",
+      "mimeType": "image/png",
+      "offset": 39091,
+      "storedLength": 404,
+      "originalLength": 404,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_80_png",
+      "mimeType": "image/png",
+      "offset": 39495,
+      "storedLength": 259,
+      "originalLength": 259,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_81_png",
+      "mimeType": "image/png",
+      "offset": 39754,
+      "storedLength": 430,
+      "originalLength": 430,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_82_png",
+      "mimeType": "image/png",
+      "offset": 40184,
+      "storedLength": 320,
+      "originalLength": 320,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_83_png",
+      "mimeType": "image/png",
+      "offset": 40504,
+      "storedLength": 342,
+      "originalLength": 342,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_84_png",
+      "mimeType": "image/png",
+      "offset": 40846,
+      "storedLength": 412,
+      "originalLength": 412,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_85_png",
+      "mimeType": "image/png",
+      "offset": 41258,
+      "storedLength": 412,
+      "originalLength": 412,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_86_png",
+      "mimeType": "image/png",
+      "offset": 41670,
+      "storedLength": 467,
+      "originalLength": 467,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_87_png",
+      "mimeType": "image/png",
+      "offset": 42137,
+      "storedLength": 486,
+      "originalLength": 486,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_88_png",
+      "mimeType": "image/png",
+      "offset": 42623,
+      "storedLength": 435,
+      "originalLength": 435,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_89_png",
+      "mimeType": "image/png",
+      "offset": 43058,
+      "storedLength": 313,
+      "originalLength": 313,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_90_png",
+      "mimeType": "image/png",
+      "offset": 43371,
+      "storedLength": 338,
+      "originalLength": 338,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_91_png",
+      "mimeType": "image/png",
+      "offset": 43709,
+      "storedLength": 260,
+      "originalLength": 260,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_92_png",
+      "mimeType": "image/png",
+      "offset": 43969,
+      "storedLength": 331,
+      "originalLength": 331,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_93_png",
+      "mimeType": "image/png",
+      "offset": 44300,
+      "storedLength": 238,
+      "originalLength": 238,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_94_png",
+      "mimeType": "image/png",
+      "offset": 44538,
+      "storedLength": 209,
+      "originalLength": 209,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_99_png",
+      "mimeType": "image/png",
+      "offset": 44747,
+      "storedLength": 313,
+      "originalLength": 313,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_100_png",
+      "mimeType": "image/png",
+      "offset": 45060,
+      "storedLength": 283,
+      "originalLength": 283,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_101_png",
+      "mimeType": "image/png",
+      "offset": 45343,
+      "storedLength": 648,
+      "originalLength": 648,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_102_png",
+      "mimeType": "image/png",
+      "offset": 45991,
+      "storedLength": 499,
+      "originalLength": 499,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_104_png",
+      "mimeType": "image/png",
+      "offset": 46490,
+      "storedLength": 418,
+      "originalLength": 418,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_105_png",
+      "mimeType": "image/png",
+      "offset": 46908,
+      "storedLength": 397,
+      "originalLength": 397,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_106_png",
+      "mimeType": "image/png",
+      "offset": 47305,
+      "storedLength": 206,
+      "originalLength": 206,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_107_png",
+      "mimeType": "image/png",
+      "offset": 47511,
+      "storedLength": 440,
+      "originalLength": 440,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_108_png",
+      "mimeType": "image/png",
+      "offset": 47951,
+      "storedLength": 398,
+      "originalLength": 398,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_109_png",
+      "mimeType": "image/png",
+      "offset": 48349,
+      "storedLength": 467,
+      "originalLength": 467,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_110_png",
+      "mimeType": "image/png",
+      "offset": 48816,
+      "storedLength": 449,
+      "originalLength": 449,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_111_png",
+      "mimeType": "image/png",
+      "offset": 49265,
+      "storedLength": 463,
+      "originalLength": 463,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_112_png",
+      "mimeType": "image/png",
+      "offset": 49728,
+      "storedLength": 410,
+      "originalLength": 410,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_113_png",
+      "mimeType": "image/png",
+      "offset": 50138,
+      "storedLength": 278,
+      "originalLength": 278,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_114_png",
+      "mimeType": "image/png",
+      "offset": 50416,
+      "storedLength": 319,
+      "originalLength": 319,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_115_png",
+      "mimeType": "image/png",
+      "offset": 50735,
+      "storedLength": 295,
+      "originalLength": 295,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_116_png",
+      "mimeType": "image/png",
+      "offset": 51030,
+      "storedLength": 462,
+      "originalLength": 462,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_117_png",
+      "mimeType": "image/png",
+      "offset": 51492,
+      "storedLength": 290,
+      "originalLength": 290,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_118_png",
+      "mimeType": "image/png",
+      "offset": 51782,
+      "storedLength": 585,
+      "originalLength": 585,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_119_png",
+      "mimeType": "image/png",
+      "offset": 52367,
+      "storedLength": 453,
+      "originalLength": 453,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_120_png",
+      "mimeType": "image/png",
+      "offset": 52820,
+      "storedLength": 329,
+      "originalLength": 329,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_121_png",
+      "mimeType": "image/png",
+      "offset": 53149,
+      "storedLength": 430,
+      "originalLength": 430,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_122_png",
+      "mimeType": "image/png",
+      "offset": 53579,
+      "storedLength": 320,
+      "originalLength": 320,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_123_png",
+      "mimeType": "image/png",
+      "offset": 53899,
+      "storedLength": 339,
+      "originalLength": 339,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_124_png",
+      "mimeType": "image/png",
+      "offset": 54238,
+      "storedLength": 421,
+      "originalLength": 421,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_125_png",
+      "mimeType": "image/png",
+      "offset": 54659,
+      "storedLength": 730,
+      "originalLength": 730,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_126_png",
+      "mimeType": "image/png",
+      "offset": 55389,
+      "storedLength": 467,
+      "originalLength": 467,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_127_png",
+      "mimeType": "image/png",
+      "offset": 55856,
+      "storedLength": 528,
+      "originalLength": 528,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_128_png",
+      "mimeType": "image/png",
+      "offset": 56384,
+      "storedLength": 435,
+      "originalLength": 435,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_129_png",
+      "mimeType": "image/png",
+      "offset": 56819,
+      "storedLength": 313,
+      "originalLength": 313,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_130_png",
+      "mimeType": "image/png",
+      "offset": 57132,
+      "storedLength": 338,
+      "originalLength": 338,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_131_png",
+      "mimeType": "image/png",
+      "offset": 57470,
+      "storedLength": 260,
+      "originalLength": 260,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_132_png",
+      "mimeType": "image/png",
+      "offset": 57730,
+      "storedLength": 333,
+      "originalLength": 333,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_133_png",
+      "mimeType": "image/png",
+      "offset": 58063,
+      "storedLength": 238,
+      "originalLength": 238,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_134_png",
+      "mimeType": "image/png",
+      "offset": 58301,
+      "storedLength": 323,
+      "originalLength": 323,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_135_png",
+      "mimeType": "image/png",
+      "offset": 58624,
+      "storedLength": 536,
+      "originalLength": 536,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_136_png",
+      "mimeType": "image/png",
+      "offset": 59160,
+      "storedLength": 342,
+      "originalLength": 342,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_137_png",
+      "mimeType": "image/png",
+      "offset": 59502,
+      "storedLength": 195,
+      "originalLength": 195,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_138_png",
+      "mimeType": "image/png",
+      "offset": 59697,
+      "storedLength": 228,
+      "originalLength": 228,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_139_png",
+      "mimeType": "image/png",
+      "offset": 59925,
+      "storedLength": 202,
+      "originalLength": 202,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_140_png",
+      "mimeType": "image/png",
+      "offset": 60127,
+      "storedLength": 219,
+      "originalLength": 219,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_141_png",
+      "mimeType": "image/png",
+      "offset": 60346,
+      "storedLength": 500,
+      "originalLength": 500,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_142_png",
+      "mimeType": "image/png",
+      "offset": 60846,
+      "storedLength": 433,
+      "originalLength": 433,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_143_png",
+      "mimeType": "image/png",
+      "offset": 61279,
+      "storedLength": 1155,
+      "originalLength": 1155,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_144_png",
+      "mimeType": "image/png",
+      "offset": 62434,
+      "storedLength": 1088,
+      "originalLength": 1088,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_145_png",
+      "mimeType": "image/png",
+      "offset": 63522,
+      "storedLength": 1149,
+      "originalLength": 1149,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_146_png",
+      "mimeType": "image/png",
+      "offset": 64671,
+      "storedLength": 1089,
+      "originalLength": 1089,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_147_png",
+      "mimeType": "image/png",
+      "offset": 65760,
+      "storedLength": 466,
+      "originalLength": 466,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_148_png",
+      "mimeType": "image/png",
+      "offset": 66226,
+      "storedLength": 482,
+      "originalLength": 482,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_149_png",
+      "mimeType": "image/png",
+      "offset": 66708,
+      "storedLength": 486,
+      "originalLength": 486,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_150_png",
+      "mimeType": "image/png",
+      "offset": 67194,
+      "storedLength": 486,
+      "originalLength": 486,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_151_png",
+      "mimeType": "image/png",
+      "offset": 67680,
+      "storedLength": 420,
+      "originalLength": 420,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_152_png",
+      "mimeType": "image/png",
+      "offset": 68100,
+      "storedLength": 420,
+      "originalLength": 420,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_153_png",
+      "mimeType": "image/png",
+      "offset": 68520,
+      "storedLength": 500,
+      "originalLength": 500,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_154_png",
+      "mimeType": "image/png",
+      "offset": 69020,
+      "storedLength": 820,
+      "originalLength": 820,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_155_png",
+      "mimeType": "image/png",
+      "offset": 69840,
+      "storedLength": 407,
+      "originalLength": 407,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_156_png",
+      "mimeType": "image/png",
+      "offset": 70247,
+      "storedLength": 458,
+      "originalLength": 458,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_157_png",
+      "mimeType": "image/png",
+      "offset": 70705,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_158_png",
+      "mimeType": "image/png",
+      "offset": 70985,
+      "storedLength": 254,
+      "originalLength": 254,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_159_png",
+      "mimeType": "image/png",
+      "offset": 71239,
+      "storedLength": 577,
+      "originalLength": 577,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_160_png",
+      "mimeType": "image/png",
+      "offset": 71816,
+      "storedLength": 433,
+      "originalLength": 433,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_161_png",
+      "mimeType": "image/png",
+      "offset": 72249,
+      "storedLength": 422,
+      "originalLength": 422,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_162_png",
+      "mimeType": "image/png",
+      "offset": 72671,
+      "storedLength": 250,
+      "originalLength": 250,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_164_png",
+      "mimeType": "image/png",
+      "offset": 72921,
+      "storedLength": 234,
+      "originalLength": 234,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_165_png",
+      "mimeType": "image/png",
+      "offset": 73155,
+      "storedLength": 208,
+      "originalLength": 208,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_166_png",
+      "mimeType": "image/png",
+      "offset": 73363,
+      "storedLength": 359,
+      "originalLength": 359,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_167_png",
+      "mimeType": "image/png",
+      "offset": 73722,
+      "storedLength": 357,
+      "originalLength": 357,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_168_png",
+      "mimeType": "image/png",
+      "offset": 74079,
+      "storedLength": 1944,
+      "originalLength": 1944,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_169_png",
+      "mimeType": "image/png",
+      "offset": 76023,
+      "storedLength": 525,
+      "originalLength": 525,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_170_png",
+      "mimeType": "image/png",
+      "offset": 76548,
+      "storedLength": 351,
+      "originalLength": 351,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_171_png",
+      "mimeType": "image/png",
+      "offset": 76899,
+      "storedLength": 450,
+      "originalLength": 450,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_172_png",
+      "mimeType": "image/png",
+      "offset": 77349,
+      "storedLength": 967,
+      "originalLength": 967,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_173_png",
+      "mimeType": "image/png",
+      "offset": 78316,
+      "storedLength": 1025,
+      "originalLength": 1025,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_174_png",
+      "mimeType": "image/png",
+      "offset": 79341,
+      "storedLength": 3419,
+      "originalLength": 3419,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_175_png",
+      "mimeType": "image/png",
+      "offset": 82760,
+      "storedLength": 1959,
+      "originalLength": 2246,
+      "compression": "deflate"
+    },
+    {
+      "name": "fx_icon_176_png",
+      "mimeType": "image/png",
+      "offset": 84719,
+      "storedLength": 576,
+      "originalLength": 576,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_177_png",
+      "mimeType": "image/png",
+      "offset": 85295,
+      "storedLength": 393,
+      "originalLength": 393,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_178_png",
+      "mimeType": "image/png",
+      "offset": 85688,
+      "storedLength": 686,
+      "originalLength": 686,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_179_png",
+      "mimeType": "image/png",
+      "offset": 86374,
+      "storedLength": 1188,
+      "originalLength": 1188,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_180_png",
+      "mimeType": "image/png",
+      "offset": 87562,
+      "storedLength": 3893,
+      "originalLength": 3893,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_181_png",
+      "mimeType": "image/png",
+      "offset": 91455,
+      "storedLength": 3975,
+      "originalLength": 3975,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_182_png",
+      "mimeType": "image/png",
+      "offset": 95430,
+      "storedLength": 26260,
+      "originalLength": 124925,
+      "compression": "deflate"
+    },
+    {
+      "name": "fx_icon_183_png",
+      "mimeType": "image/png",
+      "offset": 121690,
+      "storedLength": 744,
+      "originalLength": 744,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_186_png",
+      "mimeType": "image/png",
+      "offset": 122434,
+      "storedLength": 4778,
+      "originalLength": 20159,
+      "compression": "deflate"
+    },
+    {
+      "name": "fx_icon_191_png",
+      "mimeType": "image/png",
+      "offset": 127212,
+      "storedLength": 575,
+      "originalLength": 575,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_192_png",
+      "mimeType": "image/png",
+      "offset": 127787,
+      "storedLength": 4737,
+      "originalLength": 19958,
+      "compression": "deflate"
+    },
+    {
+      "name": "fx_icon_201_png",
+      "mimeType": "image/png",
+      "offset": 132524,
+      "storedLength": 523,
+      "originalLength": 523,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_202_png",
+      "mimeType": "image/png",
+      "offset": 133047,
+      "storedLength": 502,
+      "originalLength": 502,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_203_png",
+      "mimeType": "image/png",
+      "offset": 133549,
+      "storedLength": 502,
+      "originalLength": 502,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_204_png",
+      "mimeType": "image/png",
+      "offset": 134051,
+      "storedLength": 693,
+      "originalLength": 693,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_205_png",
+      "mimeType": "image/png",
+      "offset": 134744,
+      "storedLength": 624,
+      "originalLength": 624,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_206_png",
+      "mimeType": "image/png",
+      "offset": 135368,
+      "storedLength": 588,
+      "originalLength": 588,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_210_png",
+      "mimeType": "image/png",
+      "offset": 135956,
+      "storedLength": 554,
+      "originalLength": 554,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_211_png",
+      "mimeType": "image/png",
+      "offset": 136510,
+      "storedLength": 559,
+      "originalLength": 559,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_212_png",
+      "mimeType": "image/png",
+      "offset": 137069,
+      "storedLength": 774,
+      "originalLength": 774,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_214_png",
+      "mimeType": "image/png",
+      "offset": 137843,
+      "storedLength": 1686,
+      "originalLength": 1686,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_220_png",
+      "mimeType": "image/png",
+      "offset": 139529,
+      "storedLength": 1164,
+      "originalLength": 1164,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_222_png",
+      "mimeType": "image/png",
+      "offset": 140693,
+      "storedLength": 647,
+      "originalLength": 647,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_229_png",
+      "mimeType": "image/png",
+      "offset": 141340,
+      "storedLength": 556,
+      "originalLength": 556,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_230_png",
+      "mimeType": "image/png",
+      "offset": 141896,
+      "storedLength": 1393,
+      "originalLength": 1393,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_231_png",
+      "mimeType": "image/png",
+      "offset": 143289,
+      "storedLength": 1381,
+      "originalLength": 1381,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_232_png",
+      "mimeType": "image/png",
+      "offset": 144670,
+      "storedLength": 1445,
+      "originalLength": 1445,
+      "compression": "none"
+    },
+    {
+      "name": "fx_icon_236_png",
+      "mimeType": "image/png",
+      "offset": 146115,
+      "storedLength": 36466,
+      "originalLength": 137164,
+      "compression": "deflate"
+    },
+    {
+      "name": "fx_icon_238_png",
+      "mimeType": "image/png",
+      "offset": 182581,
+      "storedLength": 36630,
+      "originalLength": 137436,
+      "compression": "deflate"
+    },
+    {
+      "name": "fx_icon_239_png",
+      "mimeType": "image/png",
+      "offset": 219211,
+      "storedLength": 36682,
+      "originalLength": 137472,
+      "compression": "deflate"
+    },
+    {
+      "name": "fx_icon_240_png",
+      "mimeType": "image/png",
+      "offset": 255893,
+      "storedLength": 37111,
+      "originalLength": 137650,
+      "compression": "deflate"
+    },
+    {
+      "name": "fx_icon_241_png",
+      "mimeType": "image/png",
+      "offset": 293004,
+      "storedLength": 37113,
+      "originalLength": 137655,
+      "compression": "deflate"
+    },
+    {
+      "name": "fx_icon_242_png",
+      "mimeType": "image/png",
+      "offset": 330117,
+      "storedLength": 38345,
+      "originalLength": 144756,
+      "compression": "deflate"
+    },
+    {
+      "name": "fx_icon_243_png",
+      "mimeType": "image/png",
+      "offset": 368462,
+      "storedLength": 38520,
+      "originalLength": 144821,
+      "compression": "deflate"
+    },
+    {
+      "name": "fx_icon_244_png",
+      "mimeType": "image/png",
+      "offset": 406982,
+      "storedLength": 39657,
+      "originalLength": 145683,
+      "compression": "deflate"
+    },
+    {
+      "name": "fx_icon_245_png",
+      "mimeType": "image/png",
+      "offset": 446639,
+      "storedLength": 38809,
+      "originalLength": 145135,
+      "compression": "deflate"
+    },
+    {
+      "name": "fx_icon_247_png",
+      "mimeType": "image/png",
+      "offset": 485448,
+      "storedLength": 4732,
+      "originalLength": 6237,
+      "compression": "deflate"
+    },
+    {
+      "name": "popup_arrow_left_png",
+      "mimeType": "image/png",
+      "offset": 490180,
+      "storedLength": 129,
+      "originalLength": 129,
+      "compression": "none"
+    },
+    {
+      "name": "popup_arrow_right_png",
+      "mimeType": "image/png",
+      "offset": 490309,
+      "storedLength": 124,
+      "originalLength": 124,
+      "compression": "none"
+    },
+    {
+      "name": "item_popup_xml",
+      "mimeType": "text/xml",
+      "offset": 490433,
+      "storedLength": 668,
+      "originalLength": 2099,
+      "compression": "deflate"
+    }
+  ]
+}

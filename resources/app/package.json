@@ -1,0 +1,8 @@
+{
+  "name": "habbo-classic-native",
+  "productName": "Habbo",
+  "version": "1.0.56",
+  "main": "Main.mjs",
+  "type": "module",
+  "private": true
+}

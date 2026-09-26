@@ -1,0 +1,312 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboFriendListCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n\t<component class=\"com.sulake.bootstrap.HabboFriendListBootstrap\" version=\"0.0\">\n\t  <interface iid=\"com.sulake.iid.IIDHabboFriendList\" />\n\t  <assets>\n\t    <asset mimeType=\"image/png\" name=\"arrow_down_black_png\" />\n\t    <asset mimeType=\"image/png\" name=\"arrow_down_white_png\" />\n\t    <asset mimeType=\"image/png\" name=\"arrow_right_black_png\" />\n\t    <asset mimeType=\"image/png\" name=\"arrow_right_white_png\" />\t    \t\t\n\t    <asset mimeType=\"image/png\" name=\"ask_for_friend_png\" />\n\t    <asset mimeType=\"image/png\" name=\"follow_friend_png\" />\t\t    \n\t    <asset mimeType=\"image/png\" name=\"hdr_friend_requests_png\" />\n\t    <asset mimeType=\"image/png\" name=\"hdr_friends_png\" />\n\t    <asset mimeType=\"image/png\" name=\"hdr_hilite_png\" />\n\t    <asset mimeType=\"image/png\" name=\"hdr_search_png\" />    \n\t    <asset mimeType=\"image/png\" name=\"minimail_png\" />\n\t    <asset mimeType=\"image/png\" name=\"offline_png\" />\t    \t\n\t    <asset mimeType=\"image/png\" name=\"open_edit_ctgs_png\" />\t\t\n\t    <asset mimeType=\"image/png\" name=\"open_homepage_png\" />\t\t\n\t    <asset mimeType=\"image/png\" name=\"open_inbox_png\" />\t\t\n\t    <asset mimeType=\"image/png\" name=\"open_minimail_png\" />\t\t\n\t    <asset mimeType=\"image/png\" name=\"opened_to_web_png\" />\t\n\t    <asset mimeType=\"image/png\" name=\"popup_arrow_left_png\" />\n\t    <asset mimeType=\"image/png\" name=\"popup_arrow_right_png\" />\t\n\t    <asset mimeType=\"image/png\" name=\"remove_friend_png\" source=\"remove_friend_bin.png\" />\t\t\n\t    <asset mimeType=\"image/png\" name=\"room_invite_png\" />\t\t\n\t    <asset mimeType=\"image/png\" name=\"start_chat_png\" />\n\t    <asset mimeType=\"image/png\" name=\"search_png\" />\n\n\t    <asset mimeType=\"text/xml\" name=\"avatar_popup_xml\" />\n\t    <asset mimeType=\"text/xml\" name=\"friend_entry_xml\" />\n\t    <asset mimeType=\"text/xml\" name=\"friend_remove_confirm_xml\" />\n\t    <asset mimeType=\"text/xml\" name=\"friend_request_entry_xml\" />\n\t    <asset mimeType=\"text/xml\" name=\"friend_requests_footer_xml\" />\t\n\t    <asset mimeType=\"text/xml\" name=\"friends_footer_xml\" />\t\t \n\t    <asset mimeType=\"text/xml\" name=\"opened_to_web_popup_xml\" />\n\t    <asset mimeType=\"text/xml\" name=\"pagelink_xml\" />   \t\t\t\t\n\t    <asset mimeType=\"text/xml\" name=\"main_window_xml\" />\n\t    <asset mimeType=\"text/xml\" name=\"room_invite_confirm_xml\" />\t\n\t    <asset mimeType=\"text/xml\" name=\"search_entry_xml\" />\t\t\n\t    <asset mimeType=\"text/xml\" name=\"search_footer_xml\" />\n\t    <asset mimeType=\"text/xml\" name=\"simple_alert_xml\" />\t\n\t    <asset mimeType=\"text/xml\" name=\"tab_content_xml\" />\t \t    \t\t\t\t\n\t    <asset mimeType=\"text/xml\" name=\"relationship_chooser_xml\" />\n\t   </assets>\n\t</component>\n</manifest>\n",
+  "entries": [
+    {
+      "name": "arrow_down_black_png",
+      "mimeType": "image/png",
+      "offset": 0,
+      "storedLength": 115,
+      "originalLength": 115,
+      "compression": "none"
+    },
+    {
+      "name": "arrow_down_white_png",
+      "mimeType": "image/png",
+      "offset": 115,
+      "storedLength": 115,
+      "originalLength": 115,
+      "compression": "none"
+    },
+    {
+      "name": "arrow_right_black_png",
+      "mimeType": "image/png",
+      "offset": 230,
+      "storedLength": 120,
+      "originalLength": 120,
+      "compression": "none"
+    },
+    {
+      "name": "arrow_right_white_png",
+      "mimeType": "image/png",
+      "offset": 350,
+      "storedLength": 120,
+      "originalLength": 120,
+      "compression": "none"
+    },
+    {
+      "name": "ask_for_friend_png",
+      "mimeType": "image/png",
+      "offset": 470,
+      "storedLength": 146,
+      "originalLength": 146,
+      "compression": "none"
+    },
+    {
+      "name": "follow_friend_png",
+      "mimeType": "image/png",
+      "offset": 616,
+      "storedLength": 150,
+      "originalLength": 150,
+      "compression": "none"
+    },
+    {
+      "name": "hdr_friend_requests_png",
+      "mimeType": "image/png",
+      "offset": 766,
+      "storedLength": 102,
+      "originalLength": 102,
+      "compression": "none"
+    },
+    {
+      "name": "hdr_friends_png",
+      "mimeType": "image/png",
+      "offset": 868,
+      "storedLength": 102,
+      "originalLength": 102,
+      "compression": "none"
+    },
+    {
+      "name": "hdr_hilite_png",
+      "mimeType": "image/png",
+      "offset": 970,
+      "storedLength": 102,
+      "originalLength": 102,
+      "compression": "none"
+    },
+    {
+      "name": "hdr_search_png",
+      "mimeType": "image/png",
+      "offset": 1072,
+      "storedLength": 102,
+      "originalLength": 102,
+      "compression": "none"
+    },
+    {
+      "name": "minimail_png",
+      "mimeType": "image/png",
+      "offset": 1174,
+      "storedLength": 230,
+      "originalLength": 230,
+      "compression": "none"
+    },
+    {
+      "name": "offline_png",
+      "mimeType": "image/png",
+      "offset": 1404,
+      "storedLength": 245,
+      "originalLength": 245,
+      "compression": "none"
+    },
+    {
+      "name": "open_edit_ctgs_png",
+      "mimeType": "image/png",
+      "offset": 1649,
+      "storedLength": 116,
+      "originalLength": 116,
+      "compression": "none"
+    },
+    {
+      "name": "open_homepage_png",
+      "mimeType": "image/png",
+      "offset": 1765,
+      "storedLength": 131,
+      "originalLength": 131,
+      "compression": "none"
+    },
+    {
+      "name": "open_inbox_png",
+      "mimeType": "image/png",
+      "offset": 1896,
+      "storedLength": 124,
+      "originalLength": 124,
+      "compression": "none"
+    },
+    {
+      "name": "open_minimail_png",
+      "mimeType": "image/png",
+      "offset": 2020,
+      "storedLength": 163,
+      "originalLength": 163,
+      "compression": "none"
+    },
+    {
+      "name": "opened_to_web_png",
+      "mimeType": "image/png",
+      "offset": 2183,
+      "storedLength": 346,
+      "originalLength": 346,
+      "compression": "none"
+    },
+    {
+      "name": "popup_arrow_left_png",
+      "mimeType": "image/png",
+      "offset": 2529,
+      "storedLength": 129,
+      "originalLength": 129,
+      "compression": "none"
+    },
+    {
+      "name": "popup_arrow_right_png",
+      "mimeType": "image/png",
+      "offset": 2658,
+      "storedLength": 124,
+      "originalLength": 124,
+      "compression": "none"
+    },
+    {
+      "name": "remove_friend_png",
+      "mimeType": "image/png",
+      "offset": 2782,
+      "storedLength": 180,
+      "originalLength": 180,
+      "compression": "none"
+    },
+    {
+      "name": "room_invite_png",
+      "mimeType": "image/png",
+      "offset": 2962,
+      "storedLength": 157,
+      "originalLength": 157,
+      "compression": "none"
+    },
+    {
+      "name": "start_chat_png",
+      "mimeType": "image/png",
+      "offset": 3119,
+      "storedLength": 146,
+      "originalLength": 146,
+      "compression": "none"
+    },
+    {
+      "name": "search_png",
+      "mimeType": "image/png",
+      "offset": 3265,
+      "storedLength": 189,
+      "originalLength": 189,
+      "compression": "none"
+    },
+    {
+      "name": "avatar_popup_xml",
+      "mimeType": "text/xml",
+      "offset": 3454,
+      "storedLength": 643,
+      "originalLength": 3286,
+      "compression": "deflate"
+    },
+    {
+      "name": "friend_entry_xml",
+      "mimeType": "text/xml",
+      "offset": 4097,
+      "storedLength": 978,
+      "originalLength": 4248,
+      "compression": "deflate"
+    },
+    {
+      "name": "friend_remove_confirm_xml",
+      "mimeType": "text/xml",
+      "offset": 5075,
+      "storedLength": 484,
+      "originalLength": 1426,
+      "compression": "deflate"
+    },
+    {
+      "name": "friend_request_entry_xml",
+      "mimeType": "text/xml",
+      "offset": 5559,
+      "storedLength": 468,
+      "originalLength": 1629,
+      "compression": "deflate"
+    },
+    {
+      "name": "friend_requests_footer_xml",
+      "mimeType": "text/xml",
+      "offset": 6027,
+      "storedLength": 533,
+      "originalLength": 2096,
+      "compression": "deflate"
+    },
+    {
+      "name": "friends_footer_xml",
+      "mimeType": "text/xml",
+      "offset": 6560,
+      "storedLength": 779,
+      "originalLength": 3497,
+      "compression": "deflate"
+    },
+    {
+      "name": "opened_to_web_popup_xml",
+      "mimeType": "text/xml",
+      "offset": 7339,
+      "storedLength": 438,
+      "originalLength": 1057,
+      "compression": "deflate"
+    },
+    {
+      "name": "pagelink_xml",
+      "mimeType": "text/xml",
+      "offset": 7777,
+      "storedLength": 306,
+      "originalLength": 663,
+      "compression": "deflate"
+    },
+    {
+      "name": "main_window_xml",
+      "mimeType": "text/xml",
+      "offset": 8083,
+      "storedLength": 1119,
+      "originalLength": 9751,
+      "compression": "deflate"
+    },
+    {
+      "name": "room_invite_confirm_xml",
+      "mimeType": "text/xml",
+      "offset": 9202,
+      "storedLength": 592,
+      "originalLength": 2560,
+      "compression": "deflate"
+    },
+    {
+      "name": "search_entry_xml",
+      "mimeType": "text/xml",
+      "offset": 9794,
+      "storedLength": 632,
+      "originalLength": 2419,
+      "compression": "deflate"
+    },
+    {
+      "name": "search_footer_xml",
+      "mimeType": "text/xml",
+      "offset": 10426,
+      "storedLength": 594,
+      "originalLength": 2105,
+      "compression": "deflate"
+    },
+    {
+      "name": "simple_alert_xml",
+      "mimeType": "text/xml",
+      "offset": 11020,
+      "storedLength": 470,
+      "originalLength": 1156,
+      "compression": "deflate"
+    },
+    {
+      "name": "tab_content_xml",
+      "mimeType": "text/xml",
+      "offset": 11490,
+      "storedLength": 294,
+      "originalLength": 722,
+      "compression": "deflate"
+    },
+    {
+      "name": "relationship_chooser_xml",
+      "mimeType": "text/xml",
+      "offset": 11784,
+      "storedLength": 590,
+      "originalLength": 3403,
+      "compression": "deflate"
+    }
+  ]
+}

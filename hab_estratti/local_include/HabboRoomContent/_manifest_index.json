@@ -1,0 +1,2096 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "room",
+  "manifest": "<?xml version=\"1.0\" encoding=\"ISO-8859-1\" ?>\n<manifest>\n   <library name=\"room\" version=\"0.0\">\n      <assets>\n         <asset name=\"index\" mimeType=\"text/xml\"/>\n         <asset name=\"room_assets\" mimeType=\"text/xml\"/>\n         <asset name=\"room_visualization\" mimeType=\"text/xml\"/>\n         <asset name=\"wall_texture_32_0_wall_lively\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_0_wall_white\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_1_wall_tiles1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_1_wall_tiles2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_1_wall_stripes\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_1_wall_half1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_1_wall_half2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_1_wall_half3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_1_wall_vstripes1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_0_wall_groovy1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_0_wall_groovy2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_0_wall_groovy3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_0_wall_groovy4\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_0_wall_groovy5\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_0_wall_groovy6\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_0_wall_groovy7\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_picture1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_picture2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_chocolat\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_wood\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_stripes1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_stripes2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_stripes3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_brick1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_brick2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_brick3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_ornament\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_ornament2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_ornament3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_table\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_table2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_table3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_lsd\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_lsd2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_lsd3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_lsd4\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_lsd5\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_lsd6\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_invaders\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_invaders2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_invaders3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_invaders4\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_jagged\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_jagged2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_color_jagged3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_ornament1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_ornament2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_ornament3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_bubbles1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_bubbles2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_bubbles3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_32_3_wall_gothic\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_0_wall_lively\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_0_wall_white\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_1_wall_tiles1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_1_wall_tiles2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_1_wall_stripes\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_1_wall_half1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_1_wall_half2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_1_wall_half3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_1_wall_vstripes1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_0_wall_groovy1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_0_wall_groovy2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_0_wall_groovy3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_0_wall_groovy4\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_0_wall_groovy5\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_0_wall_groovy6\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_0_wall_groovy7\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_picture1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_picture2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_chocolat\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_wood\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_stripes1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_stripes2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_stripes3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_brick1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_brick2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_brick3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_ornament\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_ornament2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_ornament3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_table\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_table2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_table3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_lsd\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_lsd2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_lsd3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_lsd4\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_lsd5\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_lsd6\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_invaders\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_invaders2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_invaders3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_invaders4\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_jagged\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_jagged2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_color_jagged3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_ornament1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_ornament2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_ornament3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_bubbles1\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_bubbles2\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_bubbles3\" mimeType=\"image/png\"/>\n         <asset name=\"wall_texture_64_3_wall_gothic\" mimeType=\"image/png\"/>\n         <asset name=\"floor_texture_32_0_floor_basic\" mimeType=\"image/png\"/>\n         <asset name=\"floor_texture_32_1_floor_fuzzy1\" mimeType=\"image/png\"/>\n         <asset name=\"floor_texture_32_2_floor_basic\" mimeType=\"image/png\"/>\n         <asset name=\"floor_texture_32_1_floor_tiles2\" mimeType=\"image/png\"/>\n         <asset name=\"floor_texture_32_1_floor_tiles3\" mimeType=\"image/png\"/>\n         <asset name=\"floor_texture_32_1_floor_tiles5\" mimeType=\"image/png\"/>\n         <asset name=\"floor_texture_64_0_floor_basic\" mimeType=\"image/png\"/>\n         <asset name=\"floor_texture_64_1_floor_fuzzy1\" mimeType=\"image/png\"/>\n         <asset name=\"floor_texture_64_2_floor_basic\" mimeType=\"image/png\"/>\n         <asset name=\"floor_texture_64_1_floor_tiles2\" mimeType=\"image/png\"/>\n         <asset name=\"floor_texture_64_1_floor_tiles3\" mimeType=\"image/png\"/>\n         <asset name=\"floor_texture_64_1_floor_tiles5\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_1_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_1_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_2_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_2_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_3_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_3_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_4_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_4_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_5_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_6_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_7_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_7_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_8_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_8_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_9_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_9_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_10_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_10_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_11_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_12_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_12_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_background_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_background_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_background_3\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_background_4\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_background_5\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_background_6\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_background_7\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_1_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_1_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_2_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_2_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_3_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_3_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_4_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_4_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_5_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_6_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_7_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_7_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_8_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_8_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_9_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_9_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_10_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_10_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_11_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_12_foreground_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_12_foreground_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_background_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_background_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_background_3\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_background_4\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_background_5\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_background_6\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_background_7\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_1_item_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_2_item_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_3_item_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_7_item_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_7_item_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_8_item_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_8_item_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_8_item_3\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_8_item_4\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_11_item_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_12_item_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_12_item_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_1_item_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_2_item_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_3_item_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_7_item_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_7_item_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_8_item_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_8_item_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_8_item_3\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_8_item_4\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_11_item_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_12_item_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_12_item_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_anim_item_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_32_anim_item_2\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_anim_item_1\" mimeType=\"image/png\"/>\n         <asset name=\"landscape_64_anim_item_2\" mimeType=\"image/png\"/>\n         <asset name=\"door_32\" mimeType=\"image/png\"/>\n         <asset name=\"bolly_wdw_wd_32\" mimeType=\"image/png\"/>\n         <asset name=\"hween08_wndw_32\" mimeType=\"image/png\"/>\n         <asset name=\"hween08_wndwb_32\" mimeType=\"image/png\"/>\n         <asset name=\"lc_window1_32\" mimeType=\"image/png\"/>\n         <asset name=\"lc_window2_32\" mimeType=\"image/png\"/>\n         <asset name=\"noob_window_double_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_70s_narrow_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_70s_wide_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_basic_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_chinese_narrow_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_chinese_wide_32\" mimeType=\"image/png\"/>\n         <asset name=\"jp_window_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_diner_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_diner2_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_double_default_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_golden_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_grunge_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_hole_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_romantic_narrow_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_romantic_wide_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_single_default_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_skyscraper_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_square_32\" mimeType=\"image/png\"/>\n         <asset name=\"window_triple_32\" mimeType=\"image/png\"/>\n         <asset name=\"sf_window_32\" mimeType=\"image/png\"/>\n         <asset name=\"hween09_win_32\" mimeType=\"image/png\"/>\n         <asset name=\"ads_twi_windw_32\" mimeType=\"image/png\"/>\n         <asset name=\"door_64\" mimeType=\"image/png\"/>\n         <asset name=\"bolly_wdw_wd_64\" mimeType=\"image/png\"/>\n         <asset name=\"hween08_wndw_64\" mimeType=\"image/png\"/>\n         <asset name=\"hween08_wndwb_64\" mimeType=\"image/png\"/>\n         <asset name=\"lc_window1_64\" mimeType=\"image/png\"/>\n         <asset name=\"lc_window2_64\" mimeType=\"image/png\"/>\n         <asset name=\"noob_window_double_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_70s_narrow_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_70s_wide_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_basic_64\" mimeType=\"image/png\"/>\n         <asset name=\"jp_window_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_chinese_narrow_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_chinese_wide_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_diner_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_diner2_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_double_default_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_golden_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_grunge_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_hole_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_romantic_narrow_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_romantic_wide_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_single_default_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_skyscraper_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_square_64\" mimeType=\"image/png\"/>\n         <asset name=\"window_triple_64\" mimeType=\"image/png\"/>\n         <asset name=\"sf_window_64\" mimeType=\"image/png\"/>\n         <asset name=\"hween09_win_64\" mimeType=\"image/png\"/>\n         <asset name=\"ads_twi_windw_64\" mimeType=\"image/png\"/>\n         <asset name=\"easter13_window_64\" mimeType=\"image/png\"/>\n         <asset name=\"easter13_window_32\" mimeType=\"image/png\"/>\n      </assets>\n   </library>\n</manifest>\n",
+  "entries": [
+    {
+      "name": "index",
+      "mimeType": "text/xml",
+      "offset": 0,
+      "storedLength": 96,
+      "originalLength": 101,
+      "compression": "deflate"
+    },
+    {
+      "name": "room_assets",
+      "mimeType": "text/xml",
+      "offset": 96,
+      "storedLength": 2490,
+      "originalLength": 26037,
+      "compression": "deflate"
+    },
+    {
+      "name": "room_visualization",
+      "mimeType": "text/xml",
+      "offset": 2586,
+      "storedLength": 14463,
+      "originalLength": 435721,
+      "compression": "deflate"
+    },
+    {
+      "name": "wall_texture_32_0_wall_lively",
+      "mimeType": "image/png",
+      "offset": 17049,
+      "storedLength": 97,
+      "originalLength": 97,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_0_wall_white",
+      "mimeType": "image/png",
+      "offset": 17146,
+      "storedLength": 92,
+      "originalLength": 92,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_1_wall_tiles1",
+      "mimeType": "image/png",
+      "offset": 17238,
+      "storedLength": 109,
+      "originalLength": 109,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_1_wall_tiles2",
+      "mimeType": "image/png",
+      "offset": 17347,
+      "storedLength": 103,
+      "originalLength": 103,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_1_wall_stripes",
+      "mimeType": "image/png",
+      "offset": 17450,
+      "storedLength": 103,
+      "originalLength": 103,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_1_wall_half1",
+      "mimeType": "image/png",
+      "offset": 17553,
+      "storedLength": 99,
+      "originalLength": 99,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_1_wall_half2",
+      "mimeType": "image/png",
+      "offset": 17652,
+      "storedLength": 99,
+      "originalLength": 99,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_1_wall_half3",
+      "mimeType": "image/png",
+      "offset": 17751,
+      "storedLength": 103,
+      "originalLength": 103,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_1_wall_vstripes1",
+      "mimeType": "image/png",
+      "offset": 17854,
+      "storedLength": 98,
+      "originalLength": 98,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_0_wall_groovy1",
+      "mimeType": "image/png",
+      "offset": 17952,
+      "storedLength": 107,
+      "originalLength": 107,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_0_wall_groovy2",
+      "mimeType": "image/png",
+      "offset": 18059,
+      "storedLength": 107,
+      "originalLength": 107,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_0_wall_groovy3",
+      "mimeType": "image/png",
+      "offset": 18166,
+      "storedLength": 107,
+      "originalLength": 107,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_0_wall_groovy4",
+      "mimeType": "image/png",
+      "offset": 18273,
+      "storedLength": 107,
+      "originalLength": 107,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_0_wall_groovy5",
+      "mimeType": "image/png",
+      "offset": 18380,
+      "storedLength": 107,
+      "originalLength": 107,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_0_wall_groovy6",
+      "mimeType": "image/png",
+      "offset": 18487,
+      "storedLength": 107,
+      "originalLength": 107,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_0_wall_groovy7",
+      "mimeType": "image/png",
+      "offset": 18594,
+      "storedLength": 107,
+      "originalLength": 107,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_picture1",
+      "mimeType": "image/png",
+      "offset": 18701,
+      "storedLength": 122,
+      "originalLength": 122,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_picture2",
+      "mimeType": "image/png",
+      "offset": 18823,
+      "storedLength": 127,
+      "originalLength": 127,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_chocolat",
+      "mimeType": "image/png",
+      "offset": 18950,
+      "storedLength": 120,
+      "originalLength": 120,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_wood",
+      "mimeType": "image/png",
+      "offset": 19070,
+      "storedLength": 123,
+      "originalLength": 123,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_stripes1",
+      "mimeType": "image/png",
+      "offset": 19193,
+      "storedLength": 106,
+      "originalLength": 106,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_stripes2",
+      "mimeType": "image/png",
+      "offset": 19299,
+      "storedLength": 112,
+      "originalLength": 112,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_stripes3",
+      "mimeType": "image/png",
+      "offset": 19411,
+      "storedLength": 106,
+      "originalLength": 106,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_brick1",
+      "mimeType": "image/png",
+      "offset": 19517,
+      "storedLength": 173,
+      "originalLength": 173,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_brick2",
+      "mimeType": "image/png",
+      "offset": 19690,
+      "storedLength": 118,
+      "originalLength": 118,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_brick3",
+      "mimeType": "image/png",
+      "offset": 19808,
+      "storedLength": 115,
+      "originalLength": 115,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_ornament",
+      "mimeType": "image/png",
+      "offset": 19923,
+      "storedLength": 127,
+      "originalLength": 127,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_ornament2",
+      "mimeType": "image/png",
+      "offset": 20050,
+      "storedLength": 127,
+      "originalLength": 127,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_ornament3",
+      "mimeType": "image/png",
+      "offset": 20177,
+      "storedLength": 127,
+      "originalLength": 127,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_table",
+      "mimeType": "image/png",
+      "offset": 20304,
+      "storedLength": 110,
+      "originalLength": 110,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_table2",
+      "mimeType": "image/png",
+      "offset": 20414,
+      "storedLength": 110,
+      "originalLength": 110,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_table3",
+      "mimeType": "image/png",
+      "offset": 20524,
+      "storedLength": 113,
+      "originalLength": 113,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_lsd",
+      "mimeType": "image/png",
+      "offset": 20637,
+      "storedLength": 118,
+      "originalLength": 118,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_lsd2",
+      "mimeType": "image/png",
+      "offset": 20755,
+      "storedLength": 118,
+      "originalLength": 118,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_lsd3",
+      "mimeType": "image/png",
+      "offset": 20873,
+      "storedLength": 118,
+      "originalLength": 118,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_lsd4",
+      "mimeType": "image/png",
+      "offset": 20991,
+      "storedLength": 118,
+      "originalLength": 118,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_lsd5",
+      "mimeType": "image/png",
+      "offset": 21109,
+      "storedLength": 121,
+      "originalLength": 121,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_lsd6",
+      "mimeType": "image/png",
+      "offset": 21230,
+      "storedLength": 118,
+      "originalLength": 118,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_invaders",
+      "mimeType": "image/png",
+      "offset": 21348,
+      "storedLength": 116,
+      "originalLength": 116,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_invaders2",
+      "mimeType": "image/png",
+      "offset": 21464,
+      "storedLength": 116,
+      "originalLength": 116,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_invaders3",
+      "mimeType": "image/png",
+      "offset": 21580,
+      "storedLength": 114,
+      "originalLength": 114,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_invaders4",
+      "mimeType": "image/png",
+      "offset": 21694,
+      "storedLength": 114,
+      "originalLength": 114,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_jagged",
+      "mimeType": "image/png",
+      "offset": 21808,
+      "storedLength": 116,
+      "originalLength": 116,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_jagged2",
+      "mimeType": "image/png",
+      "offset": 21924,
+      "storedLength": 116,
+      "originalLength": 116,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_color_jagged3",
+      "mimeType": "image/png",
+      "offset": 22040,
+      "storedLength": 112,
+      "originalLength": 112,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_ornament1",
+      "mimeType": "image/png",
+      "offset": 22152,
+      "storedLength": 115,
+      "originalLength": 115,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_ornament2",
+      "mimeType": "image/png",
+      "offset": 22267,
+      "storedLength": 108,
+      "originalLength": 108,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_ornament3",
+      "mimeType": "image/png",
+      "offset": 22375,
+      "storedLength": 112,
+      "originalLength": 112,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_bubbles1",
+      "mimeType": "image/png",
+      "offset": 22487,
+      "storedLength": 117,
+      "originalLength": 117,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_bubbles2",
+      "mimeType": "image/png",
+      "offset": 22604,
+      "storedLength": 137,
+      "originalLength": 137,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_bubbles3",
+      "mimeType": "image/png",
+      "offset": 22741,
+      "storedLength": 138,
+      "originalLength": 138,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_32_3_wall_gothic",
+      "mimeType": "image/png",
+      "offset": 22879,
+      "storedLength": 114,
+      "originalLength": 114,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_0_wall_lively",
+      "mimeType": "image/png",
+      "offset": 22993,
+      "storedLength": 100,
+      "originalLength": 100,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_0_wall_white",
+      "mimeType": "image/png",
+      "offset": 23093,
+      "storedLength": 92,
+      "originalLength": 92,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_1_wall_tiles1",
+      "mimeType": "image/png",
+      "offset": 23185,
+      "storedLength": 110,
+      "originalLength": 110,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_1_wall_tiles2",
+      "mimeType": "image/png",
+      "offset": 23295,
+      "storedLength": 108,
+      "originalLength": 108,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_1_wall_stripes",
+      "mimeType": "image/png",
+      "offset": 23403,
+      "storedLength": 107,
+      "originalLength": 107,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_1_wall_half1",
+      "mimeType": "image/png",
+      "offset": 23510,
+      "storedLength": 102,
+      "originalLength": 102,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_1_wall_half2",
+      "mimeType": "image/png",
+      "offset": 23612,
+      "storedLength": 102,
+      "originalLength": 102,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_1_wall_half3",
+      "mimeType": "image/png",
+      "offset": 23714,
+      "storedLength": 107,
+      "originalLength": 107,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_1_wall_vstripes1",
+      "mimeType": "image/png",
+      "offset": 23821,
+      "storedLength": 102,
+      "originalLength": 102,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_0_wall_groovy1",
+      "mimeType": "image/png",
+      "offset": 23923,
+      "storedLength": 123,
+      "originalLength": 123,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_0_wall_groovy2",
+      "mimeType": "image/png",
+      "offset": 24046,
+      "storedLength": 123,
+      "originalLength": 123,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_0_wall_groovy3",
+      "mimeType": "image/png",
+      "offset": 24169,
+      "storedLength": 123,
+      "originalLength": 123,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_0_wall_groovy4",
+      "mimeType": "image/png",
+      "offset": 24292,
+      "storedLength": 123,
+      "originalLength": 123,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_0_wall_groovy5",
+      "mimeType": "image/png",
+      "offset": 24415,
+      "storedLength": 123,
+      "originalLength": 123,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_0_wall_groovy6",
+      "mimeType": "image/png",
+      "offset": 24538,
+      "storedLength": 123,
+      "originalLength": 123,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_0_wall_groovy7",
+      "mimeType": "image/png",
+      "offset": 24661,
+      "storedLength": 123,
+      "originalLength": 123,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_picture1",
+      "mimeType": "image/png",
+      "offset": 24784,
+      "storedLength": 128,
+      "originalLength": 128,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_picture2",
+      "mimeType": "image/png",
+      "offset": 24912,
+      "storedLength": 169,
+      "originalLength": 169,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_chocolat",
+      "mimeType": "image/png",
+      "offset": 25081,
+      "storedLength": 134,
+      "originalLength": 134,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_wood",
+      "mimeType": "image/png",
+      "offset": 25215,
+      "storedLength": 168,
+      "originalLength": 168,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_stripes1",
+      "mimeType": "image/png",
+      "offset": 25383,
+      "storedLength": 109,
+      "originalLength": 109,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_stripes2",
+      "mimeType": "image/png",
+      "offset": 25492,
+      "storedLength": 118,
+      "originalLength": 118,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_stripes3",
+      "mimeType": "image/png",
+      "offset": 25610,
+      "storedLength": 111,
+      "originalLength": 111,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_brick1",
+      "mimeType": "image/png",
+      "offset": 25721,
+      "storedLength": 259,
+      "originalLength": 259,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_brick2",
+      "mimeType": "image/png",
+      "offset": 25980,
+      "storedLength": 162,
+      "originalLength": 162,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_brick3",
+      "mimeType": "image/png",
+      "offset": 26142,
+      "storedLength": 161,
+      "originalLength": 161,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_ornament",
+      "mimeType": "image/png",
+      "offset": 26303,
+      "storedLength": 155,
+      "originalLength": 155,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_ornament2",
+      "mimeType": "image/png",
+      "offset": 26458,
+      "storedLength": 155,
+      "originalLength": 155,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_ornament3",
+      "mimeType": "image/png",
+      "offset": 26613,
+      "storedLength": 155,
+      "originalLength": 155,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_table",
+      "mimeType": "image/png",
+      "offset": 26768,
+      "storedLength": 121,
+      "originalLength": 121,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_table2",
+      "mimeType": "image/png",
+      "offset": 26889,
+      "storedLength": 121,
+      "originalLength": 121,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_table3",
+      "mimeType": "image/png",
+      "offset": 27010,
+      "storedLength": 124,
+      "originalLength": 124,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_lsd",
+      "mimeType": "image/png",
+      "offset": 27134,
+      "storedLength": 142,
+      "originalLength": 142,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_lsd2",
+      "mimeType": "image/png",
+      "offset": 27276,
+      "storedLength": 142,
+      "originalLength": 142,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_lsd3",
+      "mimeType": "image/png",
+      "offset": 27418,
+      "storedLength": 142,
+      "originalLength": 142,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_lsd4",
+      "mimeType": "image/png",
+      "offset": 27560,
+      "storedLength": 142,
+      "originalLength": 142,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_lsd5",
+      "mimeType": "image/png",
+      "offset": 27702,
+      "storedLength": 154,
+      "originalLength": 154,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_lsd6",
+      "mimeType": "image/png",
+      "offset": 27856,
+      "storedLength": 142,
+      "originalLength": 142,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_invaders",
+      "mimeType": "image/png",
+      "offset": 27998,
+      "storedLength": 153,
+      "originalLength": 153,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_invaders2",
+      "mimeType": "image/png",
+      "offset": 28151,
+      "storedLength": 149,
+      "originalLength": 149,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_invaders3",
+      "mimeType": "image/png",
+      "offset": 28300,
+      "storedLength": 149,
+      "originalLength": 149,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_invaders4",
+      "mimeType": "image/png",
+      "offset": 28449,
+      "storedLength": 149,
+      "originalLength": 149,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_jagged",
+      "mimeType": "image/png",
+      "offset": 28598,
+      "storedLength": 140,
+      "originalLength": 140,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_jagged2",
+      "mimeType": "image/png",
+      "offset": 28738,
+      "storedLength": 140,
+      "originalLength": 140,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_color_jagged3",
+      "mimeType": "image/png",
+      "offset": 28878,
+      "storedLength": 139,
+      "originalLength": 139,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_ornament1",
+      "mimeType": "image/png",
+      "offset": 29017,
+      "storedLength": 124,
+      "originalLength": 124,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_ornament2",
+      "mimeType": "image/png",
+      "offset": 29141,
+      "storedLength": 120,
+      "originalLength": 120,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_ornament3",
+      "mimeType": "image/png",
+      "offset": 29261,
+      "storedLength": 126,
+      "originalLength": 126,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_bubbles1",
+      "mimeType": "image/png",
+      "offset": 29387,
+      "storedLength": 143,
+      "originalLength": 143,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_bubbles2",
+      "mimeType": "image/png",
+      "offset": 29530,
+      "storedLength": 187,
+      "originalLength": 187,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_bubbles3",
+      "mimeType": "image/png",
+      "offset": 29717,
+      "storedLength": 157,
+      "originalLength": 157,
+      "compression": "none"
+    },
+    {
+      "name": "wall_texture_64_3_wall_gothic",
+      "mimeType": "image/png",
+      "offset": 29874,
+      "storedLength": 154,
+      "originalLength": 154,
+      "compression": "none"
+    },
+    {
+      "name": "floor_texture_32_0_floor_basic",
+      "mimeType": "image/png",
+      "offset": 30028,
+      "storedLength": 103,
+      "originalLength": 103,
+      "compression": "none"
+    },
+    {
+      "name": "floor_texture_32_1_floor_fuzzy1",
+      "mimeType": "image/png",
+      "offset": 30131,
+      "storedLength": 110,
+      "originalLength": 110,
+      "compression": "none"
+    },
+    {
+      "name": "floor_texture_32_2_floor_basic",
+      "mimeType": "image/png",
+      "offset": 30241,
+      "storedLength": 116,
+      "originalLength": 116,
+      "compression": "none"
+    },
+    {
+      "name": "floor_texture_32_1_floor_tiles2",
+      "mimeType": "image/png",
+      "offset": 30357,
+      "storedLength": 111,
+      "originalLength": 111,
+      "compression": "none"
+    },
+    {
+      "name": "floor_texture_32_1_floor_tiles3",
+      "mimeType": "image/png",
+      "offset": 30468,
+      "storedLength": 116,
+      "originalLength": 116,
+      "compression": "none"
+    },
+    {
+      "name": "floor_texture_32_1_floor_tiles5",
+      "mimeType": "image/png",
+      "offset": 30584,
+      "storedLength": 100,
+      "originalLength": 100,
+      "compression": "none"
+    },
+    {
+      "name": "floor_texture_64_0_floor_basic",
+      "mimeType": "image/png",
+      "offset": 30684,
+      "storedLength": 111,
+      "originalLength": 111,
+      "compression": "none"
+    },
+    {
+      "name": "floor_texture_64_1_floor_fuzzy1",
+      "mimeType": "image/png",
+      "offset": 30795,
+      "storedLength": 113,
+      "originalLength": 113,
+      "compression": "none"
+    },
+    {
+      "name": "floor_texture_64_2_floor_basic",
+      "mimeType": "image/png",
+      "offset": 30908,
+      "storedLength": 125,
+      "originalLength": 125,
+      "compression": "none"
+    },
+    {
+      "name": "floor_texture_64_1_floor_tiles2",
+      "mimeType": "image/png",
+      "offset": 31033,
+      "storedLength": 112,
+      "originalLength": 112,
+      "compression": "none"
+    },
+    {
+      "name": "floor_texture_64_1_floor_tiles3",
+      "mimeType": "image/png",
+      "offset": 31145,
+      "storedLength": 124,
+      "originalLength": 124,
+      "compression": "none"
+    },
+    {
+      "name": "floor_texture_64_1_floor_tiles5",
+      "mimeType": "image/png",
+      "offset": 31269,
+      "storedLength": 102,
+      "originalLength": 102,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_1_foreground_1",
+      "mimeType": "image/png",
+      "offset": 31371,
+      "storedLength": 895,
+      "originalLength": 895,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_1_foreground_2",
+      "mimeType": "image/png",
+      "offset": 32266,
+      "storedLength": 957,
+      "originalLength": 957,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_2_foreground_1",
+      "mimeType": "image/png",
+      "offset": 33223,
+      "storedLength": 1418,
+      "originalLength": 1418,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_2_foreground_2",
+      "mimeType": "image/png",
+      "offset": 34641,
+      "storedLength": 2262,
+      "originalLength": 2262,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_3_foreground_1",
+      "mimeType": "image/png",
+      "offset": 36903,
+      "storedLength": 1308,
+      "originalLength": 1308,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_3_foreground_2",
+      "mimeType": "image/png",
+      "offset": 38211,
+      "storedLength": 1315,
+      "originalLength": 1315,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_4_foreground_1",
+      "mimeType": "image/png",
+      "offset": 39526,
+      "storedLength": 1107,
+      "originalLength": 1107,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_4_foreground_2",
+      "mimeType": "image/png",
+      "offset": 40633,
+      "storedLength": 1833,
+      "originalLength": 1833,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_5_foreground_1",
+      "mimeType": "image/png",
+      "offset": 42466,
+      "storedLength": 593,
+      "originalLength": 593,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_6_foreground_1",
+      "mimeType": "image/png",
+      "offset": 43059,
+      "storedLength": 453,
+      "originalLength": 453,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_7_foreground_1",
+      "mimeType": "image/png",
+      "offset": 43512,
+      "storedLength": 606,
+      "originalLength": 606,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_7_foreground_2",
+      "mimeType": "image/png",
+      "offset": 44118,
+      "storedLength": 926,
+      "originalLength": 926,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_8_foreground_1",
+      "mimeType": "image/png",
+      "offset": 45044,
+      "storedLength": 639,
+      "originalLength": 639,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_8_foreground_2",
+      "mimeType": "image/png",
+      "offset": 45683,
+      "storedLength": 781,
+      "originalLength": 781,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_9_foreground_1",
+      "mimeType": "image/png",
+      "offset": 46464,
+      "storedLength": 424,
+      "originalLength": 424,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_9_foreground_2",
+      "mimeType": "image/png",
+      "offset": 46888,
+      "storedLength": 442,
+      "originalLength": 442,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_10_foreground_1",
+      "mimeType": "image/png",
+      "offset": 47330,
+      "storedLength": 2149,
+      "originalLength": 2149,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_10_foreground_2",
+      "mimeType": "image/png",
+      "offset": 49479,
+      "storedLength": 2149,
+      "originalLength": 2149,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_11_foreground_1",
+      "mimeType": "image/png",
+      "offset": 51628,
+      "storedLength": 2843,
+      "originalLength": 2843,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_12_foreground_1",
+      "mimeType": "image/png",
+      "offset": 54471,
+      "storedLength": 1644,
+      "originalLength": 1644,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_12_foreground_2",
+      "mimeType": "image/png",
+      "offset": 56115,
+      "storedLength": 2311,
+      "originalLength": 2311,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_background_1",
+      "mimeType": "image/png",
+      "offset": 58426,
+      "storedLength": 143,
+      "originalLength": 143,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_background_2",
+      "mimeType": "image/png",
+      "offset": 58569,
+      "storedLength": 121,
+      "originalLength": 121,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_background_3",
+      "mimeType": "image/png",
+      "offset": 58690,
+      "storedLength": 106,
+      "originalLength": 106,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_background_4",
+      "mimeType": "image/png",
+      "offset": 58796,
+      "storedLength": 106,
+      "originalLength": 106,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_background_5",
+      "mimeType": "image/png",
+      "offset": 58902,
+      "storedLength": 116,
+      "originalLength": 116,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_background_6",
+      "mimeType": "image/png",
+      "offset": 59018,
+      "storedLength": 138,
+      "originalLength": 138,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_background_7",
+      "mimeType": "image/png",
+      "offset": 59156,
+      "storedLength": 93,
+      "originalLength": 93,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_1_foreground_1",
+      "mimeType": "image/png",
+      "offset": 59249,
+      "storedLength": 4670,
+      "originalLength": 4670,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_1_foreground_2",
+      "mimeType": "image/png",
+      "offset": 63919,
+      "storedLength": 3591,
+      "originalLength": 3591,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_2_foreground_1",
+      "mimeType": "image/png",
+      "offset": 67510,
+      "storedLength": 5560,
+      "originalLength": 5560,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_2_foreground_2",
+      "mimeType": "image/png",
+      "offset": 73070,
+      "storedLength": 7084,
+      "originalLength": 7084,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_3_foreground_1",
+      "mimeType": "image/png",
+      "offset": 80154,
+      "storedLength": 2976,
+      "originalLength": 2976,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_3_foreground_2",
+      "mimeType": "image/png",
+      "offset": 83130,
+      "storedLength": 3096,
+      "originalLength": 3096,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_4_foreground_1",
+      "mimeType": "image/png",
+      "offset": 86226,
+      "storedLength": 2714,
+      "originalLength": 2714,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_4_foreground_2",
+      "mimeType": "image/png",
+      "offset": 88940,
+      "storedLength": 4681,
+      "originalLength": 4681,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_5_foreground_1",
+      "mimeType": "image/png",
+      "offset": 93621,
+      "storedLength": 1266,
+      "originalLength": 1266,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_6_foreground_1",
+      "mimeType": "image/png",
+      "offset": 94887,
+      "storedLength": 906,
+      "originalLength": 906,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_7_foreground_1",
+      "mimeType": "image/png",
+      "offset": 95793,
+      "storedLength": 1261,
+      "originalLength": 1261,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_7_foreground_2",
+      "mimeType": "image/png",
+      "offset": 97054,
+      "storedLength": 1982,
+      "originalLength": 1982,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_8_foreground_1",
+      "mimeType": "image/png",
+      "offset": 99036,
+      "storedLength": 1342,
+      "originalLength": 1342,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_8_foreground_2",
+      "mimeType": "image/png",
+      "offset": 100378,
+      "storedLength": 1689,
+      "originalLength": 1689,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_9_foreground_1",
+      "mimeType": "image/png",
+      "offset": 102067,
+      "storedLength": 723,
+      "originalLength": 723,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_9_foreground_2",
+      "mimeType": "image/png",
+      "offset": 102790,
+      "storedLength": 764,
+      "originalLength": 764,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_10_foreground_1",
+      "mimeType": "image/png",
+      "offset": 103554,
+      "storedLength": 4142,
+      "originalLength": 4142,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_10_foreground_2",
+      "mimeType": "image/png",
+      "offset": 107696,
+      "storedLength": 3614,
+      "originalLength": 3614,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_11_foreground_1",
+      "mimeType": "image/png",
+      "offset": 111310,
+      "storedLength": 7665,
+      "originalLength": 7680,
+      "compression": "deflate"
+    },
+    {
+      "name": "landscape_64_12_foreground_1",
+      "mimeType": "image/png",
+      "offset": 118975,
+      "storedLength": 2659,
+      "originalLength": 2659,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_12_foreground_2",
+      "mimeType": "image/png",
+      "offset": 121634,
+      "storedLength": 2349,
+      "originalLength": 2349,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_background_1",
+      "mimeType": "image/png",
+      "offset": 123983,
+      "storedLength": 136,
+      "originalLength": 136,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_background_2",
+      "mimeType": "image/png",
+      "offset": 124119,
+      "storedLength": 109,
+      "originalLength": 109,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_background_3",
+      "mimeType": "image/png",
+      "offset": 124228,
+      "storedLength": 101,
+      "originalLength": 101,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_background_4",
+      "mimeType": "image/png",
+      "offset": 124329,
+      "storedLength": 101,
+      "originalLength": 101,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_background_5",
+      "mimeType": "image/png",
+      "offset": 124430,
+      "storedLength": 109,
+      "originalLength": 109,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_background_6",
+      "mimeType": "image/png",
+      "offset": 124539,
+      "storedLength": 194,
+      "originalLength": 194,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_background_7",
+      "mimeType": "image/png",
+      "offset": 124733,
+      "storedLength": 94,
+      "originalLength": 94,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_1_item_1",
+      "mimeType": "image/png",
+      "offset": 124827,
+      "storedLength": 127,
+      "originalLength": 127,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_2_item_1",
+      "mimeType": "image/png",
+      "offset": 124954,
+      "storedLength": 304,
+      "originalLength": 304,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_3_item_1",
+      "mimeType": "image/png",
+      "offset": 125258,
+      "storedLength": 168,
+      "originalLength": 168,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_7_item_1",
+      "mimeType": "image/png",
+      "offset": 125426,
+      "storedLength": 117,
+      "originalLength": 117,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_7_item_2",
+      "mimeType": "image/png",
+      "offset": 125543,
+      "storedLength": 202,
+      "originalLength": 202,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_8_item_1",
+      "mimeType": "image/png",
+      "offset": 125745,
+      "storedLength": 286,
+      "originalLength": 286,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_8_item_2",
+      "mimeType": "image/png",
+      "offset": 126031,
+      "storedLength": 200,
+      "originalLength": 200,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_8_item_3",
+      "mimeType": "image/png",
+      "offset": 126231,
+      "storedLength": 157,
+      "originalLength": 157,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_8_item_4",
+      "mimeType": "image/png",
+      "offset": 126388,
+      "storedLength": 209,
+      "originalLength": 209,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_11_item_1",
+      "mimeType": "image/png",
+      "offset": 126597,
+      "storedLength": 257,
+      "originalLength": 257,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_12_item_1",
+      "mimeType": "image/png",
+      "offset": 126854,
+      "storedLength": 310,
+      "originalLength": 310,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_12_item_2",
+      "mimeType": "image/png",
+      "offset": 127164,
+      "storedLength": 407,
+      "originalLength": 407,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_1_item_1",
+      "mimeType": "image/png",
+      "offset": 127571,
+      "storedLength": 139,
+      "originalLength": 139,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_2_item_1",
+      "mimeType": "image/png",
+      "offset": 127710,
+      "storedLength": 695,
+      "originalLength": 695,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_3_item_1",
+      "mimeType": "image/png",
+      "offset": 128405,
+      "storedLength": 228,
+      "originalLength": 228,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_7_item_1",
+      "mimeType": "image/png",
+      "offset": 128633,
+      "storedLength": 135,
+      "originalLength": 135,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_7_item_2",
+      "mimeType": "image/png",
+      "offset": 128768,
+      "storedLength": 222,
+      "originalLength": 222,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_8_item_1",
+      "mimeType": "image/png",
+      "offset": 128990,
+      "storedLength": 565,
+      "originalLength": 565,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_8_item_2",
+      "mimeType": "image/png",
+      "offset": 129555,
+      "storedLength": 200,
+      "originalLength": 200,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_8_item_3",
+      "mimeType": "image/png",
+      "offset": 129755,
+      "storedLength": 157,
+      "originalLength": 157,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_8_item_4",
+      "mimeType": "image/png",
+      "offset": 129912,
+      "storedLength": 323,
+      "originalLength": 323,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_11_item_1",
+      "mimeType": "image/png",
+      "offset": 130235,
+      "storedLength": 308,
+      "originalLength": 308,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_12_item_1",
+      "mimeType": "image/png",
+      "offset": 130543,
+      "storedLength": 586,
+      "originalLength": 586,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_12_item_2",
+      "mimeType": "image/png",
+      "offset": 131129,
+      "storedLength": 778,
+      "originalLength": 778,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_anim_item_1",
+      "mimeType": "image/png",
+      "offset": 131907,
+      "storedLength": 174,
+      "originalLength": 174,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_32_anim_item_2",
+      "mimeType": "image/png",
+      "offset": 132081,
+      "storedLength": 143,
+      "originalLength": 143,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_anim_item_1",
+      "mimeType": "image/png",
+      "offset": 132224,
+      "storedLength": 229,
+      "originalLength": 229,
+      "compression": "none"
+    },
+    {
+      "name": "landscape_64_anim_item_2",
+      "mimeType": "image/png",
+      "offset": 132453,
+      "storedLength": 180,
+      "originalLength": 180,
+      "compression": "none"
+    },
+    {
+      "name": "door_32",
+      "mimeType": "image/png",
+      "offset": 132633,
+      "storedLength": 114,
+      "originalLength": 114,
+      "compression": "none"
+    },
+    {
+      "name": "bolly_wdw_wd_32",
+      "mimeType": "image/png",
+      "offset": 132747,
+      "storedLength": 151,
+      "originalLength": 151,
+      "compression": "none"
+    },
+    {
+      "name": "hween08_wndw_32",
+      "mimeType": "image/png",
+      "offset": 132898,
+      "storedLength": 108,
+      "originalLength": 108,
+      "compression": "none"
+    },
+    {
+      "name": "hween08_wndwb_32",
+      "mimeType": "image/png",
+      "offset": 133006,
+      "storedLength": 92,
+      "originalLength": 92,
+      "compression": "none"
+    },
+    {
+      "name": "lc_window1_32",
+      "mimeType": "image/png",
+      "offset": 133098,
+      "storedLength": 109,
+      "originalLength": 109,
+      "compression": "none"
+    },
+    {
+      "name": "lc_window2_32",
+      "mimeType": "image/png",
+      "offset": 133207,
+      "storedLength": 106,
+      "originalLength": 106,
+      "compression": "none"
+    },
+    {
+      "name": "noob_window_double_32",
+      "mimeType": "image/png",
+      "offset": 133313,
+      "storedLength": 108,
+      "originalLength": 108,
+      "compression": "none"
+    },
+    {
+      "name": "window_70s_narrow_32",
+      "mimeType": "image/png",
+      "offset": 133421,
+      "storedLength": 92,
+      "originalLength": 92,
+      "compression": "none"
+    },
+    {
+      "name": "window_70s_wide_32",
+      "mimeType": "image/png",
+      "offset": 133513,
+      "storedLength": 99,
+      "originalLength": 99,
+      "compression": "none"
+    },
+    {
+      "name": "window_basic_32",
+      "mimeType": "image/png",
+      "offset": 133612,
+      "storedLength": 93,
+      "originalLength": 93,
+      "compression": "none"
+    },
+    {
+      "name": "window_chinese_narrow_32",
+      "mimeType": "image/png",
+      "offset": 133705,
+      "storedLength": 133,
+      "originalLength": 133,
+      "compression": "none"
+    },
+    {
+      "name": "window_chinese_wide_32",
+      "mimeType": "image/png",
+      "offset": 133838,
+      "storedLength": 100,
+      "originalLength": 100,
+      "compression": "none"
+    },
+    {
+      "name": "jp_window_32",
+      "mimeType": "image/png",
+      "offset": 133938,
+      "storedLength": 93,
+      "originalLength": 93,
+      "compression": "none"
+    },
+    {
+      "name": "window_diner_32",
+      "mimeType": "image/png",
+      "offset": 134031,
+      "storedLength": 99,
+      "originalLength": 99,
+      "compression": "none"
+    },
+    {
+      "name": "window_diner2_32",
+      "mimeType": "image/png",
+      "offset": 134130,
+      "storedLength": 98,
+      "originalLength": 98,
+      "compression": "none"
+    },
+    {
+      "name": "window_double_default_32",
+      "mimeType": "image/png",
+      "offset": 134228,
+      "storedLength": 108,
+      "originalLength": 108,
+      "compression": "none"
+    },
+    {
+      "name": "window_golden_32",
+      "mimeType": "image/png",
+      "offset": 134336,
+      "storedLength": 127,
+      "originalLength": 127,
+      "compression": "none"
+    },
+    {
+      "name": "window_grunge_32",
+      "mimeType": "image/png",
+      "offset": 134463,
+      "storedLength": 138,
+      "originalLength": 138,
+      "compression": "none"
+    },
+    {
+      "name": "window_hole_32",
+      "mimeType": "image/png",
+      "offset": 134601,
+      "storedLength": 141,
+      "originalLength": 141,
+      "compression": "none"
+    },
+    {
+      "name": "window_romantic_narrow_32",
+      "mimeType": "image/png",
+      "offset": 134742,
+      "storedLength": 122,
+      "originalLength": 122,
+      "compression": "none"
+    },
+    {
+      "name": "window_romantic_wide_32",
+      "mimeType": "image/png",
+      "offset": 134864,
+      "storedLength": 109,
+      "originalLength": 109,
+      "compression": "none"
+    },
+    {
+      "name": "window_single_default_32",
+      "mimeType": "image/png",
+      "offset": 134973,
+      "storedLength": 100,
+      "originalLength": 100,
+      "compression": "none"
+    },
+    {
+      "name": "window_skyscraper_32",
+      "mimeType": "image/png",
+      "offset": 135073,
+      "storedLength": 93,
+      "originalLength": 93,
+      "compression": "none"
+    },
+    {
+      "name": "window_square_32",
+      "mimeType": "image/png",
+      "offset": 135166,
+      "storedLength": 92,
+      "originalLength": 92,
+      "compression": "none"
+    },
+    {
+      "name": "window_triple_32",
+      "mimeType": "image/png",
+      "offset": 135258,
+      "storedLength": 118,
+      "originalLength": 118,
+      "compression": "none"
+    },
+    {
+      "name": "sf_window_32",
+      "mimeType": "image/png",
+      "offset": 135376,
+      "storedLength": 122,
+      "originalLength": 122,
+      "compression": "none"
+    },
+    {
+      "name": "hween09_win_32",
+      "mimeType": "image/png",
+      "offset": 135498,
+      "storedLength": 138,
+      "originalLength": 138,
+      "compression": "none"
+    },
+    {
+      "name": "ads_twi_windw_32",
+      "mimeType": "image/png",
+      "offset": 135636,
+      "storedLength": 103,
+      "originalLength": 103,
+      "compression": "none"
+    },
+    {
+      "name": "door_64",
+      "mimeType": "image/png",
+      "offset": 135739,
+      "storedLength": 94,
+      "originalLength": 94,
+      "compression": "none"
+    },
+    {
+      "name": "bolly_wdw_wd_64",
+      "mimeType": "image/png",
+      "offset": 135833,
+      "storedLength": 221,
+      "originalLength": 221,
+      "compression": "none"
+    },
+    {
+      "name": "hween08_wndw_64",
+      "mimeType": "image/png",
+      "offset": 136054,
+      "storedLength": 103,
+      "originalLength": 103,
+      "compression": "none"
+    },
+    {
+      "name": "hween08_wndwb_64",
+      "mimeType": "image/png",
+      "offset": 136157,
+      "storedLength": 93,
+      "originalLength": 93,
+      "compression": "none"
+    },
+    {
+      "name": "lc_window1_64",
+      "mimeType": "image/png",
+      "offset": 136250,
+      "storedLength": 122,
+      "originalLength": 122,
+      "compression": "none"
+    },
+    {
+      "name": "lc_window2_64",
+      "mimeType": "image/png",
+      "offset": 136372,
+      "storedLength": 104,
+      "originalLength": 104,
+      "compression": "none"
+    },
+    {
+      "name": "noob_window_double_64",
+      "mimeType": "image/png",
+      "offset": 136476,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "window_70s_narrow_64",
+      "mimeType": "image/png",
+      "offset": 136581,
+      "storedLength": 93,
+      "originalLength": 93,
+      "compression": "none"
+    },
+    {
+      "name": "window_70s_wide_64",
+      "mimeType": "image/png",
+      "offset": 136674,
+      "storedLength": 104,
+      "originalLength": 104,
+      "compression": "none"
+    },
+    {
+      "name": "window_basic_64",
+      "mimeType": "image/png",
+      "offset": 136778,
+      "storedLength": 94,
+      "originalLength": 94,
+      "compression": "none"
+    },
+    {
+      "name": "jp_window_64",
+      "mimeType": "image/png",
+      "offset": 136872,
+      "storedLength": 94,
+      "originalLength": 94,
+      "compression": "none"
+    },
+    {
+      "name": "window_chinese_narrow_64",
+      "mimeType": "image/png",
+      "offset": 136966,
+      "storedLength": 100,
+      "originalLength": 100,
+      "compression": "none"
+    },
+    {
+      "name": "window_chinese_wide_64",
+      "mimeType": "image/png",
+      "offset": 137066,
+      "storedLength": 106,
+      "originalLength": 106,
+      "compression": "none"
+    },
+    {
+      "name": "window_diner_64",
+      "mimeType": "image/png",
+      "offset": 137172,
+      "storedLength": 98,
+      "originalLength": 98,
+      "compression": "none"
+    },
+    {
+      "name": "window_diner2_64",
+      "mimeType": "image/png",
+      "offset": 137270,
+      "storedLength": 96,
+      "originalLength": 96,
+      "compression": "none"
+    },
+    {
+      "name": "window_double_default_64",
+      "mimeType": "image/png",
+      "offset": 137366,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "window_golden_64",
+      "mimeType": "image/png",
+      "offset": 137471,
+      "storedLength": 159,
+      "originalLength": 159,
+      "compression": "none"
+    },
+    {
+      "name": "window_grunge_64",
+      "mimeType": "image/png",
+      "offset": 137630,
+      "storedLength": 171,
+      "originalLength": 171,
+      "compression": "none"
+    },
+    {
+      "name": "window_hole_64",
+      "mimeType": "image/png",
+      "offset": 137801,
+      "storedLength": 249,
+      "originalLength": 249,
+      "compression": "none"
+    },
+    {
+      "name": "window_romantic_narrow_64",
+      "mimeType": "image/png",
+      "offset": 138050,
+      "storedLength": 137,
+      "originalLength": 137,
+      "compression": "none"
+    },
+    {
+      "name": "window_romantic_wide_64",
+      "mimeType": "image/png",
+      "offset": 138187,
+      "storedLength": 153,
+      "originalLength": 153,
+      "compression": "none"
+    },
+    {
+      "name": "window_single_default_64",
+      "mimeType": "image/png",
+      "offset": 138340,
+      "storedLength": 94,
+      "originalLength": 94,
+      "compression": "none"
+    },
+    {
+      "name": "window_skyscraper_64",
+      "mimeType": "image/png",
+      "offset": 138434,
+      "storedLength": 102,
+      "originalLength": 102,
+      "compression": "none"
+    },
+    {
+      "name": "window_square_64",
+      "mimeType": "image/png",
+      "offset": 138536,
+      "storedLength": 93,
+      "originalLength": 93,
+      "compression": "none"
+    },
+    {
+      "name": "window_triple_64",
+      "mimeType": "image/png",
+      "offset": 138629,
+      "storedLength": 142,
+      "originalLength": 142,
+      "compression": "none"
+    },
+    {
+      "name": "sf_window_64",
+      "mimeType": "image/png",
+      "offset": 138771,
+      "storedLength": 144,
+      "originalLength": 144,
+      "compression": "none"
+    },
+    {
+      "name": "hween09_win_64",
+      "mimeType": "image/png",
+      "offset": 138915,
+      "storedLength": 147,
+      "originalLength": 147,
+      "compression": "none"
+    },
+    {
+      "name": "ads_twi_windw_64",
+      "mimeType": "image/png",
+      "offset": 139062,
+      "storedLength": 95,
+      "originalLength": 95,
+      "compression": "none"
+    },
+    {
+      "name": "easter13_window_64",
+      "mimeType": "image/png",
+      "offset": 139157,
+      "storedLength": 215,
+      "originalLength": 215,
+      "compression": "none"
+    },
+    {
+      "name": "easter13_window_32",
+      "mimeType": "image/png",
+      "offset": 139372,
+      "storedLength": 147,
+      "originalLength": 147,
+      "compression": "none"
+    }
+  ]
+}

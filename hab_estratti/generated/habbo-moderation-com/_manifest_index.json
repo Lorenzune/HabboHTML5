@@ -1,0 +1,120 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboModerationCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n\n\t<component class=\"com.sulake.bootstrap.ModerationManagerBootstrap\" version=\"0.0\" >\n\t    <interface iid=\"com.sulake.iid.IIDHabboModeration\" />\n\t\t<assets>\n\t\t    <asset mimeType=\"text/xml\" name=\"evidence_frame_xml\" />\n\t\t\t<asset mimeType=\"text/xml\" name=\"issue_browser_xml\" />\n\t\t\t<asset mimeType=\"text/xml\" name=\"modact_summary_xml\" />\n            <asset mimeType=\"text/xml\" name=\"roomtool_frame_xml\" />\n            <asset mimeType=\"text/xml\" name=\"new_moderation_tool_xml\" />\n            <asset mimeType=\"text/xml\" name=\"roomvisits_frame_xml\" />\n            <asset mimeType=\"text/xml\" name=\"userclassification_frame_xml\" />\n\t\t\t<asset mimeType=\"text/xml\" name=\"send_msgs_xml\" />\n\t\t\t<asset mimeType=\"text/xml\" name=\"start_panel_xml\" />\n\t\t\t<asset mimeType=\"text/xml\" name=\"user_info_xml\" />\n\t\t\t<asset mimeType=\"text/xml\" name=\"user_info_frame_xml\" />\n\t\t\t<asset mimeType=\"text/xml\" name=\"issue_handler_xml\" />\n            <asset mimeType=\"image/png\" name=\"room_icon_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"user_icon_png\" />\n\t\t</assets>\n\t</component>\n\n</manifest>\n",
+  "entries": [
+    {
+      "name": "evidence_frame_xml",
+      "mimeType": "text/xml",
+      "offset": 0,
+      "storedLength": 1066,
+      "originalLength": 4540,
+      "compression": "deflate"
+    },
+    {
+      "name": "issue_browser_xml",
+      "mimeType": "text/xml",
+      "offset": 1066,
+      "storedLength": 1807,
+      "originalLength": 33558,
+      "compression": "deflate"
+    },
+    {
+      "name": "modact_summary_xml",
+      "mimeType": "text/xml",
+      "offset": 2873,
+      "storedLength": 810,
+      "originalLength": 2975,
+      "compression": "deflate"
+    },
+    {
+      "name": "roomtool_frame_xml",
+      "mimeType": "text/xml",
+      "offset": 3683,
+      "storedLength": 1821,
+      "originalLength": 16233,
+      "compression": "deflate"
+    },
+    {
+      "name": "new_moderation_tool_xml",
+      "mimeType": "text/xml",
+      "offset": 5504,
+      "storedLength": 1895,
+      "originalLength": 20175,
+      "compression": "deflate"
+    },
+    {
+      "name": "roomvisits_frame_xml",
+      "mimeType": "text/xml",
+      "offset": 7399,
+      "storedLength": 770,
+      "originalLength": 3791,
+      "compression": "deflate"
+    },
+    {
+      "name": "userclassification_frame_xml",
+      "mimeType": "text/xml",
+      "offset": 8169,
+      "storedLength": 771,
+      "originalLength": 3873,
+      "compression": "deflate"
+    },
+    {
+      "name": "send_msgs_xml",
+      "mimeType": "text/xml",
+      "offset": 8940,
+      "storedLength": 627,
+      "originalLength": 1559,
+      "compression": "deflate"
+    },
+    {
+      "name": "start_panel_xml",
+      "mimeType": "text/xml",
+      "offset": 9567,
+      "storedLength": 894,
+      "originalLength": 5330,
+      "compression": "deflate"
+    },
+    {
+      "name": "user_info_xml",
+      "mimeType": "text/xml",
+      "offset": 10461,
+      "storedLength": 1395,
+      "originalLength": 22404,
+      "compression": "deflate"
+    },
+    {
+      "name": "user_info_frame_xml",
+      "mimeType": "text/xml",
+      "offset": 11856,
+      "storedLength": 296,
+      "originalLength": 437,
+      "compression": "deflate"
+    },
+    {
+      "name": "issue_handler_xml",
+      "mimeType": "text/xml",
+      "offset": 12152,
+      "storedLength": 1620,
+      "originalLength": 11161,
+      "compression": "deflate"
+    },
+    {
+      "name": "room_icon_png",
+      "mimeType": "image/png",
+      "offset": 13772,
+      "storedLength": 108,
+      "originalLength": 108,
+      "compression": "none"
+    },
+    {
+      "name": "user_icon_png",
+      "mimeType": "image/png",
+      "offset": 13880,
+      "storedLength": 311,
+      "originalLength": 311,
+      "compression": "none"
+    }
+  ]
+}

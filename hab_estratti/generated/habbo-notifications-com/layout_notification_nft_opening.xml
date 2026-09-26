@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="notification_nft_opening" width="190" height="110" version="0.1" uid="423F99A8-D22F-7247-F4DB-5C32D0EF8B62">
+  <window>
+    <border x="0" y="0" width="190" height="110" params="1" style="2" color="0x06154" tags="border">
+      <children>
+        <container x="0" y="0" width="190" height="24" params="144" style="3" name="header">
+          <children>
+            <border x="0" y="0" width="190" height="24" params="144" style="2" color="0x012723"/>
+            <container x="0" y="15" width="190" height="10" params="144" style="3" color="0xffff012723" background="true"/>
+            <text x="7" y="4" width="194" height="17" params="16" style="3" caption="%24%7Bcollectibles.reward_box.notif.title%7D" blend="0.95">
+              <variables>
+                <var key="auto_size" value="left" type="String"/>
+                <var key="text_color" value="0xffffff" type="hex"/>
+                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                <var key="bold" value="true" type="Boolean"/>
+                <var key="spacing" value="0" type="Number"/>
+                <var key="leading" value="0" type="Number"/>
+              </variables>
+            </text>
+          </children>
+        </container>
+        <widget x="9" y="31" width="40" height="40" params="16" style="3" name="icon_widget">
+          <variables>
+            <var key="widget_type" value="product_icon" type="String"/>
+          </variables>
+        </widget>
+        <text x="65" y="29" width="115" height="50" params="16" style="3" name="nft_prize_description" caption="%24%7Bcollectibles.reward_box.notif.desc%7D" tags="notification_text" height_min="22">
+          <variables>
+            <var key="font_size" value="11" type="uint"/>
+            <var key="text_color" value="0xffffff" type="hex"/>
+            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+            <var key="word_wrap" value="true" type="Boolean"/>
+            <var key="spacing" value="0" type="Number"/>
+            <var key="leading" value="0" type="Number"/>
+          </variables>
+        </text>
+        <bitmap x="8" y="30" width="50" height="50" params="3088" style="0" tags="notification_icon"/>
+        <container x="0" y="80" width="190" height="30" params="1168" style="3" name="bottom">
+          <children>
+            <container x="6" y="0" width="178" height="25" params="144" style="3">
+              <children>
+                <button x="0" y="0" width="178" height="25" params="131217" style="3" name="rarity_text" caption="Rarity%3A%20" color="0x0f5d634" width_min="178"/>
+              </children>
+            </container>
+          </children>
+        </container>
+      </children>
+    </border>
+  </window>
+</layout>

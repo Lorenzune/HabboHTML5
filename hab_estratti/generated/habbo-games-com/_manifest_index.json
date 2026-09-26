@@ -1,0 +1,1292 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboGamesCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n    <component class=\"com.sulake.bootstrap.HabboGameManagerBootstrap\" version=\"0.1\" >\n        <interface iid=\"com.sulake.iid.IIDHabboGameManager\" />\n        <assets>\n            <asset mimeType=\"image/png\" name=\"btn_more_games_10\"/>\n            <asset mimeType=\"image/png\" name=\"btn_more_games_10_hi\"/>\n            <asset mimeType=\"image/png\" name=\"btn_more_games_100\"/>\n            <asset mimeType=\"image/png\" name=\"btn_more_games_100_hi\"/>\n            <asset mimeType=\"image/png\" name=\"btn_more_games_300\"/>\n            <asset mimeType=\"image/png\" name=\"btn_more_games_300_hi\"/>\n            <asset mimeType=\"image/png\" name=\"hc_icon\"/>\n            <asset mimeType=\"image/png\" name=\"bg_sky\"/>\n            <asset mimeType=\"image/png\" name=\"bg_sunshine\"/>\n            <asset mimeType=\"image/png\" name=\"bg_vista_1\"/>\n            <asset mimeType=\"image/png\" name=\"bg_vista_2\"/>\n            <asset mimeType=\"image/png\" name=\"bg_vista_3\"/>\n            <asset mimeType=\"image/png\" name=\"blue_ball\"/>\n            <asset mimeType=\"image/png\" name=\"blue_ball_rematch\"/>\n            <asset mimeType=\"image/png\" name=\"blue_glove\"/>\n            <asset mimeType=\"image/png\" name=\"blue_infobox\"/>\n            <asset mimeType=\"image/png\" name=\"blue_square\"/>\n            <asset mimeType=\"image/png\" name=\"gray_ball\"/>\n            <asset mimeType=\"image/png\" name=\"gray_infobox\"/>\n            <asset mimeType=\"image/png\" name=\"gray_square\"/>\n            <asset mimeType=\"image/png\" name=\"green_square\"/>\n            <asset mimeType=\"image/png\" name=\"load_1\"/>\n            <asset mimeType=\"image/png\" name=\"load_2\"/>\n            <asset mimeType=\"image/png\" name=\"load_3\"/>\n            <asset mimeType=\"image/png\" name=\"load_4\"/>\n            <asset mimeType=\"image/png\" name=\"load_5\"/>\n            <asset mimeType=\"image/png\" name=\"load_6\"/>\n            <asset mimeType=\"image/png\" name=\"load_7\"/>\n            <asset mimeType=\"image/png\" name=\"load_8\"/>\n            <asset mimeType=\"image/png\" name=\"red_ball\"/>\n            <asset mimeType=\"image/png\" name=\"red_ball_rematch\"/>\n            <asset mimeType=\"image/png\" name=\"red_glove\"/>\n            <asset mimeType=\"image/png\" name=\"red_infobox\"/>\n            <asset mimeType=\"image/png\" name=\"red_square\"/>\n            <asset mimeType=\"image/png\" name=\"snowstorm_logo\"/>\n            <asset mimeType=\"image/png\" name=\"ui_ball_indicator_bg\"/>\n            <asset mimeType=\"image/png\" name=\"ui_ball\"/>\n            <asset mimeType=\"image/png\" name=\"ui_exit_down\"/>\n            <asset mimeType=\"image/png\" name=\"ui_exit_up\"/>\n            <asset mimeType=\"image/png\" name=\"ui_make_balls_down\"/>\n            <asset mimeType=\"image/png\" name=\"ui_make_balls_up\"/>\n            <asset mimeType=\"image/png\" name=\"ui_me_bg\"/>\n            <asset mimeType=\"image/png\" name=\"rematch_1\"/>\n            <asset mimeType=\"image/png\" name=\"rematch_2\"/>\n            <asset mimeType=\"image/png\" name=\"rematch_3\"/>\n            <asset mimeType=\"image/png\" name=\"rematch_4\"/>\n            <asset mimeType=\"image/png\" name=\"rematch_5\"/>\n            <asset mimeType=\"image/png\" name=\"rematch_6\"/>\n            <asset mimeType=\"image/png\" name=\"ui_me_health_0\"/>\n            <asset mimeType=\"image/png\" name=\"ui_me_health_1\"/>\n            <asset mimeType=\"image/png\" name=\"ui_me_health_2\"/>\n            <asset mimeType=\"image/png\" name=\"ui_me_health_3\"/>\n            <asset mimeType=\"image/png\" name=\"ui_me_health_4\"/>\n            <asset mimeType=\"image/png\" name=\"ui_me_health_5\"/>\n            <asset mimeType=\"image/png\" name=\"ui_me_minus_1\"/>\n            <asset mimeType=\"image/png\" name=\"ui_me_minus_2\"/>\n            <asset mimeType=\"image/png\" name=\"ui_me_minus_3\"/>\n            <asset mimeType=\"image/png\" name=\"ui_me_minus_4\"/>\n            <asset mimeType=\"image/png\" name=\"ui_me_plus_1\"/>\n            <asset mimeType=\"image/png\" name=\"ui_me_plus_2\"/>\n            <asset mimeType=\"image/png\" name=\"ui_me_plus_3\"/>\n            <asset mimeType=\"image/png\" name=\"ui_me_plus_4\"/>\n            <asset mimeType=\"image/png\" name=\"ui_no_balls_1\"/>\n            <asset mimeType=\"image/png\" name=\"ui_no_balls_2\"/>\n            <asset mimeType=\"image/png\" name=\"ui_no_balls_3\"/>\n            <asset mimeType=\"image/png\" name=\"ui_no_balls_4\"/>\n            <asset mimeType=\"image/png\" name=\"ui_timer_and_points\"/>\n            <asset mimeType=\"image/png\" name=\"arena_8_preview\"/>\n            <asset mimeType=\"image/png\" name=\"arena_9_preview\"/>\n            <asset mimeType=\"image/png\" name=\"arena_10_preview\"/>\n            <asset mimeType=\"image/png\" name=\"arena_11_preview\"/>\n            <asset mimeType=\"image/png\" name=\"arena_12_preview\"/>\n            <asset mimeType=\"image/png\" name=\"star_empty\"/>\n            <asset mimeType=\"image/png\" name=\"star_filled_bronze\"/>\n            <asset mimeType=\"image/png\" name=\"star_filled_silver\"/>\n            <asset mimeType=\"image/png\" name=\"star_filled_gold\"/>\n            <asset mimeType=\"image/png\" name=\"quick_play_background\"/>\n            <asset mimeType=\"image/png\" name=\"quick_play_teaser\"/>\n            <asset mimeType=\"image/png\" name=\"quick_play_instructions\"/>\n            <asset mimeType=\"image/png\" name=\"free_games_bg\"/>\n            <asset mimeType=\"image/png\" name=\"leaderboard_bg\"/>\n            <asset mimeType=\"image/png\" name=\"leaderboard_divider\"/>\n            <asset mimeType=\"image/png\" name=\"leaderboard_highlighter\"/>\n            <asset mimeType=\"image/png\" name=\"left_black\"/>\n            <asset mimeType=\"image/png\" name=\"left_blue\"/>\n            <asset mimeType=\"image/png\" name=\"right_black\"/>\n            <asset mimeType=\"image/png\" name=\"right_blue\"/>\n            <asset mimeType=\"image/png\" name=\"add_friend_icon_blue\"/>\n            <asset mimeType=\"image/png\" name=\"add_friend_icon_red\"/>\n            <asset mimeType=\"image/png\" name=\"add_friend_icon_green\"/>\n            <asset mimeType=\"image/png\" name=\"scroll_down_click\"/>\n            <asset mimeType=\"image/png\" name=\"scroll_down_hilite\"/>\n            <asset mimeType=\"image/png\" name=\"scroll_down_inactive\"/>\n            <asset mimeType=\"image/png\" name=\"scroll_down_normal\"/>\n            <asset mimeType=\"image/png\" name=\"scroll_up_click\"/>\n            <asset mimeType=\"image/png\" name=\"scroll_up_hilite\"/>\n            <asset mimeType=\"image/png\" name=\"scroll_up_inactive\"/>\n            <asset mimeType=\"image/png\" name=\"scroll_up_normal\"/>\n            <asset mimeType=\"image/png\" name=\"scroll_left\"/>\n            <asset mimeType=\"image/png\" name=\"scroll_right\"/>\n\n            <asset mimeType=\"image/png\" name=\"throw_1_1\"/>\n            <asset mimeType=\"image/png\" name=\"throw_1_2\"/>\n            <asset mimeType=\"image/png\" name=\"throw_1_3\"/>\n            <asset mimeType=\"image/png\" name=\"throw_1_4\"/>\n\n            <asset mimeType=\"image/png\" name=\"throw_2_1\"/>\n            <asset mimeType=\"image/png\" name=\"throw_2_2\"/>\n            <asset mimeType=\"image/png\" name=\"throw_2_3\"/>\n            <asset mimeType=\"image/png\" name=\"throw_2_4\"/>\n            <asset mimeType=\"image/png\" name=\"throw_2_5\"/>\n\n            <asset mimeType=\"image/png\" name=\"throw_3_1\"/>\n            <asset mimeType=\"image/png\" name=\"throw_3_2\"/>\n            <asset mimeType=\"image/png\" name=\"throw_3_3\"/>\n            <asset mimeType=\"image/png\" name=\"throw_3_4\"/>\n            <asset mimeType=\"image/png\" name=\"throw_3_5\"/>\n\n            <asset mimeType=\"image/png\" name=\"balls_1\"/>\n            <asset mimeType=\"image/png\" name=\"balls_2\"/>\n            <asset mimeType=\"image/png\" name=\"balls_3\"/>\n            <asset mimeType=\"image/png\" name=\"balls_4\"/>\n            <asset mimeType=\"image/png\" name=\"balls_5\"/>\n\n            <asset mimeType=\"image/png\" name=\"move_1\"/>\n            <asset mimeType=\"image/png\" name=\"move_2\"/>\n            <asset mimeType=\"image/png\" name=\"move_3\"/>\n            <asset mimeType=\"image/png\" name=\"move_4\"/>\n\n            <asset mimeType=\"image/png\" name=\"pagination_ball\"/>\n            <asset mimeType=\"image/png\" name=\"pagination_ball_hilite\"/>\n\n            <asset mimeType=\"text/xml\" name=\"games_main\"/>\n            <asset mimeType=\"text/xml\" name=\"instructions_list_item\"/>\n            <asset mimeType=\"text/xml\" name=\"counter\"/>\n            <asset mimeType=\"text/xml\" name=\"figure\"/>\n            <asset mimeType=\"text/xml\" name=\"snowwar_ending\"/>\n            <asset mimeType=\"text/xml\" name=\"snowwar_exit\"/>\n            <asset mimeType=\"text/xml\" name=\"snowwar_lobby_player\"/>\n            <asset mimeType=\"text/xml\" name=\"snowwar_own_stats\"/>\n            <asset mimeType=\"text/xml\" name=\"snowwar_lobby_player_team_1\"/>\n            <asset mimeType=\"text/xml\" name=\"snowwar_lobby_player_team_2\"/>\n            <asset mimeType=\"text/xml\" name=\"snowwar_results_player_team_1\"/>\n            <asset mimeType=\"text/xml\" name=\"snowwar_results_player_team_2\"/>\n            <asset mimeType=\"text/xml\" name=\"snowwar_snowballs\"/>\n            <asset mimeType=\"text/xml\" name=\"snowwar_team_scores\"/>\n            <asset mimeType=\"text/xml\" name=\"snowwar_timer\"/>\n            <asset mimeType=\"text/xml\" name=\"snowwar_loading_background_xml\" />\n            <asset mimeType=\"text/xml\" name=\"snowwar_exit_confirmation\" />\n            <asset mimeType=\"text/xml\" name=\"snowwar_leaderboard\" />\n            <asset mimeType=\"text/xml\" name=\"snowwar_leaderboard_entry\" />\n\n            <asset name=\"explosion0001\" mimeType=\"image/png\">\n              <param key=\"offset\" value=\"-64,-64\"/>\n            </asset>\n            <asset name=\"explosion0002\" mimeType=\"image/png\">\n              <param key=\"offset\" value=\"-59,-58\"/>\n            </asset>\n            <asset name=\"explosion0003\" mimeType=\"image/png\">\n              <param key=\"offset\" value=\"-55,-53\"/>\n            </asset>\n            <asset name=\"explosion0004\" mimeType=\"image/png\">\n              <param key=\"offset\" value=\"-51,-46\"/>\n            </asset>\n            <asset name=\"explosion0005\" mimeType=\"image/png\">\n              <param key=\"offset\" value=\"-60,-39\"/>\n            </asset>\n            <asset name=\"explosion0006\" mimeType=\"image/png\">\n              <param key=\"offset\" value=\"-35,-31\"/>\n            </asset>\n            <asset name=\"explosion0007\" mimeType=\"image/png\">\n              <param key=\"offset\" value=\"-28,-23\"/>\n            </asset>\n            <asset name=\"explosion0008\" mimeType=\"image/png\">\n              <param key=\"offset\" value=\"-28,-23\"/>\n            </asset>\n            <asset name=\"explosion0009\" mimeType=\"image/png\">\n              <param key=\"offset\" value=\"-25,-25\"/>\n            </asset>\n            <asset name=\"explosion0010\" mimeType=\"image/png\">\n              <param key=\"offset\" value=\"-52,-39\"/>\n            </asset>\n            <asset name=\"explosion0011\" mimeType=\"image/png\">\n              <param key=\"offset\" value=\"-66,-43\"/>\n            </asset>\n            <asset name=\"explosion0012\" mimeType=\"image/png\">\n              <param key=\"offset\" value=\"-66,-45\"/>\n            </asset>\n\n        </assets>\n    </component>\n</manifest>\n",
+  "entries": [
+    {
+      "name": "btn_more_games_10",
+      "mimeType": "image/png",
+      "offset": 0,
+      "storedLength": 1838,
+      "originalLength": 1838,
+      "compression": "none"
+    },
+    {
+      "name": "btn_more_games_10_hi",
+      "mimeType": "image/png",
+      "offset": 1838,
+      "storedLength": 1969,
+      "originalLength": 1969,
+      "compression": "none"
+    },
+    {
+      "name": "btn_more_games_100",
+      "mimeType": "image/png",
+      "offset": 3807,
+      "storedLength": 2282,
+      "originalLength": 2282,
+      "compression": "none"
+    },
+    {
+      "name": "btn_more_games_100_hi",
+      "mimeType": "image/png",
+      "offset": 6089,
+      "storedLength": 2392,
+      "originalLength": 2392,
+      "compression": "none"
+    },
+    {
+      "name": "btn_more_games_300",
+      "mimeType": "image/png",
+      "offset": 8481,
+      "storedLength": 3386,
+      "originalLength": 3386,
+      "compression": "none"
+    },
+    {
+      "name": "btn_more_games_300_hi",
+      "mimeType": "image/png",
+      "offset": 11867,
+      "storedLength": 3569,
+      "originalLength": 3569,
+      "compression": "none"
+    },
+    {
+      "name": "hc_icon",
+      "mimeType": "image/png",
+      "offset": 15436,
+      "storedLength": 787,
+      "originalLength": 787,
+      "compression": "none"
+    },
+    {
+      "name": "bg_sky",
+      "mimeType": "image/png",
+      "offset": 16223,
+      "storedLength": 129,
+      "originalLength": 129,
+      "compression": "none"
+    },
+    {
+      "name": "bg_sunshine",
+      "mimeType": "image/png",
+      "offset": 16352,
+      "storedLength": 11883,
+      "originalLength": 11883,
+      "compression": "none"
+    },
+    {
+      "name": "bg_vista_1",
+      "mimeType": "image/png",
+      "offset": 28235,
+      "storedLength": 1345,
+      "originalLength": 1353,
+      "compression": "deflate"
+    },
+    {
+      "name": "bg_vista_2",
+      "mimeType": "image/png",
+      "offset": 29580,
+      "storedLength": 449,
+      "originalLength": 470,
+      "compression": "deflate"
+    },
+    {
+      "name": "bg_vista_3",
+      "mimeType": "image/png",
+      "offset": 30029,
+      "storedLength": 422,
+      "originalLength": 476,
+      "compression": "deflate"
+    },
+    {
+      "name": "blue_ball",
+      "mimeType": "image/png",
+      "offset": 30451,
+      "storedLength": 1432,
+      "originalLength": 1432,
+      "compression": "none"
+    },
+    {
+      "name": "blue_ball_rematch",
+      "mimeType": "image/png",
+      "offset": 31883,
+      "storedLength": 898,
+      "originalLength": 898,
+      "compression": "none"
+    },
+    {
+      "name": "blue_glove",
+      "mimeType": "image/png",
+      "offset": 32781,
+      "storedLength": 3651,
+      "originalLength": 3651,
+      "compression": "none"
+    },
+    {
+      "name": "blue_infobox",
+      "mimeType": "image/png",
+      "offset": 36432,
+      "storedLength": 7537,
+      "originalLength": 7537,
+      "compression": "none"
+    },
+    {
+      "name": "blue_square",
+      "mimeType": "image/png",
+      "offset": 43969,
+      "storedLength": 2042,
+      "originalLength": 2042,
+      "compression": "none"
+    },
+    {
+      "name": "gray_ball",
+      "mimeType": "image/png",
+      "offset": 46011,
+      "storedLength": 1168,
+      "originalLength": 1168,
+      "compression": "none"
+    },
+    {
+      "name": "gray_infobox",
+      "mimeType": "image/png",
+      "offset": 47179,
+      "storedLength": 4702,
+      "originalLength": 4702,
+      "compression": "none"
+    },
+    {
+      "name": "gray_square",
+      "mimeType": "image/png",
+      "offset": 51881,
+      "storedLength": 1356,
+      "originalLength": 1356,
+      "compression": "none"
+    },
+    {
+      "name": "green_square",
+      "mimeType": "image/png",
+      "offset": 53237,
+      "storedLength": 1139,
+      "originalLength": 1139,
+      "compression": "none"
+    },
+    {
+      "name": "load_1",
+      "mimeType": "image/png",
+      "offset": 54376,
+      "storedLength": 705,
+      "originalLength": 840,
+      "compression": "deflate"
+    },
+    {
+      "name": "load_2",
+      "mimeType": "image/png",
+      "offset": 55081,
+      "storedLength": 711,
+      "originalLength": 842,
+      "compression": "deflate"
+    },
+    {
+      "name": "load_3",
+      "mimeType": "image/png",
+      "offset": 55792,
+      "storedLength": 730,
+      "originalLength": 847,
+      "compression": "deflate"
+    },
+    {
+      "name": "load_4",
+      "mimeType": "image/png",
+      "offset": 56522,
+      "storedLength": 730,
+      "originalLength": 846,
+      "compression": "deflate"
+    },
+    {
+      "name": "load_5",
+      "mimeType": "image/png",
+      "offset": 57252,
+      "storedLength": 718,
+      "originalLength": 847,
+      "compression": "deflate"
+    },
+    {
+      "name": "load_6",
+      "mimeType": "image/png",
+      "offset": 57970,
+      "storedLength": 711,
+      "originalLength": 844,
+      "compression": "deflate"
+    },
+    {
+      "name": "load_7",
+      "mimeType": "image/png",
+      "offset": 58681,
+      "storedLength": 708,
+      "originalLength": 841,
+      "compression": "deflate"
+    },
+    {
+      "name": "load_8",
+      "mimeType": "image/png",
+      "offset": 59389,
+      "storedLength": 707,
+      "originalLength": 841,
+      "compression": "deflate"
+    },
+    {
+      "name": "red_ball",
+      "mimeType": "image/png",
+      "offset": 60096,
+      "storedLength": 1448,
+      "originalLength": 1448,
+      "compression": "none"
+    },
+    {
+      "name": "red_ball_rematch",
+      "mimeType": "image/png",
+      "offset": 61544,
+      "storedLength": 908,
+      "originalLength": 908,
+      "compression": "none"
+    },
+    {
+      "name": "red_glove",
+      "mimeType": "image/png",
+      "offset": 62452,
+      "storedLength": 3675,
+      "originalLength": 3675,
+      "compression": "none"
+    },
+    {
+      "name": "red_infobox",
+      "mimeType": "image/png",
+      "offset": 66127,
+      "storedLength": 6424,
+      "originalLength": 6424,
+      "compression": "none"
+    },
+    {
+      "name": "red_square",
+      "mimeType": "image/png",
+      "offset": 72551,
+      "storedLength": 2024,
+      "originalLength": 2024,
+      "compression": "none"
+    },
+    {
+      "name": "snowstorm_logo",
+      "mimeType": "image/png",
+      "offset": 74575,
+      "storedLength": 32881,
+      "originalLength": 32881,
+      "compression": "none"
+    },
+    {
+      "name": "ui_ball_indicator_bg",
+      "mimeType": "image/png",
+      "offset": 107456,
+      "storedLength": 3266,
+      "originalLength": 3266,
+      "compression": "none"
+    },
+    {
+      "name": "ui_ball",
+      "mimeType": "image/png",
+      "offset": 110722,
+      "storedLength": 276,
+      "originalLength": 276,
+      "compression": "none"
+    },
+    {
+      "name": "ui_exit_down",
+      "mimeType": "image/png",
+      "offset": 110998,
+      "storedLength": 957,
+      "originalLength": 957,
+      "compression": "none"
+    },
+    {
+      "name": "ui_exit_up",
+      "mimeType": "image/png",
+      "offset": 111955,
+      "storedLength": 822,
+      "originalLength": 822,
+      "compression": "none"
+    },
+    {
+      "name": "ui_make_balls_down",
+      "mimeType": "image/png",
+      "offset": 112777,
+      "storedLength": 883,
+      "originalLength": 883,
+      "compression": "none"
+    },
+    {
+      "name": "ui_make_balls_up",
+      "mimeType": "image/png",
+      "offset": 113660,
+      "storedLength": 878,
+      "originalLength": 878,
+      "compression": "none"
+    },
+    {
+      "name": "ui_me_bg",
+      "mimeType": "image/png",
+      "offset": 114538,
+      "storedLength": 3038,
+      "originalLength": 3038,
+      "compression": "none"
+    },
+    {
+      "name": "rematch_1",
+      "mimeType": "image/png",
+      "offset": 117576,
+      "storedLength": 1546,
+      "originalLength": 1546,
+      "compression": "none"
+    },
+    {
+      "name": "rematch_2",
+      "mimeType": "image/png",
+      "offset": 119122,
+      "storedLength": 1608,
+      "originalLength": 1608,
+      "compression": "none"
+    },
+    {
+      "name": "rematch_3",
+      "mimeType": "image/png",
+      "offset": 120730,
+      "storedLength": 1615,
+      "originalLength": 1615,
+      "compression": "none"
+    },
+    {
+      "name": "rematch_4",
+      "mimeType": "image/png",
+      "offset": 122345,
+      "storedLength": 1647,
+      "originalLength": 1647,
+      "compression": "none"
+    },
+    {
+      "name": "rematch_5",
+      "mimeType": "image/png",
+      "offset": 123992,
+      "storedLength": 1652,
+      "originalLength": 1652,
+      "compression": "none"
+    },
+    {
+      "name": "rematch_6",
+      "mimeType": "image/png",
+      "offset": 125644,
+      "storedLength": 1640,
+      "originalLength": 1640,
+      "compression": "none"
+    },
+    {
+      "name": "ui_me_health_0",
+      "mimeType": "image/png",
+      "offset": 127284,
+      "storedLength": 303,
+      "originalLength": 303,
+      "compression": "none"
+    },
+    {
+      "name": "ui_me_health_1",
+      "mimeType": "image/png",
+      "offset": 127587,
+      "storedLength": 324,
+      "originalLength": 324,
+      "compression": "none"
+    },
+    {
+      "name": "ui_me_health_2",
+      "mimeType": "image/png",
+      "offset": 127911,
+      "storedLength": 318,
+      "originalLength": 318,
+      "compression": "none"
+    },
+    {
+      "name": "ui_me_health_3",
+      "mimeType": "image/png",
+      "offset": 128229,
+      "storedLength": 322,
+      "originalLength": 322,
+      "compression": "none"
+    },
+    {
+      "name": "ui_me_health_4",
+      "mimeType": "image/png",
+      "offset": 128551,
+      "storedLength": 315,
+      "originalLength": 315,
+      "compression": "none"
+    },
+    {
+      "name": "ui_me_health_5",
+      "mimeType": "image/png",
+      "offset": 128866,
+      "storedLength": 200,
+      "originalLength": 200,
+      "compression": "none"
+    },
+    {
+      "name": "ui_me_minus_1",
+      "mimeType": "image/png",
+      "offset": 129066,
+      "storedLength": 1127,
+      "originalLength": 1127,
+      "compression": "none"
+    },
+    {
+      "name": "ui_me_minus_2",
+      "mimeType": "image/png",
+      "offset": 130193,
+      "storedLength": 1127,
+      "originalLength": 1127,
+      "compression": "none"
+    },
+    {
+      "name": "ui_me_minus_3",
+      "mimeType": "image/png",
+      "offset": 131320,
+      "storedLength": 1127,
+      "originalLength": 1127,
+      "compression": "none"
+    },
+    {
+      "name": "ui_me_minus_4",
+      "mimeType": "image/png",
+      "offset": 132447,
+      "storedLength": 1127,
+      "originalLength": 1127,
+      "compression": "none"
+    },
+    {
+      "name": "ui_me_plus_1",
+      "mimeType": "image/png",
+      "offset": 133574,
+      "storedLength": 1127,
+      "originalLength": 1127,
+      "compression": "none"
+    },
+    {
+      "name": "ui_me_plus_2",
+      "mimeType": "image/png",
+      "offset": 134701,
+      "storedLength": 1127,
+      "originalLength": 1127,
+      "compression": "none"
+    },
+    {
+      "name": "ui_me_plus_3",
+      "mimeType": "image/png",
+      "offset": 135828,
+      "storedLength": 1127,
+      "originalLength": 1127,
+      "compression": "none"
+    },
+    {
+      "name": "ui_me_plus_4",
+      "mimeType": "image/png",
+      "offset": 136955,
+      "storedLength": 1127,
+      "originalLength": 1127,
+      "compression": "none"
+    },
+    {
+      "name": "ui_no_balls_1",
+      "mimeType": "image/png",
+      "offset": 138082,
+      "storedLength": 1448,
+      "originalLength": 1448,
+      "compression": "none"
+    },
+    {
+      "name": "ui_no_balls_2",
+      "mimeType": "image/png",
+      "offset": 139530,
+      "storedLength": 1618,
+      "originalLength": 1618,
+      "compression": "none"
+    },
+    {
+      "name": "ui_no_balls_3",
+      "mimeType": "image/png",
+      "offset": 141148,
+      "storedLength": 1618,
+      "originalLength": 1618,
+      "compression": "none"
+    },
+    {
+      "name": "ui_no_balls_4",
+      "mimeType": "image/png",
+      "offset": 142766,
+      "storedLength": 1618,
+      "originalLength": 1618,
+      "compression": "none"
+    },
+    {
+      "name": "ui_timer_and_points",
+      "mimeType": "image/png",
+      "offset": 144384,
+      "storedLength": 5861,
+      "originalLength": 5861,
+      "compression": "none"
+    },
+    {
+      "name": "arena_8_preview",
+      "mimeType": "image/png",
+      "offset": 150245,
+      "storedLength": 20643,
+      "originalLength": 20643,
+      "compression": "none"
+    },
+    {
+      "name": "arena_9_preview",
+      "mimeType": "image/png",
+      "offset": 170888,
+      "storedLength": 8875,
+      "originalLength": 8875,
+      "compression": "none"
+    },
+    {
+      "name": "arena_10_preview",
+      "mimeType": "image/png",
+      "offset": 179763,
+      "storedLength": 20457,
+      "originalLength": 20457,
+      "compression": "none"
+    },
+    {
+      "name": "arena_11_preview",
+      "mimeType": "image/png",
+      "offset": 200220,
+      "storedLength": 20457,
+      "originalLength": 20457,
+      "compression": "none"
+    },
+    {
+      "name": "arena_12_preview",
+      "mimeType": "image/png",
+      "offset": 220677,
+      "storedLength": 5294,
+      "originalLength": 5294,
+      "compression": "none"
+    },
+    {
+      "name": "star_empty",
+      "mimeType": "image/png",
+      "offset": 225971,
+      "storedLength": 169,
+      "originalLength": 171,
+      "compression": "deflate"
+    },
+    {
+      "name": "star_filled_bronze",
+      "mimeType": "image/png",
+      "offset": 226140,
+      "storedLength": 224,
+      "originalLength": 224,
+      "compression": "none"
+    },
+    {
+      "name": "star_filled_silver",
+      "mimeType": "image/png",
+      "offset": 226364,
+      "storedLength": 210,
+      "originalLength": 210,
+      "compression": "none"
+    },
+    {
+      "name": "star_filled_gold",
+      "mimeType": "image/png",
+      "offset": 226574,
+      "storedLength": 233,
+      "originalLength": 233,
+      "compression": "none"
+    },
+    {
+      "name": "quick_play_background",
+      "mimeType": "image/png",
+      "offset": 226807,
+      "storedLength": 13464,
+      "originalLength": 13515,
+      "compression": "deflate"
+    },
+    {
+      "name": "quick_play_teaser",
+      "mimeType": "image/png",
+      "offset": 240271,
+      "storedLength": 11252,
+      "originalLength": 11252,
+      "compression": "none"
+    },
+    {
+      "name": "quick_play_instructions",
+      "mimeType": "image/png",
+      "offset": 251523,
+      "storedLength": 14958,
+      "originalLength": 14958,
+      "compression": "none"
+    },
+    {
+      "name": "free_games_bg",
+      "mimeType": "image/png",
+      "offset": 266481,
+      "storedLength": 157,
+      "originalLength": 157,
+      "compression": "none"
+    },
+    {
+      "name": "leaderboard_bg",
+      "mimeType": "image/png",
+      "offset": 266638,
+      "storedLength": 17943,
+      "originalLength": 17969,
+      "compression": "deflate"
+    },
+    {
+      "name": "leaderboard_divider",
+      "mimeType": "image/png",
+      "offset": 284581,
+      "storedLength": 788,
+      "originalLength": 1141,
+      "compression": "deflate"
+    },
+    {
+      "name": "leaderboard_highlighter",
+      "mimeType": "image/png",
+      "offset": 285369,
+      "storedLength": 6155,
+      "originalLength": 6179,
+      "compression": "deflate"
+    },
+    {
+      "name": "left_black",
+      "mimeType": "image/png",
+      "offset": 291524,
+      "storedLength": 150,
+      "originalLength": 150,
+      "compression": "none"
+    },
+    {
+      "name": "left_blue",
+      "mimeType": "image/png",
+      "offset": 291674,
+      "storedLength": 150,
+      "originalLength": 150,
+      "compression": "none"
+    },
+    {
+      "name": "right_black",
+      "mimeType": "image/png",
+      "offset": 291824,
+      "storedLength": 148,
+      "originalLength": 148,
+      "compression": "none"
+    },
+    {
+      "name": "right_blue",
+      "mimeType": "image/png",
+      "offset": 291972,
+      "storedLength": 148,
+      "originalLength": 148,
+      "compression": "none"
+    },
+    {
+      "name": "add_friend_icon_blue",
+      "mimeType": "image/png",
+      "offset": 292120,
+      "storedLength": 169,
+      "originalLength": 169,
+      "compression": "none"
+    },
+    {
+      "name": "add_friend_icon_red",
+      "mimeType": "image/png",
+      "offset": 292289,
+      "storedLength": 169,
+      "originalLength": 169,
+      "compression": "none"
+    },
+    {
+      "name": "add_friend_icon_green",
+      "mimeType": "image/png",
+      "offset": 292458,
+      "storedLength": 168,
+      "originalLength": 169,
+      "compression": "deflate"
+    },
+    {
+      "name": "scroll_down_click",
+      "mimeType": "image/png",
+      "offset": 292626,
+      "storedLength": 206,
+      "originalLength": 206,
+      "compression": "none"
+    },
+    {
+      "name": "scroll_down_hilite",
+      "mimeType": "image/png",
+      "offset": 292832,
+      "storedLength": 207,
+      "originalLength": 207,
+      "compression": "none"
+    },
+    {
+      "name": "scroll_down_inactive",
+      "mimeType": "image/png",
+      "offset": 293039,
+      "storedLength": 206,
+      "originalLength": 206,
+      "compression": "none"
+    },
+    {
+      "name": "scroll_down_normal",
+      "mimeType": "image/png",
+      "offset": 293245,
+      "storedLength": 206,
+      "originalLength": 206,
+      "compression": "none"
+    },
+    {
+      "name": "scroll_up_click",
+      "mimeType": "image/png",
+      "offset": 293451,
+      "storedLength": 205,
+      "originalLength": 205,
+      "compression": "none"
+    },
+    {
+      "name": "scroll_up_hilite",
+      "mimeType": "image/png",
+      "offset": 293656,
+      "storedLength": 205,
+      "originalLength": 205,
+      "compression": "none"
+    },
+    {
+      "name": "scroll_up_inactive",
+      "mimeType": "image/png",
+      "offset": 293861,
+      "storedLength": 205,
+      "originalLength": 205,
+      "compression": "none"
+    },
+    {
+      "name": "scroll_up_normal",
+      "mimeType": "image/png",
+      "offset": 294066,
+      "storedLength": 205,
+      "originalLength": 205,
+      "compression": "none"
+    },
+    {
+      "name": "scroll_left",
+      "mimeType": "image/png",
+      "offset": 294271,
+      "storedLength": 167,
+      "originalLength": 167,
+      "compression": "none"
+    },
+    {
+      "name": "scroll_right",
+      "mimeType": "image/png",
+      "offset": 294438,
+      "storedLength": 165,
+      "originalLength": 165,
+      "compression": "none"
+    },
+    {
+      "name": "throw_1_1",
+      "mimeType": "image/png",
+      "offset": 294603,
+      "storedLength": 4389,
+      "originalLength": 4389,
+      "compression": "none"
+    },
+    {
+      "name": "throw_1_2",
+      "mimeType": "image/png",
+      "offset": 298992,
+      "storedLength": 4086,
+      "originalLength": 4086,
+      "compression": "none"
+    },
+    {
+      "name": "throw_1_3",
+      "mimeType": "image/png",
+      "offset": 303078,
+      "storedLength": 4260,
+      "originalLength": 4260,
+      "compression": "none"
+    },
+    {
+      "name": "throw_1_4",
+      "mimeType": "image/png",
+      "offset": 307338,
+      "storedLength": 4277,
+      "originalLength": 4277,
+      "compression": "none"
+    },
+    {
+      "name": "throw_2_1",
+      "mimeType": "image/png",
+      "offset": 311615,
+      "storedLength": 4288,
+      "originalLength": 4288,
+      "compression": "none"
+    },
+    {
+      "name": "throw_2_2",
+      "mimeType": "image/png",
+      "offset": 315903,
+      "storedLength": 4246,
+      "originalLength": 4246,
+      "compression": "none"
+    },
+    {
+      "name": "throw_2_3",
+      "mimeType": "image/png",
+      "offset": 320149,
+      "storedLength": 2570,
+      "originalLength": 2603,
+      "compression": "deflate"
+    },
+    {
+      "name": "throw_2_4",
+      "mimeType": "image/png",
+      "offset": 322719,
+      "storedLength": 4169,
+      "originalLength": 4169,
+      "compression": "none"
+    },
+    {
+      "name": "throw_2_5",
+      "mimeType": "image/png",
+      "offset": 326888,
+      "storedLength": 4256,
+      "originalLength": 4256,
+      "compression": "none"
+    },
+    {
+      "name": "throw_3_1",
+      "mimeType": "image/png",
+      "offset": 331144,
+      "storedLength": 7802,
+      "originalLength": 7802,
+      "compression": "none"
+    },
+    {
+      "name": "throw_3_2",
+      "mimeType": "image/png",
+      "offset": 338946,
+      "storedLength": 7775,
+      "originalLength": 7775,
+      "compression": "none"
+    },
+    {
+      "name": "throw_3_3",
+      "mimeType": "image/png",
+      "offset": 346721,
+      "storedLength": 7618,
+      "originalLength": 7618,
+      "compression": "none"
+    },
+    {
+      "name": "throw_3_4",
+      "mimeType": "image/png",
+      "offset": 354339,
+      "storedLength": 7693,
+      "originalLength": 7693,
+      "compression": "none"
+    },
+    {
+      "name": "throw_3_5",
+      "mimeType": "image/png",
+      "offset": 362032,
+      "storedLength": 7583,
+      "originalLength": 7583,
+      "compression": "none"
+    },
+    {
+      "name": "balls_1",
+      "mimeType": "image/png",
+      "offset": 369615,
+      "storedLength": 3979,
+      "originalLength": 3979,
+      "compression": "none"
+    },
+    {
+      "name": "balls_2",
+      "mimeType": "image/png",
+      "offset": 373594,
+      "storedLength": 4047,
+      "originalLength": 4047,
+      "compression": "none"
+    },
+    {
+      "name": "balls_3",
+      "mimeType": "image/png",
+      "offset": 377641,
+      "storedLength": 4125,
+      "originalLength": 4125,
+      "compression": "none"
+    },
+    {
+      "name": "balls_4",
+      "mimeType": "image/png",
+      "offset": 381766,
+      "storedLength": 7940,
+      "originalLength": 7940,
+      "compression": "none"
+    },
+    {
+      "name": "balls_5",
+      "mimeType": "image/png",
+      "offset": 389706,
+      "storedLength": 3940,
+      "originalLength": 3940,
+      "compression": "none"
+    },
+    {
+      "name": "move_1",
+      "mimeType": "image/png",
+      "offset": 393646,
+      "storedLength": 4169,
+      "originalLength": 4169,
+      "compression": "none"
+    },
+    {
+      "name": "move_2",
+      "mimeType": "image/png",
+      "offset": 397815,
+      "storedLength": 4208,
+      "originalLength": 4208,
+      "compression": "none"
+    },
+    {
+      "name": "move_3",
+      "mimeType": "image/png",
+      "offset": 402023,
+      "storedLength": 4159,
+      "originalLength": 4159,
+      "compression": "none"
+    },
+    {
+      "name": "move_4",
+      "mimeType": "image/png",
+      "offset": 406182,
+      "storedLength": 4000,
+      "originalLength": 4000,
+      "compression": "none"
+    },
+    {
+      "name": "pagination_ball",
+      "mimeType": "image/png",
+      "offset": 410182,
+      "storedLength": 200,
+      "originalLength": 200,
+      "compression": "none"
+    },
+    {
+      "name": "pagination_ball_hilite",
+      "mimeType": "image/png",
+      "offset": 410382,
+      "storedLength": 155,
+      "originalLength": 155,
+      "compression": "none"
+    },
+    {
+      "name": "games_main",
+      "mimeType": "text/xml",
+      "offset": 410537,
+      "storedLength": 2370,
+      "originalLength": 26721,
+      "compression": "deflate"
+    },
+    {
+      "name": "instructions_list_item",
+      "mimeType": "text/xml",
+      "offset": 412907,
+      "storedLength": 431,
+      "originalLength": 1420,
+      "compression": "deflate"
+    },
+    {
+      "name": "counter",
+      "mimeType": "text/xml",
+      "offset": 413338,
+      "storedLength": 272,
+      "originalLength": 448,
+      "compression": "deflate"
+    },
+    {
+      "name": "figure",
+      "mimeType": "text/xml",
+      "offset": 413610,
+      "storedLength": 287,
+      "originalLength": 1474,
+      "compression": "deflate"
+    },
+    {
+      "name": "snowwar_ending",
+      "mimeType": "text/xml",
+      "offset": 413897,
+      "storedLength": 2056,
+      "originalLength": 26440,
+      "compression": "deflate"
+    },
+    {
+      "name": "snowwar_exit",
+      "mimeType": "text/xml",
+      "offset": 415953,
+      "storedLength": 332,
+      "originalLength": 599,
+      "compression": "deflate"
+    },
+    {
+      "name": "snowwar_lobby_player",
+      "mimeType": "text/xml",
+      "offset": 416285,
+      "storedLength": 353,
+      "originalLength": 781,
+      "compression": "deflate"
+    },
+    {
+      "name": "snowwar_own_stats",
+      "mimeType": "text/xml",
+      "offset": 416638,
+      "storedLength": 605,
+      "originalLength": 2502,
+      "compression": "deflate"
+    },
+    {
+      "name": "snowwar_lobby_player_team_1",
+      "mimeType": "text/xml",
+      "offset": 417243,
+      "storedLength": 1312,
+      "originalLength": 15075,
+      "compression": "deflate"
+    },
+    {
+      "name": "snowwar_lobby_player_team_2",
+      "mimeType": "text/xml",
+      "offset": 418555,
+      "storedLength": 1322,
+      "originalLength": 15204,
+      "compression": "deflate"
+    },
+    {
+      "name": "snowwar_results_player_team_1",
+      "mimeType": "text/xml",
+      "offset": 419877,
+      "storedLength": 1466,
+      "originalLength": 15321,
+      "compression": "deflate"
+    },
+    {
+      "name": "snowwar_results_player_team_2",
+      "mimeType": "text/xml",
+      "offset": 421343,
+      "storedLength": 1464,
+      "originalLength": 15299,
+      "compression": "deflate"
+    },
+    {
+      "name": "snowwar_snowballs",
+      "mimeType": "text/xml",
+      "offset": 422807,
+      "storedLength": 504,
+      "originalLength": 3041,
+      "compression": "deflate"
+    },
+    {
+      "name": "snowwar_team_scores",
+      "mimeType": "text/xml",
+      "offset": 423311,
+      "storedLength": 625,
+      "originalLength": 3913,
+      "compression": "deflate"
+    },
+    {
+      "name": "snowwar_timer",
+      "mimeType": "text/xml",
+      "offset": 423936,
+      "storedLength": 550,
+      "originalLength": 1939,
+      "compression": "deflate"
+    },
+    {
+      "name": "snowwar_loading_background_xml",
+      "mimeType": "text/xml",
+      "offset": 424486,
+      "storedLength": 422,
+      "originalLength": 1596,
+      "compression": "deflate"
+    },
+    {
+      "name": "snowwar_exit_confirmation",
+      "mimeType": "text/xml",
+      "offset": 424908,
+      "storedLength": 628,
+      "originalLength": 2533,
+      "compression": "deflate"
+    },
+    {
+      "name": "snowwar_leaderboard",
+      "mimeType": "text/xml",
+      "offset": 425536,
+      "storedLength": 1269,
+      "originalLength": 10017,
+      "compression": "deflate"
+    },
+    {
+      "name": "snowwar_leaderboard_entry",
+      "mimeType": "text/xml",
+      "offset": 426805,
+      "storedLength": 662,
+      "originalLength": 2982,
+      "compression": "deflate"
+    },
+    {
+      "name": "explosion0001",
+      "mimeType": "image/png",
+      "offset": 427467,
+      "storedLength": 266,
+      "originalLength": 266,
+      "compression": "none",
+      "params": {
+        "offset": "-64,-64"
+      }
+    },
+    {
+      "name": "explosion0002",
+      "mimeType": "image/png",
+      "offset": 427733,
+      "storedLength": 269,
+      "originalLength": 269,
+      "compression": "none",
+      "params": {
+        "offset": "-59,-58"
+      }
+    },
+    {
+      "name": "explosion0003",
+      "mimeType": "image/png",
+      "offset": 428002,
+      "storedLength": 765,
+      "originalLength": 765,
+      "compression": "none",
+      "params": {
+        "offset": "-55,-53"
+      }
+    },
+    {
+      "name": "explosion0004",
+      "mimeType": "image/png",
+      "offset": 428767,
+      "storedLength": 1130,
+      "originalLength": 1130,
+      "compression": "none",
+      "params": {
+        "offset": "-51,-46"
+      }
+    },
+    {
+      "name": "explosion0005",
+      "mimeType": "image/png",
+      "offset": 429897,
+      "storedLength": 953,
+      "originalLength": 953,
+      "compression": "none",
+      "params": {
+        "offset": "-60,-39"
+      }
+    },
+    {
+      "name": "explosion0006",
+      "mimeType": "image/png",
+      "offset": 430850,
+      "storedLength": 2224,
+      "originalLength": 2224,
+      "compression": "none",
+      "params": {
+        "offset": "-35,-31"
+      }
+    },
+    {
+      "name": "explosion0007",
+      "mimeType": "image/png",
+      "offset": 433074,
+      "storedLength": 2736,
+      "originalLength": 2736,
+      "compression": "none",
+      "params": {
+        "offset": "-28,-23"
+      }
+    },
+    {
+      "name": "explosion0008",
+      "mimeType": "image/png",
+      "offset": 435810,
+      "storedLength": 2903,
+      "originalLength": 2903,
+      "compression": "none",
+      "params": {
+        "offset": "-28,-23"
+      }
+    },
+    {
+      "name": "explosion0009",
+      "mimeType": "image/png",
+      "offset": 438713,
+      "storedLength": 2380,
+      "originalLength": 2380,
+      "compression": "none",
+      "params": {
+        "offset": "-25,-25"
+      }
+    },
+    {
+      "name": "explosion0010",
+      "mimeType": "image/png",
+      "offset": 441093,
+      "storedLength": 1320,
+      "originalLength": 1320,
+      "compression": "none",
+      "params": {
+        "offset": "-52,-39"
+      }
+    },
+    {
+      "name": "explosion0011",
+      "mimeType": "image/png",
+      "offset": 442413,
+      "storedLength": 781,
+      "originalLength": 781,
+      "compression": "none",
+      "params": {
+        "offset": "-66,-43"
+      }
+    },
+    {
+      "name": "explosion0012",
+      "mimeType": "image/png",
+      "offset": 443194,
+      "storedLength": 376,
+      "originalLength": 376,
+      "compression": "none",
+      "params": {
+        "offset": "-66,-45"
+      }
+    }
+  ]
+}

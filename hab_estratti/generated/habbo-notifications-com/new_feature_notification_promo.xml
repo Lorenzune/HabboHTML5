@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="new_feature_notification_promo" width="192" height="34" version="0.1" uid="0DC315BE-D055-4F62-DE01-9FAB678BA6E3">
+  <window>
+    <region x="0" y="0" width="192" height="34" params="1" style="3" dynamic_style="brightness_and_shadow_under_gentle" name="main_region" color="0x0fffabc" treshold="0">
+      <children>
+        <border x="0" y="0" width="192" height="34" params="8388624" style="9" name="border" color="0x0686661" treshold="0" tags="%23bg">
+          <children>
+            <static_bitmap x="8" y="7" width="20" height="20" params="16" style="3" name="static_bitmap" tags="%23icon">
+              <variables>
+                <var key="asset_uri" value="" type="String"/>
+                <var key="pivot_point" value="center" type="String"/>
+                <var key="stretched_x" value="false" type="Boolean"/>
+                <var key="stretched_y" value="false" type="Boolean"/>
+                <var key="etching_color" value="0x48000000" type="hex"/>
+              </variables>
+            </static_bitmap>
+            <text x="30" y="7" width="148" height="17" params="8388624" style="0" name="desc" caption="some%20text%20here" tags="%23icon" width_max="148">
+              <variables>
+                <var key="antialias_type" value="advanced" type="String"/>
+                <var key="auto_size" value="left" type="String"/>
+                <var key="font_face" value="Ubuntu" type="String"/>
+                <var key="font_size" value="12" type="uint"/>
+                <var key="text_color" value="0xffffff" type="hex"/>
+                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                <var key="sharpness" value="0" type="Number"/>
+                <var key="thickness" value="0" type="Number"/>
+                <var key="word_wrap" value="true" type="Boolean"/>
+                <var key="underline" value="true" type="Boolean"/>
+                <var key="kerning" value="false" type="Boolean"/>
+                <var key="spacing" value="0" type="Number"/>
+                <var key="leading" value="0" type="Number"/>
+              </variables>
+            </text>
+            <region x="174" y="12" width="10" height="10" params="17" style="3" name="cancel_link_region" visible="false" treshold="0">
+              <children>
+                <static_bitmap x="0" y="0" width="9" height="9" params="16" style="3" name="cancel_img" blend="0.55">
+                  <variables>
+                    <var key="asset_uri" value="common_close_x" type="String"/>
+                    <var key="stretched_x" value="false" type="Boolean"/>
+                    <var key="stretched_y" value="false" type="Boolean"/>
+                    <var key="fit_size_to_contents" value="true" type="Boolean"/>
+                  </variables>
+                </static_bitmap>
+                <static_bitmap x="1" y="0" width="9" height="9" params="16" style="3" name="cancel_img" color="0x00" blend="0.5" visible="false">
+                  <variables>
+                    <var key="asset_uri" value="common_close_x" type="String"/>
+                    <var key="stretched_x" value="false" type="Boolean"/>
+                    <var key="stretched_y" value="false" type="Boolean"/>
+                    <var key="fit_size_to_contents" value="true" type="Boolean"/>
+                  </variables>
+                </static_bitmap>
+              </children>
+            </region>
+          </children>
+        </border>
+      </children>
+    </region>
+  </window>
+</layout>

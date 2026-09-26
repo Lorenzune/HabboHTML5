@@ -1,0 +1,23 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "SelectionArrow",
+  "entries": [
+    {
+      "name": "SelectionArrow.json",
+      "mimeType": "application/json",
+      "offset": 0,
+      "storedLength": 468,
+      "originalLength": 1668,
+      "compression": "deflate"
+    },
+    {
+      "name": "SelectionArrow.png",
+      "mimeType": "image/png",
+      "offset": 468,
+      "storedLength": 1012,
+      "originalLength": 1012,
+      "compression": "none"
+    }
+  ]
+}

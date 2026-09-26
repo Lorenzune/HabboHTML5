@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="recyclerPrizesWidgetLevelItem" width="348" height="78" version="0.1" uid="3AD8FA84-5941-CD45-D6C5-C05869646AD8">
+  <window>
+    <container x="0" y="0" width="348" height="78" params="16" style="3" name="bg">
+      <children>
+        <border x="0" y="0" width="348" height="78" params="8390800" style="0" name="border">
+          <children>
+            <itemlist_vertical x="5" y="5" width="338" height="68" params="8388752" style="3" name="content">
+              <children>
+                <itemlist_horizontal x="0" y="0" width="106" height="23" params="16" style="3" name="header_bar" height_min="23" height_max="23">
+                  <children>
+                    <static_bitmap x="0" y="3" width="18" height="17" params="16" style="3" name="star_icon">
+                      <variables>
+                        <var key="asset_uri" value="star_small_gold" type="String"/>
+                        <var key="pivot_point" value="center" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                    <text x="18" y="3" width="28" height="17" params="48" style="3" name="level_title" caption="Title">
+                      <variables>
+                        <var key="auto_size" value="left" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="bold" value="true" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                    <text x="46" y="3" width="10" height="17" params="16" style="3" name="level_splitter" caption="%20-">
+                      <variables>
+                        <var key="auto_size" value="left" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                    <text x="56" y="3" width="50" height="17" params="16" style="3" name="level_chances" caption="Chances">
+                      <variables>
+                        <var key="auto_size" value="left" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="italic" value="true" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                  </children>
+                  <variables>
+                    <var key="resize_on_item_update" value="true" type="Boolean"/>
+                  </variables>
+                </itemlist_horizontal>
+                <background x="0" y="23" width="338" height="1" params="144" style="3" color="0x5050000000" background="true"/>
+                <container x="0" y="24" width="338" height="44" params="8388752" style="3" color="0xffffeaeaea" background="true">
+                  <children>
+                    <itemgrid_vertical x="5" y="5" width="328" height="36" params="8388752" style="3" name="itemGrid" color="0xffffeaeaea" background="true">
+                      <children>
+                      </children>
+                      <variables>
+                        <var key="spacing" value="2" type="int"/>
+                        <var key="scale_to_fit_items" value="true" type="Boolean"/>
+                        <var key="resize_on_item_update" value="true" type="Boolean"/>
+                      </variables>
+                    </itemgrid_vertical>
+                  </children>
+                </container>
+              </children>
+              <variables>
+                <var key="resize_on_item_update" value="true" type="Boolean"/>
+              </variables>
+            </itemlist_vertical>
+          </children>
+        </border>
+      </children>
+    </container>
+  </window>
+</layout>

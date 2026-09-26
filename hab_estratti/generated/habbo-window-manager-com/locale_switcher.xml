@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="locale_switcher" width="276" height="71" version="0.1" uid="806B0FDE-9048-A335-C3F0-A21ED651FC9E">
+  <window>
+    <frame x="0" y="0" width="276" height="71" params="32769" style="100" caption="Localization%20Switcher">
+      <filters>
+        <DropShadowFilter angle="0" alpha="0.34901960784313724" blurX="20" blurY="20"/>
+      </filters>
+      <children>
+        <dropmenu x="8" y="7" width="259" height="20" params="17" style="100" name="locale_list" caption="Pick%20language%20%28will%20crash%20if%20not%20available%29"/>
+      </children>
+    </frame>
+  </window>
+</layout>

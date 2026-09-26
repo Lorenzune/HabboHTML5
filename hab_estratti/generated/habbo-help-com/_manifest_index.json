@@ -1,0 +1,376 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboHelpCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n\t<component class=\"com.sulake.bootstrap.HabboHelpBootstrap\" version=\"0.0\">\n\t<interface iid=\"com.sulake.iid.IIDHabboHelp\" />\n\t\t<assets>\n            <asset mimeType=\"text/xml\" name=\"welcome_name_change_xml\" />\n            <asset mimeType=\"text/xml\" name=\"welcome_name_selection_xml\" />\n            <asset mimeType=\"text/xml\" name=\"welcome_name_suggestion_item_xml\" />\n            <asset mimeType=\"text/xml\" name=\"welcome_name_confirmation_xml\" />\n            <asset mimeType=\"text/xml\" name=\"welcome_screen_xml\" />\n            <asset mimeType=\"text/xml\" name=\"welcome_tour_popup_xml\" />\n\n            <!-- Main window -->\n            <asset mimeType=\"text/xml\" name=\"topics_flow_help_xml\" />\n            <asset mimeType=\"text/xml\" name=\"main_help_xml\" />\n            <asset mimeType=\"text/xml\" name=\"main_xml\" />\n\n            <!-- Guide help request -->\n            <asset mimeType=\"text/xml\" name=\"user_create_xml\" />\n            <asset mimeType=\"text/xml\" name=\"user_pending_xml\" />\n            <asset mimeType=\"text/xml\" name=\"user_ongoing_xml\" />\n            <asset mimeType=\"text/xml\" name=\"user_feedback_xml\" />\n            <asset mimeType=\"text/xml\" name=\"user_thanks_xml\" />\n            <asset mimeType=\"text/xml\" name=\"user_guide_disconnected_xml\" />\n\n            <asset mimeType=\"text/xml\" name=\"guide_tool_xml\" />\n            <asset mimeType=\"text/xml\" name=\"guide_accept_xml\" />\n            <asset mimeType=\"text/xml\" name=\"guide_ongoing_xml\" />\n            <asset mimeType=\"text/xml\" name=\"guide_closed_xml\" />\n\n            <asset mimeType=\"text/xml\" name=\"guardian_chat_review_accept_xml\" />\n            <asset mimeType=\"text/xml\" name=\"guardian_chat_review_results_xml\" />\n            <asset mimeType=\"text/xml\" name=\"guardian_chat_review_vote_xml\" />\n            <asset mimeType=\"text/xml\" name=\"guardian_chat_review_wait_for_results_xml\" />\n            <asset mimeType=\"text/xml\" name=\"guardian_chat_review_wait_for_voters_xml\" />\n\n            <asset mimeType=\"text/xml\" name=\"error_window_xml\" />\n            <asset mimeType=\"text/xml\" name=\"chat_msg_xml\" />\n            <asset mimeType=\"text/xml\" name=\"chat_msg_notification_xml\" />\n            <asset mimeType=\"text/xml\" name=\"chat_msg_reminder_xml\" />\n            <asset mimeType=\"text/xml\" name=\"report_window_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"rejected_window_xml\"/>\n\n            <asset mimeType=\"text/xml\" name=\"pending_bully_request_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"pending_guide_session_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"pending_instructions_request_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"pending_tour_request_xml\"/>\n\n            <asset mimeType=\"text/xml\" name=\"chat_review_reporter_feedback_xml\"/>\n\n            <!-- Illumina CFH -->\n\n            <asset mimeType=\"text/xml\" name=\"abusive_notice_xml\" />\n            <asset mimeType=\"text/xml\" name=\"bully_report_xml\" />\n            <asset mimeType=\"text/xml\" name=\"chat_report_xml\" />\n            <asset mimeType=\"text/xml\" name=\"chat_report_item_xml\" />\n            <asset mimeType=\"text/xml\" name=\"emergency_help_request_xml\" />\n            <asset mimeType=\"text/xml\" name=\"pending_request_xml\" />\n\n            <!-- Habbo way -->\n            <asset mimeType=\"text/xml\" name=\"habbo_way_xml\" />\n            <asset mimeType=\"text/xml\" name=\"habbo_way_quiz_xml\" />\n            <asset mimeType=\"text/xml\" name=\"safety_booklet_xml\" />\n\n            <asset mimeType=\"text/xml\" name=\"sanction_info_xml\" />\n            <asset mimeType=\"text/xml\" name=\"my_reports_xml\" />\n\n\t\t</assets>\n\t</component>\n</manifest>\n",
+  "entries": [
+    {
+      "name": "welcome_name_change_xml",
+      "mimeType": "text/xml",
+      "offset": 0,
+      "storedLength": 755,
+      "originalLength": 3535,
+      "compression": "deflate"
+    },
+    {
+      "name": "welcome_name_selection_xml",
+      "mimeType": "text/xml",
+      "offset": 755,
+      "storedLength": 757,
+      "originalLength": 2888,
+      "compression": "deflate"
+    },
+    {
+      "name": "welcome_name_suggestion_item_xml",
+      "mimeType": "text/xml",
+      "offset": 1512,
+      "storedLength": 404,
+      "originalLength": 858,
+      "compression": "deflate"
+    },
+    {
+      "name": "welcome_name_confirmation_xml",
+      "mimeType": "text/xml",
+      "offset": 1916,
+      "storedLength": 589,
+      "originalLength": 2315,
+      "compression": "deflate"
+    },
+    {
+      "name": "welcome_screen_xml",
+      "mimeType": "text/xml",
+      "offset": 2505,
+      "storedLength": 755,
+      "originalLength": 2455,
+      "compression": "deflate"
+    },
+    {
+      "name": "welcome_tour_popup_xml",
+      "mimeType": "text/xml",
+      "offset": 3260,
+      "storedLength": 1027,
+      "originalLength": 4826,
+      "compression": "deflate"
+    },
+    {
+      "name": "topics_flow_help_xml",
+      "mimeType": "text/xml",
+      "offset": 4287,
+      "storedLength": 2932,
+      "originalLength": 32976,
+      "compression": "deflate"
+    },
+    {
+      "name": "main_help_xml",
+      "mimeType": "text/xml",
+      "offset": 7219,
+      "storedLength": 1676,
+      "originalLength": 16352,
+      "compression": "deflate"
+    },
+    {
+      "name": "main_xml",
+      "mimeType": "text/xml",
+      "offset": 8895,
+      "storedLength": 1793,
+      "originalLength": 15461,
+      "compression": "deflate"
+    },
+    {
+      "name": "user_create_xml",
+      "mimeType": "text/xml",
+      "offset": 10688,
+      "storedLength": 1013,
+      "originalLength": 4521,
+      "compression": "deflate"
+    },
+    {
+      "name": "user_pending_xml",
+      "mimeType": "text/xml",
+      "offset": 11701,
+      "storedLength": 1326,
+      "originalLength": 7467,
+      "compression": "deflate"
+    },
+    {
+      "name": "user_ongoing_xml",
+      "mimeType": "text/xml",
+      "offset": 13027,
+      "storedLength": 1241,
+      "originalLength": 6148,
+      "compression": "deflate"
+    },
+    {
+      "name": "user_feedback_xml",
+      "mimeType": "text/xml",
+      "offset": 14268,
+      "storedLength": 1347,
+      "originalLength": 7782,
+      "compression": "deflate"
+    },
+    {
+      "name": "user_thanks_xml",
+      "mimeType": "text/xml",
+      "offset": 15615,
+      "storedLength": 828,
+      "originalLength": 3130,
+      "compression": "deflate"
+    },
+    {
+      "name": "user_guide_disconnected_xml",
+      "mimeType": "text/xml",
+      "offset": 16443,
+      "storedLength": 1269,
+      "originalLength": 6942,
+      "compression": "deflate"
+    },
+    {
+      "name": "guide_tool_xml",
+      "mimeType": "text/xml",
+      "offset": 17712,
+      "storedLength": 1275,
+      "originalLength": 7228,
+      "compression": "deflate"
+    },
+    {
+      "name": "guide_accept_xml",
+      "mimeType": "text/xml",
+      "offset": 18987,
+      "storedLength": 1350,
+      "originalLength": 6980,
+      "compression": "deflate"
+    },
+    {
+      "name": "guide_ongoing_xml",
+      "mimeType": "text/xml",
+      "offset": 20337,
+      "storedLength": 1133,
+      "originalLength": 5072,
+      "compression": "deflate"
+    },
+    {
+      "name": "guide_closed_xml",
+      "mimeType": "text/xml",
+      "offset": 21470,
+      "storedLength": 973,
+      "originalLength": 4367,
+      "compression": "deflate"
+    },
+    {
+      "name": "guardian_chat_review_accept_xml",
+      "mimeType": "text/xml",
+      "offset": 22443,
+      "storedLength": 1309,
+      "originalLength": 6563,
+      "compression": "deflate"
+    },
+    {
+      "name": "guardian_chat_review_results_xml",
+      "mimeType": "text/xml",
+      "offset": 23752,
+      "storedLength": 1258,
+      "originalLength": 5906,
+      "compression": "deflate"
+    },
+    {
+      "name": "guardian_chat_review_vote_xml",
+      "mimeType": "text/xml",
+      "offset": 25010,
+      "storedLength": 1636,
+      "originalLength": 11759,
+      "compression": "deflate"
+    },
+    {
+      "name": "guardian_chat_review_wait_for_results_xml",
+      "mimeType": "text/xml",
+      "offset": 26646,
+      "storedLength": 1255,
+      "originalLength": 5914,
+      "compression": "deflate"
+    },
+    {
+      "name": "guardian_chat_review_wait_for_voters_xml",
+      "mimeType": "text/xml",
+      "offset": 27901,
+      "storedLength": 1457,
+      "originalLength": 9140,
+      "compression": "deflate"
+    },
+    {
+      "name": "error_window_xml",
+      "mimeType": "text/xml",
+      "offset": 29358,
+      "storedLength": 692,
+      "originalLength": 2457,
+      "compression": "deflate"
+    },
+    {
+      "name": "chat_msg_xml",
+      "mimeType": "text/xml",
+      "offset": 30050,
+      "storedLength": 261,
+      "originalLength": 399,
+      "compression": "deflate"
+    },
+    {
+      "name": "chat_msg_notification_xml",
+      "mimeType": "text/xml",
+      "offset": 30311,
+      "storedLength": 472,
+      "originalLength": 1361,
+      "compression": "deflate"
+    },
+    {
+      "name": "chat_msg_reminder_xml",
+      "mimeType": "text/xml",
+      "offset": 30783,
+      "storedLength": 405,
+      "originalLength": 1023,
+      "compression": "deflate"
+    },
+    {
+      "name": "report_window_xml",
+      "mimeType": "text/xml",
+      "offset": 31188,
+      "storedLength": 1116,
+      "originalLength": 5760,
+      "compression": "deflate"
+    },
+    {
+      "name": "rejected_window_xml",
+      "mimeType": "text/xml",
+      "offset": 32304,
+      "storedLength": 699,
+      "originalLength": 2501,
+      "compression": "deflate"
+    },
+    {
+      "name": "pending_bully_request_xml",
+      "mimeType": "text/xml",
+      "offset": 33003,
+      "storedLength": 1063,
+      "originalLength": 4380,
+      "compression": "deflate"
+    },
+    {
+      "name": "pending_guide_session_xml",
+      "mimeType": "text/xml",
+      "offset": 34066,
+      "storedLength": 813,
+      "originalLength": 2482,
+      "compression": "deflate"
+    },
+    {
+      "name": "pending_instructions_request_xml",
+      "mimeType": "text/xml",
+      "offset": 34879,
+      "storedLength": 1058,
+      "originalLength": 4434,
+      "compression": "deflate"
+    },
+    {
+      "name": "pending_tour_request_xml",
+      "mimeType": "text/xml",
+      "offset": 35937,
+      "storedLength": 808,
+      "originalLength": 2474,
+      "compression": "deflate"
+    },
+    {
+      "name": "chat_review_reporter_feedback_xml",
+      "mimeType": "text/xml",
+      "offset": 36745,
+      "storedLength": 908,
+      "originalLength": 3743,
+      "compression": "deflate"
+    },
+    {
+      "name": "abusive_notice_xml",
+      "mimeType": "text/xml",
+      "offset": 37653,
+      "storedLength": 778,
+      "originalLength": 2416,
+      "compression": "deflate"
+    },
+    {
+      "name": "bully_report_xml",
+      "mimeType": "text/xml",
+      "offset": 38431,
+      "storedLength": 928,
+      "originalLength": 3403,
+      "compression": "deflate"
+    },
+    {
+      "name": "chat_report_xml",
+      "mimeType": "text/xml",
+      "offset": 39359,
+      "storedLength": 835,
+      "originalLength": 2751,
+      "compression": "deflate"
+    },
+    {
+      "name": "chat_report_item_xml",
+      "mimeType": "text/xml",
+      "offset": 40194,
+      "storedLength": 407,
+      "originalLength": 982,
+      "compression": "deflate"
+    },
+    {
+      "name": "emergency_help_request_xml",
+      "mimeType": "text/xml",
+      "offset": 40601,
+      "storedLength": 1686,
+      "originalLength": 12806,
+      "compression": "deflate"
+    },
+    {
+      "name": "pending_request_xml",
+      "mimeType": "text/xml",
+      "offset": 42287,
+      "storedLength": 1010,
+      "originalLength": 4089,
+      "compression": "deflate"
+    },
+    {
+      "name": "habbo_way_xml",
+      "mimeType": "text/xml",
+      "offset": 43297,
+      "storedLength": 1907,
+      "originalLength": 17271,
+      "compression": "deflate"
+    },
+    {
+      "name": "habbo_way_quiz_xml",
+      "mimeType": "text/xml",
+      "offset": 45204,
+      "storedLength": 2305,
+      "originalLength": 18196,
+      "compression": "deflate"
+    },
+    {
+      "name": "safety_booklet_xml",
+      "mimeType": "text/xml",
+      "offset": 47509,
+      "storedLength": 2225,
+      "originalLength": 22181,
+      "compression": "deflate"
+    },
+    {
+      "name": "sanction_info_xml",
+      "mimeType": "text/xml",
+      "offset": 49734,
+      "storedLength": 966,
+      "originalLength": 3725,
+      "compression": "deflate"
+    },
+    {
+      "name": "my_reports_xml",
+      "mimeType": "text/xml",
+      "offset": 50700,
+      "storedLength": 1203,
+      "originalLength": 8425,
+      "compression": "deflate"
+    }
+  ]
+}

@@ -1,0 +1,3168 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboFreeFlowChatCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n    <component class=\"com.sulake.bootstrap.HabboFreeFlowChatBootstrap\" version=\"0.0\">\n        <interface iid=\"com.sulake.iid.IIDHabboFreeFlowChat\" />\n        <assets>\n            <asset mimeType=\"text/xml\" name=\"chatstyles_xml\" />\n            <asset mimeType=\"image/png\" name=\"tray_bar\" />\n            <asset mimeType=\"image/png\" name=\"tray_handle_close\" />\n            <asset mimeType=\"image/png\" name=\"tray_handle_open\" />\n            <asset mimeType=\"image/png\" name=\"close_x\" />\n            <asset mimeType=\"image/png\" name=\"room_change\" />\n            <asset mimeType=\"image/png\" name=\"scrollbar_back\" />\n            <asset mimeType=\"image/png\" name=\"scrollbar_thumb\" />\n            <asset mimeType=\"text/plain\" name=\"style_bats_regpoints\"  source=\"style/bats/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_bats_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_bats_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_bats_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_bot_regpoints\"  source=\"style/bot/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_bot_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_bot_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_bot_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_console_regpoints\"  source=\"style/console/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_console_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_console_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_console_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_firingmylazer_regpoints\"  source=\"style/firingmylazer/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_firingmylazer_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_firingmylazer_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_firingmylazer_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_fortune_teller_regpoints\"  source=\"style/fortune_teller/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_fortune_teller_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_fortune_teller_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_fortune_teller_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_generic_regpoints\"  source=\"style/generic/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_generic_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_generic_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_generic_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_gothicrose_regpoints\"  source=\"style/gothicrose/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_gothicrose_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_gothicrose_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_gothicrose_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_normal_regpoints\"  source=\"style/normal/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_normal_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_chat_bubble_color\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_normal_blue_regpoints\"  source=\"style/normal_blue/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_normal_blue_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_blue_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_blue_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_normal_dark_turquoise_regpoints\"  source=\"style/normal_dark_turquoise/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_normal_dark_turquoise_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_dark_turquoise_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_dark_turquoise_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_normal_dark_yellow_regpoints\"  source=\"style/normal_dark_yellow/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_normal_dark_yellow_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_dark_yellow_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_dark_yellow_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_normal_green_regpoints\"  source=\"style/normal_green/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_normal_green_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_green_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_green_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_normal_grey_regpoints\"  source=\"style/normal_grey/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_normal_grey_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_grey_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_grey_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_normal_pink_regpoints\"  source=\"style/normal_pink/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_normal_pink_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_pink_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_pink_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_normal_purple_regpoints\"  source=\"style/normal_purple/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_normal_purple_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_purple_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_purple_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_normal_red_regpoints\"  source=\"style/normal_red/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_normal_red_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_red_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_red_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_normal_sky_blue_regpoints\"  source=\"style/normal_sky_blue/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_normal_sky_blue_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_sky_blue_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_sky_blue_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_normal_yellow_regpoints\"  source=\"style/normal_yellow/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_normal_yellow_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_yellow_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_normal_yellow_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_skeleton_regpoints\"  source=\"style/skeleton/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_skeleton_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_skeleton_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_skeleton_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_staff_regpoints\"  source=\"style/staff/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_staff_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_staff_chat_bubble_emblem\" />\n            <asset mimeType=\"image/png\" name=\"style_staff_chat_bubble_emblem_multiline\" />\n            <asset mimeType=\"image/png\" name=\"style_staff_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_staff_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_steampunk_pipe_regpoints\"  source=\"style/steampunk_pipe/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_steampunk_pipe_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_steampunk_pipe_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_steampunk_pipe_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_storm_regpoints\"  source=\"style/storm/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_storm_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_storm_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_storm_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_zombie_hand_regpoints\"  source=\"style/zombie_hand/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_zombie_hand_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_zombie_hand_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_zombie_hand_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_wired_team_blue_regpoints\"  source=\"style/wired_team_blue/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_wired_team_blue_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_wired_team_blue_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_wired_team_blue_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_wired_team_green_regpoints\"  source=\"style/wired_team_green/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_wired_team_green_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_wired_team_green_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_wired_team_green_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_wired_team_red_regpoints\"  source=\"style/wired_team_red/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_wired_team_red_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_wired_team_red_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_wired_team_red_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_wired_team_yellow_regpoints\"  source=\"style/wired_team_yellow/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_wired_team_yellow_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_wired_team_yellow_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_wired_team_yellow_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_dragon_regpoints\"  source=\"style/dragon/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_dragon_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_dragon_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_dragon_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_hearts_regpoints\"  source=\"style/hearts/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_hearts_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_hearts_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_hearts_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_sausagedog_regpoints\"  source=\"style/sausagedog/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_sausagedog_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_sausagedog_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_sausagedog_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_piglet_regpoints\"  source=\"style/piglet/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_piglet_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_piglet_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_piglet_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_parrot_regpoints\"  source=\"style/parrot/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_parrot_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_parrot_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_parrot_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_pirate_regpoints\"  source=\"style/pirate/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_pirate_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_pirate_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_pirate_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_bot_guide_regpoints\"  source=\"style/bot_guide/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_bot_guide_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_bot_guide_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_bot_guide_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_bot_rentable_regpoints\"  source=\"style/bot_rentable/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_bot_rentable_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_bot_rentable_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_bot_rentable_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_bot_rentable_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_skelestock_regpoints\"  source=\"style/skelestock/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_skelestock_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_skelestock_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_skelestock_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_bot_frank_large_regpoints\"  source=\"style/bot_frank_large/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_bot_frank_large_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_bot_frank_large_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_bot_frank_large_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_bot_frank_large_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_regpoints\"  source=\"style/notification/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_red_regpoints\"  source=\"style/notification_red/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_red_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_red_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_red_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_red_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_green_regpoints\"  source=\"style/notification_green/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_green_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_green_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_green_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_green_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_blue_regpoints\"  source=\"style/notification_blue/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_blue_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_blue_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_blue_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_blue_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_alert_regpoints\"  source=\"style/notification_alert/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_alert_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_alert_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_alert_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_alert_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_info_regpoints\"  source=\"style/notification_info/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_info_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_info_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_info_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_info_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_warning_regpoints\"  source=\"style/notification_warning/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_warning_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_warning_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_warning_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_warning_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_wrong_regpoints\"  source=\"style/notification_wrong/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_wrong_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_wrong_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_wrong_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_wrong_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_wrong_circle_regpoints\"  source=\"style/notification_wrong_circle/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_wrong_circle_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_wrong_circle_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_wrong_circle_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_wrong_circle_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_correct_regpoints\"  source=\"style/notification_correct/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_correct_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_correct_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_correct_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_correct_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_correct_circle_regpoints\"  source=\"style/notification_correct_circle/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_correct_circle_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_correct_circle_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_correct_circle_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_correct_circle_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_question_mark_regpoints\"  source=\"style/notification_question_mark/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_question_mark_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_question_mark_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_question_mark_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_question_mark_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_question_mark_circle_regpoints\"  source=\"style/notification_question_mark_circle/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_question_mark_circle_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_question_mark_circle_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_question_mark_circle_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_question_mark_circle_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_arrow_up_regpoints\"  source=\"style/notification_arrow_up/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_arrow_up_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_arrow_up_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_arrow_up_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_arrow_up_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_arrow_up_circle_regpoints\"  source=\"style/notification_arrow_up_circle/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_arrow_up_circle_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_arrow_up_circle_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_arrow_up_circle_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_arrow_up_circle_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_arrow_down_regpoints\"  source=\"style/notification_arrow_down/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_arrow_down_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_arrow_down_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_arrow_down_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_arrow_down_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_arrow_down_circle_regpoints\"  source=\"style/notification_arrow_down_circle/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_arrow_down_circle_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_arrow_down_circle_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_arrow_down_circle_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_arrow_down_circle_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_skull_regpoints\"  source=\"style/notification_skull/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_skull_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_skull_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_skull_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_skull_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_skull_2_regpoints\"  source=\"style/notification_skull_2/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_skull_2_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_skull_2_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_skull_2_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_skull_2_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_notification_magnifier_regpoints\"  source=\"style/notification_magnifier/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_notification_magnifier_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_magnifier_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_magnifier_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_notification_magnifier_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_goat_regpoints\"  source=\"style/goat/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_goat_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_goat_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_goat_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_santa_regpoints\"  source=\"style/santa/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_santa_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_santa_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_santa_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_santa_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_ambassador_regpoints\"  source=\"style/ambassador/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_ambassador_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_ambassador_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_ambassador_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_radio_regpoints\"  source=\"style/radio/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_radio_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_radio_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_radio_selector_preview\" />\n            <asset mimeType=\"image/png\" name=\"style_radio_icon\" />\n            <asset mimeType=\"text/plain\" name=\"style_snowstorm_red_regpoints\"  source=\"style/snowstorm_red/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_snowstorm_red_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_snowstorm_red_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_snowstorm_red_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_snowstorm_blue_regpoints\"  source=\"style/snowstorm_blue/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_snowstorm_blue_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_snowstorm_blue_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_snowstorm_blue_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_habbo_avatar_bronze_regpoints\"  source=\"style/nft_habbo_avatar_bronze/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_bronze_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_bronze_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_bronze_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_habbo_avatar_gold_regpoints\"  source=\"style/nft_habbo_avatar_gold/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_gold_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_gold_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_gold_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_habbo_avatar_diamond_regpoints\"  source=\"style/nft_habbo_avatar_diamond/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_diamond_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_diamond_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_diamond_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_habbo_avatar_rainbow_regpoints\"  source=\"style/nft_habbo_avatar_rainbow/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_rainbow_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_rainbow_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_rainbow_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_habbo_avatar_trippy_regpoints\"  source=\"style/nft_habbo_avatar_trippy/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_trippy_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_trippy_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_trippy_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_habbo_avatar_ultra_trippy_regpoints\"  source=\"style/nft_habbo_avatar_ultra_trippy/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_ultra_trippy_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_ultra_trippy_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_habbo_avatar_ultra_trippy_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_mvhq_regpoints\"  source=\"style/nft_mvhq/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_mvhq_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_mvhq_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_mvhq_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_metakey_regpoints\"  source=\"style/nft_metakey/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_metakey_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_metakey_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_metakey_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_crafted_habbo_avatar_regpoints\"  source=\"style/nft_crafted_habbo_avatar/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_crafted_habbo_avatar_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_crafted_habbo_avatar_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_crafted_habbo_avatar_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_balloon_orange_regpoints\"  source=\"style/nft_balloon_orange/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_balloon_orange_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_balloon_orange_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_balloon_orange_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_balloon_blue_regpoints\"  source=\"style/nft_balloon_blue/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_balloon_blue_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_balloon_blue_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_balloon_blue_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_origami_orange_regpoints\"  source=\"style/nft_origami_orange/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_origami_orange_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_origami_orange_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_origami_orange_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_origami_blue_regpoints\"  source=\"style/nft_origami_blue/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_origami_blue_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_origami_blue_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_origami_blue_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_chocolate_dark_regpoints\"  source=\"style/nft_chocolate_dark/_regpoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_chocolate_dark_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_chocolate_dark_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_chocolate_dark_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_chocolate_white_regpoints\"  source=\"style/nft_chocolate_white/_regpoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_chocolate_white_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_chocolate_white_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_chocolate_white_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_clay_regpoints\"  source=\"style/nft_clay/_regpoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_clay_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_clay_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_clay_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_scroll_regpoints\"  source=\"style/nft_scroll/_regpoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_scroll_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_scroll_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_scroll_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_pillow_regpoints\"  source=\"style/nft_pillow/_regpoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_pillow_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_pillow_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_pillow_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_bobba_regpoints\"  source=\"style/nft_bobba/_regpoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_bobba_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_bobba_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_bobba_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_pinktube_regpoints\"  source=\"style/nft_pinktube/_regpoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_pinktube_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_pinktube_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_pinktube_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_keycaps_regpoints\"  source=\"style/nft_keycaps/_regpoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_keycaps_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_keycaps_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_keycaps_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_xmas22_regpoints\"  source=\"style/nft_xmas22/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_xmas22_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_xmas22_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_xmas22_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_recycled_regpoints\"  source=\"style/recycled/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_recycled_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_recycled_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_recycled_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_rocky_regpoints\"  source=\"style/nft_rocky/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_rocky_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_rocky_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_rocky_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_ice_regpoints\"  source=\"style/nft_ice/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_ice_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_ice_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_ice_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_aurora_regpoints\"  source=\"style/nft_aurora/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_aurora_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_aurora_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_aurora_selector_preview\" />\n            <asset mimeType=\"text/plain\" name=\"style_nft_money_regpoints\"  source=\"style/nft_money/_regPoints.txt\"/>\n            <asset mimeType=\"image/png\" name=\"style_nft_money_chat_bubble_base\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_money_chat_bubble_pointer\" />\n            <asset mimeType=\"image/png\" name=\"style_nft_money_selector_preview\" />\n        </assets>\n    </component>\n</manifest>\n",
+  "entries": [
+    {
+      "name": "chatstyles_xml",
+      "mimeType": "text/xml",
+      "offset": 0,
+      "storedLength": 1106,
+      "originalLength": 9138,
+      "compression": "deflate"
+    },
+    {
+      "name": "tray_bar",
+      "mimeType": "image/png",
+      "offset": 1106,
+      "storedLength": 110,
+      "originalLength": 110,
+      "compression": "none"
+    },
+    {
+      "name": "tray_handle_close",
+      "mimeType": "image/png",
+      "offset": 1216,
+      "storedLength": 164,
+      "originalLength": 164,
+      "compression": "none"
+    },
+    {
+      "name": "tray_handle_open",
+      "mimeType": "image/png",
+      "offset": 1380,
+      "storedLength": 156,
+      "originalLength": 156,
+      "compression": "none"
+    },
+    {
+      "name": "close_x",
+      "mimeType": "image/png",
+      "offset": 1536,
+      "storedLength": 695,
+      "originalLength": 1014,
+      "compression": "deflate"
+    },
+    {
+      "name": "room_change",
+      "mimeType": "image/png",
+      "offset": 2231,
+      "storedLength": 254,
+      "originalLength": 254,
+      "compression": "none"
+    },
+    {
+      "name": "scrollbar_back",
+      "mimeType": "image/png",
+      "offset": 2485,
+      "storedLength": 96,
+      "originalLength": 96,
+      "compression": "none"
+    },
+    {
+      "name": "scrollbar_thumb",
+      "mimeType": "image/png",
+      "offset": 2581,
+      "storedLength": 101,
+      "originalLength": 101,
+      "compression": "none"
+    },
+    {
+      "name": "style_bats_regpoints",
+      "mimeType": "text/plain",
+      "offset": 2682,
+      "storedLength": 144,
+      "originalLength": 169,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_bats_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 2826,
+      "storedLength": 321,
+      "originalLength": 321,
+      "compression": "none"
+    },
+    {
+      "name": "style_bats_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 3147,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_bats_selector_preview",
+      "mimeType": "image/png",
+      "offset": 3252,
+      "storedLength": 320,
+      "originalLength": 320,
+      "compression": "none"
+    },
+    {
+      "name": "style_bot_regpoints",
+      "mimeType": "text/plain",
+      "offset": 3572,
+      "storedLength": 134,
+      "originalLength": 153,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_bot_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 3706,
+      "storedLength": 358,
+      "originalLength": 358,
+      "compression": "none"
+    },
+    {
+      "name": "style_bot_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 4064,
+      "storedLength": 142,
+      "originalLength": 142,
+      "compression": "none"
+    },
+    {
+      "name": "style_bot_selector_preview",
+      "mimeType": "image/png",
+      "offset": 4206,
+      "storedLength": 358,
+      "originalLength": 358,
+      "compression": "none"
+    },
+    {
+      "name": "style_console_regpoints",
+      "mimeType": "text/plain",
+      "offset": 4564,
+      "storedLength": 143,
+      "originalLength": 170,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_console_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 4707,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_console_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 4984,
+      "storedLength": 131,
+      "originalLength": 131,
+      "compression": "none"
+    },
+    {
+      "name": "style_console_selector_preview",
+      "mimeType": "image/png",
+      "offset": 5115,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_firingmylazer_regpoints",
+      "mimeType": "text/plain",
+      "offset": 5392,
+      "storedLength": 141,
+      "originalLength": 168,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_firingmylazer_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 5533,
+      "storedLength": 465,
+      "originalLength": 465,
+      "compression": "none"
+    },
+    {
+      "name": "style_firingmylazer_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 5998,
+      "storedLength": 109,
+      "originalLength": 109,
+      "compression": "none"
+    },
+    {
+      "name": "style_firingmylazer_selector_preview",
+      "mimeType": "image/png",
+      "offset": 6107,
+      "storedLength": 456,
+      "originalLength": 456,
+      "compression": "none"
+    },
+    {
+      "name": "style_fortune_teller_regpoints",
+      "mimeType": "text/plain",
+      "offset": 6563,
+      "storedLength": 132,
+      "originalLength": 153,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_fortune_teller_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 6695,
+      "storedLength": 467,
+      "originalLength": 467,
+      "compression": "none"
+    },
+    {
+      "name": "style_fortune_teller_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 7162,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_fortune_teller_selector_preview",
+      "mimeType": "image/png",
+      "offset": 7267,
+      "storedLength": 467,
+      "originalLength": 467,
+      "compression": "none"
+    },
+    {
+      "name": "style_generic_regpoints",
+      "mimeType": "text/plain",
+      "offset": 7734,
+      "storedLength": 137,
+      "originalLength": 156,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_generic_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 7871,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "style_generic_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 8151,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_generic_selector_preview",
+      "mimeType": "image/png",
+      "offset": 8256,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "style_gothicrose_regpoints",
+      "mimeType": "text/plain",
+      "offset": 8536,
+      "storedLength": 141,
+      "originalLength": 169,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_gothicrose_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 8677,
+      "storedLength": 601,
+      "originalLength": 601,
+      "compression": "none"
+    },
+    {
+      "name": "style_gothicrose_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 9278,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_gothicrose_selector_preview",
+      "mimeType": "image/png",
+      "offset": 9383,
+      "storedLength": 600,
+      "originalLength": 600,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_regpoints",
+      "mimeType": "text/plain",
+      "offset": 9983,
+      "storedLength": 148,
+      "originalLength": 184,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_normal_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 10131,
+      "storedLength": 163,
+      "originalLength": 163,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_chat_bubble_color",
+      "mimeType": "image/png",
+      "offset": 10294,
+      "storedLength": 177,
+      "originalLength": 177,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 10471,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_selector_preview",
+      "mimeType": "image/png",
+      "offset": 10576,
+      "storedLength": 225,
+      "originalLength": 225,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_blue_regpoints",
+      "mimeType": "text/plain",
+      "offset": 10801,
+      "storedLength": 143,
+      "originalLength": 170,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_normal_blue_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 10944,
+      "storedLength": 240,
+      "originalLength": 240,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_blue_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 11184,
+      "storedLength": 104,
+      "originalLength": 104,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_blue_selector_preview",
+      "mimeType": "image/png",
+      "offset": 11288,
+      "storedLength": 240,
+      "originalLength": 240,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_dark_turquoise_regpoints",
+      "mimeType": "text/plain",
+      "offset": 11528,
+      "storedLength": 143,
+      "originalLength": 170,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_normal_dark_turquoise_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 11671,
+      "storedLength": 243,
+      "originalLength": 243,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_dark_turquoise_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 11914,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_dark_turquoise_selector_preview",
+      "mimeType": "image/png",
+      "offset": 12019,
+      "storedLength": 243,
+      "originalLength": 243,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_dark_yellow_regpoints",
+      "mimeType": "text/plain",
+      "offset": 12262,
+      "storedLength": 143,
+      "originalLength": 170,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_normal_dark_yellow_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 12405,
+      "storedLength": 234,
+      "originalLength": 234,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_dark_yellow_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 12639,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_dark_yellow_selector_preview",
+      "mimeType": "image/png",
+      "offset": 12744,
+      "storedLength": 234,
+      "originalLength": 234,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_green_regpoints",
+      "mimeType": "text/plain",
+      "offset": 12978,
+      "storedLength": 142,
+      "originalLength": 169,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_normal_green_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 13120,
+      "storedLength": 241,
+      "originalLength": 241,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_green_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 13361,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_green_selector_preview",
+      "mimeType": "image/png",
+      "offset": 13466,
+      "storedLength": 241,
+      "originalLength": 241,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_grey_regpoints",
+      "mimeType": "text/plain",
+      "offset": 13707,
+      "storedLength": 142,
+      "originalLength": 169,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_normal_grey_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 13849,
+      "storedLength": 231,
+      "originalLength": 231,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_grey_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 14080,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_grey_selector_preview",
+      "mimeType": "image/png",
+      "offset": 14185,
+      "storedLength": 231,
+      "originalLength": 231,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_pink_regpoints",
+      "mimeType": "text/plain",
+      "offset": 14416,
+      "storedLength": 142,
+      "originalLength": 169,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_normal_pink_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 14558,
+      "storedLength": 240,
+      "originalLength": 240,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_pink_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 14798,
+      "storedLength": 104,
+      "originalLength": 104,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_pink_selector_preview",
+      "mimeType": "image/png",
+      "offset": 14902,
+      "storedLength": 240,
+      "originalLength": 240,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_purple_regpoints",
+      "mimeType": "text/plain",
+      "offset": 15142,
+      "storedLength": 142,
+      "originalLength": 169,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_normal_purple_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 15284,
+      "storedLength": 240,
+      "originalLength": 240,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_purple_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 15524,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_purple_selector_preview",
+      "mimeType": "image/png",
+      "offset": 15629,
+      "storedLength": 240,
+      "originalLength": 240,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_red_regpoints",
+      "mimeType": "text/plain",
+      "offset": 15869,
+      "storedLength": 142,
+      "originalLength": 169,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_normal_red_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 16011,
+      "storedLength": 236,
+      "originalLength": 236,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_red_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 16247,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_red_selector_preview",
+      "mimeType": "image/png",
+      "offset": 16352,
+      "storedLength": 236,
+      "originalLength": 236,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_sky_blue_regpoints",
+      "mimeType": "text/plain",
+      "offset": 16588,
+      "storedLength": 142,
+      "originalLength": 169,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_normal_sky_blue_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 16730,
+      "storedLength": 240,
+      "originalLength": 240,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_sky_blue_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 16970,
+      "storedLength": 104,
+      "originalLength": 104,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_sky_blue_selector_preview",
+      "mimeType": "image/png",
+      "offset": 17074,
+      "storedLength": 240,
+      "originalLength": 240,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_yellow_regpoints",
+      "mimeType": "text/plain",
+      "offset": 17314,
+      "storedLength": 142,
+      "originalLength": 169,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_normal_yellow_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 17456,
+      "storedLength": 235,
+      "originalLength": 235,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_yellow_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 17691,
+      "storedLength": 104,
+      "originalLength": 104,
+      "compression": "none"
+    },
+    {
+      "name": "style_normal_yellow_selector_preview",
+      "mimeType": "image/png",
+      "offset": 17795,
+      "storedLength": 235,
+      "originalLength": 235,
+      "compression": "none"
+    },
+    {
+      "name": "style_skeleton_regpoints",
+      "mimeType": "text/plain",
+      "offset": 18030,
+      "storedLength": 140,
+      "originalLength": 168,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_skeleton_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 18170,
+      "storedLength": 579,
+      "originalLength": 579,
+      "compression": "none"
+    },
+    {
+      "name": "style_skeleton_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 18749,
+      "storedLength": 138,
+      "originalLength": 138,
+      "compression": "none"
+    },
+    {
+      "name": "style_skeleton_selector_preview",
+      "mimeType": "image/png",
+      "offset": 18887,
+      "storedLength": 540,
+      "originalLength": 540,
+      "compression": "none"
+    },
+    {
+      "name": "style_staff_regpoints",
+      "mimeType": "text/plain",
+      "offset": 19427,
+      "storedLength": 182,
+      "originalLength": 240,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_staff_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 19609,
+      "storedLength": 489,
+      "originalLength": 550,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_staff_chat_bubble_emblem",
+      "mimeType": "image/png",
+      "offset": 20098,
+      "storedLength": 540,
+      "originalLength": 598,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_staff_chat_bubble_emblem_multiline",
+      "mimeType": "image/png",
+      "offset": 20638,
+      "storedLength": 544,
+      "originalLength": 601,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_staff_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 21182,
+      "storedLength": 363,
+      "originalLength": 435,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_staff_selector_preview",
+      "mimeType": "image/png",
+      "offset": 21545,
+      "storedLength": 618,
+      "originalLength": 675,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_steampunk_pipe_regpoints",
+      "mimeType": "text/plain",
+      "offset": 22163,
+      "storedLength": 144,
+      "originalLength": 169,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_steampunk_pipe_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 22307,
+      "storedLength": 424,
+      "originalLength": 424,
+      "compression": "none"
+    },
+    {
+      "name": "style_steampunk_pipe_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 22731,
+      "storedLength": 149,
+      "originalLength": 149,
+      "compression": "none"
+    },
+    {
+      "name": "style_steampunk_pipe_selector_preview",
+      "mimeType": "image/png",
+      "offset": 22880,
+      "storedLength": 423,
+      "originalLength": 423,
+      "compression": "none"
+    },
+    {
+      "name": "style_storm_regpoints",
+      "mimeType": "text/plain",
+      "offset": 23303,
+      "storedLength": 142,
+      "originalLength": 170,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_storm_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 23445,
+      "storedLength": 493,
+      "originalLength": 493,
+      "compression": "none"
+    },
+    {
+      "name": "style_storm_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 23938,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_storm_selector_preview",
+      "mimeType": "image/png",
+      "offset": 24043,
+      "storedLength": 497,
+      "originalLength": 497,
+      "compression": "none"
+    },
+    {
+      "name": "style_zombie_hand_regpoints",
+      "mimeType": "text/plain",
+      "offset": 24540,
+      "storedLength": 144,
+      "originalLength": 170,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_zombie_hand_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 24684,
+      "storedLength": 434,
+      "originalLength": 434,
+      "compression": "none"
+    },
+    {
+      "name": "style_zombie_hand_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 25118,
+      "storedLength": 146,
+      "originalLength": 146,
+      "compression": "none"
+    },
+    {
+      "name": "style_zombie_hand_selector_preview",
+      "mimeType": "image/png",
+      "offset": 25264,
+      "storedLength": 434,
+      "originalLength": 434,
+      "compression": "none"
+    },
+    {
+      "name": "style_wired_team_blue_regpoints",
+      "mimeType": "text/plain",
+      "offset": 25698,
+      "storedLength": 151,
+      "originalLength": 192,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_wired_team_blue_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 25849,
+      "storedLength": 36295,
+      "originalLength": 135648,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_wired_team_blue_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 62144,
+      "storedLength": 871,
+      "originalLength": 1625,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_wired_team_blue_selector_preview",
+      "mimeType": "image/png",
+      "offset": 63015,
+      "storedLength": 36576,
+      "originalLength": 136808,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_wired_team_green_regpoints",
+      "mimeType": "text/plain",
+      "offset": 99591,
+      "storedLength": 151,
+      "originalLength": 192,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_wired_team_green_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 99742,
+      "storedLength": 36311,
+      "originalLength": 135669,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_wired_team_green_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 136053,
+      "storedLength": 874,
+      "originalLength": 1631,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_wired_team_green_selector_preview",
+      "mimeType": "image/png",
+      "offset": 136927,
+      "storedLength": 36580,
+      "originalLength": 136752,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_wired_team_red_regpoints",
+      "mimeType": "text/plain",
+      "offset": 173507,
+      "storedLength": 151,
+      "originalLength": 192,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_wired_team_red_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 173658,
+      "storedLength": 36264,
+      "originalLength": 135469,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_wired_team_red_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 209922,
+      "storedLength": 795,
+      "originalLength": 1428,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_wired_team_red_selector_preview",
+      "mimeType": "image/png",
+      "offset": 210717,
+      "storedLength": 36536,
+      "originalLength": 136541,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_wired_team_yellow_regpoints",
+      "mimeType": "text/plain",
+      "offset": 247253,
+      "storedLength": 151,
+      "originalLength": 192,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_wired_team_yellow_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 247404,
+      "storedLength": 36288,
+      "originalLength": 135641,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_wired_team_yellow_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 283692,
+      "storedLength": 874,
+      "originalLength": 1629,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_wired_team_yellow_selector_preview",
+      "mimeType": "image/png",
+      "offset": 284566,
+      "storedLength": 36657,
+      "originalLength": 136860,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_dragon_regpoints",
+      "mimeType": "text/plain",
+      "offset": 321223,
+      "storedLength": 143,
+      "originalLength": 168,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_dragon_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 321366,
+      "storedLength": 511,
+      "originalLength": 511,
+      "compression": "none"
+    },
+    {
+      "name": "style_dragon_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 321877,
+      "storedLength": 109,
+      "originalLength": 109,
+      "compression": "none"
+    },
+    {
+      "name": "style_dragon_selector_preview",
+      "mimeType": "image/png",
+      "offset": 321986,
+      "storedLength": 486,
+      "originalLength": 486,
+      "compression": "none"
+    },
+    {
+      "name": "style_hearts_regpoints",
+      "mimeType": "text/plain",
+      "offset": 322472,
+      "storedLength": 142,
+      "originalLength": 168,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_hearts_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 322614,
+      "storedLength": 347,
+      "originalLength": 347,
+      "compression": "none"
+    },
+    {
+      "name": "style_hearts_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 322961,
+      "storedLength": 110,
+      "originalLength": 110,
+      "compression": "none"
+    },
+    {
+      "name": "style_hearts_selector_preview",
+      "mimeType": "image/png",
+      "offset": 323071,
+      "storedLength": 347,
+      "originalLength": 347,
+      "compression": "none"
+    },
+    {
+      "name": "style_sausagedog_regpoints",
+      "mimeType": "text/plain",
+      "offset": 323418,
+      "storedLength": 143,
+      "originalLength": 168,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_sausagedog_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 323561,
+      "storedLength": 336,
+      "originalLength": 336,
+      "compression": "none"
+    },
+    {
+      "name": "style_sausagedog_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 323897,
+      "storedLength": 129,
+      "originalLength": 129,
+      "compression": "none"
+    },
+    {
+      "name": "style_sausagedog_selector_preview",
+      "mimeType": "image/png",
+      "offset": 324026,
+      "storedLength": 337,
+      "originalLength": 337,
+      "compression": "none"
+    },
+    {
+      "name": "style_piglet_regpoints",
+      "mimeType": "text/plain",
+      "offset": 324363,
+      "storedLength": 143,
+      "originalLength": 168,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_piglet_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 324506,
+      "storedLength": 339,
+      "originalLength": 339,
+      "compression": "none"
+    },
+    {
+      "name": "style_piglet_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 324845,
+      "storedLength": 110,
+      "originalLength": 110,
+      "compression": "none"
+    },
+    {
+      "name": "style_piglet_selector_preview",
+      "mimeType": "image/png",
+      "offset": 324955,
+      "storedLength": 339,
+      "originalLength": 339,
+      "compression": "none"
+    },
+    {
+      "name": "style_parrot_regpoints",
+      "mimeType": "text/plain",
+      "offset": 325294,
+      "storedLength": 135,
+      "originalLength": 155,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_parrot_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 325429,
+      "storedLength": 346,
+      "originalLength": 346,
+      "compression": "none"
+    },
+    {
+      "name": "style_parrot_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 325775,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_parrot_selector_preview",
+      "mimeType": "image/png",
+      "offset": 325880,
+      "storedLength": 346,
+      "originalLength": 346,
+      "compression": "none"
+    },
+    {
+      "name": "style_pirate_regpoints",
+      "mimeType": "text/plain",
+      "offset": 326226,
+      "storedLength": 144,
+      "originalLength": 170,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_pirate_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 326370,
+      "storedLength": 382,
+      "originalLength": 382,
+      "compression": "none"
+    },
+    {
+      "name": "style_pirate_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 326752,
+      "storedLength": 102,
+      "originalLength": 102,
+      "compression": "none"
+    },
+    {
+      "name": "style_pirate_selector_preview",
+      "mimeType": "image/png",
+      "offset": 326854,
+      "storedLength": 383,
+      "originalLength": 383,
+      "compression": "none"
+    },
+    {
+      "name": "style_bot_guide_regpoints",
+      "mimeType": "text/plain",
+      "offset": 327237,
+      "storedLength": 135,
+      "originalLength": 153,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_bot_guide_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 327372,
+      "storedLength": 351,
+      "originalLength": 351,
+      "compression": "none"
+    },
+    {
+      "name": "style_bot_guide_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 327723,
+      "storedLength": 143,
+      "originalLength": 143,
+      "compression": "none"
+    },
+    {
+      "name": "style_bot_guide_selector_preview",
+      "mimeType": "image/png",
+      "offset": 327866,
+      "storedLength": 351,
+      "originalLength": 351,
+      "compression": "none"
+    },
+    {
+      "name": "style_bot_rentable_regpoints",
+      "mimeType": "text/plain",
+      "offset": 328217,
+      "storedLength": 142,
+      "originalLength": 169,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_bot_rentable_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 328359,
+      "storedLength": 348,
+      "originalLength": 348,
+      "compression": "none"
+    },
+    {
+      "name": "style_bot_rentable_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 328707,
+      "storedLength": 142,
+      "originalLength": 142,
+      "compression": "none"
+    },
+    {
+      "name": "style_bot_rentable_selector_preview",
+      "mimeType": "image/png",
+      "offset": 328849,
+      "storedLength": 358,
+      "originalLength": 358,
+      "compression": "none"
+    },
+    {
+      "name": "style_bot_rentable_icon",
+      "mimeType": "image/png",
+      "offset": 329207,
+      "storedLength": 375,
+      "originalLength": 375,
+      "compression": "none"
+    },
+    {
+      "name": "style_skelestock_regpoints",
+      "mimeType": "text/plain",
+      "offset": 329582,
+      "storedLength": 134,
+      "originalLength": 153,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_skelestock_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 329716,
+      "storedLength": 399,
+      "originalLength": 399,
+      "compression": "none"
+    },
+    {
+      "name": "style_skelestock_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 330115,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_skelestock_selector_preview",
+      "mimeType": "image/png",
+      "offset": 330220,
+      "storedLength": 399,
+      "originalLength": 399,
+      "compression": "none"
+    },
+    {
+      "name": "style_bot_frank_large_regpoints",
+      "mimeType": "text/plain",
+      "offset": 330619,
+      "storedLength": 144,
+      "originalLength": 169,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_bot_frank_large_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 330763,
+      "storedLength": 788,
+      "originalLength": 1158,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_bot_frank_large_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 331551,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_bot_frank_large_selector_preview",
+      "mimeType": "image/png",
+      "offset": 331656,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_bot_frank_large_icon",
+      "mimeType": "image/png",
+      "offset": 331933,
+      "storedLength": 291,
+      "originalLength": 291,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_regpoints",
+      "mimeType": "text/plain",
+      "offset": 332224,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 332371,
+      "storedLength": 290,
+      "originalLength": 290,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 332661,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_selector_preview",
+      "mimeType": "image/png",
+      "offset": 332766,
+      "storedLength": 369,
+      "originalLength": 369,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_icon",
+      "mimeType": "image/png",
+      "offset": 333135,
+      "storedLength": 684,
+      "originalLength": 1015,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_red_regpoints",
+      "mimeType": "text/plain",
+      "offset": 333819,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_red_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 333966,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_red_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 334246,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_red_selector_preview",
+      "mimeType": "image/png",
+      "offset": 334351,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_red_icon",
+      "mimeType": "image/png",
+      "offset": 334628,
+      "storedLength": 206,
+      "originalLength": 206,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_green_regpoints",
+      "mimeType": "text/plain",
+      "offset": 334834,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_green_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 334981,
+      "storedLength": 282,
+      "originalLength": 282,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_green_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 335263,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_green_selector_preview",
+      "mimeType": "image/png",
+      "offset": 335368,
+      "storedLength": 369,
+      "originalLength": 369,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_green_icon",
+      "mimeType": "image/png",
+      "offset": 335737,
+      "storedLength": 684,
+      "originalLength": 1015,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_blue_regpoints",
+      "mimeType": "text/plain",
+      "offset": 336421,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_blue_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 336568,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_blue_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 336848,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_blue_selector_preview",
+      "mimeType": "image/png",
+      "offset": 336953,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_blue_icon",
+      "mimeType": "image/png",
+      "offset": 337230,
+      "storedLength": 206,
+      "originalLength": 206,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_alert_regpoints",
+      "mimeType": "text/plain",
+      "offset": 337436,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_alert_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 337583,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_alert_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 337863,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_alert_selector_preview",
+      "mimeType": "image/png",
+      "offset": 337968,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_alert_icon",
+      "mimeType": "image/png",
+      "offset": 338245,
+      "storedLength": 216,
+      "originalLength": 216,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_info_regpoints",
+      "mimeType": "text/plain",
+      "offset": 338461,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_info_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 338608,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_info_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 338888,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_info_selector_preview",
+      "mimeType": "image/png",
+      "offset": 338993,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_info_icon",
+      "mimeType": "image/png",
+      "offset": 339270,
+      "storedLength": 212,
+      "originalLength": 212,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_warning_regpoints",
+      "mimeType": "text/plain",
+      "offset": 339482,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_warning_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 339629,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_warning_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 339909,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_warning_selector_preview",
+      "mimeType": "image/png",
+      "offset": 340014,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_warning_icon",
+      "mimeType": "image/png",
+      "offset": 340291,
+      "storedLength": 221,
+      "originalLength": 221,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_wrong_regpoints",
+      "mimeType": "text/plain",
+      "offset": 340512,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_wrong_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 340659,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_wrong_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 340939,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_wrong_selector_preview",
+      "mimeType": "image/png",
+      "offset": 341044,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_wrong_icon",
+      "mimeType": "image/png",
+      "offset": 341321,
+      "storedLength": 214,
+      "originalLength": 214,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_wrong_circle_regpoints",
+      "mimeType": "text/plain",
+      "offset": 341535,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_wrong_circle_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 341682,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_wrong_circle_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 341962,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_wrong_circle_selector_preview",
+      "mimeType": "image/png",
+      "offset": 342067,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_wrong_circle_icon",
+      "mimeType": "image/png",
+      "offset": 342344,
+      "storedLength": 224,
+      "originalLength": 224,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_correct_regpoints",
+      "mimeType": "text/plain",
+      "offset": 342568,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_correct_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 342715,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_correct_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 342995,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_correct_selector_preview",
+      "mimeType": "image/png",
+      "offset": 343100,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_correct_icon",
+      "mimeType": "image/png",
+      "offset": 343377,
+      "storedLength": 206,
+      "originalLength": 206,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_correct_circle_regpoints",
+      "mimeType": "text/plain",
+      "offset": 343583,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_correct_circle_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 343730,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_correct_circle_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 344010,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_correct_circle_selector_preview",
+      "mimeType": "image/png",
+      "offset": 344115,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_correct_circle_icon",
+      "mimeType": "image/png",
+      "offset": 344392,
+      "storedLength": 219,
+      "originalLength": 219,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_question_mark_regpoints",
+      "mimeType": "text/plain",
+      "offset": 344611,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_question_mark_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 344758,
+      "storedLength": 290,
+      "originalLength": 290,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_question_mark_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 345048,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_question_mark_selector_preview",
+      "mimeType": "image/png",
+      "offset": 345153,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_question_mark_icon",
+      "mimeType": "image/png",
+      "offset": 345430,
+      "storedLength": 204,
+      "originalLength": 204,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_question_mark_circle_regpoints",
+      "mimeType": "text/plain",
+      "offset": 345634,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_question_mark_circle_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 345781,
+      "storedLength": 290,
+      "originalLength": 290,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_question_mark_circle_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 346071,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_question_mark_circle_selector_preview",
+      "mimeType": "image/png",
+      "offset": 346176,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_question_mark_circle_icon",
+      "mimeType": "image/png",
+      "offset": 346453,
+      "storedLength": 219,
+      "originalLength": 219,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_arrow_up_regpoints",
+      "mimeType": "text/plain",
+      "offset": 346672,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_arrow_up_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 346819,
+      "storedLength": 283,
+      "originalLength": 283,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_arrow_up_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 347102,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_arrow_up_selector_preview",
+      "mimeType": "image/png",
+      "offset": 347207,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_arrow_up_icon",
+      "mimeType": "image/png",
+      "offset": 347484,
+      "storedLength": 197,
+      "originalLength": 197,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_arrow_up_circle_regpoints",
+      "mimeType": "text/plain",
+      "offset": 347681,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_arrow_up_circle_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 347828,
+      "storedLength": 283,
+      "originalLength": 283,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_arrow_up_circle_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 348111,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_arrow_up_circle_selector_preview",
+      "mimeType": "image/png",
+      "offset": 348216,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_arrow_up_circle_icon",
+      "mimeType": "image/png",
+      "offset": 348493,
+      "storedLength": 217,
+      "originalLength": 217,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_arrow_down_regpoints",
+      "mimeType": "text/plain",
+      "offset": 348710,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_arrow_down_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 348857,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_arrow_down_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 349137,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_arrow_down_selector_preview",
+      "mimeType": "image/png",
+      "offset": 349242,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_arrow_down_icon",
+      "mimeType": "image/png",
+      "offset": 349519,
+      "storedLength": 517,
+      "originalLength": 603,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_arrow_down_circle_regpoints",
+      "mimeType": "text/plain",
+      "offset": 350036,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_arrow_down_circle_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 350183,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_arrow_down_circle_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 350463,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_arrow_down_circle_selector_preview",
+      "mimeType": "image/png",
+      "offset": 350568,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_arrow_down_circle_icon",
+      "mimeType": "image/png",
+      "offset": 350845,
+      "storedLength": 573,
+      "originalLength": 653,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_skull_regpoints",
+      "mimeType": "text/plain",
+      "offset": 351418,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_skull_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 351565,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_skull_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 351845,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_skull_selector_preview",
+      "mimeType": "image/png",
+      "offset": 351950,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_skull_icon",
+      "mimeType": "image/png",
+      "offset": 352227,
+      "storedLength": 182,
+      "originalLength": 182,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_skull_2_regpoints",
+      "mimeType": "text/plain",
+      "offset": 352409,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_skull_2_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 352556,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_skull_2_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 352836,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_skull_2_selector_preview",
+      "mimeType": "image/png",
+      "offset": 352941,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_skull_2_icon",
+      "mimeType": "image/png",
+      "offset": 353218,
+      "storedLength": 182,
+      "originalLength": 182,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_magnifier_regpoints",
+      "mimeType": "text/plain",
+      "offset": 353400,
+      "storedLength": 147,
+      "originalLength": 172,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_notification_magnifier_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 353547,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_magnifier_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 353827,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_magnifier_selector_preview",
+      "mimeType": "image/png",
+      "offset": 353932,
+      "storedLength": 277,
+      "originalLength": 277,
+      "compression": "none"
+    },
+    {
+      "name": "style_notification_magnifier_icon",
+      "mimeType": "image/png",
+      "offset": 354209,
+      "storedLength": 331,
+      "originalLength": 336,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_goat_regpoints",
+      "mimeType": "text/plain",
+      "offset": 354540,
+      "storedLength": 133,
+      "originalLength": 154,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_goat_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 354673,
+      "storedLength": 524,
+      "originalLength": 524,
+      "compression": "none"
+    },
+    {
+      "name": "style_goat_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 355197,
+      "storedLength": 103,
+      "originalLength": 103,
+      "compression": "none"
+    },
+    {
+      "name": "style_goat_selector_preview",
+      "mimeType": "image/png",
+      "offset": 355300,
+      "storedLength": 524,
+      "originalLength": 524,
+      "compression": "none"
+    },
+    {
+      "name": "style_santa_regpoints",
+      "mimeType": "text/plain",
+      "offset": 355824,
+      "storedLength": 142,
+      "originalLength": 170,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_santa_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 355966,
+      "storedLength": 266,
+      "originalLength": 266,
+      "compression": "none"
+    },
+    {
+      "name": "style_santa_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 356232,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_santa_selector_preview",
+      "mimeType": "image/png",
+      "offset": 356337,
+      "storedLength": 18248,
+      "originalLength": 81003,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_santa_icon",
+      "mimeType": "image/png",
+      "offset": 374585,
+      "storedLength": 239,
+      "originalLength": 239,
+      "compression": "none"
+    },
+    {
+      "name": "style_ambassador_regpoints",
+      "mimeType": "text/plain",
+      "offset": 374824,
+      "storedLength": 142,
+      "originalLength": 169,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_ambassador_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 374966,
+      "storedLength": 1134,
+      "originalLength": 1425,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_ambassador_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 376100,
+      "storedLength": 104,
+      "originalLength": 104,
+      "compression": "none"
+    },
+    {
+      "name": "style_ambassador_selector_preview",
+      "mimeType": "image/png",
+      "offset": 376204,
+      "storedLength": 1134,
+      "originalLength": 1425,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_radio_regpoints",
+      "mimeType": "text/plain",
+      "offset": 377338,
+      "storedLength": 142,
+      "originalLength": 170,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_radio_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 377480,
+      "storedLength": 265,
+      "originalLength": 265,
+      "compression": "none"
+    },
+    {
+      "name": "style_radio_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 377745,
+      "storedLength": 105,
+      "originalLength": 105,
+      "compression": "none"
+    },
+    {
+      "name": "style_radio_selector_preview",
+      "mimeType": "image/png",
+      "offset": 377850,
+      "storedLength": 716,
+      "originalLength": 716,
+      "compression": "none"
+    },
+    {
+      "name": "style_radio_icon",
+      "mimeType": "image/png",
+      "offset": 378566,
+      "storedLength": 194,
+      "originalLength": 194,
+      "compression": "none"
+    },
+    {
+      "name": "style_snowstorm_red_regpoints",
+      "mimeType": "text/plain",
+      "offset": 378760,
+      "storedLength": 142,
+      "originalLength": 168,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_snowstorm_red_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 378902,
+      "storedLength": 1054,
+      "originalLength": 1054,
+      "compression": "none"
+    },
+    {
+      "name": "style_snowstorm_red_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 379956,
+      "storedLength": 139,
+      "originalLength": 139,
+      "compression": "none"
+    },
+    {
+      "name": "style_snowstorm_red_selector_preview",
+      "mimeType": "image/png",
+      "offset": 380095,
+      "storedLength": 1054,
+      "originalLength": 1054,
+      "compression": "none"
+    },
+    {
+      "name": "style_snowstorm_blue_regpoints",
+      "mimeType": "text/plain",
+      "offset": 381149,
+      "storedLength": 142,
+      "originalLength": 168,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_snowstorm_blue_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 381291,
+      "storedLength": 1148,
+      "originalLength": 1148,
+      "compression": "none"
+    },
+    {
+      "name": "style_snowstorm_blue_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 382439,
+      "storedLength": 149,
+      "originalLength": 149,
+      "compression": "none"
+    },
+    {
+      "name": "style_snowstorm_blue_selector_preview",
+      "mimeType": "image/png",
+      "offset": 382588,
+      "storedLength": 1148,
+      "originalLength": 1148,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_bronze_regpoints",
+      "mimeType": "text/plain",
+      "offset": 383736,
+      "storedLength": 151,
+      "originalLength": 183,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_habbo_avatar_bronze_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 383887,
+      "storedLength": 839,
+      "originalLength": 839,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_bronze_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 384726,
+      "storedLength": 163,
+      "originalLength": 163,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_bronze_selector_preview",
+      "mimeType": "image/png",
+      "offset": 384889,
+      "storedLength": 858,
+      "originalLength": 858,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_gold_regpoints",
+      "mimeType": "text/plain",
+      "offset": 385747,
+      "storedLength": 151,
+      "originalLength": 183,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_habbo_avatar_gold_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 385898,
+      "storedLength": 803,
+      "originalLength": 803,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_gold_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 386701,
+      "storedLength": 158,
+      "originalLength": 158,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_gold_selector_preview",
+      "mimeType": "image/png",
+      "offset": 386859,
+      "storedLength": 822,
+      "originalLength": 822,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_diamond_regpoints",
+      "mimeType": "text/plain",
+      "offset": 387681,
+      "storedLength": 151,
+      "originalLength": 183,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_habbo_avatar_diamond_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 387832,
+      "storedLength": 824,
+      "originalLength": 824,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_diamond_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 388656,
+      "storedLength": 155,
+      "originalLength": 155,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_diamond_selector_preview",
+      "mimeType": "image/png",
+      "offset": 388811,
+      "storedLength": 837,
+      "originalLength": 837,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_rainbow_regpoints",
+      "mimeType": "text/plain",
+      "offset": 389648,
+      "storedLength": 151,
+      "originalLength": 183,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_habbo_avatar_rainbow_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 389799,
+      "storedLength": 958,
+      "originalLength": 958,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_rainbow_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 390757,
+      "storedLength": 155,
+      "originalLength": 155,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_rainbow_selector_preview",
+      "mimeType": "image/png",
+      "offset": 390912,
+      "storedLength": 970,
+      "originalLength": 970,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_trippy_regpoints",
+      "mimeType": "text/plain",
+      "offset": 391882,
+      "storedLength": 150,
+      "originalLength": 184,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_habbo_avatar_trippy_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 392032,
+      "storedLength": 1679,
+      "originalLength": 1679,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_trippy_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 393711,
+      "storedLength": 287,
+      "originalLength": 287,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_trippy_selector_preview",
+      "mimeType": "image/png",
+      "offset": 393998,
+      "storedLength": 1710,
+      "originalLength": 1710,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_ultra_trippy_regpoints",
+      "mimeType": "text/plain",
+      "offset": 395708,
+      "storedLength": 150,
+      "originalLength": 184,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_habbo_avatar_ultra_trippy_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 395858,
+      "storedLength": 1843,
+      "originalLength": 1843,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_ultra_trippy_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 397701,
+      "storedLength": 295,
+      "originalLength": 295,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_habbo_avatar_ultra_trippy_selector_preview",
+      "mimeType": "image/png",
+      "offset": 397996,
+      "storedLength": 1853,
+      "originalLength": 1853,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_mvhq_regpoints",
+      "mimeType": "text/plain",
+      "offset": 399849,
+      "storedLength": 149,
+      "originalLength": 184,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_mvhq_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 399998,
+      "storedLength": 1014,
+      "originalLength": 1014,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_mvhq_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 401012,
+      "storedLength": 159,
+      "originalLength": 159,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_mvhq_selector_preview",
+      "mimeType": "image/png",
+      "offset": 401171,
+      "storedLength": 1014,
+      "originalLength": 1014,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_metakey_regpoints",
+      "mimeType": "text/plain",
+      "offset": 402185,
+      "storedLength": 148,
+      "originalLength": 184,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_metakey_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 402333,
+      "storedLength": 877,
+      "originalLength": 877,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_metakey_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 403210,
+      "storedLength": 151,
+      "originalLength": 151,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_metakey_selector_preview",
+      "mimeType": "image/png",
+      "offset": 403361,
+      "storedLength": 862,
+      "originalLength": 862,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_crafted_habbo_avatar_regpoints",
+      "mimeType": "text/plain",
+      "offset": 404223,
+      "storedLength": 150,
+      "originalLength": 184,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_crafted_habbo_avatar_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 404373,
+      "storedLength": 833,
+      "originalLength": 833,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_crafted_habbo_avatar_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 405206,
+      "storedLength": 208,
+      "originalLength": 208,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_crafted_habbo_avatar_selector_preview",
+      "mimeType": "image/png",
+      "offset": 405414,
+      "storedLength": 833,
+      "originalLength": 833,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_balloon_orange_regpoints",
+      "mimeType": "text/plain",
+      "offset": 406247,
+      "storedLength": 151,
+      "originalLength": 183,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_balloon_orange_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 406398,
+      "storedLength": 911,
+      "originalLength": 911,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_balloon_orange_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 407309,
+      "storedLength": 154,
+      "originalLength": 154,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_balloon_orange_selector_preview",
+      "mimeType": "image/png",
+      "offset": 407463,
+      "storedLength": 902,
+      "originalLength": 902,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_balloon_blue_regpoints",
+      "mimeType": "text/plain",
+      "offset": 408365,
+      "storedLength": 151,
+      "originalLength": 183,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_balloon_blue_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 408516,
+      "storedLength": 898,
+      "originalLength": 898,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_balloon_blue_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 409414,
+      "storedLength": 158,
+      "originalLength": 158,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_balloon_blue_selector_preview",
+      "mimeType": "image/png",
+      "offset": 409572,
+      "storedLength": 913,
+      "originalLength": 913,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_origami_orange_regpoints",
+      "mimeType": "text/plain",
+      "offset": 410485,
+      "storedLength": 150,
+      "originalLength": 184,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_origami_orange_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 410635,
+      "storedLength": 438,
+      "originalLength": 438,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_origami_orange_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 411073,
+      "storedLength": 146,
+      "originalLength": 146,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_origami_orange_selector_preview",
+      "mimeType": "image/png",
+      "offset": 411219,
+      "storedLength": 460,
+      "originalLength": 460,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_origami_blue_regpoints",
+      "mimeType": "text/plain",
+      "offset": 411679,
+      "storedLength": 150,
+      "originalLength": 184,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_origami_blue_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 411829,
+      "storedLength": 455,
+      "originalLength": 455,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_origami_blue_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 412284,
+      "storedLength": 147,
+      "originalLength": 147,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_origami_blue_selector_preview",
+      "mimeType": "image/png",
+      "offset": 412431,
+      "storedLength": 478,
+      "originalLength": 478,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_chocolate_dark_regpoints",
+      "mimeType": "text/plain",
+      "offset": 412909,
+      "storedLength": 151,
+      "originalLength": 181,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_chocolate_dark_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 413060,
+      "storedLength": 203,
+      "originalLength": 203,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_chocolate_dark_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 413263,
+      "storedLength": 128,
+      "originalLength": 128,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_chocolate_dark_selector_preview",
+      "mimeType": "image/png",
+      "offset": 413391,
+      "storedLength": 208,
+      "originalLength": 208,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_chocolate_white_regpoints",
+      "mimeType": "text/plain",
+      "offset": 413599,
+      "storedLength": 150,
+      "originalLength": 181,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_chocolate_white_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 413749,
+      "storedLength": 207,
+      "originalLength": 207,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_chocolate_white_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 413956,
+      "storedLength": 129,
+      "originalLength": 129,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_chocolate_white_selector_preview",
+      "mimeType": "image/png",
+      "offset": 414085,
+      "storedLength": 194,
+      "originalLength": 194,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_clay_regpoints",
+      "mimeType": "text/plain",
+      "offset": 414279,
+      "storedLength": 151,
+      "originalLength": 182,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_clay_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 414430,
+      "storedLength": 593,
+      "originalLength": 593,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_clay_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 415023,
+      "storedLength": 192,
+      "originalLength": 192,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_clay_selector_preview",
+      "mimeType": "image/png",
+      "offset": 415215,
+      "storedLength": 599,
+      "originalLength": 599,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_scroll_regpoints",
+      "mimeType": "text/plain",
+      "offset": 415814,
+      "storedLength": 150,
+      "originalLength": 183,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_scroll_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 415964,
+      "storedLength": 579,
+      "originalLength": 579,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_scroll_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 416543,
+      "storedLength": 167,
+      "originalLength": 167,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_scroll_selector_preview",
+      "mimeType": "image/png",
+      "offset": 416710,
+      "storedLength": 583,
+      "originalLength": 583,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_pillow_regpoints",
+      "mimeType": "text/plain",
+      "offset": 417293,
+      "storedLength": 150,
+      "originalLength": 182,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_pillow_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 417443,
+      "storedLength": 501,
+      "originalLength": 501,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_pillow_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 417944,
+      "storedLength": 177,
+      "originalLength": 177,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_pillow_selector_preview",
+      "mimeType": "image/png",
+      "offset": 418121,
+      "storedLength": 534,
+      "originalLength": 534,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_bobba_regpoints",
+      "mimeType": "text/plain",
+      "offset": 418655,
+      "storedLength": 148,
+      "originalLength": 181,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_bobba_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 418803,
+      "storedLength": 387,
+      "originalLength": 387,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_bobba_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 419190,
+      "storedLength": 129,
+      "originalLength": 129,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_bobba_selector_preview",
+      "mimeType": "image/png",
+      "offset": 419319,
+      "storedLength": 382,
+      "originalLength": 382,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_pinktube_regpoints",
+      "mimeType": "text/plain",
+      "offset": 419701,
+      "storedLength": 150,
+      "originalLength": 182,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_pinktube_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 419851,
+      "storedLength": 1191,
+      "originalLength": 1775,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_pinktube_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 421042,
+      "storedLength": 161,
+      "originalLength": 161,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_pinktube_selector_preview",
+      "mimeType": "image/png",
+      "offset": 421203,
+      "storedLength": 1193,
+      "originalLength": 1774,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_keycaps_regpoints",
+      "mimeType": "text/plain",
+      "offset": 422396,
+      "storedLength": 149,
+      "originalLength": 183,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_keycaps_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 422545,
+      "storedLength": 1097,
+      "originalLength": 1683,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_keycaps_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 423642,
+      "storedLength": 169,
+      "originalLength": 169,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_keycaps_selector_preview",
+      "mimeType": "image/png",
+      "offset": 423811,
+      "storedLength": 1092,
+      "originalLength": 1677,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_xmas22_regpoints",
+      "mimeType": "text/plain",
+      "offset": 424903,
+      "storedLength": 148,
+      "originalLength": 183,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_xmas22_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 425051,
+      "storedLength": 262,
+      "originalLength": 262,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_xmas22_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 425313,
+      "storedLength": 211,
+      "originalLength": 211,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_xmas22_selector_preview",
+      "mimeType": "image/png",
+      "offset": 425524,
+      "storedLength": 412,
+      "originalLength": 412,
+      "compression": "none"
+    },
+    {
+      "name": "style_recycled_regpoints",
+      "mimeType": "text/plain",
+      "offset": 425936,
+      "storedLength": 143,
+      "originalLength": 169,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_recycled_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 426079,
+      "storedLength": 6024,
+      "originalLength": 9451,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_recycled_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 432103,
+      "storedLength": 5443,
+      "originalLength": 8903,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_recycled_selector_preview",
+      "mimeType": "image/png",
+      "offset": 437546,
+      "storedLength": 6023,
+      "originalLength": 9451,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_rocky_regpoints",
+      "mimeType": "text/plain",
+      "offset": 443569,
+      "storedLength": 158,
+      "originalLength": 207,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_rocky_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 443727,
+      "storedLength": 378,
+      "originalLength": 378,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_rocky_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 444105,
+      "storedLength": 187,
+      "originalLength": 187,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_rocky_selector_preview",
+      "mimeType": "image/png",
+      "offset": 444292,
+      "storedLength": 369,
+      "originalLength": 369,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_ice_regpoints",
+      "mimeType": "text/plain",
+      "offset": 444661,
+      "storedLength": 157,
+      "originalLength": 207,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_ice_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 444818,
+      "storedLength": 448,
+      "originalLength": 448,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_ice_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 445266,
+      "storedLength": 187,
+      "originalLength": 187,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_ice_selector_preview",
+      "mimeType": "image/png",
+      "offset": 445453,
+      "storedLength": 451,
+      "originalLength": 451,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_aurora_regpoints",
+      "mimeType": "text/plain",
+      "offset": 445904,
+      "storedLength": 152,
+      "originalLength": 184,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_aurora_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 446056,
+      "storedLength": 1554,
+      "originalLength": 2261,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_aurora_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 447610,
+      "storedLength": 149,
+      "originalLength": 149,
+      "compression": "none"
+    },
+    {
+      "name": "style_nft_aurora_selector_preview",
+      "mimeType": "image/png",
+      "offset": 447759,
+      "storedLength": 1557,
+      "originalLength": 2261,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_money_regpoints",
+      "mimeType": "text/plain",
+      "offset": 449316,
+      "storedLength": 149,
+      "originalLength": 183,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_money_chat_bubble_base",
+      "mimeType": "image/png",
+      "offset": 449465,
+      "storedLength": 1217,
+      "originalLength": 2097,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_money_chat_bubble_pointer",
+      "mimeType": "image/png",
+      "offset": 450682,
+      "storedLength": 773,
+      "originalLength": 1411,
+      "compression": "deflate"
+    },
+    {
+      "name": "style_nft_money_selector_preview",
+      "mimeType": "image/png",
+      "offset": 451455,
+      "storedLength": 1214,
+      "originalLength": 2097,
+      "compression": "deflate"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="reputation_status" width="276" height="71" version="0.1" uid="82E76A09-646F-F0F8-0C60-1F2C36060803">
+  <window>
+    <frame x="0" y="0" width="276" height="71" params="32769" style="100" caption="Reputation%20Status">
+      <filters>
+        <DropShadowFilter angle="0" alpha="0.34901960784313724" blurX="20" blurY="20"/>
+      </filters>
+      <children>
+        <label x="8" y="9" width="187" height="16" params="16" style="100" name="score_display" caption="Reputation%3A%20000%2C%20Criminal%20Score%3A%20000"/>
+        <button x="190" y="-7" width="88" height="46" params="131089" style="101" name="refresh_button" caption="Refresh" color="0x0bbbbbb"/>
+      </children>
+    </frame>
+  </window>
+</layout>

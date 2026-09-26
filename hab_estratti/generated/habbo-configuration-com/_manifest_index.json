@@ -1,0 +1,32 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboConfigurationCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n  <component class=\"com.sulake.bootstrap.HabboConfigurationManagerBootstrap\" version=\"0.0\">\n    <interface iid=\"com.sulake.iid.IIDHabboConfigurationManager\" />\n    <assets>\n      <asset mimeType=\"text/plain\" name=\"development_configuration\" />\n      <asset mimeType=\"text/plain\" name=\"common_configuration\" />\n      <asset mimeType=\"text/plain\" name=\"localization_configuration\" />\n    </assets>\n  </component>\n</manifest>\n",
+  "entries": [
+    {
+      "name": "development_configuration",
+      "mimeType": "text/plain",
+      "offset": 0,
+      "storedLength": 2302,
+      "originalLength": 7236,
+      "compression": "deflate"
+    },
+    {
+      "name": "common_configuration",
+      "mimeType": "text/plain",
+      "offset": 2302,
+      "storedLength": 1757,
+      "originalLength": 5745,
+      "compression": "deflate"
+    },
+    {
+      "name": "localization_configuration",
+      "mimeType": "text/plain",
+      "offset": 4059,
+      "storedLength": 469,
+      "originalLength": 1883,
+      "compression": "deflate"
+    }
+  ]
+}

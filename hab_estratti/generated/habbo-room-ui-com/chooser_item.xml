@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="chooser_item" width="159" height="18" version="0.1" uid="84F45B02-9163-3EBB-3472-A948EC51D209">
+  <window>
+    <container x="0" y="0" width="159" height="18" params="131217" style="0" color="0xffffeeeeee" background="true" treshold="0">
+      <children>
+        <text x="7" y="2" width="152" height="16" params="144" style="0" name="itemtext" caption="%24%7B001_lorem_ipsum_title%7D">
+          <variables>
+            <var key="antialias_type" value="advanced" type="String"/>
+            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+            <var key="sharpness" value="0" type="Number"/>
+            <var key="thickness" value="0" type="Number"/>
+            <var key="kerning" value="false" type="Boolean"/>
+            <var key="spacing" value="0" type="Number"/>
+            <var key="leading" value="0" type="Number"/>
+          </variables>
+        </text>
+      </children>
+    </container>
+  </window>
+</layout>

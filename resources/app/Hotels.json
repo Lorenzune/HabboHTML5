@@ -1,0 +1,58 @@
+{
+    "hhus": {
+        "websiteUrl": "https://www.habbo.com",
+        "websocketUrl": "wss://game-us.habbo.com:30001/websocket"
+    },
+    "hhbr": {
+        "websiteUrl": "https://www.habbo.com.br",
+        "websocketUrl": "wss://game-br.habbo.com:30001/websocket"
+    },
+    "hhfi": {
+        "websiteUrl": "https://www.habbo.fi",
+        "websocketUrl": "wss://game-fi.habbo.com:30001/websocket"
+    },
+    "hhfr": {
+        "websiteUrl": "https://www.habbo.fr",
+        "websocketUrl": "wss://game-fr.habbo.com:30001/websocket"
+    },
+    "hhde": {
+        "websiteUrl": "https://www.habbo.de",
+        "websocketUrl": "wss://game-de.habbo.com:30001/websocket"
+    },
+    "hhnl": {
+        "websiteUrl": "https://www.habbo.nl",
+        "websocketUrl": "wss://game-nl.habbo.com:30001/websocket"
+    },
+    "hhes": {
+        "websiteUrl": "https://www.habbo.es",
+        "websocketUrl": "wss://game-es.habbo.com:30001/websocket"
+    },
+    "hhit": {
+        "websiteUrl": "https://www.habbo.it",
+        "websocketUrl": "wss://game-it.habbo.com:30001/websocket"
+    },
+    "hhtr": {
+        "websiteUrl": "https://www.habbo.com.tr",
+        "websocketUrl": "wss://game-tr.habbo.com:30001/websocket"
+    },
+    "hhs2": {
+        "websiteUrl": "https://sandbox.habbo.com",
+        "websocketUrl": "wss://game-s2.habbo.com:30001/websocket"
+    },
+    "duke": {
+        "websiteUrl": "https://duke.varoke.net",
+        "websocketUrl": "wss://game-duke.habbo.com:30301/websocket"
+    },
+    "hhs1": {
+        "websiteUrl": "https://s1.varoke.net",
+        "websocketUrl": "wss://game-s1.habbo.com:30001/websocket"
+    },
+    "d63": {
+        "websiteUrl": "https://d63.varoke.net",
+        "websocketUrl": "wss://game-d63.habbo.com:30201/websocket"
+    },
+    "dev": {
+        "websiteUrl": "https://dev.varoke.net",
+        "websocketUrl": "wss://game-dev.habbo.com:30401/websocket"
+    }
+}

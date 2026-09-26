@@ -1,0 +1,556 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboLoaderUI",
+  "manifest": "<library name=\"HabboLoaderUI\">\n  <assets>\n    <asset name=\"block_dark_base_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/block_dark_base.png\" /></asset>\n    <asset name=\"block_dark_point_down_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/block_dark_point_down.png\" /></asset>\n    <asset name=\"block_dark_point_left_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/block_dark_point_left.png\" /></asset>\n    <asset name=\"block_dark_point_right_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/block_dark_point_right.png\" /></asset>\n    <asset name=\"block_dark_point_up_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/block_dark_point_up.png\" /></asset>\n    <asset name=\"button_color_hover_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_color_hover.png\" /></asset>\n    <asset name=\"button_color_normal_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_color_normal.png\" /></asset>\n    <asset name=\"button_color_selected_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_color_selected.png\" /></asset>\n    <asset name=\"button_grid_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_grid.png\" /></asset>\n    <asset name=\"button_grid_active_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_grid_active.png\" /></asset>\n    <asset name=\"button_grid_inactive_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_grid_inactive.png\" /></asset>\n    <asset name=\"button_grid_over_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_grid_over.png\" /></asset>\n    <asset name=\"button_grid_selected_active_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_grid_selected_active.png\" /></asset>\n    <asset name=\"button_grid_selected_inactive_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_grid_selected_inactive.png\" /></asset>\n    <asset name=\"button_skin_green_hc_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_skin_green.png\" /></asset>\n    <asset name=\"button_skin_green_inactive_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_skin_green_inactive.png\" /></asset>\n    <asset name=\"button_skin_green_pressed_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_skin_green_pressed.png\" /></asset>\n    <asset name=\"button_skin_green_rollover_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_skin_green_rollover.png\" /></asset>\n    <asset name=\"button_skin_pink_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_skin_pink.png\" /></asset>\n    <asset name=\"button_skin_pink_inactive_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_skin_pink_inactive.png\" /></asset>\n    <asset name=\"button_skin_pink_pressed_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_skin_pink_pressed.png\" /></asset>\n    <asset name=\"button_skin_pink_rollover_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_skin_pink_rollover.png\" /></asset>\n    <asset name=\"button_skin_yellow_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_skin_yellow.png\" /></asset>\n    <asset name=\"button_skin_yellow_inactive_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_skin_yellow_inactive.png\" /></asset>\n    <asset name=\"button_skin_yellow_pressed_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_skin_yellow_pressed.png\" /></asset>\n    <asset name=\"button_skin_yellow_rollover_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/button_skin_yellow_rollover.png\" /></asset>\n    <asset name=\"color_chip_round_default_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/color_chip_round_default.png\" /></asset>\n    <asset name=\"color_chip_round_press_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/color_chip_round_press.png\" /></asset>\n    <asset name=\"color_chip_round_selected_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/color_chip_round_selected.png\" /></asset>\n    <asset name=\"color_round_chip_in_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/color_round_chip_in.png\" /></asset>\n    <asset name=\"hc_small_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/hc_small.png\" /></asset>\n    <asset name=\"input_error_hitch_hc_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/input_error_hitch.png\" /></asset>\n    <asset name=\"rnd_button_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hc/rnd_button.png\" /></asset>\n    <asset name=\"border_sunk_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/border_sunk.png\" /></asset>\n    <asset name=\"border_text_hitch_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/border_text_hitch.png\" /></asset>\n    <asset name=\"button_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/button.png\" /></asset>\n    <asset name=\"button_inactive_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/button_inactive.png\" /></asset>\n    <asset name=\"button_pressed_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/button_pressed.png\" /></asset>\n    <asset name=\"button_skin_green_ui_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/button_skin_green.png\" /></asset>\n    <asset name=\"dark_popup_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/dark_popup.png\" /></asset>\n    <asset name=\"divider_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/divider.png\" /></asset>\n    <asset name=\"frame_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/frame.png\" /></asset>\n    <asset name=\"input_corrected_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/input_corrected.png\" /></asset>\n    <asset name=\"input_corrected_hitch_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/input_corrected_hitch.png\" /></asset>\n    <asset name=\"input_error_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/input_error.png\" /></asset>\n    <asset name=\"input_error_alert_hitch_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/input_error_alert_hitch.png\" /></asset>\n    <asset name=\"input_error_hitch_ui_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/input_error_hitch.png\" /></asset>\n    <asset name=\"input_field_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/input_field.png\" /></asset>\n    <asset name=\"input_field_hitch_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/input_field_hitch.png\" /></asset>\n    <asset name=\"radio_button_off_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/radio_button_off.png\" /></asset>\n    <asset name=\"radio_button_off_hitch_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/radio_button_off_hitch.png\" /></asset>\n    <asset name=\"radio_button_on_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/radio_button_on.png\" /></asset>\n    <asset name=\"radio_button_on_hitch_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/radio_button_on_hitch.png\" /></asset>\n    <asset name=\"white_balloon_png\" mimeType=\"image/png\"><param key=\"source\" value=\"ui/white_balloon.png\" /></asset>\n  </assets>\n  <aliases>\n    <asset name=\"button_coloritem_png\" ref=\"color_chip_round_default_png\" mimeType=\"image/png\" />\n    <asset name=\"button_color_selected_png\" ref=\"color_chip_round_selected_png\" mimeType=\"image/png\" />\n    <asset name=\"button_color_hover_png\" ref=\"color_chip_round_press_png\" mimeType=\"image/png\" />\n    <asset name=\"button_color_inside_png\" ref=\"color_round_chip_in_png\" mimeType=\"image/png\" />\n    <asset name=\"button_green_png\" ref=\"button_skin_green_ui_png\" mimeType=\"image/png\" />\n    <asset name=\"button_green_pressed_png\" ref=\"button_skin_green_pressed_png\" mimeType=\"image/png\" />\n    <asset name=\"button_green_rollover_png\" ref=\"button_skin_green_rollover_png\" mimeType=\"image/png\" />\n    <asset name=\"button_green_inactive_png\" ref=\"button_skin_green_inactive_png\" mimeType=\"image/png\" />\n    <asset name=\"button_red_png\" ref=\"button_skin_pink_png\" mimeType=\"image/png\" />\n    <asset name=\"button_red_pressed_png\" ref=\"button_skin_pink_pressed_png\" mimeType=\"image/png\" />\n    <asset name=\"button_red_rollover_png\" ref=\"button_skin_pink_rollover_png\" mimeType=\"image/png\" />\n    <asset name=\"button_red_inactive_png\" ref=\"button_skin_pink_inactive_png\" mimeType=\"image/png\" />\n    <asset name=\"button_yellow_png\" ref=\"button_skin_yellow_png\" mimeType=\"image/png\" />\n    <asset name=\"button_round_png\" ref=\"button_grid_png\" mimeType=\"image/png\" />\n    <asset name=\"button_round_pressed_png\" ref=\"button_grid_selected_inactive_png\" mimeType=\"image/png\" />\n    <asset name=\"button_round_over_png\" ref=\"button_grid_over_png\" mimeType=\"image/png\" />\n    <asset name=\"button_grid_currently_active_png\" ref=\"button_grid_selected_active_png\" mimeType=\"image/png\" />\n    <asset name=\"icon_hc\" ref=\"hc_small_png\" mimeType=\"image/png\" />\n    <asset name=\"input_error_hitch_png\" ref=\"input_error_hitch_hc_png\" mimeType=\"image/png\" />\n  </aliases>\n</library>\n",
+  "aliases": [
+    {
+      "name": "button_coloritem_png",
+      "ref": "color_chip_round_default_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "button_color_selected_png",
+      "ref": "color_chip_round_selected_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "button_color_hover_png",
+      "ref": "color_chip_round_press_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "button_color_inside_png",
+      "ref": "color_round_chip_in_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "button_green_png",
+      "ref": "button_skin_green_ui_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "button_green_pressed_png",
+      "ref": "button_skin_green_pressed_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "button_green_rollover_png",
+      "ref": "button_skin_green_rollover_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "button_green_inactive_png",
+      "ref": "button_skin_green_inactive_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "button_red_png",
+      "ref": "button_skin_pink_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "button_red_pressed_png",
+      "ref": "button_skin_pink_pressed_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "button_red_rollover_png",
+      "ref": "button_skin_pink_rollover_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "button_red_inactive_png",
+      "ref": "button_skin_pink_inactive_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "button_yellow_png",
+      "ref": "button_skin_yellow_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "button_round_png",
+      "ref": "button_grid_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "button_round_pressed_png",
+      "ref": "button_grid_selected_inactive_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "button_round_over_png",
+      "ref": "button_grid_over_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "button_grid_currently_active_png",
+      "ref": "button_grid_selected_active_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "icon_hc",
+      "ref": "hc_small_png",
+      "mimeType": "image/png",
+      "params": {}
+    },
+    {
+      "name": "input_error_hitch_png",
+      "ref": "input_error_hitch_hc_png",
+      "mimeType": "image/png",
+      "params": {}
+    }
+  ],
+  "entries": [
+    {
+      "name": "block_dark_base_png",
+      "mimeType": "image/png",
+      "offset": 0,
+      "storedLength": 2841,
+      "originalLength": 2841,
+      "compression": "none"
+    },
+    {
+      "name": "block_dark_point_down_png",
+      "mimeType": "image/png",
+      "offset": 2841,
+      "storedLength": 173,
+      "originalLength": 173,
+      "compression": "none"
+    },
+    {
+      "name": "block_dark_point_left_png",
+      "mimeType": "image/png",
+      "offset": 3014,
+      "storedLength": 182,
+      "originalLength": 182,
+      "compression": "none"
+    },
+    {
+      "name": "block_dark_point_right_png",
+      "mimeType": "image/png",
+      "offset": 3196,
+      "storedLength": 174,
+      "originalLength": 174,
+      "compression": "none"
+    },
+    {
+      "name": "block_dark_point_up_png",
+      "mimeType": "image/png",
+      "offset": 3370,
+      "storedLength": 167,
+      "originalLength": 167,
+      "compression": "none"
+    },
+    {
+      "name": "button_color_hover_png",
+      "mimeType": "image/png",
+      "offset": 3537,
+      "storedLength": 2879,
+      "originalLength": 2879,
+      "compression": "none"
+    },
+    {
+      "name": "button_color_normal_png",
+      "mimeType": "image/png",
+      "offset": 6416,
+      "storedLength": 2869,
+      "originalLength": 2869,
+      "compression": "none"
+    },
+    {
+      "name": "button_color_selected_png",
+      "mimeType": "image/png",
+      "offset": 9285,
+      "storedLength": 3342,
+      "originalLength": 3342,
+      "compression": "none"
+    },
+    {
+      "name": "button_grid_png",
+      "mimeType": "image/png",
+      "offset": 12627,
+      "storedLength": 3273,
+      "originalLength": 3273,
+      "compression": "none"
+    },
+    {
+      "name": "button_grid_active_png",
+      "mimeType": "image/png",
+      "offset": 15900,
+      "storedLength": 3289,
+      "originalLength": 3289,
+      "compression": "none"
+    },
+    {
+      "name": "button_grid_inactive_png",
+      "mimeType": "image/png",
+      "offset": 19189,
+      "storedLength": 590,
+      "originalLength": 590,
+      "compression": "none"
+    },
+    {
+      "name": "button_grid_over_png",
+      "mimeType": "image/png",
+      "offset": 19779,
+      "storedLength": 3281,
+      "originalLength": 3281,
+      "compression": "none"
+    },
+    {
+      "name": "button_grid_selected_active_png",
+      "mimeType": "image/png",
+      "offset": 23060,
+      "storedLength": 3400,
+      "originalLength": 3660,
+      "compression": "deflate"
+    },
+    {
+      "name": "button_grid_selected_inactive_png",
+      "mimeType": "image/png",
+      "offset": 26460,
+      "storedLength": 1623,
+      "originalLength": 15658,
+      "compression": "deflate"
+    },
+    {
+      "name": "button_skin_green_hc_png",
+      "mimeType": "image/png",
+      "offset": 28083,
+      "storedLength": 267,
+      "originalLength": 267,
+      "compression": "none"
+    },
+    {
+      "name": "button_skin_green_inactive_png",
+      "mimeType": "image/png",
+      "offset": 28350,
+      "storedLength": 273,
+      "originalLength": 273,
+      "compression": "none"
+    },
+    {
+      "name": "button_skin_green_pressed_png",
+      "mimeType": "image/png",
+      "offset": 28623,
+      "storedLength": 267,
+      "originalLength": 267,
+      "compression": "none"
+    },
+    {
+      "name": "button_skin_green_rollover_png",
+      "mimeType": "image/png",
+      "offset": 28890,
+      "storedLength": 267,
+      "originalLength": 267,
+      "compression": "none"
+    },
+    {
+      "name": "button_skin_pink_png",
+      "mimeType": "image/png",
+      "offset": 29157,
+      "storedLength": 267,
+      "originalLength": 267,
+      "compression": "none"
+    },
+    {
+      "name": "button_skin_pink_inactive_png",
+      "mimeType": "image/png",
+      "offset": 29424,
+      "storedLength": 267,
+      "originalLength": 267,
+      "compression": "none"
+    },
+    {
+      "name": "button_skin_pink_pressed_png",
+      "mimeType": "image/png",
+      "offset": 29691,
+      "storedLength": 267,
+      "originalLength": 267,
+      "compression": "none"
+    },
+    {
+      "name": "button_skin_pink_rollover_png",
+      "mimeType": "image/png",
+      "offset": 29958,
+      "storedLength": 267,
+      "originalLength": 267,
+      "compression": "none"
+    },
+    {
+      "name": "button_skin_yellow_png",
+      "mimeType": "image/png",
+      "offset": 30225,
+      "storedLength": 261,
+      "originalLength": 261,
+      "compression": "none"
+    },
+    {
+      "name": "button_skin_yellow_inactive_png",
+      "mimeType": "image/png",
+      "offset": 30486,
+      "storedLength": 266,
+      "originalLength": 266,
+      "compression": "none"
+    },
+    {
+      "name": "button_skin_yellow_pressed_png",
+      "mimeType": "image/png",
+      "offset": 30752,
+      "storedLength": 267,
+      "originalLength": 267,
+      "compression": "none"
+    },
+    {
+      "name": "button_skin_yellow_rollover_png",
+      "mimeType": "image/png",
+      "offset": 31019,
+      "storedLength": 261,
+      "originalLength": 261,
+      "compression": "none"
+    },
+    {
+      "name": "color_chip_round_default_png",
+      "mimeType": "image/png",
+      "offset": 31280,
+      "storedLength": 310,
+      "originalLength": 310,
+      "compression": "none"
+    },
+    {
+      "name": "color_chip_round_press_png",
+      "mimeType": "image/png",
+      "offset": 31590,
+      "storedLength": 311,
+      "originalLength": 311,
+      "compression": "none"
+    },
+    {
+      "name": "color_chip_round_selected_png",
+      "mimeType": "image/png",
+      "offset": 31901,
+      "storedLength": 286,
+      "originalLength": 286,
+      "compression": "none"
+    },
+    {
+      "name": "color_round_chip_in_png",
+      "mimeType": "image/png",
+      "offset": 32187,
+      "storedLength": 172,
+      "originalLength": 172,
+      "compression": "none"
+    },
+    {
+      "name": "hc_small_png",
+      "mimeType": "image/png",
+      "offset": 32359,
+      "storedLength": 3017,
+      "originalLength": 3017,
+      "compression": "none"
+    },
+    {
+      "name": "input_error_hitch_hc_png",
+      "mimeType": "image/png",
+      "offset": 35376,
+      "storedLength": 4636,
+      "originalLength": 18359,
+      "compression": "deflate"
+    },
+    {
+      "name": "rnd_button_png",
+      "mimeType": "image/png",
+      "offset": 40012,
+      "storedLength": 3070,
+      "originalLength": 3326,
+      "compression": "deflate"
+    },
+    {
+      "name": "border_sunk_png",
+      "mimeType": "image/png",
+      "offset": 43082,
+      "storedLength": 372,
+      "originalLength": 372,
+      "compression": "none"
+    },
+    {
+      "name": "border_text_hitch_png",
+      "mimeType": "image/png",
+      "offset": 43454,
+      "storedLength": 224,
+      "originalLength": 224,
+      "compression": "none"
+    },
+    {
+      "name": "button_png",
+      "mimeType": "image/png",
+      "offset": 43678,
+      "storedLength": 181,
+      "originalLength": 181,
+      "compression": "none"
+    },
+    {
+      "name": "button_inactive_png",
+      "mimeType": "image/png",
+      "offset": 43859,
+      "storedLength": 186,
+      "originalLength": 186,
+      "compression": "none"
+    },
+    {
+      "name": "button_pressed_png",
+      "mimeType": "image/png",
+      "offset": 44045,
+      "storedLength": 292,
+      "originalLength": 292,
+      "compression": "none"
+    },
+    {
+      "name": "button_skin_green_ui_png",
+      "mimeType": "image/png",
+      "offset": 44337,
+      "storedLength": 267,
+      "originalLength": 267,
+      "compression": "none"
+    },
+    {
+      "name": "dark_popup_png",
+      "mimeType": "image/png",
+      "offset": 44604,
+      "storedLength": 133,
+      "originalLength": 133,
+      "compression": "none"
+    },
+    {
+      "name": "divider_png",
+      "mimeType": "image/png",
+      "offset": 44737,
+      "storedLength": 107,
+      "originalLength": 107,
+      "compression": "none"
+    },
+    {
+      "name": "frame_png",
+      "mimeType": "image/png",
+      "offset": 44844,
+      "storedLength": 175,
+      "originalLength": 175,
+      "compression": "none"
+    },
+    {
+      "name": "input_corrected_png",
+      "mimeType": "image/png",
+      "offset": 45019,
+      "storedLength": 215,
+      "originalLength": 215,
+      "compression": "none"
+    },
+    {
+      "name": "input_corrected_hitch_png",
+      "mimeType": "image/png",
+      "offset": 45234,
+      "storedLength": 1119,
+      "originalLength": 1119,
+      "compression": "none"
+    },
+    {
+      "name": "input_error_png",
+      "mimeType": "image/png",
+      "offset": 46353,
+      "storedLength": 224,
+      "originalLength": 224,
+      "compression": "none"
+    },
+    {
+      "name": "input_error_alert_hitch_png",
+      "mimeType": "image/png",
+      "offset": 46577,
+      "storedLength": 130,
+      "originalLength": 130,
+      "compression": "none"
+    },
+    {
+      "name": "input_error_hitch_ui_png",
+      "mimeType": "image/png",
+      "offset": 46707,
+      "storedLength": 1119,
+      "originalLength": 1119,
+      "compression": "none"
+    },
+    {
+      "name": "input_field_png",
+      "mimeType": "image/png",
+      "offset": 47826,
+      "storedLength": 251,
+      "originalLength": 251,
+      "compression": "none"
+    },
+    {
+      "name": "input_field_hitch_png",
+      "mimeType": "image/png",
+      "offset": 48077,
+      "storedLength": 5184,
+      "originalLength": 18882,
+      "compression": "deflate"
+    },
+    {
+      "name": "radio_button_off_png",
+      "mimeType": "image/png",
+      "offset": 53261,
+      "storedLength": 209,
+      "originalLength": 209,
+      "compression": "none"
+    },
+    {
+      "name": "radio_button_off_hitch_png",
+      "mimeType": "image/png",
+      "offset": 53470,
+      "storedLength": 206,
+      "originalLength": 206,
+      "compression": "none"
+    },
+    {
+      "name": "radio_button_on_png",
+      "mimeType": "image/png",
+      "offset": 53676,
+      "storedLength": 223,
+      "originalLength": 223,
+      "compression": "none"
+    },
+    {
+      "name": "radio_button_on_hitch_png",
+      "mimeType": "image/png",
+      "offset": 53899,
+      "storedLength": 223,
+      "originalLength": 223,
+      "compression": "none"
+    },
+    {
+      "name": "white_balloon_png",
+      "mimeType": "image/png",
+      "offset": 54122,
+      "storedLength": 240,
+      "originalLength": 240,
+      "compression": "none"
+    }
+  ]
+}

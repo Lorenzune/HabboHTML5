@@ -1,0 +1,202 @@
+#====== THIS FILE WILL BE EMBEDDED WITH THE DEVELOPMENT COMPILER CONSTANT ONLY !!! ==========
+# All client variables should be configured serverside with migrations!
+# Do not commit changes to this file unless making fundamental changes.
+#============================================================================================
+
+# CONSIDER ADDING OTHER VARIABLES FROM PROPERTY-SET HOMEPAGE HERE AS WELL:
+# flash.dynamic.download.url
+# flash.dynamic.download.name.template
+# flash.dynamic.avatar.download.configuration
+# flash.dynamic.avatar.download.url
+
+#====== CONNECTIONS ======
+
+connection.development.prime=eff04235e02e802c407d6a744404696c903b893cb8a4775f2373f6504f93de22937d3a1b71249b3536d27b2c23a0af69
+connection.development.generator=6f1f9d1e4203
+use.sso=false
+try_existing_session=false
+
+# Magic captcha for S1 and D63
+development.captcha.token=ZMujErRo6S
+
+# Development Users
+login.user.0.name=Mikko.Sirkka@sulake.com
+login.user.0.pass=Secret1
+login.user.1.name=Wille.Frankenhaeuser@sulake.com
+login.user.1.pass=Secret1
+
+#====== ENVIRONMENTS ======
+
+dev.environment.list=s1/s2/duke/d63/dev/local
+
+# Default Environment
+connection.info.host=game-d63.habbo.com
+connection.info.port=30201
+facebook.application.id=128901487163953
+
+# zun
+connection.info.name.zun=Zun
+connection.info.host.zun=dhcp235.sulake.com
+connection.info.port.zun=40001
+url.prefix.zun=http://dhcp235.sulake.com:8090
+pocket.api.zun=http://dhcp235.sulake.com:8087
+web.api.zun=http://dhcp235.sulake.com:3000
+facebook.application.id.zun=162645197175
+
+# matti
+connection.info.name.matti=Matti
+connection.info.host.matti=dhcp234.sulake.com
+connection.info.port.matti=40001
+url.prefix.matti=http://dhcp234.sulake.com:8090
+pocket.api.matti=http://dhcp234.sulake.com:8087
+web.api.matti=http://dhcp234.sulake.com:3000
+facebook.application.id.matti=162645197175
+
+# DHCP189 (wille)
+connection.info.name.wille=Wille
+connection.info.host.wille=dhcp189.sulake.com
+connection.info.port.wille=40001
+url.prefix.wille=http://dhcp189.sulake.com:8090
+pocket.api.wille=http://dhcp189.sulake.com:8087
+web.api.wille=http://dhcp189.sulake.com:3000
+facebook.application.id.wille=162645197175
+
+# d63
+connection.info.name.d63=D63
+connection.info.host.d63=game-d63.habbo.com
+connection.info.port.d63=30201
+url.prefix.d63=http://d63.varoke.net
+pocket.api.d63=https://d63.varoke.net
+web.api.d63=https://d63.varoke.net
+facebook.application.id.d63=634511976660498
+web.terms_of_service.link.d63=https://help.habbo.com/entries/23096348-Terms-of-Service-and-Privacy-Policy
+
+# Duke
+connection.info.name.duke=Duke
+connection.info.host.duke=game-duke.habbo.com
+connection.info.port.duke=30301
+url.prefix.duke=http://duke.varoke.net
+pocket.api.duke=https://duke.varoke.net
+web.api.duke=https://duke.varoke.net
+facebook.application.id.duke=128901487163953
+
+# Beta
+connection.info.name.beta=beta.habbo.com
+connection.info.host.beta=game-us.habbo.com
+connection.info.port.beta=30000,38101,993
+url.prefix.beta=https://beta.habbo.com
+pocket.api.beta=https://www.habbo.com
+web.api.beta=https://www.habbo.com
+facebook.application.id.beta=1417574575138432
+
+# S1
+connection.info.name.s1=S1
+connection.info.host.s1=game-s1.habbo.com
+connection.info.port.s1=30001
+url.prefix.s1=http://s1.varoke.net
+pocket.api.s1=https://s1.varoke.net
+web.api.s1=https://s1.varoke.net
+facebook.application.id.s1=595550203848134
+web.terms_of_service.link.s1=https://help.habbo.com/entries/23096348-Terms-of-Service-and-Privacy-Policy
+
+# DEV
+connection.info.name.dev=DEV
+connection.info.host.dev=game-dev.habbo.com
+connection.info.port.dev=30401
+url.prefix.dev=http://dev.varoke.net
+pocket.api.dev=https://dev.varoke.net
+web.api.dev=https://dev.varoke.net
+
+# DHCP72 (dom)
+connection.info.name.dom=Dom (dhcp72)
+connection.info.host.dom=dhcp72.sulake.com
+connection.info.port.dom=40001
+url.prefix.dom=http://dhcp72.sulake.com:8080
+pocket.api.dom=http://dhcp72.sulake.com:8087
+web.api.dom=http://dhcp72.sulake.com:8087
+
+# DHCP154 (liisa)
+connection.info.name.liisa=Liisa (dhcp154)
+connection.info.host.liisa=dhcp154.sulake.com
+connection.info.port.liisa=40001
+url.prefix.liisa=http://dhcp154.sulake.com:8080
+pocket.api.liisa=http://dhcp154.sulake.com:8087
+web.api.liisa=http://dhcp154.sulake.com:8087
+
+# Local server (notice the .local suffix)
+connection.info.name.local=Localhost (127.0.0.1)
+connection.info.host.local=localhost.sulake.com
+connection.info.port.local=40002
+url.prefix.local=http://localhost.sulake.com:8090
+pocket.api.local=http://localhost.sulake.com:8087
+web.api.local=http://localhost.sulake.com:3000
+
+# Brasil 2
+connection.info.name.bx=dmf.Habbo.com.br
+connection.info.host.bx=game-bx.habbo.com
+connection.info.port.bx=30000,993
+url.prefix.bx=http://dmf.habbo.com.br
+pocket.api.bx=https://dmf.habbo.com.br
+web.api.bx=https://dmf.habbo.com.br
+facebook.application.id.bx=672834216073545
+
+
+tablet.avatareditor.enabled=true
+tablet.trading.enabled=true
+tablet.home_room_forwarding.enabled=false
+tablet.low_mem_event.enabled=false
+tablet.bc.enabled=true
+tablet.bc.upgrades.enabled=true
+
+navigator.settings.show_room_styles=true
+
+
+
+###################################
+#                                 #
+# Properties below are read only! #
+#    They are not overridden!     #
+#                                 #
+###################################
+
+configuration.readonly=true
+
+flash.dynamic.avatar.download.name.template=%libname%.hab
+flash.dynamic.avatar.download.configuration=https://jenkins.sulake.com/flash-63/figuremap.xml
+flash.dynamic.avatar.download.url=https://jenkins.sulake.com/flash-63/
+flash.dynamic.download.url=https://images.habbo.com/dcr/hof_furni/
+pet.dynamic.download.url=https://jenkins.sulake.com/flash-63/
+pet.dynamic.download.name.template=%type%.hab
+
+#gpu.inanimate_furni=wildwest_bgland
+#gpu.ignored_furni=wildwest_bgtrain
+
+nux.local_notification.delay.hours=24
+
+camera.enabled.android=1
+camera.enabled.ios=1
+camera.enabled.desktop=1
+
+#toolbar.mode=transparent
+
+#catalog.restricted_nodes=sound_fx,avatar,perm_costumes,perm_e
+#wired.enabled.air=1
+
+########### Newbie landing view promo override example
+#landing.view.mobile.new_identity_override_enabled=1
+#landing.view.mobile.new_identity_widgets=mobile_newbie_hello,mobile_newbie_users,mobile_newbie_navi
+
+#landing.view.mobile_newbie_hello.conf=caption,npc.crafting_instructor.greeting;bodytext,avatar.title;promolinkbutton,inventory.furni.next,next
+#landing.view.mobile_newbie_hello.layout=bitmap.uri,http://1.bp.blogspot.com/_yVhsYnlb3ts/SRbUsuYK1VI/AAAAAAAABjw/RKsCoXRfWY4/s400/frank2.GIF
+#landing.view.mobile_newbie_hello.widget=generic
+
+#landing.view.mobile_newbie_navi.conf=caption,navigator.quick.links.title;bodytext,navigator.roominfo.removerights.tooltip;promolinkbutton,inventory.furni.next,next
+#landing.view.mobile_newbie_navi.layout=bitmap.uri,${image.library.url}web_promo_small/spromo_kitchenbundle4.png
+#landing.view.mobile_newbie_navi.widget=generic
+
+#landing.view.mobile_newbie_users.conf=caption,newbie_promo.others.title;bodytext,newbie_promo.others.body;promolinkbutton,inventory.furni.next,next
+#landing.view.mobile_newbie_users.layout=bitmap.uri,${image.library.url}web_promo_small/spromo_kitchenbundle1.png
+#landing.view.mobile_newbie_users.widget=generic
+
+#memenu.purse.enabled=0
+raid.protection.enabled=false

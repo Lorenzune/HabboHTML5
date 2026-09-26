@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="avatar_image_view" width="90" height="120" version="0.1" uid="41EF1188-0F8B-943C-11E0-2CE8A12D1067">
+  <window>
+    <container x="0" y="0" width="90" height="120" params="16" style="3" name="avatar_image_view">
+      <children>
+        <widget x="0" y="-10" width="90" height="130" params="16" style="3" name="avatar_image">
+          <variables>
+            <var key="widget_type" value="avatar_image" type="String"/>
+            <var key="avatar_image:direction" value="south" type="String"/>
+          </variables>
+        </widget>
+      </children>
+    </container>
+  </window>
+</layout>

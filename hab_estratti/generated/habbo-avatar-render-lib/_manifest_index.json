@@ -1,0 +1,1392 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboAvatarRenderLib",
+  "manifest": "<?xml version=\"1.0\"?>\r\r\n<manifest>\r\r\n\r\r\n    <component class=\"com.sulake.bootstrap.AvatarRenderManagerBootstrap\" version=\"0.0\">\r\r\n        <interface iid=\"com.sulake.iid.IIDAvatarRenderManager\" />\r\r\n        <assets>\r\r\n\r\r\n            <asset mimeType=\"text/xml\" name=\"action_offset_lay\" />\r\n            <asset mimeType=\"text/xml\" name=\"action_offset_swim\" />\r\n            <asset mimeType=\"text/xml\" name=\"dance_sixseven_animation\"  source=\"animations/dance_sixseven.xml\"/>\r\n            <asset mimeType=\"text/xml\" name=\"HabboAvatarAnimation\" />\r\n            <asset mimeType=\"text/xml\" name=\"HabboAvatarFigure\" />\r\n            <asset mimeType=\"text/xml\" name=\"HabboAvatarGeometry\" />\r\n            <asset mimeType=\"text/xml\" name=\"HabboAvatarPartSets\" />\r\r\n\r\r\n\r\r\n            <asset mimeType=\"image/png\" name=\"user_typing_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"user_typing_small_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"user_muted_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"user_muted_small_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"user_blowkiss_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"user_blowkiss_small_png\" />\r\r\n\r\r\n            <asset mimeType=\"image/png\" name=\"user_guide_bubble_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"user_guide_requester_bubble_png\" />\r\r\n\r\r\n            <asset mimeType=\"image/png\" name=\"user_idle_left_1_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"user_idle_left_2_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"user_idle_left_1_small_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"user_idle_left_2_small_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"user_idle_right_1_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"user_idle_right_2_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"user_idle_right_1_small_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"user_idle_right_2_small_png\" />\r\r\n\r\r\n            <asset mimeType=\"image/png\" name=\"number_1_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"number_2_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"number_3_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"number_4_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"number_5_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"number_1_small_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"number_2_small_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"number_3_small_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"number_4_small_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"number_5_small_png\" />\r\r\n            <asset mimeType=\"image/png\" name=\"pet_experience_bubble_png\" />\r\r\n\r\r\n            <!-- Loader Rendering Graphics -->\r\r\n\r\r\n            <asset name=\"h_std_lg_1007_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-22,16\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_2182_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-24,23\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_2178_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-24,7\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_8_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-23,6\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ey_9_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-32,63\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_3_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-22,25\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hr_1_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-15,78\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ls_1_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-43,47\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_201_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-22,25\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_4_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-23,7\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_rh_1_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-18,44\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_7_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-24,4\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ey_4_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-33,61\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_18_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-20,48\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_2180_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-25,6\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ey_6_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-32,63\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hr_26_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-16,78\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_rs_1_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-18,46\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_26_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-16,78\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_7_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-21,25\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_2181_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-22,27\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lh_1_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-43,47\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_fc_1_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-36,57\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_1_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-23,7\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_2179_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-27,5\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hd_1_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-20,74\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ey_1_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-33,62\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_11_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-14,80\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ey_8_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-32,63\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_207_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-19,47\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_100_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-19,48\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hr_4_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-5,93\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_4_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-5,93\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hr_6_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-7,78\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_6_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-7,78\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_33_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-16,78\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_4_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-19,48\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hd_2_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-20,74\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_1207_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-35,36\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_6_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-22,25\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_1100_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-19,48\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_2_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-22,25\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ey_2_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-33,62\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hr_24_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-16,78\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_6_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-23,7\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_24_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-16,78\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ha_15_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-16,84\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_101_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-19,48\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_rs_2_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-18,46\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hr_11_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-14,80\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_10_2_0\" mimeType='image/png' >\r\r\n                <param key=\"offset\" value=\"-16,54\" />\r\r\n            </asset>s\r\r\n            <asset name=\"h_std_ey_7_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-32,63\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_2183_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-29,19\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ls_2_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-43,47\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ea_6_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-23,63\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_fa_12_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-22,59\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hr_33_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-18,73\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_1101_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-19,48\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ha_3_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-16,76\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_1_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-19,48\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_bd_1_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-22,50\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_1_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-15,78\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hr_2268_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-16,82\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hr_2468_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-22,68\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hd_4_2_0\" mimeType=\"image/png\">\r\r\n                <param key='offset' value='-20,74' />\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_2006_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-21,41\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_2007_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-22,40\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_2027_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-21,26\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_2282_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-17,26\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_2283_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-17,22\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hd_3_2_0\" mimeType=\"image/png\">\r\r\n                <param key='offset' value='-20,74' />\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_2268_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-16,82\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_2023_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-24,8\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_2024_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-24,8\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_2151_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-24,7\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_2152_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-24,7\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hr_2469_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-20,73\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_2468_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-18,82\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_2469_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-16,82\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_2474_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-25,6\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_2475_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-30,5\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ls_0_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-18,82\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_0_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-16,82\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_rs_0_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-25,6\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_2_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-23,7\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hr_2439_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-14,78\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_2439_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-14,78\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_2335_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-30,39\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_2126_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-24,48\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_2127_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-34,42\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_2128_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-21,49\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_2097_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-22,25\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_2232_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-25,6\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ls_0_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-30,5\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_0_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-16,82\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_rs_0_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-25,6\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_2220_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-20,48\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_2433_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-22,25\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hr_2422_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-3,86\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_2422_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-3,86\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_2423_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-16,78\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hr_2423_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-16,78\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_2293_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-25,10\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_2294_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-25,4\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_2295_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-26,9\"/>\r\r\n            </asset>\r\r\n            <asset name='h_std_hr_36_2_0' mimeType='image/png' >\r\r\n                <param key='offset' value='-19,73' />\r\r\n            </asset>\r\r\n            <asset name='h_std_hrb_36_2_0' mimeType='image/png' >\r\r\n                <param key='offset' value='-14,77' />\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hr_16_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-15,77\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_16_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-15,77\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hr_32_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-21,74\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_32_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-20,78\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_35_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-17,73\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_35_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-16,77\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_200_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-13,89\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_hrb_200_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-13,89\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ey_3_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-32,62\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ey_5_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-32,62\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_5_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-19,48\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_202_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-19,49\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_1202_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-19,49\"/>\r\r\n            </asset>\r\r\n            <asset name='h_std_ch_16_2_0' mimeType='image/png' >\r\r\n                <param key=\"offset\" value=\"-19,49\" />\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_15_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-19,47\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_2_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-19,48\"/>\r\r\n            </asset>\r\r\n            <asset name='h_std_ch_201_2_0' mimeType='image/png' >\r\r\n                <param key=\"offset\" value=\"-18,50\" />\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_1_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-22,25\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_4_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-21,25\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_5_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-22,25\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_3_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-23,7\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_5_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-23,8\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ls_2050_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-43,47\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_2050_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-20,48\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_rs_2050_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-18,46\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_2165_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-20,50\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ls_2165_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-43,48\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_rs_2165_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-18,46\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ch_2166_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-20,43\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_ls_2166_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-44,38\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_rs_2166_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-18,32\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_2494_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-22,24\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_2111_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-24,8\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_sh_2112_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-24,8\"/>\r\r\n            </asset>\r\r\n            <asset name=\"h_std_lg_2037_2_0\" mimeType=\"image/png\">\r\r\n                <param key=\"offset\" value=\"-22,24\"/>\r\r\n            </asset>\r\r\n        </assets>\r\r\n    </component>\r\r\n</manifest>\r\n",
+  "unresolvedAssets": [
+    "h_std_hr_2268_2_0",
+    "h_std_hr_2468_2_0",
+    "h_std_hd_4_2_0",
+    "h_std_ch_2006_2_0",
+    "h_std_ch_2007_2_0",
+    "h_std_lg_2027_2_0",
+    "h_std_lg_2282_2_0",
+    "h_std_lg_2283_2_0",
+    "h_std_hd_3_2_0",
+    "h_std_hrb_2268_2_0",
+    "h_std_sh_2023_2_0",
+    "h_std_sh_2024_2_0",
+    "h_std_sh_2151_2_0",
+    "h_std_sh_2152_2_0",
+    "h_std_hr_2469_2_0",
+    "h_std_hrb_2468_2_0",
+    "h_std_hrb_2469_2_0",
+    "h_std_sh_2474_2_0",
+    "h_std_sh_2475_2_0",
+    "h_std_ls_0_2_0",
+    "h_std_ch_0_2_0",
+    "h_std_rs_0_2_0",
+    "h_std_sh_2_2_0",
+    "h_std_hr_2439_2_0",
+    "h_std_hrb_2439_2_0",
+    "h_std_ch_2335_2_0",
+    "h_std_ch_2126_2_0",
+    "h_std_ch_2127_2_0",
+    "h_std_ch_2128_2_0",
+    "h_std_lg_2097_2_0",
+    "h_std_hrb_2232_2_0",
+    "h_std_ls_0_2_0",
+    "h_std_ch_0_2_0",
+    "h_std_rs_0_2_0",
+    "h_std_ch_2220_2_0",
+    "h_std_lg_2433_2_0",
+    "h_std_hr_2422_2_0",
+    "h_std_hrb_2422_2_0",
+    "h_std_hrb_2423_2_0",
+    "h_std_hr_2423_2_0",
+    "h_std_sh_2293_2_0",
+    "h_std_sh_2294_2_0",
+    "h_std_sh_2295_2_0"
+  ],
+  "entries": [
+    {
+      "name": "action_offset_lay",
+      "mimeType": "text/xml",
+      "offset": 0,
+      "storedLength": 115,
+      "originalLength": 272,
+      "compression": "deflate"
+    },
+    {
+      "name": "action_offset_swim",
+      "mimeType": "text/xml",
+      "offset": 115,
+      "storedLength": 113,
+      "originalLength": 476,
+      "compression": "deflate"
+    },
+    {
+      "name": "dance_sixseven_animation",
+      "mimeType": "text/xml",
+      "offset": 228,
+      "storedLength": 283,
+      "originalLength": 5001,
+      "compression": "deflate"
+    },
+    {
+      "name": "HabboAvatarAnimation",
+      "mimeType": "text/xml",
+      "offset": 511,
+      "storedLength": 1719,
+      "originalLength": 54913,
+      "compression": "deflate"
+    },
+    {
+      "name": "HabboAvatarFigure",
+      "mimeType": "text/xml",
+      "offset": 2230,
+      "storedLength": 905,
+      "originalLength": 5238,
+      "compression": "deflate"
+    },
+    {
+      "name": "HabboAvatarGeometry",
+      "mimeType": "text/xml",
+      "offset": 3135,
+      "storedLength": 1389,
+      "originalLength": 18724,
+      "compression": "deflate"
+    },
+    {
+      "name": "HabboAvatarPartSets",
+      "mimeType": "text/xml",
+      "offset": 4524,
+      "storedLength": 648,
+      "originalLength": 7152,
+      "compression": "deflate"
+    },
+    {
+      "name": "user_typing_png",
+      "mimeType": "image/png",
+      "offset": 5172,
+      "storedLength": 198,
+      "originalLength": 198,
+      "compression": "none"
+    },
+    {
+      "name": "user_typing_small_png",
+      "mimeType": "image/png",
+      "offset": 5370,
+      "storedLength": 162,
+      "originalLength": 162,
+      "compression": "none"
+    },
+    {
+      "name": "user_muted_png",
+      "mimeType": "image/png",
+      "offset": 5532,
+      "storedLength": 329,
+      "originalLength": 329,
+      "compression": "none"
+    },
+    {
+      "name": "user_muted_small_png",
+      "mimeType": "image/png",
+      "offset": 5861,
+      "storedLength": 305,
+      "originalLength": 305,
+      "compression": "none"
+    },
+    {
+      "name": "user_blowkiss_png",
+      "mimeType": "image/png",
+      "offset": 6166,
+      "storedLength": 173,
+      "originalLength": 173,
+      "compression": "none"
+    },
+    {
+      "name": "user_blowkiss_small_png",
+      "mimeType": "image/png",
+      "offset": 6339,
+      "storedLength": 147,
+      "originalLength": 147,
+      "compression": "none"
+    },
+    {
+      "name": "user_guide_bubble_png",
+      "mimeType": "image/png",
+      "offset": 6486,
+      "storedLength": 331,
+      "originalLength": 331,
+      "compression": "none"
+    },
+    {
+      "name": "user_guide_requester_bubble_png",
+      "mimeType": "image/png",
+      "offset": 6817,
+      "storedLength": 575,
+      "originalLength": 575,
+      "compression": "none"
+    },
+    {
+      "name": "user_idle_left_1_png",
+      "mimeType": "image/png",
+      "offset": 7392,
+      "storedLength": 190,
+      "originalLength": 190,
+      "compression": "none"
+    },
+    {
+      "name": "user_idle_left_2_png",
+      "mimeType": "image/png",
+      "offset": 7582,
+      "storedLength": 188,
+      "originalLength": 188,
+      "compression": "none"
+    },
+    {
+      "name": "user_idle_left_1_small_png",
+      "mimeType": "image/png",
+      "offset": 7770,
+      "storedLength": 183,
+      "originalLength": 183,
+      "compression": "none"
+    },
+    {
+      "name": "user_idle_left_2_small_png",
+      "mimeType": "image/png",
+      "offset": 7953,
+      "storedLength": 173,
+      "originalLength": 173,
+      "compression": "none"
+    },
+    {
+      "name": "user_idle_right_1_png",
+      "mimeType": "image/png",
+      "offset": 8126,
+      "storedLength": 185,
+      "originalLength": 185,
+      "compression": "none"
+    },
+    {
+      "name": "user_idle_right_2_png",
+      "mimeType": "image/png",
+      "offset": 8311,
+      "storedLength": 182,
+      "originalLength": 182,
+      "compression": "none"
+    },
+    {
+      "name": "user_idle_right_1_small_png",
+      "mimeType": "image/png",
+      "offset": 8493,
+      "storedLength": 179,
+      "originalLength": 179,
+      "compression": "none"
+    },
+    {
+      "name": "user_idle_right_2_small_png",
+      "mimeType": "image/png",
+      "offset": 8672,
+      "storedLength": 172,
+      "originalLength": 172,
+      "compression": "none"
+    },
+    {
+      "name": "number_1_png",
+      "mimeType": "image/png",
+      "offset": 8844,
+      "storedLength": 358,
+      "originalLength": 461,
+      "compression": "deflate"
+    },
+    {
+      "name": "number_2_png",
+      "mimeType": "image/png",
+      "offset": 9202,
+      "storedLength": 401,
+      "originalLength": 544,
+      "compression": "deflate"
+    },
+    {
+      "name": "number_3_png",
+      "mimeType": "image/png",
+      "offset": 9603,
+      "storedLength": 337,
+      "originalLength": 440,
+      "compression": "deflate"
+    },
+    {
+      "name": "number_4_png",
+      "mimeType": "image/png",
+      "offset": 9940,
+      "storedLength": 362,
+      "originalLength": 449,
+      "compression": "deflate"
+    },
+    {
+      "name": "number_5_png",
+      "mimeType": "image/png",
+      "offset": 10302,
+      "storedLength": 360,
+      "originalLength": 450,
+      "compression": "deflate"
+    },
+    {
+      "name": "number_1_small_png",
+      "mimeType": "image/png",
+      "offset": 10662,
+      "storedLength": 188,
+      "originalLength": 194,
+      "compression": "deflate"
+    },
+    {
+      "name": "number_2_small_png",
+      "mimeType": "image/png",
+      "offset": 10850,
+      "storedLength": 202,
+      "originalLength": 206,
+      "compression": "deflate"
+    },
+    {
+      "name": "number_3_small_png",
+      "mimeType": "image/png",
+      "offset": 11052,
+      "storedLength": 207,
+      "originalLength": 215,
+      "compression": "deflate"
+    },
+    {
+      "name": "number_4_small_png",
+      "mimeType": "image/png",
+      "offset": 11259,
+      "storedLength": 200,
+      "originalLength": 206,
+      "compression": "deflate"
+    },
+    {
+      "name": "number_5_small_png",
+      "mimeType": "image/png",
+      "offset": 11459,
+      "storedLength": 199,
+      "originalLength": 204,
+      "compression": "deflate"
+    },
+    {
+      "name": "pet_experience_bubble_png",
+      "mimeType": "image/png",
+      "offset": 11658,
+      "storedLength": 744,
+      "originalLength": 744,
+      "compression": "none"
+    },
+    {
+      "name": "h_std_lg_1007_2_0",
+      "mimeType": "image/png",
+      "offset": 12402,
+      "storedLength": 146,
+      "originalLength": 146,
+      "compression": "none",
+      "params": {
+        "offset": "-22,16"
+      }
+    },
+    {
+      "name": "h_std_lg_2182_2_0",
+      "mimeType": "image/png",
+      "offset": 12548,
+      "storedLength": 101,
+      "originalLength": 101,
+      "compression": "none",
+      "params": {
+        "offset": "-24,23"
+      }
+    },
+    {
+      "name": "h_std_sh_2178_2_0",
+      "mimeType": "image/png",
+      "offset": 12649,
+      "storedLength": 244,
+      "originalLength": 244,
+      "compression": "none",
+      "params": {
+        "offset": "-24,7"
+      }
+    },
+    {
+      "name": "h_std_sh_8_2_0",
+      "mimeType": "image/png",
+      "offset": 12893,
+      "storedLength": 218,
+      "originalLength": 218,
+      "compression": "none",
+      "params": {
+        "offset": "-23,6"
+      }
+    },
+    {
+      "name": "h_std_ey_9_2_0",
+      "mimeType": "image/png",
+      "offset": 13111,
+      "storedLength": 137,
+      "originalLength": 137,
+      "compression": "none",
+      "params": {
+        "offset": "-32,63"
+      }
+    },
+    {
+      "name": "h_std_lg_3_2_0",
+      "mimeType": "image/png",
+      "offset": 13248,
+      "storedLength": 197,
+      "originalLength": 197,
+      "compression": "none",
+      "params": {
+        "offset": "-22,25"
+      }
+    },
+    {
+      "name": "h_std_hr_1_2_0",
+      "mimeType": "image/png",
+      "offset": 13445,
+      "storedLength": 232,
+      "originalLength": 232,
+      "compression": "none",
+      "params": {
+        "offset": "-15,78"
+      }
+    },
+    {
+      "name": "h_std_ls_1_2_0",
+      "mimeType": "image/png",
+      "offset": 13677,
+      "storedLength": 99,
+      "originalLength": 99,
+      "compression": "none",
+      "params": {
+        "offset": "-43,47"
+      }
+    },
+    {
+      "name": "h_std_lg_201_2_0",
+      "mimeType": "image/png",
+      "offset": 13776,
+      "storedLength": 171,
+      "originalLength": 171,
+      "compression": "none",
+      "params": {
+        "offset": "-22,25"
+      }
+    },
+    {
+      "name": "h_std_sh_4_2_0",
+      "mimeType": "image/png",
+      "offset": 13947,
+      "storedLength": 251,
+      "originalLength": 251,
+      "compression": "none",
+      "params": {
+        "offset": "-23,7"
+      }
+    },
+    {
+      "name": "h_std_rh_1_2_0",
+      "mimeType": "image/png",
+      "offset": 14198,
+      "storedLength": 155,
+      "originalLength": 155,
+      "compression": "none",
+      "params": {
+        "offset": "-18,44"
+      }
+    },
+    {
+      "name": "h_std_sh_7_2_0",
+      "mimeType": "image/png",
+      "offset": 14353,
+      "storedLength": 181,
+      "originalLength": 181,
+      "compression": "none",
+      "params": {
+        "offset": "-24,4"
+      }
+    },
+    {
+      "name": "h_std_ey_4_2_0",
+      "mimeType": "image/png",
+      "offset": 14534,
+      "storedLength": 109,
+      "originalLength": 109,
+      "compression": "none",
+      "params": {
+        "offset": "-33,61"
+      }
+    },
+    {
+      "name": "h_std_ch_18_2_0",
+      "mimeType": "image/png",
+      "offset": 14643,
+      "storedLength": 250,
+      "originalLength": 250,
+      "compression": "none",
+      "params": {
+        "offset": "-20,48"
+      }
+    },
+    {
+      "name": "h_std_sh_2180_2_0",
+      "mimeType": "image/png",
+      "offset": 14893,
+      "storedLength": 154,
+      "originalLength": 154,
+      "compression": "none",
+      "params": {
+        "offset": "-25,6"
+      }
+    },
+    {
+      "name": "h_std_ey_6_2_0",
+      "mimeType": "image/png",
+      "offset": 15047,
+      "storedLength": 107,
+      "originalLength": 107,
+      "compression": "none",
+      "params": {
+        "offset": "-32,63"
+      }
+    },
+    {
+      "name": "h_std_hr_26_2_0",
+      "mimeType": "image/png",
+      "offset": 15154,
+      "storedLength": 302,
+      "originalLength": 302,
+      "compression": "none",
+      "params": {
+        "offset": "-16,78"
+      }
+    },
+    {
+      "name": "h_std_rs_1_2_0",
+      "mimeType": "image/png",
+      "offset": 15456,
+      "storedLength": 132,
+      "originalLength": 132,
+      "compression": "none",
+      "params": {
+        "offset": "-18,46"
+      }
+    },
+    {
+      "name": "h_std_hrb_26_2_0",
+      "mimeType": "image/png",
+      "offset": 15588,
+      "storedLength": 328,
+      "originalLength": 328,
+      "compression": "none",
+      "params": {
+        "offset": "-16,78"
+      }
+    },
+    {
+      "name": "h_std_lg_7_2_0",
+      "mimeType": "image/png",
+      "offset": 15916,
+      "storedLength": 389,
+      "originalLength": 389,
+      "compression": "none",
+      "params": {
+        "offset": "-21,25"
+      }
+    },
+    {
+      "name": "h_std_lg_2181_2_0",
+      "mimeType": "image/png",
+      "offset": 16305,
+      "storedLength": 253,
+      "originalLength": 253,
+      "compression": "none",
+      "params": {
+        "offset": "-22,27"
+      }
+    },
+    {
+      "name": "h_std_lh_1_2_0",
+      "mimeType": "image/png",
+      "offset": 16558,
+      "storedLength": 123,
+      "originalLength": 123,
+      "compression": "none",
+      "params": {
+        "offset": "-43,47"
+      }
+    },
+    {
+      "name": "h_std_fc_1_2_0",
+      "mimeType": "image/png",
+      "offset": 16681,
+      "storedLength": 99,
+      "originalLength": 99,
+      "compression": "none",
+      "params": {
+        "offset": "-36,57"
+      }
+    },
+    {
+      "name": "h_std_sh_1_2_0",
+      "mimeType": "image/png",
+      "offset": 16780,
+      "storedLength": 186,
+      "originalLength": 186,
+      "compression": "none",
+      "params": {
+        "offset": "-23,7"
+      }
+    },
+    {
+      "name": "h_std_sh_2179_2_0",
+      "mimeType": "image/png",
+      "offset": 16966,
+      "storedLength": 168,
+      "originalLength": 168,
+      "compression": "none",
+      "params": {
+        "offset": "-27,5"
+      }
+    },
+    {
+      "name": "h_std_hd_1_2_0",
+      "mimeType": "image/png",
+      "offset": 17134,
+      "storedLength": 207,
+      "originalLength": 207,
+      "compression": "none",
+      "params": {
+        "offset": "-20,74"
+      }
+    },
+    {
+      "name": "h_std_ey_1_2_0",
+      "mimeType": "image/png",
+      "offset": 17341,
+      "storedLength": 110,
+      "originalLength": 110,
+      "compression": "none",
+      "params": {
+        "offset": "-33,62"
+      }
+    },
+    {
+      "name": "h_std_hrb_11_2_0",
+      "mimeType": "image/png",
+      "offset": 17451,
+      "storedLength": 335,
+      "originalLength": 335,
+      "compression": "none",
+      "params": {
+        "offset": "-14,80"
+      }
+    },
+    {
+      "name": "h_std_ey_8_2_0",
+      "mimeType": "image/png",
+      "offset": 17786,
+      "storedLength": 131,
+      "originalLength": 131,
+      "compression": "none",
+      "params": {
+        "offset": "-32,63"
+      }
+    },
+    {
+      "name": "h_std_ch_207_2_0",
+      "mimeType": "image/png",
+      "offset": 17917,
+      "storedLength": 296,
+      "originalLength": 296,
+      "compression": "none",
+      "params": {
+        "offset": "-19,47"
+      }
+    },
+    {
+      "name": "h_std_ch_100_2_0",
+      "mimeType": "image/png",
+      "offset": 18213,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none",
+      "params": {
+        "offset": "-19,48"
+      }
+    },
+    {
+      "name": "h_std_hr_4_2_0",
+      "mimeType": "image/png",
+      "offset": 18493,
+      "storedLength": 200,
+      "originalLength": 200,
+      "compression": "none",
+      "params": {
+        "offset": "-5,93"
+      }
+    },
+    {
+      "name": "h_std_hrb_4_2_0",
+      "mimeType": "image/png",
+      "offset": 18693,
+      "storedLength": 306,
+      "originalLength": 306,
+      "compression": "none",
+      "params": {
+        "offset": "-5,93"
+      }
+    },
+    {
+      "name": "h_std_hr_6_2_0",
+      "mimeType": "image/png",
+      "offset": 18999,
+      "storedLength": 294,
+      "originalLength": 294,
+      "compression": "none",
+      "params": {
+        "offset": "-7,78"
+      }
+    },
+    {
+      "name": "h_std_hrb_6_2_0",
+      "mimeType": "image/png",
+      "offset": 19293,
+      "storedLength": 429,
+      "originalLength": 429,
+      "compression": "none",
+      "params": {
+        "offset": "-7,78"
+      }
+    },
+    {
+      "name": "h_std_hrb_33_2_0",
+      "mimeType": "image/png",
+      "offset": 19722,
+      "storedLength": 666,
+      "originalLength": 666,
+      "compression": "none",
+      "params": {
+        "offset": "-16,78"
+      }
+    },
+    {
+      "name": "h_std_ch_4_2_0",
+      "mimeType": "image/png",
+      "offset": 20388,
+      "storedLength": 281,
+      "originalLength": 281,
+      "compression": "none",
+      "params": {
+        "offset": "-19,48"
+      }
+    },
+    {
+      "name": "h_std_hd_2_2_0",
+      "mimeType": "image/png",
+      "offset": 20669,
+      "storedLength": 204,
+      "originalLength": 204,
+      "compression": "none",
+      "params": {
+        "offset": "-20,74"
+      }
+    },
+    {
+      "name": "h_std_ch_1207_2_0",
+      "mimeType": "image/png",
+      "offset": 20873,
+      "storedLength": 108,
+      "originalLength": 108,
+      "compression": "none",
+      "params": {
+        "offset": "-35,36"
+      }
+    },
+    {
+      "name": "h_std_lg_6_2_0",
+      "mimeType": "image/png",
+      "offset": 20981,
+      "storedLength": 232,
+      "originalLength": 232,
+      "compression": "none",
+      "params": {
+        "offset": "-22,25"
+      }
+    },
+    {
+      "name": "h_std_ch_1100_2_0",
+      "mimeType": "image/png",
+      "offset": 21213,
+      "storedLength": 192,
+      "originalLength": 192,
+      "compression": "none",
+      "params": {
+        "offset": "-19,48"
+      }
+    },
+    {
+      "name": "h_std_lg_2_2_0",
+      "mimeType": "image/png",
+      "offset": 21405,
+      "storedLength": 193,
+      "originalLength": 193,
+      "compression": "none",
+      "params": {
+        "offset": "-22,25"
+      }
+    },
+    {
+      "name": "h_std_ey_2_2_0",
+      "mimeType": "image/png",
+      "offset": 21598,
+      "storedLength": 121,
+      "originalLength": 121,
+      "compression": "none",
+      "params": {
+        "offset": "-33,62"
+      }
+    },
+    {
+      "name": "h_std_hr_24_2_0",
+      "mimeType": "image/png",
+      "offset": 21719,
+      "storedLength": 299,
+      "originalLength": 299,
+      "compression": "none",
+      "params": {
+        "offset": "-16,78"
+      }
+    },
+    {
+      "name": "h_std_sh_6_2_0",
+      "mimeType": "image/png",
+      "offset": 22018,
+      "storedLength": 222,
+      "originalLength": 222,
+      "compression": "none",
+      "params": {
+        "offset": "-23,7"
+      }
+    },
+    {
+      "name": "h_std_hrb_24_2_0",
+      "mimeType": "image/png",
+      "offset": 22240,
+      "storedLength": 375,
+      "originalLength": 375,
+      "compression": "none",
+      "params": {
+        "offset": "-16,78"
+      }
+    },
+    {
+      "name": "h_std_ha_15_2_0",
+      "mimeType": "image/png",
+      "offset": 22615,
+      "storedLength": 507,
+      "originalLength": 507,
+      "compression": "none",
+      "params": {
+        "offset": "-16,84"
+      }
+    },
+    {
+      "name": "h_std_ch_101_2_0",
+      "mimeType": "image/png",
+      "offset": 23122,
+      "storedLength": 5123,
+      "originalLength": 5123,
+      "compression": "none",
+      "params": {
+        "offset": "-19,48"
+      }
+    },
+    {
+      "name": "h_std_rs_2_2_0",
+      "mimeType": "image/png",
+      "offset": 28245,
+      "storedLength": 130,
+      "originalLength": 130,
+      "compression": "none",
+      "params": {
+        "offset": "-18,46"
+      }
+    },
+    {
+      "name": "h_std_hr_11_2_0",
+      "mimeType": "image/png",
+      "offset": 28375,
+      "storedLength": 281,
+      "originalLength": 281,
+      "compression": "none",
+      "params": {
+        "offset": "-14,80"
+      }
+    },
+    {
+      "name": "h_std_ch_10_2_0",
+      "mimeType": "image/png",
+      "offset": 28656,
+      "storedLength": 562,
+      "originalLength": 562,
+      "compression": "none",
+      "params": {
+        "offset": "-16,54"
+      }
+    },
+    {
+      "name": "h_std_ey_7_2_0",
+      "mimeType": "image/png",
+      "offset": 29218,
+      "storedLength": 116,
+      "originalLength": 116,
+      "compression": "none",
+      "params": {
+        "offset": "-32,63"
+      }
+    },
+    {
+      "name": "h_std_lg_2183_2_0",
+      "mimeType": "image/png",
+      "offset": 29334,
+      "storedLength": 121,
+      "originalLength": 121,
+      "compression": "none",
+      "params": {
+        "offset": "-29,19"
+      }
+    },
+    {
+      "name": "h_std_ls_2_2_0",
+      "mimeType": "image/png",
+      "offset": 29455,
+      "storedLength": 99,
+      "originalLength": 99,
+      "compression": "none",
+      "params": {
+        "offset": "-43,47"
+      }
+    },
+    {
+      "name": "h_std_ea_6_2_0",
+      "mimeType": "image/png",
+      "offset": 29554,
+      "storedLength": 183,
+      "originalLength": 183,
+      "compression": "none",
+      "params": {
+        "offset": "-23,63"
+      }
+    },
+    {
+      "name": "h_std_fa_12_2_0",
+      "mimeType": "image/png",
+      "offset": 29737,
+      "storedLength": 239,
+      "originalLength": 239,
+      "compression": "none",
+      "params": {
+        "offset": "-22,59"
+      }
+    },
+    {
+      "name": "h_std_hr_33_2_0",
+      "mimeType": "image/png",
+      "offset": 29976,
+      "storedLength": 473,
+      "originalLength": 473,
+      "compression": "none",
+      "params": {
+        "offset": "-18,73"
+      }
+    },
+    {
+      "name": "h_std_ch_1101_2_0",
+      "mimeType": "image/png",
+      "offset": 30449,
+      "storedLength": 186,
+      "originalLength": 186,
+      "compression": "none",
+      "params": {
+        "offset": "-19,48"
+      }
+    },
+    {
+      "name": "h_std_ha_3_2_0",
+      "mimeType": "image/png",
+      "offset": 30635,
+      "storedLength": 287,
+      "originalLength": 287,
+      "compression": "none",
+      "params": {
+        "offset": "-16,76"
+      }
+    },
+    {
+      "name": "h_std_ch_1_2_0",
+      "mimeType": "image/png",
+      "offset": 30922,
+      "storedLength": 234,
+      "originalLength": 234,
+      "compression": "none",
+      "params": {
+        "offset": "-19,48"
+      }
+    },
+    {
+      "name": "h_std_bd_1_2_0",
+      "mimeType": "image/png",
+      "offset": 31156,
+      "storedLength": 252,
+      "originalLength": 252,
+      "compression": "none",
+      "params": {
+        "offset": "-22,50"
+      }
+    },
+    {
+      "name": "h_std_hrb_1_2_0",
+      "mimeType": "image/png",
+      "offset": 31408,
+      "storedLength": 257,
+      "originalLength": 257,
+      "compression": "none",
+      "params": {
+        "offset": "-15,78"
+      }
+    },
+    {
+      "name": "h_std_hr_36_2_0",
+      "mimeType": "image/png",
+      "offset": 31665,
+      "storedLength": 528,
+      "originalLength": 528,
+      "compression": "none",
+      "params": {
+        "offset": "-19,73"
+      }
+    },
+    {
+      "name": "h_std_hrb_36_2_0",
+      "mimeType": "image/png",
+      "offset": 32193,
+      "storedLength": 627,
+      "originalLength": 627,
+      "compression": "none",
+      "params": {
+        "offset": "-14,77"
+      }
+    },
+    {
+      "name": "h_std_hr_16_2_0",
+      "mimeType": "image/png",
+      "offset": 32820,
+      "storedLength": 426,
+      "originalLength": 426,
+      "compression": "none",
+      "params": {
+        "offset": "-15,77"
+      }
+    },
+    {
+      "name": "h_std_hrb_16_2_0",
+      "mimeType": "image/png",
+      "offset": 33246,
+      "storedLength": 478,
+      "originalLength": 478,
+      "compression": "none",
+      "params": {
+        "offset": "-15,77"
+      }
+    },
+    {
+      "name": "h_std_hr_32_2_0",
+      "mimeType": "image/png",
+      "offset": 33724,
+      "storedLength": 372,
+      "originalLength": 372,
+      "compression": "none",
+      "params": {
+        "offset": "-21,74"
+      }
+    },
+    {
+      "name": "h_std_hrb_32_2_0",
+      "mimeType": "image/png",
+      "offset": 34096,
+      "storedLength": 450,
+      "originalLength": 450,
+      "compression": "none",
+      "params": {
+        "offset": "-20,78"
+      }
+    },
+    {
+      "name": "h_std_hrb_35_2_0",
+      "mimeType": "image/png",
+      "offset": 34546,
+      "storedLength": 581,
+      "originalLength": 581,
+      "compression": "none",
+      "params": {
+        "offset": "-16,77"
+      }
+    },
+    {
+      "name": "h_std_hrb_200_2_0",
+      "mimeType": "image/png",
+      "offset": 35127,
+      "storedLength": 950,
+      "originalLength": 950,
+      "compression": "none",
+      "params": {
+        "offset": "-13,89"
+      }
+    },
+    {
+      "name": "h_std_ey_3_2_0",
+      "mimeType": "image/png",
+      "offset": 36077,
+      "storedLength": 176,
+      "originalLength": 176,
+      "compression": "none",
+      "params": {
+        "offset": "-32,62"
+      }
+    },
+    {
+      "name": "h_std_ey_5_2_0",
+      "mimeType": "image/png",
+      "offset": 36253,
+      "storedLength": 179,
+      "originalLength": 179,
+      "compression": "none",
+      "params": {
+        "offset": "-32,62"
+      }
+    },
+    {
+      "name": "h_std_ch_5_2_0",
+      "mimeType": "image/png",
+      "offset": 36432,
+      "storedLength": 379,
+      "originalLength": 379,
+      "compression": "none",
+      "params": {
+        "offset": "-19,48"
+      }
+    },
+    {
+      "name": "h_std_ch_202_2_0",
+      "mimeType": "image/png",
+      "offset": 36811,
+      "storedLength": 665,
+      "originalLength": 665,
+      "compression": "none",
+      "params": {
+        "offset": "-19,49"
+      }
+    },
+    {
+      "name": "h_std_ch_1202_2_0",
+      "mimeType": "image/png",
+      "offset": 37476,
+      "storedLength": 590,
+      "originalLength": 590,
+      "compression": "none",
+      "params": {
+        "offset": "-19,49"
+      }
+    },
+    {
+      "name": "h_std_ch_16_2_0",
+      "mimeType": "image/png",
+      "offset": 38066,
+      "storedLength": 449,
+      "originalLength": 449,
+      "compression": "none",
+      "params": {
+        "offset": "-19,49"
+      }
+    },
+    {
+      "name": "h_std_ch_15_2_0",
+      "mimeType": "image/png",
+      "offset": 38515,
+      "storedLength": 2941,
+      "originalLength": 2941,
+      "compression": "none",
+      "params": {
+        "offset": "-19,47"
+      }
+    },
+    {
+      "name": "h_std_ch_2_2_0",
+      "mimeType": "image/png",
+      "offset": 41456,
+      "storedLength": 412,
+      "originalLength": 412,
+      "compression": "none",
+      "params": {
+        "offset": "-19,48"
+      }
+    },
+    {
+      "name": "h_std_ch_201_2_0",
+      "mimeType": "image/png",
+      "offset": 41868,
+      "storedLength": 753,
+      "originalLength": 753,
+      "compression": "none",
+      "params": {
+        "offset": "-18,50"
+      }
+    },
+    {
+      "name": "h_std_lg_1_2_0",
+      "mimeType": "image/png",
+      "offset": 42621,
+      "storedLength": 261,
+      "originalLength": 261,
+      "compression": "none",
+      "params": {
+        "offset": "-22,25"
+      }
+    },
+    {
+      "name": "h_std_lg_4_2_0",
+      "mimeType": "image/png",
+      "offset": 42882,
+      "storedLength": 316,
+      "originalLength": 316,
+      "compression": "none",
+      "params": {
+        "offset": "-21,25"
+      }
+    },
+    {
+      "name": "h_std_lg_5_2_0",
+      "mimeType": "image/png",
+      "offset": 43198,
+      "storedLength": 231,
+      "originalLength": 231,
+      "compression": "none",
+      "params": {
+        "offset": "-22,25"
+      }
+    },
+    {
+      "name": "h_std_sh_3_2_0",
+      "mimeType": "image/png",
+      "offset": 43429,
+      "storedLength": 296,
+      "originalLength": 296,
+      "compression": "none",
+      "params": {
+        "offset": "-23,7"
+      }
+    },
+    {
+      "name": "h_std_sh_5_2_0",
+      "mimeType": "image/png",
+      "offset": 43725,
+      "storedLength": 360,
+      "originalLength": 360,
+      "compression": "none",
+      "params": {
+        "offset": "-23,8"
+      }
+    },
+    {
+      "name": "h_std_ls_2050_2_0",
+      "mimeType": "image/png",
+      "offset": 44085,
+      "storedLength": 114,
+      "originalLength": 114,
+      "compression": "none",
+      "params": {
+        "offset": "-43,47"
+      }
+    },
+    {
+      "name": "h_std_ch_2050_2_0",
+      "mimeType": "image/png",
+      "offset": 44199,
+      "storedLength": 242,
+      "originalLength": 242,
+      "compression": "none",
+      "params": {
+        "offset": "-20,48"
+      }
+    },
+    {
+      "name": "h_std_rs_2050_2_0",
+      "mimeType": "image/png",
+      "offset": 44441,
+      "storedLength": 135,
+      "originalLength": 135,
+      "compression": "none",
+      "params": {
+        "offset": "-18,46"
+      }
+    },
+    {
+      "name": "h_std_ch_2165_2_0",
+      "mimeType": "image/png",
+      "offset": 44576,
+      "storedLength": 256,
+      "originalLength": 256,
+      "compression": "none",
+      "params": {
+        "offset": "-20,50"
+      }
+    },
+    {
+      "name": "h_std_ls_2165_2_0",
+      "mimeType": "image/png",
+      "offset": 44832,
+      "storedLength": 124,
+      "originalLength": 124,
+      "compression": "none",
+      "params": {
+        "offset": "-43,48"
+      }
+    },
+    {
+      "name": "h_std_rs_2165_2_0",
+      "mimeType": "image/png",
+      "offset": 44956,
+      "storedLength": 145,
+      "originalLength": 145,
+      "compression": "none",
+      "params": {
+        "offset": "-18,46"
+      }
+    },
+    {
+      "name": "h_std_ch_2166_2_0",
+      "mimeType": "image/png",
+      "offset": 45101,
+      "storedLength": 222,
+      "originalLength": 222,
+      "compression": "none",
+      "params": {
+        "offset": "-20,43"
+      }
+    },
+    {
+      "name": "h_std_ls_2166_2_0",
+      "mimeType": "image/png",
+      "offset": 45323,
+      "storedLength": 91,
+      "originalLength": 91,
+      "compression": "none",
+      "params": {
+        "offset": "-44,38"
+      }
+    },
+    {
+      "name": "h_std_rs_2166_2_0",
+      "mimeType": "image/png",
+      "offset": 45414,
+      "storedLength": 110,
+      "originalLength": 110,
+      "compression": "none",
+      "params": {
+        "offset": "-18,32"
+      }
+    },
+    {
+      "name": "h_std_lg_2494_2_0",
+      "mimeType": "image/png",
+      "offset": 45524,
+      "storedLength": 273,
+      "originalLength": 273,
+      "compression": "none",
+      "params": {
+        "offset": "-22,24"
+      }
+    },
+    {
+      "name": "h_std_sh_2111_2_0",
+      "mimeType": "image/png",
+      "offset": 45797,
+      "storedLength": 262,
+      "originalLength": 262,
+      "compression": "none",
+      "params": {
+        "offset": "-24,8"
+      }
+    },
+    {
+      "name": "h_std_sh_2112_2_0",
+      "mimeType": "image/png",
+      "offset": 46059,
+      "storedLength": 145,
+      "originalLength": 145,
+      "compression": "none",
+      "params": {
+        "offset": "-24,8"
+      }
+    },
+    {
+      "name": "h_std_lg_2037_2_0",
+      "mimeType": "image/png",
+      "offset": 46204,
+      "storedLength": 340,
+      "originalLength": 340,
+      "compression": "none",
+      "params": {
+        "offset": "-22,24"
+      }
+    }
+  ]
+}

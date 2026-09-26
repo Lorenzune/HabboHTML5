@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="illumina_chat_bubble_text" width="207" height="4" version="0.1" uid="669797D2-3EC5-AC26-F061-5BE1030A227B">
+  <window>
+    <text x="0" y="0" width="207" height="4" params="17" style="100" name="message" height_min="0">
+      <variables>
+        <var key="auto_size" value="left" type="String"/>
+        <var key="margin_left" value="10" type="int"/>
+        <var key="margin_right" value="10" type="int"/>
+        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+        <var key="multiline" value="true" type="Boolean"/>
+        <var key="word_wrap" value="true" type="Boolean"/>
+        <var key="spacing" value="0" type="Number"/>
+        <var key="leading" value="0" type="Number"/>
+      </variables>
+    </text>
+  </window>
+</layout>

@@ -1,0 +1,344 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboNotificationsCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n\n\t<component class=\"com.sulake.bootstrap.HabboNotificationsBootstrap\" version=\"0.0\">\n\n\t\t<interface iid=\"com.sulake.iid.IIDHabboNotifications\" />\n\n\t\t<assets>\n\t\t    <asset mimeType=\"text/xml\" name=\"motd_notification_xml\" />\n\t\t    <asset mimeType=\"text/xml\" name=\"motd_notification_item_xml\" />\n\t\t    <asset mimeType=\"text/xml\" name=\"habbo_notifications_config_xml\" />\n            <asset mimeType=\"text/xml\" name=\"layout_notification_xml\" source=\"notification.xml\" />\n            <asset mimeType=\"text/xml\" name=\"layout_notification_friendonline_xml\" source=\"notification_friendonline.xml\" />\n            <asset mimeType=\"text/xml\" name=\"layout_notification_nft_opening_xml\" source=\"notification_nft_opening.xml\" />\n            <asset mimeType=\"text/xml\" name=\"layout_notification_treasurehunt_xml\" source=\"notification_treasurehunt.xml\" />\n            <asset mimeType=\"text/xml\" name=\"layout_notification_wired_xml\" source=\"notification_wired.xml\" />\n            <asset mimeType=\"text/xml\" name=\"layout_notifications_browser_xml\" source=\"notifications_browser.xml\" />\n            <asset mimeType=\"text/xml\" name=\"club_gift_notification_xml\" />\n            <asset mimeType=\"text/xml\" name=\"new_feature_notification_xml\" />\n            <asset mimeType=\"text/xml\" name=\"new_feature_notification_promo_xml\" />\n            <asset mimeType=\"text/xml\" name=\"new_feature_notification_countdown_xml\" />\n            <asset mimeType=\"text/xml\" name=\"safety_locked_notification_xml\" />\n            <asset mimeType=\"text/xml\" name=\"feed_display_xml\" source=\"feed/layout/feed_display.xml\" />\n            <asset mimeType=\"text/xml\" name=\"feed_entity_xml\" source=\"feed/layout/feed_entity.xml\" />\n            <asset mimeType=\"text/xml\" name=\"layout_notification_popup_xml\" source=\"notification_popup.xml\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"if_icon_temp_png\" source=\"if.icon.temp.png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"if_icon_hc_png\" source=\"if.icon.hc.png\" />\n            <asset mimeType=\"image/png\" name=\"if_icon_vip_png\" source=\"if.icon.vip.png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"if_icon_recycler_png\" source=\"if.icon.recycler.png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"if_icon_friend_bg_blue_png\" source=\"if.icon.friend.bg.blue.png\" />\n            <asset mimeType=\"image/png\" name=\"if_icon_duckets_png\" source=\"if.icon.duckets.png\" />\n            <asset mimeType=\"image/png\" name=\"if_icon_earning_png\" source=\"if.icon.earning.png\" />\n            <asset mimeType=\"image/png\" name=\"if_icon_loyalty_png\" source=\"if.icon.loyalty.png\" />\n            <asset mimeType=\"image/png\" name=\"if_icon_ltd_png\" source=\"if.icon.ltd.png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"if_icon_diamond_png\" source=\"if.icon.diamond.png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"icon_curator_stamp_large_png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"icon_wired_error_png\" source=\"wired_icons/icon_wired_error.png\" />\n\t\t\t<asset mimeType=\"image/png\" name=\"icon_wired_notification_png\" source=\"wired_icons/icon_wired_notification.png\" />\n            <asset mimeType=\"image/png\" name=\"icon_wired_warning_png\" source=\"wired_icons/icon_wired_warning.png\" />\n            <asset mimeType=\"image/png\" name=\"chests_icon_chest_capacity_exceeds\" source=\"wired_icons/icon_chest_capacity_exceeds.png\" />\n            <asset mimeType=\"image/png\" name=\"chests_icon_chest_donation\" source=\"wired_icons/icon_chest_donation.png\" />\n            <asset mimeType=\"image/png\" name=\"chests_icon_chest_empty\" source=\"wired_icons/icon_chest_empty.png\" />\n            <asset mimeType=\"image/png\" name=\"chests_icon_chest_full\" source=\"wired_icons/icon_chest_full.png\" />\n            <asset mimeType=\"image/png\" name=\"chests_icon_chest_wired_transaction\" source=\"wired_icons/icon_chest_wired_transaction.png\" />\n            <asset mimeType=\"image/png\" name=\"chests_icon_chest_withdraw\" source=\"wired_icons/icon_chest_withdraw.png\" />\n            <asset mimeType=\"image/png\" name=\"chests_icon_rejected\" source=\"wired_icons/icon_rejected.png\" />\n            <asset mimeType=\"image/png\" name=\"chests_icon_successful\" source=\"wired_icons/icon_successful.png\" />\n            <asset mimeType=\"image/png\" name=\"chests_icon_trading_error\" source=\"wired_icons/icon_trading_error.png\" />\n            <asset mimeType=\"image/png\" name=\"icon_daily_tasks_png\" />\n            <asset mimeType=\"image/png\" name=\"moderation_badge_png\" />\n\t\t</assets>\n\n\t</component>\n\n</manifest>\n",
+  "entries": [
+    {
+      "name": "motd_notification_xml",
+      "mimeType": "text/xml",
+      "offset": 0,
+      "storedLength": 409,
+      "originalLength": 854,
+      "compression": "deflate"
+    },
+    {
+      "name": "motd_notification_item_xml",
+      "mimeType": "text/xml",
+      "offset": 409,
+      "storedLength": 350,
+      "originalLength": 753,
+      "compression": "deflate"
+    },
+    {
+      "name": "habbo_notifications_config_xml",
+      "mimeType": "text/xml",
+      "offset": 759,
+      "storedLength": 756,
+      "originalLength": 6384,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_notification_xml",
+      "mimeType": "text/xml",
+      "offset": 1515,
+      "storedLength": 521,
+      "originalLength": 1615,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_notification_friendonline_xml",
+      "mimeType": "text/xml",
+      "offset": 2036,
+      "storedLength": 857,
+      "originalLength": 4849,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_notification_nft_opening_xml",
+      "mimeType": "text/xml",
+      "offset": 2893,
+      "storedLength": 799,
+      "originalLength": 2785,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_notification_treasurehunt_xml",
+      "mimeType": "text/xml",
+      "offset": 3692,
+      "storedLength": 784,
+      "originalLength": 3358,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_notification_wired_xml",
+      "mimeType": "text/xml",
+      "offset": 4476,
+      "storedLength": 888,
+      "originalLength": 3388,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_notifications_browser_xml",
+      "mimeType": "text/xml",
+      "offset": 5364,
+      "storedLength": 442,
+      "originalLength": 1056,
+      "compression": "deflate"
+    },
+    {
+      "name": "club_gift_notification_xml",
+      "mimeType": "text/xml",
+      "offset": 5806,
+      "storedLength": 740,
+      "originalLength": 2734,
+      "compression": "deflate"
+    },
+    {
+      "name": "new_feature_notification_xml",
+      "mimeType": "text/xml",
+      "offset": 6546,
+      "storedLength": 782,
+      "originalLength": 3022,
+      "compression": "deflate"
+    },
+    {
+      "name": "new_feature_notification_promo_xml",
+      "mimeType": "text/xml",
+      "offset": 7328,
+      "storedLength": 860,
+      "originalLength": 3540,
+      "compression": "deflate"
+    },
+    {
+      "name": "new_feature_notification_countdown_xml",
+      "mimeType": "text/xml",
+      "offset": 8188,
+      "storedLength": 950,
+      "originalLength": 3964,
+      "compression": "deflate"
+    },
+    {
+      "name": "safety_locked_notification_xml",
+      "mimeType": "text/xml",
+      "offset": 9138,
+      "storedLength": 606,
+      "originalLength": 1886,
+      "compression": "deflate"
+    },
+    {
+      "name": "feed_display_xml",
+      "mimeType": "text/xml",
+      "offset": 9744,
+      "storedLength": 1823,
+      "originalLength": 14699,
+      "compression": "deflate"
+    },
+    {
+      "name": "feed_entity_xml",
+      "mimeType": "text/xml",
+      "offset": 11567,
+      "storedLength": 821,
+      "originalLength": 3475,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_notification_popup_xml",
+      "mimeType": "text/xml",
+      "offset": 12388,
+      "storedLength": 771,
+      "originalLength": 2959,
+      "compression": "deflate"
+    },
+    {
+      "name": "if_icon_temp_png",
+      "mimeType": "image/png",
+      "offset": 13159,
+      "storedLength": 377,
+      "originalLength": 377,
+      "compression": "none"
+    },
+    {
+      "name": "if_icon_hc_png",
+      "mimeType": "image/png",
+      "offset": 13536,
+      "storedLength": 323,
+      "originalLength": 323,
+      "compression": "none"
+    },
+    {
+      "name": "if_icon_vip_png",
+      "mimeType": "image/png",
+      "offset": 13859,
+      "storedLength": 358,
+      "originalLength": 358,
+      "compression": "none"
+    },
+    {
+      "name": "if_icon_recycler_png",
+      "mimeType": "image/png",
+      "offset": 14217,
+      "storedLength": 875,
+      "originalLength": 894,
+      "compression": "deflate"
+    },
+    {
+      "name": "if_icon_friend_bg_blue_png",
+      "mimeType": "image/png",
+      "offset": 15092,
+      "storedLength": 722,
+      "originalLength": 722,
+      "compression": "none"
+    },
+    {
+      "name": "if_icon_duckets_png",
+      "mimeType": "image/png",
+      "offset": 15814,
+      "storedLength": 583,
+      "originalLength": 583,
+      "compression": "none"
+    },
+    {
+      "name": "if_icon_earning_png",
+      "mimeType": "image/png",
+      "offset": 16397,
+      "storedLength": 1481,
+      "originalLength": 1481,
+      "compression": "none"
+    },
+    {
+      "name": "if_icon_loyalty_png",
+      "mimeType": "image/png",
+      "offset": 17878,
+      "storedLength": 712,
+      "originalLength": 712,
+      "compression": "none"
+    },
+    {
+      "name": "if_icon_ltd_png",
+      "mimeType": "image/png",
+      "offset": 18590,
+      "storedLength": 410,
+      "originalLength": 410,
+      "compression": "none"
+    },
+    {
+      "name": "if_icon_diamond_png",
+      "mimeType": "image/png",
+      "offset": 19000,
+      "storedLength": 2283,
+      "originalLength": 2283,
+      "compression": "none"
+    },
+    {
+      "name": "icon_curator_stamp_large_png",
+      "mimeType": "image/png",
+      "offset": 21283,
+      "storedLength": 395,
+      "originalLength": 395,
+      "compression": "none"
+    },
+    {
+      "name": "icon_wired_error_png",
+      "mimeType": "image/png",
+      "offset": 21678,
+      "storedLength": 438,
+      "originalLength": 438,
+      "compression": "none"
+    },
+    {
+      "name": "icon_wired_notification_png",
+      "mimeType": "image/png",
+      "offset": 22116,
+      "storedLength": 438,
+      "originalLength": 438,
+      "compression": "none"
+    },
+    {
+      "name": "icon_wired_warning_png",
+      "mimeType": "image/png",
+      "offset": 22554,
+      "storedLength": 438,
+      "originalLength": 438,
+      "compression": "none"
+    },
+    {
+      "name": "chests_icon_chest_capacity_exceeds",
+      "mimeType": "image/png",
+      "offset": 22992,
+      "storedLength": 1750,
+      "originalLength": 1750,
+      "compression": "none"
+    },
+    {
+      "name": "chests_icon_chest_donation",
+      "mimeType": "image/png",
+      "offset": 24742,
+      "storedLength": 1750,
+      "originalLength": 1750,
+      "compression": "none"
+    },
+    {
+      "name": "chests_icon_chest_empty",
+      "mimeType": "image/png",
+      "offset": 26492,
+      "storedLength": 1470,
+      "originalLength": 1470,
+      "compression": "none"
+    },
+    {
+      "name": "chests_icon_chest_full",
+      "mimeType": "image/png",
+      "offset": 27962,
+      "storedLength": 1750,
+      "originalLength": 1750,
+      "compression": "none"
+    },
+    {
+      "name": "chests_icon_chest_wired_transaction",
+      "mimeType": "image/png",
+      "offset": 29712,
+      "storedLength": 1938,
+      "originalLength": 1938,
+      "compression": "none"
+    },
+    {
+      "name": "chests_icon_chest_withdraw",
+      "mimeType": "image/png",
+      "offset": 31650,
+      "storedLength": 1750,
+      "originalLength": 1750,
+      "compression": "none"
+    },
+    {
+      "name": "chests_icon_rejected",
+      "mimeType": "image/png",
+      "offset": 33400,
+      "storedLength": 914,
+      "originalLength": 914,
+      "compression": "none"
+    },
+    {
+      "name": "chests_icon_successful",
+      "mimeType": "image/png",
+      "offset": 34314,
+      "storedLength": 880,
+      "originalLength": 880,
+      "compression": "none"
+    },
+    {
+      "name": "chests_icon_trading_error",
+      "mimeType": "image/png",
+      "offset": 35194,
+      "storedLength": 1319,
+      "originalLength": 1319,
+      "compression": "none"
+    },
+    {
+      "name": "icon_daily_tasks_png",
+      "mimeType": "image/png",
+      "offset": 36513,
+      "storedLength": 410,
+      "originalLength": 410,
+      "compression": "none"
+    },
+    {
+      "name": "moderation_badge_png",
+      "mimeType": "image/png",
+      "offset": 36923,
+      "storedLength": 333,
+      "originalLength": 333,
+      "compression": "none"
+    }
+  ]
+}

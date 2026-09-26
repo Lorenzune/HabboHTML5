@@ -1,0 +1,296 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboQuestEngineCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n    <component class=\"com.sulake.bootstrap.HabboQuestEngineBootstrap\" version=\"0.0\" >\n        <interface iid=\"com.sulake.iid.IIDHabboQuestEngine\" />\n        <assets>\n            <asset mimeType=\"image/png\" name=\"icon_quest_hidden\"/>\n            <asset mimeType=\"text/xml\" name=\"Campaign\"/>\n            <asset mimeType=\"text/xml\" name=\"CampaignCompleted\"/>\n            <asset mimeType=\"text/xml\" name=\"EntryArrows\"/>\n            <asset mimeType=\"text/xml\" name=\"Quest\"/>\n            <asset mimeType=\"text/xml\" name=\"QuestDetails\"/>\n            <asset mimeType=\"text/xml\" name=\"Quests\"/>\n            <asset mimeType=\"text/xml\" name=\"QuestTracker\"/>\n            <asset mimeType=\"text/xml\" name=\"QuestEntry\"/>\n            <asset mimeType=\"text/xml\" name=\"QuestHelp\"/>\n            <asset mimeType=\"text/xml\" name=\"QuestCompletedDialog\"/>\n            <asset mimeType=\"text/xml\" name=\"Achievements\"/>\n            <asset mimeType=\"text/xml\" name=\"AchievementsResolutions\"/>\n            <asset mimeType=\"text/xml\" name=\"AchievementResolutionProgress\"/>\n            <asset mimeType=\"text/xml\" name=\"AchievementResolutionCompleted\"/>\n            <asset mimeType=\"text/xml\" name=\"AchievementCategory\"/>\n            <asset mimeType=\"text/xml\" name=\"Achievement\"/>\n            <asset mimeType=\"text/xml\" name=\"AchievementSimple\"/>\n            <asset mimeType=\"text/xml\" name=\"ProgressBar\"/>\n            <asset mimeType=\"text/xml\" name=\"NextQuestTimer\"/>\n            <asset mimeType=\"text/xml\" name=\"SeasonalCalendar\"/>\n            <asset mimeType=\"text/xml\" name=\"RoomCompetition\"/>\n            <asset mimeType=\"image/png\" name=\"calendar_quest_complete\"/>\n            <asset mimeType=\"image/png\" name=\"arrow_back_active\"/>\n            <asset mimeType=\"image/png\" name=\"arrow_back_inactive\"/>\n            <asset mimeType=\"image/png\" name=\"arrow_back_hilite\"/>\n            <asset mimeType=\"image/png\" name=\"arrow_next_active\"/>\n            <asset mimeType=\"image/png\" name=\"arrow_next_inactive\"/>\n            <asset mimeType=\"image/png\" name=\"arrow_next_hilite\"/>\n            <asset mimeType=\"image/png\" name=\"stripe_mask_L\"/>\n            <asset mimeType=\"image/png\" name=\"stripe_mask_R\"/>\n            <asset mimeType=\"image/png\" name=\"icon_hourglass_png\"/>\n            <asset mimeType=\"text/xml\" name=\"daily_tasks_xml\" source=\"dailytasks/dailytasks.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"dailytasks_unclaimed_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"reward_track_main_xml\" source=\"rewardtrack/main.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"reward_track_premium_purchase_confirmation_xml\" source=\"rewardtrack/premium_purchase_confirmation.xml\"/>\n        </assets>\n    </component>\n</manifest>\n",
+  "entries": [
+    {
+      "name": "icon_quest_hidden",
+      "mimeType": "image/png",
+      "offset": 0,
+      "storedLength": 318,
+      "originalLength": 318,
+      "compression": "none"
+    },
+    {
+      "name": "Campaign",
+      "mimeType": "text/xml",
+      "offset": 318,
+      "storedLength": 861,
+      "originalLength": 4048,
+      "compression": "deflate"
+    },
+    {
+      "name": "CampaignCompleted",
+      "mimeType": "text/xml",
+      "offset": 1179,
+      "storedLength": 566,
+      "originalLength": 1527,
+      "compression": "deflate"
+    },
+    {
+      "name": "EntryArrows",
+      "mimeType": "text/xml",
+      "offset": 1745,
+      "storedLength": 348,
+      "originalLength": 871,
+      "compression": "deflate"
+    },
+    {
+      "name": "Quest",
+      "mimeType": "text/xml",
+      "offset": 2093,
+      "storedLength": 1584,
+      "originalLength": 13551,
+      "compression": "deflate"
+    },
+    {
+      "name": "QuestDetails",
+      "mimeType": "text/xml",
+      "offset": 3677,
+      "storedLength": 304,
+      "originalLength": 439,
+      "compression": "deflate"
+    },
+    {
+      "name": "Quests",
+      "mimeType": "text/xml",
+      "offset": 3981,
+      "storedLength": 791,
+      "originalLength": 2087,
+      "compression": "deflate"
+    },
+    {
+      "name": "QuestTracker",
+      "mimeType": "text/xml",
+      "offset": 4772,
+      "storedLength": 1073,
+      "originalLength": 8187,
+      "compression": "deflate"
+    },
+    {
+      "name": "QuestEntry",
+      "mimeType": "text/xml",
+      "offset": 5845,
+      "storedLength": 207,
+      "originalLength": 295,
+      "compression": "deflate"
+    },
+    {
+      "name": "QuestHelp",
+      "mimeType": "text/xml",
+      "offset": 6052,
+      "storedLength": 611,
+      "originalLength": 2441,
+      "compression": "deflate"
+    },
+    {
+      "name": "QuestCompletedDialog",
+      "mimeType": "text/xml",
+      "offset": 6663,
+      "storedLength": 1245,
+      "originalLength": 7018,
+      "compression": "deflate"
+    },
+    {
+      "name": "Achievements",
+      "mimeType": "text/xml",
+      "offset": 7908,
+      "storedLength": 1675,
+      "originalLength": 12750,
+      "compression": "deflate"
+    },
+    {
+      "name": "AchievementsResolutions",
+      "mimeType": "text/xml",
+      "offset": 9583,
+      "storedLength": 1383,
+      "originalLength": 7557,
+      "compression": "deflate"
+    },
+    {
+      "name": "AchievementResolutionProgress",
+      "mimeType": "text/xml",
+      "offset": 10966,
+      "storedLength": 1434,
+      "originalLength": 9747,
+      "compression": "deflate"
+    },
+    {
+      "name": "AchievementResolutionCompleted",
+      "mimeType": "text/xml",
+      "offset": 12400,
+      "storedLength": 1058,
+      "originalLength": 4672,
+      "compression": "deflate"
+    },
+    {
+      "name": "AchievementCategory",
+      "mimeType": "text/xml",
+      "offset": 13458,
+      "storedLength": 940,
+      "originalLength": 4953,
+      "compression": "deflate"
+    },
+    {
+      "name": "Achievement",
+      "mimeType": "text/xml",
+      "offset": 14398,
+      "storedLength": 527,
+      "originalLength": 1572,
+      "compression": "deflate"
+    },
+    {
+      "name": "AchievementSimple",
+      "mimeType": "text/xml",
+      "offset": 14925,
+      "storedLength": 492,
+      "originalLength": 1504,
+      "compression": "deflate"
+    },
+    {
+      "name": "ProgressBar",
+      "mimeType": "text/xml",
+      "offset": 15417,
+      "storedLength": 617,
+      "originalLength": 2705,
+      "compression": "deflate"
+    },
+    {
+      "name": "NextQuestTimer",
+      "mimeType": "text/xml",
+      "offset": 16034,
+      "storedLength": 995,
+      "originalLength": 5191,
+      "compression": "deflate"
+    },
+    {
+      "name": "SeasonalCalendar",
+      "mimeType": "text/xml",
+      "offset": 17029,
+      "storedLength": 1678,
+      "originalLength": 11621,
+      "compression": "deflate"
+    },
+    {
+      "name": "RoomCompetition",
+      "mimeType": "text/xml",
+      "offset": 18707,
+      "storedLength": 1281,
+      "originalLength": 7335,
+      "compression": "deflate"
+    },
+    {
+      "name": "calendar_quest_complete",
+      "mimeType": "image/png",
+      "offset": 19988,
+      "storedLength": 174,
+      "originalLength": 174,
+      "compression": "none"
+    },
+    {
+      "name": "arrow_back_active",
+      "mimeType": "image/png",
+      "offset": 20162,
+      "storedLength": 260,
+      "originalLength": 260,
+      "compression": "none"
+    },
+    {
+      "name": "arrow_back_inactive",
+      "mimeType": "image/png",
+      "offset": 20422,
+      "storedLength": 190,
+      "originalLength": 190,
+      "compression": "none"
+    },
+    {
+      "name": "arrow_back_hilite",
+      "mimeType": "image/png",
+      "offset": 20612,
+      "storedLength": 243,
+      "originalLength": 243,
+      "compression": "none"
+    },
+    {
+      "name": "arrow_next_active",
+      "mimeType": "image/png",
+      "offset": 20855,
+      "storedLength": 263,
+      "originalLength": 263,
+      "compression": "none"
+    },
+    {
+      "name": "arrow_next_inactive",
+      "mimeType": "image/png",
+      "offset": 21118,
+      "storedLength": 190,
+      "originalLength": 190,
+      "compression": "none"
+    },
+    {
+      "name": "arrow_next_hilite",
+      "mimeType": "image/png",
+      "offset": 21308,
+      "storedLength": 247,
+      "originalLength": 247,
+      "compression": "none"
+    },
+    {
+      "name": "stripe_mask_L",
+      "mimeType": "image/png",
+      "offset": 21555,
+      "storedLength": 300,
+      "originalLength": 300,
+      "compression": "none"
+    },
+    {
+      "name": "stripe_mask_R",
+      "mimeType": "image/png",
+      "offset": 21855,
+      "storedLength": 321,
+      "originalLength": 321,
+      "compression": "none"
+    },
+    {
+      "name": "icon_hourglass_png",
+      "mimeType": "image/png",
+      "offset": 22176,
+      "storedLength": 221,
+      "originalLength": 221,
+      "compression": "none"
+    },
+    {
+      "name": "daily_tasks_xml",
+      "mimeType": "text/xml",
+      "offset": 22397,
+      "storedLength": 2326,
+      "originalLength": 16079,
+      "compression": "deflate"
+    },
+    {
+      "name": "dailytasks_unclaimed_xml",
+      "mimeType": "text/xml",
+      "offset": 24723,
+      "storedLength": 597,
+      "originalLength": 1651,
+      "compression": "deflate"
+    },
+    {
+      "name": "reward_track_main_xml",
+      "mimeType": "text/xml",
+      "offset": 25320,
+      "storedLength": 6355,
+      "originalLength": 75089,
+      "compression": "deflate"
+    },
+    {
+      "name": "reward_track_premium_purchase_confirmation_xml",
+      "mimeType": "text/xml",
+      "offset": 31675,
+      "storedLength": 1831,
+      "originalLength": 17322,
+      "compression": "deflate"
+    }
+  ]
+}

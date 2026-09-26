@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https: http://images.habbo.com http://habbo-stories-content.s3.amazonaws.com http://habbo-stories-content-dev.s3.amazonaws.com http://habbo-stories-content-staging.s3.amazonaws.com; connect-src 'self' https: wss: http://images.habbo.com http://habbo-stories-content.s3.amazonaws.com http://habbo-stories-content-dev.s3.amazonaws.com http://habbo-stories-content-staging.s3.amazonaws.com; font-src 'self' data:; media-src 'self' blob: https:; manifest-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'none'">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Habbo</title>
+  <meta name="theme-color" content="#000000">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/icon16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/icon32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="./assets/icons/icon48.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="./assets/icons/icon128.png">
+  <link rel="icon" type="image/png" sizes="256x256" href="./assets/icons/icon256.png">
+  <link rel="apple-touch-icon" href="./assets/icons/icon256.png">
+  <style>
+    html, body, #app {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+    }
+
+    .fatal-error {
+      white-space: pre-wrap;
+      color: #fff;
+      background: rgba(40, 0, 0, 0.92);
+      padding: 16px;
+      margin: 16px;
+      border: 1px solid rgba(255, 120, 120, 0.45);
+      max-width: 960px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>globalThis.__APP__=false;globalThis.__BROWSER__=false;globalThis.__ELECTRON__=true;globalThis.__DEBUG__=false;</script>
+  <script type="module" src="./HabboAirLauncher.app.js"></script>
+</body>
+</html>

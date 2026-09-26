@@ -1,0 +1,7 @@
+# Large binary executables
+Habbo.exe
+*.exe
+
+# System & temporary logs
+*.log
+check_lock.ps1

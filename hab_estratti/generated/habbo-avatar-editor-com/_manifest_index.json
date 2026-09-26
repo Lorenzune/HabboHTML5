@@ -1,0 +1,64 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboAvatarEditorCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n\n\t<component class=\"com.sulake.bootstrap.HabboAvatarEditorManagerBootstrap\" version=\"0.0\">\n\t\t<interface iid=\"com.sulake.iid.IIDHabboAvatarEditor\" />\n\t\t<assets>\n            <asset mimeType=\"text/xml\" name=\"AvatarEditor\" />\n            <asset mimeType=\"text/xml\" name=\"AvatarEditorFrame\" />\n            <asset mimeType=\"text/xml\" name=\"AvatarEditorContent\" />\n            <asset mimeType=\"text/xml\" name=\"StripClubItemsInfo\" />\n            <asset mimeType=\"text/xml\" name=\"Outfit\" />\n            <asset mimeType=\"text/xml\" name=\"avatareditor_wardrobe_base\" />\n            <asset mimeType=\"text/xml\" name=\"avatar_editor_effect_griditem_xml\" />\n\t\t</assets>\n\t</component>\n\n</manifest>\n",
+  "entries": [
+    {
+      "name": "AvatarEditor",
+      "mimeType": "text/xml",
+      "offset": 0,
+      "storedLength": 203,
+      "originalLength": 281,
+      "compression": "deflate"
+    },
+    {
+      "name": "AvatarEditorFrame",
+      "mimeType": "text/xml",
+      "offset": 203,
+      "storedLength": 422,
+      "originalLength": 868,
+      "compression": "deflate"
+    },
+    {
+      "name": "AvatarEditorContent",
+      "mimeType": "text/xml",
+      "offset": 625,
+      "storedLength": 3408,
+      "originalLength": 45058,
+      "compression": "deflate"
+    },
+    {
+      "name": "StripClubItemsInfo",
+      "mimeType": "text/xml",
+      "offset": 4033,
+      "storedLength": 732,
+      "originalLength": 1993,
+      "compression": "deflate"
+    },
+    {
+      "name": "Outfit",
+      "mimeType": "text/xml",
+      "offset": 4765,
+      "storedLength": 398,
+      "originalLength": 807,
+      "compression": "deflate"
+    },
+    {
+      "name": "avatareditor_wardrobe_base",
+      "mimeType": "text/xml",
+      "offset": 5163,
+      "storedLength": 1069,
+      "originalLength": 6139,
+      "compression": "deflate"
+    },
+    {
+      "name": "avatar_editor_effect_griditem_xml",
+      "mimeType": "text/xml",
+      "offset": 6232,
+      "storedLength": 771,
+      "originalLength": 3153,
+      "compression": "deflate"
+    }
+  ]
+}

@@ -1,0 +1,2248 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboRoomUICom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n\n    <component class=\"com.sulake.bootstrap.RoomUIBootstrap\" version=\"0.0\">\n        <interface iid=\"com.sulake.iid.IIDHabboRoomUI\"/>\n\n        <assets>\n            <asset mimeType=\"text/xml\" name=\"room_desktop_layout_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"room_view_container_xml\"/>\n\n            <asset mimeType=\"text/xml\" name=\"spectator_mode_xml\"/>\n\n            <asset mimeType=\"image/png\" name=\"spec_top_left_png\"/>\n            <asset mimeType=\"image/png\" name=\"spec_top_middle_png\"/>\n            <asset mimeType=\"image/png\" name=\"spec_top_right_png\"/>\n\n            <asset mimeType=\"image/png\" name=\"spec_middle_left_png\"/>\n            <asset mimeType=\"image/png\" name=\"spec_middle_right_png\"/>\n\n            <asset mimeType=\"image/png\" name=\"spec_bottom_left_png\"/>\n            <asset mimeType=\"image/png\" name=\"spec_bottom_middle_png\"/>\n            <asset mimeType=\"image/png\" name=\"spec_bottom_right_png\"/>\n\n            <asset mimeType=\"image/png\" name=\"chatinput_bubble_left\"/>\n            <asset mimeType=\"image/png\" name=\"chatinput_bubble_middle\"/>\n            <asset mimeType=\"image/png\" name=\"chatinput_bubble_right\"/>\n            <asset mimeType=\"image/png\" name=\"packagecard_icon_hc\"/>\n            <asset mimeType=\"image/png\" name=\"packagecard_icon_floor\"/>\n            <asset mimeType=\"image/png\" name=\"packagecard_icon_landscape\"/>\n            <asset mimeType=\"image/png\" name=\"packagecard_icon_wallpaper\"/>\n            <asset mimeType=\"image/png\" name=\"stickie_blanco\"/>\n            <asset mimeType=\"image/png\" name=\"stickie_close\"/>\n            <asset mimeType=\"image/png\" name=\"stickie_remove\"/>\n            <asset mimeType=\"image/png\" name=\"stickie_vd\"/>\n            <asset mimeType=\"image/png\" name=\"stickie_xmas\"/>\n            <asset mimeType=\"image/png\" name=\"stickie_dreams\"/>\n            <asset mimeType=\"image/png\" name=\"stickie_juninas\"/>\n            <asset mimeType=\"image/png\" name=\"stickie_shakesp\"/>\n            <asset mimeType=\"image/png\" name=\"trophy_bg_bronze\"/>\n            <asset mimeType=\"image/png\" name=\"trophy_bg_gold\"/>\n            <asset mimeType=\"image/png\" name=\"trophy_bg_silver\"/>\n            <asset mimeType=\"image/png\" name=\"dimmer_color_button\"/>\n            <asset mimeType=\"image/png\" name=\"dimmer_color_frame\"/>\n            <asset mimeType=\"image/png\" name=\"dimmer_color_selected\"/>\n            <asset mimeType=\"image/png\" name=\"dimmer_slider_base\"/>\n            <asset mimeType=\"image/png\" name=\"dimmer_slider_button\"/>\n            <asset mimeType=\"image/png\" name=\"dimmer_info\"/>\n            <asset mimeType=\"image/png\" name=\"icon_home\"/>\n            <asset mimeType=\"image/png\" name=\"icon_nft\"/>\n            <asset mimeType=\"image/png\" name=\"badges_color\"/>\n            <asset mimeType=\"image/png\" name=\"badges_white\"/>\n            <asset mimeType=\"image/png\" name=\"clothes_color\"/>\n            <asset mimeType=\"image/png\" name=\"clothes_highlighter\"/>\n            <asset mimeType=\"image/png\" name=\"clothes_white\"/>\n            <asset mimeType=\"image/png\" name=\"clothes_highlighter_blue\"/>\n            <asset mimeType=\"image/png\" name=\"dance_color\"/>\n            <asset mimeType=\"image/png\" name=\"dance_white\"/>\n            <asset mimeType=\"image/png\" name=\"effects_color\"/>\n            <asset mimeType=\"image/png\" name=\"effects_white\"/>\n            <asset mimeType=\"image/png\" name=\"small_pen\"/>\n            <asset mimeType=\"image/png\" name=\"gohome_color\"/>\n            <asset mimeType=\"image/png\" name=\"gohome_white\"/>\n            <asset mimeType=\"image/png\" name=\"compass_white\"/>\n            <asset mimeType=\"image/png\" name=\"compass_color\"/>\n            <asset mimeType=\"image/png\" name=\"memenu_fx_pause\"/>\n            <asset mimeType=\"image/png\" name=\"memenu_fx_play\"/>\n            <asset mimeType=\"image/png\" name=\"memenu_settings_slider_base\"/>\n            <asset mimeType=\"image/png\" name=\"memenu_settings_slider_button\"/>\n            <asset mimeType=\"image/png\" name=\"wave_color\"/>\n            <asset mimeType=\"image/png\" name=\"wave_white\"/>\n            <asset mimeType=\"image/png\" name=\"settings_white\"/>\n            <asset mimeType=\"image/png\" name=\"settings_color\"/>\n            <asset mimeType=\"image/png\" name=\"sounds_on_white\"/>\n            <asset mimeType=\"image/png\" name=\"sounds_on_color\"/>\n            <asset mimeType=\"image/png\" name=\"sounds_off_white\"/>\n            <asset mimeType=\"image/png\" name=\"sounds_off_color\"/>\n            <asset mimeType=\"image/png\" name=\"icon_petrespect\"/>\n            <asset mimeType=\"image/png\" name=\"credits_white\"/>\n            <asset mimeType=\"image/png\" name=\"credits_color\"/>\n            <asset mimeType=\"image/png\" name=\"minimail_white\"/>\n            <asset mimeType=\"image/png\" name=\"minimail_color\"/>\n            <asset mimeType=\"image/png\" name=\"club_color\"/>\n            <asset mimeType=\"image/png\" name=\"club_white\"/>\n            <asset mimeType=\"image/png\" name=\"vip_color\"/>\n            <asset mimeType=\"image/png\" name=\"vip_white\"/>\n            <asset mimeType=\"image/png\" name=\"achievements_color\"/>\n            <asset mimeType=\"image/png\" name=\"achievements_white\"/>\n            <asset mimeType=\"image/png\" name=\"lighthouse_color\"/>\n            <asset mimeType=\"image/png\" name=\"lighthouse_white\"/>\n            <asset mimeType=\"image/png\" name=\"icon_pet_happiness\"/>\n            <asset mimeType=\"image/png\" name=\"icon_pet_experience\"/>\n            <asset mimeType=\"image/png\" name=\"icon_pet_energy\"/>\n            <asset mimeType=\"image/png\" name=\"icon_pet_skill\"/>\n            <asset mimeType=\"image/png\" name=\"icon_pet_wellbeing\"/>\n            <asset mimeType=\"image/png\" name=\"edit_pen_icon\"/>\n            <asset mimeType=\"image/png\" name=\"icon_arrow\"/>\n            <asset mimeType=\"image/png\" name=\"icon_arrow_left\"/>\n            <asset mimeType=\"image/png\" name=\"icon_cd_big\"/>\n            <asset mimeType=\"image/png\" name=\"icon_cd_small\"/>\n            <asset mimeType=\"image/png\" name=\"icon_notes_small\"/>\n            <asset mimeType=\"image/png\" name=\"icon_pause\"/>\n            <asset mimeType=\"image/png\" name=\"icon_play\"/>\n            <asset mimeType=\"image/png\" name=\"icon_pause_large\"/>\n            <asset mimeType=\"image/png\" name=\"icon_download\"/>\n            <asset mimeType=\"image/png\" name=\"jb_icon_composer\"/>\n            <asset mimeType=\"image/png\" name=\"jb_icon_disc\"/>\n            '\n            <asset mimeType=\"image/png\" name=\"title_fader\"/>\n            <asset mimeType=\"image/png\" name=\"profile_white\"/>\n            <asset mimeType=\"image/png\" name=\"profile_color\"/>\n            <asset mimeType=\"text/xml\" name=\"chatinput_window\"/>\n            <asset mimeType=\"text/xml\" name=\"chatinput_window_new\"/>\n            <asset mimeType=\"text/xml\" name=\"chooser_item\"/>\n            <asset mimeType=\"text/xml\" name=\"chooser_view\"/>\n            <asset mimeType=\"text/xml\" name=\"new_furni_chooser_view\"/>\n            <asset mimeType=\"text/xml\" name=\"new_user_chooser_view\"/>\n            <asset mimeType=\"text/xml\" name=\"doorbell\"/>\n            <asset mimeType=\"text/xml\" name=\"doorbell_list_entry\"/>\n            <asset mimeType=\"text/xml\" name=\"credit_redeem\"/>\n            <asset mimeType=\"text/xml\" name=\"ecotronbox_card\"/>\n            <asset mimeType=\"text/xml\" name=\"ecotronbox_card_furnimatic\"/>\n            <asset mimeType=\"text/xml\" name=\"mystery_box_open_dialog\"/>\n            <asset mimeType=\"text/xml\" name=\"mystery_box_reward\"/>\n            <asset mimeType=\"text/xml\" name=\"mystery_box_toolbar_extension\"/>\n            <asset mimeType=\"text/xml\" name=\"petpackage\"/>\n            <asset mimeType=\"text/xml\" name=\"petpackage_new\"/>\n            <asset mimeType=\"text/xml\" name=\"placeholder\"/>\n            <asset mimeType=\"text/xml\" name=\"packagecard\"/>\n            <asset mimeType=\"text/xml\" name=\"packagecard_new\"/>\n            <asset mimeType=\"text/xml\" name=\"packagecard_info\"/>\n            <asset mimeType=\"text/xml\" name=\"packagecard_new_opened\"/>\n            <asset mimeType=\"image/png\" name=\"giftcard_blank\"/>\n            <asset mimeType=\"image/png\" name=\"gift_incognito\"/>\n            <asset mimeType=\"image/png\" name=\"gift_icon_background\"/>\n            <asset mimeType=\"text/xml\" name=\"stickie\"/>\n            <asset mimeType=\"text/xml\" name=\"notification_teaser\"/>\n            <asset mimeType=\"text/xml\" name=\"notification_gift_locked\"/>\n            <asset mimeType=\"text/xml\" name=\"notification_gift_unlocked\"/>\n            <asset mimeType=\"text/xml\" name=\"notification_gift_unlocked_notify\"/>\n            <asset mimeType=\"text/xml\" name=\"notification_gift_received\"/>\n            <asset mimeType=\"text/xml\" name=\"notification_gift_alert\"/>\n            <asset mimeType=\"text/xml\" name=\"notification\"/>\n            <asset mimeType=\"text/xml\" name=\"trophy\"/>\n            <asset mimeType=\"text/xml\" name=\"niko_trophy\"/>\n            <asset mimeType=\"text/xml\" name=\"dimmer_ui\"/>\n            <asset mimeType=\"text/xml\" name=\"dimmer_color_chooser_cell\"/>\n            <asset mimeType=\"text/xml\" name=\"badge_details\"/>\n            <asset mimeType=\"text/xml\" name=\"furni_view\"/>\n            <asset mimeType=\"text/xml\" name=\"furni_view_branding_element\"/>\n            <asset mimeType=\"text/xml\" name=\"user_tag\"/>\n            <asset mimeType=\"text/xml\" name=\"user_tag_highlighted\"/>\n            <asset mimeType=\"text/xml\" name=\"user_view\"/>\n            <asset mimeType=\"text/xml\" name=\"bot_view\"/>\n            <asset mimeType=\"text/xml\" name=\"rentable_bot_view\"/>\n            <asset mimeType=\"text/xml\" name=\"badge_entity\"/>\n            <asset mimeType=\"text/xml\" name=\"pet_view\"/>\n            <asset mimeType=\"text/xml\" name=\"pet_commands\"/>\n            <asset mimeType=\"text/xml\" name=\"room_loading_bar\"/>\n            <asset mimeType=\"text/xml\" name=\"memenu\"/>\n            <asset mimeType=\"text/xml\" name=\"memenu_dance\"/>\n            <asset mimeType=\"text/xml\" name=\"memenu_dance_button\"/>\n            <asset mimeType=\"text/xml\" name=\"memenu_effect_inactive\"/>\n            <asset mimeType=\"text/xml\" name=\"memenu_effect_selected\"/>\n            <asset mimeType=\"text/xml\" name=\"memenu_effect_unselected\"/>\n            <asset mimeType=\"text/xml\" name=\"memenu_effects\"/>\n            <asset mimeType=\"text/xml\" name=\"memenu_main\"/>\n            <asset mimeType=\"text/xml\" name=\"memenu_main_simple\"/>\n            <asset mimeType=\"text/xml\" name=\"memenu_settings\"/>\n            <asset mimeType=\"text/xml\" name=\"memenu_settings_menu\"/>\n            <asset mimeType=\"text/xml\" name=\"room_queue\"/>\n            <asset mimeType=\"text/xml\" name=\"poll_offer\"/>\n            <asset mimeType=\"text/xml\" name=\"poll_question\"/>\n            <asset mimeType=\"text/xml\" name=\"poll_answer_text_input\"/>\n            <asset mimeType=\"text/xml\" name=\"poll_answer_checkbox_input\"/>\n            <asset mimeType=\"text/xml\" name=\"poll_answer_radiobutton_input\"/>\n            <asset mimeType=\"text/xml\" name=\"poll_cancel_confirm\"/>\n            <asset mimeType=\"text/xml\" name=\"instant_friend_request\"/>\n            <asset mimeType=\"text/xml\" name=\"boygirl\"/>\n            <asset mimeType=\"text/xml\" name=\"avatar_info_widget\"/>\n            <asset mimeType=\"text/xml\" name=\"avatar_menu_widget\"/>\n            <asset mimeType=\"text/xml\" name=\"own_avatar_menu\"/>\n            <asset mimeType=\"text/xml\" name=\"own_avatar_decorating\"/>\n            <asset mimeType=\"text/xml\" name=\"own_pet_menu\"/>\n            <asset mimeType=\"text/xml\" name=\"pet_menu\"/>\n            <asset mimeType=\"text/xml\" name=\"use_product_menu\"/>\n            <asset mimeType=\"text/xml\" name=\"breed_pet_menu\"/>\n            <asset mimeType=\"text/xml\" name=\"breed_pets_confirmation_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"confirm_pet_breeding_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"nestBreedingSuccess_xml\" source=\"avatarinfo/nestBreedingSuccessDialog.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"pet_breeding_pet_preview_xml\" source=\"avatarinfo/pet_breeding_pre_preview.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"breed_pets_result_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"use_product_widget_frame_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"use_product_controller_shampoo_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"use_product_controller_custom_part_shampoo_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"use_product_controller_custom_part_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"use_product_controller_saddle_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"use_product_widget_frame_monsterplant_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"use_product_widget_frame_monsterplant_rebreed_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"use_product_widget_frame_monsterplant_fertilize_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"use_product_controller_revive_monsterplant_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"use_product_controller_rebreed_monsterplant_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"use_product_controller_fertilize_monsterplant_xml\"/>\n            <asset mimeType=\"image/png\" name=\"use_product_preview_bg_png\"/>\n            <asset mimeType=\"image/png\" name=\"breed_pets_preview_bg_png\"/>\n            <asset mimeType=\"image/png\" name=\"plant_seed_preview_bg_png\"/>\n            <asset mimeType=\"image/png\" name=\"plant_seed_preview_png\"/>\n            <asset mimeType=\"text/xml\" name=\"minimized_menu\"/>\n            <asset mimeType=\"text/xml\" name=\"jukebox_view\"/>\n            <asset mimeType=\"text/xml\" name=\"crackable_furni_view\"/>\n            <asset mimeType=\"text/xml\" name=\"songdisk_view\"/>\n            <asset mimeType=\"text/xml\" name=\"playlisteditor_inventory_subwindow_get_more_music\"/>\n            <asset mimeType=\"text/xml\" name=\"playlisteditor_inventory_subwindow_play_preview\"/>\n            <asset mimeType=\"text/xml\" name=\"playlisteditor_main_window\"/>\n            <asset mimeType=\"text/xml\" name=\"playlisteditor_music_inventory_item\"/>\n            <asset mimeType=\"text/xml\" name=\"playlisteditor_playlist_item\"/>\n            <asset mimeType=\"text/xml\" name=\"playlisteditor_playlist_subwindow_add_songs\"/>\n            <asset mimeType=\"text/xml\" name=\"playlisteditor_playlist_subwindow_nowplaying\"/>\n            <asset mimeType=\"text/xml\" name=\"playlisteditor_playlist_subwindow_play_now\"/>\n            <asset mimeType=\"text/xml\" name=\"effects_widget\"/>\n            <asset mimeType=\"text/xml\" name=\"effect_selector\"/>\n            <asset mimeType=\"text/xml\" name=\"mannequin_widget_frame_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"mannequin_controller_main_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"mannequin_controller_save_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"mannequin_peer_main_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"mannequin_no_club_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"mannequin_wrong_gender_xml\"/>\n            <asset mimeType=\"image/png\" name=\"mannequin_preview_bg_png\"/>\n            <asset mimeType=\"text/xml\" name=\"guild_furni_menu\"/>\n            <asset mimeType=\"text/xml\" name=\"random_teleport_menu\"/>\n            <asset mimeType=\"text/xml\" name=\"monsterplant_seed_menu\"/>\n            <asset mimeType=\"text/xml\" name=\"mysterybox_menu\"/>\n            <asset mimeType=\"text/xml\" name=\"generic_usable_menu\"/>\n            <asset mimeType=\"text/xml\" name=\"use_product_widget_frame_plant_seed_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"use_product_controller_plant_seed_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"use_product_controller_purchasable_clothing_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"effectbox_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"mysterytrophy_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"new_user_help\"/>\n            <asset mimeType=\"image/png\" name=\"sign_icon_heart\"/>\n            <asset mimeType=\"image/png\" name=\"sign_icon_skull\"/>\n            <asset mimeType=\"image/png\" name=\"sign_icon_13\"/>\n            <asset mimeType=\"image/png\" name=\"sign_icon_14\"/>\n            <asset mimeType=\"image/png\" name=\"sign_icon_15\"/>\n            <asset mimeType=\"image/png\" name=\"sign_icon_16\"/>\n            <asset mimeType=\"image/png\" name=\"sign_icon_17\"/>\n            <asset mimeType=\"image/png\" name=\"pet_skill_level_0\"/>\n            <asset mimeType=\"image/png\" name=\"pet_skill_level_1\"/>\n            <asset mimeType=\"image/png\" name=\"pet_skill_level_2\"/>\n            <asset mimeType=\"image/png\" name=\"pet_skill_level_3\"/>\n            <asset mimeType=\"image/png\" name=\"pet_skill_level_4\"/>\n            <asset mimeType=\"text/xml\" name=\"camera_interface_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"photo_purchase_confirmation_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"camera_editor_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"camera_filterbutton_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"camera_typebutton_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"background_color_ui_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"area_hide_ui_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"viprequired_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"costumehopper_costumerequired_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"respect_giving_failed_notification_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"chatinput_chatstyle_template_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"chatinput_chatfontsize_template_xml\"/>\n\n            <asset mimeType=\"text/xml\" name=\"styleselector_menu_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"styleselector_menu_new_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"habbiconselector_menu_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"chatter_configuration_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"name_configuration_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"lock_confirm_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"lovelock_engraving_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"wildwest_engraving_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"habboween_engraving_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"friendfurni_menu\"/>\n            <asset mimeType=\"text/xml\" name=\"high_score_display_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"custom_stack_height_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"video_viewer_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"rentablespace_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"vimeo_viewer_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"room_tools_toolbar_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"room_tools_info_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"room_tools_history_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"room_tools_history_item_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"share_room_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"stories_image_widget_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"report_photo_xml\"/>\n            <asset mimeType=\"text/xml\" name=\"report_photo_poster_xml\"/>\n\n            <asset mimeType=\"text/xml\" name=\"wordquiz_question_xml\" source=\"wordquiz/quiz_question.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"wordquiz_result_xml\" source=\"wordquiz/quiz_result.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"wordquiz_like_xml\" source=\"wordquiz/quiz_like.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"wordquiz_unlike_xml\" source=\"wordquiz/quiz_unlike.xml\"/>\n\n            <asset mimeType=\"text/xml\" name=\"ui_help_bubble\"/>\n            <asset mimeType=\"text/xml\" name=\"ui_help_modal\"/>\n\n            <asset mimeType=\"text/xml\" name=\"iro_room_thumbnail_camera_xml\"/>\n\n            <asset mimeType=\"text/xml\" name=\"craftingwidget_xml\"/>\n\n        </assets>\n\n    </component>\n\n</manifest>\n",
+  "entries": [
+    {
+      "name": "room_desktop_layout_xml",
+      "mimeType": "text/xml",
+      "offset": 0,
+      "storedLength": 421,
+      "originalLength": 1313,
+      "compression": "deflate"
+    },
+    {
+      "name": "room_view_container_xml",
+      "mimeType": "text/xml",
+      "offset": 421,
+      "storedLength": 295,
+      "originalLength": 724,
+      "compression": "deflate"
+    },
+    {
+      "name": "spectator_mode_xml",
+      "mimeType": "text/xml",
+      "offset": 716,
+      "storedLength": 334,
+      "originalLength": 1104,
+      "compression": "deflate"
+    },
+    {
+      "name": "spec_top_left_png",
+      "mimeType": "image/png",
+      "offset": 1050,
+      "storedLength": 352,
+      "originalLength": 352,
+      "compression": "none"
+    },
+    {
+      "name": "spec_top_middle_png",
+      "mimeType": "image/png",
+      "offset": 1402,
+      "storedLength": 121,
+      "originalLength": 121,
+      "compression": "none"
+    },
+    {
+      "name": "spec_top_right_png",
+      "mimeType": "image/png",
+      "offset": 1523,
+      "storedLength": 320,
+      "originalLength": 320,
+      "compression": "none"
+    },
+    {
+      "name": "spec_middle_left_png",
+      "mimeType": "image/png",
+      "offset": 1843,
+      "storedLength": 114,
+      "originalLength": 114,
+      "compression": "none"
+    },
+    {
+      "name": "spec_middle_right_png",
+      "mimeType": "image/png",
+      "offset": 1957,
+      "storedLength": 116,
+      "originalLength": 116,
+      "compression": "none"
+    },
+    {
+      "name": "spec_bottom_left_png",
+      "mimeType": "image/png",
+      "offset": 2073,
+      "storedLength": 361,
+      "originalLength": 361,
+      "compression": "none"
+    },
+    {
+      "name": "spec_bottom_middle_png",
+      "mimeType": "image/png",
+      "offset": 2434,
+      "storedLength": 123,
+      "originalLength": 123,
+      "compression": "none"
+    },
+    {
+      "name": "spec_bottom_right_png",
+      "mimeType": "image/png",
+      "offset": 2557,
+      "storedLength": 353,
+      "originalLength": 353,
+      "compression": "none"
+    },
+    {
+      "name": "chatinput_bubble_left",
+      "mimeType": "image/png",
+      "offset": 2910,
+      "storedLength": 260,
+      "originalLength": 260,
+      "compression": "none"
+    },
+    {
+      "name": "chatinput_bubble_middle",
+      "mimeType": "image/png",
+      "offset": 3170,
+      "storedLength": 106,
+      "originalLength": 106,
+      "compression": "none"
+    },
+    {
+      "name": "chatinput_bubble_right",
+      "mimeType": "image/png",
+      "offset": 3276,
+      "storedLength": 163,
+      "originalLength": 163,
+      "compression": "none"
+    },
+    {
+      "name": "packagecard_icon_hc",
+      "mimeType": "image/png",
+      "offset": 3439,
+      "storedLength": 481,
+      "originalLength": 481,
+      "compression": "none"
+    },
+    {
+      "name": "packagecard_icon_floor",
+      "mimeType": "image/png",
+      "offset": 3920,
+      "storedLength": 220,
+      "originalLength": 220,
+      "compression": "none"
+    },
+    {
+      "name": "packagecard_icon_landscape",
+      "mimeType": "image/png",
+      "offset": 4140,
+      "storedLength": 495,
+      "originalLength": 495,
+      "compression": "none"
+    },
+    {
+      "name": "packagecard_icon_wallpaper",
+      "mimeType": "image/png",
+      "offset": 4635,
+      "storedLength": 433,
+      "originalLength": 433,
+      "compression": "none"
+    },
+    {
+      "name": "stickie_blanco",
+      "mimeType": "image/png",
+      "offset": 5068,
+      "storedLength": 244,
+      "originalLength": 266,
+      "compression": "deflate"
+    },
+    {
+      "name": "stickie_close",
+      "mimeType": "image/png",
+      "offset": 5312,
+      "storedLength": 139,
+      "originalLength": 139,
+      "compression": "none"
+    },
+    {
+      "name": "stickie_remove",
+      "mimeType": "image/png",
+      "offset": 5451,
+      "storedLength": 131,
+      "originalLength": 131,
+      "compression": "none"
+    },
+    {
+      "name": "stickie_vd",
+      "mimeType": "image/png",
+      "offset": 5582,
+      "storedLength": 709,
+      "originalLength": 782,
+      "compression": "deflate"
+    },
+    {
+      "name": "stickie_xmas",
+      "mimeType": "image/png",
+      "offset": 6291,
+      "storedLength": 755,
+      "originalLength": 755,
+      "compression": "none"
+    },
+    {
+      "name": "stickie_dreams",
+      "mimeType": "image/png",
+      "offset": 7046,
+      "storedLength": 9783,
+      "originalLength": 9783,
+      "compression": "none"
+    },
+    {
+      "name": "stickie_juninas",
+      "mimeType": "image/png",
+      "offset": 16829,
+      "storedLength": 23773,
+      "originalLength": 23773,
+      "compression": "none"
+    },
+    {
+      "name": "stickie_shakesp",
+      "mimeType": "image/png",
+      "offset": 40602,
+      "storedLength": 20784,
+      "originalLength": 20784,
+      "compression": "none"
+    },
+    {
+      "name": "trophy_bg_bronze",
+      "mimeType": "image/png",
+      "offset": 61386,
+      "storedLength": 425,
+      "originalLength": 485,
+      "compression": "deflate"
+    },
+    {
+      "name": "trophy_bg_gold",
+      "mimeType": "image/png",
+      "offset": 61811,
+      "storedLength": 427,
+      "originalLength": 485,
+      "compression": "deflate"
+    },
+    {
+      "name": "trophy_bg_silver",
+      "mimeType": "image/png",
+      "offset": 62238,
+      "storedLength": 416,
+      "originalLength": 479,
+      "compression": "deflate"
+    },
+    {
+      "name": "dimmer_color_button",
+      "mimeType": "image/png",
+      "offset": 62654,
+      "storedLength": 129,
+      "originalLength": 129,
+      "compression": "none"
+    },
+    {
+      "name": "dimmer_color_frame",
+      "mimeType": "image/png",
+      "offset": 62783,
+      "storedLength": 151,
+      "originalLength": 151,
+      "compression": "none"
+    },
+    {
+      "name": "dimmer_color_selected",
+      "mimeType": "image/png",
+      "offset": 62934,
+      "storedLength": 193,
+      "originalLength": 194,
+      "compression": "deflate"
+    },
+    {
+      "name": "dimmer_slider_base",
+      "mimeType": "image/png",
+      "offset": 63127,
+      "storedLength": 162,
+      "originalLength": 162,
+      "compression": "none"
+    },
+    {
+      "name": "dimmer_slider_button",
+      "mimeType": "image/png",
+      "offset": 63289,
+      "storedLength": 193,
+      "originalLength": 193,
+      "compression": "none"
+    },
+    {
+      "name": "dimmer_info",
+      "mimeType": "image/png",
+      "offset": 63482,
+      "storedLength": 807,
+      "originalLength": 807,
+      "compression": "none"
+    },
+    {
+      "name": "icon_home",
+      "mimeType": "image/png",
+      "offset": 64289,
+      "storedLength": 127,
+      "originalLength": 127,
+      "compression": "none"
+    },
+    {
+      "name": "icon_nft",
+      "mimeType": "image/png",
+      "offset": 64416,
+      "storedLength": 153,
+      "originalLength": 153,
+      "compression": "none"
+    },
+    {
+      "name": "badges_color",
+      "mimeType": "image/png",
+      "offset": 64569,
+      "storedLength": 529,
+      "originalLength": 529,
+      "compression": "none"
+    },
+    {
+      "name": "badges_white",
+      "mimeType": "image/png",
+      "offset": 65098,
+      "storedLength": 283,
+      "originalLength": 283,
+      "compression": "none"
+    },
+    {
+      "name": "clothes_color",
+      "mimeType": "image/png",
+      "offset": 65381,
+      "storedLength": 456,
+      "originalLength": 456,
+      "compression": "none"
+    },
+    {
+      "name": "clothes_highlighter",
+      "mimeType": "image/png",
+      "offset": 65837,
+      "storedLength": 117,
+      "originalLength": 117,
+      "compression": "none"
+    },
+    {
+      "name": "clothes_white",
+      "mimeType": "image/png",
+      "offset": 65954,
+      "storedLength": 297,
+      "originalLength": 297,
+      "compression": "none"
+    },
+    {
+      "name": "clothes_highlighter_blue",
+      "mimeType": "image/png",
+      "offset": 66251,
+      "storedLength": 681,
+      "originalLength": 681,
+      "compression": "none"
+    },
+    {
+      "name": "dance_color",
+      "mimeType": "image/png",
+      "offset": 66932,
+      "storedLength": 678,
+      "originalLength": 678,
+      "compression": "none"
+    },
+    {
+      "name": "dance_white",
+      "mimeType": "image/png",
+      "offset": 67610,
+      "storedLength": 311,
+      "originalLength": 311,
+      "compression": "none"
+    },
+    {
+      "name": "effects_color",
+      "mimeType": "image/png",
+      "offset": 67921,
+      "storedLength": 763,
+      "originalLength": 763,
+      "compression": "none"
+    },
+    {
+      "name": "effects_white",
+      "mimeType": "image/png",
+      "offset": 68684,
+      "storedLength": 404,
+      "originalLength": 404,
+      "compression": "none"
+    },
+    {
+      "name": "small_pen",
+      "mimeType": "image/png",
+      "offset": 69088,
+      "storedLength": 300,
+      "originalLength": 300,
+      "compression": "none"
+    },
+    {
+      "name": "gohome_color",
+      "mimeType": "image/png",
+      "offset": 69388,
+      "storedLength": 588,
+      "originalLength": 588,
+      "compression": "none"
+    },
+    {
+      "name": "gohome_white",
+      "mimeType": "image/png",
+      "offset": 69976,
+      "storedLength": 316,
+      "originalLength": 316,
+      "compression": "none"
+    },
+    {
+      "name": "compass_white",
+      "mimeType": "image/png",
+      "offset": 70292,
+      "storedLength": 259,
+      "originalLength": 259,
+      "compression": "none"
+    },
+    {
+      "name": "compass_color",
+      "mimeType": "image/png",
+      "offset": 70551,
+      "storedLength": 430,
+      "originalLength": 430,
+      "compression": "none"
+    },
+    {
+      "name": "memenu_fx_pause",
+      "mimeType": "image/png",
+      "offset": 70981,
+      "storedLength": 198,
+      "originalLength": 198,
+      "compression": "none"
+    },
+    {
+      "name": "memenu_fx_play",
+      "mimeType": "image/png",
+      "offset": 71179,
+      "storedLength": 209,
+      "originalLength": 209,
+      "compression": "none"
+    },
+    {
+      "name": "memenu_settings_slider_base",
+      "mimeType": "image/png",
+      "offset": 71388,
+      "storedLength": 386,
+      "originalLength": 386,
+      "compression": "none"
+    },
+    {
+      "name": "memenu_settings_slider_button",
+      "mimeType": "image/png",
+      "offset": 71774,
+      "storedLength": 214,
+      "originalLength": 214,
+      "compression": "none"
+    },
+    {
+      "name": "wave_color",
+      "mimeType": "image/png",
+      "offset": 71988,
+      "storedLength": 250,
+      "originalLength": 250,
+      "compression": "none"
+    },
+    {
+      "name": "wave_white",
+      "mimeType": "image/png",
+      "offset": 72238,
+      "storedLength": 171,
+      "originalLength": 171,
+      "compression": "none"
+    },
+    {
+      "name": "settings_white",
+      "mimeType": "image/png",
+      "offset": 72409,
+      "storedLength": 298,
+      "originalLength": 298,
+      "compression": "none"
+    },
+    {
+      "name": "settings_color",
+      "mimeType": "image/png",
+      "offset": 72707,
+      "storedLength": 777,
+      "originalLength": 777,
+      "compression": "none"
+    },
+    {
+      "name": "sounds_on_white",
+      "mimeType": "image/png",
+      "offset": 73484,
+      "storedLength": 252,
+      "originalLength": 252,
+      "compression": "none"
+    },
+    {
+      "name": "sounds_on_color",
+      "mimeType": "image/png",
+      "offset": 73736,
+      "storedLength": 284,
+      "originalLength": 284,
+      "compression": "none"
+    },
+    {
+      "name": "sounds_off_white",
+      "mimeType": "image/png",
+      "offset": 74020,
+      "storedLength": 261,
+      "originalLength": 261,
+      "compression": "none"
+    },
+    {
+      "name": "sounds_off_color",
+      "mimeType": "image/png",
+      "offset": 74281,
+      "storedLength": 319,
+      "originalLength": 319,
+      "compression": "none"
+    },
+    {
+      "name": "icon_petrespect",
+      "mimeType": "image/png",
+      "offset": 74600,
+      "storedLength": 219,
+      "originalLength": 219,
+      "compression": "none"
+    },
+    {
+      "name": "credits_white",
+      "mimeType": "image/png",
+      "offset": 74819,
+      "storedLength": 308,
+      "originalLength": 308,
+      "compression": "none"
+    },
+    {
+      "name": "credits_color",
+      "mimeType": "image/png",
+      "offset": 75127,
+      "storedLength": 854,
+      "originalLength": 854,
+      "compression": "none"
+    },
+    {
+      "name": "minimail_white",
+      "mimeType": "image/png",
+      "offset": 75981,
+      "storedLength": 199,
+      "originalLength": 199,
+      "compression": "none"
+    },
+    {
+      "name": "minimail_color",
+      "mimeType": "image/png",
+      "offset": 76180,
+      "storedLength": 322,
+      "originalLength": 322,
+      "compression": "none"
+    },
+    {
+      "name": "club_color",
+      "mimeType": "image/png",
+      "offset": 76502,
+      "storedLength": 347,
+      "originalLength": 347,
+      "compression": "none"
+    },
+    {
+      "name": "club_white",
+      "mimeType": "image/png",
+      "offset": 76849,
+      "storedLength": 168,
+      "originalLength": 168,
+      "compression": "none"
+    },
+    {
+      "name": "vip_color",
+      "mimeType": "image/png",
+      "offset": 77017,
+      "storedLength": 342,
+      "originalLength": 342,
+      "compression": "none"
+    },
+    {
+      "name": "vip_white",
+      "mimeType": "image/png",
+      "offset": 77359,
+      "storedLength": 171,
+      "originalLength": 171,
+      "compression": "none"
+    },
+    {
+      "name": "achievements_color",
+      "mimeType": "image/png",
+      "offset": 77530,
+      "storedLength": 539,
+      "originalLength": 539,
+      "compression": "none"
+    },
+    {
+      "name": "achievements_white",
+      "mimeType": "image/png",
+      "offset": 78069,
+      "storedLength": 357,
+      "originalLength": 357,
+      "compression": "none"
+    },
+    {
+      "name": "lighthouse_color",
+      "mimeType": "image/png",
+      "offset": 78426,
+      "storedLength": 278,
+      "originalLength": 278,
+      "compression": "none"
+    },
+    {
+      "name": "lighthouse_white",
+      "mimeType": "image/png",
+      "offset": 78704,
+      "storedLength": 170,
+      "originalLength": 170,
+      "compression": "none"
+    },
+    {
+      "name": "icon_pet_happiness",
+      "mimeType": "image/png",
+      "offset": 78874,
+      "storedLength": 323,
+      "originalLength": 338,
+      "compression": "deflate"
+    },
+    {
+      "name": "icon_pet_experience",
+      "mimeType": "image/png",
+      "offset": 79197,
+      "storedLength": 355,
+      "originalLength": 377,
+      "compression": "deflate"
+    },
+    {
+      "name": "icon_pet_energy",
+      "mimeType": "image/png",
+      "offset": 79552,
+      "storedLength": 386,
+      "originalLength": 406,
+      "compression": "deflate"
+    },
+    {
+      "name": "icon_pet_skill",
+      "mimeType": "image/png",
+      "offset": 79938,
+      "storedLength": 177,
+      "originalLength": 177,
+      "compression": "none"
+    },
+    {
+      "name": "icon_pet_wellbeing",
+      "mimeType": "image/png",
+      "offset": 80115,
+      "storedLength": 217,
+      "originalLength": 217,
+      "compression": "none"
+    },
+    {
+      "name": "edit_pen_icon",
+      "mimeType": "image/png",
+      "offset": 80332,
+      "storedLength": 207,
+      "originalLength": 207,
+      "compression": "none"
+    },
+    {
+      "name": "icon_arrow",
+      "mimeType": "image/png",
+      "offset": 80539,
+      "storedLength": 173,
+      "originalLength": 173,
+      "compression": "none"
+    },
+    {
+      "name": "icon_arrow_left",
+      "mimeType": "image/png",
+      "offset": 80712,
+      "storedLength": 173,
+      "originalLength": 173,
+      "compression": "none"
+    },
+    {
+      "name": "icon_cd_big",
+      "mimeType": "image/png",
+      "offset": 80885,
+      "storedLength": 1095,
+      "originalLength": 1095,
+      "compression": "none"
+    },
+    {
+      "name": "icon_cd_small",
+      "mimeType": "image/png",
+      "offset": 81980,
+      "storedLength": 580,
+      "originalLength": 580,
+      "compression": "none"
+    },
+    {
+      "name": "icon_notes_small",
+      "mimeType": "image/png",
+      "offset": 82560,
+      "storedLength": 333,
+      "originalLength": 333,
+      "compression": "none"
+    },
+    {
+      "name": "icon_pause",
+      "mimeType": "image/png",
+      "offset": 82893,
+      "storedLength": 140,
+      "originalLength": 140,
+      "compression": "none"
+    },
+    {
+      "name": "icon_play",
+      "mimeType": "image/png",
+      "offset": 83033,
+      "storedLength": 146,
+      "originalLength": 146,
+      "compression": "none"
+    },
+    {
+      "name": "icon_pause_large",
+      "mimeType": "image/png",
+      "offset": 83179,
+      "storedLength": 144,
+      "originalLength": 144,
+      "compression": "none"
+    },
+    {
+      "name": "icon_download",
+      "mimeType": "image/png",
+      "offset": 83323,
+      "storedLength": 151,
+      "originalLength": 151,
+      "compression": "none"
+    },
+    {
+      "name": "jb_icon_composer",
+      "mimeType": "image/png",
+      "offset": 83474,
+      "storedLength": 208,
+      "originalLength": 208,
+      "compression": "none"
+    },
+    {
+      "name": "jb_icon_disc",
+      "mimeType": "image/png",
+      "offset": 83682,
+      "storedLength": 243,
+      "originalLength": 243,
+      "compression": "none"
+    },
+    {
+      "name": "title_fader",
+      "mimeType": "image/png",
+      "offset": 83925,
+      "storedLength": 125,
+      "originalLength": 125,
+      "compression": "none"
+    },
+    {
+      "name": "profile_white",
+      "mimeType": "image/png",
+      "offset": 84050,
+      "storedLength": 248,
+      "originalLength": 248,
+      "compression": "none"
+    },
+    {
+      "name": "profile_color",
+      "mimeType": "image/png",
+      "offset": 84298,
+      "storedLength": 374,
+      "originalLength": 374,
+      "compression": "none"
+    },
+    {
+      "name": "chatinput_window",
+      "mimeType": "text/xml",
+      "offset": 84672,
+      "storedLength": 1264,
+      "originalLength": 6534,
+      "compression": "deflate"
+    },
+    {
+      "name": "chatinput_window_new",
+      "mimeType": "text/xml",
+      "offset": 85936,
+      "storedLength": 1392,
+      "originalLength": 8897,
+      "compression": "deflate"
+    },
+    {
+      "name": "chooser_item",
+      "mimeType": "text/xml",
+      "offset": 87328,
+      "storedLength": 441,
+      "originalLength": 994,
+      "compression": "deflate"
+    },
+    {
+      "name": "chooser_view",
+      "mimeType": "text/xml",
+      "offset": 87769,
+      "storedLength": 488,
+      "originalLength": 1122,
+      "compression": "deflate"
+    },
+    {
+      "name": "new_furni_chooser_view",
+      "mimeType": "text/xml",
+      "offset": 88257,
+      "storedLength": 986,
+      "originalLength": 3579,
+      "compression": "deflate"
+    },
+    {
+      "name": "new_user_chooser_view",
+      "mimeType": "text/xml",
+      "offset": 89243,
+      "storedLength": 1032,
+      "originalLength": 3911,
+      "compression": "deflate"
+    },
+    {
+      "name": "doorbell",
+      "mimeType": "text/xml",
+      "offset": 90275,
+      "storedLength": 738,
+      "originalLength": 2258,
+      "compression": "deflate"
+    },
+    {
+      "name": "doorbell_list_entry",
+      "mimeType": "text/xml",
+      "offset": 91013,
+      "storedLength": 506,
+      "originalLength": 1359,
+      "compression": "deflate"
+    },
+    {
+      "name": "credit_redeem",
+      "mimeType": "text/xml",
+      "offset": 91519,
+      "storedLength": 690,
+      "originalLength": 2071,
+      "compression": "deflate"
+    },
+    {
+      "name": "ecotronbox_card",
+      "mimeType": "text/xml",
+      "offset": 92209,
+      "storedLength": 603,
+      "originalLength": 2293,
+      "compression": "deflate"
+    },
+    {
+      "name": "ecotronbox_card_furnimatic",
+      "mimeType": "text/xml",
+      "offset": 92812,
+      "storedLength": 614,
+      "originalLength": 2310,
+      "compression": "deflate"
+    },
+    {
+      "name": "mystery_box_open_dialog",
+      "mimeType": "text/xml",
+      "offset": 93426,
+      "storedLength": 862,
+      "originalLength": 3440,
+      "compression": "deflate"
+    },
+    {
+      "name": "mystery_box_reward",
+      "mimeType": "text/xml",
+      "offset": 94288,
+      "storedLength": 701,
+      "originalLength": 2101,
+      "compression": "deflate"
+    },
+    {
+      "name": "mystery_box_toolbar_extension",
+      "mimeType": "text/xml",
+      "offset": 94989,
+      "storedLength": 1084,
+      "originalLength": 7740,
+      "compression": "deflate"
+    },
+    {
+      "name": "petpackage",
+      "mimeType": "text/xml",
+      "offset": 96073,
+      "storedLength": 931,
+      "originalLength": 3852,
+      "compression": "deflate"
+    },
+    {
+      "name": "petpackage_new",
+      "mimeType": "text/xml",
+      "offset": 97004,
+      "storedLength": 1312,
+      "originalLength": 6263,
+      "compression": "deflate"
+    },
+    {
+      "name": "placeholder",
+      "mimeType": "text/xml",
+      "offset": 98316,
+      "storedLength": 400,
+      "originalLength": 989,
+      "compression": "deflate"
+    },
+    {
+      "name": "packagecard",
+      "mimeType": "text/xml",
+      "offset": 98716,
+      "storedLength": 885,
+      "originalLength": 3758,
+      "compression": "deflate"
+    },
+    {
+      "name": "packagecard_new",
+      "mimeType": "text/xml",
+      "offset": 99601,
+      "storedLength": 1757,
+      "originalLength": 10031,
+      "compression": "deflate"
+    },
+    {
+      "name": "packagecard_info",
+      "mimeType": "text/xml",
+      "offset": 101358,
+      "storedLength": 1264,
+      "originalLength": 7018,
+      "compression": "deflate"
+    },
+    {
+      "name": "packagecard_new_opened",
+      "mimeType": "text/xml",
+      "offset": 102622,
+      "storedLength": 1306,
+      "originalLength": 6622,
+      "compression": "deflate"
+    },
+    {
+      "name": "giftcard_blank",
+      "mimeType": "image/png",
+      "offset": 103928,
+      "storedLength": 400,
+      "originalLength": 430,
+      "compression": "deflate"
+    },
+    {
+      "name": "gift_incognito",
+      "mimeType": "image/png",
+      "offset": 104328,
+      "storedLength": 798,
+      "originalLength": 798,
+      "compression": "none"
+    },
+    {
+      "name": "gift_icon_background",
+      "mimeType": "image/png",
+      "offset": 105126,
+      "storedLength": 5603,
+      "originalLength": 5603,
+      "compression": "none"
+    },
+    {
+      "name": "stickie",
+      "mimeType": "text/xml",
+      "offset": 110729,
+      "storedLength": 663,
+      "originalLength": 2615,
+      "compression": "deflate"
+    },
+    {
+      "name": "notification_teaser",
+      "mimeType": "text/xml",
+      "offset": 111392,
+      "storedLength": 914,
+      "originalLength": 3955,
+      "compression": "deflate"
+    },
+    {
+      "name": "notification_gift_locked",
+      "mimeType": "text/xml",
+      "offset": 112306,
+      "storedLength": 1097,
+      "originalLength": 5638,
+      "compression": "deflate"
+    },
+    {
+      "name": "notification_gift_unlocked",
+      "mimeType": "text/xml",
+      "offset": 113403,
+      "storedLength": 934,
+      "originalLength": 4318,
+      "compression": "deflate"
+    },
+    {
+      "name": "notification_gift_unlocked_notify",
+      "mimeType": "text/xml",
+      "offset": 114337,
+      "storedLength": 951,
+      "originalLength": 4311,
+      "compression": "deflate"
+    },
+    {
+      "name": "notification_gift_received",
+      "mimeType": "text/xml",
+      "offset": 115288,
+      "storedLength": 936,
+      "originalLength": 4240,
+      "compression": "deflate"
+    },
+    {
+      "name": "notification_gift_alert",
+      "mimeType": "text/xml",
+      "offset": 116224,
+      "storedLength": 849,
+      "originalLength": 3788,
+      "compression": "deflate"
+    },
+    {
+      "name": "notification",
+      "mimeType": "text/xml",
+      "offset": 117073,
+      "storedLength": 865,
+      "originalLength": 3708,
+      "compression": "deflate"
+    },
+    {
+      "name": "trophy",
+      "mimeType": "text/xml",
+      "offset": 117938,
+      "storedLength": 827,
+      "originalLength": 3708,
+      "compression": "deflate"
+    },
+    {
+      "name": "niko_trophy",
+      "mimeType": "text/xml",
+      "offset": 118765,
+      "storedLength": 991,
+      "originalLength": 5003,
+      "compression": "deflate"
+    },
+    {
+      "name": "dimmer_ui",
+      "mimeType": "text/xml",
+      "offset": 119756,
+      "storedLength": 1008,
+      "originalLength": 5280,
+      "compression": "deflate"
+    },
+    {
+      "name": "dimmer_color_chooser_cell",
+      "mimeType": "text/xml",
+      "offset": 120764,
+      "storedLength": 263,
+      "originalLength": 622,
+      "compression": "deflate"
+    },
+    {
+      "name": "badge_details",
+      "mimeType": "text/xml",
+      "offset": 121027,
+      "storedLength": 803,
+      "originalLength": 5242,
+      "compression": "deflate"
+    },
+    {
+      "name": "furni_view",
+      "mimeType": "text/xml",
+      "offset": 121830,
+      "storedLength": 2744,
+      "originalLength": 26582,
+      "compression": "deflate"
+    },
+    {
+      "name": "furni_view_branding_element",
+      "mimeType": "text/xml",
+      "offset": 124574,
+      "storedLength": 477,
+      "originalLength": 1533,
+      "compression": "deflate"
+    },
+    {
+      "name": "user_tag",
+      "mimeType": "text/xml",
+      "offset": 125051,
+      "storedLength": 379,
+      "originalLength": 946,
+      "compression": "deflate"
+    },
+    {
+      "name": "user_tag_highlighted",
+      "mimeType": "text/xml",
+      "offset": 125430,
+      "storedLength": 384,
+      "originalLength": 957,
+      "compression": "deflate"
+    },
+    {
+      "name": "user_view",
+      "mimeType": "text/xml",
+      "offset": 125814,
+      "storedLength": 2101,
+      "originalLength": 22376,
+      "compression": "deflate"
+    },
+    {
+      "name": "bot_view",
+      "mimeType": "text/xml",
+      "offset": 127915,
+      "storedLength": 1184,
+      "originalLength": 8832,
+      "compression": "deflate"
+    },
+    {
+      "name": "rentable_bot_view",
+      "mimeType": "text/xml",
+      "offset": 129099,
+      "storedLength": 1406,
+      "originalLength": 9525,
+      "compression": "deflate"
+    },
+    {
+      "name": "badge_entity",
+      "mimeType": "text/xml",
+      "offset": 130505,
+      "storedLength": 270,
+      "originalLength": 454,
+      "compression": "deflate"
+    },
+    {
+      "name": "pet_view",
+      "mimeType": "text/xml",
+      "offset": 130775,
+      "storedLength": 2203,
+      "originalLength": 28844,
+      "compression": "deflate"
+    },
+    {
+      "name": "pet_commands",
+      "mimeType": "text/xml",
+      "offset": 132978,
+      "storedLength": 874,
+      "originalLength": 3507,
+      "compression": "deflate"
+    },
+    {
+      "name": "room_loading_bar",
+      "mimeType": "text/xml",
+      "offset": 133852,
+      "storedLength": 458,
+      "originalLength": 1194,
+      "compression": "deflate"
+    },
+    {
+      "name": "memenu",
+      "mimeType": "text/xml",
+      "offset": 134310,
+      "storedLength": 230,
+      "originalLength": 307,
+      "compression": "deflate"
+    },
+    {
+      "name": "memenu_dance",
+      "mimeType": "text/xml",
+      "offset": 134540,
+      "storedLength": 670,
+      "originalLength": 2395,
+      "compression": "deflate"
+    },
+    {
+      "name": "memenu_dance_button",
+      "mimeType": "text/xml",
+      "offset": 135210,
+      "storedLength": 195,
+      "originalLength": 299,
+      "compression": "deflate"
+    },
+    {
+      "name": "memenu_effect_inactive",
+      "mimeType": "text/xml",
+      "offset": 135405,
+      "storedLength": 661,
+      "originalLength": 2213,
+      "compression": "deflate"
+    },
+    {
+      "name": "memenu_effect_selected",
+      "mimeType": "text/xml",
+      "offset": 136066,
+      "storedLength": 780,
+      "originalLength": 3424,
+      "compression": "deflate"
+    },
+    {
+      "name": "memenu_effect_unselected",
+      "mimeType": "text/xml",
+      "offset": 136846,
+      "storedLength": 774,
+      "originalLength": 3426,
+      "compression": "deflate"
+    },
+    {
+      "name": "memenu_effects",
+      "mimeType": "text/xml",
+      "offset": 137620,
+      "storedLength": 635,
+      "originalLength": 2171,
+      "compression": "deflate"
+    },
+    {
+      "name": "memenu_main",
+      "mimeType": "text/xml",
+      "offset": 138255,
+      "storedLength": 700,
+      "originalLength": 6797,
+      "compression": "deflate"
+    },
+    {
+      "name": "memenu_main_simple",
+      "mimeType": "text/xml",
+      "offset": 138955,
+      "storedLength": 744,
+      "originalLength": 7623,
+      "compression": "deflate"
+    },
+    {
+      "name": "memenu_settings",
+      "mimeType": "text/xml",
+      "offset": 139699,
+      "storedLength": 1019,
+      "originalLength": 8754,
+      "compression": "deflate"
+    },
+    {
+      "name": "memenu_settings_menu",
+      "mimeType": "text/xml",
+      "offset": 140718,
+      "storedLength": 653,
+      "originalLength": 2405,
+      "compression": "deflate"
+    },
+    {
+      "name": "room_queue",
+      "mimeType": "text/xml",
+      "offset": 141371,
+      "storedLength": 742,
+      "originalLength": 2351,
+      "compression": "deflate"
+    },
+    {
+      "name": "poll_offer",
+      "mimeType": "text/xml",
+      "offset": 142113,
+      "storedLength": 1063,
+      "originalLength": 4990,
+      "compression": "deflate"
+    },
+    {
+      "name": "poll_question",
+      "mimeType": "text/xml",
+      "offset": 143176,
+      "storedLength": 1174,
+      "originalLength": 5121,
+      "compression": "deflate"
+    },
+    {
+      "name": "poll_answer_text_input",
+      "mimeType": "text/xml",
+      "offset": 144350,
+      "storedLength": 469,
+      "originalLength": 1197,
+      "compression": "deflate"
+    },
+    {
+      "name": "poll_answer_checkbox_input",
+      "mimeType": "text/xml",
+      "offset": 144819,
+      "storedLength": 586,
+      "originalLength": 1694,
+      "compression": "deflate"
+    },
+    {
+      "name": "poll_answer_radiobutton_input",
+      "mimeType": "text/xml",
+      "offset": 145405,
+      "storedLength": 603,
+      "originalLength": 1945,
+      "compression": "deflate"
+    },
+    {
+      "name": "poll_cancel_confirm",
+      "mimeType": "text/xml",
+      "offset": 146008,
+      "storedLength": 711,
+      "originalLength": 2588,
+      "compression": "deflate"
+    },
+    {
+      "name": "instant_friend_request",
+      "mimeType": "text/xml",
+      "offset": 146719,
+      "storedLength": 814,
+      "originalLength": 3499,
+      "compression": "deflate"
+    },
+    {
+      "name": "boygirl",
+      "mimeType": "text/xml",
+      "offset": 147533,
+      "storedLength": 483,
+      "originalLength": 1369,
+      "compression": "deflate"
+    },
+    {
+      "name": "avatar_info_widget",
+      "mimeType": "text/xml",
+      "offset": 148016,
+      "storedLength": 667,
+      "originalLength": 2201,
+      "compression": "deflate"
+    },
+    {
+      "name": "avatar_menu_widget",
+      "mimeType": "text/xml",
+      "offset": 148683,
+      "storedLength": 3024,
+      "originalLength": 77740,
+      "compression": "deflate"
+    },
+    {
+      "name": "own_avatar_menu",
+      "mimeType": "text/xml",
+      "offset": 151707,
+      "storedLength": 2253,
+      "originalLength": 54150,
+      "compression": "deflate"
+    },
+    {
+      "name": "own_avatar_decorating",
+      "mimeType": "text/xml",
+      "offset": 153960,
+      "storedLength": 775,
+      "originalLength": 2670,
+      "compression": "deflate"
+    },
+    {
+      "name": "own_pet_menu",
+      "mimeType": "text/xml",
+      "offset": 154735,
+      "storedLength": 1709,
+      "originalLength": 28168,
+      "compression": "deflate"
+    },
+    {
+      "name": "pet_menu",
+      "mimeType": "text/xml",
+      "offset": 156444,
+      "storedLength": 1228,
+      "originalLength": 13118,
+      "compression": "deflate"
+    },
+    {
+      "name": "use_product_menu",
+      "mimeType": "text/xml",
+      "offset": 157672,
+      "storedLength": 1185,
+      "originalLength": 14288,
+      "compression": "deflate"
+    },
+    {
+      "name": "breed_pet_menu",
+      "mimeType": "text/xml",
+      "offset": 158857,
+      "storedLength": 930,
+      "originalLength": 3817,
+      "compression": "deflate"
+    },
+    {
+      "name": "breed_pets_confirmation_xml",
+      "mimeType": "text/xml",
+      "offset": 159787,
+      "storedLength": 1211,
+      "originalLength": 10055,
+      "compression": "deflate"
+    },
+    {
+      "name": "confirm_pet_breeding_xml",
+      "mimeType": "text/xml",
+      "offset": 160998,
+      "storedLength": 1816,
+      "originalLength": 17127,
+      "compression": "deflate"
+    },
+    {
+      "name": "nestBreedingSuccess_xml",
+      "mimeType": "text/xml",
+      "offset": 162814,
+      "storedLength": 680,
+      "originalLength": 2569,
+      "compression": "deflate"
+    },
+    {
+      "name": "pet_breeding_pet_preview_xml",
+      "mimeType": "text/xml",
+      "offset": 163494,
+      "storedLength": 196,
+      "originalLength": 264,
+      "compression": "deflate"
+    },
+    {
+      "name": "breed_pets_result_xml",
+      "mimeType": "text/xml",
+      "offset": 163690,
+      "storedLength": 1465,
+      "originalLength": 15263,
+      "compression": "deflate"
+    },
+    {
+      "name": "use_product_widget_frame_xml",
+      "mimeType": "text/xml",
+      "offset": 165155,
+      "storedLength": 317,
+      "originalLength": 467,
+      "compression": "deflate"
+    },
+    {
+      "name": "use_product_controller_shampoo_xml",
+      "mimeType": "text/xml",
+      "offset": 165472,
+      "storedLength": 663,
+      "originalLength": 2661,
+      "compression": "deflate"
+    },
+    {
+      "name": "use_product_controller_custom_part_shampoo_xml",
+      "mimeType": "text/xml",
+      "offset": 166135,
+      "storedLength": 675,
+      "originalLength": 2693,
+      "compression": "deflate"
+    },
+    {
+      "name": "use_product_controller_custom_part_xml",
+      "mimeType": "text/xml",
+      "offset": 166810,
+      "storedLength": 668,
+      "originalLength": 2671,
+      "compression": "deflate"
+    },
+    {
+      "name": "use_product_controller_saddle_xml",
+      "mimeType": "text/xml",
+      "offset": 167478,
+      "storedLength": 661,
+      "originalLength": 2658,
+      "compression": "deflate"
+    },
+    {
+      "name": "use_product_widget_frame_monsterplant_xml",
+      "mimeType": "text/xml",
+      "offset": 168139,
+      "storedLength": 328,
+      "originalLength": 493,
+      "compression": "deflate"
+    },
+    {
+      "name": "use_product_widget_frame_monsterplant_rebreed_xml",
+      "mimeType": "text/xml",
+      "offset": 168467,
+      "storedLength": 332,
+      "originalLength": 509,
+      "compression": "deflate"
+    },
+    {
+      "name": "use_product_widget_frame_monsterplant_fertilize_xml",
+      "mimeType": "text/xml",
+      "offset": 168799,
+      "storedLength": 335,
+      "originalLength": 513,
+      "compression": "deflate"
+    },
+    {
+      "name": "use_product_controller_revive_monsterplant_xml",
+      "mimeType": "text/xml",
+      "offset": 169134,
+      "storedLength": 964,
+      "originalLength": 6625,
+      "compression": "deflate"
+    },
+    {
+      "name": "use_product_controller_rebreed_monsterplant_xml",
+      "mimeType": "text/xml",
+      "offset": 170098,
+      "storedLength": 962,
+      "originalLength": 6629,
+      "compression": "deflate"
+    },
+    {
+      "name": "use_product_controller_fertilize_monsterplant_xml",
+      "mimeType": "text/xml",
+      "offset": 171060,
+      "storedLength": 926,
+      "originalLength": 6302,
+      "compression": "deflate"
+    },
+    {
+      "name": "use_product_preview_bg_png",
+      "mimeType": "image/png",
+      "offset": 171986,
+      "storedLength": 4682,
+      "originalLength": 4682,
+      "compression": "none"
+    },
+    {
+      "name": "breed_pets_preview_bg_png",
+      "mimeType": "image/png",
+      "offset": 176668,
+      "storedLength": 4682,
+      "originalLength": 4682,
+      "compression": "none"
+    },
+    {
+      "name": "plant_seed_preview_bg_png",
+      "mimeType": "image/png",
+      "offset": 181350,
+      "storedLength": 4682,
+      "originalLength": 4682,
+      "compression": "none"
+    },
+    {
+      "name": "plant_seed_preview_png",
+      "mimeType": "image/png",
+      "offset": 186032,
+      "storedLength": 1727,
+      "originalLength": 1727,
+      "compression": "none"
+    },
+    {
+      "name": "minimized_menu",
+      "mimeType": "text/xml",
+      "offset": 187759,
+      "storedLength": 357,
+      "originalLength": 847,
+      "compression": "deflate"
+    },
+    {
+      "name": "jukebox_view",
+      "mimeType": "text/xml",
+      "offset": 188116,
+      "storedLength": 1528,
+      "originalLength": 12815,
+      "compression": "deflate"
+    },
+    {
+      "name": "crackable_furni_view",
+      "mimeType": "text/xml",
+      "offset": 189644,
+      "storedLength": 1347,
+      "originalLength": 9812,
+      "compression": "deflate"
+    },
+    {
+      "name": "songdisk_view",
+      "mimeType": "text/xml",
+      "offset": 190991,
+      "storedLength": 1432,
+      "originalLength": 11536,
+      "compression": "deflate"
+    },
+    {
+      "name": "playlisteditor_inventory_subwindow_get_more_music",
+      "mimeType": "text/xml",
+      "offset": 192423,
+      "storedLength": 602,
+      "originalLength": 2370,
+      "compression": "deflate"
+    },
+    {
+      "name": "playlisteditor_inventory_subwindow_play_preview",
+      "mimeType": "text/xml",
+      "offset": 193025,
+      "storedLength": 688,
+      "originalLength": 2776,
+      "compression": "deflate"
+    },
+    {
+      "name": "playlisteditor_main_window",
+      "mimeType": "text/xml",
+      "offset": 193713,
+      "storedLength": 946,
+      "originalLength": 4086,
+      "compression": "deflate"
+    },
+    {
+      "name": "playlisteditor_music_inventory_item",
+      "mimeType": "text/xml",
+      "offset": 194659,
+      "storedLength": 749,
+      "originalLength": 2356,
+      "compression": "deflate"
+    },
+    {
+      "name": "playlisteditor_playlist_item",
+      "mimeType": "text/xml",
+      "offset": 195408,
+      "storedLength": 784,
+      "originalLength": 2951,
+      "compression": "deflate"
+    },
+    {
+      "name": "playlisteditor_playlist_subwindow_add_songs",
+      "mimeType": "text/xml",
+      "offset": 196192,
+      "storedLength": 576,
+      "originalLength": 1830,
+      "compression": "deflate"
+    },
+    {
+      "name": "playlisteditor_playlist_subwindow_nowplaying",
+      "mimeType": "text/xml",
+      "offset": 196768,
+      "storedLength": 723,
+      "originalLength": 2887,
+      "compression": "deflate"
+    },
+    {
+      "name": "playlisteditor_playlist_subwindow_play_now",
+      "mimeType": "text/xml",
+      "offset": 197491,
+      "storedLength": 313,
+      "originalLength": 532,
+      "compression": "deflate"
+    },
+    {
+      "name": "effects_widget",
+      "mimeType": "text/xml",
+      "offset": 197804,
+      "storedLength": 722,
+      "originalLength": 2407,
+      "compression": "deflate"
+    },
+    {
+      "name": "effect_selector",
+      "mimeType": "text/xml",
+      "offset": 198526,
+      "storedLength": 601,
+      "originalLength": 1540,
+      "compression": "deflate"
+    },
+    {
+      "name": "mannequin_widget_frame_xml",
+      "mimeType": "text/xml",
+      "offset": 199127,
+      "storedLength": 310,
+      "originalLength": 459,
+      "compression": "deflate"
+    },
+    {
+      "name": "mannequin_controller_main_xml",
+      "mimeType": "text/xml",
+      "offset": 199437,
+      "storedLength": 573,
+      "originalLength": 1479,
+      "compression": "deflate"
+    },
+    {
+      "name": "mannequin_controller_save_xml",
+      "mimeType": "text/xml",
+      "offset": 200010,
+      "storedLength": 725,
+      "originalLength": 2678,
+      "compression": "deflate"
+    },
+    {
+      "name": "mannequin_peer_main_xml",
+      "mimeType": "text/xml",
+      "offset": 200735,
+      "storedLength": 588,
+      "originalLength": 1820,
+      "compression": "deflate"
+    },
+    {
+      "name": "mannequin_no_club_xml",
+      "mimeType": "text/xml",
+      "offset": 201323,
+      "storedLength": 539,
+      "originalLength": 1282,
+      "compression": "deflate"
+    },
+    {
+      "name": "mannequin_wrong_gender_xml",
+      "mimeType": "text/xml",
+      "offset": 201862,
+      "storedLength": 559,
+      "originalLength": 1334,
+      "compression": "deflate"
+    },
+    {
+      "name": "mannequin_preview_bg_png",
+      "mimeType": "image/png",
+      "offset": 202421,
+      "storedLength": 4091,
+      "originalLength": 4091,
+      "compression": "none"
+    },
+    {
+      "name": "guild_furni_menu",
+      "mimeType": "text/xml",
+      "offset": 206512,
+      "storedLength": 1011,
+      "originalLength": 6419,
+      "compression": "deflate"
+    },
+    {
+      "name": "random_teleport_menu",
+      "mimeType": "text/xml",
+      "offset": 207523,
+      "storedLength": 917,
+      "originalLength": 3783,
+      "compression": "deflate"
+    },
+    {
+      "name": "monsterplant_seed_menu",
+      "mimeType": "text/xml",
+      "offset": 208440,
+      "storedLength": 919,
+      "originalLength": 3789,
+      "compression": "deflate"
+    },
+    {
+      "name": "mysterybox_menu",
+      "mimeType": "text/xml",
+      "offset": 209359,
+      "storedLength": 902,
+      "originalLength": 3789,
+      "compression": "deflate"
+    },
+    {
+      "name": "generic_usable_menu",
+      "mimeType": "text/xml",
+      "offset": 210261,
+      "storedLength": 907,
+      "originalLength": 3792,
+      "compression": "deflate"
+    },
+    {
+      "name": "use_product_widget_frame_plant_seed_xml",
+      "mimeType": "text/xml",
+      "offset": 211168,
+      "storedLength": 325,
+      "originalLength": 489,
+      "compression": "deflate"
+    },
+    {
+      "name": "use_product_controller_plant_seed_xml",
+      "mimeType": "text/xml",
+      "offset": 211493,
+      "storedLength": 687,
+      "originalLength": 3057,
+      "compression": "deflate"
+    },
+    {
+      "name": "use_product_controller_purchasable_clothing_xml",
+      "mimeType": "text/xml",
+      "offset": 212180,
+      "storedLength": 660,
+      "originalLength": 2648,
+      "compression": "deflate"
+    },
+    {
+      "name": "effectbox_xml",
+      "mimeType": "text/xml",
+      "offset": 212840,
+      "storedLength": 1077,
+      "originalLength": 4800,
+      "compression": "deflate"
+    },
+    {
+      "name": "mysterytrophy_xml",
+      "mimeType": "text/xml",
+      "offset": 213917,
+      "storedLength": 1239,
+      "originalLength": 5940,
+      "compression": "deflate"
+    },
+    {
+      "name": "new_user_help",
+      "mimeType": "text/xml",
+      "offset": 215156,
+      "storedLength": 473,
+      "originalLength": 1248,
+      "compression": "deflate"
+    },
+    {
+      "name": "sign_icon_heart",
+      "mimeType": "image/png",
+      "offset": 215629,
+      "storedLength": 155,
+      "originalLength": 155,
+      "compression": "none"
+    },
+    {
+      "name": "sign_icon_skull",
+      "mimeType": "image/png",
+      "offset": 215784,
+      "storedLength": 137,
+      "originalLength": 137,
+      "compression": "none"
+    },
+    {
+      "name": "sign_icon_13",
+      "mimeType": "image/png",
+      "offset": 215921,
+      "storedLength": 170,
+      "originalLength": 170,
+      "compression": "none"
+    },
+    {
+      "name": "sign_icon_14",
+      "mimeType": "image/png",
+      "offset": 216091,
+      "storedLength": 296,
+      "originalLength": 296,
+      "compression": "none"
+    },
+    {
+      "name": "sign_icon_15",
+      "mimeType": "image/png",
+      "offset": 216387,
+      "storedLength": 185,
+      "originalLength": 211,
+      "compression": "deflate"
+    },
+    {
+      "name": "sign_icon_16",
+      "mimeType": "image/png",
+      "offset": 216572,
+      "storedLength": 207,
+      "originalLength": 207,
+      "compression": "none"
+    },
+    {
+      "name": "sign_icon_17",
+      "mimeType": "image/png",
+      "offset": 216779,
+      "storedLength": 207,
+      "originalLength": 207,
+      "compression": "none"
+    },
+    {
+      "name": "pet_skill_level_0",
+      "mimeType": "image/png",
+      "offset": 216986,
+      "storedLength": 229,
+      "originalLength": 229,
+      "compression": "none"
+    },
+    {
+      "name": "pet_skill_level_1",
+      "mimeType": "image/png",
+      "offset": 217215,
+      "storedLength": 309,
+      "originalLength": 309,
+      "compression": "none"
+    },
+    {
+      "name": "pet_skill_level_2",
+      "mimeType": "image/png",
+      "offset": 217524,
+      "storedLength": 327,
+      "originalLength": 327,
+      "compression": "none"
+    },
+    {
+      "name": "pet_skill_level_3",
+      "mimeType": "image/png",
+      "offset": 217851,
+      "storedLength": 330,
+      "originalLength": 330,
+      "compression": "none"
+    },
+    {
+      "name": "pet_skill_level_4",
+      "mimeType": "image/png",
+      "offset": 218181,
+      "storedLength": 260,
+      "originalLength": 260,
+      "compression": "none"
+    },
+    {
+      "name": "camera_interface_xml",
+      "mimeType": "text/xml",
+      "offset": 218441,
+      "storedLength": 1551,
+      "originalLength": 12526,
+      "compression": "deflate"
+    },
+    {
+      "name": "photo_purchase_confirmation_xml",
+      "mimeType": "text/xml",
+      "offset": 219992,
+      "storedLength": 2261,
+      "originalLength": 21434,
+      "compression": "deflate"
+    },
+    {
+      "name": "camera_editor_xml",
+      "mimeType": "text/xml",
+      "offset": 222253,
+      "storedLength": 1614,
+      "originalLength": 7945,
+      "compression": "deflate"
+    },
+    {
+      "name": "camera_filterbutton_xml",
+      "mimeType": "text/xml",
+      "offset": 223867,
+      "storedLength": 594,
+      "originalLength": 2999,
+      "compression": "deflate"
+    },
+    {
+      "name": "camera_typebutton_xml",
+      "mimeType": "text/xml",
+      "offset": 224461,
+      "storedLength": 414,
+      "originalLength": 937,
+      "compression": "deflate"
+    },
+    {
+      "name": "background_color_ui_xml",
+      "mimeType": "text/xml",
+      "offset": 224875,
+      "storedLength": 1104,
+      "originalLength": 7406,
+      "compression": "deflate"
+    },
+    {
+      "name": "area_hide_ui_xml",
+      "mimeType": "text/xml",
+      "offset": 225979,
+      "storedLength": 1337,
+      "originalLength": 11117,
+      "compression": "deflate"
+    },
+    {
+      "name": "viprequired_xml",
+      "mimeType": "text/xml",
+      "offset": 227316,
+      "storedLength": 1009,
+      "originalLength": 4565,
+      "compression": "deflate"
+    },
+    {
+      "name": "costumehopper_costumerequired_xml",
+      "mimeType": "text/xml",
+      "offset": 228325,
+      "storedLength": 939,
+      "originalLength": 3830,
+      "compression": "deflate"
+    },
+    {
+      "name": "respect_giving_failed_notification_xml",
+      "mimeType": "text/xml",
+      "offset": 229264,
+      "storedLength": 667,
+      "originalLength": 2081,
+      "compression": "deflate"
+    },
+    {
+      "name": "chatinput_chatstyle_template_xml",
+      "mimeType": "text/xml",
+      "offset": 229931,
+      "storedLength": 388,
+      "originalLength": 889,
+      "compression": "deflate"
+    },
+    {
+      "name": "chatinput_chatfontsize_template_xml",
+      "mimeType": "text/xml",
+      "offset": 230319,
+      "storedLength": 490,
+      "originalLength": 1368,
+      "compression": "deflate"
+    },
+    {
+      "name": "styleselector_menu_xml",
+      "mimeType": "text/xml",
+      "offset": 230809,
+      "storedLength": 360,
+      "originalLength": 705,
+      "compression": "deflate"
+    },
+    {
+      "name": "styleselector_menu_new_xml",
+      "mimeType": "text/xml",
+      "offset": 231169,
+      "storedLength": 724,
+      "originalLength": 2346,
+      "compression": "deflate"
+    },
+    {
+      "name": "habbiconselector_menu_xml",
+      "mimeType": "text/xml",
+      "offset": 231893,
+      "storedLength": 1255,
+      "originalLength": 6387,
+      "compression": "deflate"
+    },
+    {
+      "name": "chatter_configuration_xml",
+      "mimeType": "text/xml",
+      "offset": 233148,
+      "storedLength": 1184,
+      "originalLength": 6841,
+      "compression": "deflate"
+    },
+    {
+      "name": "name_configuration_xml",
+      "mimeType": "text/xml",
+      "offset": 234332,
+      "storedLength": 807,
+      "originalLength": 3043,
+      "compression": "deflate"
+    },
+    {
+      "name": "lock_confirm_xml",
+      "mimeType": "text/xml",
+      "offset": 235139,
+      "storedLength": 1017,
+      "originalLength": 3959,
+      "compression": "deflate"
+    },
+    {
+      "name": "lovelock_engraving_xml",
+      "mimeType": "text/xml",
+      "offset": 236156,
+      "storedLength": 726,
+      "originalLength": 4188,
+      "compression": "deflate"
+    },
+    {
+      "name": "wildwest_engraving_xml",
+      "mimeType": "text/xml",
+      "offset": 236882,
+      "storedLength": 729,
+      "originalLength": 4187,
+      "compression": "deflate"
+    },
+    {
+      "name": "habboween_engraving_xml",
+      "mimeType": "text/xml",
+      "offset": 237611,
+      "storedLength": 756,
+      "originalLength": 4345,
+      "compression": "deflate"
+    },
+    {
+      "name": "friendfurni_menu",
+      "mimeType": "text/xml",
+      "offset": 238367,
+      "storedLength": 895,
+      "originalLength": 3786,
+      "compression": "deflate"
+    },
+    {
+      "name": "high_score_display_xml",
+      "mimeType": "text/xml",
+      "offset": 239262,
+      "storedLength": 1046,
+      "originalLength": 5105,
+      "compression": "deflate"
+    },
+    {
+      "name": "custom_stack_height_xml",
+      "mimeType": "text/xml",
+      "offset": 240308,
+      "storedLength": 966,
+      "originalLength": 3877,
+      "compression": "deflate"
+    },
+    {
+      "name": "video_viewer_xml",
+      "mimeType": "text/xml",
+      "offset": 241274,
+      "storedLength": 1424,
+      "originalLength": 5703,
+      "compression": "deflate"
+    },
+    {
+      "name": "rentablespace_xml",
+      "mimeType": "text/xml",
+      "offset": 242698,
+      "storedLength": 1340,
+      "originalLength": 7286,
+      "compression": "deflate"
+    },
+    {
+      "name": "vimeo_viewer_xml",
+      "mimeType": "text/xml",
+      "offset": 244038,
+      "storedLength": 698,
+      "originalLength": 1952,
+      "compression": "deflate"
+    },
+    {
+      "name": "room_tools_toolbar_xml",
+      "mimeType": "text/xml",
+      "offset": 244736,
+      "storedLength": 1944,
+      "originalLength": 25309,
+      "compression": "deflate"
+    },
+    {
+      "name": "room_tools_info_xml",
+      "mimeType": "text/xml",
+      "offset": 246680,
+      "storedLength": 975,
+      "originalLength": 5405,
+      "compression": "deflate"
+    },
+    {
+      "name": "room_tools_history_xml",
+      "mimeType": "text/xml",
+      "offset": 247655,
+      "storedLength": 225,
+      "originalLength": 305,
+      "compression": "deflate"
+    },
+    {
+      "name": "room_tools_history_item_xml",
+      "mimeType": "text/xml",
+      "offset": 247880,
+      "storedLength": 373,
+      "originalLength": 634,
+      "compression": "deflate"
+    },
+    {
+      "name": "share_room_xml",
+      "mimeType": "text/xml",
+      "offset": 248253,
+      "storedLength": 922,
+      "originalLength": 4782,
+      "compression": "deflate"
+    },
+    {
+      "name": "stories_image_widget_xml",
+      "mimeType": "text/xml",
+      "offset": 249175,
+      "storedLength": 2003,
+      "originalLength": 13574,
+      "compression": "deflate"
+    },
+    {
+      "name": "report_photo_xml",
+      "mimeType": "text/xml",
+      "offset": 251178,
+      "storedLength": 765,
+      "originalLength": 3459,
+      "compression": "deflate"
+    },
+    {
+      "name": "report_photo_poster_xml",
+      "mimeType": "text/xml",
+      "offset": 251943,
+      "storedLength": 906,
+      "originalLength": 5381,
+      "compression": "deflate"
+    },
+    {
+      "name": "wordquiz_question_xml",
+      "mimeType": "text/xml",
+      "offset": 252849,
+      "storedLength": 740,
+      "originalLength": 3206,
+      "compression": "deflate"
+    },
+    {
+      "name": "wordquiz_result_xml",
+      "mimeType": "text/xml",
+      "offset": 253589,
+      "storedLength": 837,
+      "originalLength": 3427,
+      "compression": "deflate"
+    },
+    {
+      "name": "wordquiz_like_xml",
+      "mimeType": "text/xml",
+      "offset": 254426,
+      "storedLength": 556,
+      "originalLength": 1469,
+      "compression": "deflate"
+    },
+    {
+      "name": "wordquiz_unlike_xml",
+      "mimeType": "text/xml",
+      "offset": 254982,
+      "storedLength": 561,
+      "originalLength": 1475,
+      "compression": "deflate"
+    },
+    {
+      "name": "ui_help_bubble",
+      "mimeType": "text/xml",
+      "offset": 255543,
+      "storedLength": 636,
+      "originalLength": 2170,
+      "compression": "deflate"
+    },
+    {
+      "name": "ui_help_modal",
+      "mimeType": "text/xml",
+      "offset": 256179,
+      "storedLength": 374,
+      "originalLength": 778,
+      "compression": "deflate"
+    },
+    {
+      "name": "iro_room_thumbnail_camera_xml",
+      "mimeType": "text/xml",
+      "offset": 256553,
+      "storedLength": 684,
+      "originalLength": 1938,
+      "compression": "deflate"
+    },
+    {
+      "name": "craftingwidget_xml",
+      "mimeType": "text/xml",
+      "offset": 257237,
+      "storedLength": 1630,
+      "originalLength": 9052,
+      "compression": "deflate"
+    }
+  ]
+}

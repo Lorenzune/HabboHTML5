@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="variable_value_info_bubble" width="60" height="39" version="0.1" uid="21B1EA89-8403-08D7-FAE9-37DFC2388816">
+  <window>
+    <bubble x="0" y="0" width="60" height="39" params="0" style="5" name="border" color="0x0ade6ff">
+      <children>
+        <static_bitmap x="2" y="4" width="16" height="14" params="16" style="100">
+          <variables>
+            <var key="stretched_x" value="false" type="Boolean"/>
+            <var key="stretched_y" value="false" type="Boolean"/>
+          </variables>
+        </static_bitmap>
+        <text x="11" y="3" width="22" height="16" params="4194320" style="0" name="value" caption="505">
+          <variables>
+            <var key="auto_size" value="left" type="String"/>
+            <var key="font_size" value="11" type="uint"/>
+            <var key="text_color" value="0xffffff" type="hex"/>
+            <var key="text_style" value="u_regular" type="String"/>
+            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+            <var key="spacing" value="0" type="Number"/>
+            <var key="leading" value="0" type="Number"/>
+          </variables>
+        </text>
+      </children>
+      <variables>
+        <var key="margin_left" value="8" type="int"/>
+        <var key="margin_top" value="8" type="int"/>
+        <var key="margin_right" value="8" type="int"/>
+        <var key="margin_bottom" value="8" type="int"/>
+      </variables>
+    </bubble>
+  </window>
+</layout>

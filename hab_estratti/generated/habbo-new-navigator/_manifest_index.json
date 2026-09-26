@@ -1,0 +1,40 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboNewNavigatorCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n\n\t<component class=\"com.sulake.bootstrap.HabboNewNavigatorBootstrap\" version=\"0.0\">\n\t\t<interface iid=\"com.sulake.iid.IIDHabboNewNavigator\" />\n        <assets>\n            <asset mimeType=\"text/xml\" name=\"navigator_frame_2_xml\" />\n            <asset mimeType=\"text/xml\" name=\"room_info_popup_bubble_xml\" />\n            <asset mimeType=\"text/xml\" name=\"property_xml\" />\n            <asset mimeType=\"text/xml\" name=\"tag_xml\" />\n        </assets>\n\t</component>\n\t\n</manifest>\n",
+  "entries": [
+    {
+      "name": "navigator_frame_2_xml",
+      "mimeType": "text/xml",
+      "offset": 0,
+      "storedLength": 4434,
+      "originalLength": 48823,
+      "compression": "deflate"
+    },
+    {
+      "name": "room_info_popup_bubble_xml",
+      "mimeType": "text/xml",
+      "offset": 4434,
+      "storedLength": 2007,
+      "originalLength": 18346,
+      "compression": "deflate"
+    },
+    {
+      "name": "property_xml",
+      "mimeType": "text/xml",
+      "offset": 6441,
+      "storedLength": 413,
+      "originalLength": 1076,
+      "compression": "deflate"
+    },
+    {
+      "name": "tag_xml",
+      "mimeType": "text/xml",
+      "offset": 6854,
+      "storedLength": 472,
+      "originalLength": 1182,
+      "compression": "deflate"
+    }
+  ]
+}

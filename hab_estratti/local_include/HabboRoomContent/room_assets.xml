@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<assets>
+   <asset name="wall_texture_32_0_wall_lively"/>
+   <asset name="wall_texture_32_0_wall_white"/>
+   <asset name="wall_texture_32_1_wall_tiles1"/>
+   <asset name="wall_texture_32_1_wall_tiles2"/>
+   <asset name="wall_texture_32_1_wall_stripes"/>
+   <asset name="wall_texture_32_1_wall_half1"/>
+   <asset name="wall_texture_32_1_wall_half2"/>
+   <asset name="wall_texture_32_1_wall_half3"/>
+   <asset name="wall_texture_32_1_wall_vstripes1"/>
+   <asset name="wall_texture_32_0_wall_groovy1"/>
+   <asset name="wall_texture_32_0_wall_groovy2"/>
+   <asset name="wall_texture_32_0_wall_groovy3"/>
+   <asset name="wall_texture_32_0_wall_groovy4"/>
+   <asset name="wall_texture_32_0_wall_groovy5"/>
+   <asset name="wall_texture_32_0_wall_groovy6"/>
+   <asset name="wall_texture_32_0_wall_groovy7"/>
+   <asset name="wall_texture_32_3_wall_picture1"/>
+   <asset name="wall_texture_32_3_wall_picture2"/>
+   <asset name="wall_texture_32_3_wall_color_chocolat"/>
+   <asset name="wall_texture_32_3_wall_color_wood"/>
+   <asset name="wall_texture_32_3_wall_color_stripes1"/>
+   <asset name="wall_texture_32_3_wall_color_stripes2"/>
+   <asset name="wall_texture_32_3_wall_color_stripes3"/>
+   <asset name="wall_texture_32_3_wall_color_brick1"/>
+   <asset name="wall_texture_32_3_wall_color_brick2"/>
+   <asset name="wall_texture_32_3_wall_color_brick3"/>
+   <asset name="wall_texture_32_3_wall_color_ornament"/>
+   <asset name="wall_texture_32_3_wall_color_ornament2"/>
+   <asset name="wall_texture_32_3_wall_color_ornament3"/>
+   <asset name="wall_texture_32_3_wall_color_table"/>
+   <asset name="wall_texture_32_3_wall_color_table2"/>
+   <asset name="wall_texture_32_3_wall_color_table3"/>
+   <asset name="wall_texture_32_3_wall_color_lsd"/>
+   <asset name="wall_texture_32_3_wall_color_lsd2"/>
+   <asset name="wall_texture_32_3_wall_color_lsd3"/>
+   <asset name="wall_texture_32_3_wall_color_lsd4"/>
+   <asset name="wall_texture_32_3_wall_color_lsd5"/>
+   <asset name="wall_texture_32_3_wall_color_lsd6"/>
+   <asset name="wall_texture_32_3_wall_color_invaders"/>
+   <asset name="wall_texture_32_3_wall_color_invaders2"/>
+   <asset name="wall_texture_32_3_wall_color_invaders3"/>
+   <asset name="wall_texture_32_3_wall_color_invaders4"/>
+   <asset name="wall_texture_32_3_wall_color_jagged"/>
+   <asset name="wall_texture_32_3_wall_color_jagged2"/>
+   <asset name="wall_texture_32_3_wall_color_jagged3"/>
+   <asset name="wall_texture_32_3_wall_ornament1"/>
+   <asset name="wall_texture_32_3_wall_ornament2"/>
+   <asset name="wall_texture_32_3_wall_ornament3"/>
+   <asset name="wall_texture_32_3_wall_bubbles1"/>
+   <asset name="wall_texture_32_3_wall_bubbles2"/>
+   <asset name="wall_texture_32_3_wall_bubbles3"/>
+   <asset name="wall_texture_32_3_wall_gothic"/>
+   <asset name="wall_texture_64_0_wall_lively"/>
+   <asset name="wall_texture_64_0_wall_white"/>
+   <asset name="wall_texture_64_1_wall_tiles1"/>
+   <asset name="wall_texture_64_1_wall_tiles2"/>
+   <asset name="wall_texture_64_1_wall_stripes"/>
+   <asset name="wall_texture_64_1_wall_half1"/>
+   <asset name="wall_texture_64_1_wall_half2"/>
+   <asset name="wall_texture_64_1_wall_half3"/>
+   <asset name="wall_texture_64_1_wall_vstripes1"/>
+   <asset name="wall_texture_64_0_wall_groovy1"/>
+   <asset name="wall_texture_64_0_wall_groovy2"/>
+   <asset name="wall_texture_64_0_wall_groovy3"/>
+   <asset name="wall_texture_64_0_wall_groovy4"/>
+   <asset name="wall_texture_64_0_wall_groovy5"/>
+   <asset name="wall_texture_64_0_wall_groovy6"/>
+   <asset name="wall_texture_64_0_wall_groovy7"/>
+   <asset name="wall_texture_64_3_wall_picture1"/>
+   <asset name="wall_texture_64_3_wall_picture2"/>
+   <asset name="wall_texture_64_3_wall_color_chocolat"/>
+   <asset name="wall_texture_64_3_wall_color_wood"/>
+   <asset name="wall_texture_64_3_wall_color_stripes1"/>
+   <asset name="wall_texture_64_3_wall_color_stripes2"/>
+   <asset name="wall_texture_64_3_wall_color_stripes3"/>
+   <asset name="wall_texture_64_3_wall_color_brick1"/>
+   <asset name="wall_texture_64_3_wall_color_brick2"/>
+   <asset name="wall_texture_64_3_wall_color_brick3"/>
+   <asset name="wall_texture_64_3_wall_color_ornament"/>
+   <asset name="wall_texture_64_3_wall_color_ornament2"/>
+   <asset name="wall_texture_64_3_wall_color_ornament3"/>
+   <asset name="wall_texture_64_3_wall_color_table"/>
+   <asset name="wall_texture_64_3_wall_color_table2"/>
+   <asset name="wall_texture_64_3_wall_color_table3"/>
+   <asset name="wall_texture_64_3_wall_color_lsd"/>
+   <asset name="wall_texture_64_3_wall_color_lsd2"/>
+   <asset name="wall_texture_64_3_wall_color_lsd3"/>
+   <asset name="wall_texture_64_3_wall_color_lsd4"/>
+   <asset name="wall_texture_64_3_wall_color_lsd5"/>
+   <asset name="wall_texture_64_3_wall_color_lsd6"/>
+   <asset name="wall_texture_64_3_wall_color_invaders"/>
+   <asset name="wall_texture_64_3_wall_color_invaders2"/>
+   <asset name="wall_texture_64_3_wall_color_invaders3"/>
+   <asset name="wall_texture_64_3_wall_color_invaders4"/>
+   <asset name="wall_texture_64_3_wall_color_jagged"/>
+   <asset name="wall_texture_64_3_wall_color_jagged2"/>
+   <asset name="wall_texture_64_3_wall_color_jagged3"/>
+   <asset name="wall_texture_64_3_wall_ornament1"/>
+   <asset name="wall_texture_64_3_wall_ornament2"/>
+   <asset name="wall_texture_64_3_wall_ornament3"/>
+   <asset name="wall_texture_64_3_wall_bubbles1"/>
+   <asset name="wall_texture_64_3_wall_bubbles2"/>
+   <asset name="wall_texture_64_3_wall_bubbles3"/>
+   <asset name="wall_texture_64_3_wall_gothic"/>
+   <asset name="floor_texture_32_0_floor_basic"/>
+   <asset name="floor_texture_32_1_floor_fuzzy1"/>
+   <asset name="floor_texture_32_2_floor_basic"/>
+   <asset name="floor_texture_32_1_floor_tiles2"/>
+   <asset name="floor_texture_32_1_floor_tiles3"/>
+   <asset name="floor_texture_32_1_floor_tiles5"/>
+   <asset name="floor_texture_64_0_floor_basic"/>
+   <asset name="floor_texture_64_1_floor_fuzzy1"/>
+   <asset name="floor_texture_64_2_floor_basic"/>
+   <asset name="floor_texture_64_1_floor_tiles2"/>
+   <asset name="floor_texture_64_1_floor_tiles3"/>
+   <asset name="floor_texture_64_1_floor_tiles5"/>
+   <asset name="landscape_32_1_foreground_1"/>
+   <asset name="landscape_32_1_foreground_1_flipH" source="landscape_32_1_foreground_1" flipH="1"/>
+   <asset name="landscape_32_1_foreground_2"/>
+   <asset name="landscape_32_1_foreground_2_flipH" source="landscape_32_1_foreground_2" flipH="1"/>
+   <asset name="landscape_32_2_foreground_1"/>
+   <asset name="landscape_32_2_foreground_1_flipH" source="landscape_32_2_foreground_1" flipH="1"/>
+   <asset name="landscape_32_2_foreground_2"/>
+   <asset name="landscape_32_2_foreground_2_flipH" source="landscape_32_2_foreground_2" flipH="1"/>
+   <asset name="landscape_32_3_foreground_1"/>
+   <asset name="landscape_32_3_foreground_1_flipH" source="landscape_32_3_foreground_1" flipH="1"/>
+   <asset name="landscape_32_3_foreground_2"/>
+   <asset name="landscape_32_3_foreground_2_flipH" source="landscape_32_3_foreground_2" flipH="1"/>
+   <asset name="landscape_32_4_foreground_1"/>
+   <asset name="landscape_32_4_foreground_1_flipH" source="landscape_32_4_foreground_1" flipH="1"/>
+   <asset name="landscape_32_4_foreground_2"/>
+   <asset name="landscape_32_4_foreground_2_flipH" source="landscape_32_4_foreground_2" flipH="1"/>
+   <asset name="landscape_32_5_foreground_1"/>
+   <asset name="landscape_32_5_foreground_1_flipH" source="landscape_32_5_foreground_1" flipH="1"/>
+   <asset name="landscape_32_6_foreground_1"/>
+   <asset name="landscape_32_6_foreground_1_flipH" source="landscape_32_6_foreground_1" flipH="1"/>
+   <asset name="landscape_32_7_foreground_1"/>
+   <asset name="landscape_32_7_foreground_1_flipH" source="landscape_32_7_foreground_1" flipH="1"/>
+   <asset name="landscape_32_7_foreground_2"/>
+   <asset name="landscape_32_7_foreground_2_flipH" source="landscape_32_7_foreground_2" flipH="1"/>
+   <asset name="landscape_32_8_foreground_1"/>
+   <asset name="landscape_32_8_foreground_1_flipH" source="landscape_32_8_foreground_1" flipH="1"/>
+   <asset name="landscape_32_8_foreground_2"/>
+   <asset name="landscape_32_8_foreground_2_flipH" source="landscape_32_8_foreground_2" flipH="1"/>
+   <asset name="landscape_32_9_foreground_1"/>
+   <asset name="landscape_32_9_foreground_1_flipH" source="landscape_32_9_foreground_1" flipH="1"/>
+   <asset name="landscape_32_9_foreground_2"/>
+   <asset name="landscape_32_9_foreground_2_flipH" source="landscape_32_9_foreground_2" flipH="1"/>
+   <asset name="landscape_32_10_foreground_1"/>
+   <asset name="landscape_32_10_foreground_1_flipH" source="landscape_32_10_foreground_1" flipH="1"/>
+   <asset name="landscape_32_10_foreground_2"/>
+   <asset name="landscape_32_10_foreground_2_flipH" source="landscape_32_10_foreground_2" flipH="1"/>
+   <asset name="landscape_32_11_foreground_1"/>
+   <asset name="landscape_32_11_foreground_1_flipH" source="landscape_32_11_foreground_1" flipH="1"/>
+   <asset name="landscape_32_12_foreground_1"/>
+   <asset name="landscape_32_12_foreground_1_flipH" source="landscape_32_12_foreground_1" flipH="1"/>
+   <asset name="landscape_32_12_foreground_2"/>
+   <asset name="landscape_32_12_foreground_2_flipH" source="landscape_32_12_foreground_2" flipH="1"/>
+   <asset name="landscape_32_background_1"/>
+   <asset name="landscape_32_background_1_flipH" source="landscape_32_background_1" flipH="1"/>
+   <asset name="landscape_32_background_2"/>
+   <asset name="landscape_32_background_2_flipH" source="landscape_32_background_2" flipH="1"/>
+   <asset name="landscape_32_background_3"/>
+   <asset name="landscape_32_background_3_flipH" source="landscape_32_background_3" flipH="1"/>
+   <asset name="landscape_32_background_4"/>
+   <asset name="landscape_32_background_4_flipH" source="landscape_32_background_4" flipH="1"/>
+   <asset name="landscape_32_background_5"/>
+   <asset name="landscape_32_background_5_flipH" source="landscape_32_background_5" flipH="1"/>
+   <asset name="landscape_32_background_6"/>
+   <asset name="landscape_32_background_6_flipH" source="landscape_32_background_6" flipH="1"/>
+   <asset name="landscape_32_background_7"/>
+   <asset name="landscape_32_background_7_flipH" source="landscape_32_background_7" flipH="1"/>
+   <asset name="landscape_64_1_foreground_1"/>
+   <asset name="landscape_64_1_foreground_1_flipH" source="landscape_64_1_foreground_1" flipH="1"/>
+   <asset name="landscape_64_1_foreground_2"/>
+   <asset name="landscape_64_1_foreground_2_flipH" source="landscape_64_1_foreground_2" flipH="1"/>
+   <asset name="landscape_64_2_foreground_1"/>
+   <asset name="landscape_64_2_foreground_1_flipH" source="landscape_64_2_foreground_1" flipH="1"/>
+   <asset name="landscape_64_2_foreground_2"/>
+   <asset name="landscape_64_2_foreground_2_flipH" source="landscape_64_2_foreground_2" flipH="1"/>
+   <asset name="landscape_64_3_foreground_1"/>
+   <asset name="landscape_64_3_foreground_1_flipH" source="landscape_64_3_foreground_1" flipH="1"/>
+   <asset name="landscape_64_3_foreground_2"/>
+   <asset name="landscape_64_3_foreground_2_flipH" source="landscape_64_3_foreground_2" flipH="1"/>
+   <asset name="landscape_64_4_foreground_1"/>
+   <asset name="landscape_64_4_foreground_1_flipH" source="landscape_64_4_foreground_1" flipH="1"/>
+   <asset name="landscape_64_4_foreground_2"/>
+   <asset name="landscape_64_4_foreground_2_flipH" source="landscape_64_4_foreground_2" flipH="1"/>
+   <asset name="landscape_64_5_foreground_1"/>
+   <asset name="landscape_64_5_foreground_1_flipH" source="landscape_64_5_foreground_1" flipH="1"/>
+   <asset name="landscape_64_6_foreground_1"/>
+   <asset name="landscape_64_6_foreground_1_flipH" source="landscape_64_6_foreground_1" flipH="1"/>
+   <asset name="landscape_64_7_foreground_1"/>
+   <asset name="landscape_64_7_foreground_1_flipH" source="landscape_64_7_foreground_1" flipH="1"/>
+   <asset name="landscape_64_7_foreground_2"/>
+   <asset name="landscape_64_7_foreground_2_flipH" source="landscape_64_7_foreground_2" flipH="1"/>
+   <asset name="landscape_64_8_foreground_1"/>
+   <asset name="landscape_64_8_foreground_1_flipH" source="landscape_64_8_foreground_1" flipH="1"/>
+   <asset name="landscape_64_8_foreground_2"/>
+   <asset name="landscape_64_8_foreground_2_flipH" source="landscape_64_8_foreground_2" flipH="1"/>
+   <asset name="landscape_64_9_foreground_1"/>
+   <asset name="landscape_64_9_foreground_1_flipH" source="landscape_64_9_foreground_1" flipH="1"/>
+   <asset name="landscape_64_9_foreground_2"/>
+   <asset name="landscape_64_9_foreground_2_flipH" source="landscape_64_9_foreground_2" flipH="1"/>
+   <asset name="landscape_64_10_foreground_1"/>
+   <asset name="landscape_64_10_foreground_1_flipH" source="landscape_64_10_foreground_1" flipH="1"/>
+   <asset name="landscape_64_10_foreground_2"/>
+   <asset name="landscape_64_10_foreground_2_flipH" source="landscape_64_10_foreground_2" flipH="1"/>
+   <asset name="landscape_64_11_foreground_1"/>
+   <asset name="landscape_64_11_foreground_1_flipH" source="landscape_64_11_foreground_1" flipH="1"/>
+   <asset name="landscape_64_12_foreground_1"/>
+   <asset name="landscape_64_12_foreground_1_flipH" source="landscape_64_12_foreground_1" flipH="1"/>
+   <asset name="landscape_64_12_foreground_2"/>
+   <asset name="landscape_64_12_foreground_2_flipH" source="landscape_64_12_foreground_2" flipH="1"/>
+   <asset name="landscape_64_background_1"/>
+   <asset name="landscape_64_background_1_flipH" source="landscape_64_background_1" flipH="1"/>
+   <asset name="landscape_64_background_2"/>
+   <asset name="landscape_64_background_2_flipH" source="landscape_64_background_2" flipH="1"/>
+   <asset name="landscape_64_background_3"/>
+   <asset name="landscape_64_background_3_flipH" source="landscape_64_background_3" flipH="1"/>
+   <asset name="landscape_64_background_4"/>
+   <asset name="landscape_64_background_4_flipH" source="landscape_64_background_4" flipH="1"/>
+   <asset name="landscape_64_background_5"/>
+   <asset name="landscape_64_background_5_flipH" source="landscape_64_background_5" flipH="1"/>
+   <asset name="landscape_64_background_6"/>
+   <asset name="landscape_64_background_6_flipH" source="landscape_64_background_6" flipH="1"/>
+   <asset name="landscape_64_background_7"/>
+   <asset name="landscape_64_background_7_flipH" source="landscape_64_background_7" flipH="1"/>
+   <asset name="landscape_32_1_item_1"/>
+   <asset name="landscape_32_1_item_1_flipH" source="landscape_32_1_item_1" flipH="1"/>
+   <asset name="landscape_32_2_item_1"/>
+   <asset name="landscape_32_2_item_1_flipH" source="landscape_32_2_item_1" flipH="1"/>
+   <asset name="landscape_32_3_item_1"/>
+   <asset name="landscape_32_3_item_1_flipH" source="landscape_32_3_item_1" flipH="1"/>
+   <asset name="landscape_32_7_item_1"/>
+   <asset name="landscape_32_7_item_1_flipH" source="landscape_32_7_item_1" flipH="1"/>
+   <asset name="landscape_32_7_item_2"/>
+   <asset name="landscape_32_7_item_2_flipH" source="landscape_32_7_item_2" flipH="1"/>
+   <asset name="landscape_32_8_item_1"/>
+   <asset name="landscape_32_8_item_1_flipH" source="landscape_32_8_item_1" flipH="1"/>
+   <asset name="landscape_32_8_item_2"/>
+   <asset name="landscape_32_8_item_2_flipH" source="landscape_32_8_item_2" flipH="1"/>
+   <asset name="landscape_32_8_item_3"/>
+   <asset name="landscape_32_8_item_3_flipH" source="landscape_32_8_item_3" flipH="1"/>
+   <asset name="landscape_32_8_item_4"/>
+   <asset name="landscape_32_8_item_4_flipH" source="landscape_32_8_item_4" flipH="1"/>
+   <asset name="landscape_32_11_item_1"/>
+   <asset name="landscape_32_11_item_1_flipH" source="landscape_32_11_item_1" flipH="1"/>
+   <asset name="landscape_32_12_item_1"/>
+   <asset name="landscape_32_12_item_1_flipH" source="landscape_32_12_item_1" flipH="1"/>
+   <asset name="landscape_32_12_item_2"/>
+   <asset name="landscape_32_12_item_2_flipH" source="landscape_32_12_item_2" flipH="1"/>
+   <asset name="landscape_64_1_item_1"/>
+   <asset name="landscape_64_1_item_1_flipH" source="landscape_64_1_item_1" flipH="1"/>
+   <asset name="landscape_64_2_item_1"/>
+   <asset name="landscape_64_2_item_1_flipH" source="landscape_64_2_item_1" flipH="1"/>
+   <asset name="landscape_64_3_item_1"/>
+   <asset name="landscape_64_3_item_1_flipH" source="landscape_64_3_item_1" flipH="1"/>
+   <asset name="landscape_64_7_item_1"/>
+   <asset name="landscape_64_7_item_1_flipH" source="landscape_64_7_item_1" flipH="1"/>
+   <asset name="landscape_64_7_item_2"/>
+   <asset name="landscape_64_7_item_2_flipH" source="landscape_64_7_item_2" flipH="1"/>
+   <asset name="landscape_64_8_item_1"/>
+   <asset name="landscape_64_8_item_1_flipH" source="landscape_64_8_item_1" flipH="1"/>
+   <asset name="landscape_64_8_item_2"/>
+   <asset name="landscape_64_8_item_2_flipH" source="landscape_64_8_item_2" flipH="1"/>
+   <asset name="landscape_64_8_item_3"/>
+   <asset name="landscape_64_8_item_3_flipH" source="landscape_64_8_item_3" flipH="1"/>
+   <asset name="landscape_64_8_item_4"/>
+   <asset name="landscape_64_8_item_4_flipH" source="landscape_64_8_item_4" flipH="1"/>
+   <asset name="landscape_64_11_item_1"/>
+   <asset name="landscape_64_11_item_1_flipH" source="landscape_64_11_item_1" flipH="1"/>
+   <asset name="landscape_64_12_item_1"/>
+   <asset name="landscape_64_12_item_1_flipH" source="landscape_64_12_item_1" flipH="1"/>
+   <asset name="landscape_64_12_item_2"/>
+   <asset name="landscape_64_12_item_2_flipH" source="landscape_64_12_item_2" flipH="1"/>
+   <asset name="landscape_32_anim_item_1"/>
+   <asset name="landscape_32_anim_item_2"/>
+   <asset name="landscape_64_anim_item_1"/>
+   <asset name="landscape_64_anim_item_2"/>
+   <asset name="door_32" x="8" y="42"/>
+   <asset name="door_32_flipH" source="door_32" flipH="1" x="8" y="42"/>
+   <asset name="bolly_wdw_wd_32" x="13" y="26"/>
+   <asset name="bolly_wdw_wd_32_flipH" source="bolly_wdw_wd_32" flipH="1" x="13" y="26"/>
+   <asset name="hween08_wndw_32" x="15" y="16"/>
+   <asset name="hween08_wndw_32_flipH" source="hween08_wndw_32" flipH="1" x="15" y="16"/>
+   <asset name="hween08_wndwb_32" x="9" y="11"/>
+   <asset name="hween08_wndwb_32_flipH" source="hween08_wndwb_32" flipH="1" x="9" y="11"/>
+   <asset name="lc_window1_32" x="9" y="10"/>
+   <asset name="lc_window1_32_flipH" source="lc_window1_32" flipH="1" x="9" y="10"/>
+   <asset name="lc_window2_32" x="39" y="21"/>
+   <asset name="lc_window2_32_flipH" source="lc_window2_32" flipH="1" x="39" y="21"/>
+   <asset name="noob_window_double_32" x="28" y="16"/>
+   <asset name="noob_window_double_32_flipH" source="noob_window_double_32" flipH="1" x="28" y="16"/>
+   <asset name="window_70s_narrow_32" x="9" y="11"/>
+   <asset name="window_70s_narrow_32_flipH" source="window_70s_narrow_32" flipH="1" x="9" y="11"/>
+   <asset name="window_70s_wide_32" x="15" y="10"/>
+   <asset name="window_70s_wide_32_flipH" source="window_70s_wide_32" flipH="1" x="15" y="10"/>
+   <asset name="window_basic_32" x="17" y="22"/>
+   <asset name="window_basic_32_flipH" source="window_basic_32" flipH="1" x="17" y="22"/>
+   <asset name="jp_window_32" x="20" y="15"/>
+   <asset name="jp_window_32_flipH" source="jp_window_32" flipH="1" x="20" y="15"/>
+   <asset name="window_chinese_narrow_32" x="5" y="18"/>
+   <asset name="window_chinese_narrow_32_flipH" source="window_chinese_narrow_32" flipH="1" x="5" y="18"/>
+   <asset name="window_chinese_wide_32" x="16" y="17"/>
+   <asset name="window_chinese_wide_32_flipH" source="window_chinese_wide_32" flipH="1" x="16" y="17"/>
+   <asset name="window_diner_32" x="12" y="13"/>
+   <asset name="window_diner_32_flipH" source="window_diner_32" flipH="1" x="12" y="13"/>
+   <asset name="window_diner2_32" x="5" y="13"/>
+   <asset name="window_diner2_32_flipH" source="window_diner2_32" flipH="1" x="5" y="13"/>
+   <asset name="window_double_default_32" x="28" y="16"/>
+   <asset name="window_double_default_32_flipH" source="window_double_default_32" flipH="1" x="28" y="16"/>
+   <asset name="window_golden_32" x="10" y="14"/>
+   <asset name="window_golden_32_flipH" source="window_golden_32" flipH="1" x="10" y="14"/>
+   <asset name="window_grunge_32" x="16" y="18"/>
+   <asset name="window_grunge_32_flipH" source="window_grunge_32" flipH="1" x="16" y="18"/>
+   <asset name="window_hole_32" x="10" y="10"/>
+   <asset name="window_hole_32_flipH" source="window_hole_32" flipH="1" x="10" y="10"/>
+   <asset name="window_romantic_narrow_32" x="10" y="17"/>
+   <asset name="window_romantic_narrow_32_flipH" source="window_romantic_narrow_32" flipH="1" x="10" y="17"/>
+   <asset name="window_romantic_wide_32" x="15" y="18"/>
+   <asset name="window_romantic_wide_32_flipH" source="window_romantic_wide_32" flipH="1" x="15" y="18"/>
+   <asset name="window_single_default_32" x="14" y="16"/>
+   <asset name="window_single_default_32_flipH" source="window_single_default_32" flipH="1" x="14" y="16"/>
+   <asset name="window_skyscraper_32" x="7" y="26"/>
+   <asset name="window_skyscraper_32_flipH" source="window_skyscraper_32" flipH="1" x="7" y="26"/>
+   <asset name="window_square_32" x="7" y="8"/>
+   <asset name="window_square_32_flipH" source="window_square_32" flipH="1" x="7" y="8"/>
+   <asset name="window_triple_32" x="15" y="16"/>
+   <asset name="window_triple_32_flipH" source="window_triple_32" flipH="1" x="15" y="16"/>
+   <asset name="sf_window_32" x="20" y="14"/>
+   <asset name="sf_window_32_flipH" source="sf_window_32" flipH="1" x="20" y="14"/>
+   <asset name="hween09_win_32" x="12" y="22"/>
+   <asset name="hween09_win_32_flipH" source="hween09_win_32" flipH="1" x="12" y="22"/>
+   <asset name="ads_twi_windw_32" x="27" y="18"/>
+   <asset name="ads_twi_windw_32_flipH" source="ads_twi_windw_32" flipH="1" x="27" y="18"/>
+   <asset name="door_64" x="16" y="86"/>
+   <asset name="door_64_flipH" source="door_64" flipH="1" x="16" y="86"/>
+   <asset name="bolly_wdw_wd_64" x="26" y="54"/>
+   <asset name="bolly_wdw_wd_64_flipH" source="bolly_wdw_wd_64" flipH="1" x="26" y="54"/>
+   <asset name="hween08_wndw_64" x="33" y="33"/>
+   <asset name="hween08_wndw_64_flipH" source="hween08_wndw_64" flipH="1" x="33" y="33"/>
+   <asset name="hween08_wndwb_64" x="20" y="21"/>
+   <asset name="hween08_wndwb_64_flipH" source="hween08_wndwb_64" flipH="1" x="20" y="21"/>
+   <asset name="lc_window1_64" x="19" y="20"/>
+   <asset name="lc_window1_64_flipH" source="lc_window1_64" flipH="1" x="19" y="20"/>
+   <asset name="lc_window2_64" x="81" y="44"/>
+   <asset name="lc_window2_64_flipH" source="lc_window2_64" flipH="1" x="81" y="44"/>
+   <asset name="noob_window_double_64" x="55" y="33"/>
+   <asset name="noob_window_double_64_flipH" source="noob_window_double_64" flipH="1" x="55" y="33"/>
+   <asset name="window_70s_narrow_64" x="20" y="20"/>
+   <asset name="window_70s_narrow_64_flipH" source="window_70s_narrow_64" flipH="1" x="20" y="20"/>
+   <asset name="window_70s_wide_64" x="33" y="21"/>
+   <asset name="window_70s_wide_64_flipH" source="window_70s_wide_64" flipH="1" x="33" y="21"/>
+   <asset name="window_basic_64" x="33" y="42"/>
+   <asset name="window_basic_64_flipH" source="window_basic_64" flipH="1" x="33" y="42"/>
+   <asset name="jp_window_64" x="37" y="31"/>
+   <asset name="jp_window_64_flipH" source="jp_window_64" flipH="1" x="37" y="31"/>
+   <asset name="window_chinese_narrow_64" x="12" y="36"/>
+   <asset name="window_chinese_narrow_64_flipH" source="window_chinese_narrow_64" flipH="1" x="12" y="36"/>
+   <asset name="window_chinese_wide_64" x="31" y="41"/>
+   <asset name="window_chinese_wide_64_flipH" source="window_chinese_wide_64" flipH="1" x="31" y="41"/>
+   <asset name="window_diner_64" x="26" y="29"/>
+   <asset name="window_diner_64_flipH" source="window_diner_64" flipH="1" x="26" y="29"/>
+   <asset name="window_diner2_64" x="12" y="29"/>
+   <asset name="window_diner2_64_flipH" source="window_diner2_64" flipH="1" x="12" y="29"/>
+   <asset name="window_double_default_64" x="55" y="33"/>
+   <asset name="window_double_default_64_flipH" source="window_double_default_64" flipH="1" x="55" y="33"/>
+   <asset name="window_golden_64" x="22" y="30"/>
+   <asset name="window_golden_64_flipH" source="window_golden_64" flipH="1" x="22" y="30"/>
+   <asset name="window_grunge_64" x="33" y="36"/>
+   <asset name="window_grunge_64_flipH" source="window_grunge_64" flipH="1" x="33" y="36"/>
+   <asset name="window_hole_64" x="22" y="26"/>
+   <asset name="window_hole_64_flipH" source="window_hole_64" flipH="1" x="22" y="26"/>
+   <asset name="window_romantic_narrow_64" x="19" y="41"/>
+   <asset name="window_romantic_narrow_64_flipH" source="window_romantic_narrow_64" flipH="1" x="19" y="41"/>
+   <asset name="window_romantic_wide_64" x="37" y="39"/>
+   <asset name="window_romantic_wide_64_flipH" source="window_romantic_wide_64" flipH="1" x="37" y="39"/>
+   <asset name="window_single_default_64" x="27" y="32"/>
+   <asset name="window_single_default_64_flipH" source="window_single_default_64" flipH="1" x="27" y="32"/>
+   <asset name="window_skyscraper_64" x="15" y="51"/>
+   <asset name="window_skyscraper_64_flipH" source="window_skyscraper_64" flipH="1" x="15" y="51"/>
+   <asset name="window_square_64" x="15" y="17"/>
+   <asset name="window_square_64_flipH" source="window_square_64" flipH="1" x="15" y="17"/>
+   <asset name="window_triple_64" x="32" y="36"/>
+   <asset name="window_triple_64_flipH" source="window_triple_64" flipH="1" x="32" y="36"/>
+   <asset name="sf_window_64" x="39" y="27"/>
+   <asset name="sf_window_64_flipH" source="sf_window_64" flipH="1" x="39" y="27"/>
+   <asset name="hween09_win_64" x="24" y="46"/>
+   <asset name="hween09_win_64_flipH" source="hween09_win_64" flipH="1" x="24" y="46"/>
+   <asset name="ads_twi_windw_64" x="52" y="33"/>
+   <asset name="ads_twi_windw_64_flipH" source="ads_twi_windw_64" flipH="1" x="52" y="33"/>
+<asset name="easter13_window_64" x="23" y="36"/>
+<asset name="easter13_window_64_flipH"  source="easter13_window_64" flipH="1" x="23" y="36"/>
+<asset name="easter13_window_32" x="10" y="16"/>
+<asset name="easter13_window_32_flipH" source="easter13_window_32" flipH="1" x="10" y="16"/>
+</assets>

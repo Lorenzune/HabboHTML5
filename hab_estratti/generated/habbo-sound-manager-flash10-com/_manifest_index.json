@@ -1,0 +1,176 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboSoundManagerFlash10Com",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n\n\t<component class=\"com.sulake.bootstrap.HabboSoundManagerFlash10Bootstrap\" version=\"0.0\">\n\t\t<interface iid=\"com.sulake.iid.IIDHabboSoundManager\" />\n\t\t<assets>\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"sound_call_for_help\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"sound_catalogue_cash\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"sound_catalogue_duckets\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"sound_console_message_sent\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"sound_console_new_message\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"sound_guide_received_invitation\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"sound_guide_help_requested\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"sound_respect_received\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"sound_camera_shutter\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"HBSTG_snowwar_get_snowball\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"HBSTG_snowwar_hit1\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"HBSTG_snowwar_hit2\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"HBSTG_snowwar_hit3\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"HBSTG_snowwar_make_snowball\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"HBSTG_snowwar_miss\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"HBSTG_snowwar_throw\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"HBSTG_snowwar_walk\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"HBSTG_ig_countdown\" source=\"HBSTG_ig-countdown.mp3\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"HBSTG_ig_losing\" source=\"HBSTG_ig-losing.mp3\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"HBSTG_ig_winning\" source=\"HBSTG_ig-winning.mp3\" />\n\t\t\t<asset mimeType=\"sound/mp3\" name=\"FURNITURE_cuckoo_clock\" source=\"furniture_sounds/cuckoo_clock.mp3\" />\n\t\t</assets>\n\t</component>\n\n</manifest>\n",
+  "entries": [
+    {
+      "name": "sound_call_for_help",
+      "mimeType": "sound/mp3",
+      "offset": 0,
+      "storedLength": 9271,
+      "originalLength": 10113,
+      "compression": "deflate"
+    },
+    {
+      "name": "sound_catalogue_cash",
+      "mimeType": "sound/mp3",
+      "offset": 9271,
+      "storedLength": 15969,
+      "originalLength": 16846,
+      "compression": "deflate"
+    },
+    {
+      "name": "sound_catalogue_duckets",
+      "mimeType": "sound/mp3",
+      "offset": 25240,
+      "storedLength": 24789,
+      "originalLength": 25682,
+      "compression": "deflate"
+    },
+    {
+      "name": "sound_console_message_sent",
+      "mimeType": "sound/mp3",
+      "offset": 50029,
+      "storedLength": 3748,
+      "originalLength": 4252,
+      "compression": "deflate"
+    },
+    {
+      "name": "sound_console_new_message",
+      "mimeType": "sound/mp3",
+      "offset": 53777,
+      "storedLength": 14820,
+      "originalLength": 15536,
+      "compression": "deflate"
+    },
+    {
+      "name": "sound_guide_received_invitation",
+      "mimeType": "sound/mp3",
+      "offset": 68597,
+      "storedLength": 6514,
+      "originalLength": 7183,
+      "compression": "deflate"
+    },
+    {
+      "name": "sound_guide_help_requested",
+      "mimeType": "sound/mp3",
+      "offset": 75111,
+      "storedLength": 4026,
+      "originalLength": 5014,
+      "compression": "deflate"
+    },
+    {
+      "name": "sound_respect_received",
+      "mimeType": "sound/mp3",
+      "offset": 79137,
+      "storedLength": 22149,
+      "originalLength": 23474,
+      "compression": "deflate"
+    },
+    {
+      "name": "sound_camera_shutter",
+      "mimeType": "sound/mp3",
+      "offset": 101286,
+      "storedLength": 8217,
+      "originalLength": 15282,
+      "compression": "deflate"
+    },
+    {
+      "name": "HBSTG_snowwar_get_snowball",
+      "mimeType": "sound/mp3",
+      "offset": 109503,
+      "storedLength": 2037,
+      "originalLength": 9116,
+      "compression": "deflate"
+    },
+    {
+      "name": "HBSTG_snowwar_hit1",
+      "mimeType": "sound/mp3",
+      "offset": 111540,
+      "storedLength": 8951,
+      "originalLength": 19132,
+      "compression": "deflate"
+    },
+    {
+      "name": "HBSTG_snowwar_hit2",
+      "mimeType": "sound/mp3",
+      "offset": 120491,
+      "storedLength": 11718,
+      "originalLength": 21636,
+      "compression": "deflate"
+    },
+    {
+      "name": "HBSTG_snowwar_hit3",
+      "mimeType": "sound/mp3",
+      "offset": 132209,
+      "storedLength": 22245,
+      "originalLength": 32278,
+      "compression": "deflate"
+    },
+    {
+      "name": "HBSTG_snowwar_make_snowball",
+      "mimeType": "sound/mp3",
+      "offset": 154454,
+      "storedLength": 16534,
+      "originalLength": 17681,
+      "compression": "deflate"
+    },
+    {
+      "name": "HBSTG_snowwar_miss",
+      "mimeType": "sound/mp3",
+      "offset": 170988,
+      "storedLength": 4032,
+      "originalLength": 9558,
+      "compression": "deflate"
+    },
+    {
+      "name": "HBSTG_snowwar_throw",
+      "mimeType": "sound/mp3",
+      "offset": 175020,
+      "storedLength": 4917,
+      "originalLength": 10371,
+      "compression": "deflate"
+    },
+    {
+      "name": "HBSTG_snowwar_walk",
+      "mimeType": "sound/mp3",
+      "offset": 179937,
+      "storedLength": 26658,
+      "originalLength": 34156,
+      "compression": "deflate"
+    },
+    {
+      "name": "HBSTG_ig_countdown",
+      "mimeType": "sound/mp3",
+      "offset": 206595,
+      "storedLength": 139470,
+      "originalLength": 150858,
+      "compression": "deflate"
+    },
+    {
+      "name": "HBSTG_ig_losing",
+      "mimeType": "sound/mp3",
+      "offset": 346065,
+      "storedLength": 112649,
+      "originalLength": 140216,
+      "compression": "deflate"
+    },
+    {
+      "name": "HBSTG_ig_winning",
+      "mimeType": "sound/mp3",
+      "offset": 458714,
+      "storedLength": 109267,
+      "originalLength": 127070,
+      "compression": "deflate"
+    },
+    {
+      "name": "FURNITURE_cuckoo_clock",
+      "mimeType": "sound/mp3",
+      "offset": 567981,
+      "storedLength": 22265,
+      "originalLength": 22986,
+      "compression": "deflate"
+    }
+  ]
+}

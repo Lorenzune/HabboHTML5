@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="thumbnail" width="42" height="42" version="0.1" uid="56E6DF4F-47AC-0BF5-CAF1-B4D0D1551AEE">
+  <window>
+    <region x="0" y="0" width="42" height="42" params="17" style="0" clipping="false" treshold="0">
+      <children>
+        <border x="1" y="1" width="40" height="40" params="16" style="5" color="0x0cacaca" tags="BG_COLOR">
+          <children>
+            <static_bitmap x="2" y="2" width="36" height="36" params="16" style="0" name="unique_item_background_bitmap" visible="false">
+              <variables>
+                <var key="asset_uri" value="unique_item_label_1" type="String"/>
+              </variables>
+            </static_bitmap>
+            <widget x="0" y="0" width="40" height="40" params="16" style="3" name="nft_icon">
+              <variables>
+                <var key="widget_type" value="product_icon" type="String"/>
+              </variables>
+            </widget>
+            <container x="33" y="2" width="6" height="15" params="393360" style="0" name="number_container" color="0xffff2f6982" visible="false" background="true" tags="COUNT">
+              <children>
+                <text x="1" y="1" width="4" height="4" params="16" style="0" name="number" background="true" tags="NUMBER%2CCOUNT">
+                  <variables>
+                    <var key="antialias_type" value="advanced" type="String"/>
+                    <var key="auto_size" value="left" type="String"/>
+                    <var key="text_color" value="0x2f6982" type="hex"/>
+                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                    <var key="sharpness" value="0" type="Number"/>
+                    <var key="thickness" value="0" type="Number"/>
+                    <var key="kerning" value="false" type="Boolean"/>
+                    <var key="spacing" value="0" type="Number"/>
+                    <var key="leading" value="0" type="Number"/>
+                  </variables>
+                </text>
+              </children>
+            </container>
+          </children>
+        </border>
+        <static_bitmap x="0" y="0" width="42" height="42" params="16" style="0" name="outline" visible="false">
+          <variables>
+            <var key="asset_uri" value="inventory_thumb_selected_outline" type="String"/>
+          </variables>
+        </static_bitmap>
+      </children>
+    </region>
+  </window>
+</layout>

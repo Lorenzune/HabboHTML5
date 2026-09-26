@@ -1,0 +1,528 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboAir",
+  "manifest": "<library name=\"HabboAir\">\n  <assets>\n    <asset name=\"avatar_glow_png\" mimeType=\"image/png\"><param key=\"source\" value=\"avatar_glow.png\" /></asset>\n    <asset name=\"avatar_halo_png\" mimeType=\"image/png\"><param key=\"source\" value=\"avatar_halo.png\" /></asset>\n    <asset name=\"figuredata_new_xml\" mimeType=\"text/xml\"><param key=\"source\" value=\"figuredata_new.xml\" /></asset>\n    <asset name=\"habbo_logo_png\" mimeType=\"image/png\"><param key=\"source\" value=\"habbo_logo.png\" /></asset>\n    <asset name=\"hitchTile_png\" mimeType=\"image/png\"><param key=\"source\" value=\"hitchTile.png\" /></asset>\n    <asset name=\"loader_progress_back_png\" mimeType=\"image/png\"><param key=\"source\" value=\"loader_progress_back.png\" /></asset>\n    <asset name=\"loader_progress_fill_png\" mimeType=\"image/png\"><param key=\"source\" value=\"loader_progress_fill.png\" /></asset>\n    <asset name=\"logo_new_png\" mimeType=\"image/png\"><param key=\"source\" value=\"logo_new.png\" /></asset>\n    <asset name=\"placeholder_avatar_png\" mimeType=\"image/png\"><param key=\"source\" value=\"placeholder_avatar.png\" /></asset>\n    <asset name=\"Ubuntu_B_ttf\" mimeType=\"application/octet-stream\"><param key=\"source\" value=\"Ubuntu-B.ttf\" /></asset>\n    <asset name=\"Ubuntu_BI_ttf\" mimeType=\"application/octet-stream\"><param key=\"source\" value=\"Ubuntu-BI.ttf\" /></asset>\n    <asset name=\"Ubuntu_C_ttf\" mimeType=\"application/octet-stream\"><param key=\"source\" value=\"Ubuntu-C.ttf\" /></asset>\n    <asset name=\"Ubuntu_I_ttf\" mimeType=\"application/octet-stream\"><param key=\"source\" value=\"Ubuntu-I.ttf\" /></asset>\n    <asset name=\"Ubuntu_R_ttf\" mimeType=\"application/octet-stream\"><param key=\"source\" value=\"Ubuntu-R.ttf\" /></asset>\n    <asset name=\"Volter_Bol_ttf\" mimeType=\"application/octet-stream\"><param key=\"source\" value=\"Volter_Bol.ttf\" /></asset>\n    <asset name=\"Volter_latin2_baseline_ttf\" mimeType=\"application/octet-stream\"><param key=\"source\" value=\"Volter_latin2_baseline.ttf\" /></asset>\n    <asset name=\"flags_icon_selected_png\" mimeType=\"image/png\"><param key=\"source\" value=\"flags/flags_icon_selected.png\" /></asset>\n    <asset name=\"flag_icons_de_png\" mimeType=\"image/png\"><param key=\"source\" value=\"flags/flag_icons_de.png\" /></asset>\n    <asset name=\"flag_icons_dev_png\" mimeType=\"image/png\"><param key=\"source\" value=\"flags/flag_icons_dev.png\" /></asset>\n    <asset name=\"flag_icons_en_png\" mimeType=\"image/png\"><param key=\"source\" value=\"flags/flag_icons_en.png\" /></asset>\n    <asset name=\"flag_icons_es_png\" mimeType=\"image/png\"><param key=\"source\" value=\"flags/flag_icons_es.png\" /></asset>\n    <asset name=\"flag_icons_fi_png\" mimeType=\"image/png\"><param key=\"source\" value=\"flags/flag_icons_fi.png\" /></asset>\n    <asset name=\"flag_icons_fr_png\" mimeType=\"image/png\"><param key=\"source\" value=\"flags/flag_icons_fr.png\" /></asset>\n    <asset name=\"flag_icons_it_png\" mimeType=\"image/png\"><param key=\"source\" value=\"flags/flag_icons_it.png\" /></asset>\n    <asset name=\"flag_icons_nl_png\" mimeType=\"image/png\"><param key=\"source\" value=\"flags/flag_icons_nl.png\" /></asset>\n    <asset name=\"flag_icons_pt_png\" mimeType=\"image/png\"><param key=\"source\" value=\"flags/flag_icons_pt.png\" /></asset>\n    <asset name=\"flag_icons_tr_png\" mimeType=\"image/png\"><param key=\"source\" value=\"flags/flag_icons_tr.png\" /></asset>\n    <asset name=\"splash_bg_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/splash_bg.png\" /></asset>\n    <asset name=\"splash_top_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/splash_top.png\" /></asset>\n    <asset name=\"userphoto_1_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_1.png\" /></asset>\n    <asset name=\"userphoto_2_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_2.png\" /></asset>\n    <asset name=\"userphoto_3_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_3.png\" /></asset>\n    <asset name=\"userphoto_4_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_4.png\" /></asset>\n    <asset name=\"userphoto_5_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_5.png\" /></asset>\n    <asset name=\"userphoto_6_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_6.png\" /></asset>\n    <asset name=\"userphoto_7_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_7.png\" /></asset>\n    <asset name=\"userphoto_8_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_8.png\" /></asset>\n    <asset name=\"userphoto_9_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_9.png\" /></asset>\n    <asset name=\"userphoto_10_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_10.png\" /></asset>\n    <asset name=\"userphoto_11_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_11.png\" /></asset>\n    <asset name=\"userphoto_12_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_12.png\" /></asset>\n    <asset name=\"userphoto_13_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_13.png\" /></asset>\n    <asset name=\"userphoto_14_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_14.png\" /></asset>\n    <asset name=\"userphoto_15_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_15.png\" /></asset>\n    <asset name=\"userphoto_16_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_16.png\" /></asset>\n    <asset name=\"userphoto_17_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_17.png\" /></asset>\n    <asset name=\"userphoto_18_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_18.png\" /></asset>\n    <asset name=\"userphoto_19_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_19.png\" /></asset>\n    <asset name=\"userphoto_20_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_20.png\" /></asset>\n    <asset name=\"userphoto_21_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_21.png\" /></asset>\n    <asset name=\"userphoto_22_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_22.png\" /></asset>\n    <asset name=\"userphoto_23_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_23.png\" /></asset>\n    <asset name=\"userphoto_24_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_24.png\" /></asset>\n    <asset name=\"userphoto_25_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_25.png\" /></asset>\n    <asset name=\"userphoto_26_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_26.png\" /></asset>\n    <asset name=\"userphoto_27_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_27.png\" /></asset>\n    <asset name=\"userphoto_28_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_28.png\" /></asset>\n    <asset name=\"userphoto_29_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_29.png\" /></asset>\n    <asset name=\"userphoto_30_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_30.png\" /></asset>\n    <asset name=\"userphoto_31_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_31.png\" /></asset>\n    <asset name=\"userphoto_32_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_32.png\" /></asset>\n    <asset name=\"userphoto_33_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_33.png\" /></asset>\n    <asset name=\"userphoto_34_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_34.png\" /></asset>\n    <asset name=\"userphoto_35_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_35.png\" /></asset>\n    <asset name=\"userphoto_36_png\" mimeType=\"image/png\"><param key=\"source\" value=\"splash/userphoto_36.png\" /></asset>\n  </assets>\n</library>\n",
+  "entries": [
+    {
+      "name": "avatar_glow_png",
+      "mimeType": "image/png",
+      "offset": 0,
+      "storedLength": 43928,
+      "originalLength": 43966,
+      "compression": "deflate"
+    },
+    {
+      "name": "avatar_halo_png",
+      "mimeType": "image/png",
+      "offset": 43928,
+      "storedLength": 11894,
+      "originalLength": 11894,
+      "compression": "none"
+    },
+    {
+      "name": "figuredata_new_xml",
+      "mimeType": "text/xml",
+      "offset": 55822,
+      "storedLength": 6613,
+      "originalLength": 65579,
+      "compression": "deflate"
+    },
+    {
+      "name": "habbo_logo_png",
+      "mimeType": "image/png",
+      "offset": 62435,
+      "storedLength": 467,
+      "originalLength": 467,
+      "compression": "none"
+    },
+    {
+      "name": "hitchTile_png",
+      "mimeType": "image/png",
+      "offset": 62902,
+      "storedLength": 2802,
+      "originalLength": 2802,
+      "compression": "none"
+    },
+    {
+      "name": "loader_progress_back_png",
+      "mimeType": "image/png",
+      "offset": 65704,
+      "storedLength": 1261,
+      "originalLength": 15056,
+      "compression": "deflate"
+    },
+    {
+      "name": "loader_progress_fill_png",
+      "mimeType": "image/png",
+      "offset": 66965,
+      "storedLength": 1173,
+      "originalLength": 14988,
+      "compression": "deflate"
+    },
+    {
+      "name": "logo_new_png",
+      "mimeType": "image/png",
+      "offset": 68138,
+      "storedLength": 20784,
+      "originalLength": 93835,
+      "compression": "deflate"
+    },
+    {
+      "name": "placeholder_avatar_png",
+      "mimeType": "image/png",
+      "offset": 88922,
+      "storedLength": 1168,
+      "originalLength": 1168,
+      "compression": "none"
+    },
+    {
+      "name": "Ubuntu_B_ttf",
+      "mimeType": "application/octet-stream",
+      "offset": 90090,
+      "storedLength": 106442,
+      "originalLength": 178116,
+      "compression": "deflate"
+    },
+    {
+      "name": "Ubuntu_BI_ttf",
+      "mimeType": "application/octet-stream",
+      "offset": 196532,
+      "storedLength": 115111,
+      "originalLength": 194416,
+      "compression": "deflate"
+    },
+    {
+      "name": "Ubuntu_C_ttf",
+      "mimeType": "application/octet-stream",
+      "offset": 311643,
+      "storedLength": 180044,
+      "originalLength": 369840,
+      "compression": "deflate"
+    },
+    {
+      "name": "Ubuntu_I_ttf",
+      "mimeType": "application/octet-stream",
+      "offset": 491687,
+      "storedLength": 138410,
+      "originalLength": 233632,
+      "compression": "deflate"
+    },
+    {
+      "name": "Ubuntu_R_ttf",
+      "mimeType": "application/octet-stream",
+      "offset": 630097,
+      "storedLength": 123697,
+      "originalLength": 203148,
+      "compression": "deflate"
+    },
+    {
+      "name": "Volter_Bol_ttf",
+      "mimeType": "application/octet-stream",
+      "offset": 753794,
+      "storedLength": 16525,
+      "originalLength": 54420,
+      "compression": "deflate"
+    },
+    {
+      "name": "Volter_latin2_baseline_ttf",
+      "mimeType": "application/octet-stream",
+      "offset": 770319,
+      "storedLength": 32130,
+      "originalLength": 124712,
+      "compression": "deflate"
+    },
+    {
+      "name": "flags_icon_selected_png",
+      "mimeType": "image/png",
+      "offset": 802449,
+      "storedLength": 9199,
+      "originalLength": 9336,
+      "compression": "deflate"
+    },
+    {
+      "name": "flag_icons_de_png",
+      "mimeType": "image/png",
+      "offset": 811648,
+      "storedLength": 1244,
+      "originalLength": 1643,
+      "compression": "deflate"
+    },
+    {
+      "name": "flag_icons_dev_png",
+      "mimeType": "image/png",
+      "offset": 812892,
+      "storedLength": 2409,
+      "originalLength": 2741,
+      "compression": "deflate"
+    },
+    {
+      "name": "flag_icons_en_png",
+      "mimeType": "image/png",
+      "offset": 815301,
+      "storedLength": 2262,
+      "originalLength": 2584,
+      "compression": "deflate"
+    },
+    {
+      "name": "flag_icons_es_png",
+      "mimeType": "image/png",
+      "offset": 817563,
+      "storedLength": 1264,
+      "originalLength": 1658,
+      "compression": "deflate"
+    },
+    {
+      "name": "flag_icons_fi_png",
+      "mimeType": "image/png",
+      "offset": 818827,
+      "storedLength": 1393,
+      "originalLength": 1783,
+      "compression": "deflate"
+    },
+    {
+      "name": "flag_icons_fr_png",
+      "mimeType": "image/png",
+      "offset": 820220,
+      "storedLength": 1330,
+      "originalLength": 1743,
+      "compression": "deflate"
+    },
+    {
+      "name": "flag_icons_it_png",
+      "mimeType": "image/png",
+      "offset": 821550,
+      "storedLength": 1349,
+      "originalLength": 1745,
+      "compression": "deflate"
+    },
+    {
+      "name": "flag_icons_nl_png",
+      "mimeType": "image/png",
+      "offset": 822899,
+      "storedLength": 1277,
+      "originalLength": 1679,
+      "compression": "deflate"
+    },
+    {
+      "name": "flag_icons_pt_png",
+      "mimeType": "image/png",
+      "offset": 824176,
+      "storedLength": 1792,
+      "originalLength": 2096,
+      "compression": "deflate"
+    },
+    {
+      "name": "flag_icons_tr_png",
+      "mimeType": "image/png",
+      "offset": 825968,
+      "storedLength": 1554,
+      "originalLength": 1868,
+      "compression": "deflate"
+    },
+    {
+      "name": "splash_bg_png",
+      "mimeType": "image/png",
+      "offset": 827522,
+      "storedLength": 36988,
+      "originalLength": 37760,
+      "compression": "deflate"
+    },
+    {
+      "name": "splash_top_png",
+      "mimeType": "image/png",
+      "offset": 864510,
+      "storedLength": 8664,
+      "originalLength": 9516,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_1_png",
+      "mimeType": "image/png",
+      "offset": 873174,
+      "storedLength": 39224,
+      "originalLength": 39550,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_2_png",
+      "mimeType": "image/png",
+      "offset": 912398,
+      "storedLength": 50689,
+      "originalLength": 51296,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_3_png",
+      "mimeType": "image/png",
+      "offset": 963087,
+      "storedLength": 74455,
+      "originalLength": 75174,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_4_png",
+      "mimeType": "image/png",
+      "offset": 1037542,
+      "storedLength": 79499,
+      "originalLength": 79722,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_5_png",
+      "mimeType": "image/png",
+      "offset": 1117041,
+      "storedLength": 65792,
+      "originalLength": 66319,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_6_png",
+      "mimeType": "image/png",
+      "offset": 1182833,
+      "storedLength": 52213,
+      "originalLength": 52295,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_7_png",
+      "mimeType": "image/png",
+      "offset": 1235046,
+      "storedLength": 230654,
+      "originalLength": 231069,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_8_png",
+      "mimeType": "image/png",
+      "offset": 1465700,
+      "storedLength": 116401,
+      "originalLength": 116973,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_9_png",
+      "mimeType": "image/png",
+      "offset": 1582101,
+      "storedLength": 70962,
+      "originalLength": 71198,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_10_png",
+      "mimeType": "image/png",
+      "offset": 1653063,
+      "storedLength": 74768,
+      "originalLength": 75137,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_11_png",
+      "mimeType": "image/png",
+      "offset": 1727831,
+      "storedLength": 205868,
+      "originalLength": 206615,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_12_png",
+      "mimeType": "image/png",
+      "offset": 1933699,
+      "storedLength": 168786,
+      "originalLength": 168807,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_13_png",
+      "mimeType": "image/png",
+      "offset": 2102485,
+      "storedLength": 72452,
+      "originalLength": 72795,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_14_png",
+      "mimeType": "image/png",
+      "offset": 2174937,
+      "storedLength": 45229,
+      "originalLength": 45729,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_15_png",
+      "mimeType": "image/png",
+      "offset": 2220166,
+      "storedLength": 76291,
+      "originalLength": 76596,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_16_png",
+      "mimeType": "image/png",
+      "offset": 2296457,
+      "storedLength": 49775,
+      "originalLength": 50459,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_17_png",
+      "mimeType": "image/png",
+      "offset": 2346232,
+      "storedLength": 31310,
+      "originalLength": 31571,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_18_png",
+      "mimeType": "image/png",
+      "offset": 2377542,
+      "storedLength": 30247,
+      "originalLength": 30618,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_19_png",
+      "mimeType": "image/png",
+      "offset": 2407789,
+      "storedLength": 112938,
+      "originalLength": 112964,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_20_png",
+      "mimeType": "image/png",
+      "offset": 2520727,
+      "storedLength": 24204,
+      "originalLength": 24523,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_21_png",
+      "mimeType": "image/png",
+      "offset": 2544931,
+      "storedLength": 219134,
+      "originalLength": 219134,
+      "compression": "none"
+    },
+    {
+      "name": "userphoto_22_png",
+      "mimeType": "image/png",
+      "offset": 2764065,
+      "storedLength": 212368,
+      "originalLength": 212456,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_23_png",
+      "mimeType": "image/png",
+      "offset": 2976433,
+      "storedLength": 179014,
+      "originalLength": 179017,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_24_png",
+      "mimeType": "image/png",
+      "offset": 3155447,
+      "storedLength": 107322,
+      "originalLength": 107957,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_25_png",
+      "mimeType": "image/png",
+      "offset": 3262769,
+      "storedLength": 66967,
+      "originalLength": 67523,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_26_png",
+      "mimeType": "image/png",
+      "offset": 3329736,
+      "storedLength": 70691,
+      "originalLength": 71203,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_27_png",
+      "mimeType": "image/png",
+      "offset": 3400427,
+      "storedLength": 40965,
+      "originalLength": 41297,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_28_png",
+      "mimeType": "image/png",
+      "offset": 3441392,
+      "storedLength": 69977,
+      "originalLength": 70598,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_29_png",
+      "mimeType": "image/png",
+      "offset": 3511369,
+      "storedLength": 60147,
+      "originalLength": 60438,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_30_png",
+      "mimeType": "image/png",
+      "offset": 3571516,
+      "storedLength": 64316,
+      "originalLength": 64956,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_31_png",
+      "mimeType": "image/png",
+      "offset": 3635832,
+      "storedLength": 104804,
+      "originalLength": 105281,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_32_png",
+      "mimeType": "image/png",
+      "offset": 3740636,
+      "storedLength": 141786,
+      "originalLength": 142159,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_33_png",
+      "mimeType": "image/png",
+      "offset": 3882422,
+      "storedLength": 14193,
+      "originalLength": 15049,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_34_png",
+      "mimeType": "image/png",
+      "offset": 3896615,
+      "storedLength": 50479,
+      "originalLength": 50988,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_35_png",
+      "mimeType": "image/png",
+      "offset": 3947094,
+      "storedLength": 236610,
+      "originalLength": 236665,
+      "compression": "deflate"
+    },
+    {
+      "name": "userphoto_36_png",
+      "mimeType": "image/png",
+      "offset": 4183704,
+      "storedLength": 108059,
+      "originalLength": 109124,
+      "compression": "deflate"
+    }
+  ]
+}

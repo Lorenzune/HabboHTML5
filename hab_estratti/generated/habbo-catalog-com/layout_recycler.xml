@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="ctlg_recycler" width="360" height="460" version="0.1" uid="86F809E6-1654-A04C-ACE1-02F053FEB739">
+  <window>
+    <container x="0" y="0" width="360" height="460" params="2064" style="0" name="ctlg_recycler" color="0x2121ffffff" background="true">
+      <children>
+        <static_bitmap x="81" y="58" width="198" height="257" params="16" style="0" name="recycle_machine">
+          <variables>
+            <var key="asset_uri" value="recycler_furnimatic_machine" type="String"/>
+            <var key="pivot_point" value="center" type="String"/>
+            <var key="stretched_x" value="false" type="Boolean"/>
+            <var key="stretched_y" value="false" type="Boolean"/>
+            <var key="fit_size_to_contents" value="true" type="Boolean"/>
+          </variables>
+        </static_bitmap>
+        <static_bitmap x="51" y="5" width="258" height="55" params="16" style="0">
+          <variables>
+            <var key="asset_uri" value="recycler_furnimatic_title" type="String"/>
+            <var key="pivot_point" value="center" type="String"/>
+            <var key="stretched_x" value="false" type="Boolean"/>
+            <var key="stretched_y" value="false" type="Boolean"/>
+            <var key="fit_size_to_contents" value="true" type="Boolean"/>
+          </variables>
+        </static_bitmap>
+        <container x="0" y="258" width="360" height="208" params="1040" style="0" name="recyclerWidget" tags="E"/>
+      </children>
+    </container>
+  </window>
+</layout>

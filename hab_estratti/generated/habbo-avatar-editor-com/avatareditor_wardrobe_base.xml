@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="avatareditor_wardrobe" width="182" height="490" version="0.1" uid="9300B5F6-3E4C-450E-4C01-89AC951D2546">
+  <window>
+    <container x="0" y="0" width="182" height="490" params="16" style="0">
+      <children>
+        <background x="0" y="0" width="1" height="490" params="16" style="0" name="splitter" color="0xffff000000" background="true"/>
+        <itemlist_horizontal x="0" y="0" width="182" height="490" params="4194320" style="3">
+          <children>
+            <container x="0" y="0" width="6" height="30" params="16" style="3" name="spacing"/>
+            <container x="6" y="0" width="168" height="490" params="16" style="3" name="main_container">
+              <children>
+                <itemlist_horizontal x="0" y="19" width="186" height="23" params="786640" style="3" name="header">
+                  <children>
+                    <text x="0" y="0" width="158" height="17" params="16" style="3" caption="%24%7Bavatareditor.wardrobe.title%7D">
+                      <variables>
+                        <var key="auto_size" value="left" type="String"/>
+                        <var key="text_color" value="0x83827e" type="hex"/>
+                        <var key="text_style" value="u_bold" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                    <icon x="168" y="0" width="18" height="15" params="16" style="13" name="hc_icon"/>
+                  </children>
+                  <variables>
+                    <var key="spacing" value="10" type="int"/>
+                    <var key="resize_on_item_update" value="true" type="Boolean"/>
+                  </variables>
+                </itemlist_horizontal>
+                <border x="15" y="53" width="139" height="418" params="4194320" style="4" color="0x0cbcbcb">
+                  <children>
+                    <itemlist_horizontal x="4" y="0" width="132" height="418" params="4194320" style="3" name="slots_columns_list">
+                      <children>
+                        <itemlist_vertical x="0" y="3" width="64" height="412" params="786449" style="0" name="slots_column_template">
+                          <children>
+                            <container x="0" y="0" width="56" height="56" params="16" style="100" name="slot_template">
+                              <children>
+                                <border x="29" y="3" width="24" height="50" params="16" style="3" color="0x0666666" blend="0.3"/>
+                                <region x="3" y="3" width="22" height="26" params="17" style="3" name="set_button" treshold="0">
+                                  <children>
+                                    <static_bitmap x="0" y="9" width="22" height="15" params="16" style="5">
+                                      <variables>
+                                        <var key="asset_uri" value="icons_forward_small" type="String"/>
+                                        <var key="pivot_point" value="center" type="String"/>
+                                        <var key="stretched_x" value="false" type="Boolean"/>
+                                        <var key="stretched_y" value="false" type="Boolean"/>
+                                      </variables>
+                                    </static_bitmap>
+                                  </children>
+                                </region>
+                                <region x="2" y="28" width="22" height="26" params="17" style="3" name="get_button" treshold="0">
+                                  <children>
+                                    <static_bitmap x="0" y="0" width="22" height="15" params="16" style="4">
+                                      <variables>
+                                        <var key="asset_uri" value="icons_back_small" type="String"/>
+                                        <var key="pivot_point" value="center" type="String"/>
+                                        <var key="stretched_x" value="false" type="Boolean"/>
+                                        <var key="stretched_y" value="false" type="Boolean"/>
+                                      </variables>
+                                    </static_bitmap>
+                                  </children>
+                                </region>
+                                <bitmap x="30" y="4" width="22" height="48" params="16" style="0" name="image"/>
+                                <region x="29" y="3" width="24" height="50" params="17" style="3" name="get_figure" treshold="0"/>
+                              </children>
+                            </container>
+                          </children>
+                          <variables>
+                            <var key="spacing" value="3" type="int"/>
+                          </variables>
+                        </itemlist_vertical>
+                        <itemlist_vertical x="68" y="3" width="64" height="412" params="786449" style="0" name="another_column">
+                          <variables>
+                            <var key="spacing" value="3" type="int"/>
+                          </variables>
+                        </itemlist_vertical>
+                      </children>
+                      <variables>
+                        <var key="spacing" value="4" type="int"/>
+                        <var key="resize_on_item_update" value="true" type="Boolean"/>
+                      </variables>
+                    </itemlist_horizontal>
+                  </children>
+                </border>
+              </children>
+            </container>
+            <container x="174" y="0" width="8" height="30" params="16" style="3" name="spacing"/>
+          </children>
+          <variables>
+            <var key="resize_on_item_update" value="true" type="Boolean"/>
+          </variables>
+        </itemlist_horizontal>
+      </children>
+    </container>
+  </window>
+</layout>

@@ -1,0 +1,23 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "PlaceHolderFurniture",
+  "entries": [
+    {
+      "name": "PlaceHolderFurniture.json",
+      "mimeType": "application/json",
+      "offset": 0,
+      "storedLength": 364,
+      "originalLength": 916,
+      "compression": "deflate"
+    },
+    {
+      "name": "PlaceHolderFurniture.png",
+      "mimeType": "image/png",
+      "offset": 364,
+      "storedLength": 878,
+      "originalLength": 878,
+      "compression": "none"
+    }
+  ]
+}

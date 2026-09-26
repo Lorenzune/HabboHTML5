@@ -1,0 +1,255 @@
+{
+  "formatVersion": 2,
+  "hostApiVersion": 1,
+  "releaseId": "56_classic-js-806140824ba8",
+  "protocol": "FLASH29",
+  "host": "habbo-electron-launcher",
+  "entrypoint": "habbo-air/index.html",
+  "files": [
+    {
+      "path": "generated/habbo-air.hab",
+      "size": 4293842,
+      "sha256": "78b01fe637127de7fca380d1c430d75238a0edf8680b31e4e70c404f8d7cd59e"
+    },
+    {
+      "path": "generated/habbo-avatar-editor-com.hab",
+      "size": 7524,
+      "sha256": "b5af1d9dd55437c76c08b22d9ada1dd38b9928962ea1801c897639dfe7b1951f"
+    },
+    {
+      "path": "generated/habbo-avatar-render-lib.hab",
+      "size": 50818,
+      "sha256": "1ae55499cc9f89ea46dfd41f7bee48bdca3f9568361ba700ab0e5dc3e371d06d"
+    },
+    {
+      "path": "generated/habbo-catalog-com.hab",
+      "size": 160786,
+      "sha256": "d269742203c03ff3fa8ae4930a3c375bba5f54a4e4356168835db695989a5c93"
+    },
+    {
+      "path": "generated/habbo-communication-demo-com.hab",
+      "size": 3157,
+      "sha256": "e58087fe63e35d6af5b12131dce70224b1bc720c55e19ef07c7596de19eaa254"
+    },
+    {
+      "path": "generated/habbo-configuration-com.hab",
+      "size": 4925,
+      "sha256": "e6ce7d61804bf9f4600548548f77446ff09f0e1b1bcde9c3a0cbb23b4cddac1b"
+    },
+    {
+      "path": "generated/habbo-free-flow-chat-com.hab",
+      "size": 461114,
+      "sha256": "8f7e9a9964e0e0a9b14e9330fc7213076854c023c1bb8ebd567c9e1551b33d3b"
+    },
+    {
+      "path": "generated/habbo-friend-bar-com.hab",
+      "size": 104806,
+      "sha256": "70a984656ee7bf3a57f5c7928dbec3229bba028315e2988395dab698b4703b82"
+    },
+    {
+      "path": "generated/habbo-friend-list-com.hab",
+      "size": 13642,
+      "sha256": "a748dce3d7a0f5bacf03aafdba006c6a9fa1ee82bdc72de099541b2ea22f50a2"
+    },
+    {
+      "path": "generated/habbo-games-com.hab",
+      "size": 447426,
+      "sha256": "18690577794bdfb5a324fb601136b70db55ad1cfaa064ad59d00f5ae57780eb8"
+    },
+    {
+      "path": "generated/habbo-groups-com.hab",
+      "size": 24017,
+      "sha256": "322f007e8ce5155b44301fe08d8d4c5b7da0fd0a6aa60c776a7b90f0c1d52b84"
+    },
+    {
+      "path": "generated/habbo-help-com.hab",
+      "size": 53483,
+      "sha256": "6b4051f712f654a3b378ca381f40e8c6ef0516d0fc89da51449238987073c4a7"
+    },
+    {
+      "path": "generated/habbo-inventory-com.hab",
+      "size": 494925,
+      "sha256": "dcc14784b325be959ed7f08008b383e2878fc967007ff58f04f6efea115f7c19"
+    },
+    {
+      "path": "generated/habbo-loader-ui.hab",
+      "size": 56362,
+      "sha256": "ccaba0030db88c3bcfd9addd1e5d1529e248efe112a3ae5f7e15115ae269ac6e"
+    },
+    {
+      "path": "generated/habbo-localization-com.hab",
+      "size": 42749,
+      "sha256": "1cc382336329a4c576610c78dac9bb414a7a2b22176b224eacd2221355b2668f"
+    },
+    {
+      "path": "generated/habbo-messenger-com.hab",
+      "size": 6928,
+      "sha256": "6624fafbd703aac5832cd85202019ce25bbcdbb4e19c74fa1982fa124b736ba7"
+    },
+    {
+      "path": "generated/habbo-moderation-com.hab",
+      "size": 14918,
+      "sha256": "c3ff6b32867622bbe4b03693066274ed1ce0a84abf6c396da687171dda42d031"
+    },
+    {
+      "path": "generated/habbo-navigator-com.hab",
+      "size": 50628,
+      "sha256": "17b340342f5d54d79e820e7b55e438af1b84a6973d5fa9b005028263c9d60781"
+    },
+    {
+      "path": "generated/habbo-new-navigator.hab",
+      "size": 7754,
+      "sha256": "b2c0603dedadc6c93949fa4722a6aa00c79e20020da891cff4422a4c83dce643"
+    },
+    {
+      "path": "generated/habbo-notifications-com.hab",
+      "size": 38835,
+      "sha256": "1b3ad9e4dd22bbd1511b2a347ba5e99567728c3a5e8f2efcfd7ea354ef706ee1"
+    },
+    {
+      "path": "generated/habbo-quest-engine-com.hab",
+      "size": 34805,
+      "sha256": "d341e161fd23ddb455ce373818347c0262ff301c4540ac0cf143c7ae978796ce"
+    },
+    {
+      "path": "generated/habbo-room-content.hab",
+      "size": 144441,
+      "sha256": "baccce430ef2f2680e08a2dd6d41de0b71d654d9064acaa24d5480c092c5ef66"
+    },
+    {
+      "path": "generated/habbo-room-object-visualization-lib.hab",
+      "size": 66888,
+      "sha256": "e483c01dfc1505ec01b7575a62f3e7f3daf97a4f1fa6abffa0024f257471cfd6"
+    },
+    {
+      "path": "generated/habbo-room-ui-com.hab",
+      "size": 266430,
+      "sha256": "a18f4a05690fe01f30b9e409d8e006cf987f49e182f9019d6f1ee2e9558a591a"
+    },
+    {
+      "path": "generated/habbo-sound-manager-flash10-com.hab",
+      "size": 591232,
+      "sha256": "7bac49308118069073f038a5fa4e61d325df150fc37711b704443370f2318a65"
+    },
+    {
+      "path": "generated/habbo-toolbar-com.hab",
+      "size": 40451,
+      "sha256": "2d19f9180c20a7d74d9ba28dbe397c3e8366318fdf991ce68e972bba5d71986f"
+    },
+    {
+      "path": "generated/habbo-user-defined-room-events-com.hab",
+      "size": 52401,
+      "sha256": "1747f62fcfd5d0b04cab29b75be1da1d9b10f4c65ff3c17a8b7431aef21206d4"
+    },
+    {
+      "path": "generated/habbo-window-manager-com.hab",
+      "size": 5955700,
+      "sha256": "46cbdfc2561923ca92f5155c22487639c0bd49f1682a6133d489f0c39a61ee14"
+    },
+    {
+      "path": "habbo-air/HabboAirLauncher.app.js",
+      "size": 9175794,
+      "sha256": "f834e4052bd1b485a074444a1705730cb5717178e3d675c33f1a6e6ee6d0f138"
+    },
+    {
+      "path": "habbo-air/assets/icons/icon128.png",
+      "size": 1337,
+      "sha256": "aae05764879b16a5b4476a5ddc5696c15fb235d699b41967788433eb1e10c388"
+    },
+    {
+      "path": "habbo-air/assets/icons/icon16.png",
+      "size": 1015,
+      "sha256": "0a2fd5df8b646db464afb18a5e2a49b7df0c11323bd594cd65f86fe3457fcc01"
+    },
+    {
+      "path": "habbo-air/assets/icons/icon256.png",
+      "size": 1000,
+      "sha256": "514f589871d59a91365c80938eb92b16d8898b3d9c1a31ef8398ab9a4d0aca7e"
+    },
+    {
+      "path": "habbo-air/assets/icons/icon32.png",
+      "size": 1042,
+      "sha256": "ba023aa6a71860426e03c16ee944fac8742dfff70befdff657556f8fac8fe094"
+    },
+    {
+      "path": "habbo-air/assets/icons/icon48.png",
+      "size": 1065,
+      "sha256": "c22e391b0054ebe6178520d0ab6ecc0b28de36d232b66a6eb21a5723a3908508"
+    },
+    {
+      "path": "habbo-air/favicon.ico",
+      "size": 5545,
+      "sha256": "dad135c71de6b8ae2a281448bd06ce542168a39cdf21717b3820eee72c864428"
+    },
+    {
+      "path": "habbo-air/index.html",
+      "size": 2337,
+      "sha256": "78d54b5e12bfd29a7fc8bc82b8fa7b8a4d5c33b096b0d00d9db658d01992d8e1"
+    },
+    {
+      "path": "habbo-air/launcher-build-info.json",
+      "size": 51,
+      "sha256": "3c2b0c18b1b153b83cd9dc2f3b478146bc8b1d3675e8813241a24e8b9c6648e5"
+    },
+    {
+      "path": "habbo-air/launcher-config.json",
+      "size": 1777,
+      "sha256": "aa22ef0bc94393c83e06f3f03195dc99a0e728a6dd545549eb4953d3c2533a35"
+    },
+    {
+      "path": "habbo-air/manifest.webmanifest",
+      "size": 713,
+      "sha256": "6beccaa476b7c56e763c33b848985577ca327894e1bfcb7c93186a1a57abb3bd"
+    },
+    {
+      "path": "local_include/Dance1.hab",
+      "size": 449,
+      "sha256": "818718a7b565fb4c35adbe720c64f2a5185585811a612ab50d0a59233bd5f3ef"
+    },
+    {
+      "path": "local_include/Dance2.hab",
+      "size": 491,
+      "sha256": "6f8dc22b2eef4d8a44f96da36a575acfbffa018359da72133e910638049353cc"
+    },
+    {
+      "path": "local_include/Dance3.hab",
+      "size": 556,
+      "sha256": "72fec69cb3c021a7be46db2c2cb84ea4a7ac0c8b997cefcecc9ff52785f50a43"
+    },
+    {
+      "path": "local_include/Dance4.hab",
+      "size": 661,
+      "sha256": "27a87f54680bfb1d44f3bde84003d085b18ef49be23e6a49c0a9276669488eb4"
+    },
+    {
+      "path": "local_include/HabboRoomContent.hab",
+      "size": 144441,
+      "sha256": "baccce430ef2f2680e08a2dd6d41de0b71d654d9064acaa24d5480c092c5ef66"
+    },
+    {
+      "path": "local_include/PlaceHolderFurniture.hab",
+      "size": 1449,
+      "sha256": "96e36e8fc365cbae237b6cda9b8257b66405c16470816705d6cac6ac73b1948e"
+    },
+    {
+      "path": "local_include/PlaceHolderPet.hab",
+      "size": 4881,
+      "sha256": "08828bb38145bb8d73bb1a3b464cac35c8e5df34adaa5385e4ec9af3d6ceedf3"
+    },
+    {
+      "path": "local_include/PlaceHolderWallItem.hab",
+      "size": 1163,
+      "sha256": "8825402f7a4f73ca39b7f3671366cd1df21844d9a1271a966c04579497b95605"
+    },
+    {
+      "path": "local_include/SelectionArrow.hab",
+      "size": 1679,
+      "sha256": "969ea44e56b0d5cd7c5346120c7c72e11478380393cb89fb0b4fa6af1e65ce48"
+    },
+    {
+      "path": "local_include/TileCursor.hab",
+      "size": 2343,
+      "sha256": "1d4f3a5c10764eb457ce32329673b149c44da8886890e5d519471a3193cd1470"
+    }
+  ]
+}

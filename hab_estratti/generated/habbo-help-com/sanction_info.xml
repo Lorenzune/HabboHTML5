@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="sanction_info" width="450" height="359" version="0.1" uid="B731B49E-3D33-41FA-85A4-AFCD93632C4E">
+  <window>
+    <frame x="11" y="3" width="450" height="359" params="35073" style="3" caption="%24%7Bhelp.sanction.info.title%7D" color="0xff418db0" height_min="350" height_max="360">
+      <filters>
+        <DropShadowFilter distance="4" alpha="0.34901960784313724" blurX="4" blurY="4"/>
+      </filters>
+      <children>
+        <scrollable_itemlist_vertical x="10" y="10" width="426" height="254" params="16" style="3" name="main_contents_list">
+          <children>
+            <text x="0" y="0" width="404" height="19" params="8536080" style="3" name="sanction_info" caption="sanction%20info" clipping="false">
+              <variables>
+                <var key="auto_size" value="left" type="String"/>
+                <var key="font_size" value="14" type="uint"/>
+                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                <var key="multiline" value="true" type="Boolean"/>
+                <var key="word_wrap" value="true" type="Boolean"/>
+                <var key="spacing" value="0" type="Number"/>
+                <var key="leading" value="0" type="Number"/>
+              </variables>
+            </text>
+            <border x="0" y="19" width="404" height="1" params="16" style="3" name="divider" color="0x00"/>
+          </children>
+        </scrollable_itemlist_vertical>
+        <container x="10" y="270" width="426" height="40" params="16" style="3" name="bottom">
+          <children>
+            <text x="0" y="0" width="420" height="17" params="16" style="3" name="sanction_info_disclaimer" caption="%24%7Bhelp.sanction.info.disclaimer%7D">
+              <variables>
+                <var key="text_color" value="0x696969" type="hex"/>
+                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                <var key="spacing" value="0" type="Number"/>
+                <var key="leading" value="0" type="Number"/>
+              </variables>
+            </text>
+            <itemlist_horizontal x="0" y="19" width="420" height="30" params="16" style="3">
+              <children>
+                <static_bitmap x="0" y="0" width="22" height="19" params="16" style="3">
+                  <variables>
+                    <var key="asset_uri" value="icons_link_icon" type="String"/>
+                    <var key="stretched_x" value="false" type="Boolean"/>
+                    <var key="stretched_y" value="false" type="Boolean"/>
+                  </variables>
+                </static_bitmap>
+                <link x="22" y="0" width="389" height="30" params="147457" style="3" name="faq_link" caption="%24%7Bhelp.main.faq.link.text%7D" treshold="0">
+                  <variables>
+                    <var key="font_size" value="14" type="uint"/>
+                    <var key="text_style" value="u_bold" type="String"/>
+                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                    <var key="underline" value="true" type="Boolean"/>
+                    <var key="spacing" value="0" type="Number"/>
+                    <var key="leading" value="0" type="Number"/>
+                  </variables>
+                </link>
+              </children>
+              <variables>
+              </variables>
+            </itemlist_horizontal>
+            <button_thick x="327" y="0" width="99" height="40" params="393297" style="5" name="ok_button" caption="%24%7Bgeneric.got.it%7D" color="0x09900" width_min="99"/>
+          </children>
+        </container>
+      </children>
+    </frame>
+  </window>
+</layout>

@@ -1,0 +1,528 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboUserDefinedRoomEventsCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n\n\t<component class=\"com.sulake.bootstrap.HabboUserDefinedRoomEventsBootstrap\" version=\"0.0\" >\n\t  <interface iid=\"com.sulake.iid.IIDHabboUserDefinedRoomEvents\" />\n\t  <assets>\n        <asset mimeType=\"text/xml\" name=\"chest_generic_xml\"/>\n        <asset mimeType=\"text/xml\" name=\"coins_chest_contents_xml\"/>\n        <asset mimeType=\"text/xml\" name=\"furni_chest_contents_xml\"/>\n        <asset mimeType=\"text/xml\" name=\"chest_upgrade_xml\"/>\n        <asset mimeType=\"text/xml\" name=\"chest_wired_upgrade_xml\"/>\n\n        <asset mimeType=\"text/xml\" name=\"transaction_overview_xml\"/>\n        <asset mimeType=\"text/xml\" name=\"transaction_details_xml\"/>\n\n        <asset mimeType=\"text/xml\" name=\"wired_menu_view_xml\"/>\n        <asset mimeType=\"text/xml\" name=\"error_info_view_xml\"/>\n        <asset mimeType=\"text/xml\" name=\"variable_value_info_bubble_xml\"/>\n        <asset mimeType=\"text/xml\" name=\"variables_management_overview_xml\"/>\n        <asset mimeType=\"text/xml\" name=\"variables_management_detail_xml\"/>\n        <asset mimeType=\"text/xml\" name=\"logs_overview_xml\"/>\n\n        <asset mimeType=\"image/png\" name=\"icon_action_png\"/>\n        <asset mimeType=\"image/png\" name=\"icon_addon_png\"/>\n        <asset mimeType=\"image/png\" name=\"icon_condition_png\"/>\n        <asset mimeType=\"image/png\" name=\"icon_trigger_png\"/>\n        <asset mimeType=\"image/png\" name=\"icon_selector_png\"/>\n        <asset mimeType=\"image/png\" name=\"icon_variable_png\"/>\n        <asset mimeType=\"image/png\" name=\"icon_source_context_png\"/>\n        <asset mimeType=\"image/png\" name=\"icon_source_global_png\"/>\n        <asset mimeType=\"image/png\" name=\"icon_source_furni_png\"/>\n        <asset mimeType=\"image/png\" name=\"icon_source_users_png\"/>\n        <asset mimeType=\"image/png\" name=\"move_0_png\"/>\n        <asset mimeType=\"image/png\" name=\"move_1_png\"/>\n        <asset mimeType=\"image/png\" name=\"move_2_png\"/>\n        <asset mimeType=\"image/png\" name=\"move_3_png\"/>\n        <asset mimeType=\"image/png\" name=\"move_4_png\"/>\n        <asset mimeType=\"image/png\" name=\"move_5_png\"/>\n        <asset mimeType=\"image/png\" name=\"move_6_png\"/>\n        <asset mimeType=\"image/png\" name=\"move_7_png\"/>\n        <asset mimeType=\"image/png\" name=\"move_diag_png\"/>\n        <asset mimeType=\"image/png\" name=\"move_rnd_png\"/>\n        <asset mimeType=\"image/png\" name=\"move_vrt_png\"/>\n        <asset mimeType=\"image/png\" name=\"rotate_ccw_png\"/>\n        <asset mimeType=\"image/png\" name=\"rotate_cw_png\"/>\n        <asset mimeType=\"image/png\" name=\"slider_bg_png\"/>\n        <asset mimeType=\"image/png\" name=\"slider_obj_png\"/>\n        <asset mimeType=\"image/png\" name=\"floor_editor_tile_base_png\"/>\n        <asset mimeType=\"image/png\" name=\"floor_editor_tile_entry_png\"/>\n        <asset mimeType=\"image/png\" name=\"fp_border_N_png\"/>\n        <asset mimeType=\"image/png\" name=\"fp_border_NE_png\"/>\n        <asset mimeType=\"image/png\" name=\"fp_border_E_png\"/>\n        <asset mimeType=\"image/png\" name=\"fp_border_SE_png\"/>\n        <asset mimeType=\"image/png\" name=\"fp_border_S_png\"/>\n        <asset mimeType=\"image/png\" name=\"fp_border_SW_png\"/>\n        <asset mimeType=\"image/png\" name=\"fp_border_W_png\"/>\n        <asset mimeType=\"image/png\" name=\"fp_border_NW_png\"/>\n\n        <asset mimeType=\"text/xml\" name=\"wired_style_volter_xml\" />\n        <asset mimeType=\"text/xml\" name=\"wired_style_volter_yellow_xml\" />\n        <asset mimeType=\"text/xml\" name=\"wired_style_volter_green_xml\" />\n        <asset mimeType=\"text/xml\" name=\"wired_style_volter_blue_xml\" />\n        <asset mimeType=\"text/xml\" name=\"wired_style_illumina_xml\" />\n        <asset mimeType=\"text/xml\" name=\"wired_style_ubuntu_xml\" />\n        <asset mimeType=\"text/xml\" name=\"horizontal_list_view_xml\" />\n        <asset mimeType=\"text/xml\" name=\"vertical_list_view_xml\" />\n        <asset mimeType=\"text/xml\" name=\"vertical_scroll_list_view_xml\" />\n        <asset mimeType=\"text/xml\" name=\"radio_group_view_xml\" />\n        <asset mimeType=\"text/xml\" name=\"search_tree_dropdown_xml\" />\n        <asset mimeType=\"text/xml\" name=\"growing_container_view_xml\" />\n        <asset mimeType=\"text/xml\" name=\"container_view_xml\" />\n        <asset mimeType=\"text/xml\" name=\"border_view_xml\" />\n        <asset mimeType=\"text/xml\" name=\"static_bitmap_view_xml\" />\n        <asset mimeType=\"text/xml\" name=\"bitmap_wrapper_view_xml\" />\n        <asset mimeType=\"text/xml\" name=\"avatar_image_view_xml\" />\n      </assets>\n\t </component>\n</manifest>\n",
+  "entries": [
+    {
+      "name": "chest_generic_xml",
+      "mimeType": "text/xml",
+      "offset": 0,
+      "storedLength": 2799,
+      "originalLength": 32237,
+      "compression": "deflate"
+    },
+    {
+      "name": "coins_chest_contents_xml",
+      "mimeType": "text/xml",
+      "offset": 2799,
+      "storedLength": 914,
+      "originalLength": 4005,
+      "compression": "deflate"
+    },
+    {
+      "name": "furni_chest_contents_xml",
+      "mimeType": "text/xml",
+      "offset": 3713,
+      "storedLength": 1871,
+      "originalLength": 11308,
+      "compression": "deflate"
+    },
+    {
+      "name": "chest_upgrade_xml",
+      "mimeType": "text/xml",
+      "offset": 5584,
+      "storedLength": 1692,
+      "originalLength": 12354,
+      "compression": "deflate"
+    },
+    {
+      "name": "chest_wired_upgrade_xml",
+      "mimeType": "text/xml",
+      "offset": 7276,
+      "storedLength": 1420,
+      "originalLength": 8044,
+      "compression": "deflate"
+    },
+    {
+      "name": "transaction_overview_xml",
+      "mimeType": "text/xml",
+      "offset": 8696,
+      "storedLength": 1431,
+      "originalLength": 10516,
+      "compression": "deflate"
+    },
+    {
+      "name": "transaction_details_xml",
+      "mimeType": "text/xml",
+      "offset": 10127,
+      "storedLength": 2794,
+      "originalLength": 37278,
+      "compression": "deflate"
+    },
+    {
+      "name": "wired_menu_view_xml",
+      "mimeType": "text/xml",
+      "offset": 12921,
+      "storedLength": 4985,
+      "originalLength": 73748,
+      "compression": "deflate"
+    },
+    {
+      "name": "error_info_view_xml",
+      "mimeType": "text/xml",
+      "offset": 17906,
+      "storedLength": 684,
+      "originalLength": 2198,
+      "compression": "deflate"
+    },
+    {
+      "name": "variable_value_info_bubble_xml",
+      "mimeType": "text/xml",
+      "offset": 18590,
+      "storedLength": 520,
+      "originalLength": 1490,
+      "compression": "deflate"
+    },
+    {
+      "name": "variables_management_overview_xml",
+      "mimeType": "text/xml",
+      "offset": 19110,
+      "storedLength": 1806,
+      "originalLength": 12946,
+      "compression": "deflate"
+    },
+    {
+      "name": "variables_management_detail_xml",
+      "mimeType": "text/xml",
+      "offset": 20916,
+      "storedLength": 1686,
+      "originalLength": 9656,
+      "compression": "deflate"
+    },
+    {
+      "name": "logs_overview_xml",
+      "mimeType": "text/xml",
+      "offset": 22602,
+      "storedLength": 1655,
+      "originalLength": 12135,
+      "compression": "deflate"
+    },
+    {
+      "name": "icon_action_png",
+      "mimeType": "image/png",
+      "offset": 24257,
+      "storedLength": 213,
+      "originalLength": 213,
+      "compression": "none"
+    },
+    {
+      "name": "icon_addon_png",
+      "mimeType": "image/png",
+      "offset": 24470,
+      "storedLength": 231,
+      "originalLength": 231,
+      "compression": "none"
+    },
+    {
+      "name": "icon_condition_png",
+      "mimeType": "image/png",
+      "offset": 24701,
+      "storedLength": 178,
+      "originalLength": 178,
+      "compression": "none"
+    },
+    {
+      "name": "icon_trigger_png",
+      "mimeType": "image/png",
+      "offset": 24879,
+      "storedLength": 202,
+      "originalLength": 202,
+      "compression": "none"
+    },
+    {
+      "name": "icon_selector_png",
+      "mimeType": "image/png",
+      "offset": 25081,
+      "storedLength": 310,
+      "originalLength": 310,
+      "compression": "none"
+    },
+    {
+      "name": "icon_variable_png",
+      "mimeType": "image/png",
+      "offset": 25391,
+      "storedLength": 283,
+      "originalLength": 283,
+      "compression": "none"
+    },
+    {
+      "name": "icon_source_context_png",
+      "mimeType": "image/png",
+      "offset": 25674,
+      "storedLength": 208,
+      "originalLength": 208,
+      "compression": "none"
+    },
+    {
+      "name": "icon_source_global_png",
+      "mimeType": "image/png",
+      "offset": 25882,
+      "storedLength": 193,
+      "originalLength": 193,
+      "compression": "none"
+    },
+    {
+      "name": "icon_source_furni_png",
+      "mimeType": "image/png",
+      "offset": 26075,
+      "storedLength": 236,
+      "originalLength": 236,
+      "compression": "none"
+    },
+    {
+      "name": "icon_source_users_png",
+      "mimeType": "image/png",
+      "offset": 26311,
+      "storedLength": 218,
+      "originalLength": 218,
+      "compression": "none"
+    },
+    {
+      "name": "move_0_png",
+      "mimeType": "image/png",
+      "offset": 26529,
+      "storedLength": 153,
+      "originalLength": 153,
+      "compression": "none"
+    },
+    {
+      "name": "move_1_png",
+      "mimeType": "image/png",
+      "offset": 26682,
+      "storedLength": 232,
+      "originalLength": 232,
+      "compression": "none"
+    },
+    {
+      "name": "move_2_png",
+      "mimeType": "image/png",
+      "offset": 26914,
+      "storedLength": 153,
+      "originalLength": 153,
+      "compression": "none"
+    },
+    {
+      "name": "move_3_png",
+      "mimeType": "image/png",
+      "offset": 27067,
+      "storedLength": 244,
+      "originalLength": 244,
+      "compression": "none"
+    },
+    {
+      "name": "move_4_png",
+      "mimeType": "image/png",
+      "offset": 27311,
+      "storedLength": 153,
+      "originalLength": 153,
+      "compression": "none"
+    },
+    {
+      "name": "move_5_png",
+      "mimeType": "image/png",
+      "offset": 27464,
+      "storedLength": 231,
+      "originalLength": 231,
+      "compression": "none"
+    },
+    {
+      "name": "move_6_png",
+      "mimeType": "image/png",
+      "offset": 27695,
+      "storedLength": 154,
+      "originalLength": 154,
+      "compression": "none"
+    },
+    {
+      "name": "move_7_png",
+      "mimeType": "image/png",
+      "offset": 27849,
+      "storedLength": 235,
+      "originalLength": 235,
+      "compression": "none"
+    },
+    {
+      "name": "move_diag_png",
+      "mimeType": "image/png",
+      "offset": 28084,
+      "storedLength": 164,
+      "originalLength": 164,
+      "compression": "none"
+    },
+    {
+      "name": "move_rnd_png",
+      "mimeType": "image/png",
+      "offset": 28248,
+      "storedLength": 156,
+      "originalLength": 156,
+      "compression": "none"
+    },
+    {
+      "name": "move_vrt_png",
+      "mimeType": "image/png",
+      "offset": 28404,
+      "storedLength": 161,
+      "originalLength": 161,
+      "compression": "none"
+    },
+    {
+      "name": "rotate_ccw_png",
+      "mimeType": "image/png",
+      "offset": 28565,
+      "storedLength": 173,
+      "originalLength": 173,
+      "compression": "none"
+    },
+    {
+      "name": "rotate_cw_png",
+      "mimeType": "image/png",
+      "offset": 28738,
+      "storedLength": 174,
+      "originalLength": 174,
+      "compression": "none"
+    },
+    {
+      "name": "slider_bg_png",
+      "mimeType": "image/png",
+      "offset": 28912,
+      "storedLength": 185,
+      "originalLength": 185,
+      "compression": "none"
+    },
+    {
+      "name": "slider_obj_png",
+      "mimeType": "image/png",
+      "offset": 29097,
+      "storedLength": 184,
+      "originalLength": 184,
+      "compression": "none"
+    },
+    {
+      "name": "floor_editor_tile_base_png",
+      "mimeType": "image/png",
+      "offset": 29281,
+      "storedLength": 220,
+      "originalLength": 220,
+      "compression": "none"
+    },
+    {
+      "name": "floor_editor_tile_entry_png",
+      "mimeType": "image/png",
+      "offset": 29501,
+      "storedLength": 203,
+      "originalLength": 203,
+      "compression": "none"
+    },
+    {
+      "name": "fp_border_N_png",
+      "mimeType": "image/png",
+      "offset": 29704,
+      "storedLength": 220,
+      "originalLength": 220,
+      "compression": "none"
+    },
+    {
+      "name": "fp_border_NE_png",
+      "mimeType": "image/png",
+      "offset": 29924,
+      "storedLength": 190,
+      "originalLength": 190,
+      "compression": "none"
+    },
+    {
+      "name": "fp_border_E_png",
+      "mimeType": "image/png",
+      "offset": 30114,
+      "storedLength": 197,
+      "originalLength": 197,
+      "compression": "none"
+    },
+    {
+      "name": "fp_border_SE_png",
+      "mimeType": "image/png",
+      "offset": 30311,
+      "storedLength": 182,
+      "originalLength": 182,
+      "compression": "none"
+    },
+    {
+      "name": "fp_border_S_png",
+      "mimeType": "image/png",
+      "offset": 30493,
+      "storedLength": 194,
+      "originalLength": 194,
+      "compression": "none"
+    },
+    {
+      "name": "fp_border_SW_png",
+      "mimeType": "image/png",
+      "offset": 30687,
+      "storedLength": 171,
+      "originalLength": 171,
+      "compression": "none"
+    },
+    {
+      "name": "fp_border_W_png",
+      "mimeType": "image/png",
+      "offset": 30858,
+      "storedLength": 184,
+      "originalLength": 184,
+      "compression": "none"
+    },
+    {
+      "name": "fp_border_NW_png",
+      "mimeType": "image/png",
+      "offset": 31042,
+      "storedLength": 180,
+      "originalLength": 180,
+      "compression": "none"
+    },
+    {
+      "name": "wired_style_volter_xml",
+      "mimeType": "text/xml",
+      "offset": 31222,
+      "storedLength": 2417,
+      "originalLength": 20695,
+      "compression": "deflate"
+    },
+    {
+      "name": "wired_style_volter_yellow_xml",
+      "mimeType": "text/xml",
+      "offset": 33639,
+      "storedLength": 2387,
+      "originalLength": 20314,
+      "compression": "deflate"
+    },
+    {
+      "name": "wired_style_volter_green_xml",
+      "mimeType": "text/xml",
+      "offset": 36026,
+      "storedLength": 2383,
+      "originalLength": 20328,
+      "compression": "deflate"
+    },
+    {
+      "name": "wired_style_volter_blue_xml",
+      "mimeType": "text/xml",
+      "offset": 38409,
+      "storedLength": 2382,
+      "originalLength": 20327,
+      "compression": "deflate"
+    },
+    {
+      "name": "wired_style_illumina_xml",
+      "mimeType": "text/xml",
+      "offset": 40791,
+      "storedLength": 2521,
+      "originalLength": 19045,
+      "compression": "deflate"
+    },
+    {
+      "name": "wired_style_ubuntu_xml",
+      "mimeType": "text/xml",
+      "offset": 43312,
+      "storedLength": 3061,
+      "originalLength": 23263,
+      "compression": "deflate"
+    },
+    {
+      "name": "horizontal_list_view_xml",
+      "mimeType": "text/xml",
+      "offset": 46373,
+      "storedLength": 271,
+      "originalLength": 450,
+      "compression": "deflate"
+    },
+    {
+      "name": "vertical_list_view_xml",
+      "mimeType": "text/xml",
+      "offset": 46644,
+      "storedLength": 266,
+      "originalLength": 447,
+      "compression": "deflate"
+    },
+    {
+      "name": "vertical_scroll_list_view_xml",
+      "mimeType": "text/xml",
+      "offset": 46910,
+      "storedLength": 271,
+      "originalLength": 451,
+      "compression": "deflate"
+    },
+    {
+      "name": "radio_group_view_xml",
+      "mimeType": "text/xml",
+      "offset": 47181,
+      "storedLength": 258,
+      "originalLength": 450,
+      "compression": "deflate"
+    },
+    {
+      "name": "search_tree_dropdown_xml",
+      "mimeType": "text/xml",
+      "offset": 47439,
+      "storedLength": 1620,
+      "originalLength": 11296,
+      "compression": "deflate"
+    },
+    {
+      "name": "growing_container_view_xml",
+      "mimeType": "text/xml",
+      "offset": 49059,
+      "storedLength": 198,
+      "originalLength": 279,
+      "compression": "deflate"
+    },
+    {
+      "name": "container_view_xml",
+      "mimeType": "text/xml",
+      "offset": 49257,
+      "storedLength": 188,
+      "originalLength": 269,
+      "compression": "deflate"
+    },
+    {
+      "name": "border_view_xml",
+      "mimeType": "text/xml",
+      "offset": 49445,
+      "storedLength": 185,
+      "originalLength": 250,
+      "compression": "deflate"
+    },
+    {
+      "name": "static_bitmap_view_xml",
+      "mimeType": "text/xml",
+      "offset": 49630,
+      "storedLength": 278,
+      "originalLength": 536,
+      "compression": "deflate"
+    },
+    {
+      "name": "bitmap_wrapper_view_xml",
+      "mimeType": "text/xml",
+      "offset": 49908,
+      "storedLength": 307,
+      "originalLength": 587,
+      "compression": "deflate"
+    },
+    {
+      "name": "avatar_image_view_xml",
+      "mimeType": "text/xml",
+      "offset": 50215,
+      "storedLength": 303,
+      "originalLength": 645,
+      "compression": "deflate"
+    }
+  ]
+}

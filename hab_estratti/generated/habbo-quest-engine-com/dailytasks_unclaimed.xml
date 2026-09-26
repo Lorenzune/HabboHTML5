@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="dailytasks_unclaimed" width="452" height="426" version="0.1" uid="17D8CEDC-0D3E-6BBE-2AA0-8FBA3869B2DB">
+  <window>
+    <frame x="43" y="37" width="452" height="426" params="1073774593" style="3" name="dailytasks_frame" caption="%24%7Bdailytasks.unclaimed%7D" color="0xff418db0" width_min="452" width_max="452">
+      <filters>
+        <DropShadowFilter distance="4" alpha="0.34901960784313724" blurX="4" blurY="4"/>
+      </filters>
+      <children>
+        <itemlist x="0" y="0" width="452" height="383" params="147472" style="3" name="main_cont" width_min="452" width_max="452">
+          <children>
+            <container x="0" y="0" width="452" height="6" params="16" style="3" name="spacing"/>
+            <scrollable_itemlist_vertical x="13" y="10" width="426" height="373" params="144" style="3" name="tasks_list" width_min="426" width_max="426" height_min="373" height_max="500">
+              <variables>
+                <var key="spacing" value="8" type="int"/>
+              </variables>
+            </scrollable_itemlist_vertical>
+          </children>
+          <variables>
+            <var key="spacing" value="4" type="int"/>
+            <var key="resize_on_item_update" value="true" type="Boolean"/>
+          </variables>
+        </itemlist>
+      </children>
+      <variables>
+        <var key="margin_left" value="0" type="int"/>
+        <var key="margin_top" value="33" type="int"/>
+        <var key="margin_right" value="0" type="int"/>
+        <var key="margin_bottom" value="0" type="int"/>
+      </variables>
+    </frame>
+  </window>
+</layout>

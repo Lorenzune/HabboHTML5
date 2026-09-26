@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="memenu_chat_settings" width="242" height="248" version="0.1" uid="CB7CD72A-0BD2-F31C-8301-F7D423827C00">
+  <window>
+    <border x="1" y="1" width="242" height="248" params="1" style="6" name="word_filter_border" color="0x079756e">
+      <children>
+        <text x="45" y="5" width="153" height="17" params="786640" style="0" name="word_filter_title" caption="%24%7Bword_filter.settings.title%7D">
+          <variables>
+            <var key="auto_size" value="center" type="String"/>
+            <var key="text_color" value="0xffffff" type="hex"/>
+            <var key="text_style" value="u_regular" type="String"/>
+            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+            <var key="spacing" value="0" type="Number"/>
+            <var key="leading" value="0" type="Number"/>
+          </variables>
+        </text>
+        <container x="40" y="24" width="162" height="1" params="786640" style="0" name="line" color="0xffff2f2f2f" background="true"/>
+        <itemlist_vertical x="10" y="35" width="222" height="203" params="8388624" style="3">
+          <children>
+            <boxsizer x="0" y="0" width="222" height="24" params="262145" style="3">
+              <children>
+                <border x="0" y="0" width="152" height="24" params="144" style="3" width_max="160">
+                  <children>
+                    <input x="3" y="4" width="146" height="17" params="1" style="3" name="add_word_input" width_min="146" width_max="146">
+                      <variables>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="max_lines" value="1" type="int"/>
+                        <var key="overflow_replace" value="..." type="String"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </input>
+                  </children>
+                </border>
+                <button x="157" y="0" width="66" height="24" params="393361" style="3" name="add_btn" caption="%24%7Bnavigator.roomsettings.roomfilter.addword%7D" width_min="66" width_max="66"/>
+              </children>
+              <variables>
+                <var key="spacing" value="5" type="int"/>
+                <var key="padding_horizontal" value="0" type="int"/>
+                <var key="padding_vertical" value="0" type="int"/>
+              </variables>
+            </boxsizer>
+            <border x="0" y="31" width="222" height="100" params="16" style="3" name="wordlist_border">
+              <children>
+                <scrollable_itemlist_vertical x="3" y="4" width="215" height="93" params="2192" style="100" name="wordlist">
+                  <children>
+                    <container x="0" y="0" width="213" height="18" params="16" style="3" name="word_filter_list_item" color="0x0ff00ff" visible="false" background="true">
+                      <children>
+                        <region x="0" y="0" width="222" height="18" params="17" style="3" name="bg_region" background="true" treshold="0"/>
+                        <text x="0" y="0" width="222" height="18" params="16" style="3" name="text" caption="BadWord">
+                          <variables>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </container>
+                  </children>
+                </scrollable_itemlist_vertical>
+              </children>
+            </border>
+            <button x="0" y="138" width="210" height="30" params="131089" style="3" name="remove_btn" caption="%24%7Bnavigator.roomsettings.roomfilter.removeword%7D" width_max="210"/>
+            <button x="0" y="175" width="60" height="28" params="1180785" style="3" name="back_btn" caption="%24%7Bwidget.memenu.back%7D" width_min="60" width_max="60"/>
+          </children>
+          <variables>
+            <var key="spacing" value="7" type="int"/>
+            <var key="resize_on_item_update" value="true" type="Boolean"/>
+          </variables>
+        </itemlist_vertical>
+      </children>
+    </border>
+  </window>
+</layout>

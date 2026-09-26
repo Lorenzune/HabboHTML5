@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="recyclerWidget" width="360" height="208" version="0.1" uid="42A8CD3C-D4DB-1675-0867-0E48E09DA095">
+  <window>
+    <container x="0" y="0" width="360" height="208" params="16" style="0">
+      <children>
+        <container x="0" y="0" width="360" height="208" params="2192" style="0" name="normal">
+          <children>
+            <itemlist_horizontal x="19" y="7" width="42" height="30" params="786448" style="3">
+              <children>
+                <text x="0" y="6" width="17" height="17" params="16" style="3" name="ducket_cost" caption="50">
+                  <variables>
+                    <var key="auto_size" value="left" type="String"/>
+                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                    <var key="bold" value="true" type="Boolean"/>
+                    <var key="spacing" value="0" type="Number"/>
+                    <var key="leading" value="0" type="Number"/>
+                  </variables>
+                </text>
+                <container x="17" y="0" width="2" height="30" params="16" style="3" name="spacer"/>
+                <icon x="19" y="4" width="23" height="21" params="16" style="32" name="ducket_icon"/>
+                <container x="42" y="0" width="10" height="30" params="16" style="3" name="spacer" visible="false"/>
+              </children>
+              <variables>
+                <var key="resize_on_item_update" value="true" type="Boolean"/>
+              </variables>
+            </itemlist_horizontal>
+            <button x="19" y="41" width="194" height="30" params="131089" style="6" name="recycler_recycle" caption="%24%7Bcatalog.recycler.button.recycle%7D" color="0x0aa00">
+              <variables>
+                <var key="text_style" value="button_shiny_regular" type="String"/>
+              </variables>
+            </button>
+            <container x="16" y="85" width="185" height="156" params="1168" style="3" name="slots_wrapper">
+              <children>
+                <container x="0" y="0" width="185" height="115" params="144" style="3" name="layout">
+                  <children>
+                    <static_bitmap x="0" y="0" width="15" height="115" params="16" style="3">
+                      <variables>
+                        <var key="asset_uri" value="recycler_furnimatic_container_left" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                        <var key="fit_size_to_contents" value="true" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                    <static_bitmap x="15" y="0" width="158" height="115" params="144" style="3">
+                      <variables>
+                        <var key="asset_uri" value="recycler_furnimatic_container_slice" type="String"/>
+                      </variables>
+                    </static_bitmap>
+                    <static_bitmap x="172" y="0" width="13" height="115" params="80" style="3">
+                      <variables>
+                        <var key="asset_uri" value="recycler_furnimatic_container_right" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                        <var key="fit_size_to_contents" value="true" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                  </children>
+                </container>
+                <container x="21" y="16" width="145" height="124" params="16" style="3" name="slots">
+                  <children>
+                    <bitmap x="0" y="0" width="34" height="34" params="17" style="0" name="slot_bg_1"/>
+                    <bitmap x="37" y="0" width="34" height="34" params="17" style="0" name="slot_bg_2"/>
+                    <bitmap x="74" y="0" width="34" height="34" params="17" style="0" name="slot_bg_3"/>
+                    <bitmap x="111" y="0" width="34" height="34" params="17" style="0" name="slot_bg_4"/>
+                    <bitmap x="0" y="0" width="34" height="34" params="17" style="0" name="slot_img_1"/>
+                    <bitmap x="37" y="0" width="34" height="34" params="17" style="0" name="slot_img_2"/>
+                    <bitmap x="74" y="0" width="34" height="34" params="17" style="0" name="slot_img_3"/>
+                    <bitmap x="111" y="0" width="34" height="34" params="17" style="0" name="slot_img_4"/>
+                    <bitmap x="0" y="44" width="34" height="34" params="17" style="0" name="slot_bg_5"/>
+                    <bitmap x="37" y="44" width="34" height="34" params="17" style="0" name="slot_bg_6"/>
+                    <bitmap x="74" y="44" width="34" height="34" params="17" style="0" name="slot_bg_7"/>
+                    <bitmap x="111" y="44" width="34" height="34" params="17" style="0" name="slot_bg_8"/>
+                    <bitmap x="0" y="44" width="34" height="34" params="17" style="0" name="slot_img_5"/>
+                    <bitmap x="37" y="44" width="34" height="34" params="17" style="0" name="slot_img_6"/>
+                    <bitmap x="74" y="44" width="34" height="34" params="17" style="0" name="slot_img_7"/>
+                    <bitmap x="111" y="44" width="34" height="34" params="17" style="0" name="slot_img_8"/>
+                    <bitmap x="0" y="90" width="34" height="34" params="17" style="0" name="slot_bg_9"/>
+                    <bitmap x="37" y="90" width="34" height="34" params="17" style="0" name="slot_bg_10"/>
+                    <bitmap x="74" y="90" width="34" height="34" params="17" style="0" name="slot_bg_11"/>
+                    <bitmap x="111" y="90" width="34" height="34" params="17" style="0" name="slot_bg_12"/>
+                    <bitmap x="0" y="90" width="34" height="34" params="17" style="0" name="slot_img_9"/>
+                    <bitmap x="37" y="90" width="34" height="34" params="17" style="0" name="slot_img_10"/>
+                    <bitmap x="74" y="90" width="34" height="34" params="17" style="0" name="slot_img_11"/>
+                    <bitmap x="111" y="90" width="34" height="34" params="17" style="0" name="slot_img_12"/>
+                  </children>
+                </container>
+              </children>
+            </container>
+            <container x="214" y="85" width="123" height="115" params="1168" style="3" name="indicator_wrapper" width_min="123" width_max="123" height_min="115" height_max="115">
+              <children>
+                <container x="0" y="0" width="123" height="115" params="144" style="3" name="layout">
+                  <children>
+                    <static_bitmap x="0" y="0" width="15" height="115" params="16" style="3">
+                      <variables>
+                        <var key="asset_uri" value="recycler_furnimatic_container_left" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                        <var key="fit_size_to_contents" value="true" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                    <static_bitmap x="15" y="0" width="96" height="115" params="144" style="3">
+                      <variables>
+                        <var key="asset_uri" value="recycler_furnimatic_container_slice" type="String"/>
+                      </variables>
+                    </static_bitmap>
+                    <static_bitmap x="110" y="0" width="13" height="115" params="80" style="3">
+                      <variables>
+                        <var key="asset_uri" value="recycler_furnimatic_container_right" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                        <var key="fit_size_to_contents" value="true" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                  </children>
+                </container>
+                <container x="1" y="0" width="123" height="115" params="16" style="3" name="indicator">
+                  <children>
+                    <static_bitmap x="0" y="0" width="122" height="115" params="16" style="3" name="indicator">
+                      <variables>
+                        <var key="asset_uri" value="recycler_furnimatic_indicator" type="String"/>
+                        <var key="pivot_point" value="center" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                    <container x="37" y="43" width="50" height="50" params="16" style="3" name="indicator_pointer">
+                      <children>
+                        <static_bitmap x="0" y="0" width="50" height="50" params="16" style="3" name="pointer_arrow">
+                          <variables>
+                            <var key="asset_uri" value="recycler_furnimatic_indicator_pointer_arrow" type="String"/>
+                            <var key="pivot_point" value="center" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                            <var key="fit_size_to_contents" value="true" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                        <static_bitmap x="0" y="0" width="50" height="50" params="16" style="3" name="pointer_base">
+                          <variables>
+                            <var key="asset_uri" value="recycler_furnimatic_indicator_pointer_base" type="String"/>
+                            <var key="pivot_point" value="center" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                            <var key="fit_size_to_contents" value="true" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                      </children>
+                    </container>
+                    <region x="29" y="91" width="65" height="17" params="934097" style="3" name="abort_region" visible="false" treshold="0" height_min="17" height_max="17">
+                      <children>
+                        <text x="0" y="0" width="65" height="15" params="16" style="3" caption="%24%7Bcatalog.recycler.button.abort%7D">
+                          <variables>
+                            <var key="auto_size" value="left" type="String"/>
+                            <var key="font_size" value="10" type="uint"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="underline" value="true" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </region>
+                  </children>
+                </container>
+              </children>
+            </container>
+          </children>
+        </container>
+        <border x="0" y="0" width="360" height="208" params="2192" style="3" name="disabled_border" color="0x0888888" blend="0.7" visible="false" treshold="0">
+          <children>
+            <static_bitmap x="235" y="99" width="118" height="176" params="1040" style="3">
+              <variables>
+                <var key="asset_uri" value="image_frank_dont_know" type="String"/>
+                <var key="stretched_x" value="false" type="Boolean"/>
+                <var key="stretched_y" value="false" type="Boolean"/>
+                <var key="fit_size_to_contents" value="true" type="Boolean"/>
+              </variables>
+            </static_bitmap>
+            <bubble x="107" y="98" width="155" height="81" params="1025" style="7">
+              <children>
+                <text x="4" y="4" width="107" height="57" params="8388624" style="3" caption="%24%7Brecycler.broken%7D" width_min="107" width_max="107">
+                  <variables>
+                    <var key="auto_size" value="left" type="String"/>
+                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                    <var key="word_wrap" value="true" type="Boolean"/>
+                    <var key="spacing" value="0" type="Number"/>
+                    <var key="leading" value="0" type="Number"/>
+                  </variables>
+                </text>
+                <static_bitmap x="115" y="5" width="20" height="20" params="16" style="3" name="emoji_1">
+                  <variables>
+                    <var key="asset_uri" value="franks_emotions_sad" type="String"/>
+                    <var key="stretched_x" value="false" type="Boolean"/>
+                    <var key="stretched_y" value="false" type="Boolean"/>
+                    <var key="fit_size_to_contents" value="true" type="Boolean"/>
+                  </variables>
+                </static_bitmap>
+              </children>
+              <variables>
+                <var key="margin_left" value="8" type="int"/>
+                <var key="margin_top" value="8" type="int"/>
+                <var key="margin_right" value="8" type="int"/>
+                <var key="margin_bottom" value="8" type="int"/>
+                <var key="direction" value="right" type="String"/>
+              </variables>
+            </bubble>
+            <button x="235" y="11" width="115" height="30" params="393233" style="3" name="pat_frank_btn" caption="%24%7Brecycler.pat_frank%7D">
+              <variables>
+                <var key="text_style" value="button_shiny_regular" type="String"/>
+              </variables>
+            </button>
+            <static_bitmap x="32" y="210" width="40" height="40" params="1040" style="3" name="emoji_2_template">
+              <variables>
+                <var key="asset_uri" value="franks_emotions_heart" type="String"/>
+              </variables>
+            </static_bitmap>
+          </children>
+        </border>
+      </children>
+    </container>
+  </window>
+</layout>

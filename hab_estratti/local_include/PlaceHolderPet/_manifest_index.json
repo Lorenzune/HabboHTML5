@@ -1,0 +1,23 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "PlaceHolderPet",
+  "entries": [
+    {
+      "name": "PlaceHolderPet.json",
+      "mimeType": "application/json",
+      "offset": 0,
+      "storedLength": 582,
+      "originalLength": 2368,
+      "compression": "deflate"
+    },
+    {
+      "name": "PlaceHolderPet.png",
+      "mimeType": "image/png",
+      "offset": 582,
+      "storedLength": 4095,
+      "originalLength": 4095,
+      "compression": "none"
+    }
+  ]
+}

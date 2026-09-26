@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="vault_view" width="422" height="536" version="0.1" uid="844EDD83-D326-C9FB-6A4A-4E194BB1408B">
+  <window>
+    <frame x="0" y="0" width="422" height="536" params="32769" style="3" name="VaultBase" caption="%24%7Bearnings.title%7D" color="0xff418db0">
+      <filters>
+        <DropShadowFilter distance="4" alpha="0.34901960784313724" blurX="4" blurY="4"/>
+      </filters>
+      <children>
+        <container x="1" y="0" width="404" height="491" params="8390672" style="3" name="earningsContentArea">
+          <children>
+            <itemlist_vertical x="2" y="5" width="404" height="441" params="8388624" style="3" name="scrolling_earnings_list">
+              <children>
+                <container x="0" y="0" width="404" height="34" params="16" style="3" name="dailygift_container">
+                  <children>
+                    <border x="179" y="0" width="223" height="34" params="16" style="3" name="dailygift_extended_border" color="0x0bec3c1">
+                      <children>
+                        <icon x="15" y="7" width="30" height="30" params="147472" style="32" name="ducketIcon"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="dailygiftDucketValue" caption="0">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <icon x="85" y="7" width="30" height="30" params="16" style="34" name="creditIcon" visible="false"/>
+                        <text x="110" y="7" width="40" height="30" params="16" style="3" name="dailygiftCreditValue" caption="0" visible="false">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <border x="0" y="0" width="185" height="34" params="16" style="5" name="dailygift_border">
+                      <children>
+                        <static_bitmap x="1" y="1" width="32" height="32" params="16" style="3" name="dailygift_bitmap" tags="%23icon">
+                          <variables>
+                            <var key="asset_uri" value="vault_earnings_icon_dailygift" type="String"/>
+                            <var key="pivot_point" value="center" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                        <text x="34" y="8" width="160" height="30" params="16" style="3" name="dailygift_label" caption="%24%7Bearnings.dailygift.label%7D">
+                          <variables>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <button x="339" y="4" width="60" height="28" params="131089" style="3" name="dailygift_claim_button" caption="%24%7Bearnings.claim.button%7D" width_min="60" width_max="60"/>
+                  </children>
+                </container>
+                <container x="0" y="37" width="404" height="34" params="16" style="3" name="games_container">
+                  <children>
+                    <border x="179" y="0" width="223" height="34" params="16" style="3" name="games_extended_border" color="0x0bec3c1">
+                      <children>
+                        <icon x="15" y="7" width="30" height="30" params="147472" style="32" name="ducketIcon" visible="false"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="gamesDucketValue" caption="0" visible="false">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <icon x="15" y="7" width="30" height="30" params="16" style="34" name="creditIcon"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="gamesCreditValue" caption="0">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <border x="0" y="0" width="185" height="34" params="16" style="5" name="games_border">
+                      <children>
+                        <static_bitmap x="1" y="1" width="32" height="32" params="16" style="3" name="games_bitmap" tags="%23icon">
+                          <variables>
+                            <var key="asset_uri" value="vault_earnings_icon_games" type="String"/>
+                            <var key="pivot_point" value="center" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                        <text x="34" y="8" width="160" height="30" params="16" style="3" name="games_label" caption="%24%7Bearnings.games.label%7D">
+                          <variables>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <button x="339" y="4" width="60" height="28" params="131089" style="3" name="games_claim_button" caption="%24%7Bearnings.claim.button%7D" width_min="60" width_max="60"/>
+                  </children>
+                </container>
+                <container x="0" y="74" width="404" height="34" params="16" style="3" name="wiredchest_container">
+                  <children>
+                    <border x="179" y="0" width="223" height="34" params="16" style="3" name="wiredchest_extended_border" color="0x0bec3c1">
+                      <children>
+                        <icon x="15" y="7" width="30" height="30" params="147472" style="32" name="ducketIcon" visible="false"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="wiredchestDucketValue" caption="0" visible="false">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <icon x="15" y="7" width="30" height="30" params="16" style="34" name="creditIcon"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="wiredchestCreditValue" caption="0">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <border x="0" y="0" width="185" height="34" params="16" style="5" name="wiredchest_border">
+                      <children>
+                        <static_bitmap x="1" y="2" width="32" height="32" params="16" style="3" name="wiredchest_bitmap" tags="%23icon">
+                          <variables>
+                            <var key="asset_uri" value="vault_earnings_icon_chests" type="String"/>
+                            <var key="pivot_point" value="center" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                        <text x="34" y="8" width="160" height="30" params="16" style="3" name="wiredchest_label" caption="%24%7Bearnings.wiredchest.label%7D">
+                          <variables>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <button x="339" y="4" width="60" height="28" params="131089" style="3" name="wiredchest_claim_button" caption="%24%7Bearnings.claim.button%7D" width_min="60" width_max="60"/>
+                  </children>
+                </container>
+                <container x="0" y="111" width="404" height="34" params="16" style="3" name="achievements_container">
+                  <children>
+                    <border x="179" y="0" width="223" height="34" params="16" style="3" name="achievements_extended_border" color="0x0bec3c1">
+                      <children>
+                        <icon x="15" y="7" width="30" height="30" params="147472" style="32" name="ducketIcon"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="achievementsDucketValue" caption="0">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <icon x="85" y="7" width="30" height="30" params="16" style="34" name="creditIcon"/>
+                        <text x="110" y="7" width="40" height="30" params="16" style="3" name="achievementsCreditValue" caption="0">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <border x="0" y="0" width="185" height="34" params="16" style="5" name="achievements_border">
+                      <children>
+                        <static_bitmap x="1" y="1" width="32" height="32" params="16" style="3" name="achievements_bitmap" tags="%23icon">
+                          <variables>
+                            <var key="asset_uri" value="vault_earnings_icon_achievements" type="String"/>
+                            <var key="pivot_point" value="center" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                        <text x="34" y="8" width="160" height="30" params="16" style="3" name="achievements_label" caption="%24%7Bearnings.achievements.label%7D">
+                          <variables>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <button x="339" y="4" width="60" height="28" params="131089" style="3" name="achievements_claim_button" caption="%24%7Bearnings.claim.button%7D" width_min="60" width_max="60"/>
+                  </children>
+                </container>
+                <container x="0" y="148" width="404" height="34" params="16" style="3" name="marketplace_container">
+                  <children>
+                    <border x="179" y="0" width="223" height="34" params="16" style="3" name="marketplace_extended_border" color="0x0bec3c1">
+                      <children>
+                        <icon x="15" y="7" width="30" height="30" params="147472" style="32" name="ducketIcon" visible="false"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="marketplaceDucketValue" caption="0" visible="false">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <icon x="15" y="7" width="30" height="30" params="16" style="34" name="creditIcon"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="marketplaceCreditValue" caption="0">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <border x="0" y="0" width="185" height="34" params="16" style="5" name="marketplace_border">
+                      <children>
+                        <static_bitmap x="1" y="1" width="32" height="32" params="16" style="3" name="marketplace_bitmap" tags="%23icon">
+                          <variables>
+                            <var key="asset_uri" value="vault_earnings_icon_marketplace" type="String"/>
+                            <var key="pivot_point" value="center" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                        <text x="34" y="8" width="160" height="30" params="16" style="3" name="marketplace_label" caption="%24%7Bearnings.marketplace.label%7D">
+                          <variables>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <button x="339" y="4" width="60" height="28" params="131089" style="3" name="marketplace_claim_button" caption="%24%7Bearnings.claim.button%7D" width_min="60" width_max="60"/>
+                  </children>
+                </container>
+                <container x="0" y="185" width="404" height="34" params="16" style="3" name="habboclub_container">
+                  <children>
+                    <border x="179" y="0" width="223" height="34" params="16" style="3" name="habboclub_extended_border" color="0x0bec3c1">
+                      <children>
+                        <icon x="15" y="7" width="30" height="30" params="147472" style="32" name="ducketIcon" visible="false"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="habboclubDucketValue" caption="0" visible="false">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <icon x="15" y="7" width="30" height="30" params="16" style="34" name="creditIcon"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="habboclubCreditValue" caption="0">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <border x="0" y="0" width="185" height="34" params="16" style="5" name="habboclub_border">
+                      <children>
+                        <static_bitmap x="1" y="1" width="32" height="32" params="16" style="3" name="habboclub_bitmap" tags="%23icon">
+                          <variables>
+                            <var key="asset_uri" value="vault_earnings_icon_hcpayday" type="String"/>
+                            <var key="pivot_point" value="center" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                        <text x="34" y="8" width="160" height="30" params="16" style="3" name="habboclub_label" caption="%24%7Bearnings.hc.label%7D">
+                          <variables>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <button x="339" y="4" width="60" height="28" params="131089" style="3" name="habboclub_claim_button" caption="%24%7Bearnings.claim.button%7D" width_min="60" width_max="60"/>
+                  </children>
+                </container>
+                <container x="0" y="222" width="404" height="34" params="16" style="3" name="levelprogression_container">
+                  <children>
+                    <border x="179" y="0" width="223" height="34" params="16" style="3" name="levelprogression_extended_border" color="0x0bec3c1">
+                      <children>
+                        <icon x="15" y="7" width="30" height="30" params="147472" style="32" name="ducketIcon"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="levelprogressionDucketValue" caption="0">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <icon x="85" y="7" width="30" height="30" params="16" style="34" name="creditIcon"/>
+                        <text x="110" y="7" width="40" height="30" params="16" style="3" name="levelprogressionCreditValue" caption="0">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <border x="0" y="0" width="185" height="34" params="16" style="5" name="levelprogression_border">
+                      <children>
+                        <static_bitmap x="1" y="1" width="32" height="32" params="16" style="3" name="levelprogression_bitmap" tags="%23icon">
+                          <variables>
+                            <var key="asset_uri" value="vault_earnings_icon_levelprogression" type="String"/>
+                            <var key="pivot_point" value="center" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                        <text x="34" y="8" width="160" height="30" params="16" style="3" name="levelprogression_label" caption="%24%7Bearnings.levelprogression.label%7D">
+                          <variables>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <button x="339" y="4" width="60" height="28" params="131089" style="3" name="levelprogression_claim_button" caption="%24%7Bearnings.claim.button%7D" width_min="60" width_max="60"/>
+                  </children>
+                </container>
+                <container x="0" y="259" width="404" height="34" params="16" style="3" name="donation_container">
+                  <children>
+                    <border x="179" y="0" width="223" height="34" params="16" style="3" name="donation_extended_border" color="0x0bec3c1">
+                      <children>
+                        <icon x="15" y="7" width="30" height="30" params="147472" style="32" name="ducketIcon" visible="false"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="donationDucketValue" caption="0" visible="false">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <icon x="15" y="7" width="30" height="30" params="16" style="34" name="creditIcon"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="donationCreditValue" caption="0">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <border x="0" y="0" width="185" height="34" params="16" style="5" name="donation_border">
+                      <children>
+                        <static_bitmap x="1" y="1" width="32" height="32" params="16" style="3" name="donation_bitmap" tags="%23icon">
+                          <variables>
+                            <var key="asset_uri" value="vault_earnings_icon_donations" type="String"/>
+                            <var key="pivot_point" value="center" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                        <text x="34" y="8" width="160" height="30" params="16" style="3" name="donation_label" caption="%24%7Bearnings.donations.label%7D">
+                          <variables>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <button x="339" y="4" width="60" height="28" params="131089" style="3" name="donation_claim_button" caption="%24%7Bearnings.claim.button%7D" width_min="60" width_max="60"/>
+                  </children>
+                </container>
+                <container x="0" y="296" width="404" height="34" params="16" style="3" name="bonusbag_container">
+                  <children>
+                    <border x="179" y="0" width="223" height="34" params="16" style="3" name="bonusbag_extended_border" color="0x0bec3c1">
+                      <children>
+                        <icon x="15" y="7" width="30" height="30" params="147472" style="32" name="ducketIcon" visible="false"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="bonusbagDucketValue" caption="0" visible="false">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <icon x="85" y="7" width="30" height="30" params="16" style="34" name="creditIcon" visible="false"/>
+                        <text x="110" y="7" width="40" height="30" params="16" style="3" name="bonusbagCreditValue" caption="0" visible="false">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="bonusbagProductValue" caption="0">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <static_bitmap x="15" y="6" width="30" height="30" params="16" style="3" name="productIcon">
+                          <variables>
+                            <var key="asset_uri" value="vault_icon_present" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                      </children>
+                    </border>
+                    <border x="0" y="0" width="185" height="34" params="16" style="5" name="bonusbag_border">
+                      <children>
+                        <static_bitmap x="1" y="1" width="32" height="32" params="16" style="3" name="bonusbag_bitmap" tags="%23icon">
+                          <variables>
+                            <var key="asset_uri" value="vault_earnings_icon_bonusbag" type="String"/>
+                            <var key="pivot_point" value="center" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                        <text x="34" y="8" width="160" height="30" params="16" style="3" name="bonusbag_label" caption="%24%7Bearnings.bonusbag.label%7D">
+                          <variables>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <button x="339" y="4" width="60" height="28" params="131089" style="3" name="bonusbag_claim_button" caption="%24%7Bearnings.claim.button%7D" width_min="60" width_max="60"/>
+                  </children>
+                </container>
+                <container x="0" y="333" width="404" height="34" params="16" style="3" name="surprise_container">
+                  <children>
+                    <border x="179" y="0" width="223" height="34" params="16" style="3" name="surprise_extended_border" color="0x0bec3c1">
+                      <children>
+                        <icon x="15" y="7" width="30" height="30" params="147472" style="32" name="ducketIcon"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="surpriseDucketValue" caption="0">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <icon x="85" y="7" width="30" height="30" params="16" style="34" name="creditIcon"/>
+                        <text x="110" y="7" width="40" height="30" params="16" style="3" name="surpriseCreditValue" caption="0">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <border x="0" y="0" width="185" height="34" params="16" style="5" name="surprise_border">
+                      <children>
+                        <static_bitmap x="1" y="1" width="32" height="32" params="16" style="3" name="surprise_bitmap" tags="%23icon">
+                          <variables>
+                            <var key="asset_uri" value="vault_earnings_icon_surprise" type="String"/>
+                            <var key="pivot_point" value="center" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                        <text x="34" y="8" width="160" height="30" params="16" style="3" name="surprise_label" caption="%24%7Bearnings.surpriseboxes.label%7D">
+                          <variables>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <button x="339" y="4" width="60" height="28" params="131089" style="3" name="surprise_claim_button" caption="%24%7Bearnings.claim.button%7D" width_min="60" width_max="60"/>
+                  </children>
+                </container>
+                <container x="0" y="370" width="404" height="34" params="16" style="3" name="snowstorm_container">
+                  <children>
+                    <border x="179" y="0" width="223" height="34" params="16" style="3" name="snowstorm_extended_border" color="0x0bec3c1">
+                      <children>
+                        <icon x="15" y="7" width="30" height="30" params="147472" style="32" name="ducketIcon"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="snowstormDucketValue" caption="0">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <icon x="85" y="7" width="30" height="30" params="16" style="34" name="creditIcon" visible="false"/>
+                        <text x="110" y="7" width="40" height="30" params="16" style="3" name="snowstormCreditValue" caption="0" visible="false">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <static_bitmap x="85" y="6" width="30" height="30" params="16" style="3" name="productIcon">
+                          <variables>
+                            <var key="asset_uri" value="vault_icon_present" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                        <text x="110" y="7" width="40" height="30" params="16" style="3" name="snowstormProductValue" caption="0">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <border x="0" y="0" width="185" height="34" params="16" style="5" name="snowstorm_border">
+                      <children>
+                        <static_bitmap x="1" y="1" width="32" height="32" params="16" style="3" name="snowstorm_bitmap" tags="%23icon">
+                          <variables>
+                            <var key="asset_uri" value="vault_earnings_icon_snowstorm" type="String"/>
+                            <var key="pivot_point" value="center" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                        <text x="34" y="8" width="160" height="30" params="16" style="3" name="snowstorm_label" caption="%24%7Bearnings.snowstorm.label%7D">
+                          <variables>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <button x="339" y="4" width="60" height="28" params="131089" style="3" name="snowstorm_claim_button" caption="%24%7Bearnings.claim.button%7D" width_min="60" width_max="60"/>
+                  </children>
+                </container>
+                <container x="0" y="407" width="404" height="34" params="16" style="3" name="agency_container">
+                  <children>
+                    <border x="179" y="0" width="223" height="34" params="16" style="3" name="agency_extended_border" color="0x0bec3c1">
+                      <children>
+                        <icon x="15" y="7" width="30" height="30" params="147472" style="32" name="ducketIcon" visible="false"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="agencyDucketValue" caption="0" visible="false">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <icon x="15" y="7" width="30" height="30" params="16" style="34" name="creditIcon"/>
+                        <text x="40" y="7" width="40" height="30" params="16" style="3" name="agencyCreditValue" caption="0">
+                          <variables>
+                            <var key="font_size" value="14" type="uint"/>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <border x="0" y="0" width="185" height="34" params="16" style="5" name="agency_border">
+                      <children>
+                        <static_bitmap x="1" y="3" width="32" height="32" params="16" style="3" name="agency_bitmap" tags="%23icon">
+                          <variables>
+                            <var key="asset_uri" value="vault_earnings_icon_rpgs" type="String"/>
+                            <var key="pivot_point" value="center" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                        <text x="34" y="8" width="160" height="30" params="16" style="3" name="agency_label" caption="%24%7Bearnings.agency.label%7D">
+                          <variables>
+                            <var key="text_style" value="u_bold" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                    <button x="339" y="4" width="60" height="28" params="131089" style="3" name="agency_claim_button" caption="%24%7Bearnings.claim.button%7D" width_min="60" width_max="60"/>
+                  </children>
+                </container>
+              </children>
+              <variables>
+                <var key="spacing" value="3" type="int"/>
+                <var key="resize_on_item_update" value="true" type="Boolean"/>
+              </variables>
+            </itemlist_vertical>
+            <button_thick x="156" y="457" width="73" height="30" params="918545" style="3" name="claim_all_btn" caption="%24%7Bearning.claim_all%7D"/>
+          </children>
+        </container>
+      </children>
+      <variables>
+        <var key="margin_left" value="6" type="int"/>
+        <var key="margin_top" value="35" type="int"/>
+        <var key="margin_right" value="6" type="int"/>
+        <var key="margin_bottom" value="6" type="int"/>
+      </variables>
+    </frame>
+  </window>
+</layout>

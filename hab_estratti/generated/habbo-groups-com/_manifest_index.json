@@ -1,0 +1,216 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboGroupsCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n    <component class=\"com.sulake.bootstrap.HabboGroupsManagerBootstrap\" version=\"0.0\" >\n        <interface iid=\"com.sulake.iid.IIDHabboGroupsManager\" />\n        <assets>\n            <asset mimeType=\"text/xml\" name=\"group_info_window\" />\n            <asset mimeType=\"text/xml\" name=\"guild_members_window\" />\n            <asset mimeType=\"text/xml\" name=\"group_management_window\" />\n            <asset mimeType=\"text/xml\" name=\"new_extended_profile\" />\n            <asset mimeType=\"text/xml\" name=\"group_entry\" />\n            <asset mimeType=\"text/xml\" name=\"member_entry\" />\n            <asset mimeType=\"text/xml\" name=\"group\" />\n            <asset mimeType=\"text/xml\" name=\"club_required\" />\n            <asset mimeType=\"text/xml\" name=\"group_created_window\" />\n            <asset mimeType=\"text/xml\" name=\"group_room_info\" />\n            <asset mimeType=\"text/xml\" name=\"no_groups\" />\n            <asset mimeType=\"text/xml\" name=\"extended_profile_badge_details\" />\n            <asset mimeType=\"text/xml\" name=\"badge_leaderboard_view\" source=\"badge_leaderboard/main_view.xml\" />\n\n            <!-- Badge editor -->\n            <asset mimeType=\"text/xml\" name=\"badge_color_item\" />\n            <asset mimeType=\"text/xml\" name=\"badge_editor\" />\n            <asset mimeType=\"text/xml\" name=\"badge_layer\" />\n            <asset mimeType=\"text/xml\" name=\"badge_part_item\" />\n\n            <asset mimeType=\"image/png\" name=\"color_chooser_bg\" />\n            <asset mimeType=\"image/png\" name=\"color_chooser_fg\" />\n            <asset mimeType=\"image/png\" name=\"color_chooser_selected\" />\n\n            <asset mimeType=\"image/png\" name=\"part_preview_bg\" />\n            <asset mimeType=\"image/png\" name=\"position_grid\" />\n            <asset mimeType=\"image/png\" name=\"position_picker\" />\n\n            <asset mimeType=\"image/png\" name=\"badge_part_picker\" />\n            <asset mimeType=\"image/png\" name=\"badge_part_empty\" />\n            <asset mimeType=\"image/png\" name=\"badge_part_add\" />\n        </assets>\n    </component>\n</manifest>\n",
+  "entries": [
+    {
+      "name": "group_info_window",
+      "mimeType": "text/xml",
+      "offset": 0,
+      "storedLength": 429,
+      "originalLength": 870,
+      "compression": "deflate"
+    },
+    {
+      "name": "guild_members_window",
+      "mimeType": "text/xml",
+      "offset": 429,
+      "storedLength": 1244,
+      "originalLength": 5895,
+      "compression": "deflate"
+    },
+    {
+      "name": "group_management_window",
+      "mimeType": "text/xml",
+      "offset": 1673,
+      "storedLength": 3936,
+      "originalLength": 49694,
+      "compression": "deflate"
+    },
+    {
+      "name": "new_extended_profile",
+      "mimeType": "text/xml",
+      "offset": 5609,
+      "storedLength": 3786,
+      "originalLength": 43588,
+      "compression": "deflate"
+    },
+    {
+      "name": "group_entry",
+      "mimeType": "text/xml",
+      "offset": 9395,
+      "storedLength": 634,
+      "originalLength": 3001,
+      "compression": "deflate"
+    },
+    {
+      "name": "member_entry",
+      "mimeType": "text/xml",
+      "offset": 10029,
+      "storedLength": 1062,
+      "originalLength": 6496,
+      "compression": "deflate"
+    },
+    {
+      "name": "group",
+      "mimeType": "text/xml",
+      "offset": 11091,
+      "storedLength": 1914,
+      "originalLength": 18751,
+      "compression": "deflate"
+    },
+    {
+      "name": "club_required",
+      "mimeType": "text/xml",
+      "offset": 13005,
+      "storedLength": 934,
+      "originalLength": 3446,
+      "compression": "deflate"
+    },
+    {
+      "name": "group_created_window",
+      "mimeType": "text/xml",
+      "offset": 13939,
+      "storedLength": 701,
+      "originalLength": 1924,
+      "compression": "deflate"
+    },
+    {
+      "name": "group_room_info",
+      "mimeType": "text/xml",
+      "offset": 14640,
+      "storedLength": 1066,
+      "originalLength": 4762,
+      "compression": "deflate"
+    },
+    {
+      "name": "no_groups",
+      "mimeType": "text/xml",
+      "offset": 15706,
+      "storedLength": 660,
+      "originalLength": 2726,
+      "compression": "deflate"
+    },
+    {
+      "name": "extended_profile_badge_details",
+      "mimeType": "text/xml",
+      "offset": 16366,
+      "storedLength": 815,
+      "originalLength": 5255,
+      "compression": "deflate"
+    },
+    {
+      "name": "badge_leaderboard_view",
+      "mimeType": "text/xml",
+      "offset": 17181,
+      "storedLength": 2401,
+      "originalLength": 20560,
+      "compression": "deflate"
+    },
+    {
+      "name": "badge_color_item",
+      "mimeType": "text/xml",
+      "offset": 19582,
+      "storedLength": 260,
+      "originalLength": 609,
+      "compression": "deflate"
+    },
+    {
+      "name": "badge_editor",
+      "mimeType": "text/xml",
+      "offset": 19842,
+      "storedLength": 927,
+      "originalLength": 5617,
+      "compression": "deflate"
+    },
+    {
+      "name": "badge_layer",
+      "mimeType": "text/xml",
+      "offset": 20769,
+      "storedLength": 468,
+      "originalLength": 1430,
+      "compression": "deflate"
+    },
+    {
+      "name": "badge_part_item",
+      "mimeType": "text/xml",
+      "offset": 21237,
+      "storedLength": 303,
+      "originalLength": 657,
+      "compression": "deflate"
+    },
+    {
+      "name": "color_chooser_bg",
+      "mimeType": "image/png",
+      "offset": 21540,
+      "storedLength": 135,
+      "originalLength": 135,
+      "compression": "none"
+    },
+    {
+      "name": "color_chooser_fg",
+      "mimeType": "image/png",
+      "offset": 21675,
+      "storedLength": 141,
+      "originalLength": 144,
+      "compression": "deflate"
+    },
+    {
+      "name": "color_chooser_selected",
+      "mimeType": "image/png",
+      "offset": 21816,
+      "storedLength": 178,
+      "originalLength": 178,
+      "compression": "none"
+    },
+    {
+      "name": "part_preview_bg",
+      "mimeType": "image/png",
+      "offset": 21994,
+      "storedLength": 138,
+      "originalLength": 138,
+      "compression": "none"
+    },
+    {
+      "name": "position_grid",
+      "mimeType": "image/png",
+      "offset": 22132,
+      "storedLength": 176,
+      "originalLength": 176,
+      "compression": "none"
+    },
+    {
+      "name": "position_picker",
+      "mimeType": "image/png",
+      "offset": 22308,
+      "storedLength": 131,
+      "originalLength": 131,
+      "compression": "none"
+    },
+    {
+      "name": "badge_part_picker",
+      "mimeType": "image/png",
+      "offset": 22439,
+      "storedLength": 202,
+      "originalLength": 202,
+      "compression": "none"
+    },
+    {
+      "name": "badge_part_empty",
+      "mimeType": "image/png",
+      "offset": 22641,
+      "storedLength": 201,
+      "originalLength": 201,
+      "compression": "none"
+    },
+    {
+      "name": "badge_part_add",
+      "mimeType": "image/png",
+      "offset": 22842,
+      "storedLength": 132,
+      "originalLength": 132,
+      "compression": "none"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboCommunicationDemo",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n\n\t<component class=\"com.sulake.bootstrap.HabboCommunicationDemoBootstrap\" version=\"0.0\" >\n\n\t\t<assets>\n\t\t\t<asset mimeType=\"text/xml\" name=\"login_window\" />\n            <asset mimeType=\"text/xml\" name=\"login_environment_list_item\" />\n            <asset mimeType=\"text/xml\" name=\"error_popup\" />\n\t\t</assets>\n\n\t</component>\n\n</manifest>\n",
+  "entries": [
+    {
+      "name": "login_window",
+      "mimeType": "text/xml",
+      "offset": 0,
+      "storedLength": 1306,
+      "originalLength": 6896,
+      "compression": "deflate"
+    },
+    {
+      "name": "login_environment_list_item",
+      "mimeType": "text/xml",
+      "offset": 1306,
+      "storedLength": 460,
+      "originalLength": 1120,
+      "compression": "deflate"
+    },
+    {
+      "name": "error_popup",
+      "mimeType": "text/xml",
+      "offset": 1766,
+      "storedLength": 1011,
+      "originalLength": 4797,
+      "compression": "deflate"
+    }
+  ]
+}

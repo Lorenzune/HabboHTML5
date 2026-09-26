@@ -1,0 +1,944 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboFriendBarCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n    <component class=\"com.sulake.bootstrap.HabboFriendBarBootstrap\" version=\"0.0\">\n        <interface iid=\"com.sulake.iid.IIDHabboFriendBar\" />\n        <assets>\n            <asset mimeType=\"text/xml\" name=\"bar_xml\" />\n            <asset mimeType=\"text/xml\" name=\"new_bar_xml\" />\n            <asset mimeType=\"text/xml\" name=\"entity_xml\" />\n            <asset mimeType=\"text/xml\" name=\"add_friends_tab_xml\" />\n            <asset mimeType=\"text/xml\" name=\"friend_requests_tab_xml\" />\n            <asset mimeType=\"text/xml\" name=\"friend_request_tab_xml\" />\n            <asset mimeType=\"text/xml\" name=\"toggle_xml\" />\n            <asset mimeType=\"text/xml\" name=\"facebook_piece_xml\" source=\"pieces/facebook.xml\" />\n            <asset mimeType=\"text/xml\" name=\"controls_piece_xml\" source=\"pieces/controls.xml\" />\n            <asset mimeType=\"text/xml\" name=\"message_piece_xml\" source=\"pieces/message.xml\" />\n            <asset mimeType=\"text/xml\" name=\"new_friend_entity_xml\" />\n            <asset mimeType=\"text/xml\" name=\"new_controls_piece_xml\" source=\"pieces/new_controls.xml\" />\n\t\t\t<asset mimeType=\"text/xml\" name=\"search_friends_tab_xml\" />\n            <asset mimeType=\"text/xml\" name=\"new_search_friends_tab_xml\" />\n\t\t\t<asset mimeType=\"text/xml\" name=\"all_friends_tab_xml\" />\n            <asset mimeType=\"text/xml\" name=\"new_all_friends_tab_xml\" />\n            <asset mimeType=\"text/xml\" name=\"new_open_messenger_tab_xml\" />\n\n            <asset mimeType=\"image/png\" name=\"ach_notification_icon_png\" />\n\n            <asset mimeType=\"image/png\" name=\"fb_icon_small_png\" />\n            <asset mimeType=\"image/png\" name=\"friends_icon_png\" />\n            <asset mimeType=\"image/png\" name=\"add_friends_icon_png\" />\n            <asset mimeType=\"image/png\" name=\"find_friends_icon_png\" source=\"images/add_friends_icon.png\" />\n            <asset mimeType=\"image/png\" name=\"plus_friend_icon_png\" />\n            <asset mimeType=\"image/png\" name=\"icon_messenger_notify_1_png\" source=\"images/messenger_notify_1.png\" />\n            <asset mimeType=\"image/png\" name=\"icon_friendlist_png\"  source=\"images/friendlist.png\"/>\n            <asset mimeType=\"image/png\" name=\"icon_friendlist_notify_0_png\"  source=\"images/friendlist_notify_0.png\"/>\n            <asset mimeType=\"image/png\" name=\"icon_friendlist_notify_1_png\"  source=\"images/friendlist_notify_1.png\"/>\n            <asset mimeType=\"image/png\" name=\"icon_friendlist_hover_0_png\"  source=\"images/friendlist_hover_0.png\"/>\n            <asset mimeType=\"image/png\" name=\"icon_friendlist_hover_1_png\"  source=\"images/friendlist_hover_1.png\"/>\n            <asset mimeType=\"image/png\" name=\"icon_friendlist_hover_2_png\"  source=\"images/friendlist_hover_2.png\"/>\n            <asset mimeType=\"image/png\" name=\"icon_friendlist_hover_3_png\"  source=\"images/friendlist_hover_3.png\"/>\n            <asset mimeType=\"image/png\" name=\"icon_messenger_png\"  source=\"images/messenger.png\"/>\n            <asset mimeType=\"image/png\" name=\"icon_messenger_notify_0_png\"  source=\"images/messenger_notify_0.png\"/>\n            <asset mimeType=\"image/png\" name=\"hitchTile_png\" />\n            <asset mimeType=\"image/png\" name=\"icon_yes_png\" />\n            <asset mimeType=\"image/png\" name=\"c1_1_png\" />\n            <asset mimeType=\"image/png\" name=\"c1_2_png\" />\n            <asset mimeType=\"image/png\" name=\"c1_3_png\" />\n            <asset mimeType=\"image/png\" name=\"c1_4_png\" />\n            <asset mimeType=\"image/png\" name=\"c2_1_png\" />\n            <asset mimeType=\"image/png\" name=\"c2_2_png\" />\n            <asset mimeType=\"image/png\" name=\"c2_3_png\" />\n            <asset mimeType=\"image/png\" name=\"c2_4_png\" />\n            <asset mimeType=\"image/png\" name=\"c3_1_png\" />\n            <asset mimeType=\"image/png\" name=\"c3_2_png\" />\n            <asset mimeType=\"image/png\" name=\"c3_3_png\" />\n            <asset mimeType=\"image/png\" name=\"c3_4_png\" />\n            <asset mimeType=\"image/png\" name=\"c4_1_png\" />\n            <asset mimeType=\"image/png\" name=\"c4_2_png\" />\n            <asset mimeType=\"image/png\" name=\"c4_3_png\" />\n            <asset mimeType=\"image/png\" name=\"c4_4_png\" />\n\n            <asset mimeType=\"image/png\" name=\"search_friends_icon_png\" />\n            <asset mimeType=\"image/png\" name=\"all_friends_icon_png\" />\n\n            <asset mimeType=\"image/png\" name=\"icon_snowstorm_notification_png\" source=\"images/icons/snowstorm_notification_icon.png\" />\n\n\t\t\t<!-- Landing view related assets -->\n            <asset mimeType=\"text/xml\" name=\"user_list_xml\" />\n            <asset mimeType=\"text/xml\" name=\"user_entry_xml\" />\n            <asset mimeType=\"text/xml\" name=\"competition_user_popup_xml\" />\n            <asset mimeType=\"text/xml\" name=\"on_duty_guide_user_popup_xml\" />\n            <asset mimeType=\"text/xml\" name=\"achievement_competition_prizes_xml\" />\n            <asset mimeType=\"text/xml\" name=\"avatar_image_xml\" />\n            <asset mimeType=\"text/xml\" name=\"community_goal_xml\" />\n            <asset mimeType=\"text/xml\" name=\"community_goal_voting_xml\" />\n            <asset mimeType=\"text/xml\" name=\"daily_quest_xml\" />\n            <asset mimeType=\"text/xml\" name=\"expiring_catalog_page_xml\" />\n            <asset mimeType=\"text/xml\" name=\"expiring_catalog_page_small_xml\" />\n            <asset mimeType=\"text/xml\" name=\"landing_view_generic_reception_xml\" />\n            <asset mimeType=\"text/xml\" name=\"catalog_promo_xml\" />\n            <asset mimeType=\"text/xml\" name=\"catalog_promo_small_xml\" />\n            <asset mimeType=\"text/xml\" name=\"campaign_promo_xml\" />\n            <asset mimeType=\"text/xml\" name=\"moving_object_xml\" />\n            <asset mimeType=\"text/xml\" name=\"moving_object_floating_xml\" />\n            <asset mimeType=\"text/xml\" name=\"next_ltd_available_xml\" />\n            <asset mimeType=\"text/xml\" name=\"landing_view_default_dynamic_layout_xml\" />\n            <asset mimeType=\"text/xml\" name=\"habbo_moderation_promo_xml\" />\n            <asset mimeType=\"text/xml\" name=\"habbo_talents_promo_xml\" />\n            <asset mimeType=\"text/xml\" name=\"habbo_way_promo_xml\" />\n            <asset mimeType=\"text/xml\" name=\"dynamic_widget_grid_xml\" />\n            <asset mimeType=\"text/xml\" name=\"pixel_removal_promo_xml\" />\n            <asset mimeType=\"text/xml\" name=\"fast_food_game_promo_xml\" source=\"landingview/fastfood_game_promo.xml\" />\n            <asset mimeType=\"text/xml\" name=\"room_hopper_network_xml\" />\n            <asset mimeType=\"text/xml\" name=\"landing_view_jetset_xml\" />\n            <asset mimeType=\"text/xml\" name=\"safety_quiz_promo_xml\" />\n            <asset mimeType=\"text/xml\" name=\"pixel_removal_credit_promo_xml\" />\n            <asset mimeType=\"text/xml\" name=\"dynamic_widget_grid_separator_xml\" />\n            <asset mimeType=\"text/xml\" name=\"landing_view_furnimatic_xml\" />\n\n            <asset mimeType=\"text/xml\" name=\"generic_widget_xml\" />\n            <asset mimeType=\"text/xml\" name=\"widget_container_widget_xml\" />\n            <asset mimeType=\"text/xml\" name=\"element_bodytext_xml\" />\n            <asset mimeType=\"text/xml\" name=\"element_button_xml\" />\n            <asset mimeType=\"text/xml\" name=\"element_caption_xml\" />\n            <asset mimeType=\"text/xml\" name=\"element_image_xml\" />\n            <asset mimeType=\"text/xml\" name=\"element_link_xml\" />\n            <asset mimeType=\"text/xml\" name=\"element_spacing_xml\" />\n            <asset mimeType=\"text/xml\" name=\"element_subcaption_xml\" />\n            <asset mimeType=\"text/xml\" name=\"element_timer_xml\" />\n            <asset mimeType=\"text/xml\" name=\"element_title_xml\" />\n            <asset mimeType=\"text/xml\" name=\"element_rewardbadge_xml\" />\n            <asset mimeType=\"text/xml\" name=\"element_concurrentusersmeter_xml\" />\n            <asset mimeType=\"text/xml\" name=\"element_concurrentusersinfo_xml\" />\n            <asset mimeType=\"text/xml\" name=\"element_dailyquest_xml\" />\n            <asset mimeType=\"text/xml\" name=\"initialization_error_xml\" />\n            <asset mimeType=\"text/xml\" name=\"element_community_goal_score_xml\" />\n            <asset mimeType=\"text/xml\" name=\"promo_article_xml\" />\n            <asset mimeType=\"text/xml\" name=\"bonus_rare_promo_xml\" />\n\n            <!-- Talent track related assets -->\n            <asset mimeType=\"text/xml\" name=\"citizenship_welcome_xml\" />\n            <asset mimeType=\"text/xml\" name=\"talent_track_xml\" />\n            <asset mimeType=\"text/xml\" name=\"level_up_xml\" />\n            <asset mimeType=\"text/xml\" name=\"task_progress_dialog_xml\" />\n            <asset mimeType=\"text/xml\" name=\"tour_task_progress_dialog_xml\" />\n            <asset mimeType=\"text/xml\" name=\"track_promo_xml\" />\n\n            <!-- Group forums -->\n            <asset mimeType=\"text/xml\" name=\"groupforum_thread_list_item_xml\" source=\"groupforum/thread_list_item.xml\" />\n            <asset mimeType=\"text/xml\" name=\"groupforum_forum_list_item_xml\" source=\"groupforum/forum_list_item.xml\" />\n            <asset mimeType=\"text/xml\" name=\"groupforum_main_view_xml\" source=\"groupforum/main_view.xml\" />\n            <asset mimeType=\"text/xml\" name=\"groupforum_message_list_item_xml\" source=\"groupforum/message_list_item.xml\" />\n            <asset mimeType=\"text/xml\" name=\"groupforum_compose_message_xml\" source=\"groupforum/compose_message_view.xml\" />\n            <asset mimeType=\"text/xml\" name=\"groupforum_forum_settings_xml\" source=\"groupforum/forum_settings.xml\" />\n\n            <!-- Epic popup -->\n            <asset mimeType=\"text/xml\" name=\"epic_popup_frame_xml\" />\n        </assets>\n    </component>\n</manifest>\n",
+  "entries": [
+    {
+      "name": "bar_xml",
+      "mimeType": "text/xml",
+      "offset": 0,
+      "storedLength": 678,
+      "originalLength": 2479,
+      "compression": "deflate"
+    },
+    {
+      "name": "new_bar_xml",
+      "mimeType": "text/xml",
+      "offset": 678,
+      "storedLength": 1209,
+      "originalLength": 7732,
+      "compression": "deflate"
+    },
+    {
+      "name": "entity_xml",
+      "mimeType": "text/xml",
+      "offset": 1887,
+      "storedLength": 1154,
+      "originalLength": 5925,
+      "compression": "deflate"
+    },
+    {
+      "name": "add_friends_tab_xml",
+      "mimeType": "text/xml",
+      "offset": 3041,
+      "storedLength": 923,
+      "originalLength": 3927,
+      "compression": "deflate"
+    },
+    {
+      "name": "friend_requests_tab_xml",
+      "mimeType": "text/xml",
+      "offset": 3964,
+      "storedLength": 1543,
+      "originalLength": 8633,
+      "compression": "deflate"
+    },
+    {
+      "name": "friend_request_tab_xml",
+      "mimeType": "text/xml",
+      "offset": 5507,
+      "storedLength": 1167,
+      "originalLength": 6236,
+      "compression": "deflate"
+    },
+    {
+      "name": "toggle_xml",
+      "mimeType": "text/xml",
+      "offset": 6674,
+      "storedLength": 283,
+      "originalLength": 457,
+      "compression": "deflate"
+    },
+    {
+      "name": "facebook_piece_xml",
+      "mimeType": "text/xml",
+      "offset": 6957,
+      "storedLength": 520,
+      "originalLength": 1297,
+      "compression": "deflate"
+    },
+    {
+      "name": "controls_piece_xml",
+      "mimeType": "text/xml",
+      "offset": 7477,
+      "storedLength": 469,
+      "originalLength": 1608,
+      "compression": "deflate"
+    },
+    {
+      "name": "message_piece_xml",
+      "mimeType": "text/xml",
+      "offset": 7946,
+      "storedLength": 585,
+      "originalLength": 2301,
+      "compression": "deflate"
+    },
+    {
+      "name": "new_friend_entity_xml",
+      "mimeType": "text/xml",
+      "offset": 8531,
+      "storedLength": 1173,
+      "originalLength": 6053,
+      "compression": "deflate"
+    },
+    {
+      "name": "new_controls_piece_xml",
+      "mimeType": "text/xml",
+      "offset": 9704,
+      "storedLength": 527,
+      "originalLength": 2386,
+      "compression": "deflate"
+    },
+    {
+      "name": "search_friends_tab_xml",
+      "mimeType": "text/xml",
+      "offset": 10231,
+      "storedLength": 742,
+      "originalLength": 2518,
+      "compression": "deflate"
+    },
+    {
+      "name": "new_search_friends_tab_xml",
+      "mimeType": "text/xml",
+      "offset": 10973,
+      "storedLength": 340,
+      "originalLength": 717,
+      "compression": "deflate"
+    },
+    {
+      "name": "all_friends_tab_xml",
+      "mimeType": "text/xml",
+      "offset": 11313,
+      "storedLength": 745,
+      "originalLength": 2514,
+      "compression": "deflate"
+    },
+    {
+      "name": "new_all_friends_tab_xml",
+      "mimeType": "text/xml",
+      "offset": 12058,
+      "storedLength": 334,
+      "originalLength": 712,
+      "compression": "deflate"
+    },
+    {
+      "name": "new_open_messenger_tab_xml",
+      "mimeType": "text/xml",
+      "offset": 12392,
+      "storedLength": 343,
+      "originalLength": 724,
+      "compression": "deflate"
+    },
+    {
+      "name": "ach_notification_icon_png",
+      "mimeType": "image/png",
+      "offset": 12735,
+      "storedLength": 304,
+      "originalLength": 304,
+      "compression": "none"
+    },
+    {
+      "name": "fb_icon_small_png",
+      "mimeType": "image/png",
+      "offset": 13039,
+      "storedLength": 158,
+      "originalLength": 158,
+      "compression": "none"
+    },
+    {
+      "name": "friends_icon_png",
+      "mimeType": "image/png",
+      "offset": 13197,
+      "storedLength": 353,
+      "originalLength": 353,
+      "compression": "none"
+    },
+    {
+      "name": "add_friends_icon_png",
+      "mimeType": "image/png",
+      "offset": 13550,
+      "storedLength": 406,
+      "originalLength": 406,
+      "compression": "none"
+    },
+    {
+      "name": "find_friends_icon_png",
+      "mimeType": "image/png",
+      "offset": 13956,
+      "storedLength": 717,
+      "originalLength": 717,
+      "compression": "none"
+    },
+    {
+      "name": "plus_friend_icon_png",
+      "mimeType": "image/png",
+      "offset": 14673,
+      "storedLength": 195,
+      "originalLength": 195,
+      "compression": "none"
+    },
+    {
+      "name": "icon_messenger_notify_1_png",
+      "mimeType": "image/png",
+      "offset": 14868,
+      "storedLength": 283,
+      "originalLength": 283,
+      "compression": "none"
+    },
+    {
+      "name": "icon_friendlist_png",
+      "mimeType": "image/png",
+      "offset": 15151,
+      "storedLength": 291,
+      "originalLength": 291,
+      "compression": "none"
+    },
+    {
+      "name": "icon_friendlist_notify_0_png",
+      "mimeType": "image/png",
+      "offset": 15442,
+      "storedLength": 291,
+      "originalLength": 291,
+      "compression": "none"
+    },
+    {
+      "name": "icon_friendlist_notify_1_png",
+      "mimeType": "image/png",
+      "offset": 15733,
+      "storedLength": 310,
+      "originalLength": 310,
+      "compression": "none"
+    },
+    {
+      "name": "icon_friendlist_hover_0_png",
+      "mimeType": "image/png",
+      "offset": 16043,
+      "storedLength": 351,
+      "originalLength": 351,
+      "compression": "none"
+    },
+    {
+      "name": "icon_friendlist_hover_1_png",
+      "mimeType": "image/png",
+      "offset": 16394,
+      "storedLength": 370,
+      "originalLength": 370,
+      "compression": "none"
+    },
+    {
+      "name": "icon_friendlist_hover_2_png",
+      "mimeType": "image/png",
+      "offset": 16764,
+      "storedLength": 356,
+      "originalLength": 356,
+      "compression": "none"
+    },
+    {
+      "name": "icon_friendlist_hover_3_png",
+      "mimeType": "image/png",
+      "offset": 17120,
+      "storedLength": 320,
+      "originalLength": 320,
+      "compression": "none"
+    },
+    {
+      "name": "icon_messenger_png",
+      "mimeType": "image/png",
+      "offset": 17440,
+      "storedLength": 255,
+      "originalLength": 255,
+      "compression": "none"
+    },
+    {
+      "name": "icon_messenger_notify_0_png",
+      "mimeType": "image/png",
+      "offset": 17695,
+      "storedLength": 255,
+      "originalLength": 255,
+      "compression": "none"
+    },
+    {
+      "name": "hitchTile_png",
+      "mimeType": "image/png",
+      "offset": 17950,
+      "storedLength": 2802,
+      "originalLength": 2802,
+      "compression": "none"
+    },
+    {
+      "name": "icon_yes_png",
+      "mimeType": "image/png",
+      "offset": 20752,
+      "storedLength": 2806,
+      "originalLength": 3067,
+      "compression": "deflate"
+    },
+    {
+      "name": "c1_1_png",
+      "mimeType": "image/png",
+      "offset": 23558,
+      "storedLength": 1718,
+      "originalLength": 1984,
+      "compression": "deflate"
+    },
+    {
+      "name": "c1_2_png",
+      "mimeType": "image/png",
+      "offset": 25276,
+      "storedLength": 1360,
+      "originalLength": 1640,
+      "compression": "deflate"
+    },
+    {
+      "name": "c1_3_png",
+      "mimeType": "image/png",
+      "offset": 26636,
+      "storedLength": 1136,
+      "originalLength": 1425,
+      "compression": "deflate"
+    },
+    {
+      "name": "c1_4_png",
+      "mimeType": "image/png",
+      "offset": 27772,
+      "storedLength": 840,
+      "originalLength": 1142,
+      "compression": "deflate"
+    },
+    {
+      "name": "c2_1_png",
+      "mimeType": "image/png",
+      "offset": 28612,
+      "storedLength": 1777,
+      "originalLength": 2033,
+      "compression": "deflate"
+    },
+    {
+      "name": "c2_2_png",
+      "mimeType": "image/png",
+      "offset": 30389,
+      "storedLength": 1428,
+      "originalLength": 1707,
+      "compression": "deflate"
+    },
+    {
+      "name": "c2_3_png",
+      "mimeType": "image/png",
+      "offset": 31817,
+      "storedLength": 1149,
+      "originalLength": 1435,
+      "compression": "deflate"
+    },
+    {
+      "name": "c2_4_png",
+      "mimeType": "image/png",
+      "offset": 32966,
+      "storedLength": 862,
+      "originalLength": 1155,
+      "compression": "deflate"
+    },
+    {
+      "name": "c3_1_png",
+      "mimeType": "image/png",
+      "offset": 33828,
+      "storedLength": 1933,
+      "originalLength": 2203,
+      "compression": "deflate"
+    },
+    {
+      "name": "c3_2_png",
+      "mimeType": "image/png",
+      "offset": 35761,
+      "storedLength": 1458,
+      "originalLength": 1734,
+      "compression": "deflate"
+    },
+    {
+      "name": "c3_3_png",
+      "mimeType": "image/png",
+      "offset": 37219,
+      "storedLength": 1122,
+      "originalLength": 1402,
+      "compression": "deflate"
+    },
+    {
+      "name": "c3_4_png",
+      "mimeType": "image/png",
+      "offset": 38341,
+      "storedLength": 917,
+      "originalLength": 1211,
+      "compression": "deflate"
+    },
+    {
+      "name": "c4_1_png",
+      "mimeType": "image/png",
+      "offset": 39258,
+      "storedLength": 1953,
+      "originalLength": 2221,
+      "compression": "deflate"
+    },
+    {
+      "name": "c4_2_png",
+      "mimeType": "image/png",
+      "offset": 41211,
+      "storedLength": 1601,
+      "originalLength": 1874,
+      "compression": "deflate"
+    },
+    {
+      "name": "c4_3_png",
+      "mimeType": "image/png",
+      "offset": 42812,
+      "storedLength": 1110,
+      "originalLength": 1397,
+      "compression": "deflate"
+    },
+    {
+      "name": "c4_4_png",
+      "mimeType": "image/png",
+      "offset": 43922,
+      "storedLength": 863,
+      "originalLength": 1155,
+      "compression": "deflate"
+    },
+    {
+      "name": "search_friends_icon_png",
+      "mimeType": "image/png",
+      "offset": 44785,
+      "storedLength": 738,
+      "originalLength": 738,
+      "compression": "none"
+    },
+    {
+      "name": "all_friends_icon_png",
+      "mimeType": "image/png",
+      "offset": 45523,
+      "storedLength": 1016,
+      "originalLength": 1016,
+      "compression": "none"
+    },
+    {
+      "name": "icon_snowstorm_notification_png",
+      "mimeType": "image/png",
+      "offset": 46539,
+      "storedLength": 349,
+      "originalLength": 349,
+      "compression": "none"
+    },
+    {
+      "name": "user_list_xml",
+      "mimeType": "text/xml",
+      "offset": 46888,
+      "storedLength": 215,
+      "originalLength": 286,
+      "compression": "deflate"
+    },
+    {
+      "name": "user_entry_xml",
+      "mimeType": "text/xml",
+      "offset": 47103,
+      "storedLength": 498,
+      "originalLength": 1250,
+      "compression": "deflate"
+    },
+    {
+      "name": "competition_user_popup_xml",
+      "mimeType": "text/xml",
+      "offset": 47601,
+      "storedLength": 689,
+      "originalLength": 2919,
+      "compression": "deflate"
+    },
+    {
+      "name": "on_duty_guide_user_popup_xml",
+      "mimeType": "text/xml",
+      "offset": 48290,
+      "storedLength": 637,
+      "originalLength": 2219,
+      "compression": "deflate"
+    },
+    {
+      "name": "achievement_competition_prizes_xml",
+      "mimeType": "text/xml",
+      "offset": 48927,
+      "storedLength": 1215,
+      "originalLength": 9726,
+      "compression": "deflate"
+    },
+    {
+      "name": "avatar_image_xml",
+      "mimeType": "text/xml",
+      "offset": 50142,
+      "storedLength": 245,
+      "originalLength": 395,
+      "compression": "deflate"
+    },
+    {
+      "name": "community_goal_xml",
+      "mimeType": "text/xml",
+      "offset": 50387,
+      "storedLength": 1146,
+      "originalLength": 9959,
+      "compression": "deflate"
+    },
+    {
+      "name": "community_goal_voting_xml",
+      "mimeType": "text/xml",
+      "offset": 51533,
+      "storedLength": 1150,
+      "originalLength": 10134,
+      "compression": "deflate"
+    },
+    {
+      "name": "daily_quest_xml",
+      "mimeType": "text/xml",
+      "offset": 52683,
+      "storedLength": 1401,
+      "originalLength": 8575,
+      "compression": "deflate"
+    },
+    {
+      "name": "expiring_catalog_page_xml",
+      "mimeType": "text/xml",
+      "offset": 54084,
+      "storedLength": 1145,
+      "originalLength": 4673,
+      "compression": "deflate"
+    },
+    {
+      "name": "expiring_catalog_page_small_xml",
+      "mimeType": "text/xml",
+      "offset": 55229,
+      "storedLength": 946,
+      "originalLength": 3879,
+      "compression": "deflate"
+    },
+    {
+      "name": "landing_view_generic_reception_xml",
+      "mimeType": "text/xml",
+      "offset": 56175,
+      "storedLength": 938,
+      "originalLength": 4357,
+      "compression": "deflate"
+    },
+    {
+      "name": "catalog_promo_xml",
+      "mimeType": "text/xml",
+      "offset": 57113,
+      "storedLength": 860,
+      "originalLength": 3758,
+      "compression": "deflate"
+    },
+    {
+      "name": "catalog_promo_small_xml",
+      "mimeType": "text/xml",
+      "offset": 57973,
+      "storedLength": 786,
+      "originalLength": 2832,
+      "compression": "deflate"
+    },
+    {
+      "name": "campaign_promo_xml",
+      "mimeType": "text/xml",
+      "offset": 58759,
+      "storedLength": 720,
+      "originalLength": 2771,
+      "compression": "deflate"
+    },
+    {
+      "name": "moving_object_xml",
+      "mimeType": "text/xml",
+      "offset": 59479,
+      "storedLength": 281,
+      "originalLength": 510,
+      "compression": "deflate"
+    },
+    {
+      "name": "moving_object_floating_xml",
+      "mimeType": "text/xml",
+      "offset": 59760,
+      "storedLength": 286,
+      "originalLength": 518,
+      "compression": "deflate"
+    },
+    {
+      "name": "next_ltd_available_xml",
+      "mimeType": "text/xml",
+      "offset": 60046,
+      "storedLength": 723,
+      "originalLength": 2047,
+      "compression": "deflate"
+    },
+    {
+      "name": "landing_view_default_dynamic_layout_xml",
+      "mimeType": "text/xml",
+      "offset": 60769,
+      "storedLength": 1062,
+      "originalLength": 5817,
+      "compression": "deflate"
+    },
+    {
+      "name": "habbo_moderation_promo_xml",
+      "mimeType": "text/xml",
+      "offset": 61831,
+      "storedLength": 904,
+      "originalLength": 6483,
+      "compression": "deflate"
+    },
+    {
+      "name": "habbo_talents_promo_xml",
+      "mimeType": "text/xml",
+      "offset": 62735,
+      "storedLength": 929,
+      "originalLength": 4810,
+      "compression": "deflate"
+    },
+    {
+      "name": "habbo_way_promo_xml",
+      "mimeType": "text/xml",
+      "offset": 63664,
+      "storedLength": 1117,
+      "originalLength": 6839,
+      "compression": "deflate"
+    },
+    {
+      "name": "dynamic_widget_grid_xml",
+      "mimeType": "text/xml",
+      "offset": 64781,
+      "storedLength": 705,
+      "originalLength": 4618,
+      "compression": "deflate"
+    },
+    {
+      "name": "pixel_removal_promo_xml",
+      "mimeType": "text/xml",
+      "offset": 65486,
+      "storedLength": 809,
+      "originalLength": 3712,
+      "compression": "deflate"
+    },
+    {
+      "name": "fast_food_game_promo_xml",
+      "mimeType": "text/xml",
+      "offset": 66295,
+      "storedLength": 798,
+      "originalLength": 3697,
+      "compression": "deflate"
+    },
+    {
+      "name": "room_hopper_network_xml",
+      "mimeType": "text/xml",
+      "offset": 67093,
+      "storedLength": 965,
+      "originalLength": 4288,
+      "compression": "deflate"
+    },
+    {
+      "name": "landing_view_jetset_xml",
+      "mimeType": "text/xml",
+      "offset": 68058,
+      "storedLength": 865,
+      "originalLength": 4976,
+      "compression": "deflate"
+    },
+    {
+      "name": "safety_quiz_promo_xml",
+      "mimeType": "text/xml",
+      "offset": 68923,
+      "storedLength": 698,
+      "originalLength": 2212,
+      "compression": "deflate"
+    },
+    {
+      "name": "pixel_removal_credit_promo_xml",
+      "mimeType": "text/xml",
+      "offset": 69621,
+      "storedLength": 892,
+      "originalLength": 4177,
+      "compression": "deflate"
+    },
+    {
+      "name": "dynamic_widget_grid_separator_xml",
+      "mimeType": "text/xml",
+      "offset": 70513,
+      "storedLength": 573,
+      "originalLength": 1864,
+      "compression": "deflate"
+    },
+    {
+      "name": "landing_view_furnimatic_xml",
+      "mimeType": "text/xml",
+      "offset": 71086,
+      "storedLength": 733,
+      "originalLength": 3459,
+      "compression": "deflate"
+    },
+    {
+      "name": "generic_widget_xml",
+      "mimeType": "text/xml",
+      "offset": 71819,
+      "storedLength": 409,
+      "originalLength": 1047,
+      "compression": "deflate"
+    },
+    {
+      "name": "widget_container_widget_xml",
+      "mimeType": "text/xml",
+      "offset": 72228,
+      "storedLength": 216,
+      "originalLength": 298,
+      "compression": "deflate"
+    },
+    {
+      "name": "element_bodytext_xml",
+      "mimeType": "text/xml",
+      "offset": 72444,
+      "storedLength": 361,
+      "originalLength": 715,
+      "compression": "deflate"
+    },
+    {
+      "name": "element_button_xml",
+      "mimeType": "text/xml",
+      "offset": 72805,
+      "storedLength": 250,
+      "originalLength": 377,
+      "compression": "deflate"
+    },
+    {
+      "name": "element_caption_xml",
+      "mimeType": "text/xml",
+      "offset": 73055,
+      "storedLength": 411,
+      "originalLength": 897,
+      "compression": "deflate"
+    },
+    {
+      "name": "element_image_xml",
+      "mimeType": "text/xml",
+      "offset": 73466,
+      "storedLength": 267,
+      "originalLength": 404,
+      "compression": "deflate"
+    },
+    {
+      "name": "element_link_xml",
+      "mimeType": "text/xml",
+      "offset": 73733,
+      "storedLength": 407,
+      "originalLength": 846,
+      "compression": "deflate"
+    },
+    {
+      "name": "element_spacing_xml",
+      "mimeType": "text/xml",
+      "offset": 74140,
+      "storedLength": 198,
+      "originalLength": 261,
+      "compression": "deflate"
+    },
+    {
+      "name": "element_subcaption_xml",
+      "mimeType": "text/xml",
+      "offset": 74338,
+      "storedLength": 378,
+      "originalLength": 782,
+      "compression": "deflate"
+    },
+    {
+      "name": "element_timer_xml",
+      "mimeType": "text/xml",
+      "offset": 74716,
+      "storedLength": 508,
+      "originalLength": 1235,
+      "compression": "deflate"
+    },
+    {
+      "name": "element_title_xml",
+      "mimeType": "text/xml",
+      "offset": 75224,
+      "storedLength": 578,
+      "originalLength": 1739,
+      "compression": "deflate"
+    },
+    {
+      "name": "element_rewardbadge_xml",
+      "mimeType": "text/xml",
+      "offset": 75802,
+      "storedLength": 496,
+      "originalLength": 1228,
+      "compression": "deflate"
+    },
+    {
+      "name": "element_concurrentusersmeter_xml",
+      "mimeType": "text/xml",
+      "offset": 76298,
+      "storedLength": 282,
+      "originalLength": 428,
+      "compression": "deflate"
+    },
+    {
+      "name": "element_concurrentusersinfo_xml",
+      "mimeType": "text/xml",
+      "offset": 76580,
+      "storedLength": 629,
+      "originalLength": 2507,
+      "compression": "deflate"
+    },
+    {
+      "name": "element_dailyquest_xml",
+      "mimeType": "text/xml",
+      "offset": 77209,
+      "storedLength": 1187,
+      "originalLength": 7565,
+      "compression": "deflate"
+    },
+    {
+      "name": "initialization_error_xml",
+      "mimeType": "text/xml",
+      "offset": 78396,
+      "storedLength": 560,
+      "originalLength": 1527,
+      "compression": "deflate"
+    },
+    {
+      "name": "element_community_goal_score_xml",
+      "mimeType": "text/xml",
+      "offset": 78956,
+      "storedLength": 372,
+      "originalLength": 754,
+      "compression": "deflate"
+    },
+    {
+      "name": "promo_article_xml",
+      "mimeType": "text/xml",
+      "offset": 79328,
+      "storedLength": 1306,
+      "originalLength": 15008,
+      "compression": "deflate"
+    },
+    {
+      "name": "bonus_rare_promo_xml",
+      "mimeType": "text/xml",
+      "offset": 80634,
+      "storedLength": 1221,
+      "originalLength": 6791,
+      "compression": "deflate"
+    },
+    {
+      "name": "citizenship_welcome_xml",
+      "mimeType": "text/xml",
+      "offset": 81855,
+      "storedLength": 1000,
+      "originalLength": 4786,
+      "compression": "deflate"
+    },
+    {
+      "name": "talent_track_xml",
+      "mimeType": "text/xml",
+      "offset": 82855,
+      "storedLength": 4071,
+      "originalLength": 52110,
+      "compression": "deflate"
+    },
+    {
+      "name": "level_up_xml",
+      "mimeType": "text/xml",
+      "offset": 86926,
+      "storedLength": 1724,
+      "originalLength": 10802,
+      "compression": "deflate"
+    },
+    {
+      "name": "task_progress_dialog_xml",
+      "mimeType": "text/xml",
+      "offset": 88650,
+      "storedLength": 1958,
+      "originalLength": 15373,
+      "compression": "deflate"
+    },
+    {
+      "name": "tour_task_progress_dialog_xml",
+      "mimeType": "text/xml",
+      "offset": 90608,
+      "storedLength": 1104,
+      "originalLength": 5540,
+      "compression": "deflate"
+    },
+    {
+      "name": "track_promo_xml",
+      "mimeType": "text/xml",
+      "offset": 91712,
+      "storedLength": 626,
+      "originalLength": 1724,
+      "compression": "deflate"
+    },
+    {
+      "name": "groupforum_thread_list_item_xml",
+      "mimeType": "text/xml",
+      "offset": 92338,
+      "storedLength": 1188,
+      "originalLength": 7269,
+      "compression": "deflate"
+    },
+    {
+      "name": "groupforum_forum_list_item_xml",
+      "mimeType": "text/xml",
+      "offset": 93526,
+      "storedLength": 988,
+      "originalLength": 4971,
+      "compression": "deflate"
+    },
+    {
+      "name": "groupforum_main_view_xml",
+      "mimeType": "text/xml",
+      "offset": 94514,
+      "storedLength": 2031,
+      "originalLength": 14454,
+      "compression": "deflate"
+    },
+    {
+      "name": "groupforum_message_list_item_xml",
+      "mimeType": "text/xml",
+      "offset": 96545,
+      "storedLength": 1183,
+      "originalLength": 6968,
+      "compression": "deflate"
+    },
+    {
+      "name": "groupforum_compose_message_xml",
+      "mimeType": "text/xml",
+      "offset": 97728,
+      "storedLength": 1612,
+      "originalLength": 10084,
+      "compression": "deflate"
+    },
+    {
+      "name": "groupforum_forum_settings_xml",
+      "mimeType": "text/xml",
+      "offset": 99340,
+      "storedLength": 1426,
+      "originalLength": 12747,
+      "compression": "deflate"
+    },
+    {
+      "name": "epic_popup_frame_xml",
+      "mimeType": "text/xml",
+      "offset": 100766,
+      "storedLength": 599,
+      "originalLength": 1555,
+      "compression": "deflate"
+    }
+  ]
+}

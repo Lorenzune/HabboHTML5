@@ -1,0 +1,23 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "PlaceHolderWallItem",
+  "entries": [
+    {
+      "name": "PlaceHolderWallItem.json",
+      "mimeType": "application/json",
+      "offset": 0,
+      "storedLength": 411,
+      "originalLength": 1067,
+      "compression": "deflate"
+    },
+    {
+      "name": "PlaceHolderWallItem.png",
+      "mimeType": "image/png",
+      "offset": 411,
+      "storedLength": 545,
+      "originalLength": 545,
+      "compression": "none"
+    }
+  ]
+}

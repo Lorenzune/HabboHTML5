@@ -1,0 +1,136 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboMessengerCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n\n\t<component class=\"com.sulake.bootstrap.HabboMessengerBootstrap\" version=\"0.0\">\n\t  <interface iid=\"com.sulake.iid.IIDHabboMessenger\" />\t  \n\t  <assets>\n\t    <asset mimeType=\"image/png\" name=\"close_png\" />\t\n\t    <asset mimeType=\"image/png\" name=\"convo_bg_png\" />\t\t\n\t    <asset mimeType=\"image/png\" name=\"follow_friend_png\" />\t\t\t\n\t    <asset mimeType=\"image/png\" name=\"minimail_png\" />\n\t    <asset mimeType=\"image/png\" name=\"next_png\" />\n\t    <asset mimeType=\"image/png\" name=\"prev_png\" />\t\t\t\n\t    <asset mimeType=\"image/png\" name=\"resize_png\" />\n\t    <asset mimeType=\"image/png\" name=\"tab_bg_hilite_png\" />\n\t    <asset mimeType=\"image/png\" name=\"tab_bg_next_png\" />\n\t    <asset mimeType=\"image/png\" name=\"tab_bg_sel_png\" />\n\t    <asset mimeType=\"image/png\" name=\"tab_bg_unsel_png\" />\n\t   \n\t    <asset mimeType=\"text/xml\" name=\"main_window_xml\" />\n\t    <asset mimeType=\"text/xml\" name=\"msg_entry_xml\" />\n\t    <asset mimeType=\"text/xml\" name=\"tab_entry_xml\" />\n\n        <asset mimeType=\"text/xml\" name=\"messenger_xml\" />\n        <asset mimeType=\"text/xml\" name=\"messenger_habbicon_picker_xml\" />\n\n\t   </assets>\n\t</component>\n\t\n</manifest>\n",
+  "entries": [
+    {
+      "name": "close_png",
+      "mimeType": "image/png",
+      "offset": 0,
+      "storedLength": 119,
+      "originalLength": 119,
+      "compression": "none"
+    },
+    {
+      "name": "convo_bg_png",
+      "mimeType": "image/png",
+      "offset": 119,
+      "storedLength": 108,
+      "originalLength": 108,
+      "compression": "none"
+    },
+    {
+      "name": "follow_friend_png",
+      "mimeType": "image/png",
+      "offset": 227,
+      "storedLength": 149,
+      "originalLength": 149,
+      "compression": "none"
+    },
+    {
+      "name": "minimail_png",
+      "mimeType": "image/png",
+      "offset": 376,
+      "storedLength": 163,
+      "originalLength": 163,
+      "compression": "none"
+    },
+    {
+      "name": "next_png",
+      "mimeType": "image/png",
+      "offset": 539,
+      "storedLength": 127,
+      "originalLength": 127,
+      "compression": "none"
+    },
+    {
+      "name": "prev_png",
+      "mimeType": "image/png",
+      "offset": 666,
+      "storedLength": 132,
+      "originalLength": 132,
+      "compression": "none"
+    },
+    {
+      "name": "resize_png",
+      "mimeType": "image/png",
+      "offset": 798,
+      "storedLength": 119,
+      "originalLength": 119,
+      "compression": "none"
+    },
+    {
+      "name": "tab_bg_hilite_png",
+      "mimeType": "image/png",
+      "offset": 917,
+      "storedLength": 118,
+      "originalLength": 118,
+      "compression": "none"
+    },
+    {
+      "name": "tab_bg_next_png",
+      "mimeType": "image/png",
+      "offset": 1035,
+      "storedLength": 111,
+      "originalLength": 111,
+      "compression": "none"
+    },
+    {
+      "name": "tab_bg_sel_png",
+      "mimeType": "image/png",
+      "offset": 1146,
+      "storedLength": 107,
+      "originalLength": 107,
+      "compression": "none"
+    },
+    {
+      "name": "tab_bg_unsel_png",
+      "mimeType": "image/png",
+      "offset": 1253,
+      "storedLength": 118,
+      "originalLength": 118,
+      "compression": "none"
+    },
+    {
+      "name": "main_window_xml",
+      "mimeType": "text/xml",
+      "offset": 1371,
+      "storedLength": 1014,
+      "originalLength": 4794,
+      "compression": "deflate"
+    },
+    {
+      "name": "msg_entry_xml",
+      "mimeType": "text/xml",
+      "offset": 2385,
+      "storedLength": 389,
+      "originalLength": 800,
+      "compression": "deflate"
+    },
+    {
+      "name": "tab_entry_xml",
+      "mimeType": "text/xml",
+      "offset": 2774,
+      "storedLength": 279,
+      "originalLength": 1047,
+      "compression": "deflate"
+    },
+    {
+      "name": "messenger_xml",
+      "mimeType": "text/xml",
+      "offset": 3053,
+      "storedLength": 1998,
+      "originalLength": 13997,
+      "compression": "deflate"
+    },
+    {
+      "name": "messenger_habbicon_picker_xml",
+      "mimeType": "text/xml",
+      "offset": 5051,
+      "storedLength": 1168,
+      "originalLength": 5846,
+      "compression": "deflate"
+    }
+  ]
+}

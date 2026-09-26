@@ -1,0 +1,1684 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboCatalogCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n\n\t<component class=\"com.sulake.bootstrap.HabboCatalogBootstrap\" version=\"0.0\">\n\t\t<interface iid=\"com.sulake.iid.IIDHabboCatalog\" />\n\t\t<assets>\n\n\t\t\t<!-- Generated From PNGs in assets -->\n            <asset mimeType=\"image/png\" name=\"bot_thumb_bg\"/>\n            <asset mimeType=\"image/png\" name=\"bot_thumb_bg_selected\"/>\n            <asset mimeType=\"image/png\" name=\"ctlg_clr_27x22_1\"/>\n            <asset mimeType=\"image/png\" name=\"ctlg_clr_27x22_2\"/>\n            <asset mimeType=\"image/png\" name=\"ctlg_clr_27x22_3\"/>\n            <asset mimeType=\"image/png\" name=\"ctlg_clr_40x32_1\"/>\n            <asset mimeType=\"image/png\" name=\"ctlg_clr_40x32_2\"/>\n            <asset mimeType=\"image/png\" name=\"ctlg_clr_40x32_3\"/>\n            <asset mimeType=\"image/png\" name=\"ctlg_arrow_down\"/>\n            <asset mimeType=\"image/png\" name=\"ctlg_arrow_next\"/>\n            <asset mimeType=\"image/png\" name=\"ctlg_arrow_prev\"/>\n            <asset mimeType=\"image/png\" name=\"ctlg_arrow_right\"/>\n            <asset mimeType=\"image/png\" name=\"ctlg_dyndeal_background\"/>\n            <asset mimeType=\"image/png\" name=\"ctlg_icon_deal_hc\"/>\n            <asset mimeType=\"image/png\" name=\"ctlg_pic_deal_icon_narrow\"/>\n            <asset mimeType=\"image/png\" name=\"ctlg_recycler_slot_bg\"/>\n            <asset mimeType=\"image/png\" name=\"purse_club_small\"/>\n            <asset mimeType=\"image/png\" name=\"purse_coins_small\"/>\n            <asset mimeType=\"image/png\" name=\"purse_pixels_small\"/>\n            <asset mimeType=\"image/png\" name=\"testarrow_down\"/>\n            <asset mimeType=\"image/png\" name=\"testarrow_right\"/>\n\t\t\t<asset mimeType=\"image/gif\" name=\"vip_icon_medium\"/>\n            <asset mimeType=\"image/gif\" name=\"events_confirm_purchase\"/>\n            <asset mimeType=\"image/png\" name=\"icon_bg_img_2\"/>\n            <asset mimeType=\"image/png\" name=\"icon_bg_img\"/>\n\t\t\t<asset mimeType=\"image/png\" name=\"icon_duck_vipwhite\"/>\n            <asset mimeType=\"image/png\" name=\"icon_hc\"/>\n            <asset mimeType=\"image/png\" name=\"minting_token_large\"/>\n            <asset mimeType=\"image/png\" name=\"minting_token_small\"/>\n            <asset mimeType=\"image/png\" name=\"thumb_bg\"/>\n            <asset mimeType=\"image/png\" name=\"thumb_bg_selected\"/>\n            <asset mimeType=\"image/png\" name=\"icon_credit_0\"/>\n            <asset mimeType=\"image/png\" name=\"icon_credit_1\"/>\n            <asset mimeType=\"image/png\" name=\"icon_credit_2\"/>\n            <asset mimeType=\"image/png\" name=\"icon_credit_3\"/>\n            <asset mimeType=\"image/png\" name=\"icon_credit_4\"/>\n            <asset mimeType=\"image/png\" name=\"icon_credit_5\"/>\n            <asset mimeType=\"image/png\" name=\"icon_credit_6\"/>\n            <asset mimeType=\"image/png\" name=\"icon_pixel_0\"/>\n            <asset mimeType=\"image/png\" name=\"icon_shell_0\"/>\n            <asset mimeType=\"image/png\" name=\"snowwar_tokens_10\"/>\n            <asset mimeType=\"image/png\" name=\"touchscreen_phone\"/>\n            <asset mimeType=\"image/png\" name=\"gift_incognito\" />\n            <asset mimeType=\"image/png\" name=\"catalog_icon_badge_included\" />\n            <asset mimeType=\"image/png\" name=\"catalog_icon_ninja_effect_included\" />\n            <asset mimeType=\"image/png\" name=\"thumb_up\"/>\n            <asset mimeType=\"image/png\" name=\"bundle_discount_star_sheet\"/>\n\n            <asset mimeType=\"text/xml\" name=\"club_extend_confirmation\"/>\n            <asset mimeType=\"text/xml\" name=\"club_buy_confirmation\"/>\n            <asset mimeType=\"text/xml\" name=\"club_buy_hc_item\"/>\n            <asset mimeType=\"text/xml\" name=\"club_buy_info_item\"/>\n            <asset mimeType=\"text/xml\" name=\"club_buy_vip_item\"/>\n            <asset mimeType=\"text/xml\" name=\"club_buy_vip_upgrade_item\"/>\n            <asset mimeType=\"text/xml\" name=\"club_gift_confirmation\"/>\n            <asset mimeType=\"text/xml\" name=\"club_gift_list_item\"/>\n            <asset mimeType=\"text/xml\" name=\"club_gift_preview\"/>\n\t\t\t<asset mimeType=\"text/xml\" name=\"vip_buy_item\"/>\n\t\t\t<asset mimeType=\"text/xml\" name=\"vip_benefits\"/>\n            <asset mimeType=\"text/xml\" name=\"color_chooser_cell\"/>\n            <asset mimeType=\"text/xml\" name=\"configuration_catalog_spaces\"/>\n            <asset mimeType=\"text/xml\" name=\"gridItem\"/>\n            <asset mimeType=\"text/xml\" name=\"grid_item_with_price_multi\" source=\"gridItem_with_price_multi.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"grid_item_with_price_single\" source=\"gridItem_with_price_single.xml\"/>\n\n            <asset mimeType=\"text/xml\" name=\"habbo_orderinfo_cantbuycredits\"/>\n            <asset mimeType=\"text/xml\" name=\"habbo_orderinfo_dialog\"/>\n            <asset mimeType=\"text/xml\" name=\"habbo_orderinfo_gift_checked\"/>\n            <asset mimeType=\"text/xml\" name=\"habbo_orderinfo_gift_unchecked\"/>\n            <asset mimeType=\"text/xml\" name=\"habbo_orderinfo_nocredits\"/>\n            <asset mimeType=\"text/xml\" name=\"habbo_orderinfo_receiver_suggestion\"/>\n            <asset mimeType=\"text/xml\" name=\"clubBuyWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"clubGiftWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"itemGridWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"colourGridWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"marketPlaceOwnItemsWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"marketPlaceWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"productViewWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"purchaseWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"recyclerPrizesWidgetLevelItem\"/>\n            <asset mimeType=\"text/xml\" name=\"recyclerWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"redeemItemCodeWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"singleViewWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"specialInfoWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"textInputWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"traxPreviewWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"trophyWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"marketplace_offer_details\"/>\n            <asset mimeType=\"text/xml\" name=\"marketplace_purchase_confirmation\"/>\n            <asset mimeType=\"text/xml\" name=\"marketplace_search_advanced\"/>\n            <asset mimeType=\"text/xml\" name=\"marketplace_search_simple\"/>\n            <asset mimeType=\"text/xml\" name=\"gift_palette_item\"/>\n            <asset mimeType=\"text/xml\" name=\"gift_wrapping\"/>\n            <asset mimeType=\"text/xml\" name=\"price_display\"/>\n            <asset mimeType=\"text/xml\" name=\"priceDisplayWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"purchase_confirmation\"/>\n            <asset mimeType=\"text/xml\" name=\"suggestion_list_item\"/>\n            <asset mimeType=\"text/xml\" name=\"suggestion_list_item_new\"/>\n            <asset mimeType=\"text/xml\" name=\"spaces\"/>\n            <asset mimeType=\"text/xml\" name=\"purchaseButtons\"/>\n            <asset mimeType=\"text/xml\" name=\"purchaseWidgetBuyVipStub\"/>\n            <asset mimeType=\"text/xml\" name=\"guildSelectorWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"guildBadgeViewWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"guild_selector_widget_item\"/>\n            <asset mimeType=\"text/xml\" name=\"petPreviewWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"club_direct_buy_xml\" source=\"club/club_direct_buy.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"club_direct_buy_success_xml\" source=\"club/club_direct_buy_success.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"badgeDisplayWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"activityPointDisplayWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"addOnBadgeViewWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"spinnerWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"catalog_volter\"/>\n            <asset mimeType=\"text/xml\" name=\"catalog_ubuntu\"/>\n            <asset mimeType=\"text/xml\" name=\"catalog_ubuntu_with_tabs\"/>\n            <asset mimeType=\"text/xml\" name=\"discountPromoItem\"/>\n            <asset mimeType=\"text/xml\" name=\"discountValueItem\"/>\n            <asset mimeType=\"text/xml\" name=\"totalPriceWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"bundlesInfoItem\"/>\n            <asset mimeType=\"text/xml\" name=\"soldLtdItemsWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"rent_confirmation\" />\n            <asset mimeType=\"text/xml\" name=\"badgeGridItem\" />\n            <asset mimeType=\"text/xml\" name=\"builderWidget\"/>\n            <asset mimeType=\"text/xml\" name=\"targeted_offer_dialog_xml\" source=\"targetedoffers/targeted_offer_dialog.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"targeted_offer_dialog_variation_xml\" source=\"targetedoffers/targeted_offer_dialog_variation.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"targeted_offer_minimized_xml\" source=\"targetedoffers/targeted_offer_minimized.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"targeted_offer_purchase_confirmation_xml\" source=\"targetedoffers/targeted_offer_purchase_confirmation.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"targeted_offer_habbomall_xml\" source=\"targetedoffers/targeted_offer_habbomall.xml\"/>\n\n            <!-- new layouts (Ubuntu) -->\n            <asset mimeType=\"text/xml\" name=\"layout_badge_display\"  source=\"layouts/layout_badge_display.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_builders_club_addons\" />\n            <asset mimeType=\"text/xml\" name=\"layout_builders_club_loyalty\" />\n            <asset mimeType=\"text/xml\" name=\"layout_builders_club_frontpage\" />\n            <asset mimeType=\"text/xml\" name=\"layout_club_buy\" source=\"layouts/layout_club_buy.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_club_gifts\" source=\"layouts/layout_club_gifts.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_default_3x3\" source=\"layouts/layout_default.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_frontpage4\" source=\"layouts/layout_frontpage.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_frontpage_featured\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_guild_custom_furni\" source=\"layouts/layout_guild_custom_furni.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_guild_frontpage\" source=\"layouts/layout_guild_frontpage.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_info_duckets\" source=\"layouts/layout_info_duckets.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_info_loyalty\" source=\"layouts/layout_info_loyalty.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_info_rentables\" source=\"layouts/layout_info_rentables.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_loyalty_vip_buy\" source=\"layouts/layout_loyalty_vip_buy.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_marketplace\" source=\"layouts/layout_marketplace.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_marketplace_own_items\" source=\"layouts/layout_marketplace_own_items.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_monkey\" source=\"layouts/layout_monkey.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_petcustomization\" source=\"layouts/layout_petcustomization.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_pets\" source=\"layouts/layout_pets.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_pets2\" source=\"layouts/layout_info_pets2.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_pets3\" source=\"layouts/layout_info_pets3.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_recycler\" source=\"layouts/layout_recycler.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_recycler_info\" source=\"layouts/layout_info_recycler.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_recycler_prizes\" source=\"layouts/layout_recycler_prizes.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_roomads\" source=\"layouts/layout_roomads.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_single_bundle\"  source=\"layouts/layout_single_bundle.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_soundmachine\" source=\"layouts/layout_soundmachine.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_spaces_new\" source=\"layouts/layout_spaces_new.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_trophies\" source=\"layouts/layout_trophies.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_vip_buy\" source=\"layouts/layout_vip_buy.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_guild_forum\"/>\n\n            <!-- old layouts (volter) -->\n            <asset mimeType=\"text/xml\" name=\"old_layout_badge_display\" source=\"layouts_old/layout_badge_display.xml\" />\n            <asset mimeType=\"text/xml\" name=\"old_layout_club_buy\" source=\"layouts_old/layout_club_buy.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_club_gifts\" source=\"layouts_old/layout_club_gifts.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_default_3x3\" source=\"layouts_old/layout_default.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_frontpage4\" source=\"layouts_old/layout_frontpage.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_guild_custom_furni\" source=\"layouts_old/layout_guild_custom_furni.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_guild_frontpage\" source=\"layouts_old/layout_guild_frontpage.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_info_duckets\" source=\"layouts_old/layout_info_duckets.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_info_loyalty\" source=\"layouts_old/layout_info_loyalty.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_info_rentables\" source=\"layouts_old/layout_info_rentables.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_loyalty_vip_buy\" source=\"layouts_old/layout_loyalty_vip_buy.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_marketplace\" source=\"layouts_old/layout_marketplace.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_marketplace_own_items\" source=\"layouts_old/layout_marketplace_own_items.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_monkey\" source=\"layouts_old/layout_monkey.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_petcustomization\" source=\"layouts_old/layout_petcustomization.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_pets\" source=\"layouts_old/layout_pets.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_pets2\" source=\"layouts_old/layout_info_pets2.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_pets3\" source=\"layouts_old/layout_info_pets3.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_recycler\" source=\"layouts_old/layout_recycler.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_recycler_info\" source=\"layouts_old/layout_info_recycler.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_recycler_prizes\" source=\"layouts_old/layout_recycler_prizes.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_roomads\" source=\"layouts_old/layout_roomads.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_single_bundle\" source=\"layouts_old/layout_single_bundle.xml\" />\n            <asset mimeType=\"text/xml\" name=\"old_layout_soundmachine\" source=\"layouts_old/layout_soundmachine.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_spaces_new\" source=\"layouts_old/layout_spaces_new.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_trophies\" source=\"layouts_old/layout_trophies.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_vip_buy\" source=\"layouts_old/layout_vip_buy.xml\"/>\n\n            <asset mimeType=\"text/xml\" name=\"offer_center_xml\" source=\"offers/offer_center.xml\" />\n\n            <!-- Club Center -->\n            <asset mimeType=\"text/xml\" name=\"club_center_xml\" source=\"clubcenter/club_center.xml\" />\n            <asset mimeType=\"text/xml\" name=\"club_center_special_info_xml\" source=\"clubcenter/club_special_info_popup_bubble.xml\" />\n\n            <!-- Vault View -->\n            <asset mimeType=\"text/xml\" name=\"vault_view_xml\" source=\"vault/vault_view.xml\" />\n\n            <!-- Special Items Display -->\n            <asset mimeType=\"text/xml\" name=\"special_items_display_xml\" source=\"special_items_display/special_items_display.xml\" />\n\n            <!-- Collectible View -->\n            <asset mimeType=\"text/xml\" name=\"collectible_view_xml\" source=\"collectibles/collectible_hub.xml\" />\n            <asset mimeType=\"text/xml\" name=\"collectible_reward_xml\" source=\"collectibles/collectible_reward.xml\" />\n\n            <!-- Habbicons -->\n            <asset mimeType=\"text/xml\" name=\"habbicon_view_xml\"  source=\"habbicons/habbicon_hub.xml\"/>\n            <asset mimeType=\"text/xml\" name=\"habbicon_purchase_confirmation_xml\" />\n\n        </assets>\n        <aliases>\n            <asset mimeType=\"text/xml\" name=\"old_layout_niko\" ref=\"old_layout_monkey\"/>\n\n            <asset mimeType=\"text/xml\" name=\"old_layout_bots\" ref=\"old_layout_default_3x3\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_default_3x3_extrainfo\" ref=\"old_layout_default_3x3\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_pixeleffects\" ref=\"old_layout_default_3x3\"/>\n            <asset mimeType=\"text/xml\" name=\"old_layout_sold_ltd_items\" ref=\"old_layout_default_3x3\"/>\n\n            <asset mimeType=\"text/xml\" name=\"layout_niko\" ref=\"layout_monkey\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_bots\" ref=\"layout_default_3x3\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_default_3x3_extrainfo\" ref=\"layout_default_3x3\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_pixeleffects\" ref=\"layout_default_3x3\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_default_3x3_color_grouping\" ref=\"layout_default_3x3\"/>\n            <asset mimeType=\"text/xml\" name=\"layout_sold_ltd_items\" ref=\"layout_default_3x3\"/>\n\n            <asset mimeType=\"image/png\" name=\"bundle_discount_star_0\" ref=\"bundle_discount_star_sheet\"><param key=\"region\" value=\"0,0,38,39\" /></asset>\n            <asset mimeType=\"image/png\" name=\"bundle_discount_star_1\" ref=\"bundle_discount_star_sheet\"><param key=\"region\" value=\"38,0,38,39\" /></asset>\n            <asset mimeType=\"image/png\" name=\"bundle_discount_star_2\" ref=\"bundle_discount_star_sheet\"><param key=\"region\" value=\"76,0,38,39\" /></asset>\n            <asset mimeType=\"image/png\" name=\"bundle_discount_star_3\" ref=\"bundle_discount_star_sheet\"><param key=\"region\" value=\"114,0,38,39\" /></asset>\n            <asset mimeType=\"image/png\" name=\"bundle_discount_star_4\" ref=\"bundle_discount_star_sheet\"><param key=\"region\" value=\"152,0,38,39\" /></asset>\n            <asset mimeType=\"image/png\" name=\"bundle_discount_star_5\" ref=\"bundle_discount_star_sheet\"><param key=\"region\" value=\"190,0,38,39\" /></asset>\n            <asset mimeType=\"image/png\" name=\"bundle_discount_star_6\" ref=\"bundle_discount_star_sheet\"><param key=\"region\" value=\"228,0,38,39\" /></asset>\n            <asset mimeType=\"image/png\" name=\"bundle_discount_star_7\" ref=\"bundle_discount_star_sheet\"><param key=\"region\" value=\"266,0,38,39\" /></asset>\n        </aliases>\n\t</component>\n\n</manifest>\n",
+  "aliases": [
+    {
+      "name": "old_layout_niko",
+      "ref": "old_layout_monkey",
+      "mimeType": "text/xml",
+      "params": {}
+    },
+    {
+      "name": "old_layout_bots",
+      "ref": "old_layout_default_3x3",
+      "mimeType": "text/xml",
+      "params": {}
+    },
+    {
+      "name": "old_layout_default_3x3_extrainfo",
+      "ref": "old_layout_default_3x3",
+      "mimeType": "text/xml",
+      "params": {}
+    },
+    {
+      "name": "old_layout_pixeleffects",
+      "ref": "old_layout_default_3x3",
+      "mimeType": "text/xml",
+      "params": {}
+    },
+    {
+      "name": "old_layout_sold_ltd_items",
+      "ref": "old_layout_default_3x3",
+      "mimeType": "text/xml",
+      "params": {}
+    },
+    {
+      "name": "layout_niko",
+      "ref": "layout_monkey",
+      "mimeType": "text/xml",
+      "params": {}
+    },
+    {
+      "name": "layout_bots",
+      "ref": "layout_default_3x3",
+      "mimeType": "text/xml",
+      "params": {}
+    },
+    {
+      "name": "layout_default_3x3_extrainfo",
+      "ref": "layout_default_3x3",
+      "mimeType": "text/xml",
+      "params": {}
+    },
+    {
+      "name": "layout_pixeleffects",
+      "ref": "layout_default_3x3",
+      "mimeType": "text/xml",
+      "params": {}
+    },
+    {
+      "name": "layout_default_3x3_color_grouping",
+      "ref": "layout_default_3x3",
+      "mimeType": "text/xml",
+      "params": {}
+    },
+    {
+      "name": "layout_sold_ltd_items",
+      "ref": "layout_default_3x3",
+      "mimeType": "text/xml",
+      "params": {}
+    },
+    {
+      "name": "bundle_discount_star_0",
+      "ref": "bundle_discount_star_sheet",
+      "mimeType": "image/png",
+      "params": {
+        "region": "0,0,38,39"
+      }
+    },
+    {
+      "name": "bundle_discount_star_1",
+      "ref": "bundle_discount_star_sheet",
+      "mimeType": "image/png",
+      "params": {
+        "region": "38,0,38,39"
+      }
+    },
+    {
+      "name": "bundle_discount_star_2",
+      "ref": "bundle_discount_star_sheet",
+      "mimeType": "image/png",
+      "params": {
+        "region": "76,0,38,39"
+      }
+    },
+    {
+      "name": "bundle_discount_star_3",
+      "ref": "bundle_discount_star_sheet",
+      "mimeType": "image/png",
+      "params": {
+        "region": "114,0,38,39"
+      }
+    },
+    {
+      "name": "bundle_discount_star_4",
+      "ref": "bundle_discount_star_sheet",
+      "mimeType": "image/png",
+      "params": {
+        "region": "152,0,38,39"
+      }
+    },
+    {
+      "name": "bundle_discount_star_5",
+      "ref": "bundle_discount_star_sheet",
+      "mimeType": "image/png",
+      "params": {
+        "region": "190,0,38,39"
+      }
+    },
+    {
+      "name": "bundle_discount_star_6",
+      "ref": "bundle_discount_star_sheet",
+      "mimeType": "image/png",
+      "params": {
+        "region": "228,0,38,39"
+      }
+    },
+    {
+      "name": "bundle_discount_star_7",
+      "ref": "bundle_discount_star_sheet",
+      "mimeType": "image/png",
+      "params": {
+        "region": "266,0,38,39"
+      }
+    }
+  ],
+  "entries": [
+    {
+      "name": "bot_thumb_bg",
+      "mimeType": "image/png",
+      "offset": 0,
+      "storedLength": 131,
+      "originalLength": 131,
+      "compression": "none"
+    },
+    {
+      "name": "bot_thumb_bg_selected",
+      "mimeType": "image/png",
+      "offset": 131,
+      "storedLength": 147,
+      "originalLength": 147,
+      "compression": "none"
+    },
+    {
+      "name": "ctlg_clr_27x22_1",
+      "mimeType": "image/png",
+      "offset": 278,
+      "storedLength": 340,
+      "originalLength": 340,
+      "compression": "none"
+    },
+    {
+      "name": "ctlg_clr_27x22_2",
+      "mimeType": "image/png",
+      "offset": 618,
+      "storedLength": 125,
+      "originalLength": 125,
+      "compression": "none"
+    },
+    {
+      "name": "ctlg_clr_27x22_3",
+      "mimeType": "image/png",
+      "offset": 743,
+      "storedLength": 285,
+      "originalLength": 285,
+      "compression": "none"
+    },
+    {
+      "name": "ctlg_clr_40x32_1",
+      "mimeType": "image/png",
+      "offset": 1028,
+      "storedLength": 151,
+      "originalLength": 151,
+      "compression": "none"
+    },
+    {
+      "name": "ctlg_clr_40x32_2",
+      "mimeType": "image/png",
+      "offset": 1179,
+      "storedLength": 134,
+      "originalLength": 134,
+      "compression": "none"
+    },
+    {
+      "name": "ctlg_clr_40x32_3",
+      "mimeType": "image/png",
+      "offset": 1313,
+      "storedLength": 182,
+      "originalLength": 182,
+      "compression": "none"
+    },
+    {
+      "name": "ctlg_arrow_down",
+      "mimeType": "image/png",
+      "offset": 1495,
+      "storedLength": 142,
+      "originalLength": 142,
+      "compression": "none"
+    },
+    {
+      "name": "ctlg_arrow_next",
+      "mimeType": "image/png",
+      "offset": 1637,
+      "storedLength": 130,
+      "originalLength": 130,
+      "compression": "none"
+    },
+    {
+      "name": "ctlg_arrow_prev",
+      "mimeType": "image/png",
+      "offset": 1767,
+      "storedLength": 127,
+      "originalLength": 127,
+      "compression": "none"
+    },
+    {
+      "name": "ctlg_arrow_right",
+      "mimeType": "image/png",
+      "offset": 1894,
+      "storedLength": 148,
+      "originalLength": 148,
+      "compression": "none"
+    },
+    {
+      "name": "ctlg_dyndeal_background",
+      "mimeType": "image/png",
+      "offset": 2042,
+      "storedLength": 2346,
+      "originalLength": 2346,
+      "compression": "none"
+    },
+    {
+      "name": "ctlg_icon_deal_hc",
+      "mimeType": "image/png",
+      "offset": 4388,
+      "storedLength": 250,
+      "originalLength": 250,
+      "compression": "none"
+    },
+    {
+      "name": "ctlg_pic_deal_icon_narrow",
+      "mimeType": "image/png",
+      "offset": 4638,
+      "storedLength": 294,
+      "originalLength": 294,
+      "compression": "none"
+    },
+    {
+      "name": "ctlg_recycler_slot_bg",
+      "mimeType": "image/png",
+      "offset": 4932,
+      "storedLength": 123,
+      "originalLength": 123,
+      "compression": "none"
+    },
+    {
+      "name": "purse_club_small",
+      "mimeType": "image/png",
+      "offset": 5055,
+      "storedLength": 199,
+      "originalLength": 199,
+      "compression": "none"
+    },
+    {
+      "name": "purse_coins_small",
+      "mimeType": "image/png",
+      "offset": 5254,
+      "storedLength": 228,
+      "originalLength": 228,
+      "compression": "none"
+    },
+    {
+      "name": "purse_pixels_small",
+      "mimeType": "image/png",
+      "offset": 5482,
+      "storedLength": 352,
+      "originalLength": 352,
+      "compression": "none"
+    },
+    {
+      "name": "testarrow_down",
+      "mimeType": "image/png",
+      "offset": 5834,
+      "storedLength": 130,
+      "originalLength": 130,
+      "compression": "none"
+    },
+    {
+      "name": "testarrow_right",
+      "mimeType": "image/png",
+      "offset": 5964,
+      "storedLength": 133,
+      "originalLength": 133,
+      "compression": "none"
+    },
+    {
+      "name": "vip_icon_medium",
+      "mimeType": "image/gif",
+      "offset": 6097,
+      "storedLength": 287,
+      "originalLength": 290,
+      "compression": "deflate"
+    },
+    {
+      "name": "events_confirm_purchase",
+      "mimeType": "image/gif",
+      "offset": 6384,
+      "storedLength": 2703,
+      "originalLength": 3000,
+      "compression": "deflate"
+    },
+    {
+      "name": "icon_bg_img_2",
+      "mimeType": "image/png",
+      "offset": 9087,
+      "storedLength": 120,
+      "originalLength": 120,
+      "compression": "none"
+    },
+    {
+      "name": "icon_bg_img",
+      "mimeType": "image/png",
+      "offset": 9207,
+      "storedLength": 123,
+      "originalLength": 123,
+      "compression": "none"
+    },
+    {
+      "name": "icon_duck_vipwhite",
+      "mimeType": "image/png",
+      "offset": 9330,
+      "storedLength": 425,
+      "originalLength": 425,
+      "compression": "none"
+    },
+    {
+      "name": "icon_hc",
+      "mimeType": "image/png",
+      "offset": 9755,
+      "storedLength": 457,
+      "originalLength": 457,
+      "compression": "none"
+    },
+    {
+      "name": "minting_token_large",
+      "mimeType": "image/png",
+      "offset": 10212,
+      "storedLength": 1285,
+      "originalLength": 1285,
+      "compression": "none"
+    },
+    {
+      "name": "minting_token_small",
+      "mimeType": "image/png",
+      "offset": 11497,
+      "storedLength": 619,
+      "originalLength": 619,
+      "compression": "none"
+    },
+    {
+      "name": "thumb_bg",
+      "mimeType": "image/png",
+      "offset": 12116,
+      "storedLength": 122,
+      "originalLength": 122,
+      "compression": "none"
+    },
+    {
+      "name": "thumb_bg_selected",
+      "mimeType": "image/png",
+      "offset": 12238,
+      "storedLength": 122,
+      "originalLength": 122,
+      "compression": "none"
+    },
+    {
+      "name": "icon_credit_0",
+      "mimeType": "image/png",
+      "offset": 12360,
+      "storedLength": 295,
+      "originalLength": 295,
+      "compression": "none"
+    },
+    {
+      "name": "icon_credit_1",
+      "mimeType": "image/png",
+      "offset": 12655,
+      "storedLength": 283,
+      "originalLength": 283,
+      "compression": "none"
+    },
+    {
+      "name": "icon_credit_2",
+      "mimeType": "image/png",
+      "offset": 12938,
+      "storedLength": 313,
+      "originalLength": 313,
+      "compression": "none"
+    },
+    {
+      "name": "icon_credit_3",
+      "mimeType": "image/png",
+      "offset": 13251,
+      "storedLength": 323,
+      "originalLength": 323,
+      "compression": "none"
+    },
+    {
+      "name": "icon_credit_4",
+      "mimeType": "image/png",
+      "offset": 13574,
+      "storedLength": 262,
+      "originalLength": 262,
+      "compression": "none"
+    },
+    {
+      "name": "icon_credit_5",
+      "mimeType": "image/png",
+      "offset": 13836,
+      "storedLength": 200,
+      "originalLength": 200,
+      "compression": "none"
+    },
+    {
+      "name": "icon_credit_6",
+      "mimeType": "image/png",
+      "offset": 14036,
+      "storedLength": 262,
+      "originalLength": 262,
+      "compression": "none"
+    },
+    {
+      "name": "icon_pixel_0",
+      "mimeType": "image/png",
+      "offset": 14298,
+      "storedLength": 302,
+      "originalLength": 302,
+      "compression": "none"
+    },
+    {
+      "name": "icon_shell_0",
+      "mimeType": "image/png",
+      "offset": 14600,
+      "storedLength": 994,
+      "originalLength": 994,
+      "compression": "none"
+    },
+    {
+      "name": "snowwar_tokens_10",
+      "mimeType": "image/png",
+      "offset": 15594,
+      "storedLength": 3994,
+      "originalLength": 3996,
+      "compression": "deflate"
+    },
+    {
+      "name": "touchscreen_phone",
+      "mimeType": "image/png",
+      "offset": 19588,
+      "storedLength": 557,
+      "originalLength": 557,
+      "compression": "none"
+    },
+    {
+      "name": "gift_incognito",
+      "mimeType": "image/png",
+      "offset": 20145,
+      "storedLength": 798,
+      "originalLength": 798,
+      "compression": "none"
+    },
+    {
+      "name": "catalog_icon_badge_included",
+      "mimeType": "image/png",
+      "offset": 20943,
+      "storedLength": 141,
+      "originalLength": 141,
+      "compression": "none"
+    },
+    {
+      "name": "catalog_icon_ninja_effect_included",
+      "mimeType": "image/png",
+      "offset": 21084,
+      "storedLength": 289,
+      "originalLength": 289,
+      "compression": "none"
+    },
+    {
+      "name": "thumb_up",
+      "mimeType": "image/png",
+      "offset": 21373,
+      "storedLength": 137,
+      "originalLength": 137,
+      "compression": "none"
+    },
+    {
+      "name": "bundle_discount_star_sheet",
+      "mimeType": "image/png",
+      "offset": 21510,
+      "storedLength": 552,
+      "originalLength": 552,
+      "compression": "none"
+    },
+    {
+      "name": "club_extend_confirmation",
+      "mimeType": "text/xml",
+      "offset": 22062,
+      "storedLength": 1421,
+      "originalLength": 13354,
+      "compression": "deflate"
+    },
+    {
+      "name": "club_buy_confirmation",
+      "mimeType": "text/xml",
+      "offset": 23483,
+      "storedLength": 1176,
+      "originalLength": 5923,
+      "compression": "deflate"
+    },
+    {
+      "name": "club_buy_hc_item",
+      "mimeType": "text/xml",
+      "offset": 24659,
+      "storedLength": 565,
+      "originalLength": 1780,
+      "compression": "deflate"
+    },
+    {
+      "name": "club_buy_info_item",
+      "mimeType": "text/xml",
+      "offset": 25224,
+      "storedLength": 533,
+      "originalLength": 1642,
+      "compression": "deflate"
+    },
+    {
+      "name": "club_buy_vip_item",
+      "mimeType": "text/xml",
+      "offset": 25757,
+      "storedLength": 563,
+      "originalLength": 1711,
+      "compression": "deflate"
+    },
+    {
+      "name": "club_buy_vip_upgrade_item",
+      "mimeType": "text/xml",
+      "offset": 26320,
+      "storedLength": 557,
+      "originalLength": 1705,
+      "compression": "deflate"
+    },
+    {
+      "name": "club_gift_confirmation",
+      "mimeType": "text/xml",
+      "offset": 26877,
+      "storedLength": 866,
+      "originalLength": 3316,
+      "compression": "deflate"
+    },
+    {
+      "name": "club_gift_list_item",
+      "mimeType": "text/xml",
+      "offset": 27743,
+      "storedLength": 806,
+      "originalLength": 3148,
+      "compression": "deflate"
+    },
+    {
+      "name": "club_gift_preview",
+      "mimeType": "text/xml",
+      "offset": 28549,
+      "storedLength": 216,
+      "originalLength": 362,
+      "compression": "deflate"
+    },
+    {
+      "name": "vip_buy_item",
+      "mimeType": "text/xml",
+      "offset": 28765,
+      "storedLength": 685,
+      "originalLength": 2177,
+      "compression": "deflate"
+    },
+    {
+      "name": "vip_benefits",
+      "mimeType": "text/xml",
+      "offset": 29450,
+      "storedLength": 817,
+      "originalLength": 3667,
+      "compression": "deflate"
+    },
+    {
+      "name": "color_chooser_cell",
+      "mimeType": "text/xml",
+      "offset": 30267,
+      "storedLength": 263,
+      "originalLength": 622,
+      "compression": "deflate"
+    },
+    {
+      "name": "configuration_catalog_spaces",
+      "mimeType": "text/xml",
+      "offset": 30530,
+      "storedLength": 1308,
+      "originalLength": 9320,
+      "compression": "deflate"
+    },
+    {
+      "name": "gridItem",
+      "mimeType": "text/xml",
+      "offset": 31838,
+      "storedLength": 928,
+      "originalLength": 4271,
+      "compression": "deflate"
+    },
+    {
+      "name": "grid_item_with_price_multi",
+      "mimeType": "text/xml",
+      "offset": 32766,
+      "storedLength": 1288,
+      "originalLength": 7788,
+      "compression": "deflate"
+    },
+    {
+      "name": "grid_item_with_price_single",
+      "mimeType": "text/xml",
+      "offset": 34054,
+      "storedLength": 1236,
+      "originalLength": 6359,
+      "compression": "deflate"
+    },
+    {
+      "name": "habbo_orderinfo_cantbuycredits",
+      "mimeType": "text/xml",
+      "offset": 35290,
+      "storedLength": 524,
+      "originalLength": 1805,
+      "compression": "deflate"
+    },
+    {
+      "name": "habbo_orderinfo_dialog",
+      "mimeType": "text/xml",
+      "offset": 35814,
+      "storedLength": 685,
+      "originalLength": 3818,
+      "compression": "deflate"
+    },
+    {
+      "name": "habbo_orderinfo_gift_checked",
+      "mimeType": "text/xml",
+      "offset": 36499,
+      "storedLength": 638,
+      "originalLength": 2864,
+      "compression": "deflate"
+    },
+    {
+      "name": "habbo_orderinfo_gift_unchecked",
+      "mimeType": "text/xml",
+      "offset": 37137,
+      "storedLength": 314,
+      "originalLength": 523,
+      "compression": "deflate"
+    },
+    {
+      "name": "habbo_orderinfo_nocredits",
+      "mimeType": "text/xml",
+      "offset": 37451,
+      "storedLength": 513,
+      "originalLength": 1787,
+      "compression": "deflate"
+    },
+    {
+      "name": "habbo_orderinfo_receiver_suggestion",
+      "mimeType": "text/xml",
+      "offset": 37964,
+      "storedLength": 435,
+      "originalLength": 971,
+      "compression": "deflate"
+    },
+    {
+      "name": "clubBuyWidget",
+      "mimeType": "text/xml",
+      "offset": 38399,
+      "storedLength": 715,
+      "originalLength": 3438,
+      "compression": "deflate"
+    },
+    {
+      "name": "clubGiftWidget",
+      "mimeType": "text/xml",
+      "offset": 39114,
+      "storedLength": 531,
+      "originalLength": 2231,
+      "compression": "deflate"
+    },
+    {
+      "name": "itemGridWidget",
+      "mimeType": "text/xml",
+      "offset": 39645,
+      "storedLength": 350,
+      "originalLength": 731,
+      "compression": "deflate"
+    },
+    {
+      "name": "colourGridWidget",
+      "mimeType": "text/xml",
+      "offset": 39995,
+      "storedLength": 351,
+      "originalLength": 734,
+      "compression": "deflate"
+    },
+    {
+      "name": "marketPlaceOwnItemsWidget",
+      "mimeType": "text/xml",
+      "offset": 40346,
+      "storedLength": 1171,
+      "originalLength": 12859,
+      "compression": "deflate"
+    },
+    {
+      "name": "marketPlaceWidget",
+      "mimeType": "text/xml",
+      "offset": 41517,
+      "storedLength": 1098,
+      "originalLength": 6199,
+      "compression": "deflate"
+    },
+    {
+      "name": "productViewWidget",
+      "mimeType": "text/xml",
+      "offset": 42615,
+      "storedLength": 1222,
+      "originalLength": 6806,
+      "compression": "deflate"
+    },
+    {
+      "name": "purchaseWidget",
+      "mimeType": "text/xml",
+      "offset": 43837,
+      "storedLength": 701,
+      "originalLength": 2599,
+      "compression": "deflate"
+    },
+    {
+      "name": "recyclerPrizesWidgetLevelItem",
+      "mimeType": "text/xml",
+      "offset": 44538,
+      "storedLength": 841,
+      "originalLength": 4351,
+      "compression": "deflate"
+    },
+    {
+      "name": "recyclerWidget",
+      "mimeType": "text/xml",
+      "offset": 45379,
+      "storedLength": 1751,
+      "originalLength": 14579,
+      "compression": "deflate"
+    },
+    {
+      "name": "redeemItemCodeWidget",
+      "mimeType": "text/xml",
+      "offset": 47130,
+      "storedLength": 483,
+      "originalLength": 1121,
+      "compression": "deflate"
+    },
+    {
+      "name": "singleViewWidget",
+      "mimeType": "text/xml",
+      "offset": 47613,
+      "storedLength": 473,
+      "originalLength": 1502,
+      "compression": "deflate"
+    },
+    {
+      "name": "specialInfoWidget",
+      "mimeType": "text/xml",
+      "offset": 48086,
+      "storedLength": 491,
+      "originalLength": 1389,
+      "compression": "deflate"
+    },
+    {
+      "name": "textInputWidget",
+      "mimeType": "text/xml",
+      "offset": 48577,
+      "storedLength": 391,
+      "originalLength": 888,
+      "compression": "deflate"
+    },
+    {
+      "name": "traxPreviewWidget",
+      "mimeType": "text/xml",
+      "offset": 48968,
+      "storedLength": 481,
+      "originalLength": 1180,
+      "compression": "deflate"
+    },
+    {
+      "name": "trophyWidget",
+      "mimeType": "text/xml",
+      "offset": 49449,
+      "storedLength": 359,
+      "originalLength": 1047,
+      "compression": "deflate"
+    },
+    {
+      "name": "marketplace_offer_details",
+      "mimeType": "text/xml",
+      "offset": 49808,
+      "storedLength": 1002,
+      "originalLength": 5908,
+      "compression": "deflate"
+    },
+    {
+      "name": "marketplace_purchase_confirmation",
+      "mimeType": "text/xml",
+      "offset": 50810,
+      "storedLength": 1220,
+      "originalLength": 6612,
+      "compression": "deflate"
+    },
+    {
+      "name": "marketplace_search_advanced",
+      "mimeType": "text/xml",
+      "offset": 52030,
+      "storedLength": 779,
+      "originalLength": 5216,
+      "compression": "deflate"
+    },
+    {
+      "name": "marketplace_search_simple",
+      "mimeType": "text/xml",
+      "offset": 52809,
+      "storedLength": 505,
+      "originalLength": 1553,
+      "compression": "deflate"
+    },
+    {
+      "name": "gift_palette_item",
+      "mimeType": "text/xml",
+      "offset": 53314,
+      "storedLength": 361,
+      "originalLength": 1145,
+      "compression": "deflate"
+    },
+    {
+      "name": "gift_wrapping",
+      "mimeType": "text/xml",
+      "offset": 53675,
+      "storedLength": 1922,
+      "originalLength": 12701,
+      "compression": "deflate"
+    },
+    {
+      "name": "price_display",
+      "mimeType": "text/xml",
+      "offset": 55597,
+      "storedLength": 491,
+      "originalLength": 1843,
+      "compression": "deflate"
+    },
+    {
+      "name": "priceDisplayWidget",
+      "mimeType": "text/xml",
+      "offset": 56088,
+      "storedLength": 332,
+      "originalLength": 803,
+      "compression": "deflate"
+    },
+    {
+      "name": "purchase_confirmation",
+      "mimeType": "text/xml",
+      "offset": 56420,
+      "storedLength": 1623,
+      "originalLength": 9919,
+      "compression": "deflate"
+    },
+    {
+      "name": "suggestion_list_item",
+      "mimeType": "text/xml",
+      "offset": 58043,
+      "storedLength": 373,
+      "originalLength": 773,
+      "compression": "deflate"
+    },
+    {
+      "name": "suggestion_list_item_new",
+      "mimeType": "text/xml",
+      "offset": 58416,
+      "storedLength": 441,
+      "originalLength": 971,
+      "compression": "deflate"
+    },
+    {
+      "name": "spaces",
+      "mimeType": "text/xml",
+      "offset": 58857,
+      "storedLength": 558,
+      "originalLength": 1267,
+      "compression": "deflate"
+    },
+    {
+      "name": "purchaseButtons",
+      "mimeType": "text/xml",
+      "offset": 59415,
+      "storedLength": 548,
+      "originalLength": 1665,
+      "compression": "deflate"
+    },
+    {
+      "name": "purchaseWidgetBuyVipStub",
+      "mimeType": "text/xml",
+      "offset": 59963,
+      "storedLength": 513,
+      "originalLength": 1192,
+      "compression": "deflate"
+    },
+    {
+      "name": "guildSelectorWidget",
+      "mimeType": "text/xml",
+      "offset": 60476,
+      "storedLength": 506,
+      "originalLength": 1322,
+      "compression": "deflate"
+    },
+    {
+      "name": "guildBadgeViewWidget",
+      "mimeType": "text/xml",
+      "offset": 60982,
+      "storedLength": 265,
+      "originalLength": 454,
+      "compression": "deflate"
+    },
+    {
+      "name": "guild_selector_widget_item",
+      "mimeType": "text/xml",
+      "offset": 61247,
+      "storedLength": 299,
+      "originalLength": 565,
+      "compression": "deflate"
+    },
+    {
+      "name": "petPreviewWidget",
+      "mimeType": "text/xml",
+      "offset": 61546,
+      "storedLength": 475,
+      "originalLength": 1502,
+      "compression": "deflate"
+    },
+    {
+      "name": "club_direct_buy_xml",
+      "mimeType": "text/xml",
+      "offset": 62021,
+      "storedLength": 1097,
+      "originalLength": 4624,
+      "compression": "deflate"
+    },
+    {
+      "name": "club_direct_buy_success_xml",
+      "mimeType": "text/xml",
+      "offset": 63118,
+      "storedLength": 816,
+      "originalLength": 3235,
+      "compression": "deflate"
+    },
+    {
+      "name": "badgeDisplayWidget",
+      "mimeType": "text/xml",
+      "offset": 63934,
+      "storedLength": 464,
+      "originalLength": 1692,
+      "compression": "deflate"
+    },
+    {
+      "name": "activityPointDisplayWidget",
+      "mimeType": "text/xml",
+      "offset": 64398,
+      "storedLength": 453,
+      "originalLength": 1043,
+      "compression": "deflate"
+    },
+    {
+      "name": "addOnBadgeViewWidget",
+      "mimeType": "text/xml",
+      "offset": 64851,
+      "storedLength": 291,
+      "originalLength": 561,
+      "compression": "deflate"
+    },
+    {
+      "name": "spinnerWidget",
+      "mimeType": "text/xml",
+      "offset": 65142,
+      "storedLength": 594,
+      "originalLength": 2118,
+      "compression": "deflate"
+    },
+    {
+      "name": "catalog_volter",
+      "mimeType": "text/xml",
+      "offset": 65736,
+      "storedLength": 1311,
+      "originalLength": 7606,
+      "compression": "deflate"
+    },
+    {
+      "name": "catalog_ubuntu",
+      "mimeType": "text/xml",
+      "offset": 67047,
+      "storedLength": 2080,
+      "originalLength": 19722,
+      "compression": "deflate"
+    },
+    {
+      "name": "catalog_ubuntu_with_tabs",
+      "mimeType": "text/xml",
+      "offset": 69127,
+      "storedLength": 2191,
+      "originalLength": 20182,
+      "compression": "deflate"
+    },
+    {
+      "name": "discountPromoItem",
+      "mimeType": "text/xml",
+      "offset": 71318,
+      "storedLength": 563,
+      "originalLength": 1839,
+      "compression": "deflate"
+    },
+    {
+      "name": "discountValueItem",
+      "mimeType": "text/xml",
+      "offset": 71881,
+      "storedLength": 829,
+      "originalLength": 5436,
+      "compression": "deflate"
+    },
+    {
+      "name": "totalPriceWidget",
+      "mimeType": "text/xml",
+      "offset": 72710,
+      "storedLength": 654,
+      "originalLength": 3077,
+      "compression": "deflate"
+    },
+    {
+      "name": "bundlesInfoItem",
+      "mimeType": "text/xml",
+      "offset": 73364,
+      "storedLength": 804,
+      "originalLength": 4095,
+      "compression": "deflate"
+    },
+    {
+      "name": "soldLtdItemsWidget",
+      "mimeType": "text/xml",
+      "offset": 74168,
+      "storedLength": 646,
+      "originalLength": 2144,
+      "compression": "deflate"
+    },
+    {
+      "name": "rent_confirmation",
+      "mimeType": "text/xml",
+      "offset": 74814,
+      "storedLength": 1049,
+      "originalLength": 4554,
+      "compression": "deflate"
+    },
+    {
+      "name": "badgeGridItem",
+      "mimeType": "text/xml",
+      "offset": 75863,
+      "storedLength": 379,
+      "originalLength": 953,
+      "compression": "deflate"
+    },
+    {
+      "name": "builderWidget",
+      "mimeType": "text/xml",
+      "offset": 76242,
+      "storedLength": 723,
+      "originalLength": 2517,
+      "compression": "deflate"
+    },
+    {
+      "name": "targeted_offer_dialog_xml",
+      "mimeType": "text/xml",
+      "offset": 76965,
+      "storedLength": 1917,
+      "originalLength": 11955,
+      "compression": "deflate"
+    },
+    {
+      "name": "targeted_offer_dialog_variation_xml",
+      "mimeType": "text/xml",
+      "offset": 78882,
+      "storedLength": 1299,
+      "originalLength": 6960,
+      "compression": "deflate"
+    },
+    {
+      "name": "targeted_offer_minimized_xml",
+      "mimeType": "text/xml",
+      "offset": 80181,
+      "storedLength": 612,
+      "originalLength": 2289,
+      "compression": "deflate"
+    },
+    {
+      "name": "targeted_offer_purchase_confirmation_xml",
+      "mimeType": "text/xml",
+      "offset": 80793,
+      "storedLength": 1411,
+      "originalLength": 7400,
+      "compression": "deflate"
+    },
+    {
+      "name": "targeted_offer_habbomall_xml",
+      "mimeType": "text/xml",
+      "offset": 82204,
+      "storedLength": 673,
+      "originalLength": 1900,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_badge_display",
+      "mimeType": "text/xml",
+      "offset": 82877,
+      "storedLength": 1078,
+      "originalLength": 4556,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_builders_club_addons",
+      "mimeType": "text/xml",
+      "offset": 83955,
+      "storedLength": 1246,
+      "originalLength": 6197,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_builders_club_loyalty",
+      "mimeType": "text/xml",
+      "offset": 85201,
+      "storedLength": 1082,
+      "originalLength": 4628,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_builders_club_frontpage",
+      "mimeType": "text/xml",
+      "offset": 86283,
+      "storedLength": 654,
+      "originalLength": 2272,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_club_buy",
+      "mimeType": "text/xml",
+      "offset": 86937,
+      "storedLength": 822,
+      "originalLength": 4093,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_club_gifts",
+      "mimeType": "text/xml",
+      "offset": 87759,
+      "storedLength": 560,
+      "originalLength": 2547,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_default_3x3",
+      "mimeType": "text/xml",
+      "offset": 88319,
+      "storedLength": 1763,
+      "originalLength": 12145,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_frontpage4",
+      "mimeType": "text/xml",
+      "offset": 90082,
+      "storedLength": 885,
+      "originalLength": 3544,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_frontpage_featured",
+      "mimeType": "text/xml",
+      "offset": 90967,
+      "storedLength": 1165,
+      "originalLength": 6647,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_guild_custom_furni",
+      "mimeType": "text/xml",
+      "offset": 92132,
+      "storedLength": 554,
+      "originalLength": 1465,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_guild_frontpage",
+      "mimeType": "text/xml",
+      "offset": 92686,
+      "storedLength": 675,
+      "originalLength": 2277,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_info_duckets",
+      "mimeType": "text/xml",
+      "offset": 93361,
+      "storedLength": 551,
+      "originalLength": 1633,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_info_loyalty",
+      "mimeType": "text/xml",
+      "offset": 93912,
+      "storedLength": 557,
+      "originalLength": 1633,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_info_rentables",
+      "mimeType": "text/xml",
+      "offset": 94469,
+      "storedLength": 850,
+      "originalLength": 9731,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_loyalty_vip_buy",
+      "mimeType": "text/xml",
+      "offset": 95319,
+      "storedLength": 830,
+      "originalLength": 3698,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_marketplace",
+      "mimeType": "text/xml",
+      "offset": 96149,
+      "storedLength": 1284,
+      "originalLength": 9145,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_marketplace_own_items",
+      "mimeType": "text/xml",
+      "offset": 97433,
+      "storedLength": 1884,
+      "originalLength": 18650,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_monkey",
+      "mimeType": "text/xml",
+      "offset": 99317,
+      "storedLength": 483,
+      "originalLength": 1747,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_petcustomization",
+      "mimeType": "text/xml",
+      "offset": 99800,
+      "storedLength": 727,
+      "originalLength": 2815,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_pets",
+      "mimeType": "text/xml",
+      "offset": 100527,
+      "storedLength": 853,
+      "originalLength": 6470,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_pets2",
+      "mimeType": "text/xml",
+      "offset": 101380,
+      "storedLength": 681,
+      "originalLength": 3282,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_pets3",
+      "mimeType": "text/xml",
+      "offset": 102061,
+      "storedLength": 701,
+      "originalLength": 3297,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_recycler",
+      "mimeType": "text/xml",
+      "offset": 102762,
+      "storedLength": 472,
+      "originalLength": 1530,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_recycler_info",
+      "mimeType": "text/xml",
+      "offset": 103234,
+      "storedLength": 676,
+      "originalLength": 2616,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_recycler_prizes",
+      "mimeType": "text/xml",
+      "offset": 103910,
+      "storedLength": 876,
+      "originalLength": 3989,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_roomads",
+      "mimeType": "text/xml",
+      "offset": 104786,
+      "storedLength": 937,
+      "originalLength": 4429,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_single_bundle",
+      "mimeType": "text/xml",
+      "offset": 105723,
+      "storedLength": 948,
+      "originalLength": 4628,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_soundmachine",
+      "mimeType": "text/xml",
+      "offset": 106671,
+      "storedLength": 898,
+      "originalLength": 4478,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_spaces_new",
+      "mimeType": "text/xml",
+      "offset": 107569,
+      "storedLength": 743,
+      "originalLength": 2569,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_trophies",
+      "mimeType": "text/xml",
+      "offset": 108312,
+      "storedLength": 890,
+      "originalLength": 4036,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_vip_buy",
+      "mimeType": "text/xml",
+      "offset": 109202,
+      "storedLength": 888,
+      "originalLength": 4361,
+      "compression": "deflate"
+    },
+    {
+      "name": "layout_guild_forum",
+      "mimeType": "text/xml",
+      "offset": 110090,
+      "storedLength": 860,
+      "originalLength": 3170,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_badge_display",
+      "mimeType": "text/xml",
+      "offset": 110950,
+      "storedLength": 656,
+      "originalLength": 2283,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_club_buy",
+      "mimeType": "text/xml",
+      "offset": 111606,
+      "storedLength": 269,
+      "originalLength": 473,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_club_gifts",
+      "mimeType": "text/xml",
+      "offset": 111875,
+      "storedLength": 246,
+      "originalLength": 436,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_default_3x3",
+      "mimeType": "text/xml",
+      "offset": 112121,
+      "storedLength": 568,
+      "originalLength": 1789,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_frontpage4",
+      "mimeType": "text/xml",
+      "offset": 112689,
+      "storedLength": 878,
+      "originalLength": 3541,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_guild_custom_furni",
+      "mimeType": "text/xml",
+      "offset": 113567,
+      "storedLength": 537,
+      "originalLength": 1446,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_guild_frontpage",
+      "mimeType": "text/xml",
+      "offset": 114104,
+      "storedLength": 641,
+      "originalLength": 2081,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_info_duckets",
+      "mimeType": "text/xml",
+      "offset": 114745,
+      "storedLength": 550,
+      "originalLength": 1631,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_info_loyalty",
+      "mimeType": "text/xml",
+      "offset": 115295,
+      "storedLength": 557,
+      "originalLength": 1632,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_info_rentables",
+      "mimeType": "text/xml",
+      "offset": 115852,
+      "storedLength": 839,
+      "originalLength": 9726,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_loyalty_vip_buy",
+      "mimeType": "text/xml",
+      "offset": 116691,
+      "storedLength": 863,
+      "originalLength": 3880,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_marketplace",
+      "mimeType": "text/xml",
+      "offset": 117554,
+      "storedLength": 269,
+      "originalLength": 482,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_marketplace_own_items",
+      "mimeType": "text/xml",
+      "offset": 117823,
+      "storedLength": 287,
+      "originalLength": 501,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_monkey",
+      "mimeType": "text/xml",
+      "offset": 118110,
+      "storedLength": 464,
+      "originalLength": 1556,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_petcustomization",
+      "mimeType": "text/xml",
+      "offset": 118574,
+      "storedLength": 722,
+      "originalLength": 2799,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_pets",
+      "mimeType": "text/xml",
+      "offset": 119296,
+      "storedLength": 944,
+      "originalLength": 7057,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_pets2",
+      "mimeType": "text/xml",
+      "offset": 120240,
+      "storedLength": 680,
+      "originalLength": 3146,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_pets3",
+      "mimeType": "text/xml",
+      "offset": 120920,
+      "storedLength": 692,
+      "originalLength": 3234,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_recycler",
+      "mimeType": "text/xml",
+      "offset": 121612,
+      "storedLength": 438,
+      "originalLength": 966,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_recycler_info",
+      "mimeType": "text/xml",
+      "offset": 122050,
+      "storedLength": 676,
+      "originalLength": 2547,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_recycler_prizes",
+      "mimeType": "text/xml",
+      "offset": 122726,
+      "storedLength": 807,
+      "originalLength": 3510,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_roomads",
+      "mimeType": "text/xml",
+      "offset": 123533,
+      "storedLength": 902,
+      "originalLength": 4368,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_single_bundle",
+      "mimeType": "text/xml",
+      "offset": 124435,
+      "storedLength": 925,
+      "originalLength": 4626,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_soundmachine",
+      "mimeType": "text/xml",
+      "offset": 125360,
+      "storedLength": 884,
+      "originalLength": 4451,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_spaces_new",
+      "mimeType": "text/xml",
+      "offset": 126244,
+      "storedLength": 719,
+      "originalLength": 2476,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_trophies",
+      "mimeType": "text/xml",
+      "offset": 126963,
+      "storedLength": 876,
+      "originalLength": 4025,
+      "compression": "deflate"
+    },
+    {
+      "name": "old_layout_vip_buy",
+      "mimeType": "text/xml",
+      "offset": 127839,
+      "storedLength": 871,
+      "originalLength": 3814,
+      "compression": "deflate"
+    },
+    {
+      "name": "offer_center_xml",
+      "mimeType": "text/xml",
+      "offset": 128710,
+      "storedLength": 993,
+      "originalLength": 4302,
+      "compression": "deflate"
+    },
+    {
+      "name": "club_center_xml",
+      "mimeType": "text/xml",
+      "offset": 129703,
+      "storedLength": 2156,
+      "originalLength": 18731,
+      "compression": "deflate"
+    },
+    {
+      "name": "club_center_special_info_xml",
+      "mimeType": "text/xml",
+      "offset": 131859,
+      "storedLength": 842,
+      "originalLength": 5564,
+      "compression": "deflate"
+    },
+    {
+      "name": "vault_view_xml",
+      "mimeType": "text/xml",
+      "offset": 132701,
+      "storedLength": 2141,
+      "originalLength": 46160,
+      "compression": "deflate"
+    },
+    {
+      "name": "special_items_display_xml",
+      "mimeType": "text/xml",
+      "offset": 134842,
+      "storedLength": 2017,
+      "originalLength": 15634,
+      "compression": "deflate"
+    },
+    {
+      "name": "collectible_view_xml",
+      "mimeType": "text/xml",
+      "offset": 136859,
+      "storedLength": 10862,
+      "originalLength": 137936,
+      "compression": "deflate"
+    },
+    {
+      "name": "collectible_reward_xml",
+      "mimeType": "text/xml",
+      "offset": 147721,
+      "storedLength": 1236,
+      "originalLength": 7116,
+      "compression": "deflate"
+    },
+    {
+      "name": "habbicon_view_xml",
+      "mimeType": "text/xml",
+      "offset": 148957,
+      "storedLength": 4214,
+      "originalLength": 41594,
+      "compression": "deflate"
+    },
+    {
+      "name": "habbicon_purchase_confirmation_xml",
+      "mimeType": "text/xml",
+      "offset": 153171,
+      "storedLength": 1657,
+      "originalLength": 12958,
+      "compression": "deflate"
+    }
+  ]
+}

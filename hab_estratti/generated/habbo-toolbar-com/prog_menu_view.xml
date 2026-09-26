@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="prog_menu_view" width="362" height="53" version="0.1" uid="33B5B842-8D6B-E7E3-3042-0BE83FB0C0D2">
+  <window>
+    <border x="0" y="0" width="362" height="53" params="147457" style="6" name="buttons" color="0x03b3933">
+      <children>
+        <container x="0" y="0" width="362" height="53" params="147472" style="3">
+          <children>
+            <boxsizer x="3" y="3" width="359" height="50" params="147472" style="3">
+              <children>
+                <region x="12" y="2" width="60" height="48" params="17" style="1" name="dailytasks" color="0xff3d3d3d" treshold="0">
+                  <children>
+                    <static_bitmap x="14" y="0" width="32" height="30" params="16" style="0" name="dailytasks_icon_color">
+                      <variables>
+                        <var key="asset_uri" value="prog_menu_daily_tasks" type="String"/>
+                        <var key="pivot_point" value="center" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                    <text x="0" y="32" width="60" height="14" params="786640" style="0" name="field_text" caption="%24%7Bwidget.progmenu.dailytasks%7D" width_max="60">
+                      <variables>
+                        <var key="auto_size" value="left" type="String"/>
+                        <var key="font_size" value="9" type="uint"/>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="text_style" value="u_regular" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                    <static_bitmap x="14" y="0" width="32" height="30" params="16" style="0" name="dailytasks_icon_grey">
+                      <variables>
+                        <var key="asset_uri" value="prog_menu_daily_tasks" type="String"/>
+                        <var key="pivot_point" value="center" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                        <var key="greyscale" value="true" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                  </children>
+                </region>
+                <region x="80" y="2" width="60" height="48" params="17" style="1" name="quests" color="0xff3d3d3d" treshold="0">
+                  <children>
+                    <static_bitmap x="14" y="0" width="32" height="30" params="16" style="0" name="quests_icon_color">
+                      <variables>
+                        <var key="asset_uri" value="prog_menu_quests" type="String"/>
+                        <var key="pivot_point" value="center" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                    <text x="0" y="32" width="60" height="14" params="786640" style="0" name="field_text" caption="%24%7Bwidget.progmenu.quests%7D" width_max="60">
+                      <variables>
+                        <var key="auto_size" value="left" type="String"/>
+                        <var key="font_size" value="9" type="uint"/>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="text_style" value="u_regular" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                    <static_bitmap x="14" y="0" width="32" height="30" params="16" style="0" name="quests_icon_grey">
+                      <variables>
+                        <var key="asset_uri" value="prog_menu_quests" type="String"/>
+                        <var key="pivot_point" value="center" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                        <var key="greyscale" value="true" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                  </children>
+                </region>
+                <region x="148" y="2" width="60" height="48" params="17" style="1" name="achievements" color="0xff3d3d3d" treshold="0">
+                  <children>
+                    <static_bitmap x="14" y="0" width="32" height="30" params="16" style="0" name="achievements_icon_color">
+                      <variables>
+                        <var key="asset_uri" value="me_menu_me_achv" type="String"/>
+                        <var key="pivot_point" value="center" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                    <text x="0" y="32" width="60" height="14" params="786640" style="0" name="field_text" caption="%24%7Bwidget.progmenu.achievements%7D" width_max="60">
+                      <variables>
+                        <var key="auto_size" value="left" type="String"/>
+                        <var key="font_size" value="9" type="uint"/>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="text_style" value="u_regular" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                    <static_bitmap x="14" y="0" width="32" height="30" params="16" style="0" name="achievements_icon_grey">
+                      <variables>
+                        <var key="asset_uri" value="me_menu_me_achv" type="String"/>
+                        <var key="pivot_point" value="center" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                        <var key="greyscale" value="true" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                  </children>
+                </region>
+                <region x="216" y="2" width="60" height="48" params="17" style="1" name="leaderboards" color="0xff3d3d3d" treshold="0">
+                  <children>
+                    <static_bitmap x="17" y="4" width="25" height="25" params="16" style="0" name="leaderboards_icon_color">
+                      <variables>
+                        <var key="asset_uri" value="prog_menu_leaderboards" type="String"/>
+                        <var key="pivot_point" value="center" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                    <text x="0" y="32" width="60" height="14" params="786640" style="0" name="field_text" caption="%24%7Bwidget.progmenu.leaderboards%7D" width_max="60">
+                      <variables>
+                        <var key="auto_size" value="left" type="String"/>
+                        <var key="font_size" value="9" type="uint"/>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="text_style" value="u_regular" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                    <static_bitmap x="17" y="4" width="25" height="25" params="16" style="0" name="leaderboards_icon_grey">
+                      <variables>
+                        <var key="asset_uri" value="prog_menu_leaderboards" type="String"/>
+                        <var key="pivot_point" value="center" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                        <var key="greyscale" value="true" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                  </children>
+                </region>
+                <region x="284" y="2" width="60" height="48" params="17" style="1" name="introduction" color="0xff3d3d3d" treshold="0">
+                  <children>
+                    <static_bitmap x="14" y="0" width="33" height="32" params="16" style="0" name="introduction_icon_color">
+                      <variables>
+                        <var key="asset_uri" value="prog_menu_introduction" type="String"/>
+                        <var key="pivot_point" value="center" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                    <text x="0" y="32" width="60" height="14" params="786640" style="0" name="field_text" caption="%24%7Bwidget.progmenu.introduction%7D" width_max="60">
+                      <variables>
+                        <var key="auto_size" value="left" type="String"/>
+                        <var key="font_size" value="9" type="uint"/>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="text_style" value="u_regular" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                    <static_bitmap x="14" y="0" width="33" height="32" params="16" style="0" name="introduction_icon_grey">
+                      <variables>
+                        <var key="asset_uri" value="prog_menu_introduction" type="String"/>
+                        <var key="pivot_point" value="center" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                        <var key="greyscale" value="true" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                  </children>
+                </region>
+                <container x="352" y="2" width="7" height="30" params="16" style="3" name="spacer"/>
+              </children>
+              <variables>
+                <var key="spacing" value="8" type="int"/>
+                <var key="padding_horizontal" value="12" type="int"/>
+                <var key="padding_vertical" value="2" type="int"/>
+              </variables>
+            </boxsizer>
+          </children>
+        </container>
+      </children>
+    </border>
+  </window>
+</layout>

@@ -1,0 +1,1048 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboRoomObjectVisualizationLib",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n\n\t<component class=\"com.sulake.bootstrap.RoomObjectVisualizationFactoryBootstrap\" version=\"0.0\">\n\t\t<interface iid=\"com.sulake.iid.IIDRoomObjectVisualizationFactory\" />\n        <assets>\n            <asset mimeType=\"image/png\" name=\"pet_experience_bubble_png\" />\n            <asset mimeType=\"image/png\" name=\"snowball_small_png\" />\n            <asset mimeType=\"image/png\" name=\"snowball_small_shadow_png\" />\n            <asset mimeType=\"image/png\" name=\"snowball_big_png\" />\n            <asset mimeType=\"image/png\" name=\"snowball_splash_1\" />\n            <asset mimeType=\"image/png\" name=\"snowball_splash_2\" />\n            <asset mimeType=\"image/png\" name=\"snowball_splash_3\" />\n            <asset mimeType=\"image/png\" name=\"variablefx_arrow_bar_background\"  source=\"variablefx/arrow-progress-bar/background.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_arrow_bar_chunk\"  source=\"variablefx/arrow-progress-bar/bar-chunk.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_arrow_bar_darkening\"  source=\"variablefx/arrow-progress-bar/darkening.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_arrow_bar_lighting\"  source=\"variablefx/arrow-progress-bar/lighting.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_arrow_bar_metallic\"  source=\"variablefx/arrow-progress-bar/metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_arrow_bar_splitter\"  source=\"variablefx/arrow-progress-bar/splitter.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_arrow_bar_splitter_left\"  source=\"variablefx/arrow-progress-bar/splitter-left.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_block_bar_background\"  source=\"variablefx/block-progress-bar/background.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_block_bar_darkening\"  source=\"variablefx/block-progress-bar/darkening.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_block_bar_fill\"  source=\"variablefx/block-progress-bar/fill.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_block_bar_lighting\"  source=\"variablefx/block-progress-bar/lighting.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_block_bar_metallic\"  source=\"variablefx/block-progress-bar/metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_block_bar_splitters\"  source=\"variablefx/block-progress-bar/splitters.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_boss_health_bar_background\"  source=\"variablefx/boss-health-bar/background.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_boss_health_bar_darkening\"  source=\"variablefx/boss-health-bar/darkening.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_boss_health_bar_fill\"  source=\"variablefx/boss-health-bar/fill.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_boss_health_bar_lighting\"  source=\"variablefx/boss-health-bar/lighting.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_boss_health_bar_metallic\"  source=\"variablefx/boss-health-bar/metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_classic_mini_bar_background\"  source=\"variablefx/classic-mini-progress-bar/background.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_classic_mini_bar_darkening\"  source=\"variablefx/classic-mini-progress-bar/darkening.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_classic_mini_bar_fill\"  source=\"variablefx/classic-mini-progress-bar/fill.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_classic_mini_bar_lighting\"  source=\"variablefx/classic-mini-progress-bar/lighting.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_classic_mini_bar_metallic\"  source=\"variablefx/classic-mini-progress-bar/metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_classic_bar_background\"  source=\"variablefx/classic-progress-bar/background.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_classic_bar_darkening\"  source=\"variablefx/classic-progress-bar/darkening.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_classic_bar_fill\"  source=\"variablefx/classic-progress-bar/fill.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_classic_bar_lighting\"  source=\"variablefx/classic-progress-bar/lighting.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_classic_bar_metallic\"  source=\"variablefx/classic-progress-bar/metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_health_bar_background\"  source=\"variablefx/health-bar/background.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_health_bar_darkening\"  source=\"variablefx/health-bar/darkening.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_health_bar_fill\"  source=\"variablefx/health-bar/fill.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_health_bar_lighting\"  source=\"variablefx/health-bar/lighting.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_battery\"  source=\"variablefx/icons/battery.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_burning\"  source=\"variablefx/icons/burning.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_cash\"  source=\"variablefx/icons/cash.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_cooldown\"  source=\"variablefx/icons/cooldown.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_droplet\"  source=\"variablefx/icons/droplet.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_energy\"  source=\"variablefx/icons/energy.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_eye\"  source=\"variablefx/icons/eye.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_fish\"  source=\"variablefx/icons/fish.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_food\"  source=\"variablefx/icons/food.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_freezing\"  source=\"variablefx/icons/freezing.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_gems\"  source=\"variablefx/icons/gems.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_gold\"  source=\"variablefx/icons/gold.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_health\"  source=\"variablefx/icons/health.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_honor\"  source=\"variablefx/icons/honor.png\"/>\n            <asset mimeType=\"text/xml\" name=\"variablefx_icon_metadata\"  source=\"variablefx/icons/icons.xml\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_magic\"  source=\"variablefx/icons/magic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_mana\"  source=\"variablefx/icons/mana.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_misc_heart\"  source=\"variablefx/icons/misc/misc_heart.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_misc_skull\"  source=\"variablefx/icons/misc/misc_skull.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_poison\"  source=\"variablefx/icons/poison.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_ranch_aubergine\"  source=\"variablefx/icons/ranch/aubergine.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_ranch_carrot\"  source=\"variablefx/icons/ranch/carrot.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_ranch_corn\"  source=\"variablefx/icons/ranch/corn.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_ranch_egg\"  source=\"variablefx/icons/ranch/egg.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_ranch_grape\"  source=\"variablefx/icons/ranch/grape.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_ranch_potato\"  source=\"variablefx/icons/ranch/potato.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_ranch_pumpkin\"  source=\"variablefx/icons/ranch/pumpkin.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_ranch_sapling\"  source=\"variablefx/icons/ranch/sapling.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_ranch_tomato\"  source=\"variablefx/icons/ranch/tomato.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_ranch_wheat\"  source=\"variablefx/icons/ranch/wheat.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_repairing\"  source=\"variablefx/icons/repairing.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_reputation\"  source=\"variablefx/icons/reputation.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_shield\"  source=\"variablefx/icons/shield.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_stamina\"  source=\"variablefx/icons/stamina.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_star_power\"  source=\"variablefx/icons/star_power.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_stealth\"  source=\"variablefx/icons/stealth.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_timeleft\"  source=\"variablefx/icons/timeleft.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_upgrading\"  source=\"variablefx/icons/upgrading.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_icon_wooden_logs\"  source=\"variablefx/icons/wooden_logs.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_level_details_background\"  source=\"variablefx/level-details/background.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_level_details_darkening\"  source=\"variablefx/level-details/darkening.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_level_details_darkening_metallic\"  source=\"variablefx/level-details/darkening-metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_level_details_frame\"  source=\"variablefx/level-details/frame.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_level_details_lighting\"  source=\"variablefx/level-details/lighting.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_level_details_lighting_metallic\"  source=\"variablefx/level-details/lighting-metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_level_with_progress_background\"  source=\"variablefx/level-with-progress/background.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_level_with_progress_darkening\"  source=\"variablefx/level-with-progress/darkening.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_level_with_progress_darkening_metallic\"  source=\"variablefx/level-with-progress/darkening-metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_level_with_progress_frame\"  source=\"variablefx/level-with-progress/frame.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_level_with_progress_lighting\"  source=\"variablefx/level-with-progress/lighting.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_level_with_progress_lighting_metallic\"  source=\"variablefx/level-with-progress/lighting-metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_masked_heart_fill_background\"  source=\"variablefx/masked-heart-fill/background.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_masked_heart_fill_bar\"  source=\"variablefx/masked-heart-fill/bar.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_masked_heart_fill_darkening\"  source=\"variablefx/masked-heart-fill/darkening.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_masked_heart_fill_darkening_metallic\"  source=\"variablefx/masked-heart-fill/darkening-metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_masked_heart_fill_end_pointer\"  source=\"variablefx/masked-heart-fill/end-pointer.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_masked_heart_fill_lighting\"  source=\"variablefx/masked-heart-fill/lighting.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_masked_heart_fill_lighting_metallic\"  source=\"variablefx/masked-heart-fill/lighting-metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_masked_heart_fill_mask\"  source=\"variablefx/masked-heart-fill/mask.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_masked_heart_fill_metallic\"  source=\"variablefx/masked-heart-fill/metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_number_blocky_darkening\"  source=\"variablefx/number-display/blocky/darkening.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_number_blocky_lighting\"  source=\"variablefx/number-display/blocky/lighting.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_number_blocky_numbers\"  source=\"variablefx/number-display/blocky/numbers.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_number_freeze_style_numbers\"  source=\"variablefx/number-display/freeze-style/numbers.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_number_shalimar_darkening\"  source=\"variablefx/number-display/shalimar/darkening.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_number_shalimar_lighting\"  source=\"variablefx/number-display/shalimar/lighting.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_number_shalimar_number_lines\"  source=\"variablefx/number-display/shalimar/number-lines.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_number_shalimar_numbers\"  source=\"variablefx/number-display/shalimar/numbers.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_numbers_large\" />\n            <asset mimeType=\"image/png\" name=\"variablefx_numbers_small\" />\n            <asset mimeType=\"text/xml\" name=\"variablefx_renderer_mapping\"  source=\"variablefx/renderers.xml\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_stacked_health_points_background\"  source=\"variablefx/stacked-health-points/background.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_stacked_health_points_darkening\"  source=\"variablefx/stacked-health-points/darkening.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_stacked_health_points_darkening_metallic\"  source=\"variablefx/stacked-health-points/darkening-metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_stacked_health_points_lighting\"  source=\"variablefx/stacked-health-points/lighting.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_stacked_health_points_lighting_metallic\"  source=\"variablefx/stacked-health-points/lighting-metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_stacked_health_points_metallic\"  source=\"variablefx/stacked-health-points/metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_striped_bar_background\"  source=\"variablefx/striped-progress-bar/background.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_striped_bar_darkening\"  source=\"variablefx/striped-progress-bar/darkening.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_striped_bar_darkening_metallic\"  source=\"variablefx/striped-progress-bar/darkening-metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_striped_bar_fill\"  source=\"variablefx/striped-progress-bar/fill.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_striped_bar_lighting\"  source=\"variablefx/striped-progress-bar/lighting.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_striped_bar_lighting_metallic\"  source=\"variablefx/striped-progress-bar/lighting-metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_striped_bar_metallic\"  source=\"variablefx/striped-progress-bar/metallic.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_striped_bar_stripe\"  source=\"variablefx/striped-progress-bar/stripe.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_thermometer_health_points_background\"  source=\"variablefx/thermometer-health-points/background.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_thermometer_health_points_darkening\"  source=\"variablefx/thermometer-health-points/darkening.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_thermometer_health_points_fill\"  source=\"variablefx/thermometer-health-points/fill.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_thermometer_health_points_lighting\"  source=\"variablefx/thermometer-health-points/lighting.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_thermometer_health_points_splitters\"  source=\"variablefx/thermometer-health-points/splitters.png\"/>\n            <asset mimeType=\"image/png\" name=\"variablefx_thermometer_health_points_top\"  source=\"variablefx/thermometer-health-points/top.png\"/>\n        </assets>\n\t</component>\n\t\n</manifest>\n",
+  "entries": [
+    {
+      "name": "pet_experience_bubble_png",
+      "mimeType": "image/png",
+      "offset": 0,
+      "storedLength": 744,
+      "originalLength": 744,
+      "compression": "none"
+    },
+    {
+      "name": "snowball_small_png",
+      "mimeType": "image/png",
+      "offset": 744,
+      "storedLength": 140,
+      "originalLength": 140,
+      "compression": "none"
+    },
+    {
+      "name": "snowball_small_shadow_png",
+      "mimeType": "image/png",
+      "offset": 884,
+      "storedLength": 109,
+      "originalLength": 109,
+      "compression": "none"
+    },
+    {
+      "name": "snowball_big_png",
+      "mimeType": "image/png",
+      "offset": 993,
+      "storedLength": 166,
+      "originalLength": 166,
+      "compression": "none"
+    },
+    {
+      "name": "snowball_splash_1",
+      "mimeType": "image/png",
+      "offset": 1159,
+      "storedLength": 169,
+      "originalLength": 169,
+      "compression": "none"
+    },
+    {
+      "name": "snowball_splash_2",
+      "mimeType": "image/png",
+      "offset": 1328,
+      "storedLength": 152,
+      "originalLength": 152,
+      "compression": "none"
+    },
+    {
+      "name": "snowball_splash_3",
+      "mimeType": "image/png",
+      "offset": 1480,
+      "storedLength": 145,
+      "originalLength": 145,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_arrow_bar_background",
+      "mimeType": "image/png",
+      "offset": 1625,
+      "storedLength": 379,
+      "originalLength": 453,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_arrow_bar_chunk",
+      "mimeType": "image/png",
+      "offset": 2004,
+      "storedLength": 325,
+      "originalLength": 389,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_arrow_bar_darkening",
+      "mimeType": "image/png",
+      "offset": 2329,
+      "storedLength": 310,
+      "originalLength": 380,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_arrow_bar_lighting",
+      "mimeType": "image/png",
+      "offset": 2639,
+      "storedLength": 388,
+      "originalLength": 446,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_arrow_bar_metallic",
+      "mimeType": "image/png",
+      "offset": 3027,
+      "storedLength": 326,
+      "originalLength": 399,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_arrow_bar_splitter",
+      "mimeType": "image/png",
+      "offset": 3353,
+      "storedLength": 291,
+      "originalLength": 364,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_arrow_bar_splitter_left",
+      "mimeType": "image/png",
+      "offset": 3644,
+      "storedLength": 292,
+      "originalLength": 366,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_block_bar_background",
+      "mimeType": "image/png",
+      "offset": 3936,
+      "storedLength": 380,
+      "originalLength": 453,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_block_bar_darkening",
+      "mimeType": "image/png",
+      "offset": 4316,
+      "storedLength": 134,
+      "originalLength": 134,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_block_bar_fill",
+      "mimeType": "image/png",
+      "offset": 4450,
+      "storedLength": 126,
+      "originalLength": 126,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_block_bar_lighting",
+      "mimeType": "image/png",
+      "offset": 4576,
+      "storedLength": 210,
+      "originalLength": 210,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_block_bar_metallic",
+      "mimeType": "image/png",
+      "offset": 4786,
+      "storedLength": 154,
+      "originalLength": 154,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_block_bar_splitters",
+      "mimeType": "image/png",
+      "offset": 4940,
+      "storedLength": 294,
+      "originalLength": 364,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_boss_health_bar_background",
+      "mimeType": "image/png",
+      "offset": 5234,
+      "storedLength": 224,
+      "originalLength": 224,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_boss_health_bar_darkening",
+      "mimeType": "image/png",
+      "offset": 5458,
+      "storedLength": 150,
+      "originalLength": 150,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_boss_health_bar_fill",
+      "mimeType": "image/png",
+      "offset": 5608,
+      "storedLength": 139,
+      "originalLength": 139,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_boss_health_bar_lighting",
+      "mimeType": "image/png",
+      "offset": 5747,
+      "storedLength": 147,
+      "originalLength": 147,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_boss_health_bar_metallic",
+      "mimeType": "image/png",
+      "offset": 5894,
+      "storedLength": 209,
+      "originalLength": 209,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_classic_mini_bar_background",
+      "mimeType": "image/png",
+      "offset": 6103,
+      "storedLength": 311,
+      "originalLength": 377,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_classic_mini_bar_darkening",
+      "mimeType": "image/png",
+      "offset": 6414,
+      "storedLength": 308,
+      "originalLength": 378,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_classic_mini_bar_fill",
+      "mimeType": "image/png",
+      "offset": 6722,
+      "storedLength": 294,
+      "originalLength": 362,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_classic_mini_bar_lighting",
+      "mimeType": "image/png",
+      "offset": 7016,
+      "storedLength": 324,
+      "originalLength": 388,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_classic_mini_bar_metallic",
+      "mimeType": "image/png",
+      "offset": 7340,
+      "storedLength": 307,
+      "originalLength": 377,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_classic_bar_background",
+      "mimeType": "image/png",
+      "offset": 7647,
+      "storedLength": 312,
+      "originalLength": 388,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_classic_bar_darkening",
+      "mimeType": "image/png",
+      "offset": 7959,
+      "storedLength": 141,
+      "originalLength": 141,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_classic_bar_fill",
+      "mimeType": "image/png",
+      "offset": 8100,
+      "storedLength": 126,
+      "originalLength": 126,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_classic_bar_lighting",
+      "mimeType": "image/png",
+      "offset": 8226,
+      "storedLength": 139,
+      "originalLength": 139,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_classic_bar_metallic",
+      "mimeType": "image/png",
+      "offset": 8365,
+      "storedLength": 143,
+      "originalLength": 143,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_health_bar_background",
+      "mimeType": "image/png",
+      "offset": 8508,
+      "storedLength": 310,
+      "originalLength": 384,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_health_bar_darkening",
+      "mimeType": "image/png",
+      "offset": 8818,
+      "storedLength": 131,
+      "originalLength": 131,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_health_bar_fill",
+      "mimeType": "image/png",
+      "offset": 8949,
+      "storedLength": 125,
+      "originalLength": 125,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_health_bar_lighting",
+      "mimeType": "image/png",
+      "offset": 9074,
+      "storedLength": 295,
+      "originalLength": 365,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_battery",
+      "mimeType": "image/png",
+      "offset": 9369,
+      "storedLength": 535,
+      "originalLength": 535,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_burning",
+      "mimeType": "image/png",
+      "offset": 9904,
+      "storedLength": 834,
+      "originalLength": 868,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_cash",
+      "mimeType": "image/png",
+      "offset": 10738,
+      "storedLength": 531,
+      "originalLength": 594,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_cooldown",
+      "mimeType": "image/png",
+      "offset": 11269,
+      "storedLength": 599,
+      "originalLength": 599,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_droplet",
+      "mimeType": "image/png",
+      "offset": 11868,
+      "storedLength": 350,
+      "originalLength": 350,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_energy",
+      "mimeType": "image/png",
+      "offset": 12218,
+      "storedLength": 291,
+      "originalLength": 291,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_eye",
+      "mimeType": "image/png",
+      "offset": 12509,
+      "storedLength": 670,
+      "originalLength": 670,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_fish",
+      "mimeType": "image/png",
+      "offset": 13179,
+      "storedLength": 579,
+      "originalLength": 645,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_food",
+      "mimeType": "image/png",
+      "offset": 13758,
+      "storedLength": 539,
+      "originalLength": 539,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_freezing",
+      "mimeType": "image/png",
+      "offset": 14297,
+      "storedLength": 876,
+      "originalLength": 1011,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_gems",
+      "mimeType": "image/png",
+      "offset": 15173,
+      "storedLength": 714,
+      "originalLength": 714,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_gold",
+      "mimeType": "image/png",
+      "offset": 15887,
+      "storedLength": 778,
+      "originalLength": 778,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_health",
+      "mimeType": "image/png",
+      "offset": 16665,
+      "storedLength": 398,
+      "originalLength": 398,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_honor",
+      "mimeType": "image/png",
+      "offset": 17063,
+      "storedLength": 1081,
+      "originalLength": 1081,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_metadata",
+      "mimeType": "text/xml",
+      "offset": 18144,
+      "storedLength": 242,
+      "originalLength": 925,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_magic",
+      "mimeType": "image/png",
+      "offset": 18386,
+      "storedLength": 423,
+      "originalLength": 423,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_mana",
+      "mimeType": "image/png",
+      "offset": 18809,
+      "storedLength": 605,
+      "originalLength": 605,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_misc_heart",
+      "mimeType": "image/png",
+      "offset": 19414,
+      "storedLength": 261,
+      "originalLength": 261,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_misc_skull",
+      "mimeType": "image/png",
+      "offset": 19675,
+      "storedLength": 1152,
+      "originalLength": 1176,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_poison",
+      "mimeType": "image/png",
+      "offset": 20827,
+      "storedLength": 507,
+      "originalLength": 507,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_ranch_aubergine",
+      "mimeType": "image/png",
+      "offset": 21334,
+      "storedLength": 943,
+      "originalLength": 1002,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_ranch_carrot",
+      "mimeType": "image/png",
+      "offset": 22277,
+      "storedLength": 1058,
+      "originalLength": 1113,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_ranch_corn",
+      "mimeType": "image/png",
+      "offset": 23335,
+      "storedLength": 1019,
+      "originalLength": 1075,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_ranch_egg",
+      "mimeType": "image/png",
+      "offset": 24354,
+      "storedLength": 775,
+      "originalLength": 849,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_ranch_grape",
+      "mimeType": "image/png",
+      "offset": 25129,
+      "storedLength": 910,
+      "originalLength": 970,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_ranch_potato",
+      "mimeType": "image/png",
+      "offset": 26039,
+      "storedLength": 968,
+      "originalLength": 1026,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_ranch_pumpkin",
+      "mimeType": "image/png",
+      "offset": 27007,
+      "storedLength": 1038,
+      "originalLength": 1093,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_ranch_sapling",
+      "mimeType": "image/png",
+      "offset": 28045,
+      "storedLength": 792,
+      "originalLength": 864,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_ranch_tomato",
+      "mimeType": "image/png",
+      "offset": 28837,
+      "storedLength": 959,
+      "originalLength": 1019,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_ranch_wheat",
+      "mimeType": "image/png",
+      "offset": 29796,
+      "storedLength": 808,
+      "originalLength": 880,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_repairing",
+      "mimeType": "image/png",
+      "offset": 30604,
+      "storedLength": 486,
+      "originalLength": 486,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_reputation",
+      "mimeType": "image/png",
+      "offset": 31090,
+      "storedLength": 653,
+      "originalLength": 653,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_shield",
+      "mimeType": "image/png",
+      "offset": 31743,
+      "storedLength": 365,
+      "originalLength": 365,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_stamina",
+      "mimeType": "image/png",
+      "offset": 32108,
+      "storedLength": 911,
+      "originalLength": 946,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_icon_star_power",
+      "mimeType": "image/png",
+      "offset": 33019,
+      "storedLength": 280,
+      "originalLength": 280,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_stealth",
+      "mimeType": "image/png",
+      "offset": 33299,
+      "storedLength": 972,
+      "originalLength": 972,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_timeleft",
+      "mimeType": "image/png",
+      "offset": 34271,
+      "storedLength": 704,
+      "originalLength": 704,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_upgrading",
+      "mimeType": "image/png",
+      "offset": 34975,
+      "storedLength": 191,
+      "originalLength": 191,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_icon_wooden_logs",
+      "mimeType": "image/png",
+      "offset": 35166,
+      "storedLength": 580,
+      "originalLength": 655,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_level_details_background",
+      "mimeType": "image/png",
+      "offset": 35746,
+      "storedLength": 225,
+      "originalLength": 225,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_level_details_darkening",
+      "mimeType": "image/png",
+      "offset": 35971,
+      "storedLength": 173,
+      "originalLength": 173,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_level_details_darkening_metallic",
+      "mimeType": "image/png",
+      "offset": 36144,
+      "storedLength": 172,
+      "originalLength": 172,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_level_details_frame",
+      "mimeType": "image/png",
+      "offset": 36316,
+      "storedLength": 411,
+      "originalLength": 464,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_level_details_lighting",
+      "mimeType": "image/png",
+      "offset": 36727,
+      "storedLength": 195,
+      "originalLength": 195,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_level_details_lighting_metallic",
+      "mimeType": "image/png",
+      "offset": 36922,
+      "storedLength": 197,
+      "originalLength": 197,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_level_with_progress_background",
+      "mimeType": "image/png",
+      "offset": 37119,
+      "storedLength": 188,
+      "originalLength": 194,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_level_with_progress_darkening",
+      "mimeType": "image/png",
+      "offset": 37307,
+      "storedLength": 156,
+      "originalLength": 156,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_level_with_progress_darkening_metallic",
+      "mimeType": "image/png",
+      "offset": 37463,
+      "storedLength": 159,
+      "originalLength": 159,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_level_with_progress_frame",
+      "mimeType": "image/png",
+      "offset": 37622,
+      "storedLength": 209,
+      "originalLength": 213,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_level_with_progress_lighting",
+      "mimeType": "image/png",
+      "offset": 37831,
+      "storedLength": 209,
+      "originalLength": 209,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_level_with_progress_lighting_metallic",
+      "mimeType": "image/png",
+      "offset": 38040,
+      "storedLength": 259,
+      "originalLength": 259,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_masked_heart_fill_background",
+      "mimeType": "image/png",
+      "offset": 38299,
+      "storedLength": 236,
+      "originalLength": 236,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_masked_heart_fill_bar",
+      "mimeType": "image/png",
+      "offset": 38535,
+      "storedLength": 294,
+      "originalLength": 294,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_masked_heart_fill_darkening",
+      "mimeType": "image/png",
+      "offset": 38829,
+      "storedLength": 223,
+      "originalLength": 223,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_masked_heart_fill_darkening_metallic",
+      "mimeType": "image/png",
+      "offset": 39052,
+      "storedLength": 241,
+      "originalLength": 241,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_masked_heart_fill_end_pointer",
+      "mimeType": "image/png",
+      "offset": 39293,
+      "storedLength": 144,
+      "originalLength": 148,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_masked_heart_fill_lighting",
+      "mimeType": "image/png",
+      "offset": 39437,
+      "storedLength": 414,
+      "originalLength": 469,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_masked_heart_fill_lighting_metallic",
+      "mimeType": "image/png",
+      "offset": 39851,
+      "storedLength": 434,
+      "originalLength": 485,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_masked_heart_fill_mask",
+      "mimeType": "image/png",
+      "offset": 40285,
+      "storedLength": 369,
+      "originalLength": 426,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_masked_heart_fill_metallic",
+      "mimeType": "image/png",
+      "offset": 40654,
+      "storedLength": 519,
+      "originalLength": 564,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_number_blocky_darkening",
+      "mimeType": "image/png",
+      "offset": 41173,
+      "storedLength": 776,
+      "originalLength": 814,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_number_blocky_lighting",
+      "mimeType": "image/png",
+      "offset": 41949,
+      "storedLength": 891,
+      "originalLength": 919,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_number_blocky_numbers",
+      "mimeType": "image/png",
+      "offset": 42840,
+      "storedLength": 641,
+      "originalLength": 692,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_number_freeze_style_numbers",
+      "mimeType": "image/png",
+      "offset": 43481,
+      "storedLength": 9911,
+      "originalLength": 11048,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_number_shalimar_darkening",
+      "mimeType": "image/png",
+      "offset": 53392,
+      "storedLength": 900,
+      "originalLength": 930,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_number_shalimar_lighting",
+      "mimeType": "image/png",
+      "offset": 54292,
+      "storedLength": 604,
+      "originalLength": 656,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_number_shalimar_number_lines",
+      "mimeType": "image/png",
+      "offset": 54896,
+      "storedLength": 531,
+      "originalLength": 599,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_number_shalimar_numbers",
+      "mimeType": "image/png",
+      "offset": 55427,
+      "storedLength": 730,
+      "originalLength": 775,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_numbers_large",
+      "mimeType": "image/png",
+      "offset": 56157,
+      "storedLength": 606,
+      "originalLength": 652,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_numbers_small",
+      "mimeType": "image/png",
+      "offset": 56763,
+      "storedLength": 494,
+      "originalLength": 548,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_renderer_mapping",
+      "mimeType": "text/xml",
+      "offset": 57257,
+      "storedLength": 363,
+      "originalLength": 1397,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_stacked_health_points_background",
+      "mimeType": "image/png",
+      "offset": 57620,
+      "storedLength": 176,
+      "originalLength": 176,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_stacked_health_points_darkening",
+      "mimeType": "image/png",
+      "offset": 57796,
+      "storedLength": 194,
+      "originalLength": 194,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_stacked_health_points_darkening_metallic",
+      "mimeType": "image/png",
+      "offset": 57990,
+      "storedLength": 205,
+      "originalLength": 205,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_stacked_health_points_lighting",
+      "mimeType": "image/png",
+      "offset": 58195,
+      "storedLength": 160,
+      "originalLength": 160,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_stacked_health_points_lighting_metallic",
+      "mimeType": "image/png",
+      "offset": 58355,
+      "storedLength": 176,
+      "originalLength": 176,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_stacked_health_points_metallic",
+      "mimeType": "image/png",
+      "offset": 58531,
+      "storedLength": 197,
+      "originalLength": 197,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_striped_bar_background",
+      "mimeType": "image/png",
+      "offset": 58728,
+      "storedLength": 384,
+      "originalLength": 453,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_striped_bar_darkening",
+      "mimeType": "image/png",
+      "offset": 59112,
+      "storedLength": 372,
+      "originalLength": 429,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_striped_bar_darkening_metallic",
+      "mimeType": "image/png",
+      "offset": 59484,
+      "storedLength": 400,
+      "originalLength": 453,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_striped_bar_fill",
+      "mimeType": "image/png",
+      "offset": 59884,
+      "storedLength": 296,
+      "originalLength": 362,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_striped_bar_lighting",
+      "mimeType": "image/png",
+      "offset": 60180,
+      "storedLength": 368,
+      "originalLength": 427,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_striped_bar_lighting_metallic",
+      "mimeType": "image/png",
+      "offset": 60548,
+      "storedLength": 404,
+      "originalLength": 457,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_striped_bar_metallic",
+      "mimeType": "image/png",
+      "offset": 60952,
+      "storedLength": 343,
+      "originalLength": 408,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_striped_bar_stripe",
+      "mimeType": "image/png",
+      "offset": 61295,
+      "storedLength": 401,
+      "originalLength": 455,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_thermometer_health_points_background",
+      "mimeType": "image/png",
+      "offset": 61696,
+      "storedLength": 339,
+      "originalLength": 406,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_thermometer_health_points_darkening",
+      "mimeType": "image/png",
+      "offset": 62035,
+      "storedLength": 146,
+      "originalLength": 146,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_thermometer_health_points_fill",
+      "mimeType": "image/png",
+      "offset": 62181,
+      "storedLength": 129,
+      "originalLength": 129,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_thermometer_health_points_lighting",
+      "mimeType": "image/png",
+      "offset": 62310,
+      "storedLength": 129,
+      "originalLength": 129,
+      "compression": "none"
+    },
+    {
+      "name": "variablefx_thermometer_health_points_splitters",
+      "mimeType": "image/png",
+      "offset": 62439,
+      "storedLength": 300,
+      "originalLength": 370,
+      "compression": "deflate"
+    },
+    {
+      "name": "variablefx_thermometer_health_points_top",
+      "mimeType": "image/png",
+      "offset": 62739,
+      "storedLength": 305,
+      "originalLength": 370,
+      "compression": "deflate"
+    }
+  ]
+}

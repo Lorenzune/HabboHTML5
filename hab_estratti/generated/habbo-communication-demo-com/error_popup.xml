@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="error_popup" width="300" height="328" version="0.1" uid="B527C943-E0F0-9CFC-A50C-1A4565F8B2E6">
+  <window>
+    <frame x="0" y="0" width="300" height="328" params="32769" style="3" caption="Title" color="0x0d43d59" width_min="300" width_max="300">
+      <filters>
+        <DropShadowFilter distance="4" alpha="0.34901960784313724" blurX="4" blurY="4"/>
+      </filters>
+      <children>
+        <itemlist_vertical x="17" y="10" width="265" height="271" params="144" style="3" name="content_list">
+          <children>
+            <text x="0" y="0" width="265" height="17" params="144" style="3" name="error_msg_text" caption="Error%20message">
+              <variables>
+                <var key="auto_size" value="center" type="String"/>
+                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                <var key="multiline" value="true" type="Boolean"/>
+                <var key="word_wrap" value="true" type="Boolean"/>
+                <var key="spacing" value="0" type="Number"/>
+                <var key="leading" value="0" type="Number"/>
+              </variables>
+            </text>
+            <text x="0" y="27" width="265" height="28" params="144" style="3" name="info_text" caption="%24%7Berror_window.info%7D" blend="0.65">
+              <variables>
+                <var key="auto_size" value="center" type="String"/>
+                <var key="font_size" value="11" type="uint"/>
+                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                <var key="multiline" value="true" type="Boolean"/>
+                <var key="word_wrap" value="true" type="Boolean"/>
+                <var key="spacing" value="0" type="Number"/>
+                <var key="leading" value="0" type="Number"/>
+              </variables>
+            </text>
+            <border x="0" y="65" width="265" height="136" params="144" style="105" name="error_info_border" tags="error_info">
+              <children>
+                <input x="5" y="5" width="255" height="126" params="2177" style="3" name="error_info_contents" background="true">
+                  <variables>
+                    <var key="font_size" value="11" type="uint"/>
+                    <var key="multiline" value="true" type="Boolean"/>
+                    <var key="word_wrap" value="true" type="Boolean"/>
+                    <var key="spacing" value="0" type="Number"/>
+                    <var key="leading" value="0" type="Number"/>
+                    <var key="editable" value="false" type="Boolean"/>
+                  </variables>
+                </input>
+              </children>
+            </border>
+            <container x="0" y="211" width="265" height="20" params="144" style="3" name="do_not_show_container">
+              <children>
+                <checkbox x="0" y="1" width="17" height="17" params="17" style="3" name="do_not_show_cbx"/>
+                <text x="20" y="0" width="110" height="17" params="16" style="3" caption="%24%7Berror_window.do_not_show%7D">
+                  <variables>
+                    <var key="auto_size" value="left" type="String"/>
+                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                    <var key="spacing" value="0" type="Number"/>
+                    <var key="leading" value="0" type="Number"/>
+                  </variables>
+                </text>
+              </children>
+            </container>
+            <itemlist_horizontal x="0" y="241" width="265" height="30" params="786640" style="3" name="button_row">
+              <children>
+                <button x="0" y="0" width="125" height="30" params="131089" style="3" name="ok_button" caption="%24%7Berror_window.ok%7D" width_min="125"/>
+                <button x="140" y="0" width="125" height="30" params="131089" style="3" name="copy_button" caption="%24%7Berror_window.copy%7D" width_min="125"/>
+              </children>
+              <variables>
+                <var key="spacing" value="15" type="int"/>
+                <var key="resize_on_item_update" value="true" type="Boolean"/>
+              </variables>
+            </itemlist_horizontal>
+          </children>
+          <variables>
+            <var key="spacing" value="10" type="int"/>
+            <var key="resize_on_item_update" value="true" type="Boolean"/>
+          </variables>
+        </itemlist_vertical>
+      </children>
+      <variables>
+        <var key="margin_left" value="0" type="int"/>
+        <var key="margin_top" value="33" type="int"/>
+        <var key="margin_right" value="0" type="int"/>
+        <var key="margin_bottom" value="0" type="int"/>
+      </variables>
+    </frame>
+  </window>
+</layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="custom_word_filter_item" width="222" height="18" version="0.1" uid="1596344C-152C-24E1-971B-67666ABEF9B0">
+  <window>
+    <container x="0" y="0" width="222" height="18" params="144" style="3" name="word_filter_list_item" color="0x0ff00ff" background="true">
+      <children>
+        <region x="0" y="0" width="222" height="18" params="145" style="3" name="bg_region" background="true" treshold="0"/>
+        <text x="0" y="0" width="222" height="18" params="144" style="3" name="text" caption="BadWord">
+          <variables>
+            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+            <var key="spacing" value="0" type="Number"/>
+            <var key="leading" value="0" type="Number"/>
+          </variables>
+        </text>
+      </children>
+    </container>
+  </window>
+</layout>

@@ -1,0 +1,1849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="collectible_view" width="500" height="600" version="0.1" uid="A3C05166-D961-EF05-A863-10F90D53EB60">
+  <window>
+    <frame x="59" y="79" width="500" height="600" params="1073774593" style="3" name="CollectorHub" caption="%24%7Bcollectibles.title%7D" color="0xff2a2a2a" width_min="500" width_max="500" height_min="600">
+      <filters>
+        <DropShadowFilter distance="4" alpha="0.34901960784313724" blurX="4" blurY="4"/>
+      </filters>
+      <children>
+        <container x="-5" y="-2" width="500" height="122" params="0" style="3" name="collector_hub_header" color="0x0b162d" background="true">
+          <children>
+            <border x="0" y="0" width="498" height="125" params="16" style="3" name="collector_hub_background" color="0x02c1d29">
+              <children>
+                <static_bitmap x="0" y="0" width="498" height="122" params="16" style="3" color="0x0804138">
+                  <variables>
+                    <var key="asset_uri" value="collectables_score_background_gradient" type="String"/>
+                    <var key="stretched_y" value="false" type="Boolean"/>
+                  </variables>
+                </static_bitmap>
+                <static_bitmap x="0" y="0" width="166" height="121" params="16" style="1" name="collectable_bg_left" color="0x0fc7c5a" blend="0.25" background="true">
+                  <variables>
+                    <var key="asset_uri" value="collectables_score_background" type="String"/>
+                    <var key="stretched_x" value="false" type="Boolean"/>
+                    <var key="stretched_y" value="false" type="Boolean"/>
+                  </variables>
+                </static_bitmap>
+                <static_bitmap x="332" y="-160" width="166" height="286" params="16" style="1" name="collectable_bg_right" color="0x0fc7c5a" blend="0.25" background="true">
+                  <variables>
+                    <var key="asset_uri" value="collectables_score_background_right" type="String"/>
+                    <var key="stretched_x" value="false" type="Boolean"/>
+                    <var key="stretched_y" value="false" type="Boolean"/>
+                    <var key="fit_size_to_contents" value="true" type="Boolean"/>
+                  </variables>
+                </static_bitmap>
+                <static_bitmap x="0" y="17" width="300" height="54" params="16" style="3" name="collector_level_bg2" color="0x07c8c92">
+                  <variables>
+                    <var key="asset_uri" value="collectables_score_element2" type="String"/>
+                  </variables>
+                </static_bitmap>
+                <static_bitmap x="299" y="17" width="92" height="72" params="16" style="3" name="collector_level_bg" color="0x07c8c92">
+                  <variables>
+                    <var key="asset_uri" value="collectables_score_element" type="String"/>
+                    <var key="stretched_x" value="false" type="Boolean"/>
+                    <var key="stretched_y" value="false" type="Boolean"/>
+                    <var key="fit_size_to_contents" value="true" type="Boolean"/>
+                  </variables>
+                </static_bitmap>
+                <static_bitmap x="-2" y="-1" width="130" height="128" params="16" style="3">
+                  <variables>
+                    <var key="asset_uri" value="collectables_cabinet_element" type="String"/>
+                    <var key="pivot_point" value="center" type="String"/>
+                    <var key="stretched_x" value="false" type="Boolean"/>
+                    <var key="stretched_y" value="false" type="Boolean"/>
+                  </variables>
+                </static_bitmap>
+                <container x="116" y="21" width="220" height="45" params="16" style="3" name="score_container">
+                  <children>
+                    <text x="0" y="0" width="158" height="18" params="16" style="3" name="current_score_key" caption="%24%7Bcollectibles.score%7D">
+                      <variables>
+                        <var key="auto_size" value="right" type="String"/>
+                        <var key="font_size" value="13" type="uint"/>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="text_style" value="u_bold" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="bold" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                    <text x="158" y="0" width="10" height="18" params="16" style="3" name="current_score_value" caption="0">
+                      <variables>
+                        <var key="auto_size" value="left" type="String"/>
+                        <var key="font_size" value="13" type="uint"/>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="text_style" value="u_bold" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                    <text x="0" y="26" width="158" height="18" params="16" style="3" name="current_hiscore_key" caption="%24%7Bcollectibles.high_score%7D">
+                      <variables>
+                        <var key="auto_size" value="right" type="String"/>
+                        <var key="font_size" value="13" type="uint"/>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="text_style" value="u_bold" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="bold" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                    <text x="158" y="26" width="11" height="18" params="16" style="3" name="current_hiscore_value" caption="0">
+                      <variables>
+                        <var key="auto_size" value="left" type="String"/>
+                        <var key="font_size" value="13" type="uint"/>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="text_style" value="u_bold" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="bold" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                    <text x="0" y="0" width="197" height="17" params="16" style="3" name="caption_current_score" caption="My%20Habbo%20Collector%20Score%3A%20999999" visible="false">
+                      <variables>
+                        <var key="auto_size" value="right" type="String"/>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="text_style" value="u_bold" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                    <text x="0" y="25" width="197" height="17" params="272" style="3" name="caption_all_time_high_score" caption="My%20all%20time%20high%20score%3A%20999999" visible="false">
+                      <variables>
+                        <var key="auto_size" value="right" type="String"/>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="text_style" value="u_bold" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                  </children>
+                </container>
+                <static_bitmap x="335" y="2" width="64" height="68" params="16" style="3">
+                  <variables>
+                    <var key="asset_uri" value="collectables_level_bg" type="String"/>
+                    <var key="stretched_x" value="false" type="Boolean"/>
+                    <var key="stretched_y" value="false" type="Boolean"/>
+                    <var key="fit_size_to_contents" value="true" type="Boolean"/>
+                  </variables>
+                </static_bitmap>
+                <container x="344" y="16" width="45" height="35" params="16" style="3" name="level_container">
+                  <children>
+                    <text x="2" y="0" width="40" height="26" params="16" style="3" name="collector_level" caption="0" width_max="40">
+                      <variables>
+                        <var key="auto_size" value="center" type="String"/>
+                        <var key="font_size" value="20" type="uint"/>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="text_style" value="u_bold" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                    <text x="3" y="22" width="41" height="14" params="16" style="3" name="level_title" caption="LEVEL" blend="0.41">
+                      <variables>
+                        <var key="auto_size" value="center" type="String"/>
+                        <var key="font_size" value="9" type="uint"/>
+                        <var key="text_style" value="u_bold" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                  </children>
+                </container>
+                <border x="419" y="18" width="70" height="22" params="16" style="3" name="silver_currency_border" color="0x0a99490">
+                  <children>
+                    <border x="1" y="1" width="68" height="20" params="16" style="3" name="silver_currency_container" color="0x03a2f29">
+                      <children>
+                        <text x="2" y="1" width="45" height="17" params="16" style="3" name="silver_currency_value" caption="0">
+                          <variables>
+                            <var key="auto_size" value="center" type="String"/>
+                            <var key="text_color" value="0xffffff" type="hex"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                  </children>
+                </border>
+                <static_bitmap x="466" y="17" width="24" height="24" params="16" style="3" name="silver_currency_icon">
+                  <variables>
+                    <var key="asset_uri" value="pursearea_mid_silver_icon" type="String"/>
+                    <var key="pivot_point" value="center" type="String"/>
+                  </variables>
+                </static_bitmap>
+                <border x="419" y="48" width="70" height="22" params="16" style="3" name="emerald_currency_border" color="0x0a99490">
+                  <children>
+                    <border x="1" y="1" width="68" height="20" params="16" style="3" name="emerald_currency_container" color="0x03a2f29">
+                      <children>
+                        <text x="2" y="1" width="45" height="17" params="16" style="3" name="emerald_currency_value" caption="0">
+                          <variables>
+                            <var key="auto_size" value="center" type="String"/>
+                            <var key="text_color" value="0xffffff" type="hex"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </border>
+                  </children>
+                </border>
+                <static_bitmap x="466" y="47" width="24" height="24" params="16" style="3" name="emerald_currency_icon">
+                  <variables>
+                    <var key="asset_uri" value="pursearea_mid_emerald_icon" type="String"/>
+                    <var key="pivot_point" value="center" type="String"/>
+                  </variables>
+                </static_bitmap>
+              </children>
+            </border>
+            <border x="-2" y="91" width="502" height="39" params="16" style="3" name="tab_bg" color="0x00" blend="0.4" visible="false"/>
+          </children>
+        </container>
+        <tab_context x="-5" y="89" width="498" height="34" params="0" style="3" name="top_view_select_tab_context" color="0x0dfdfe1">
+          <children>
+            <tab_button x="0" y="0" width="72" height="32" params="17" style="3" name="top_view_rewards_button" caption="Rewards"/>
+            <tab_button x="72" y="0" width="87" height="32" params="17" style="3" name="top_view_collections_button" caption="Collectibles"/>
+            <tab_button x="159" y="0" width="52" height="32" params="17" style="3" name="top_view_shop_button" caption="Shop"/>
+            <tab_button x="211" y="0" width="66" height="32" params="17" style="3" name="top_view_minting_button" caption="Minting"/>
+            <tab_button x="277" y="0" width="70" height="32" params="17" style="3" name="top_view_transfer_button" caption="Transfer"/>
+            <tab_button x="347" y="0" width="46" height="32" params="17" style="3" name="top_view_info_button" caption="Info"/>
+            <tab_button x="393" y="0" width="135" height="32" params="17" style="3" name="top_view_profile_button" caption="My%20Collector%20Profile" visible="false"/>
+            <tab_button x="528" y="0" width="58" height="32" params="17" style="3" name="top_view_levels_button" caption="Levels" visible="false"/>
+          </children>
+        </tab_context>
+        <container x="0" y="125" width="490" height="430" params="1073889424" style="3" name="mintingContainer" color="0x00" visible="false" background="true" tags="TEMPLATE%2Ccategory_container">
+          <children>
+            <background x="0" y="0" width="490" height="430" params="1073741840" style="3" name="loaded_content" color="0x00" background="true">
+              <children>
+                <container x="0" y="0" width="490" height="58" params="1073741840" style="3" name="category_minting_header_region" tags="category_header">
+                  <children>
+                    <region x="0" y="4" width="142" height="17" params="131089" style="1" name="category_name_region">
+                      <children>
+                        <text x="0" y="0" width="130" height="17" params="16" style="1" name="minting_header" caption="%24%7Bshop.minting.info.title%7D" width_min="2" width_max="270">
+                          <variables>
+                            <var key="auto_size" value="left" type="String"/>
+                            <var key="text_style" value="u_regular" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="bold" value="true" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </region>
+                    <region x="0" y="22" width="480" height="35" params="147473" style="1" name="category_minting_description_region">
+                      <children>
+                        <text x="0" y="0" width="480" height="35" params="16" style="1" name="minting_description" caption="%24%7Bshop.minting.info.description%7D" width_min="2" width_max="480" height_min="35">
+                          <variables>
+                            <var key="auto_size" value="left" type="String"/>
+                            <var key="text_style" value="u_regular" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="multiline" value="true" type="Boolean"/>
+                            <var key="word_wrap" value="true" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </region>
+                  </children>
+                </container>
+                <container x="4" y="60" width="480" height="262" params="16" style="3" name="furniture_container">
+                  <children>
+                    <scrollable_itemgrid_vertical x="0" y="0" width="179" height="260" params="16" style="3" name="itemgrid_inventory" tags="FURNI_ITEM_GRID">
+                      <children>
+                        <region x="0" y="0" width="52" height="61" params="131089" style="0" name="item_template" color="0xfffeeeee" treshold="0">
+                          <children>
+                            <border x="0" y="0" width="50" height="60" params="16" style="2" color="0x0a1a19b" tags="ITEM_HILIGHT">
+                              <children>
+                                <border x="0" y="0" width="50" height="60" params="16" style="3" name="border_outline" color="0x08f9db1">
+                                  <children>
+                                    <border x="1" y="1" width="48" height="58" params="16" style="3" name="border_background" color="0x0c8cdd3"/>
+                                  </children>
+                                </border>
+                              </children>
+                            </border>
+                            <bitmap x="2" y="4" width="46" height="40" params="16" style="3" name="bitmap" visible="false" tags="BITMAP" width_min="46" width_max="46">
+                              <variables>
+                                <var key="pivot_point" value="center" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </bitmap>
+                            <widget x="5" y="4" width="40" height="40" params="1077674000" style="3" name="badge_image_widget" visible="false" width_min="40" width_max="40" height_min="40" height_max="40">
+                              <variables>
+                                <var key="widget_type" value="badge_image" type="String"/>
+                                <var key="badge_image:pivot_point" value="center" type="String"/>
+                                <var key="badge_image:stretched_x" value="false" type="Boolean"/>
+                                <var key="badge_image:stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </widget>
+                            <static_bitmap x="16" y="15" width="18" height="18" params="3932176" style="3" name="unknown_image" visible="false">
+                              <variables>
+                                <var key="asset_uri" value="collectables_icon_curator_stamp_small" type="String"/>
+                              </variables>
+                            </static_bitmap>
+                            <widget x="5" y="4" width="40" height="40" params="1077674000" style="3" name="pet_image_widget" visible="false" width_min="40" width_max="40" height_min="40" height_max="40">
+                              <variables>
+                                <var key="widget_type" value="pet_image" type="String"/>
+                                <var key="pet_image:shrink_on_overflow" value="true" type="Boolean"/>
+                              </variables>
+                            </widget>
+                            <container x="0" y="45" width="50" height="16" params="131088" style="3" name="number_container" width_min="50" width_max="50">
+                              <children>
+                                <border x="3" y="1" width="44" height="12" params="16" style="3" name="text_border" color="0x0337c00"/>
+                                <text x="0" y="0" width="50" height="15" params="16" style="3" name="number" caption="x10">
+                                  <variables>
+                                    <var key="auto_size" value="center" type="String"/>
+                                    <var key="font_size" value="10" type="uint"/>
+                                    <var key="text_color" value="0xffffff" type="hex"/>
+                                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                    <var key="spacing" value="0" type="Number"/>
+                                    <var key="leading" value="0" type="Number"/>
+                                  </variables>
+                                </text>
+                              </children>
+                            </container>
+                            <static_bitmap x="31" y="3" width="16" height="16" params="16" style="3" name="checkmark_icon" visible="false">
+                              <variables>
+                                <var key="asset_uri" value="icon_checkmark_small" type="String"/>
+                              </variables>
+                            </static_bitmap>
+                          </children>
+                        </region>
+                      </children>
+                      <variables>
+                        <var key="spacing" value="1" type="int"/>
+                        <var key="scale_to_fit_items" value="true" type="Boolean"/>
+                      </variables>
+                    </scrollable_itemgrid_vertical>
+                    <container x="191" y="0" width="290" height="260" params="16" style="3" name="preview_container">
+                      <children>
+                        <border x="0" y="0" width="290" height="260" params="16" style="3" name="collection_preview_bg" color="0x03d1f39">
+                          <children>
+                            <static_bitmap x="-15" y="-8" width="166" height="286" params="16" style="3" blend="0.3">
+                              <variables>
+                                <var key="asset_uri" value="collectables_score_background" type="String"/>
+                              </variables>
+                            </static_bitmap>
+                            <static_bitmap x="139" y="-18" width="166" height="286" params="16" style="3" blend="0.3">
+                              <variables>
+                                <var key="asset_uri" value="collectables_score_background_right" type="String"/>
+                              </variables>
+                            </static_bitmap>
+                            <static_bitmap x="0" y="0" width="290" height="260" params="16" style="3" color="0x045ace2" blend="0.7">
+                              <variables>
+                                <var key="asset_uri" value="collectables_score_background_gradient2" type="String"/>
+                              </variables>
+                            </static_bitmap>
+                            <static_bitmap x="-5" y="-20" width="300" height="300" params="16" style="3" name="bg_star" blend="0.35">
+                              <variables>
+                                <var key="asset_uri" value="bg_star_300x300" type="String"/>
+                                <var key="pivot_point" value="center" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </static_bitmap>
+                            <static_bitmap x="91" y="64" width="108" height="132" params="16" style="3" name="placeholder_image" visible="false">
+                              <variables>
+                                <var key="asset_uri" value="collectables_collection_default" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </static_bitmap>
+                            <widget x="100" y="53" width="90" height="130" params="16" style="3" name="avatar_image_widget" visible="false">
+                              <variables>
+                                <var key="widget_type" value="avatar_image" type="String"/>
+                              </variables>
+                            </widget>
+                            <widget x="105" y="90" width="80" height="80" params="1077674000" style="3" name="badge_image_widget" visible="false">
+                              <variables>
+                                <var key="widget_type" value="badge_image" type="String"/>
+                                <var key="badge_image:pivot_point" value="center" type="String"/>
+                                <var key="badge_image:stretched_x" value="false" type="Boolean"/>
+                                <var key="badge_image:stretched_y" value="false" type="Boolean"/>
+                                <var key="badge_image:zoom_x" value="2" type="Number"/>
+                                <var key="badge_image:zoom_y" value="2" type="Number"/>
+                              </variables>
+                            </widget>
+                            <static_bitmap x="121" y="106" width="48" height="48" params="3932176" style="3" name="unknown_image" visible="false">
+                              <variables>
+                                <var key="asset_uri" value="collectables_icon_curator_stamp_large" type="String"/>
+                                <var key="pivot_point" value="center" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </static_bitmap>
+                            <widget x="53" y="60" width="180" height="140" params="1077674000" style="3" name="pet_image_widget" visible="false">
+                              <variables>
+                                <var key="widget_type" value="pet_image" type="String"/>
+                                <var key="pet_image:zoomX" value="2" type="Number"/>
+                                <var key="pet_image:zoomY" value="2" type="Number"/>
+                                <var key="pet_image:shrink_on_overflow" value="true" type="Boolean"/>
+                              </variables>
+                            </widget>
+                            <widget x="93" y="0" width="100" height="260" params="1077674000" style="3" name="effect_image_widget" visible="false">
+                              <variables>
+                                <var key="widget_type" value="room_previewer" type="String"/>
+                                <var key="room_previewer:offsetx" value="2" type="int"/>
+                                <var key="room_previewer:offsety" value="36" type="int"/>
+                              </variables>
+                            </widget>
+                            <bitmap x="-5" y="-20" width="300" height="300" params="16" style="3" name="product_preview" visible="false">
+                              <variables>
+                                <var key="pivot_point" value="center" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </bitmap>
+                            <container x="0" y="0" width="290" height="26" params="17" style="3" name="product_name_container" color="0xd6d6000000" background="true">
+                              <children>
+                                <text x="0" y="5" width="290" height="17" params="16" style="3" name="preview_furni_name" caption="Lorem%20ipsum%20hot%20air%20balloon">
+                                  <variables>
+                                    <var key="auto_size" value="center" type="String"/>
+                                    <var key="text_color" value="0xffffff" type="hex"/>
+                                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                    <var key="spacing" value="0" type="Number"/>
+                                    <var key="leading" value="0" type="Number"/>
+                                  </variables>
+                                </text>
+                              </children>
+                            </container>
+                            <container x="82" y="180" width="200" height="30" params="16" style="3" name="collect_container">
+                              <children>
+                                <itemlist_horizontal x="100" y="0" width="100" height="30" params="409616" style="3">
+                                  <children>
+                                    <text x="0" y="6" width="10" height="17" params="16400" style="3" name="stamp_pricing" caption="1">
+                                      <variables>
+                                        <var key="auto_size" value="left" type="String"/>
+                                        <var key="text_color" value="0xffffff" type="hex"/>
+                                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                        <var key="spacing" value="0" type="Number"/>
+                                        <var key="leading" value="0" type="Number"/>
+                                      </variables>
+                                    </text>
+                                    <container x="10" y="0" width="3" height="30" params="16" style="3" name="spacing"/>
+                                    <static_bitmap x="13" y="0" width="18" height="30" params="16" style="3">
+                                      <variables>
+                                        <var key="asset_uri" value="collectables_icon_curator_stamp_small" type="String"/>
+                                        <var key="pivot_point" value="center" type="String"/>
+                                        <var key="stretched_x" value="false" type="Boolean"/>
+                                        <var key="stretched_y" value="false" type="Boolean"/>
+                                      </variables>
+                                    </static_bitmap>
+                                    <container x="31" y="0" width="7" height="30" params="16" style="3" name="spacing"/>
+                                    <button x="38" y="0" width="62" height="30" params="131089" style="5" name="collect_button" caption="%24%7Bcollectibles.collect%7D" color="0x01a101"/>
+                                  </children>
+                                  <variables>
+                                    <var key="scale_to_fit_items" value="true" type="Boolean"/>
+                                  </variables>
+                                </itemlist_horizontal>
+                              </children>
+                            </container>
+                            <border x="4" y="30" width="282" height="50" params="16" style="3" name="no_furni_notify" color="0x05a1003" blend="0.82">
+                              <children>
+                                <html x="4" y="16" width="274" height="16" params="3932161" style="3" caption="%24%7Bshop.minting.no_furni%7D" width_min="274" width_max="274">
+                                  <variables>
+                                    <var key="auto_size" value="center" type="String"/>
+                                    <var key="font_size" value="11" type="uint"/>
+                                    <var key="text_color" value="0xffffff" type="hex"/>
+                                    <var key="word_wrap" value="true" type="Boolean"/>
+                                    <var key="spacing" value="0" type="Number"/>
+                                    <var key="leading" value="0" type="Number"/>
+                                    <var key="editable" value="false" type="Boolean"/>
+                                    <var key="selectable" value="false" type="Boolean"/>
+                                    <var key="editable" value="false" type="Boolean"/>
+                                    <var key="selectable" value="false" type="Boolean"/>
+                                  </variables>
+                                </html>
+                              </children>
+                            </border>
+                            <container x="0" y="214" width="290" height="46" params="16" style="3" name="mint_info_container" color="0xaaaa000000" background="true">
+                              <children>
+                                <container x="64" y="0" width="226" height="46" params="16" style="3" name="right_box">
+                                  <children>
+                                    <html x="0" y="4" width="290" height="17" params="786433" style="3" name="mint_lock_text" caption="%24%7Bshop.minting.region_unlocked%7D" width_min="290" width_max="290" height_min="17" height_max="17">
+                                      <variables>
+                                        <var key="auto_size" value="left" type="String"/>
+                                        <var key="font_size" value="11" type="uint"/>
+                                        <var key="text_color" value="0xffffff" type="hex"/>
+                                        <var key="word_wrap" value="true" type="Boolean"/>
+                                        <var key="spacing" value="0" type="Number"/>
+                                        <var key="leading" value="0" type="Number"/>
+                                        <var key="editable" value="false" type="Boolean"/>
+                                        <var key="selectable" value="false" type="Boolean"/>
+                                        <var key="editable" value="false" type="Boolean"/>
+                                        <var key="selectable" value="false" type="Boolean"/>
+                                      </variables>
+                                    </html>
+                                    <container x="0" y="24" width="220" height="18" params="16" style="3" name="progress_bar" color="0xffff112e31" background="true">
+                                      <children>
+                                        <container x="1" y="1" width="220" height="16" params="16" style="3" name="progress_padded_bar">
+                                          <children>
+                                            <container x="0" y="0" width="120" height="8" params="16" style="3" name="progress_bar_top" color="0xffff00910a" background="true"/>
+                                            <container x="0" y="8" width="120" height="8" params="16" style="3" name="progress_bar_bottom" color="0xffff037c00" background="true"/>
+                                          </children>
+                                        </container>
+                                        <text x="0" y="1" width="220" height="16" params="16" style="3" name="progress_bar_text" caption="%24%7Bcollectibles.preview.time_left%7D">
+                                          <variables>
+                                            <var key="auto_size" value="center" type="String"/>
+                                            <var key="font_size" value="11" type="uint"/>
+                                            <var key="text_color" value="0xffffff" type="hex"/>
+                                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                            <var key="spacing" value="0" type="Number"/>
+                                            <var key="leading" value="0" type="Number"/>
+                                          </variables>
+                                        </text>
+                                      </children>
+                                    </container>
+                                  </children>
+                                </container>
+                              </children>
+                            </container>
+                            <static_bitmap x="7" y="208" width="51" height="46" params="16" style="3" name="mint_lock_open_icon">
+                              <variables>
+                                <var key="asset_uri" value="collectables_lock_open" type="String"/>
+                              </variables>
+                            </static_bitmap>
+                            <static_bitmap x="7" y="208" width="52" height="46" params="16" style="3" name="mint_lock_closed_icon" visible="false">
+                              <variables>
+                                <var key="asset_uri" value="collectables_lock_closed" type="String"/>
+                              </variables>
+                            </static_bitmap>
+                          </children>
+                        </border>
+                      </children>
+                    </container>
+                  </children>
+                </container>
+                <container x="0" y="330" width="488" height="100" params="1073741840" style="3" name="category_footer" tags="category_header">
+                  <children>
+                    <border x="0" y="0" width="488" height="100" params="16" style="3" name="large_border" color="0x0bac3cd">
+                      <children>
+                        <container x="0" y="0" width="488" height="100" params="16" style="3" name="stamp_purchasing_container">
+                          <children>
+                            <border x="42" y="14" width="200" height="72" params="16" style="3" name="stamps_container" color="0x0d6dbe1">
+                              <children>
+                                <static_bitmap x="12" y="12" width="48" height="48" params="16" style="3">
+                                  <variables>
+                                    <var key="asset_uri" value="collectables_icon_curator_stamp_large" type="String"/>
+                                    <var key="stretched_x" value="false" type="Boolean"/>
+                                    <var key="stretched_y" value="false" type="Boolean"/>
+                                  </variables>
+                                </static_bitmap>
+                                <text x="68" y="12" width="122" height="18" params="16" style="3" name="stamps_header" caption="%24%7Bshop.minting.tokens%7D">
+                                  <variables>
+                                    <var key="auto_size" value="left" type="String"/>
+                                    <var key="font_size" value="13" type="uint"/>
+                                    <var key="text_style" value="u_bold" type="String"/>
+                                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                    <var key="bold" value="false" type="Boolean"/>
+                                    <var key="spacing" value="0" type="Number"/>
+                                    <var key="leading" value="0" type="Number"/>
+                                  </variables>
+                                </text>
+                                <text x="67" y="26" width="21" height="37" params="16" style="3" name="mint_token_balance" caption="0">
+                                  <variables>
+                                    <var key="auto_size" value="left" type="String"/>
+                                    <var key="font_size" value="30" type="uint"/>
+                                    <var key="text_style" value="u_bold" type="String"/>
+                                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                    <var key="bold" value="false" type="Boolean"/>
+                                    <var key="spacing" value="0" type="Number"/>
+                                    <var key="leading" value="0" type="Number"/>
+                                  </variables>
+                                </text>
+                              </children>
+                            </border>
+                            <border x="246" y="14" width="200" height="72" params="16" style="3" name="stamp_buying_container" color="0x0d6dbe1">
+                              <children>
+                                <itemlist_horizontal x="42" y="4" width="154" height="30" params="409616" style="3">
+                                  <children>
+                                    <text x="0" y="8" width="100" height="17" params="16" style="3" name="stamps_header" caption="%24%7Bcollectibles.buy.mint.tokens%7D">
+                                      <variables>
+                                        <var key="auto_size" value="left" type="String"/>
+                                        <var key="text_style" value="u_bold" type="String"/>
+                                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                        <var key="bold" value="false" type="Boolean"/>
+                                        <var key="spacing" value="0" type="Number"/>
+                                        <var key="leading" value="0" type="Number"/>
+                                      </variables>
+                                    </text>
+                                    <border x="106" y="3" width="30" height="25" params="16" style="5" visible="false" background="true">
+                                      <children>
+                                        <input x="3" y="5" width="23" height="15" params="1" style="3" name="stamps_purchase_input" caption="1" background="true">
+                                          <variables>
+                                            <var key="text_style" value="u_small" type="String"/>
+                                            <var key="margin_right" value="4" type="int"/>
+                                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                            <var key="spacing" value="0" type="Number"/>
+                                            <var key="leading" value="0" type="Number"/>
+                                          </variables>
+                                        </input>
+                                      </children>
+                                    </border>
+                                    <dropmenu x="106" y="5" width="48" height="21" params="17" style="0" name="stamps_purchase_dropdown" caption="100"/>
+                                  </children>
+                                  <variables>
+                                    <var key="spacing" value="6" type="int"/>
+                                    <var key="scale_to_fit_items" value="true" type="Boolean"/>
+                                  </variables>
+                                </itemlist_horizontal>
+                                <itemlist_horizontal x="49" y="36" width="147" height="30" params="409616" style="3">
+                                  <children>
+                                    <text x="0" y="4" width="13" height="21" params="16" style="3" name="silver_cost_text" caption="1">
+                                      <variables>
+                                        <var key="auto_size" value="left" type="String"/>
+                                        <var key="font_size" value="16" type="uint"/>
+                                        <var key="text_style" value="u_bold" type="String"/>
+                                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                        <var key="bold" value="false" type="Boolean"/>
+                                        <var key="spacing" value="0" type="Number"/>
+                                        <var key="leading" value="0" type="Number"/>
+                                      </variables>
+                                    </text>
+                                    <container x="13" y="0" width="4" height="30" params="16" style="3" name="spacing"/>
+                                    <static_bitmap x="17" y="0" width="24" height="30" params="16" style="3">
+                                      <variables>
+                                        <var key="asset_uri" value="pursearea_mid_silver_icon" type="String"/>
+                                        <var key="pivot_point" value="center" type="String"/>
+                                        <var key="stretched_x" value="false" type="Boolean"/>
+                                        <var key="stretched_y" value="false" type="Boolean"/>
+                                      </variables>
+                                    </static_bitmap>
+                                    <container x="41" y="0" width="6" height="30" params="16" style="3" name="spacing"/>
+                                    <button x="47" y="0" width="100" height="30" params="131089" style="5" name="silver_buy_button" caption="%24%7Bgeneric.buy%7D" color="0x02095d4" width_min="100"/>
+                                  </children>
+                                  <variables>
+                                    <var key="scale_to_fit_items" value="true" type="Boolean"/>
+                                  </variables>
+                                </itemlist_horizontal>
+                              </children>
+                            </border>
+                          </children>
+                        </container>
+                        <container x="0" y="0" width="488" height="100" params="16" style="3" name="no_wallet_container" visible="false">
+                          <children>
+                            <text x="10" y="0" width="360" height="17" params="3145744" style="3" name="no_wallet_text" caption="%24%7Bshop.minting.no_wallet.description%7D" height_min="0" height_max="60">
+                              <variables>
+                                <var key="auto_size" value="left" type="String"/>
+                                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                <var key="word_wrap" value="true" type="Boolean"/>
+                                <var key="spacing" value="0" type="Number"/>
+                                <var key="leading" value="0" type="Number"/>
+                              </variables>
+                            </text>
+                            <static_bitmap x="380" y="5" width="92" height="90" params="16" style="3">
+                              <variables>
+                                <var key="asset_uri" value="image_connection_problem" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </static_bitmap>
+                            <button x="10" y="62" width="170" height="30" params="131089" style="5" name="create_wallet_button" caption="%24%7Bshop.minting.create.wallet%7D" color="0x02095d4" width_min="170" width_max="170"/>
+                            <button x="192" y="62" width="170" height="30" params="131089" style="5" name="more_info_button" caption="%24%7Bshop.minting.link.wallet%7D" color="0x02095d4" width_min="170" width_max="170"/>
+                          </children>
+                        </container>
+                      </children>
+                    </border>
+                  </children>
+                </container>
+              </children>
+            </background>
+            <container x="0" y="0" width="485" height="429" params="16" style="3" name="loading_contents" visible="false">
+              <children>
+                <border x="185" y="155" width="113" height="116" params="16" style="2" color="0x0a4a49f"/>
+                <static_bitmap x="205" y="175" width="75" height="75" params="16" style="3" name="loading_icon">
+                  <variables>
+                    <var key="asset_uri" value="loading" type="String"/>
+                  </variables>
+                </static_bitmap>
+              </children>
+            </container>
+          </children>
+        </container>
+        <container x="0" y="125" width="390" height="400" params="1073889424" style="3" name="collectorProfileContainer" color="0x00" visible="false" background="true" tags="TEMPLATE%2Ccategory_container">
+          <children>
+            <background x="0" y="0" width="390" height="400" params="1073741840" style="3" name="category_content_background" color="0x00" background="true">
+              <children>
+                <container x="0" y="0" width="360" height="56" params="1073741840" style="3" name="category_collector_header_region" tags="category_header">
+                  <children>
+                    <region x="0" y="4" width="142" height="17" params="131089" style="1" name="category_name_region" visible="false">
+                      <children>
+                        <text x="0" y="0" width="141" height="17" params="16" style="1" name="collector_profile_header" caption="Collector%20Profile%20Header" visible="false" width_min="2" width_max="270">
+                          <variables>
+                            <var key="auto_size" value="left" type="String"/>
+                            <var key="text_style" value="u_regular" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="bold" value="true" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </region>
+                    <region x="0" y="22" width="380" height="30" params="147473" style="1" name="category_minting_description_region">
+                      <children>
+                        <text x="0" y="0" width="380" height="30" params="16" style="1" name="collector_profile_description" caption="Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Cras%20porta%20felis%20sed%20libero%20rhoncus%2C%20at%20elementum%20metus%20sagittis.%20" width_min="2" width_max="380" height_min="17">
+                          <variables>
+                            <var key="auto_size" value="left" type="String"/>
+                            <var key="text_style" value="u_regular" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="multiline" value="true" type="Boolean"/>
+                            <var key="word_wrap" value="true" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </region>
+                  </children>
+                </container>
+              </children>
+            </background>
+          </children>
+        </container>
+        <container x="0" y="125" width="485" height="429" params="1073889424" style="3" name="collectionsContainer" color="0x00" background="true" tags="TEMPLATE%2Ccategory_container">
+          <children>
+            <container x="0" y="0" width="485" height="429" params="147472" style="3" name="loaded_content">
+              <children>
+                <dropmenu x="4" y="4" width="184" height="24" params="17" style="3" name="wallet_selection" caption="Collector%20Wallet"/>
+                <dropmenu x="4" y="32" width="184" height="24" params="17" style="3" name="sort_selection" caption="Sort"/>
+                <border x="4" y="60" width="184" height="24" params="16" style="105" name="searchContainer">
+                  <children>
+                    <container x="160" y="0" width="24" height="24" params="16" style="100" name="buttonContainer">
+                      <children>
+                        <static_bitmap x="2" y="2" width="20" height="20" params="3935424" style="100" name="search_icon">
+                          <variables>
+                            <var key="asset_uri" value="icons_close" type="String"/>
+                            <var key="pivot_point" value="center" type="String"/>
+                            <var key="stretched_x" value="false" type="Boolean"/>
+                            <var key="stretched_y" value="false" type="Boolean"/>
+                          </variables>
+                        </static_bitmap>
+                        <button x="0" y="0" width="52" height="32" params="131089" style="100" name="search_clear_button" treshold="0">
+                          <variables>
+                            <var key="tool_tip_caption" value="clear" type="String"/>
+                          </variables>
+                        </button>
+                      </children>
+                    </container>
+                    <input x="4" y="4" width="156" height="20" params="1" style="100" name="search_input">
+                      <variables>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </input>
+                    <text x="4" y="4" width="156" height="20" params="16" style="100" name="search_placeholder" caption="%24%7Bgeneric.search%7D">
+                      <variables>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                  </children>
+                </border>
+                <container x="4" y="88" width="184" height="341" params="2064" style="6" name="navigationContainer" caption="Catalog">
+                  <children>
+                    <border x="0" y="0" width="184" height="341" params="2064" style="6" blend="0.5"/>
+                    <scrollable_itemlist_vertical x="3" y="5" width="178" height="331" params="2064" style="3" name="navigationList" caption="Catalog">
+                      <children>
+                        <region x="0" y="0" width="180" height="22" params="131089" style="0" name="item_template" color="0xff777777" treshold="0">
+                          <children>
+                            <background x="1" y="0" width="178" height="21" params="16" style="106" color="0xffffb4b4ae" background="true" tags="SELECTION_HILIGHT">
+                              <children>
+                                <background x="0" y="0" width="178" height="20" params="16" style="3" name="item_hilight_outer" color="0xffff82d1ed" background="true">
+                                  <children>
+                                    <background x="0" y="2" width="178" height="16" params="16" style="3" name="item_hilight_inner" color="0xffff63c5e9" background="true"/>
+                                  </children>
+                                </background>
+                              </children>
+                            </background>
+                            <text x="7" y="2" width="27" height="17" params="176" style="3" name="item_title" caption="item" tags="ITEM_TITLE%2CSELECTION_COLOR">
+                              <variables>
+                                <var key="auto_size" value="left" type="String"/>
+                                <var key="etching_color" value="0xffb4b4ae" type="hex"/>
+                                <var key="etching_position" value="top" type="String"/>
+                                <var key="text_color" value="0x666666" type="hex"/>
+                                <var key="text_style" value="u_bold" type="String"/>
+                                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                <var key="spacing" value="0" type="Number"/>
+                                <var key="leading" value="0" type="Number"/>
+                              </variables>
+                            </text>
+                            <container x="120" y="3" width="36" height="15" params="131088" style="3" name="progress_container" width_min="36" width_max="36">
+                              <children>
+                                <border x="0" y="0" width="36" height="14" params="16" style="3" name="progress_color" color="0x0910a"/>
+                                <text x="2" y="0" width="32" height="15" params="16" style="3" name="progress_text" caption="100%25">
+                                  <variables>
+                                    <var key="auto_size" value="center" type="String"/>
+                                    <var key="font_size" value="10" type="uint"/>
+                                    <var key="text_color" value="0xffffff" type="hex"/>
+                                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                    <var key="spacing" value="0" type="Number"/>
+                                    <var key="leading" value="0" type="Number"/>
+                                  </variables>
+                                </text>
+                              </children>
+                            </container>
+                            <container x="0" y="1" width="4" height="19" params="16" style="3" name="progress_color_hint" color="0xffff00910a" background="true" width_min="4" width_max="4" height_min="19" height_max="19"/>
+                          </children>
+                        </region>
+                      </children>
+                    </scrollable_itemlist_vertical>
+                  </children>
+                </container>
+                <container x="195" y="3" width="290" height="425" params="16" style="3" name="collection_content">
+                  <children>
+                    <border x="0" y="0" width="290" height="30" params="16" style="3" name="collection_header_container" color="0x0cbd1d8">
+                      <children>
+                        <text x="4" y="4" width="121" height="21" params="16" style="3" name="collection_name" caption="Collection%20name">
+                          <variables>
+                            <var key="auto_size" value="left" type="String"/>
+                            <var key="font_size" value="16" type="uint"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <container x="248" y="2" width="40" height="26" params="131088" style="3" name="progress_header_container" width_min="40" width_max="40">
+                          <children>
+                            <border x="0" y="0" width="40" height="26" params="16" style="3" name="progress_color" color="0x0910a"/>
+                            <text x="2" y="4" width="36" height="17" params="16" style="3" name="progress_text" caption="88/88">
+                              <variables>
+                                <var key="auto_size" value="center" type="String"/>
+                                <var key="text_color" value="0xffffff" type="hex"/>
+                                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                <var key="spacing" value="0" type="Number"/>
+                                <var key="leading" value="0" type="Number"/>
+                              </variables>
+                            </text>
+                          </children>
+                        </container>
+                      </children>
+                    </border>
+                    <container x="0" y="34" width="290" height="260" params="16" style="3" name="preview_container">
+                      <children>
+                        <border x="0" y="0" width="290" height="260" params="16" style="3" name="collection_preview_bg" color="0x03d1f39">
+                          <children>
+                            <static_bitmap x="-15" y="-8" width="166" height="286" params="16" style="3" blend="0.3">
+                              <variables>
+                                <var key="asset_uri" value="collectables_score_background" type="String"/>
+                              </variables>
+                            </static_bitmap>
+                            <static_bitmap x="139" y="-18" width="166" height="286" params="16" style="3" blend="0.3">
+                              <variables>
+                                <var key="asset_uri" value="collectables_score_background_right" type="String"/>
+                              </variables>
+                            </static_bitmap>
+                            <static_bitmap x="0" y="0" width="290" height="260" params="16" style="3" color="0x045ace2" blend="0.7">
+                              <variables>
+                                <var key="asset_uri" value="collectables_score_background_gradient2" type="String"/>
+                              </variables>
+                            </static_bitmap>
+                            <static_bitmap x="-5" y="-20" width="300" height="300" params="16" style="3" name="bg_star" blend="0.35">
+                              <variables>
+                                <var key="asset_uri" value="bg_star_300x300" type="String"/>
+                                <var key="pivot_point" value="center" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </static_bitmap>
+                            <static_bitmap x="91" y="64" width="108" height="132" params="16" style="3" name="placeholder_image" visible="false">
+                              <variables>
+                                <var key="asset_uri" value="collectables_collection_default" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </static_bitmap>
+                            <widget x="100" y="53" width="90" height="130" params="16" style="3" name="avatar_image_widget" visible="false">
+                              <variables>
+                                <var key="widget_type" value="avatar_image" type="String"/>
+                              </variables>
+                            </widget>
+                            <widget x="105" y="90" width="80" height="80" params="1077674000" style="3" name="badge_image_widget" visible="false">
+                              <variables>
+                                <var key="widget_type" value="badge_image" type="String"/>
+                                <var key="badge_image:pivot_point" value="center" type="String"/>
+                                <var key="badge_image:stretched_x" value="false" type="Boolean"/>
+                                <var key="badge_image:stretched_y" value="false" type="Boolean"/>
+                                <var key="badge_image:zoom_x" value="2" type="Number"/>
+                                <var key="badge_image:zoom_y" value="2" type="Number"/>
+                              </variables>
+                            </widget>
+                            <static_bitmap x="121" y="106" width="48" height="48" params="3932176" style="3" name="unknown_image" visible="false">
+                              <variables>
+                                <var key="asset_uri" value="collectables_icon_curator_stamp_large" type="String"/>
+                                <var key="pivot_point" value="center" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </static_bitmap>
+                            <widget x="53" y="60" width="180" height="140" params="1077674000" style="3" name="pet_image_widget" visible="false">
+                              <variables>
+                                <var key="widget_type" value="pet_image" type="String"/>
+                                <var key="pet_image:zoomX" value="2" type="Number"/>
+                                <var key="pet_image:zoomY" value="2" type="Number"/>
+                                <var key="pet_image:shrink_on_overflow" value="true" type="Boolean"/>
+                              </variables>
+                            </widget>
+                            <widget x="93" y="0" width="100" height="260" params="1077674000" style="3" name="effect_image_widget" visible="false">
+                              <variables>
+                                <var key="widget_type" value="room_previewer" type="String"/>
+                                <var key="room_previewer:offsetx" value="2" type="int"/>
+                                <var key="room_previewer:offsety" value="36" type="int"/>
+                              </variables>
+                            </widget>
+                            <bitmap x="-5" y="-20" width="300" height="300" params="16" style="3" name="product_preview">
+                              <variables>
+                                <var key="pivot_point" value="center" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </bitmap>
+                            <container x="0" y="0" width="290" height="26" params="17" style="3" name="product_name_container" color="0xd6d6000000" visible="false" background="true">
+                              <children>
+                                <text x="0" y="5" width="290" height="17" params="16" style="3" name="preview_furni_name" caption="Lorem%20ipsum%20hot%20air%20balloon">
+                                  <variables>
+                                    <var key="auto_size" value="center" type="String"/>
+                                    <var key="text_color" value="0xffffff" type="hex"/>
+                                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                    <var key="spacing" value="0" type="Number"/>
+                                    <var key="leading" value="0" type="Number"/>
+                                  </variables>
+                                </text>
+                              </children>
+                            </container>
+                            <container x="0" y="26" width="290" height="194" params="16" style="3" name="product_info_container" color="0x99993b1829" visible="false" background="true">
+                              <children>
+                                <itemlist_vertical x="24" y="24" width="242" height="140" params="16" style="3" name="product_info_list">
+                                  <children>
+                                    <container x="0" y="0" width="242" height="20" params="16" style="3" name="product_info_entry_template" color="0xbbbb110b14" background="true">
+                                      <children>
+                                        <text x="0" y="1" width="136" height="17" params="16" style="3" name="product_info_key" caption="Type">
+                                          <variables>
+                                            <var key="auto_size" value="right" type="String"/>
+                                            <var key="text_color" value="0xeb8f01" type="hex"/>
+                                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                            <var key="spacing" value="0" type="Number"/>
+                                            <var key="leading" value="0" type="Number"/>
+                                          </variables>
+                                        </text>
+                                        <text x="140" y="1" width="102" height="20" params="16" style="3" name="product_info_value" caption="Floor%20item" blend="0.8">
+                                          <variables>
+                                            <var key="text_color" value="0xffffff" type="hex"/>
+                                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                            <var key="spacing" value="0" type="Number"/>
+                                            <var key="leading" value="0" type="Number"/>
+                                          </variables>
+                                        </text>
+                                      </children>
+                                    </container>
+                                  </children>
+                                  <variables>
+                                    <var key="spacing" value="2" type="int"/>
+                                  </variables>
+                                </itemlist_vertical>
+                              </children>
+                            </container>
+                            <container x="0" y="0" width="290" height="200" params="16" style="3" name="bonus_or_reward_container" blend="0.85">
+                              <children>
+                                <container x="0" y="0" width="290" height="60" params="16" style="3" name="completion_header_container" color="0xd6d6000000" background="true">
+                                  <children>
+                                    <container x="4" y="4" width="282" height="52" params="16" style="3" name="padded_cont">
+                                      <children>
+                                        <text x="0" y="0" width="282" height="16" params="16" style="3" caption="%24%7Bcollectibles.preview.completion_bonus%7D">
+                                          <variables>
+                                            <var key="auto_size" value="center" type="String"/>
+                                            <var key="font_size" value="11" type="uint"/>
+                                            <var key="text_color" value="0xffd300" type="hex"/>
+                                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                            <var key="spacing" value="0" type="Number"/>
+                                            <var key="leading" value="0" type="Number"/>
+                                          </variables>
+                                        </text>
+                                        <text x="0" y="14" width="282" height="17" params="16" style="3" name="reward_furni_name" caption="Lorem%20ipsum%20hot%20air%20balloon">
+                                          <variables>
+                                            <var key="auto_size" value="center" type="String"/>
+                                            <var key="text_color" value="0xffffff" type="hex"/>
+                                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                            <var key="spacing" value="0" type="Number"/>
+                                            <var key="leading" value="0" type="Number"/>
+                                          </variables>
+                                        </text>
+                                        <container x="0" y="34" width="282" height="18" params="16" style="3" name="progress_bar" color="0xffff112e31" background="true">
+                                          <children>
+                                            <container x="1" y="1" width="280" height="16" params="16" style="3" name="progress_padded_bar">
+                                              <children>
+                                                <container x="0" y="0" width="120" height="8" params="16" style="3" name="progress_bar_top" color="0xffff00910a" background="true"/>
+                                                <container x="0" y="8" width="120" height="8" params="16" style="3" name="progress_bar_bottom" color="0xffff037c00" background="true"/>
+                                              </children>
+                                            </container>
+                                            <text x="0" y="1" width="282" height="16" params="16" style="3" name="progress_bar_text" caption="%24%7Bshop.minting.time_left%7D">
+                                              <variables>
+                                                <var key="auto_size" value="center" type="String"/>
+                                                <var key="font_size" value="11" type="uint"/>
+                                                <var key="text_color" value="0xffffff" type="hex"/>
+                                                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                                <var key="spacing" value="0" type="Number"/>
+                                                <var key="leading" value="0" type="Number"/>
+                                              </variables>
+                                            </text>
+                                          </children>
+                                        </container>
+                                      </children>
+                                    </container>
+                                  </children>
+                                </container>
+                                <button x="186" y="166" width="97" height="30" params="393233" style="5" name="claim_button" caption="%24%7Bcollectibles.claim%7D" color="0x01a101"/>
+                              </children>
+                            </container>
+                            <container x="0" y="200" width="290" height="60" params="16" style="3" name="collection_progress_container" color="0xaaaa000000" visible="false" background="true">
+                              <children>
+                                <html x="0" y="3" width="290" height="17" params="786433" style="3" name="preview_score_text" caption="%24%7Bcollectibles.preview.score%7D" width_min="290" width_max="290" height_min="17" height_max="17">
+                                  <variables>
+                                    <var key="auto_size" value="center" type="String"/>
+                                    <var key="text_color" value="0xffffff" type="hex"/>
+                                    <var key="word_wrap" value="true" type="Boolean"/>
+                                    <var key="spacing" value="0" type="Number"/>
+                                    <var key="leading" value="0" type="Number"/>
+                                    <var key="editable" value="false" type="Boolean"/>
+                                    <var key="selectable" value="false" type="Boolean"/>
+                                    <var key="editable" value="false" type="Boolean"/>
+                                    <var key="selectable" value="false" type="Boolean"/>
+                                  </variables>
+                                </html>
+                                <border x="4" y="24" width="282" height="32" params="16" style="3" color="0x05a1003">
+                                  <children>
+                                    <html x="4" y="2" width="274" height="28" params="3932161" style="3" name="preview_reward_text" caption="%24%7Bcollectibles.preview.reward%7D" width_min="274" width_max="274">
+                                      <variables>
+                                        <var key="auto_size" value="center" type="String"/>
+                                        <var key="font_size" value="11" type="uint"/>
+                                        <var key="text_color" value="0xffffff" type="hex"/>
+                                        <var key="word_wrap" value="true" type="Boolean"/>
+                                        <var key="spacing" value="0" type="Number"/>
+                                        <var key="leading" value="0" type="Number"/>
+                                        <var key="editable" value="false" type="Boolean"/>
+                                        <var key="selectable" value="false" type="Boolean"/>
+                                        <var key="editable" value="false" type="Boolean"/>
+                                        <var key="selectable" value="false" type="Boolean"/>
+                                      </variables>
+                                    </html>
+                                  </children>
+                                </border>
+                              </children>
+                            </container>
+                            <container x="0" y="220" width="290" height="40" params="16" style="3" name="product_progress_container" color="0xaaaa000000" background="true">
+                              <children>
+                                <border x="4" y="4" width="282" height="32" params="16" style="3" color="0x05a1003">
+                                  <children>
+                                    <html x="4" y="8" width="274" height="16" params="3932161" style="3" name="procuct_score_text" caption="%24%7Bcollectibles.preview.product.incomplete%7D" width_min="274" width_max="274">
+                                      <variables>
+                                        <var key="auto_size" value="center" type="String"/>
+                                        <var key="font_size" value="11" type="uint"/>
+                                        <var key="text_color" value="0xffffff" type="hex"/>
+                                        <var key="word_wrap" value="true" type="Boolean"/>
+                                        <var key="spacing" value="0" type="Number"/>
+                                        <var key="leading" value="0" type="Number"/>
+                                        <var key="editable" value="false" type="Boolean"/>
+                                        <var key="selectable" value="false" type="Boolean"/>
+                                        <var key="editable" value="false" type="Boolean"/>
+                                        <var key="selectable" value="false" type="Boolean"/>
+                                      </variables>
+                                    </html>
+                                  </children>
+                                </border>
+                              </children>
+                            </container>
+                          </children>
+                        </border>
+                      </children>
+                    </container>
+                    <container x="0" y="300" width="290" height="123" params="16" style="3" name="item_container">
+                      <children>
+                        <scrollable_itemgrid_vertical x="0" y="0" width="290" height="123" params="16" style="3" name="itemgrid_collection" tags="FURNI_ITEM_GRID">
+                          <children>
+                            <region x="0" y="0" width="52" height="61" params="131089" style="0" name="item_template" color="0xfffeeeee" treshold="0">
+                              <children>
+                                <border x="0" y="0" width="50" height="60" params="16" style="2" color="0x0a1a19b" tags="ITEM_HILIGHT">
+                                  <children>
+                                    <border x="0" y="0" width="50" height="60" params="16" style="3" name="border_outline" color="0x08f9db1">
+                                      <children>
+                                        <border x="1" y="1" width="48" height="58" params="16" style="3" name="border_background" color="0x0c8cdd3"/>
+                                      </children>
+                                    </border>
+                                  </children>
+                                </border>
+                                <bitmap x="2" y="4" width="46" height="40" params="16" style="3" name="bitmap" tags="BITMAP" width_min="46" width_max="46">
+                                  <variables>
+                                    <var key="pivot_point" value="center" type="String"/>
+                                    <var key="stretched_x" value="false" type="Boolean"/>
+                                    <var key="stretched_y" value="false" type="Boolean"/>
+                                  </variables>
+                                </bitmap>
+                                <widget x="5" y="4" width="40" height="40" params="1077674000" style="3" name="badge_image_widget" width_min="40" width_max="40" height_min="40" height_max="40">
+                                  <variables>
+                                    <var key="widget_type" value="badge_image" type="String"/>
+                                    <var key="badge_image:pivot_point" value="center" type="String"/>
+                                    <var key="badge_image:stretched_x" value="false" type="Boolean"/>
+                                    <var key="badge_image:stretched_y" value="false" type="Boolean"/>
+                                  </variables>
+                                </widget>
+                                <static_bitmap x="16" y="15" width="18" height="18" params="3932176" style="3" name="unknown_image">
+                                  <variables>
+                                    <var key="asset_uri" value="collectables_icon_curator_stamp_small" type="String"/>
+                                  </variables>
+                                </static_bitmap>
+                                <widget x="5" y="4" width="40" height="40" params="1077674000" style="3" name="pet_image_widget" visible="false" width_min="40" width_max="40" height_min="40" height_max="40">
+                                  <variables>
+                                    <var key="widget_type" value="pet_image" type="String"/>
+                                    <var key="pet_image:shrink_on_overflow" value="true" type="Boolean"/>
+                                  </variables>
+                                </widget>
+                                <container x="0" y="45" width="50" height="16" params="131088" style="3" name="number_container" width_min="50" width_max="50">
+                                  <children>
+                                    <border x="3" y="1" width="44" height="12" params="16" style="3" name="text_border" color="0x0337c00"/>
+                                    <text x="0" y="0" width="50" height="15" params="16" style="3" name="number" caption="x10">
+                                      <variables>
+                                        <var key="auto_size" value="center" type="String"/>
+                                        <var key="font_size" value="10" type="uint"/>
+                                        <var key="text_color" value="0xffffff" type="hex"/>
+                                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                        <var key="spacing" value="0" type="Number"/>
+                                        <var key="leading" value="0" type="Number"/>
+                                      </variables>
+                                    </text>
+                                  </children>
+                                </container>
+                                <static_bitmap x="31" y="3" width="16" height="16" params="16" style="3" name="checkmark_icon">
+                                  <variables>
+                                    <var key="asset_uri" value="icon_checkmark_small" type="String"/>
+                                  </variables>
+                                </static_bitmap>
+                              </children>
+                            </region>
+                          </children>
+                          <variables>
+                            <var key="spacing" value="1" type="int"/>
+                            <var key="scale_to_fit_items" value="true" type="Boolean"/>
+                          </variables>
+                        </scrollable_itemgrid_vertical>
+                      </children>
+                    </container>
+                  </children>
+                </container>
+              </children>
+            </container>
+            <container x="0" y="0" width="485" height="429" params="16" style="3" name="loading_contents" visible="false">
+              <children>
+                <border x="185" y="155" width="113" height="116" params="16" style="2" color="0x0a4a49f"/>
+                <static_bitmap x="205" y="175" width="75" height="75" params="16" style="3" name="loading_icon">
+                  <variables>
+                    <var key="asset_uri" value="loading" type="String"/>
+                  </variables>
+                </static_bitmap>
+              </children>
+            </container>
+          </children>
+        </container>
+        <container x="-5" y="125" width="490" height="428" params="1073889424" style="3" name="shopContainer" color="0x00" visible="false" background="true" tags="TEMPLATE%2Ccategory_container">
+          <children>
+            <container x="0" y="0" width="490" height="428" params="147472" style="3" name="loaded_content">
+              <children>
+                <container x="8" y="3" width="184" height="425" params="2064" style="6" name="navigationContainer" caption="Catalog">
+                  <children>
+                    <border x="0" y="0" width="184" height="425" params="2064" style="6" blend="0.5"/>
+                    <scrollable_itemlist_vertical x="3" y="5" width="178" height="415" params="2064" style="3" name="navigationList" caption="Catalog">
+                      <children>
+                        <region x="0" y="0" width="180" height="22" params="131089" style="0" name="item_template" color="0xff777777" treshold="0">
+                          <children>
+                            <background x="1" y="0" width="178" height="21" params="16" style="106" color="0xffffb4b4ae" background="true" tags="SELECTION_HILIGHT">
+                              <children>
+                                <background x="0" y="0" width="178" height="20" params="16" style="3" name="item_hilight_outer" color="0xffff82d1ed" visible="false" background="true">
+                                  <children>
+                                    <background x="0" y="2" width="178" height="16" params="16" style="3" name="item_hilight_inner" color="0xffff63c5e9" background="true"/>
+                                  </children>
+                                </background>
+                              </children>
+                            </background>
+                            <text x="7" y="2" width="27" height="17" params="176" style="3" name="item_title" caption="item" tags="ITEM_TITLE%2CSELECTION_COLOR">
+                              <variables>
+                                <var key="auto_size" value="left" type="String"/>
+                                <var key="etching_color" value="0xffb4b4ae" type="hex"/>
+                                <var key="etching_position" value="top" type="String"/>
+                                <var key="text_color" value="0x666666" type="hex"/>
+                                <var key="text_style" value="u_bold" type="String"/>
+                                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                <var key="spacing" value="0" type="Number"/>
+                                <var key="leading" value="0" type="Number"/>
+                              </variables>
+                            </text>
+                          </children>
+                        </region>
+                      </children>
+                    </scrollable_itemlist_vertical>
+                  </children>
+                </container>
+                <container x="200" y="3" width="290" height="425" params="16" style="3" name="collection_content">
+                  <children>
+                    <container x="0" y="0" width="290" height="260" params="16" style="3" name="preview_container">
+                      <children>
+                        <border x="0" y="0" width="296" height="260" params="16" style="3" name="collection_preview_bg" color="0x03d1f39">
+                          <children>
+                            <static_bitmap x="-15" y="-8" width="166" height="286" params="16" style="3" blend="0.3">
+                              <variables>
+                                <var key="asset_uri" value="collectables_score_background" type="String"/>
+                              </variables>
+                            </static_bitmap>
+                            <static_bitmap x="139" y="-18" width="166" height="286" params="16" style="3" blend="0.3">
+                              <variables>
+                                <var key="asset_uri" value="collectables_score_background_right" type="String"/>
+                              </variables>
+                            </static_bitmap>
+                            <static_bitmap x="0" y="0" width="290" height="260" params="16" style="3" color="0x045ace2" blend="0.7">
+                              <variables>
+                                <var key="asset_uri" value="collectables_score_background_gradient2" type="String"/>
+                              </variables>
+                            </static_bitmap>
+                            <static_bitmap x="-5" y="-20" width="300" height="300" params="16" style="3" name="bg_star" blend="0.35">
+                              <variables>
+                                <var key="asset_uri" value="bg_star_300x300" type="String"/>
+                                <var key="pivot_point" value="center" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </static_bitmap>
+                            <static_bitmap x="91" y="64" width="108" height="132" params="16" style="3" name="placeholder_image" visible="false">
+                              <variables>
+                                <var key="asset_uri" value="collectables_collection_default" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </static_bitmap>
+                            <widget x="100" y="53" width="90" height="130" params="16" style="3" name="avatar_image_widget" visible="false">
+                              <variables>
+                                <var key="widget_type" value="avatar_image" type="String"/>
+                              </variables>
+                            </widget>
+                            <widget x="105" y="90" width="80" height="80" params="1077674000" style="3" name="badge_image_widget" visible="false">
+                              <variables>
+                                <var key="widget_type" value="badge_image" type="String"/>
+                                <var key="badge_image:pivot_point" value="center" type="String"/>
+                                <var key="badge_image:stretched_x" value="false" type="Boolean"/>
+                                <var key="badge_image:stretched_y" value="false" type="Boolean"/>
+                                <var key="badge_image:zoom_x" value="2" type="Number"/>
+                                <var key="badge_image:zoom_y" value="2" type="Number"/>
+                              </variables>
+                            </widget>
+                            <static_bitmap x="121" y="106" width="48" height="48" params="3932176" style="3" name="unknown_image" visible="false">
+                              <variables>
+                                <var key="asset_uri" value="collectables_icon_curator_stamp_large" type="String"/>
+                                <var key="pivot_point" value="center" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </static_bitmap>
+                            <widget x="53" y="60" width="180" height="140" params="1077674000" style="3" name="pet_image_widget" visible="false">
+                              <variables>
+                                <var key="widget_type" value="pet_image" type="String"/>
+                                <var key="pet_image:zoomX" value="2" type="Number"/>
+                                <var key="pet_image:zoomY" value="2" type="Number"/>
+                                <var key="pet_image:shrink_on_overflow" value="true" type="Boolean"/>
+                              </variables>
+                            </widget>
+                            <widget x="93" y="0" width="100" height="260" params="1077674000" style="3" name="effect_image_widget" visible="false">
+                              <variables>
+                                <var key="widget_type" value="room_previewer" type="String"/>
+                                <var key="room_previewer:offsetx" value="2" type="int"/>
+                                <var key="room_previewer:offsety" value="36" type="int"/>
+                              </variables>
+                            </widget>
+                            <bitmap x="-5" y="-20" width="300" height="300" params="16" style="3" name="product_preview">
+                              <variables>
+                                <var key="pivot_point" value="center" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </bitmap>
+                            <container x="0" y="0" width="290" height="26" params="17" style="3" name="product_name_container" color="0xd6d6000000" background="true">
+                              <children>
+                                <text x="0" y="5" width="290" height="17" params="16" style="3" name="preview_furni_name" caption="Lorem%20ipsum%20hot%20air%20balloon">
+                                  <variables>
+                                    <var key="auto_size" value="center" type="String"/>
+                                    <var key="text_color" value="0xffffff" type="hex"/>
+                                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                    <var key="spacing" value="0" type="Number"/>
+                                    <var key="leading" value="0" type="Number"/>
+                                  </variables>
+                                </text>
+                              </children>
+                            </container>
+                            <container x="0" y="26" width="290" height="194" params="16" style="3" name="product_info_container" color="0x99993b1829" visible="false" background="true">
+                              <children>
+                                <itemlist_vertical x="24" y="24" width="242" height="140" params="16" style="3" name="product_info_list">
+                                  <children>
+                                    <container x="0" y="0" width="242" height="20" params="16" style="3" name="product_info_entry_template" color="0xbbbb110b14" background="true">
+                                      <children>
+                                        <text x="0" y="1" width="136" height="17" params="16" style="3" name="product_info_key" caption="Type">
+                                          <variables>
+                                            <var key="auto_size" value="right" type="String"/>
+                                            <var key="text_color" value="0xeb8f01" type="hex"/>
+                                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                            <var key="spacing" value="0" type="Number"/>
+                                            <var key="leading" value="0" type="Number"/>
+                                          </variables>
+                                        </text>
+                                        <text x="140" y="1" width="102" height="20" params="16" style="3" name="product_info_value" caption="Floor%20item" blend="0.8">
+                                          <variables>
+                                            <var key="text_color" value="0xffffff" type="hex"/>
+                                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                            <var key="spacing" value="0" type="Number"/>
+                                            <var key="leading" value="0" type="Number"/>
+                                          </variables>
+                                        </text>
+                                      </children>
+                                    </container>
+                                  </children>
+                                  <variables>
+                                    <var key="spacing" value="2" type="int"/>
+                                  </variables>
+                                </itemlist_vertical>
+                              </children>
+                            </container>
+                            <itemlist_horizontal x="114" y="226" width="172" height="30" params="409616" style="3">
+                              <children>
+                                <text x="0" y="5" width="50" height="25" params="16" style="3" name="price_text" caption="100" height_min="25">
+                                  <variables>
+                                    <var key="auto_size" value="right" type="String"/>
+                                    <var key="font_size" value="14" type="uint"/>
+                                    <var key="text_color" value="0xffffff" type="hex"/>
+                                    <var key="text_style" value="u_bold" type="String"/>
+                                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                    <var key="spacing" value="0" type="Number"/>
+                                    <var key="leading" value="0" type="Number"/>
+                                  </variables>
+                                </text>
+                                <icon x="54" y="6" width="26" height="20" params="16" style="70" name="emerald_icon"/>
+                                <button x="84" y="0" width="88" height="30" params="131089" style="5" name="buy_button" caption="%24%7Bgeneric.buy%7D" color="0x01a101"/>
+                              </children>
+                              <variables>
+                                <var key="spacing" value="4" type="int"/>
+                                <var key="resize_on_item_update" value="true" type="Boolean"/>
+                              </variables>
+                            </itemlist_horizontal>
+                            <itemlist_horizontal x="184" y="196" width="102" height="30" params="409616" style="3" name="mintlimit_container">
+                              <children>
+                                <text x="0" y="5" width="80" height="25" params="16" style="3" name="mintlimit_text" caption="100/1000" height_min="25">
+                                  <variables>
+                                    <var key="auto_size" value="right" type="String"/>
+                                    <var key="font_size" value="14" type="uint"/>
+                                    <var key="text_color" value="0xffffff" type="hex"/>
+                                    <var key="text_style" value="u_bold" type="String"/>
+                                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                    <var key="spacing" value="0" type="Number"/>
+                                    <var key="leading" value="0" type="Number"/>
+                                  </variables>
+                                </text>
+                                <static_bitmap x="84" y="0" width="18" height="30" params="16" style="3">
+                                  <variables>
+                                    <var key="asset_uri" value="collectables_icon_curator_stamp_small" type="String"/>
+                                    <var key="pivot_point" value="center right" type="String"/>
+                                    <var key="stretched_x" value="false" type="Boolean"/>
+                                    <var key="stretched_y" value="false" type="Boolean"/>
+                                  </variables>
+                                </static_bitmap>
+                              </children>
+                              <variables>
+                                <var key="spacing" value="4" type="int"/>
+                                <var key="resize_on_item_update" value="true" type="Boolean"/>
+                              </variables>
+                            </itemlist_horizontal>
+                          </children>
+                        </border>
+                      </children>
+                    </container>
+                    <container x="0" y="270" width="290" height="153" params="16" style="3" name="item_container">
+                      <children>
+                        <scrollable_itemgrid_vertical x="0" y="0" width="290" height="153" params="16" style="3" name="itemgrid_shop" tags="FURNI_ITEM_GRID">
+                          <children>
+                            <region x="0" y="0" width="52" height="62" params="131089" style="0" name="item_template" color="0xfffeeeee" treshold="0">
+                              <children>
+                                <border x="0" y="0" width="50" height="60" params="16" style="2" color="0x0a1a19b" tags="ITEM_HILIGHT">
+                                  <children>
+                                    <border x="0" y="0" width="50" height="60" params="16" style="3" name="border_outline" color="0x08f9db1">
+                                      <children>
+                                        <border x="1" y="1" width="48" height="58" params="16" style="3" name="border_background" color="0x0c8cdd3"/>
+                                      </children>
+                                    </border>
+                                  </children>
+                                </border>
+                                <bitmap x="2" y="4" width="46" height="40" params="16" style="3" name="bitmap" tags="BITMAP" width_min="46" width_max="46">
+                                  <variables>
+                                    <var key="pivot_point" value="center" type="String"/>
+                                    <var key="stretched_x" value="false" type="Boolean"/>
+                                    <var key="stretched_y" value="false" type="Boolean"/>
+                                  </variables>
+                                </bitmap>
+                                <widget x="5" y="4" width="40" height="40" params="1077674000" style="3" name="badge_image_widget" width_min="40" width_max="40" height_min="40" height_max="40">
+                                  <variables>
+                                    <var key="widget_type" value="badge_image" type="String"/>
+                                    <var key="badge_image:pivot_point" value="center" type="String"/>
+                                    <var key="badge_image:stretched_x" value="false" type="Boolean"/>
+                                    <var key="badge_image:stretched_y" value="false" type="Boolean"/>
+                                  </variables>
+                                </widget>
+                                <static_bitmap x="16" y="15" width="18" height="18" params="3932176" style="3" name="unknown_image">
+                                  <variables>
+                                    <var key="asset_uri" value="collectables_icon_curator_stamp_small" type="String"/>
+                                  </variables>
+                                </static_bitmap>
+                                <widget x="5" y="4" width="40" height="40" params="1077674000" style="3" name="pet_image_widget" visible="false" width_min="40" width_max="40" height_min="40" height_max="40">
+                                  <variables>
+                                    <var key="widget_type" value="pet_image" type="String"/>
+                                    <var key="pet_image:shrink_on_overflow" value="true" type="Boolean"/>
+                                  </variables>
+                                </widget>
+                                <container x="0" y="40" width="50" height="20" params="131088" style="3" name="number_container" width_min="50" width_max="50">
+                                  <children>
+                                    <border x="3" y="5" width="44" height="12" params="16" style="3" name="text_border" color="0x0337c00" visible="false"/>
+                                    <text x="0" y="0" width="34" height="17" params="16" style="3" name="number" caption="0" color="0x00">
+                                      <variables>
+                                        <var key="auto_size" value="right" type="String"/>
+                                        <var key="text_style" value="u_bold" type="String"/>
+                                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                        <var key="spacing" value="0" type="Number"/>
+                                        <var key="leading" value="0" type="Number"/>
+                                      </variables>
+                                    </text>
+                                    <static_bitmap x="34" y="3" width="12" height="12" params="16" style="3" name="emerald_icon">
+                                      <variables>
+                                        <var key="asset_uri" value="pursearea_tiny_emerald_icon" type="String"/>
+                                        <var key="stretched_x" value="false" type="Boolean"/>
+                                        <var key="stretched_y" value="false" type="Boolean"/>
+                                      </variables>
+                                    </static_bitmap>
+                                  </children>
+                                </container>
+                              </children>
+                            </region>
+                          </children>
+                          <variables>
+                            <var key="spacing" value="1" type="int"/>
+                            <var key="scale_to_fit_items" value="true" type="Boolean"/>
+                          </variables>
+                        </scrollable_itemgrid_vertical>
+                      </children>
+                    </container>
+                  </children>
+                </container>
+              </children>
+            </container>
+            <container x="5" y="0" width="485" height="429" params="16" style="3" name="loading_contents" visible="false">
+              <children>
+                <border x="185" y="155" width="113" height="116" params="16" style="2" color="0x0a4a49f"/>
+                <static_bitmap x="205" y="175" width="75" height="75" params="16" style="3" name="loading_icon">
+                  <variables>
+                    <var key="asset_uri" value="loading" type="String"/>
+                  </variables>
+                </static_bitmap>
+              </children>
+            </container>
+          </children>
+        </container>
+        <container x="0" y="125" width="485" height="429" params="1073758352" style="3" name="transferContainer" color="0x00" visible="false" background="true" tags="TEMPLATE%2Ccategory_container">
+          <children>
+            <container x="0" y="0" width="485" height="429" params="16" style="3" name="loaded_content">
+              <children>
+                <container x="0" y="0" width="485" height="50" params="16" style="3" name="headercontainer">
+                  <children>
+                    <text x="19" y="10" width="450" height="30" params="3935248" style="3" caption="%24%7Bcollectibles.transfer.description%7D" width_min="450" width_max="450">
+                      <variables>
+                        <var key="auto_size" value="center" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="word_wrap" value="true" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                  </children>
+                </container>
+                <border x="0" y="380" width="488" height="50" params="16" style="3" name="transfer_container" color="0x0bac3cd">
+                  <children>
+                    <dropmenu x="10" y="13" width="260" height="24" params="17" style="3" name="transfer_wallet_selection"/>
+                    <border x="315" y="5" width="170" height="40" params="16" style="3" color="0x0d6dbe1" blend="0">
+                      <children>
+                        <itemlist_horizontal x="11" y="5" width="146" height="30" params="409616" style="3">
+                          <children>
+                            <text x="0" y="4" width="12" height="21" params="16" style="3" name="transfer_fee_text" caption="0">
+                              <variables>
+                                <var key="auto_size" value="left" type="String"/>
+                                <var key="font_size" value="16" type="uint"/>
+                                <var key="text_style" value="u_bold" type="String"/>
+                                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                <var key="bold" value="false" type="Boolean"/>
+                                <var key="spacing" value="0" type="Number"/>
+                                <var key="leading" value="0" type="Number"/>
+                              </variables>
+                            </text>
+                            <container x="12" y="0" width="4" height="30" params="16" style="3" name="spacing"/>
+                            <static_bitmap x="16" y="0" width="24" height="30" params="16" style="3" name="transfer_fee_icon">
+                              <variables>
+                                <var key="asset_uri" value="pursearea_mid_silver_icon" type="String"/>
+                                <var key="pivot_point" value="center" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </static_bitmap>
+                            <container x="40" y="0" width="6" height="30" params="16" style="3" name="spacing"/>
+                            <button x="46" y="0" width="100" height="30" params="131089" style="5" name="transfer_button" caption="%24%7Bcollectibles.transfer%7D" color="0x02095d4" width_min="100"/>
+                          </children>
+                          <variables>
+                            <var key="scale_to_fit_items" value="true" type="Boolean"/>
+                          </variables>
+                        </itemlist_horizontal>
+                      </children>
+                    </border>
+                  </children>
+                </border>
+                <static_bitmap x="42" y="120" width="400" height="180" params="16" style="3">
+                  <variables>
+                    <var key="asset_uri" value="collectables_transfer_safe" type="String"/>
+                    <var key="fit_size_to_contents" value="true" type="Boolean"/>
+                  </variables>
+                </static_bitmap>
+              </children>
+            </container>
+            <container x="0" y="0" width="485" height="429" params="16" style="3" name="loading_contents" visible="false">
+              <children>
+                <border x="185" y="155" width="113" height="116" params="16" style="2" color="0x0a4a49f"/>
+                <static_bitmap x="205" y="175" width="75" height="75" params="16" style="3" name="loading_icon">
+                  <variables>
+                    <var key="asset_uri" value="loading" type="String"/>
+                  </variables>
+                </static_bitmap>
+              </children>
+            </container>
+          </children>
+        </container>
+        <container x="0" y="125" width="485" height="429" params="1073758352" style="3" name="levelsContainer" color="0x00" visible="false" background="true" tags="TEMPLATE%2Ccategory_container">
+          <children>
+            <background x="0" y="0" width="485" height="429" params="1073741840" style="3" name="category_content_background" color="0x00" background="true">
+              <children>
+                <container x="0" y="0" width="485" height="80" params="1073741840" style="3" name="category_collector_header_region" tags="category_header">
+                  <children>
+                    <region x="0" y="4" width="142" height="17" params="131089" style="1" name="category_name_region">
+                      <children>
+                        <text x="0" y="0" width="83" height="17" params="16" style="1" name="collector_level_header" caption="Levels%20Header" width_min="2" width_max="270">
+                          <variables>
+                            <var key="auto_size" value="left" type="String"/>
+                            <var key="text_style" value="u_regular" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="bold" value="true" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </region>
+                    <region x="0" y="22" width="380" height="30" params="147473" style="1" name="category_minting_description_region">
+                      <children>
+                        <text x="0" y="0" width="380" height="30" params="16" style="1" name="collector_level_description" caption="Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Cras%20porta%20felis%20sed%20libero%20rhoncus%2C%20at%20elementum%20metus%20sagittis.%20" width_min="2" width_max="380" height_min="17">
+                          <variables>
+                            <var key="auto_size" value="left" type="String"/>
+                            <var key="text_style" value="u_regular" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="multiline" value="true" type="Boolean"/>
+                            <var key="word_wrap" value="true" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </region>
+                  </children>
+                </container>
+              </children>
+            </background>
+          </children>
+        </container>
+        <container x="0" y="125" width="390" height="419" params="1073889424" style="3" name="infoContainer" color="0x00" visible="false" background="true" tags="TEMPLATE%2Ccategory_container">
+          <children>
+            <background x="0" y="0" width="390" height="400" params="1073741840" style="3" name="category_content_background" color="0x00" background="true">
+              <children>
+                <container x="0" y="0" width="490" height="135" params="1073741840" style="3" name="category_collector_header_region" tags="category_header">
+                  <children>
+                    <region x="0" y="4" width="142" height="17" params="131089" style="1" name="category_info_header_region">
+                      <children>
+                        <text x="0" y="0" width="27" height="17" params="16" style="1" name="collector_collections_header" caption="%24%7Bcollectibles.info.title%7D" width_min="2" width_max="270">
+                          <variables>
+                            <var key="auto_size" value="left" type="String"/>
+                            <var key="text_style" value="u_regular" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="bold" value="true" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </region>
+                    <region x="0" y="22" width="480" height="50" params="147473" style="1" name="category_info_description_region">
+                      <children>
+                        <text x="0" y="0" width="380" height="30" params="16" style="1" name="collector_profile_description" caption="Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Cras%20porta%20felis%20sed%20libero%20rhoncus%2C%20at%20elementum%20metus%20sagittis.%20" visible="false" width_min="2" width_max="380" height_min="17">
+                          <variables>
+                            <var key="auto_size" value="left" type="String"/>
+                            <var key="text_style" value="u_regular" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="multiline" value="true" type="Boolean"/>
+                            <var key="word_wrap" value="true" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <html x="0" y="0" width="480" height="50" params="1" style="3" name="info_desc" caption="%24%7Bcollectibles.info.description%7D" width_max="480">
+                          <variables>
+                            <var key="word_wrap" value="true" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                            <var key="editable" value="false" type="Boolean"/>
+                            <var key="selectable" value="false" type="Boolean"/>
+                            <var key="editable" value="false" type="Boolean"/>
+                            <var key="selectable" value="false" type="Boolean"/>
+                          </variables>
+                        </html>
+                      </children>
+                    </region>
+                    <region x="0" y="75" width="480" height="60" params="147473" style="1" name="category_info_transfer_region">
+                      <children>
+                        <text x="0" y="0" width="380" height="30" params="16" style="1" name="collector_profile_description" caption="Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Cras%20porta%20felis%20sed%20libero%20rhoncus%2C%20at%20elementum%20metus%20sagittis.%20" visible="false" width_min="2" width_max="380" height_min="17">
+                          <variables>
+                            <var key="auto_size" value="left" type="String"/>
+                            <var key="text_style" value="u_regular" type="String"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="multiline" value="true" type="Boolean"/>
+                            <var key="word_wrap" value="true" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                          </variables>
+                        </text>
+                        <html x="0" y="0" width="480" height="60" params="1" style="3" name="transfer_desc" caption="%24%7Bcollectibles.info.trading%7D" width_max="480">
+                          <variables>
+                            <var key="word_wrap" value="true" type="Boolean"/>
+                            <var key="spacing" value="0" type="Number"/>
+                            <var key="leading" value="0" type="Number"/>
+                            <var key="editable" value="false" type="Boolean"/>
+                            <var key="selectable" value="false" type="Boolean"/>
+                            <var key="editable" value="false" type="Boolean"/>
+                            <var key="selectable" value="false" type="Boolean"/>
+                          </variables>
+                        </html>
+                      </children>
+                    </region>
+                  </children>
+                </container>
+              </children>
+            </background>
+            <static_bitmap x="128" y="155" width="216" height="264" params="16" style="3">
+              <variables>
+                <var key="asset_uri" value="collectables_collection_default" type="String"/>
+              </variables>
+            </static_bitmap>
+          </children>
+        </container>
+        <container x="0" y="125" width="485" height="429" params="1073758352" style="3" name="rewardsContainer" color="0x00" visible="false" background="true" tags="TEMPLATE%2Ccategory_container">
+          <children>
+            <container x="0" y="0" width="485" height="429" params="16" style="3" name="loaded_content" visible="false">
+              <children>
+                <container x="0" y="0" width="485" height="374" params="16" style="3" name="item_container">
+                  <children>
+                    <scrollable_itemlist_vertical x="0" y="0" width="485" height="374" params="16" style="3" name="itemlist">
+                      <children>
+                        <region x="0" y="0" width="466" height="50" params="131089" style="3" name="item_template">
+                          <children>
+                            <border x="0" y="0" width="466" height="50" params="16" style="2" color="0x0a1a19b" tags="ITEM_HILIGHT">
+                              <children>
+                                <border x="0" y="0" width="466" height="50" params="16" style="3" name="border_outline" color="0x08f9db1">
+                                  <children>
+                                    <border x="1" y="1" width="464" height="48" params="16" style="3" name="border_background" color="0x0c8cdd3"/>
+                                  </children>
+                                </border>
+                              </children>
+                            </border>
+                            <border x="0" y="0" width="50" height="50" params="16" style="3" name="item_border" color="0x08f9db1">
+                              <children>
+                                <border x="1" y="1" width="48" height="48" params="16" style="3" color="0x0c8cdd3"/>
+                              </children>
+                            </border>
+                            <border x="54" y="4" width="408" height="16" params="16" style="3" name="name_border" color="0x08f9db1">
+                              <children>
+                                <text x="1" y="0" width="405" height="14" params="16" style="3" name="item_name" caption="Item%20name" tags="NAME_TITLE">
+                                  <variables>
+                                    <var key="text_color" value="0xffffff" type="hex"/>
+                                    <var key="text_style" value="u_bold" type="String"/>
+                                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                    <var key="spacing" value="0" type="Number"/>
+                                    <var key="leading" value="0" type="Number"/>
+                                  </variables>
+                                </text>
+                              </children>
+                            </border>
+                            <bitmap x="10" y="9" width="32" height="32" params="16" style="3" name="bitmap" tags="BITMAP">
+                              <variables>
+                                <var key="pivot_point" value="center" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </bitmap>
+                            <widget x="10" y="9" width="32" height="32" params="16" style="3" name="badge_image_widget">
+                              <variables>
+                                <var key="widget_type" value="badge_image" type="String"/>
+                                <var key="badge_image:pivot_point" value="center" type="String"/>
+                                <var key="badge_image:stretched_x" value="false" type="Boolean"/>
+                                <var key="badge_image:stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </widget>
+                            <static_bitmap x="10" y="9" width="32" height="32" params="16" style="0" name="unknown_image">
+                              <variables>
+                                <var key="asset_uri" value="avatar_editor_avatar_editor_download_icon" type="String"/>
+                                <var key="pivot_point" value="center" type="String"/>
+                                <var key="stretched_x" value="false" type="Boolean"/>
+                                <var key="stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </static_bitmap>
+                            <widget x="10" y="9" width="32" height="32" params="16" style="3" name="pet_image_widget" visible="false">
+                              <variables>
+                                <var key="widget_type" value="badge_image" type="String"/>
+                                <var key="badge_image:pivot_point" value="center" type="String"/>
+                                <var key="badge_image:stretched_x" value="false" type="Boolean"/>
+                                <var key="badge_image:stretched_y" value="false" type="Boolean"/>
+                              </variables>
+                            </widget>
+                            <text x="204" y="34" width="260" height="15" params="16" style="0" name="wallet_text" caption="0x123123123123123">
+                              <variables>
+                                <var key="auto_size" value="right" type="String"/>
+                                <var key="font_size" value="10" type="uint"/>
+                                <var key="text_color" value="0x8f9db1" type="hex"/>
+                                <var key="text_style" value="u_regular" type="String"/>
+                                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                <var key="spacing" value="0" type="Number"/>
+                                <var key="leading" value="0" type="Number"/>
+                              </variables>
+                            </text>
+                            <html x="52" y="20" width="340" height="14" params="1" style="3" name="collection_text" caption="%3Cb%3ECollection%3A%3C/b%3E%20test">
+                              <variables>
+                                <var key="font_size" value="10" type="uint"/>
+                                <var key="spacing" value="0" type="Number"/>
+                                <var key="leading" value="0" type="Number"/>
+                                <var key="editable" value="false" type="Boolean"/>
+                                <var key="selectable" value="false" type="Boolean"/>
+                                <var key="editable" value="false" type="Boolean"/>
+                                <var key="selectable" value="false" type="Boolean"/>
+                              </variables>
+                            </html>
+                            <html x="52" y="33" width="340" height="14" params="1" style="3" name="expires_text" caption="%3Cb%3EExpires%3A%3C/b%3E%20test">
+                              <variables>
+                                <var key="font_size" value="10" type="uint"/>
+                                <var key="spacing" value="0" type="Number"/>
+                                <var key="leading" value="0" type="Number"/>
+                                <var key="editable" value="false" type="Boolean"/>
+                                <var key="selectable" value="false" type="Boolean"/>
+                                <var key="editable" value="false" type="Boolean"/>
+                                <var key="selectable" value="false" type="Boolean"/>
+                              </variables>
+                            </html>
+                            <container x="27" y="34" width="20" height="16" params="16" style="0" name="amount_container" color="0x08f9db1">
+                              <children>
+                                <border x="0" y="0" width="20" height="14" params="16" style="3" color="0x08f9db1"/>
+                                <text x="0" y="0" width="20" height="15" params="16" style="0" name="amount_text" caption="x0" tags="AMOUNT_TITLE">
+                                  <variables>
+                                    <var key="auto_size" value="center" type="String"/>
+                                    <var key="font_size" value="10" type="uint"/>
+                                    <var key="text_color" value="0xffffff" type="hex"/>
+                                    <var key="text_style" value="u_regular" type="String"/>
+                                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                                    <var key="spacing" value="0" type="Number"/>
+                                    <var key="leading" value="0" type="Number"/>
+                                  </variables>
+                                </text>
+                              </children>
+                            </container>
+                          </children>
+                        </region>
+                      </children>
+                      <variables>
+                        <var key="spacing" value="2" type="int"/>
+                      </variables>
+                    </scrollable_itemlist_vertical>
+                  </children>
+                </container>
+                <border x="0" y="380" width="486" height="50" params="16" style="3" name="bottom_container" color="0x0bac3cd">
+                  <children>
+                    <button x="180" y="10" width="137" height="30" params="131089" style="5" name="claim_button" caption="%24%7Bcollectibles.claim_all%7D" color="0x02095d4" width_min="100"/>
+                  </children>
+                </border>
+              </children>
+            </container>
+            <container x="0" y="0" width="485" height="429" params="16" style="3" name="no_content_container">
+              <children>
+                <container x="0" y="0" width="485" height="100" params="16" style="3" name="headercontainer">
+                  <children>
+                    <text x="19" y="28" width="450" height="17" params="788496" style="3" caption="%24%7Bcollectibles.no_claims%7D" width_min="450" width_max="450" height_min="17" height_max="200">
+                      <variables>
+                        <var key="auto_size" value="center" type="String"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="word_wrap" value="true" type="Boolean"/>
+                        <var key="spacing" value="0" type="Number"/>
+                        <var key="leading" value="0" type="Number"/>
+                      </variables>
+                    </text>
+                  </children>
+                </container>
+                <container x="0" y="100" width="485" height="332" params="16" style="3" name="image_container">
+                  <children>
+                    <static_bitmap x="0" y="50" width="485" height="176" params="3932176" style="3">
+                      <variables>
+                        <var key="asset_uri" value="image_frank_dont_know" type="String"/>
+                        <var key="pivot_point" value="center" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                  </children>
+                </container>
+              </children>
+            </container>
+            <container x="0" y="0" width="485" height="429" params="16" style="3" name="loading_contents" visible="false">
+              <children>
+                <border x="185" y="155" width="113" height="116" params="16" style="2" color="0x0a4a49f"/>
+                <static_bitmap x="205" y="175" width="75" height="75" params="16" style="3" name="loading_icon">
+                  <variables>
+                    <var key="asset_uri" value="loading" type="String"/>
+                  </variables>
+                </static_bitmap>
+              </children>
+            </container>
+          </children>
+        </container>
+        <static_bitmap x="-8" y="56" width="410" height="1" params="16" style="3" visible="false">
+          <variables>
+            <var key="asset_uri" value="talent_task_progress_bg" type="String"/>
+          </variables>
+        </static_bitmap>
+      </children>
+      <variables>
+        <var key="margin_left" value="6" type="int"/>
+        <var key="margin_top" value="35" type="int"/>
+        <var key="margin_right" value="6" type="int"/>
+        <var key="margin_bottom" value="6" type="int"/>
+      </variables>
+    </frame>
+  </window>
+</layout>

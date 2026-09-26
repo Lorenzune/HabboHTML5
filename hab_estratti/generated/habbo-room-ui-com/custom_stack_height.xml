@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="custom_stack_height" width="320" height="210" version="0.1" uid="F92D997A-6BCC-A80E-4652-651E6875E987">
+  <window>
+    <frame x="8" y="8" width="320" height="210" params="32769" style="100" caption="%24%7Bwidget.custom.stack.height.title%7D" height_min="185" height_max="210">
+      <filters>
+        <DropShadowFilter angle="0" alpha="0.34901960784313724" blurX="20" blurY="20"/>
+      </filters>
+      <children>
+        <button x="12" y="110" width="134" height="29" params="131089" style="102" name="button_above_stack" caption="%24%7Bfurniture.above.stack%7D"/>
+        <button x="182" y="110" width="126" height="29" params="393233" style="102" name="button_floor_level" caption="%24%7Bfurniture.floor.level%7D"/>
+        <border x="35" y="68" width="206" height="30" params="17" style="105" name="slider">
+          <children>
+            <container_button x="0" y="0" width="20" height="30" params="33073" style="102" name="slider_button"/>
+          </children>
+        </border>
+        <text x="10" y="5" width="294" height="59" params="16" style="100" name="height_text" caption="%24%7Bwidget.custom.stack.height.text%7D">
+          <variables>
+            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+            <var key="word_wrap" value="true" type="Boolean"/>
+            <var key="spacing" value="0" type="Number"/>
+            <var key="leading" value="0" type="Number"/>
+          </variables>
+        </text>
+        <border x="250" y="68" width="58" height="30" params="16" style="105">
+          <children>
+            <input x="7" y="7" width="45" height="20" params="1" style="100" name="input_height" caption="1.0">
+              <variables>
+                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                <var key="restrict" value="0123456789." type="String"/>
+                <var key="spacing" value="0" type="Number"/>
+                <var key="leading" value="0" type="Number"/>
+              </variables>
+            </input>
+          </children>
+        </border>
+        <container x="0" y="149" width="318" height="24" params="16" style="3" name="walktile_container">
+          <children>
+            <checkbox x="13" y="3" width="17" height="16" params="17" style="102" name="multiwalk_checkbox"/>
+            <text x="31" y="2" width="282" height="19" params="16" style="100" caption="%24%7Bwidget.custom.multiwalk_mode.text%7D">
+              <variables>
+                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                <var key="word_wrap" value="true" type="Boolean"/>
+                <var key="spacing" value="0" type="Number"/>
+                <var key="leading" value="0" type="Number"/>
+              </variables>
+            </text>
+          </children>
+        </container>
+        <container_button x="9" y="84" width="19" height="20" params="1" style="102" dynamic_style="button" name="button_move_down">
+          <children>
+            <icon x="5" y="5" width="12" height="12" params="0" style="0" color="0x07f7f7f" tags="%23icon"/>
+          </children>
+          <variables>
+            <var key="tool_tip_caption" value="${widget.custom.height.move_down}" type="String"/>
+          </variables>
+        </container_button>
+        <container_button x="9" y="62" width="19" height="20" params="1" style="102" dynamic_style="button" name="button_move_up">
+          <children>
+            <icon x="5" y="4" width="12" height="12" params="0" style="1" color="0x07f7f7f" tags="%23icon"/>
+          </children>
+          <variables>
+            <var key="tool_tip_caption" value="${widget.custom.height.move_up}" type="String"/>
+          </variables>
+        </container_button>
+      </children>
+    </frame>
+  </window>
+</layout>

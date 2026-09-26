@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="notification_friendonline" width="86" height="58" version="0.1" uid="E00470E9-B770-DC60-50D1-C5340DD87CE4">
+  <window>
+    <container x="0" y="0" width="86" height="58" params="131073" style="1" tags="border" height_min="58" height_max="58">
+      <children>
+        <container x="0" y="12" width="43" height="34" params="4194320" style="3" name="content">
+          <children>
+            <static_bitmap x="0" y="0" width="7" height="34" params="16" style="3">
+              <variables>
+                <var key="asset_uri" value="notification_friendonline_left" type="String"/>
+                <var key="stretched_x" value="false" type="Boolean"/>
+                <var key="stretched_y" value="false" type="Boolean"/>
+              </variables>
+            </static_bitmap>
+            <static_bitmap x="7" y="0" width="40" height="34" params="144" style="3">
+              <variables>
+                <var key="asset_uri" value="notification_friendonline_middle" type="String"/>
+                <var key="stretched_y" value="false" type="Boolean"/>
+              </variables>
+            </static_bitmap>
+            <itemlist_horizontal x="8" y="7" width="19" height="17" params="4194320" style="3">
+              <children>
+                <region x="0" y="0" width="10" height="17" params="17" style="3" name="slide_notification_away" treshold="0" tags="slide_notification_away">
+                  <children>
+                    <static_bitmap x="2" y="6" width="6" height="8" params="16" style="3" tags="slide_notification_away">
+                      <variables>
+                        <var key="asset_uri" value="notification_friendonline_slide" type="String"/>
+                        <var key="stretched_x" value="false" type="Boolean"/>
+                        <var key="stretched_y" value="false" type="Boolean"/>
+                        <var key="fit_size_to_contents" value="true" type="Boolean"/>
+                      </variables>
+                    </static_bitmap>
+                  </children>
+                </region>
+                <text x="15" y="0" width="4" height="4" params="16" style="3" tags="notification_text">
+                  <variables>
+                    <var key="auto_size" value="left" type="String"/>
+                    <var key="text_color" value="0xcfcfcf" type="hex"/>
+                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                    <var key="spacing" value="0" type="Number"/>
+                    <var key="leading" value="0" type="Number"/>
+                  </variables>
+                </text>
+              </children>
+              <variables>
+                <var key="spacing" value="5" type="int"/>
+                <var key="resize_on_item_update" value="true" type="Boolean"/>
+              </variables>
+            </itemlist_horizontal>
+          </children>
+        </container>
+        <static_bitmap x="33" y="3" width="53" height="53" params="80" style="3">
+          <variables>
+            <var key="asset_uri" value="notification_friendonline_circle_inner" type="String"/>
+            <var key="stretched_x" value="false" type="Boolean"/>
+            <var key="stretched_y" value="false" type="Boolean"/>
+            <var key="fit_size_to_contents" value="true" type="Boolean"/>
+          </variables>
+        </static_bitmap>
+        <container x="35" y="4" width="50" height="50" params="80" style="3" name="bitmaps">
+          <children>
+            <static_bitmap x="0" y="0" width="50" height="50" params="3088" style="0" tags="notification_icon_static">
+              <variables>
+                <var key="pivot_point" value="center" type="String"/>
+                <var key="stretched_x" value="false" type="Boolean"/>
+                <var key="stretched_y" value="false" type="Boolean"/>
+              </variables>
+            </static_bitmap>
+            <bitmap x="0" y="0" width="50" height="50" params="3088" style="0" tags="notification_icon">
+              <variables>
+                <var key="pivot_point" value="center" type="String"/>
+                <var key="stretched_x" value="false" type="Boolean"/>
+                <var key="stretched_y" value="false" type="Boolean"/>
+              </variables>
+            </bitmap>
+          </children>
+        </container>
+        <static_bitmap x="33" y="3" width="53" height="53" params="80" style="3">
+          <variables>
+            <var key="asset_uri" value="notification_friendonline_circle" type="String"/>
+            <var key="stretched_x" value="false" type="Boolean"/>
+            <var key="stretched_y" value="false" type="Boolean"/>
+            <var key="fit_size_to_contents" value="true" type="Boolean"/>
+          </variables>
+        </static_bitmap>
+      </children>
+    </container>
+  </window>
+</layout>

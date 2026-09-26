@@ -1,0 +1,120 @@
+{
+  "format": "hab",
+  "version": 1,
+  "name": "HabboLocalizationCom",
+  "manifest": "<?xml version=\"1.0\"?>\n<manifest>\n\n\t<component class=\"com.sulake.bootstrap.HabboLocalizationManagerBootstrap\" version=\"0.0\">\n\t\t<interface iid=\"com.sulake.iid.IIDCoreLocalizationManager\" />\n\t\t<interface iid=\"com.sulake.iid.IIDHabboLocalizationManager\" />\n\n\t\t<assets>\n\t\t\t<asset mimeType=\"text/plain\" name=\"development_localizations\" />\n\t\t\t<asset mimeType=\"text/plain\" name=\"default_localizations\" />\n\t\t\t<asset mimeType=\"text/plain\" name=\"default_localizations_pt\" />\n\t\t\t<asset mimeType=\"text/plain\" name=\"default_localizations_de\" />\n\t\t\t<asset mimeType=\"text/plain\" name=\"default_localizations_dk\" />\n\t\t\t<asset mimeType=\"text/plain\" name=\"default_localizations_es\" />\n\t\t\t<asset mimeType=\"text/plain\" name=\"default_localizations_fi\" />\n\t\t\t<asset mimeType=\"text/plain\" name=\"default_localizations_fr\" />\n\t\t\t<asset mimeType=\"text/plain\" name=\"default_localizations_it\" />\n\t\t\t<asset mimeType=\"text/plain\" name=\"default_localizations_nl\" />\n\t\t\t<asset mimeType=\"text/plain\" name=\"default_localizations_no\" />\n\t\t\t<asset mimeType=\"text/plain\" name=\"default_localizations_se\" />\n\t\t\t<asset mimeType=\"text/plain\" name=\"default_localizations_en\" />\n\t\t\t<asset mimeType=\"text/plain\" name=\"default_localizations_tr\" />\n\t\t</assets>\n\n\t</component>\n\n</manifest>\n",
+  "entries": [
+    {
+      "name": "development_localizations",
+      "mimeType": "text/plain",
+      "offset": 0,
+      "storedLength": 1015,
+      "originalLength": 2500,
+      "compression": "deflate"
+    },
+    {
+      "name": "default_localizations",
+      "mimeType": "text/plain",
+      "offset": 1015,
+      "storedLength": 6201,
+      "originalLength": 22336,
+      "compression": "deflate"
+    },
+    {
+      "name": "default_localizations_pt",
+      "mimeType": "text/plain",
+      "offset": 7216,
+      "storedLength": 4187,
+      "originalLength": 12009,
+      "compression": "deflate"
+    },
+    {
+      "name": "default_localizations_de",
+      "mimeType": "text/plain",
+      "offset": 11403,
+      "storedLength": 3833,
+      "originalLength": 10417,
+      "compression": "deflate"
+    },
+    {
+      "name": "default_localizations_dk",
+      "mimeType": "text/plain",
+      "offset": 15236,
+      "storedLength": 473,
+      "originalLength": 965,
+      "compression": "deflate"
+    },
+    {
+      "name": "default_localizations_es",
+      "mimeType": "text/plain",
+      "offset": 15709,
+      "storedLength": 4024,
+      "originalLength": 11208,
+      "compression": "deflate"
+    },
+    {
+      "name": "default_localizations_fi",
+      "mimeType": "text/plain",
+      "offset": 19733,
+      "storedLength": 3505,
+      "originalLength": 9649,
+      "compression": "deflate"
+    },
+    {
+      "name": "default_localizations_fr",
+      "mimeType": "text/plain",
+      "offset": 23238,
+      "storedLength": 3652,
+      "originalLength": 10223,
+      "compression": "deflate"
+    },
+    {
+      "name": "default_localizations_it",
+      "mimeType": "text/plain",
+      "offset": 26890,
+      "storedLength": 3628,
+      "originalLength": 9960,
+      "compression": "deflate"
+    },
+    {
+      "name": "default_localizations_nl",
+      "mimeType": "text/plain",
+      "offset": 30518,
+      "storedLength": 3520,
+      "originalLength": 9743,
+      "compression": "deflate"
+    },
+    {
+      "name": "default_localizations_no",
+      "mimeType": "text/plain",
+      "offset": 34038,
+      "storedLength": 477,
+      "originalLength": 949,
+      "compression": "deflate"
+    },
+    {
+      "name": "default_localizations_se",
+      "mimeType": "text/plain",
+      "offset": 34515,
+      "storedLength": 498,
+      "originalLength": 951,
+      "compression": "deflate"
+    },
+    {
+      "name": "default_localizations_en",
+      "mimeType": "text/plain",
+      "offset": 35013,
+      "storedLength": 3372,
+      "originalLength": 9639,
+      "compression": "deflate"
+    },
+    {
+      "name": "default_localizations_tr",
+      "mimeType": "text/plain",
+      "offset": 38385,
+      "storedLength": 3732,
+      "originalLength": 9929,
+      "compression": "deflate"
+    }
+  ]
+}

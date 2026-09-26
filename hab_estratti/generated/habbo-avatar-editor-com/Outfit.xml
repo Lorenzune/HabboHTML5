@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="thumbnail" width="35" height="60" version="0.1" uid="B730FAF0-1886-2BA4-BD07-F9C82B7A6626">
+  <window>
+    <container x="0" y="0" width="35" height="60" params="17" style="3">
+      <children>
+        <button x="0" y="0" width="35" height="60" params="1073872913" style="3" name="button" tags="BUTTON"/>
+        <static_bitmap x="1" y="1" width="33" height="58" params="133264" style="3" name="outfit_gradient" visible="false">
+          <variables>
+            <var key="asset_uri" value="collectables_score_background_gradient" type="String"/>
+          </variables>
+        </static_bitmap>
+        <bitmap x="0" y="0" width="35" height="60" params="16" style="0" name="bitmap" tags="BITMAP"/>
+      </children>
+    </container>
+  </window>
+</layout>
