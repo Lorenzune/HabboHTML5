@@ -13,9 +13,9 @@ This directory contains the unpacked resources, metadata, and original `.hab` bi
   - [Index Section (DEFLATE / JSON)](#index-section-deflate--json)
   - [Payload Data Section](#payload-data-section)
 - [Folder & Asset Breakdown](#folder--asset-breakdown)
-  - [Core Components (`generated/`)](#core-components-generated)
-  - [Local Assets & Overlays (`local_include/`)](#local-assets--overlays-local_include)
-  - [Original Raw Packages (`raw_hab_bundles/`)](#original-raw-packages-raw_hab_bundles)
+  - [Core Components (`extracted_assets/generated/`)](#core-components-extracted_assetsgenerated)
+  - [Local Assets & Overlays (`extracted_assets/local_include/`)](#local-assets--overlays-extracted_assetslocal_include)
+  - [Original Raw Packages (`extracted_assets/raw_hab_bundles/`)](#original-raw-packages-extracted_assetsraw_hab_bundles)
 - [Asset Types & Supported Formats](#asset-types--supported-formats)
 - [How Extraction Works](#how-extraction-works)
 - [Manifest & Metadata Reference](#manifest--metadata-reference)
@@ -30,10 +30,10 @@ The official Windows client distribution for this build can be downloaded direct
 - 📦 **Official Client Package**: [HabboClassicWin.zip](https://images.habbo.com/habbo-clients/classic-electron/win/prod/56_1864cc909528cf4e66e4a58e3537d4be/HabboClassicWin.zip)
 - 🌐 **Client Versions & Endpoints API**: The current client versions, build hashes, and download URLs across all platforms (Classic Electron, Flash/AIR, Unity) can be checked directly via the official endpoint: [https://sandbox.habbo.com/gamedata/clienturls](https://sandbox.habbo.com/gamedata/clienturls)
 
-In this directory:
+In the [`extracted_assets/`](./extracted_assets) directory:
 1. Every component folder contains the **unpacked, ready-to-use assets** (PNGs, MP3s, XML layouts, TTF fonts, etc.).
 2. Every component folder includes its original **`.hab` file** and an exported **`_manifest_index.json`** for complete transparency.
-3. The `raw_hab_bundles/` folder contains a clean copy of all 38 original `.hab` files organized in their original directory tree.
+3. The `extracted_assets/raw_hab_bundles/` folder contains a clean copy of all 38 original `.hab` files organized in their original directory tree.
 
 ---
 
@@ -97,7 +97,7 @@ Starts at offset `20 + Index Stored Size` with total length equal to `Payload Si
 
 ## 📁 Folder & Asset Breakdown
 
-### Core Components (`generated/`)
+### Core Components (`extracted_assets/generated/`)
 
 | Folder | Resources | Contents & Purpose |
 | :--- | :---: | :--- |
@@ -132,7 +132,7 @@ Starts at offset `20 + Index Stored Size` with total length equal to `Payload Si
 
 ---
 
-### Local Assets & Overlays (`local_include/`)
+### Local Assets & Overlays (`extracted_assets/local_include/`)
 
 - **`Dance1.hab` to `Dance4.hab`**: Club Habbo dance animation routines (The Roll, Duck Funk, Pogo Mogo, The Habbo Hop).
 - **`TileCursor.hab`**: Isometric tile grid selector and cursor state animations.
@@ -143,11 +143,11 @@ Starts at offset `20 + Index Stored Size` with total length equal to `Payload Si
 
 ---
 
-### Original Raw Packages (`raw_hab_bundles/`)
+### Original Raw Packages (`extracted_assets/raw_hab_bundles/`)
 
 Contains all **38 original unextracted `.hab` files** preserved in their original folder hierarchy:
-- `raw_hab_bundles/generated/`
-- `raw_hab_bundles/local_include/`
+- `extracted_assets/raw_hab_bundles/generated/`
+- `extracted_assets/raw_hab_bundles/local_include/`
 
 ---
 
@@ -168,7 +168,7 @@ Contains all **38 original unextracted `.hab` files** preserved in their origina
 ## ⚙️ How Extraction Works
 
 All packages were extracted using the included Node.js script:
-📄 `extract_all.js` (run with `node extract_all.js`)
+📄 `extracted_assets/extract_all.js` (run with `node extracted_assets/extract_all.js`)
 
 The extractor performs the following pipeline:
 1. Validates the 4-byte signature `HAB\0`.
