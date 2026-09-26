@@ -1,4 +1,8 @@
 {
+    "local": {
+        "websiteUrl": "https://www.habbo.it",
+        "websocketUrl": "ws://localhost:2096/websocket"
+    },
     "hhus": {
         "websiteUrl": "https://www.habbo.com",
         "websocketUrl": "wss://game-us.habbo.com:30001/websocket"

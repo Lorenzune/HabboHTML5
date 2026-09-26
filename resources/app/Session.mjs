@@ -24,6 +24,7 @@ export function createNativeRemoteOrigins(websiteUrl, websocketUrl) {
 export function isAllowedNativeRemoteRequest(requestUrl, resourceType, remoteOrigins) {
   try {
     const url = new URL(requestUrl);
+    if (url.hostname === 'localhost' || url.hostname === '127.0.0.1') return true;
     return remoteOrigins.has(url.origin) && !url.username && !url.password
       && !executableRemoteResourceTypes.has(resourceType);
   } catch {
@@ -47,6 +48,8 @@ export function isDeveloperToolsShortcut(input, platform) {
 export function parseNativeSession(argv, hotels) {
   const keys = new Map([
     ['-server', 'server'], ['-ticket', 'ticket'],
+    ['-ws', 'websocketUrl'], ['-websocket', 'websocketUrl'],
+    ['-website', 'websiteUrl'],
   ]);
   const session = {};
   for (let i = 0; i < argv.length; i++) {
@@ -55,17 +58,21 @@ export function parseNativeSession(argv, hotels) {
     if (key in session) throw new Error(`Duplicate native session argument ${key}.`);
     session[key] = argv[++i];
   }
+  const customWs = session.websocketUrl;
+  const customWebsite = session.websiteUrl;
   const hotel = hotels[session.server];
   if (!hotel) throw new Error('Unsupported native client hotel.');
   Object.assign(session, hotel);
-  if (!/^(hh[a-z0-9]{2,16}|d63|dev|duke)$/.test(session.server ?? '') ||
+  if (customWs) session.websocketUrl = customWs;
+  if (customWebsite) session.websiteUrl = customWebsite;
+
+  if (!/^(hh[a-z0-9]{2,16}|d63|dev|duke|local)$/i.test(session.server ?? '') ||
       typeof session.ticket !== 'string' || !session.ticket || session.ticket.length > 8192) {
     throw new Error('Open this client through the Habbo launcher.');
   }
-  for (const [key, protocol] of [['websiteUrl', 'https:'], ['websocketUrl', 'wss:']]) {
+  for (const [key, allowedProtocols] of [['websiteUrl', ['http:', 'https:']], ['websocketUrl', ['ws:', 'wss:']]]) {
     const url = new URL(session[key]);
-    if (url.protocol !== protocol || url.username || url.password || url.search || url.hash ||
-        (key === 'websiteUrl' ? url.pathname !== '/' : url.pathname !== '/websocket')) {
+    if (!allowedProtocols.includes(url.protocol) || url.username || url.password || url.search || url.hash) {
       throw new Error(`Invalid native session ${key}.`);
     }
     session[key] = key === 'websiteUrl' ? url.origin : url.href;

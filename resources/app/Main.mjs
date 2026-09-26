@@ -81,7 +81,7 @@ export async function startNativeClient() {
     webPreferences: {
       session: clientSession, preload: path.join(root, 'Preload.cjs'),
       nodeIntegration: false, contextIsolation: true, sandbox: true, webviewTag: false,
-      webSecurity: false, allowRunningInsecureContent: false,
+      webSecurity: false, allowRunningInsecureContent: true,
       backgroundThrottling: false, spellcheck: false,
       devTools: developerToolsEnabled,
     },
@@ -93,6 +93,9 @@ export async function startNativeClient() {
   window.webContents.on('will-redirect', (event) => event.preventDefault());
   window.webContents.on('will-attach-webview', (event) => event.preventDefault());
   window.webContents.on('render-process-gone', () => app.exit(1));
+  window.webContents.on('console-message', (event, level, message, line, sourceId) => {
+    console.log(`[RENDERER:${level}] ${message} (${sourceId}:${line})`);
+  });
   await window.loadURL(entry);
   window.maximize();
   window.show();

@@ -181,7 +181,35 @@ The extractor performs the following pipeline:
 
 ## 🚀 Running the Client & Live Network Monitoring
 
+### Official Hotels
 To start the desktop client with real-time network request logging in the console:
 1. Double-click `start_habbo.bat` (or execute via command line).
 2. Paste your single-sign-on (SSO) login ticket when prompted (or pass arguments: `start_habbo.bat <ticket> [server]`, default server is `hhit`).
 3. Press **`F12`** or **`Ctrl + Shift + I`** inside the game window at any time to open Chromium DevTools (Network tab, WebSocket frame inspector, Console).
+
+### Local Emulator (e.g. Polaris-Emulator on `ws://localhost:2096`)
+The client has been patched to support insecure `ws://` protocols, arbitrary hostnames/ports, and local emulators without enforcing production `wss:` or custom subprotocols:
+1. Double-click `start_local.bat` (or run `.\Habbo.exe -server local -ticket <your_ticket>`).
+2. Target WebSocket endpoint: `ws://localhost:2096/websocket`
+3. Optional CLI overrides:
+   - `-ws ws://localhost:2096/websocket` (customize WebSocket endpoint)
+   - `-website https://www.habbo.it` (customize gamedata website origin)
+
+#### Polaris-Emulator Configuration
+In your emulator `config.ini` (`D:\octane\Polaris-Emulator\config.ini`), ensure the following settings are present:
+```ini
+# WebSocket Configuration
+ws.enabled=true
+ws.host=0.0.0.0
+ws.port=2096
+ws.whitelist=*
+
+# Allowed client releases (includes Nitro and Habbo Classic)
+client.release.allowed=NITRO-3-6-0,56_classic-js-806140824ba8
+```
+
+To create or refresh an SSO ticket in the database for testing:
+```sql
+UPDATE users SET auth_ticket = 'test-ticket' WHERE id = 1;
+```
+Then launch `start_local.bat` and press Enter to connect with `test-ticket`!
