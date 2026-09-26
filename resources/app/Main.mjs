@@ -100,6 +100,7 @@ export async function startNativeClient() {
   window.maximize();
   window.show();
   if (developerToolsEnabled) {
+    window.webContents.openDevTools({ mode: 'right' });
     window.webContents.on('before-input-event', (event, input) => {
       if (isDeveloperToolsShortcut(input, process.platform)) {
         event.preventDefault();
