@@ -176,3 +176,12 @@ The extractor performs the following pipeline:
 3. Exports `_manifest_index.json` containing complete bundle metadata.
 4. Reads each slice from the data payload, inflates compressed entries, resolves normalized file extensions according to MIME types and entry tags, and writes the individual files to disk.
 5. Preserves a clean copy of the original `.hab` container in each corresponding directory.
+
+---
+
+## 🚀 Running the Client & Live Network Monitoring
+
+To start the desktop client with real-time network request logging in the console:
+1. Double-click `start_habbo.bat` (or execute via command line).
+2. Paste your single-sign-on (SSO) login ticket when prompted (or pass arguments: `start_habbo.bat <ticket> [server]`, default server is `hhit`).
+3. Press **`F12`** or **`Ctrl + Shift + I`** inside the game window at any time to open Chromium DevTools (Network tab, WebSocket frame inspector, Console).

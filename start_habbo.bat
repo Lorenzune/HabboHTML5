@@ -2,35 +2,40 @@
 setlocal
 cd /d "%~dp0"
 
-title Habbo Classic - Console di Rete e Log
+title Habbo Classic - Network & Log Console
 
 set "TICKET=%~1"
+set "SERVER=%~2"
 
-if "%TICKET%"=="" (
-    set /p "TICKET=Incolla il ticket di Habbo: "
+if "%SERVER%"=="" (
+    set "SERVER=hhit"
 )
 
 if "%TICKET%"=="" (
-    echo Nessun ticket inserito. Chiusura...
+    set /p "TICKET=Paste your Habbo SSO ticket: "
+)
+
+if "%TICKET%"=="" (
+    echo No ticket provided. Exiting...
     pause
     exit /b 1
 )
 
 echo.
 echo =====================================================================
-echo  HABBO CLASSIC - CONSOLE RICHIESTE DI RETE
+echo  HABBO CLASSIC - NETWORK LOGGING CONSOLE
 echo =====================================================================
-echo  [*] Server: hhit (Habbo Italia)
-echo  [*] Console: rimarra' aperta per mostrare le richieste in tempo reale
-echo  [*] DevTools: premi F12 o Ctrl+Shift+I nella finestra di Habbo
+echo  [*] Target Hotel Server: %SERVER%
+echo  [*] Console: Keeping output attached for live network request stream
+echo  [*] DevTools: Press F12 or Ctrl+Shift+I inside the Habbo window
 echo =====================================================================
 echo.
 
 set ELECTRON_ENABLE_LOGGING=1
-"Habbo.exe" --enable-logging -server hhit -ticket %TICKET% 2>&1
+"Habbo.exe" --enable-logging -server %SERVER% -ticket %TICKET% 2>&1
 
 echo.
 echo =====================================================================
-echo  [Habbo terminato]
+echo  [Habbo session closed]
 echo =====================================================================
 pause
